@@ -19,24 +19,27 @@ export default function LandingPage() {
 
       {/* Navigation */}
       <nav className="relative z-10 w-full border-b border-white/5 bg-black/50 backdrop-blur-md">
-        <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 h-20 flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-lg bg-primary flex items-center justify-center">
+            <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-lg bg-primary flex items-center justify-center">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#000000" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
                 <path d="m3 21 1.9-5.7a8.5 8.5 0 1 1 3.8 3.8z" />
               </svg>
             </div>
-            <span className="font-bold text-2xl tracking-wide text-white">ЭлитФинанс</span>
+            <span className="font-bold text-xl sm:text-2xl tracking-wide text-white">ЭлитФинанс</span>
           </div>
           
-          <div className="hidden md:flex items-center gap-8">
-            <a href="#services" className="text-sm font-medium text-neutral-400 hover:text-white transition-colors">Услуги</a>
-            <a href="#advantages" className="text-sm font-medium text-neutral-400 hover:text-white transition-colors">Преимущества</a>
+          <div className="flex items-center gap-4 sm:gap-8">
+            <div className="hidden md:flex items-center gap-8">
+              <a href="#services" className="text-sm font-medium text-neutral-400 hover:text-white transition-colors">Услуги</a>
+              <a href="#advantages" className="text-sm font-medium text-neutral-400 hover:text-white transition-colors">Преимущества</a>
+            </div>
             <Link 
               href="/login" 
-              className="px-6 py-2.5 rounded-full bg-white/5 border border-white/10 text-white font-medium hover:bg-white/10 transition-all text-sm flex items-center gap-2 group"
+              className="px-4 py-2 sm:px-6 sm:py-2.5 rounded-full bg-white/5 border border-white/10 text-white font-medium hover:bg-white/10 transition-all text-xs sm:text-sm flex items-center gap-2 group"
             >
-              Личный кабинет
+              <span className="hidden sm:inline">Личный кабинет</span>
+              <span className="sm:hidden">Войти</span>
               <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
             </Link>
           </div>
@@ -44,14 +47,14 @@ export default function LandingPage() {
       </nav>
 
       {/* Hero Section */}
-      <main className="relative z-10 w-full max-w-7xl mx-auto px-6 pt-32 pb-20">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div className="text-left">
+      <main className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 pt-24 pb-12 lg:pt-32 lg:pb-20">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center text-center lg:text-left">
+          <div className="flex flex-col items-center lg:items-start">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7 }}
-              className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-bold uppercase tracking-widest mb-8"
+              className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-[10px] sm:text-xs font-bold uppercase tracking-widest mb-6 sm:mb-8"
             >
               <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
               Ваша бухгалтерия в безопасности
@@ -61,17 +64,17 @@ export default function LandingPage() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.1 }}
-              className="text-5xl md:text-7xl font-extrabold tracking-tight mb-8 leading-[1.1]"
+              className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight mb-6 lg:mb-8 leading-[1.1]"
             >
-              Бухгалтерское<br />
-              обслуживание <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-yellow-200">нового уровня</span>
+              Бухгалтерское<br className="hidden sm:block" />
+              обслуживание <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-yellow-200 block lg:inline">нового уровня</span>
             </motion.h1>
 
             <motion.p 
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.2 }}
-              className="text-lg md:text-xl text-neutral-400 mb-12 max-w-xl leading-relaxed font-light"
+              className="text-base sm:text-lg md:text-xl text-neutral-400 mb-8 lg:mb-12 max-w-xl leading-relaxed font-light mx-auto lg:mx-0"
             >
               Возьмем на себя всю рутину, налоги и отчетность. Автоматизируем процессы, чтобы вы могли сосредоточиться на росте бизнеса.
             </motion.p>
@@ -80,18 +83,18 @@ export default function LandingPage() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.3 }}
-              className="flex flex-col sm:flex-row items-center justify-start gap-4"
+              className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 w-full sm:w-auto"
             >
               <Link 
                 href="/login"
-                className="w-full sm:w-auto px-8 py-4 bg-primary text-black font-bold rounded-full hover:scale-105 hover:shadow-[0_0_30px_rgba(255,193,7,0.3)] transition-all flex items-center justify-center gap-2"
+                className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-primary text-black font-bold rounded-full hover:scale-105 hover:shadow-[0_0_30px_rgba(255,193,7,0.3)] transition-all flex items-center justify-center gap-2 text-sm sm:text-base"
               >
                 Войти в личный кабинет
                 <ArrowRight className="w-5 h-5" />
               </Link>
               <a 
                 href="#services"
-                className="w-full sm:w-auto px-8 py-4 bg-white/5 border border-white/10 text-white font-medium rounded-full hover:bg-white/10 transition-all flex items-center justify-center"
+                className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-white/5 border border-white/10 text-white font-medium rounded-full hover:bg-white/10 transition-all flex items-center justify-center text-sm sm:text-base"
               >
                 Наши услуги
               </a>
@@ -102,7 +105,7 @@ export default function LandingPage() {
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1, delay: 0.3 }}
-            className="flex items-center justify-center relative w-full h-[300px] md:h-[500px]"
+            className="flex items-center justify-center relative w-full h-[300px] sm:h-[400px] md:h-[500px]"
           >
             <Hero3D />
           </motion.div>
@@ -110,8 +113,8 @@ export default function LandingPage() {
       </main>
 
       {/* Features/Stats Section */}
-      <section id="advantages" className="relative z-10 w-full bg-white/[0.02] border-y border-white/5 py-24">
-        <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-12">
+      <section id="advantages" className="relative z-10 w-full bg-white/[0.02] border-y border-white/5 py-16 sm:py-24">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 sm:gap-12">
           {[
             { icon: ShieldCheck, title: "100% Защита", desc: "Гарантируем отсутствие штрафов. Вся ответственность застрахована." },
             { icon: TrendingUp, title: "Снижение налогов", desc: "Законно оптимизируем налогооблагаемую базу и находим скрытые резервы." },
@@ -125,12 +128,12 @@ export default function LandingPage() {
               transition={{ duration: 0.5, delay: i * 0.1 }}
               className="flex items-start gap-4"
             >
-              <div className="w-14 h-14 rounded-2xl bg-primary/10 border border-primary/20 flex items-center justify-center shrink-0">
-                <feature.icon className="w-6 h-6 text-primary" />
+              <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-primary/10 border border-primary/20 flex items-center justify-center shrink-0">
+                <feature.icon className="w-5 h-5 sm:w-6 sm:h-6 text-primary" />
               </div>
               <div>
-                <h3 className="text-xl font-bold text-white mb-2">{feature.title}</h3>
-                <p className="text-neutral-400 font-light leading-relaxed">{feature.desc}</p>
+                <h3 className="text-lg sm:text-xl font-bold text-white mb-1 sm:mb-2">{feature.title}</h3>
+                <p className="text-sm sm:text-base text-neutral-400 font-light leading-relaxed">{feature.desc}</p>
               </div>
             </motion.div>
           ))}
@@ -138,15 +141,15 @@ export default function LandingPage() {
       </section>
 
       {/* Services Section */}
-      <section id="services" className="relative z-10 w-full max-w-7xl mx-auto px-6 py-32">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">Комплексные решения</h2>
-          <p className="text-neutral-400 max-w-2xl mx-auto font-light">
+      <section id="services" className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 py-16 sm:py-32">
+        <div className="text-center mb-10 sm:mb-16">
+          <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold text-white mb-4 sm:mb-6">Комплексные решения</h2>
+          <p className="text-sm sm:text-base text-neutral-400 max-w-2xl mx-auto font-light px-4 sm:px-0">
             От регистрации бизнеса до полного финансового сопровождения. Все необходимое в одном окне.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
           {[
             {
               title: "Комплексное ведение",
@@ -163,13 +166,13 @@ export default function LandingPage() {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: i * 0.1 }}
-              className="glass p-10 rounded-3xl border border-white/10 hover:border-primary/30 transition-colors"
+              className="glass p-6 sm:p-10 rounded-3xl border border-white/10 hover:border-primary/30 transition-colors"
             >
-              <h3 className="text-2xl font-bold text-primary mb-6">{service.title}</h3>
-              <ul className="space-y-4">
+              <h3 className="text-xl sm:text-2xl font-bold text-primary mb-4 sm:mb-6">{service.title}</h3>
+              <ul className="space-y-3 sm:space-y-4">
                 {service.points.map((point, j) => (
-                  <li key={j} className="flex items-center gap-3 text-neutral-300">
-                    <CheckCircle2 className="w-5 h-5 text-primary/50 shrink-0" />
+                  <li key={j} className="flex items-start sm:items-center gap-3 text-sm sm:text-base text-neutral-300">
+                    <CheckCircle2 className="w-5 h-5 text-primary/50 shrink-0 mt-0.5 sm:mt-0" />
                     {point}
                   </li>
                 ))}
@@ -180,13 +183,13 @@ export default function LandingPage() {
       </section>
 
       {/* Footer */}
-      <footer className="relative z-10 border-t border-white/5 bg-black/50 py-12">
-        <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
+      <footer className="relative z-10 border-t border-white/5 bg-black/50 py-8 sm:py-12">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 flex flex-col md:flex-row items-center justify-between gap-4 sm:gap-6">
           <div className="flex items-center gap-2">
             <span className="font-bold tracking-widest text-white/50">ЭлитФинанс</span>
-            <span className="text-white/20 text-sm">© {new Date().getFullYear()}</span>
+            <span className="text-white/20 text-xs sm:text-sm">© {new Date().getFullYear()}</span>
           </div>
-          <p className="text-neutral-500 text-sm text-center md:text-left">
+          <p className="text-neutral-500 text-xs sm:text-sm text-center md:text-left">
             Профессиональное бухгалтерское обслуживание.
           </p>
         </div>
