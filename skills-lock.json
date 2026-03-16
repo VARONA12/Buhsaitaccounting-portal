@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "skills": {
+    "discovery-interview": {
+      "source": "parcadei/Continuous-Claude-v3",
+      "sourceType": "github",
+      "computedHash": "6f194cd10649bdcb62823f0ae3c43070dad725af451e9de8cc6a9b1404b98656"
+    },
+    "fullstack-developer": {
+      "source": "Shubhamsaboo/awesome-llm-apps",
+      "sourceType": "github",
+      "computedHash": "d824d75875b289753740c12ba33c005a40f0d996f12d3424cabf1ef9ad4cd1a3"
+    },
+    "moai-domain-frontend": {
+      "source": "modu-ai/moai-adk",
+      "sourceType": "github",
+      "computedHash": "4e704282be4befa0928e468239906ef5e6653ecbd6356f4e096cd24fad51fd31"
+    },
+    "react": {
+      "source": "lobehub/lobehub",
+      "sourceType": "github",
+      "computedHash": "0976727066f041f584c89993b951059347786c5965e9256f1a777dd2bd010dde"
+    }
+  }
+}
