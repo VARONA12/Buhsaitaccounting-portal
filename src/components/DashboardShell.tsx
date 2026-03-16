@@ -11,9 +11,10 @@ import Link from "next/link";
 
 interface DashboardShellProps {
   children: React.ReactNode;
+  isAdmin?: boolean;
 }
 
-export function DashboardShell({ children }: DashboardShellProps) {
+export function DashboardShell({ children, isAdmin }: DashboardShellProps) {
   const { data: session, status } = useSession();
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
@@ -78,7 +79,7 @@ export function DashboardShell({ children }: DashboardShellProps) {
 
   return (
     <div className="flex bg-bg min-h-screen text-text overflow-hidden font-sans transition-colors duration-300">
-      <Sidebar isOpen={isSidebarOpen} onClose={() => setIsSidebarOpen(false)} />
+      <Sidebar isOpen={isSidebarOpen} onClose={() => setIsSidebarOpen(false)} isAdminMode={isAdmin} />
       
       <main className="flex-1 relative overflow-hidden flex flex-col w-full">
         {/* Top Navigation */}

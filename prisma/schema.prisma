@@ -8,27 +8,28 @@ datasource db {
 }
 
 model User {
-  id              String          @id @default(cuid())
-  phone           String          @unique
+  id              String         @id @default(cuid())
+  phone           String         @unique
   name            String
   company         String
   birthDate       String?
-  plan            String          @default("Базовый")
-  password        String?
+  plan            String         @default("Базовый")
+  createdAt       DateTime       @default(now())
   inn             String?
-  legalAddress    String?
-  taxSystem       String?
   lastMonthProfit String?
-  notifEmail      Boolean         @default(true)
-  notifSms        Boolean         @default(true)
-  notifTelegram   Boolean         @default(false)
-  createdAt       DateTime        @default(now())
+  legalAddress    String?
+  notifEmail      Boolean        @default(true)
+  notifSms        Boolean        @default(true)
+  notifTelegram   Boolean        @default(false)
+  password        String?
+  taxSystem       String?
+  isAdmin         Boolean        @default(false)
   documents       Document[]
   invoices        Invoice[]
+  loginSessions   LoginSession[]
   messages        Message[]
   notifications   Notification[]
   taxRecords      TaxRecord[]
-  loginSessions   LoginSession[]
 }
 
 model LoginSession {

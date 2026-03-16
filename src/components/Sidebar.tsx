@@ -6,25 +6,42 @@ import {
   FileBox,
   Settings,
   X,
+  ShieldCheck,
+  Users,
+  MessageSquare
 } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useSession } from "next-auth/react";
 
 interface SidebarProps {
   isOpen?: boolean;
   onClose?: () => void;
+  isAdminMode?: boolean;
 }
 
-export function Sidebar({ isOpen, onClose }: SidebarProps) {
+export function Sidebar({ isOpen, onClose, isAdminMode }: SidebarProps) {
   const pathname = usePathname();
+  const { data: session } = useSession();
+  const isAdminUser = (session?.user as any)?.isAdmin;
 
-  const navItems = [
+  const userNavItems = [
     { name: "Главная", icon: LayoutDashboard, href: "/dashboard" },
     { name: "Счета", icon: Wallet, href: "/invoices" },
     { name: "Календарь", icon: CalendarDays, href: "/calendar" },
     { name: "Акты", icon: FileText, href: "/acts" },
     { name: "Документы", icon: FileBox, href: "/documents" },
+    { name: "Чат", icon: MessageSquare, href: "/chat" },
   ];
+
+  const adminNavItems = [
+    { name: "Обзор", icon: LayoutDashboard, href: "/admin" },
+    { name: "Клиенты", icon: Users, href: "/admin?tab=clients" },
+    { name: "Счета всех", icon: Wallet, href: "/admin?tab=invoices" },
+    { name: "Рассылка", icon: MessageSquare, href: "/admin?tab=messages" },
+  ];
+
+  const navItems = isAdminMode ? adminNavItems : userNavItems;
 
   return (
     <>
@@ -93,6 +110,28 @@ export function Sidebar({ isOpen, onClose }: SidebarProps) {
             <Settings className="w-5 h-5" />
             Настройки
           </Link>
+
+          {isAdminUser && !isAdminMode && (
+             <Link 
+              href="/admin"
+              onClick={() => onClose && onClose()}
+              className="w-full flex items-center gap-3 px-4 py-3 rounded-xl transition-all text-primary hover:bg-primary/10 border border-primary/20 bg-primary/5"
+            >
+              <ShieldCheck className="w-5 h-5" />
+              Админ-панель
+            </Link>
+          )}
+
+           {isAdminMode && (
+             <Link 
+              href="/dashboard"
+              onClick={() => onClose && onClose()}
+              className="w-full flex items-center gap-3 px-4 py-3 rounded-xl transition-all text-text-muted hover:text-text hover:bg-surface-hover"
+            >
+              <LayoutDashboard className="w-5 h-5" />
+              В кабинет
+            </Link>
+          )}
 
         </div>
       </aside>

@@ -65,6 +65,7 @@ export const authOptions: NextAuthOptions = {
           phone: user!.phone,
           plan: user!.plan,
           birthDate: user!.birthDate,
+          isAdmin: user!.isAdmin,
         };
       },
     }),
@@ -80,6 +81,7 @@ export const authOptions: NextAuthOptions = {
         token.phone = (user as any).phone;
         token.plan = (user as any).plan;
         token.birthDate = (user as any).birthDate;
+        token.isAdmin = (user as any).isAdmin;
       }
       return token;
     },
@@ -92,6 +94,7 @@ export const authOptions: NextAuthOptions = {
           phone: token.phone as string,
           plan: token.plan as string,
           birthDate: token.birthDate as string,
+          isAdmin: token.isAdmin as boolean,
         } as any;
       }
       return session;
