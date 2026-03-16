@@ -42,23 +42,6 @@ export default function Home() {
           </div>
         </motion.div>
 
-        {/* Quick Actions (Yellow & White only) */}
-        <motion.div 
-          initial={{ opacity: 0, x: 20 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-          className="flex flex-wrap gap-4 items-center"
-        >
-          {[
-            { label: "Счет" },
-            { label: "Документ" },
-            { label: "Выплата" },
-            { label: "AI Анализ" },
-          ].map((action, i) => (
-            <button key={i} className="flex items-center justify-center min-w-[120px] px-5 py-3 rounded-2xl border border-white/5 bg-white/5 hover:border-primary/50 transition-all group active:scale-95 shadow-xl">
-              <span className="text-sm font-bold text-neutral-300">{action.label}</span>
-            </button>
-          ))}
         </motion.div>
       </div>
 
