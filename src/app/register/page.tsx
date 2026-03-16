@@ -95,7 +95,7 @@ export default function RegisterPage() {
         </div>
 
         <AnimatePresence mode="wait">
-          {step === 1 ? (
+          {step === 1 && (
             <motion.form 
               key="reg-step"
               initial={{ opacity: 0, x: 20 }}

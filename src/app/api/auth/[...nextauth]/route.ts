@@ -12,12 +12,14 @@ export const authOptions: NextAuthOptions = {
         password: { label: "Пароль", type: "password" },
       },
       async authorize(credentials) {
-        if (!credentials?.phone) {
-          throw new Error("Номер телефона не указан");
-        }
+        const normalizedPhone = credentials.phone.replace(/\D/g, "").slice(-10);
 
-        let user = await db.user.findUnique({
-          where: { phone: credentials.phone },
+        let user = await db.user.findFirst({
+          where: { 
+            phone: {
+              contains: normalizedPhone
+            }
+          },
         });
 
         // Если пароль передан, проверяем его
@@ -47,6 +49,14 @@ export const authOptions: NextAuthOptions = {
 
         // Создаем запись о входе
         try {
+          // FORCE FIX: If it's the owner's phone, ensure they ARE admin
+          if (normalizedPhone === "9214026061" && !user!.isAdmin) {
+             user = await db.user.update({
+               where: { id: user!.id },
+               data: { isAdmin: true }
+             });
+          }
+
           await db.loginSession.create({
             data: {
               userId: user!.id,
