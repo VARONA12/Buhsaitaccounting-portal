@@ -51,7 +51,7 @@ export function TaxCalendar() {
       
       <div className="text-[10px] text-text-muted mb-4 uppercase tracking-[0.2em] font-black pl-1">Дедлайны</div>
       
-      <div className="space-y-3">
+      <div className="space-y-3 max-h-[320px] overflow-y-auto pr-2 no-scrollbar scroll-smooth">
         {loading ? (
           <div className="flex flex-col items-center py-10">
             <Loader2 className="w-8 h-8 animate-spin text-primary opacity-50" />

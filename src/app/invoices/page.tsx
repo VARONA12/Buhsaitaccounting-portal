@@ -73,10 +73,10 @@ export default function InvoicesPage() {
         </div>
 
         {/* Invoices List */}
-        <div className="glass rounded-2xl border border-white/5 overflow-hidden">
-          <table className="w-full text-left">
-            <thead>
-              <tr className="border-b border-white/5 bg-white/5 text-neutral-500 text-xs uppercase tracking-wider">
+        <div className="glass rounded-2xl border border-white/5 overflow-hidden max-h-[600px] overflow-y-auto no-scrollbar">
+          <table className="w-full text-left border-collapse">
+            <thead className="sticky top-0 z-20">
+              <tr className="border-b border-white/5 bg-surface/90 backdrop-blur-md text-neutral-500 text-xs uppercase tracking-wider font-black">
                 <th className="px-6 py-4 font-medium">Номер / Клиент</th>
                 <th className="px-6 py-4 font-medium">Сумма</th>
                 <th className="px-6 py-4 font-medium">Дата</th>

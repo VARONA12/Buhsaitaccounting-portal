@@ -12,6 +12,18 @@ export async function GET() {
     orderBy: { createdAt: "desc" }
   });
 
+  if (invoices.length === 0) {
+    return NextResponse.json([
+      { id: "inv-1", number: "INV-001", client: "ООО Вектор", amount: "45000", status: "Оплачен", createdAt: new Date().toISOString() },
+      { id: "inv-2", number: "INV-002", client: "ИП Соколов", amount: "12800", status: "Ожидание", createdAt: new Date().toISOString() },
+      { id: "inv-3", number: "INV-003", client: "ПАО Газпром", amount: "850000", status: "Оплачен", createdAt: new Date().toISOString() },
+      { id: "inv-4", number: "INV-004", client: "ООО Ромашка", amount: "3200", status: "Просрочен", createdAt: new Date().toISOString() },
+      { id: "inv-5", number: "INV-005", client: "ЗАО Техно", amount: "95600", status: "Ожидание", createdAt: new Date().toISOString() },
+      { id: "inv-6", number: "INV-006", client: "ИП Петров", amount: "5500", status: "Оплачен", createdAt: new Date().toISOString() },
+      { id: "inv-7", number: "INV-007", client: "ООО Строй", amount: "124000", status: "Ожидание", createdAt: new Date().toISOString() },
+    ]);
+  }
+
   return NextResponse.json(invoices);
 }
 

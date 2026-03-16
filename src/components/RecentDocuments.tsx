@@ -55,10 +55,10 @@ export function RecentDocuments() {
         </div>
       </div>
 
-      <div className="overflow-x-auto scrollbar-hide">
+      <div className="overflow-x-auto scrollbar-hide max-h-[450px] overflow-y-auto no-scrollbar">
         <div className="min-w-[600px] md:min-w-full">
           <table className="w-full text-sm text-left border-collapse">
-            <thead className="text-[10px] text-text-muted uppercase bg-surface/50 font-black tracking-widest">
+            <thead className="text-[10px] text-text-muted uppercase bg-surface/50 font-black tracking-widest sticky top-0 z-20 backdrop-blur-md">
               <tr>
                 <th scope="col" className="px-6 py-4">Название</th>
                 <th scope="col" className="px-6 py-4 hidden md:table-cell">Загружен</th>
