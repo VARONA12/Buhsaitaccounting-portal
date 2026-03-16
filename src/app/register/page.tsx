@@ -104,7 +104,7 @@ export default function RegisterPage() {
         throw new Error(signInRes.error);
       }
 
-      window.location.href = "/";
+      window.location.href = "/dashboard";
     } catch (error: any) {
       setErrorMsg(error.message || "Ошибка проверки кода.");
     } finally {
@@ -169,7 +169,7 @@ export default function RegisterPage() {
               <input
                 id="company"
                 type="text"
-                placeholder="ООО Апекс Решения"
+                placeholder="ООО ЭлитФинанс"
                 className={`w-full bg-[#141414] border ${registerForm.formState.errors.company ? 'border-red-500/50' : 'border-white/10'} rounded-xl px-4 py-3 text-base focus:outline-none focus:border-primary/50 focus:ring-1 focus:ring-primary/50 transition-all text-white placeholder:text-neutral-600`}
                 {...registerForm.register("company")}
                 disabled={isLoading}

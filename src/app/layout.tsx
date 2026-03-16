@@ -11,7 +11,7 @@ import NextAuthProvider from "@/components/NextAuthProvider";
 import { ChatWidget } from "@/components/ChatWidget";
 
 export const metadata: Metadata = {
-  title: "Бухгалтерский Портал | Апекс Решения",
+  title: "Бухгалтерский Портал | ЭлитФинанс",
   description: "Безопасный, надежный и быстрый доступ к вашей бухгалтерии.",
 };
 

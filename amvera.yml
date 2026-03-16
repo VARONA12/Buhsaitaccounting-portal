@@ -7,5 +7,5 @@ meta:
 build:
   additionalCommands: "npx prisma generate && npm run build"
 run:
-  command: "PORT=3000 HOST=0.0.0.0 NODE_OPTIONS='--max-old-space-size=400' node .next/standalone/server.js"
+  command: "HOSTNAME=0.0.0.0 PORT=3000 NODE_OPTIONS='--max-old-space-size=448' node .next/standalone/server.js"
   containerPort: 3000

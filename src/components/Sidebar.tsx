@@ -14,7 +14,7 @@ export function Sidebar() {
   const pathname = usePathname();
 
   const navItems = [
-    { name: "Главная", icon: LayoutDashboard, href: "/" },
+    { name: "Главная", icon: LayoutDashboard, href: "/dashboard" },
     { name: "Счета", icon: Wallet, href: "/invoices" },
     { name: "Календарь", icon: CalendarDays, href: "/calendar" },
     { name: "Акты", icon: FileText, href: "/acts" },
@@ -40,7 +40,7 @@ export function Sidebar() {
               <path d="m3 21 1.9-5.7a8.5 8.5 0 1 1 3.8 3.8z" />
             </svg>
           </div>
-          <span className="font-bold text-xl tracking-wide text-white">АПЕКС</span>
+          <span className="font-bold text-xl tracking-wide text-white">ЭлитФинанс</span>
         </div>
 
         {/* Navigation */}

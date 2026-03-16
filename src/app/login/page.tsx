@@ -98,7 +98,7 @@ export default function LoginPage() {
       }
 
       // Все отлично, переводим на главную (к обновленным данным из БД)
-      window.location.href = "/";
+      window.location.href = "/dashboard";
     } catch (error: any) {
       setErrorMsg(error.message || "Ошибка проверки кода.");
     } finally {
