@@ -107,6 +107,9 @@ export default function LoginPage() {
             {method === "otp" ? <Smartphone size={32} color="black" /> : <ShieldCheck size={32} color="black" />}
           </div>
           <h1 className="text-2xl md:text-3xl font-black tracking-tight text-text">ЭлитФинанс</h1>
+          <div className="mt-2 px-2 py-0.5 bg-primary/10 border border-primary/20 rounded-md text-[8px] font-black text-primary uppercase tracking-widest">
+            v2.0 Stable
+          </div>
           <p className="text-text-muted text-xs md:text-sm mt-1 text-center font-medium">
             Личный кабинет бухгалтерии
           </p>
