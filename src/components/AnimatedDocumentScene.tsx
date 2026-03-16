@@ -1,13 +1,24 @@
 "use client";
 
-import { useRef } from "react";
+import { useRef, useState, useEffect } from "react";
 import { useFrame } from "@react-three/fiber";
-import { Center, Float, PresentationControls } from "@react-three/drei";
+import { Float, PresentationControls } from "@react-three/drei";
 import * as THREE from "three";
 
 export default function AnimatedDocumentScene() {
   const documentGroup = useRef<THREE.Group>(null);
   const coinRef = useRef<THREE.Mesh>(null);
+  const [isLight, setIsLight] = useState(false);
+
+  useEffect(() => {
+    const checkTheme = () => {
+      setIsLight(document.documentElement.classList.contains("light"));
+    };
+    checkTheme();
+    const observer = new MutationObserver(checkTheme);
+    observer.observe(document.documentElement, { attributes: true, attributeFilter: ["class"] });
+    return () => observer.disconnect();
+  }, []);
 
   useFrame((state) => {
     if (documentGroup.current) {
@@ -36,30 +47,20 @@ export default function AnimatedDocumentScene() {
             <meshPhysicalMaterial 
               color="#FFC107" 
               transparent 
-              opacity={0.3} 
-              roughness={0.1} 
-              transmission={0.9} 
+              opacity={isLight ? 0.6 : 0.3} 
+              roughness={isLight ? 0.4 : 0.1} 
+              transmission={isLight ? 0.4 : 0.9} 
               thickness={0.5} 
-              emissive="#FFC107"
-              emissiveIntensity={0.2}
+              emissive={isLight ? "#000000" : "#FFC107"}
+              emissiveIntensity={isLight ? 0 : 0.2}
             />
             {/* Lines on Document */}
-            <mesh position={[0, 1, 0.12]}>
-              <boxGeometry args={[1.5, 0.1, 0.02]} />
-              <meshBasicMaterial color="#e5ff00" />
-            </mesh>
-            <mesh position={[0, 0.6, 0.12]}>
-              <boxGeometry args={[1.8, 0.1, 0.02]} />
-              <meshBasicMaterial color="#e5ff00" />
-            </mesh>
-            <mesh position={[0, 0.2, 0.12]}>
-              <boxGeometry args={[1.6, 0.1, 0.02]} />
-              <meshBasicMaterial color="#e5ff00" />
-            </mesh>
-            <mesh position={[0, -0.2, 0.12]}>
-              <boxGeometry args={[1.4, 0.1, 0.02]} />
-              <meshBasicMaterial color="#e5ff00" />
-            </mesh>
+            {[1, 0.6, 0.2, -0.2].map((y, idx) => (
+              <mesh key={idx} position={[0, y, 0.12]}>
+                <boxGeometry args={[1.4 + Math.random() * 0.4, 0.1, 0.02]} />
+                <meshBasicMaterial color={isLight ? "#000000" : "#e5ff00"} opacity={isLight ? 0.8 : 1} transparent />
+              </mesh>
+            ))}
           </mesh>
         </Float>
       </group>
@@ -71,14 +72,14 @@ export default function AnimatedDocumentScene() {
             <cylinderGeometry args={[0.5, 0.5, 0.1, 32]} />
             <meshPhysicalMaterial 
               color="#FFC107" 
-              metalness={0.8} 
-              roughness={0.2} 
-              emissive="#FFC107"
-              emissiveIntensity={0.4}
+              metalness={isLight ? 0.4 : 0.8} 
+              roughness={isLight ? 0.3 : 0.2} 
+              emissive={isLight ? "#000000" : "#FFC107"}
+              emissiveIntensity={isLight ? 0 : 0.4}
             />
             <mesh position={[0, 0.06, 0]} rotation={[-Math.PI / 2, 0, 0]}>
               <circleGeometry args={[0.3, 32]} />
-              <meshBasicMaterial color="#000000" />
+              <meshBasicMaterial color={isLight ? "#ffffff" : "#000000"} />
             </mesh>
           </mesh>
         </Float>
@@ -95,12 +96,12 @@ export default function AnimatedDocumentScene() {
           ]}
         >
           <sphereGeometry args={[Math.random() * 0.05 + 0.01, 8, 8]} />
-          <meshBasicMaterial color="#FFC107" transparent opacity={0.6} />
+          <meshBasicMaterial color="#FFC107" transparent opacity={isLight ? 0.3 : 0.6} />
         </mesh>
       ))}
 
-      <ambientLight intensity={0.5} />
-      <directionalLight position={[5, 5, 5]} intensity={2} color="#FFC107" />
+      <ambientLight intensity={isLight ? 1.5 : 0.5} />
+      <directionalLight position={[5, 5, 5]} intensity={isLight ? 2 : 2} color={isLight ? "#ffffff" : "#FFC107"} />
       <pointLight position={[-5, -5, -5]} intensity={1} color="#ffffff" />
     </PresentationControls>
   );

@@ -36,98 +36,88 @@ export function RecentDocuments() {
   }, []);
 
   return (
-    <div className="glass rounded-2xl border border-white/5 overflow-hidden w-full max-w-4xl shadow-lg relative z-10">
-      <div className="p-6 border-b border-white/5 flex items-center justify-between">
-        <h3 className="text-lg font-medium text-white">Недавние документы</h3>
-        <div className="flex gap-2">
+    <div className="glass rounded-3xl border border-border overflow-hidden w-full shadow-lg relative z-10 transition-all duration-300">
+      <div className="p-5 md:p-6 border-b border-border flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+        <h3 className="text-lg font-bold text-text">Недавние документы</h3>
+        <div className="flex items-center gap-3 w-full sm:w-auto">
           <button 
             onClick={fetchDocs}
-            className="p-2 text-neutral-400 hover:text-white transition-colors"
+            className="p-2 text-text-muted hover:text-text transition-colors bg-surface rounded-xl border border-border"
           >
-            <RefreshCcw size={14} className={loading ? "animate-spin" : ""} />
+            <RefreshCcw size={16} className={loading ? "animate-spin" : ""} />
           </button>
           <button 
             onClick={() => setIsModalOpen(true)}
-            className="bg-primary text-black hover:bg-primary-dark px-4 py-2 rounded-xl text-xs font-bold transition-all flex items-center gap-2 shadow-[0_10px_20px_rgba(255,193,7,0.15)]"
+            className="flex-1 sm:flex-initial bg-primary text-black hover:bg-primary-dark px-5 py-2.5 rounded-xl text-xs font-black transition-all flex items-center justify-center gap-2 shadow-[0_10px_20px_rgba(255,193,7,0.2)]"
           >
-            <Plus size={14} /> Загрузить новый
+            <Plus size={16} /> <span className="sm:inline">Загрузить</span>
           </button>
         </div>
       </div>
 
-      <div className="overflow-x-auto">
-        <table className="w-full text-sm text-left">
-          <thead className="text-xs text-neutral-500 uppercase bg-black/20">
-            <tr>
-              <th scope="col" className="px-6 py-4 font-medium">Название</th>
-              <th scope="col" className="px-6 py-4 font-medium">Загружен</th>
-              <th scope="col" className="px-6 py-4 font-medium">Статус</th>
-              <th scope="col" className="px-6 py-4 font-medium text-right">Действия</th>
-            </tr>
-          </thead>
-          <tbody className="divide-y divide-white/5">
-            {loading ? (
+      <div className="overflow-x-auto scrollbar-hide">
+        <div className="min-w-[600px] md:min-w-full">
+          <table className="w-full text-sm text-left border-collapse">
+            <thead className="text-[10px] text-text-muted uppercase bg-surface/50 font-black tracking-widest">
               <tr>
-                <td colSpan={4} className="px-6 py-12 text-center text-neutral-500">
-                  <div className="flex flex-col items-center gap-3">
-                    <Loader2 className="w-6 h-6 animate-spin text-primary" />
-                    <span>Загрузка документов...</span>
-                  </div>
-                </td>
+                <th scope="col" className="px-6 py-4">Название</th>
+                <th scope="col" className="px-6 py-4 hidden md:table-cell">Загружен</th>
+                <th scope="col" className="px-6 py-4">Статус</th>
+                <th scope="col" className="px-6 py-4 text-right">Действие</th>
               </tr>
-            ) : documents.length === 0 ? (
-              <tr>
-                <td colSpan={4} className="px-6 py-12 text-center text-neutral-500">
-                  <div className="flex flex-col items-center gap-3 opacity-50">
-                    <FileText className="w-8 h-8" />
-                    <span>Документы пока не загружены</span>
-                  </div>
-                </td>
-              </tr>
-            ) : (
-              documents.map((doc) => (
-                <tr
-                  key={doc.id}
-                  className="hover:bg-white/5 transition-colors group cursor-pointer"
-                >
-                  <td className="px-6 py-4 font-medium text-neutral-200 flex items-center gap-3">
-                    <div className="p-2 rounded bg-neutral-800/50 group-hover:bg-primary/20 group-hover:text-primary transition-colors">
-                      <FileText size={16} />
-                    </div>
-                    {doc.name}
-                  </td>
-                  <td className="px-6 py-4 text-neutral-400">
-                    {new Date(doc.createdAt).toLocaleDateString("ru-RU")}
-                  </td>
-                  <td className="px-6 py-4">
-                    <span className={`px-2 py-1 rounded text-xs font-medium 
-                      ${doc.status === 'Проверен' ? 'bg-green-500/10 text-green-400' : 'bg-primary/10 text-primary'}
-                    `}>
-                      {doc.status}
-                    </span>
-                  </td>
-                  <td className="px-6 py-4 text-right">
-                    <div className="flex items-center justify-end gap-4 opacity-0 group-hover:opacity-100 transition-opacity">
-                      <button className="text-primary hover:text-white flex items-center gap-1 font-medium text-xs transition-colors">
-                        <Download size={14} /> Скачать
-                      </button>
-                      <button className="text-primary hover:text-white flex items-center gap-1 font-medium text-xs transition-colors">
-                        <Eye size={14} /> Открыть
-                      </button>
-                    </div>
+            </thead>
+            <tbody className="divide-y divide-border/50">
+              {loading ? (
+                <tr>
+                  <td colSpan={4} className="px-6 py-12 text-center text-text-muted">
+                    <Loader2 className="w-6 h-6 animate-spin text-primary mx-auto" />
                   </td>
                 </tr>
-              ))
-            )}
-          </tbody>
-        </table>
+              ) : documents.length === 0 ? (
+                <tr>
+                  <td colSpan={4} className="px-6 py-12 text-center text-text-muted opacity-50 italic">
+                    Документов пока нет
+                  </td>
+                </tr>
+              ) : (
+                documents.map((doc) => (
+                  <tr key={doc.id} className="hover:bg-surface/30 transition-colors group">
+                    <td className="px-6 py-4 font-bold text-text">
+                      <div className="flex items-center gap-3">
+                        <div className="p-2 rounded-xl bg-surface border border-border group-hover:text-primary transition-colors">
+                          <FileText size={16} />
+                        </div>
+                        <span className="truncate max-w-[120px] md:max-w-xs">{doc.name}</span>
+                      </div>
+                    </td>
+                    <td className="px-6 py-4 text-text-muted text-xs hidden md:table-cell">
+                      {new Date(doc.createdAt).toLocaleDateString("ru-RU")}
+                    </td>
+                    <td className="px-6 py-4">
+                      <span className={`px-2.5 py-1 rounded-full text-[10px] font-black uppercase
+                        ${doc.status === 'Проверен' ? 'bg-green-500/10 text-green-500 border border-green-500/20' : 'bg-primary/10 text-primary border border-primary/20'}
+                      `}>
+                        {doc.status}
+                      </span>
+                    </td>
+                    <td className="px-6 py-4 text-right">
+                      <button className="text-primary hover:underline font-black text-xs transition-all uppercase tracking-tighter">
+                        Открыть
+                      </button>
+                    </td>
+                  </tr>
+                ))
+              )}
+            </tbody>
+          </table>
+        </div>
       </div>
 
-    <DocumentUploadModal 
-      isOpen={isModalOpen} 
-      onClose={() => setIsModalOpen(false)} 
-      onSuccess={fetchDocs} 
-    />
-  </div>
+      <DocumentUploadModal 
+        isOpen={isModalOpen} 
+        onClose={() => setIsModalOpen(false)} 
+        onSuccess={fetchDocs} 
+      />
+    </div>
   );
 }

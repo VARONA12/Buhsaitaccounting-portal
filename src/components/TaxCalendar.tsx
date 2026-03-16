@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { Loader2 } from "lucide-react";
+import { Loader2, CalendarDays } from "lucide-react";
 
 interface TaxRecord {
   id: string;
@@ -41,27 +41,34 @@ export function TaxCalendar() {
   };
 
   return (
-    <div className="glass p-6 rounded-2xl border border-white/5 w-full max-w-sm relative z-10">
-      <h3 className="text-lg font-medium text-white mb-6 font-sans">Налоговый календарь</h3>
-      <div className="text-sm text-neutral-400 mb-4 uppercase tracking-wider font-medium">Ближайшие дедлайны</div>
-      <div className="space-y-4">
+    <div className="glass p-5 md:p-6 rounded-[32px] border border-border w-full relative z-10 transition-all duration-300">
+      <div className="flex items-center gap-3 mb-6">
+        <div className="p-2 rounded-xl bg-primary/10 text-primary">
+          <CalendarDays size={20} />
+        </div>
+        <h3 className="text-xl font-bold text-text font-sans">Календарь</h3>
+      </div>
+      
+      <div className="text-[10px] text-text-muted mb-4 uppercase tracking-[0.2em] font-black pl-1">Дедлайны</div>
+      
+      <div className="space-y-3">
         {loading ? (
-          <div className="flex flex-col items-center py-8 opacity-50">
-            <Loader2 className="w-6 h-6 animate-spin text-primary" />
+          <div className="flex flex-col items-center py-10">
+            <Loader2 className="w-8 h-8 animate-spin text-primary opacity-50" />
           </div>
         ) : deadlines.length === 0 ? (
-          <div className="text-center py-8 text-neutral-500 text-sm">Нет запланированных событий</div>
+          <div className="text-center py-10 text-text-muted text-xs italic">Событий не запланировано</div>
         ) : (
           deadlines.map((deadline) => (
             <div
               key={deadline.id}
-              className="flex items-center gap-4 bg-primary text-[#000000] rounded-xl p-3 shadow-[0_0_20px_rgba(255,193,7,0.15)] transform transition-transform hover:scale-[1.02] cursor-pointer"
+              className="flex items-center gap-4 bg-primary text-black rounded-[20px] p-3.5 shadow-[0_10px_25px_rgba(255,193,7,0.2)] transform transition-transform hover:scale-[1.02] cursor-pointer"
             >
-              <div className="border-r border-[#000000]/20 pr-4 flex flex-col items-center justify-center min-w-[3.5rem]">
-                <span className="text-xs font-bold">{getMonthStr(deadline.dueDate)}</span>
+              <div className="border-r border-black/10 pr-4 flex flex-col items-center justify-center min-w-[3.5rem]">
+                <span className="text-[10px] font-black tracking-tighter">{getMonthStr(deadline.dueDate)}</span>
                 <span className="text-2xl font-black leading-none">{getDayStr(deadline.dueDate)}</span>
               </div>
-              <div className="font-semibold leading-tight">{deadline.title}</div>
+              <div className="font-bold text-sm leading-tight pr-2">{deadline.title}</div>
             </div>
           ))
         )}

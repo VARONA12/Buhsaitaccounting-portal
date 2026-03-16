@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { X, Save, Loader2 } from "lucide-react";
+import { X, Save, Loader2, User } from "lucide-react";
 
 interface EditProfileModalProps {
   isOpen: boolean;
@@ -34,7 +34,7 @@ export function EditProfileModal({ isOpen, onClose, user, onSuccess }: EditProfi
     const data = {
       name: formData.get("name"),
       company: formData.get("company"),
-      birthDate: birthDateStr || formData.get("birthDate"), // Fallback if necessary
+      birthDate: birthDateStr || formData.get("birthDate"),
     };
 
     try {
@@ -57,90 +57,95 @@ export function EditProfileModal({ isOpen, onClose, user, onSuccess }: EditProfi
 
   return (
     <div className="fixed inset-0 z-[110] flex items-center justify-center p-4">
-      <div className="absolute inset-0 bg-black/80 backdrop-blur-sm" onClick={onClose}></div>
+      <div className="absolute inset-0 bg-black/80 backdrop-blur-md transition-opacity" onClick={onClose}></div>
       
-      <div className="relative w-full max-w-md glass rounded-3xl border border-white/10 shadow-2xl overflow-hidden animate-in zoom-in-95 duration-200">
-        <div className="p-6 border-b border-white/5 flex items-center justify-between">
-          <h2 className="text-xl font-bold text-white">Редактировать профиль</h2>
-          <button onClick={onClose} className="p-2 hover:bg-white/5 rounded-full text-neutral-400">
+      <div className="relative w-full max-w-md glass rounded-[32px] border border-border shadow-2xl overflow-hidden animate-in zoom-in-95 duration-200">
+        <div className="p-6 border-b border-border flex items-center justify-between bg-surface/50">
+          <div className="flex items-center gap-3">
+            <div className="p-2 rounded-xl bg-primary/10 text-primary">
+              <User size={20} />
+            </div>
+            <h2 className="text-xl font-black text-text tracking-tight">Профиль</h2>
+          </div>
+          <button onClick={onClose} className="p-2 hover:bg-surface rounded-full text-text-muted transition-colors">
             <X size={20} />
           </button>
         </div>
 
         <form onSubmit={handleSubmit} className="p-6 space-y-5">
-          <div>
-            <label className="block text-xs font-bold text-neutral-500 uppercase mb-2">ФИО</label>
+          <div className="space-y-2">
+            <label className="block text-[10px] font-black text-text-muted uppercase tracking-widest pl-2">ФИО Пользователя</label>
             <input 
               name="name" 
               defaultValue={user.name} 
               required
-              className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-sm focus:border-primary/50 text-white outline-none"
+              placeholder="Иванов Иван Иванович"
+              className="w-full bg-surface border border-border rounded-2xl px-5 py-4 text-sm focus:border-primary text-text outline-none transition-all"
             />
           </div>
 
-          <div>
-            <label className="block text-xs font-bold text-neutral-500 uppercase mb-2">Название компании</label>
+          <div className="space-y-2">
+            <label className="block text-[10px] font-black text-text-muted uppercase tracking-widest pl-2">Компания</label>
             <input 
               name="company" 
               defaultValue={user.company} 
               required
-              className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-sm focus:border-primary/50 text-white outline-none"
+              placeholder="ООО ЭлитФинанс"
+              className="w-full bg-surface border border-border rounded-2xl px-5 py-4 text-sm focus:border-primary text-text outline-none transition-all"
             />
           </div>
 
-          <div>
-            <label className="block text-xs font-bold text-neutral-500 uppercase mb-2">Дата рождения</label>
+          <div className="space-y-2">
+            <label className="block text-[10px] font-black text-text-muted uppercase tracking-widest pl-2">Дата рождения</label>
             <div className="flex gap-2">
               <select
                 name="birthDay"
                 defaultValue={user.birthDate ? user.birthDate.split('-')[2] : ""}
-                className="w-1/3 bg-white/5 border border-white/10 rounded-xl px-2 sm:px-4 py-3 text-sm focus:border-primary/50 text-white outline-none appearance-none cursor-pointer"
+                className="w-1/4 bg-surface border border-border rounded-2xl px-2 py-4 text-xs font-bold focus:border-primary text-text outline-none appearance-none cursor-pointer text-center"
               >
-                <option value="" disabled className="text-black">День</option>
+                <option value="" disabled>Дн</option>
                 {Array.from({ length: 31 }, (_, i) => {
                   const d = String(i + 1).padStart(2, '0');
-                  return <option key={d} value={d} className="text-black">{d}</option>;
+                  return <option key={d} value={d}>{d}</option>;
                 })}
               </select>
 
               <select
                 name="birthMonth"
                 defaultValue={user.birthDate ? user.birthDate.split('-')[1] : ""}
-                className="w-1/3 bg-white/5 border border-white/10 rounded-xl px-2 sm:px-4 py-3 text-sm focus:border-primary/50 text-white outline-none appearance-none cursor-pointer"
+                className="flex-1 bg-surface border border-border rounded-2xl px-4 py-4 text-xs font-bold focus:border-primary text-text outline-none appearance-none cursor-pointer"
               >
-                <option value="" disabled className="text-black">Месяц</option>
+                <option value="" disabled>Месяц</option>
                 {[
-                  "01 - Январь", "02 - Февраль", "03 - Март", "04 - Апрель",
-                  "05 - Май", "06 - Июнь", "07 - Июль", "08 - Август",
-                  "09 - Сентябрь", "10 - Октябрь", "11 - Ноябрь", "12 - Декабрь"
-                ].map(m => (
-                  <option key={m.substring(0,2)} value={m.substring(0,2)} className="text-black">{m}</option>
+                  "Январь", "Февраль", "Март", "Апрель", "Май", "Июнь",
+                  "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"
+                ].map((m, idx) => (
+                  <option key={idx} value={String(idx + 1).padStart(2, '0')}>{m}</option>
                 ))}
               </select>
 
               <select
                 name="birthYear"
                 defaultValue={user.birthDate ? user.birthDate.split('-')[0] : ""}
-                className="w-1/3 bg-white/5 border border-white/10 rounded-xl px-2 sm:px-4 py-3 text-sm focus:border-primary/50 text-white outline-none appearance-none cursor-pointer"
+                className="w-1/3 bg-surface border border-border rounded-2xl px-2 py-4 text-xs font-bold focus:border-primary text-text outline-none appearance-none cursor-pointer text-center"
               >
-                <option value="" disabled className="text-black">Год</option>
-                {Array.from({ length: 100 }, (_, i) => {
-                  const y = String(new Date().getFullYear() - i);
-                  return <option key={y} value={y} className="text-black">{y}</option>;
+                <option value="" disabled>Год</option>
+                {Array.from({ length: 80 }, (_, i) => {
+                  const y = String(new Date().getFullYear() - 18 - i);
+                  return <option key={y} value={y}>{y}</option>;
                 })}
               </select>
             </div>
-            <input type="hidden" name="birthDate" id="birthDateHidden" />
           </div>
 
-          {error && <p className="text-red-400 text-xs">{error}</p>}
+          {error && <p className="text-red-500 text-xs font-bold px-2">{error}</p>}
 
           <button 
             type="submit"
             disabled={isLoading}
-            className="w-full bg-primary text-black py-4 rounded-xl font-bold flex items-center justify-center gap-2 hover:scale-[1.02] active:scale-95 transition-all shadow-[0_0_20px_rgba(255,193,7,0.2)] disabled:opacity-50"
+            className="w-full bg-primary text-black py-4 rounded-2xl font-black flex items-center justify-center gap-2 hover:bg-primary-dark transition-all shadow-[0_10px_30px_rgba(255,193,7,0.2)] disabled:opacity-50"
           >
-            {isLoading ? <Loader2 className="animate-spin" /> : <><Save size={20} /> Сохранить изменения</>}
+            {isLoading ? <Loader2 className="animate-spin" size={20} /> : <><Save size={20} /> Сохранить</>}
           </button>
         </form>
       </div>

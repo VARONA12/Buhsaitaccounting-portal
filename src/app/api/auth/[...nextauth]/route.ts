@@ -1,13 +1,15 @@
 import NextAuth, { NextAuthOptions } from "next-auth";
 import CredentialsProvider from "next-auth/providers/credentials";
 import { db } from "@/lib/db";
+import bcrypt from "bcryptjs";
 
 export const authOptions: NextAuthOptions = {
   providers: [
     CredentialsProvider({
-      name: "OTP",
+      name: "OTP/Password",
       credentials: {
         phone: { label: "Телефон", type: "text" },
+        password: { label: "Пароль", type: "password" },
       },
       async authorize(credentials) {
         if (!credentials?.phone) {
@@ -18,25 +20,51 @@ export const authOptions: NextAuthOptions = {
           where: { phone: credentials.phone },
         });
 
-        if (!user) {
-          // Авто-создание пользователя, если его нет
-          user = await db.user.create({
+        // Если пароль передан, проверяем его
+        if (credentials.password) {
+          if (!user || !user.password) {
+            throw new Error("Пользователь не найден или пароль не установлен");
+          }
+          const isValid = await bcrypt.compare(credentials.password, user.password);
+          if (!isValid) {
+            throw new Error("Неверный пароль");
+          }
+        } 
+        // Если пароля нет, значит это вход через OTP (который уже проверен на предыдущем шаге в UI)
+        else {
+          if (!user) {
+            // Авто-создание пользователя, если его нет (только для OTP входа)
+            user = await db.user.create({
+              data: {
+                phone: credentials.phone,
+                name: "Новый пользователь",
+                company: "Моя Компания",
+                plan: "Базовый",
+              }
+            });
+          }
+        }
+
+        // Создаем запись о входе
+        try {
+          await db.loginSession.create({
             data: {
-              phone: credentials.phone,
-              name: "Новый пользователь",
-              company: "Моя Компания",
-              plan: "Базовый",
+              userId: user!.id,
+              device: "Браузер (Mac OS)",
+              ip: "Вход через портал"
             }
           });
+        } catch (e) {
+          console.error("Failed to create login session", e);
         }
 
         return {
-          id: user.id,
-          name: user.name,
-          company: user.company,
-          phone: user.phone,
-          plan: user.plan,
-          birthDate: user.birthDate,
+          id: user!.id,
+          name: user!.name,
+          company: user!.company,
+          phone: user!.phone,
+          plan: user!.plan,
+          birthDate: user!.birthDate,
         };
       },
     }),

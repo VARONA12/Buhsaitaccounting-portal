@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect, useRef } from "react";
-import { Bell, Check, Info, AlertTriangle, CheckCircle2 } from "lucide-react";
+import { Bell, Loader2 } from "lucide-react";
 
 interface Notification {
   id: string;
@@ -29,7 +29,7 @@ export function NotificationDropdown() {
 
   useEffect(() => {
     fetchNotifications();
-    const interval = setInterval(fetchNotifications, 10000);
+    const interval = setInterval(fetchNotifications, 15000);
     return () => clearInterval(interval);
   }, []);
 
@@ -62,49 +62,50 @@ export function NotificationDropdown() {
     <div className="relative" ref={dropdownRef}>
       <button 
         onClick={() => setIsOpen(!isOpen)}
-        className="relative p-2 text-neutral-400 hover:text-white transition-colors"
+        className={`relative p-2 rounded-xl transition-all duration-300 ${isOpen ? "bg-surface text-primary" : "text-text-muted hover:text-text hover:bg-surface"}`}
       >
         <Bell className="h-5 w-5" />
         {unreadCount > 0 && (
-          <span className="absolute top-2 right-2 h-2 w-2 bg-primary rounded-full shadow-[0_0_10px_rgba(255,193,7,0.8)]"></span>
+          <span className="absolute top-1.5 right-1.5 h-2 w-2 bg-primary rounded-full shadow-[0_0_8px_rgba(255,193,7,0.5)] animate-pulse"></span>
         )}
       </button>
 
       {isOpen && (
-        <div className="absolute right-0 mt-4 w-80 glass rounded-2xl border border-white/10 shadow-2xl overflow-hidden animate-in fade-in slide-in-from-top-2 duration-200 z-50">
-          <div className="p-4 border-b border-white/5 bg-white/5 flex items-center justify-between">
-            <h3 className="font-bold text-sm">Уведомления</h3>
+        <div className="absolute right-[-60px] sm:right-0 mt-4 w-[280px] sm:w-80 glass rounded-3xl border border-border shadow-2xl overflow-hidden animate-in fade-in slide-in-from-top-2 duration-200 z-50">
+          <div className="p-4 border-b border-border bg-surface flex items-center justify-between">
+            <h3 className="font-black text-[10px] uppercase tracking-widest text-text">Уведомления</h3>
             {unreadCount > 0 && (
               <button 
                 onClick={() => markAsRead("all")}
-                className="text-[10px] text-primary hover:underline font-bold uppercase tracking-wider"
+                className="text-[10px] text-primary hover:underline font-black uppercase tracking-tighter"
               >
-                Прочитать все
+                Все прочитано
               </button>
             )}
           </div>
 
-          <div className="max-h-96 overflow-y-auto">
+          <div className="max-h-80 overflow-y-auto no-scrollbar">
             {notifications.length === 0 ? (
-              <div className="p-8 text-center text-neutral-500 text-sm">
-                Нет новых уведомлений
+              <div className="p-8 text-center text-text-muted text-xs italic">
+                Новых уведомлений нет
               </div>
             ) : (
               notifications.map((n) => (
                 <div 
                   key={n.id} 
-                  className={`p-4 border-b border-white/5 hover:bg-white/5 transition-colors cursor-pointer ${!n.read ? 'bg-primary/5' : 'opacity-60'}`}
+                  className={`p-4 border-b border-border transition-colors cursor-pointer ${!n.read ? 'bg-primary/5' : 'opacity-50 hover:opacity-100 hover:bg-surface/50'}`}
                   onClick={() => !n.read && markAsRead(n.id)}
                 >
                   <div className="flex gap-3">
-                    <div className={`mt-1 h-2 w-2 rounded-full shrink-0 ${
-                      n.type === 'success' ? 'bg-green-500' : 
-                      n.type === 'warning' ? 'bg-yellow-500' : 'bg-primary'
+                    <div className={`mt-1.5 h-1.5 w-1.5 rounded-full shrink-0 ${
+                      n.type === 'success' ? 'bg-green-500 shadow-[0_0_8px_rgba(34,197,94,0.4)]' : 
+                      n.type === 'warning' ? 'bg-yellow-500 shadow-[0_0_8px_rgba(234,179,8,0.4)]' : 
+                      'bg-primary shadow-[0_0_8px_rgba(255,193,7,0.4)]'
                     }`}></div>
-                    <div>
-                      <div className="text-xs font-bold text-white mb-1">{n.title}</div>
-                      <p className="text-[11px] text-neutral-400 leading-tight">{n.message}</p>
-                      <div className="text-[9px] text-neutral-600 mt-2">
+                    <div className="flex-1 min-w-0">
+                      <div className="text-xs font-bold text-text mb-0.5 leading-tight">{n.title}</div>
+                      <p className="text-[10px] text-text-muted leading-relaxed line-clamp-2">{n.message}</p>
+                      <div className="text-[9px] text-text-muted/60 mt-1.5 font-medium uppercase tracking-tighter">
                         {new Date(n.createdAt).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}
                       </div>
                     </div>

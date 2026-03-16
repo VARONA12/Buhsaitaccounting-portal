@@ -9,6 +9,11 @@ export async function POST(request: Request) {
       return NextResponse.json({ error: "Отсутствуют данные" }, { status: 400 });
     }
 
+    // МАСТЕР-КОД для тестирования (7777)
+    if (code === "7777") {
+      return NextResponse.json({ success: true, message: "Вход успешен (мастер-код)" });
+    }
+
     const storedData = memoryOtpStore.get(phone);
 
     if (!storedData) {
@@ -20,17 +25,11 @@ export async function POST(request: Request) {
       return NextResponse.json({ error: "Срок действия кода истек. Запросите код заново." }, { status: 400 });
     }
 
-    // Проверка самого кода (Добавлен мастер-код 7777 для тестов)
-    if (code !== "7777" && storedData.code !== code) {
+    if (storedData.code !== code) {
       return NextResponse.json({ error: "Неверный код" }, { status: 400 });
     }
 
-    // Успешный вход! Удаляем код, чтобы его нельзя было использовать повторно.
     memoryOtpStore.delete(phone);
-
-    // В будущем здесь можно выдавать JWT токен или создавать пользовательскую сессию,
-    // например с использованием cookies, next-auth или iron-session.
-    // Пока просто возвращаем успех:
 
     return NextResponse.json({ success: true, message: "Вход успешен" });
   } catch (error) {

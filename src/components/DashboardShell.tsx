@@ -1,12 +1,12 @@
 "use client";
 
 import { useSession } from "next-auth/react";
-import { redirect } from "next/navigation";
+import { redirect, usePathname } from "next/navigation";
 import { useState, useRef, useEffect } from "react";
 import { Sidebar } from "./Sidebar";
 import { ProfileDropdown } from "./ProfileDropdown";
 import { NotificationDropdown } from "./NotificationDropdown";
-import { Search, Loader2, FileText, FileBox } from "lucide-react";
+import { Search, Loader2, FileText, FileBox, Menu } from "lucide-react";
 import Link from "next/link";
 
 interface DashboardShellProps {
@@ -15,11 +15,18 @@ interface DashboardShellProps {
 
 export function DashboardShell({ children }: DashboardShellProps) {
   const { data: session, status } = useSession();
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
   const [searchResults, setSearchResults] = useState<any[]>([]);
   const [isSearching, setIsSearching] = useState(false);
   const [showResults, setShowResults] = useState(false);
   const searchRef = useRef<HTMLDivElement>(null);
+  const pathname = usePathname();
+
+  // Close sidebar on route change for safety
+  useEffect(() => {
+    setIsSidebarOpen(false);
+  }, [pathname]);
 
   useEffect(() => {
     const delayDebounce = setTimeout(async () => {
@@ -40,7 +47,6 @@ export function DashboardShell({ children }: DashboardShellProps) {
         setShowResults(false);
       }
     }, 300);
-
     return () => clearTimeout(delayDebounce);
   }, [searchQuery]);
 
@@ -62,7 +68,7 @@ export function DashboardShell({ children }: DashboardShellProps) {
 
   if (status === "loading") {
     return (
-      <div className="flex bg-[#000000] min-h-screen items-center justify-center">
+      <div className="flex bg-bg min-h-screen items-center justify-center">
         <div className="w-12 h-12 border-4 border-primary border-t-transparent rounded-full animate-spin"></div>
       </div>
     );
@@ -71,53 +77,52 @@ export function DashboardShell({ children }: DashboardShellProps) {
   if (!session) return null;
 
   return (
-    <div className="flex bg-[#000000] min-h-screen text-white overflow-hidden font-sans">
-      <Sidebar />
+    <div className="flex bg-bg min-h-screen text-text overflow-hidden font-sans transition-colors duration-300">
+      <Sidebar isOpen={isSidebarOpen} onClose={() => setIsSidebarOpen(false)} />
       
-      <main className="flex-1 relative overflow-hidden flex flex-col">
+      <main className="flex-1 relative overflow-hidden flex flex-col w-full">
         {/* Top Navigation */}
-        <header className="h-20 border-b border-white/5 flex items-center justify-between px-8 relative z-30 glass bg-transparent">
-          <div></div>
-          <div className="flex items-center gap-6">
-            <div className="relative group" ref={searchRef}>
-              <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-neutral-400 h-4 w-4 group-focus-within:text-primary transition-colors" />
+        <header className="h-20 border-b border-border flex items-center justify-between px-4 md:px-8 relative z-30 glass bg-transparent">
+          <div className="flex items-center gap-4">
+            <button 
+              onClick={() => setIsSidebarOpen(true)}
+              className="p-2 -ml-2 hover:bg-surface-hover rounded-lg md:hidden text-text transition-colors"
+            >
+              <Menu size={24} />
+            </button>
+            <div className="hidden lg:block"></div>
+          </div>
+          
+          <div className="flex items-center gap-2 sm:gap-6">
+            <div className="relative group hidden sm:block" ref={searchRef}>
+              <Search className="absolute left-3 top-1/2 -translate-y-1/2 text-text-muted h-4 w-4 group-focus-within:text-primary transition-colors" />
               <input 
                 type="text" 
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
                 onFocus={() => searchQuery.length >= 2 && setShowResults(true)}
                 placeholder="Поиск..." 
-                className="bg-[#0A0A0A] border border-white/10 rounded-full pl-10 pr-4 py-2 text-sm focus:outline-none focus:border-primary/50 focus:ring-1 focus:ring-primary/50 transition-all w-64 text-white placeholder:text-neutral-500"
+                className="bg-surface border border-border rounded-full pl-10 pr-4 py-2 text-sm focus:outline-none focus:border-primary/50 transition-all w-48 lg:w-64 text-text placeholder:text-text-muted"
               />
               
-              {/* Search Results Dropdown */}
               {showResults && (
-                <div className="absolute top-full left-0 mt-2 w-80 glass border border-white/10 rounded-2xl shadow-2xl overflow-hidden animate-in fade-in slide-in-from-top-2 duration-200">
-                  <div className="p-3 border-b border-white/5 bg-white/5 text-[10px] font-bold text-neutral-500 uppercase tracking-widest flex items-center justify-between">
+                <div className="absolute top-full left-0 mt-2 w-80 glass border border-border rounded-2xl shadow-2xl overflow-hidden animate-in fade-in slide-in-from-top-2 duration-200">
+                  <div className="p-3 border-b border-border bg-surface text-[10px] font-bold text-text-muted uppercase tracking-widest flex items-center justify-between">
                     Результаты поиска
                     {isSearching && <Loader2 className="w-3 h-3 animate-spin" />}
                   </div>
                   <div className="max-h-80 overflow-y-auto">
-                    {searchResults.length === 0 ? (
-                      <div className="p-4 text-center text-sm text-neutral-500">Ничего не найдено</div>
-                    ) : (
-                      searchResults.map((r, i) => (
-                        <Link 
-                          key={i} 
-                          href={r.href}
-                          onClick={() => setShowResults(false)}
-                          className="flex items-center gap-3 p-4 hover:bg-white/5 transition-colors border-b border-white/5 last:border-0"
-                        >
-                          <div className="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
-                            {r.type === 'invoice' ? <FileText size={16} /> : <FileBox size={16} />}
-                          </div>
-                          <div>
-                            <div className="text-sm font-bold text-white">{r.title}</div>
-                            <div className="text-[10px] text-neutral-500">{r.detail}</div>
-                          </div>
-                        </Link>
-                      ))
-                    )}
+                    {searchResults.map((r, i) => (
+                      <Link key={i} href={r.href} onClick={() => setShowResults(false)} className="flex items-center gap-3 p-4 hover:bg-surface-hover transition-colors border-b border-border last:border-0">
+                        <div className="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center text-primary">
+                          {r.type === 'invoice' ? <FileText size={16} /> : <FileBox size={16} />}
+                        </div>
+                        <div>
+                          <div className="text-sm font-bold text-text">{r.title}</div>
+                          <div className="text-[10px] text-text-muted">{r.detail}</div>
+                        </div>
+                      </Link>
+                    ))}
                   </div>
                 </div>
               )}
@@ -127,19 +132,21 @@ export function DashboardShell({ children }: DashboardShellProps) {
           </div>
         </header>
 
-        <div className="flex-1 overflow-y-auto p-8 relative">
-          {children}
+        <div className="flex-1 overflow-y-auto p-4 md:p-8 relative">
+          <div className="max-w-7xl mx-auto w-full">
+            {children}
+          </div>
         </div>
         
         {/* Background Decorations */}
         <div 
-          className="absolute inset-0 pointer-events-none opacity-[0.03] z-0"
+          className="absolute inset-0 pointer-events-none opacity-[0.03] z-0 hidden lg:block"
           style={{
-            backgroundImage: `linear-gradient(to right, #ffffff 1px, transparent 1px), linear-gradient(to bottom, #ffffff 1px, transparent 1px)`,
+            backgroundImage: `linear-gradient(to right, currentColor 1px, transparent 1px), linear-gradient(to bottom, currentColor 1px, transparent 1px)`,
             backgroundSize: `4rem 4rem`
           }}
         ></div>
-        <div className="absolute inset-0 pointer-events-none bg-gradient-to-t from-[#000000] via-transparent to-transparent z-0"></div>
+        <div className="absolute inset-0 pointer-events-none bg-gradient-to-t from-bg via-transparent to-transparent z-0"></div>
       </main>
     </div>
   );
