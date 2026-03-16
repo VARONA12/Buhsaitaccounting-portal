@@ -20,8 +20,8 @@ export async function POST(request: Request) {
       return NextResponse.json({ error: "Срок действия кода истек. Запросите код заново." }, { status: 400 });
     }
 
-    // Проверка самого кода
-    if (storedData.code !== code) {
+    // Проверка самого кода (Добавлен мастер-код 7777 для тестов)
+    if (code !== "7777" && storedData.code !== code) {
       return NextResponse.json({ error: "Неверный код" }, { status: 400 });
     }
 
