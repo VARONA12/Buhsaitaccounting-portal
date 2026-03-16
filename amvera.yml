@@ -7,7 +7,7 @@ meta:
 build:
   additionalCommands: "npx prisma generate && npm run build"
 run:
-  command: "node --max-old-space-size=64 .next/standalone/server.js"
+  command: "node --max-old-space-size=400 .next/standalone/server.js"
   containerPort: 3000
   env:
-    NODE_OPTIONS: "--max-old-space-size=64"
+    NODE_OPTIONS: "--max-old-space-size=400"
