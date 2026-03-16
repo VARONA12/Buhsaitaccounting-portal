@@ -5,6 +5,12 @@ import bcrypt from 'bcryptjs'
 
 export async function POST(request: Request) {
   try {
+    // AUTO-FIX database schema
+    try {
+      await db.$executeRawUnsafe(`ALTER TABLE "User" ADD COLUMN IF NOT EXISTS "inn" TEXT;`);
+      await db.$executeRawUnsafe(`ALTER TABLE "User" ADD COLUMN IF NOT EXISTS "taxSystem" TEXT;`);
+    } catch (e) {}
+
     const { name, company, phone, code, password } = await request.json()
 
     if (!name || !company || !phone || !code || !password) {
@@ -21,7 +27,8 @@ export async function POST(request: Request) {
 
     // Проверяем, существует ли уже такой пользователь
     const existingUser = await db.user.findUnique({
-      where: { phone }
+      where: { phone },
+      select: { id: true, phone: true }
     })
 
     if (existingUser) {
