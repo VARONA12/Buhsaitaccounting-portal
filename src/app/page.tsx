@@ -41,8 +41,6 @@ export default function Home() {
             </h2>
           </div>
         </motion.div>
-
-        </motion.div>
       </div>
 
       <div className="mb-12">
