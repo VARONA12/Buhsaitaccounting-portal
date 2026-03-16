@@ -1,19 +1,13 @@
----
+# Конфигурация для Amvera Cloud
 meta:
   environment: node
   toolchain:
     name: npm
-    version: 18
+    version: 20
 build:
-  skip: false
-  additionalCommands: npm run build
-  artifacts:
-    '*': /
+  command: npm run build
 run:
-  persistenceMount: /data
-  scriptName: index.js
-  scriptArguments: null
-  nodeArguments: null
   command: npm run start
-  containerPort: 3000
-  servicePort: 80
+  persistence:
+    - path: /data
+      shared: true

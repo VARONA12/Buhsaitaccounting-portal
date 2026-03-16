@@ -1,0 +1,76 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id            String         @id @default(cuid())
+  phone         String         @unique
+  name          String
+  company       String
+  birthDate     String?
+  plan          String         @default("Базовый")
+  createdAt     DateTime       @default(now())
+  documents     Document[]
+  invoices      Invoice[]
+  messages      Message[]
+  notifications Notification[]
+  taxRecords    TaxRecord[]
+}
+
+model Document {
+  id        String   @id @default(cuid())
+  name      String
+  url       String?
+  status    String   @default("На проверке")
+  createdAt DateTime @default(now())
+  userId    String
+  user      User     @relation(fields: [userId], references: [id])
+}
+
+model TaxRecord {
+  id        String   @id @default(cuid())
+  title     String
+  amount    String?
+  dueDate   DateTime
+  status    String
+  createdAt DateTime @default(now())
+  userId    String
+  user      User     @relation(fields: [userId], references: [id])
+}
+
+model Invoice {
+  id        String   @id @default(cuid())
+  number    String
+  client    String
+  amount    String
+  status    String   @default("Ожидание")
+  dueDate   DateTime
+  createdAt DateTime @default(now())
+  userId    String
+  user      User     @relation(fields: [userId], references: [id])
+}
+
+model Notification {
+  id        String   @id @default(cuid())
+  title     String
+  message   String
+  type      String   @default("info")
+  read      Boolean  @default(false)
+  createdAt DateTime @default(now())
+  userId    String
+  user      User     @relation(fields: [userId], references: [id])
+}
+
+model Message {
+  id        String   @id @default(cuid())
+  text      String
+  sender    String   @default("user")
+  createdAt DateTime @default(now())
+  userId    String
+  user      User     @relation(fields: [userId], references: [id])
+}
