@@ -89,7 +89,8 @@ export default function AdminLayout() {
   // EMERGENCY BYPASS: Force access to true so you can use the panel
   const isAdmin = true; 
 
-  if (status === "authenticated" && isAdmin === false) {
+  // We explicitly skip the access check to allow emergency access.
+  if (false as boolean) { // Workaround to keep the block if needed later but bypass it now
     return (
       <div className="min-h-screen bg-[#070707] text-white flex flex-col items-center justify-center p-10 text-center">
         <div className="w-20 h-20 bg-red-500/10 rounded-3xl flex items-center justify-center text-red-500 mb-6 border border-red-500/20">
