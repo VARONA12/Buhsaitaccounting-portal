@@ -14,12 +14,20 @@ export const authOptions: NextAuthOptions = {
           throw new Error("Номер телефона не указан");
         }
 
-        const user = await db.user.findUnique({
+        let user = await db.user.findUnique({
           where: { phone: credentials.phone },
         });
 
         if (!user) {
-          return null; // Пользователь не найден, нужно регистрироваться
+          // Авто-создание пользователя, если его нет
+          user = await db.user.create({
+            data: {
+              phone: credentials.phone,
+              name: "Новый пользователь",
+              company: "Моя Компания",
+              plan: "Базовый",
+            }
+          });
         }
 
         return {
