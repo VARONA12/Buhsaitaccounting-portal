@@ -104,7 +104,7 @@ export default function RegisterPage() {
         throw new Error(signInRes.error);
       }
 
-      window.location.href = "/";
+      window.location.href = "/dashboard";
     } catch (error: any) {
       setErrorMsg(error.message || "Ошибка проверки кода.");
     } finally {

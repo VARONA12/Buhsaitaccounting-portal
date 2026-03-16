@@ -14,7 +14,7 @@ export function Sidebar() {
   const pathname = usePathname();
 
   const navItems = [
-    { name: "Главная", icon: LayoutDashboard, href: "/" },
+    { name: "Главная", icon: LayoutDashboard, href: "/dashboard" },
     { name: "Счета", icon: Wallet, href: "/invoices" },
     { name: "Календарь", icon: CalendarDays, href: "/calendar" },
     { name: "Акты", icon: FileText, href: "/acts" },

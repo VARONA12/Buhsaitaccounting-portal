@@ -1,127 +1,179 @@
 "use client";
 
-import { useSession } from "next-auth/react";
-import { DashboardShell } from "@/components/DashboardShell";
-import { TaxCalendar } from "@/components/TaxCalendar";
-import { RecentDocuments } from "@/components/RecentDocuments";
-import AnimatedDocumentWrapper from "@/components/AnimatedDocumentWrapper";
+import Link from "next/link";
 import { motion } from "framer-motion";
+import { ShieldCheck, TrendingUp, Clock, ArrowRight, CheckCircle2 } from "lucide-react";
 
-import { FinancialSummary } from "@/components/FinancialSummary";
-
-import { QuickStats } from "@/components/QuickStats";
-
-export default function Home() {
-  const { data: session } = useSession();
-
-  const companyName = session?.user?.company || "Ваша компания";
-
+export default function LandingPage() {
   return (
-    <DashboardShell>
-      {/* Refined Background Orb (Yellow only) */}
-      <div className="fixed top-[-10%] right-[-10%] w-[500px] h-[500px] bg-primary/5 blur-[120px] rounded-full z-0 pointer-events-none" />
-      
-      <div className="flex flex-col xl:flex-row gap-8 mb-12 relative z-10">
-        <motion.div 
-          initial={{ opacity: 0, x: -20 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8 }}
-          className="flex-1"
-        >
-          <h1 className="text-5xl font-extrabold tracking-tight mb-4 leading-tight">
-            С возвращением,<br />
-            <span className="text-primary drop-shadow-[0_0_20px_rgba(var(--primary-rgb),0.3)]">
-              {companyName}!
-            </span>
-          </h1>
+    <div className="min-h-screen bg-[#000000] text-white font-sans overflow-x-hidden selection:bg-primary selection:text-black">
+      {/* Background decorations */}
+      <div className="fixed top-[-20%] right-[-10%] w-[600px] h-[600px] bg-primary/10 blur-[150px] rounded-full z-0 pointer-events-none" />
+      <div className="fixed bottom-[-20%] left-[-10%] w-[500px] h-[500px] bg-primary/5 blur-[120px] rounded-full z-0 pointer-events-none" />
+
+      {/* Navigation */}
+      <nav className="relative z-10 w-full border-b border-white/5 bg-black/50 backdrop-blur-md">
+        <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <div className="h-px w-12 bg-neutral-800" />
-            <h2 className="text-neutral-500 text-xl font-light">
-              Обзор за апрель 2024
-            </h2>
+            <div className="w-10 h-10 rounded-lg bg-primary flex items-center justify-center">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#000000" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+                <path d="m3 21 1.9-5.7a8.5 8.5 0 1 1 3.8 3.8z" />
+              </svg>
+            </div>
+            <span className="font-bold text-2xl tracking-wide text-white">АПЕКС</span>
           </div>
-        </motion.div>
-      </div>
-
-      <div className="mb-12">
-        <QuickStats />
-      </div>
-
-      <div className="relative z-10 grid grid-cols-1 xl:grid-cols-2 gap-8 items-start mb-8">
-        <div className="space-y-8">
-          <TaxCalendar />
-          <FinancialSummary />
+          
+          <div className="hidden md:flex items-center gap-8">
+            <a href="#services" className="text-sm font-medium text-neutral-400 hover:text-white transition-colors">Услуги</a>
+            <a href="#advantages" className="text-sm font-medium text-neutral-400 hover:text-white transition-colors">Преимущества</a>
+            <Link 
+              href="/login" 
+              className="px-6 py-2.5 rounded-full bg-white/5 border border-white/10 text-white font-medium hover:bg-white/10 transition-all text-sm flex items-center gap-2 group"
+            >
+              Личный кабинет
+              <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+            </Link>
+          </div>
         </div>
-        <div className="h-[500px] w-full relative xl:-mt-20">
-          <AnimatedDocumentWrapper />
+      </nav>
+
+      {/* Hero Section */}
+      <main className="relative z-10 w-full max-w-7xl mx-auto px-6 pt-32 pb-20">
+        <div className="text-center max-w-4xl mx-auto">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7 }}
+            className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-bold uppercase tracking-widest mb-8"
+          >
+            <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
+            Ваша бухгалтерия в безопасности
+          </motion.div>
+          
+          <motion.h1 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, delay: 0.1 }}
+            className="text-5xl md:text-7xl font-extrabold tracking-tight mb-8 leading-[1.1]"
+          >
+            Бухгалтерское<br />
+            обслуживание <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-yellow-200">нового уровня</span>
+          </motion.h1>
+
+          <motion.p 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, delay: 0.2 }}
+            className="text-lg md:text-xl text-neutral-400 mb-12 max-w-2xl mx-auto leading-relaxed font-light"
+          >
+            Возьмем на себя всю рутину, налоги и отчетность. Автоматизируем процессы, чтобы вы могли сосредоточиться на росте и развитии бизнеса.
+          </motion.p>
+
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7, delay: 0.3 }}
+            className="flex flex-col sm:flex-row items-center justify-center gap-4"
+          >
+            <Link 
+              href="/login"
+              className="w-full sm:w-auto px-8 py-4 bg-primary text-black font-bold rounded-full hover:scale-105 hover:shadow-[0_0_30px_rgba(255,193,7,0.3)] transition-all flex items-center justify-center gap-2"
+            >
+              Войти в личный кабинет
+              <ArrowRight className="w-5 h-5" />
+            </Link>
+            <a 
+              href="#services"
+              className="w-full sm:w-auto px-8 py-4 bg-white/5 border border-white/10 text-white font-medium rounded-full hover:bg-white/10 transition-all flex items-center justify-center"
+            >
+              Наши услуги
+            </a>
+          </motion.div>
         </div>
-      </div>
+      </main>
 
-      <motion.div
-        initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.5, delay: 0.4 }}
-      >
-        <RecentDocuments />
-      </motion.div>
+      {/* Features/Stats Section */}
+      <section id="advantages" className="relative z-10 w-full bg-white/[0.02] border-y border-white/5 py-24">
+        <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-12">
+          {[
+            { icon: ShieldCheck, title: "100% Защита", desc: "Гарантируем отсутствие штрафов. Вся ответственность застрахована." },
+            { icon: TrendingUp, title: "Снижение налогов", desc: "Законно оптимизируем налогооблагаемую базу и находим скрытые резервы." },
+            { icon: Clock, title: "Отчетность вовремя", desc: "Синхронизация с 1С и банками. Соблюдение всех дедлайнов." }
+          ].map((feature, i) => (
+            <motion.div 
+              key={i}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: i * 0.1 }}
+              className="flex items-start gap-4"
+            >
+              <div className="w-14 h-14 rounded-2xl bg-primary/10 border border-primary/20 flex items-center justify-center shrink-0">
+                <feature.icon className="w-6 h-6 text-primary" />
+              </div>
+              <div>
+                <h3 className="text-xl font-bold text-white mb-2">{feature.title}</h3>
+                <p className="text-neutral-400 font-light leading-relaxed">{feature.desc}</p>
+              </div>
+            </motion.div>
+          ))}
+        </div>
+      </section>
 
-      {/* News & 1C Sync Status (Black/Yellow/White theme) */}
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mt-12 pb-12 relative z-10">
-        <motion.div 
-          whileHover={{ y: -5 }}
-          className="lg:col-span-2 glass rounded-3xl border border-white/10 p-8 shadow-2xl relative overflow-hidden"
-        >
-          <h3 className="text-2xl font-bold text-white mb-8 flex items-center gap-3">
-            <span className="w-2 h-8 bg-primary rounded-full" />
-            Новости для бизнеса
-          </h3>
-          <div className="space-y-8">
-            {[
-              { title: "Изменения в налоговом законодательстве с мая 2024", date: "Сегодня", tag: "Законы" },
-              { title: "Как правильно оформить сотрудника на удаленку?", date: "Вчера", tag: "HR" },
-              { title: "Новые лимиты по УСН на текущий год", date: "12 апреля", tag: "Налоги" },
-            ].map((news, i) => (
-              <motion.div 
-                key={i} 
-                initial={{ opacity: 0, x: -20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                transition={{ delay: 0.1 * i }}
-                className="flex gap-6 group cursor-pointer"
-              >
-                <div className="w-28 h-20 rounded-2xl bg-white/5 border border-white/5 shrink-0 overflow-hidden flex items-center justify-center">
-                  <div className="w-12 h-12 bg-primary/5 rounded-full group-hover:scale-150 transition-transform duration-700" />
-                </div>
-                <div className="flex-1">
-                  <div className="flex items-center gap-3 mb-2">
-                    <span className="text-[10px] font-bold text-primary uppercase bg-primary/10 tracking-widest px-2 py-1 rounded-md border border-primary/20">{news.tag}</span>
-                    <span className="text-[10px] text-neutral-500 font-mono italic">{news.date}</span>
-                  </div>
-                  <h4 className="text-lg font-semibold text-white/90 leading-tight group-hover:text-primary transition-colors duration-300">{news.title}</h4>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </motion.div>
+      {/* Services Section */}
+      <section id="services" className="relative z-10 w-full max-w-7xl mx-auto px-6 py-32">
+        <div className="text-center mb-16">
+          <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">Комплексные решения</h2>
+          <p className="text-neutral-400 max-w-2xl mx-auto font-light">
+            От регистрации бизнеса до полного финансового сопровождения. Все необходимое в одном окне.
+          </p>
+        </div>
 
-        <motion.div 
-          whileHover={{ scale: 1.02 }}
-          className="glass rounded-3xl border border-white/10 p-8 flex flex-col items-center text-center justify-center shadow-2xl"
-        >
-          <div className="w-20 h-20 rounded-2xl bg-primary/10 flex items-center justify-center text-primary mb-6">
-            <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M21 2v6h-6"/><path d="M3 12a9 9 0 0 1 15-6.7L21 8"/><path d="M3 22v-6h6"/><path d="M21 12a9 9 0 0 1-15 6.7L3 16"/></svg>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {[
+            {
+              title: "Комплексное ведение",
+              points: ["Обработка первичной документации", "Расчет зарплаты и кадровый учет", "Налоговая и бухгалтерская отчетность", "Интеграция с клиент-банком"]
+            },
+            {
+              title: "Мощный личный кабинет",
+              points: ["Актуальные финансовые показатели", "Календарь дедлайнов", "Безопасный обмен документами", "Аналитика бизнес-процессов"]
+            }
+          ].map((service, i) => (
+            <motion.div 
+              key={i}
+              initial={{ opacity: 0, scale: 0.95 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: i * 0.1 }}
+              className="glass p-10 rounded-3xl border border-white/10 hover:border-primary/30 transition-colors"
+            >
+              <h3 className="text-2xl font-bold text-primary mb-6">{service.title}</h3>
+              <ul className="space-y-4">
+                {service.points.map((point, j) => (
+                  <li key={j} className="flex items-center gap-3 text-neutral-300">
+                    <CheckCircle2 className="w-5 h-5 text-primary/50 shrink-0" />
+                    {point}
+                  </li>
+                ))}
+              </ul>
+            </motion.div>
+          ))}
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="relative z-10 border-t border-white/5 bg-black/50 py-12">
+        <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
+          <div className="flex items-center gap-2">
+            <span className="font-bold tracking-widest text-white/50">АПЕКС</span>
+            <span className="text-white/20 text-sm">© {new Date().getFullYear()}</span>
           </div>
-          <h3 className="text-xl font-bold text-white mb-3 text-glow">Синхронизация с 1С</h3>
-          <p className="text-sm text-neutral-400 mb-8 px-4 font-light leading-relaxed">Ваши данные обновляются в реальном времени.</p>
-          <div className="flex items-center gap-3 text-primary font-mono text-[10px] mb-8 bg-black border border-primary/20 px-4 py-2 rounded-full">
-            <span className="w-2 h-2 rounded-full bg-primary animate-ping"></span>
-            ACTIVE SYNC
-          </div>
-          <button className="w-full py-4 bg-primary text-black rounded-2xl font-bold hover:bg-primary-dark transition-all duration-300 text-sm transform active:scale-95 shadow-[0_4px_15px_rgba(255,193,7,0.3)]">
-            Открыть отчет сверки
-          </button>
-        </motion.div>
-      </div>
-    </DashboardShell>
+          <p className="text-neutral-500 text-sm text-center md:text-left">
+            Профессиональное бухгалтерское обслуживание.
+          </p>
+        </div>
+      </footer>
+    </div>
   );
 }
