@@ -5,8 +5,9 @@ import { db } from "@/lib/db";
 
 export async function PUT(
   request: Request,
-  { params }: { params: { id: string } }
+  { params }: { params: Promise<{ id: string }> }
 ) {
+  const { id } = await params;
   const session = await getServerSession(authOptions);
 
   if (!session || !(session.user as any).isAdmin) {
@@ -17,7 +18,7 @@ export async function PUT(
 
   try {
     const invoice = await db.invoice.update({
-      where: { id: params.id },
+      where: { id },
       data: { status },
     });
 
