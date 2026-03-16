@@ -1,0 +1,13 @@
+# Конфигурация для Amvera Cloud
+meta:
+  environment: node
+  toolchain:
+    name: npm
+    version: 20
+build:
+  command: npm run build
+run:
+  command: npm run start
+  persistence:
+    - path: /data
+      shared: true
