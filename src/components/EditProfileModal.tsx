@@ -22,10 +22,19 @@ export function EditProfileModal({ isOpen, onClose, user, onSuccess }: EditProfi
     setError("");
 
     const formData = new FormData(e.currentTarget);
+    const birthYear = formData.get("birthYear");
+    const birthMonth = formData.get("birthMonth");
+    const birthDay = formData.get("birthDay");
+    
+    let birthDateStr = "";
+    if (birthYear && birthMonth && birthDay) {
+      birthDateStr = `${birthYear}-${birthMonth}-${birthDay}`;
+    }
+
     const data = {
       name: formData.get("name"),
       company: formData.get("company"),
-      birthDate: formData.get("birthDate"),
+      birthDate: birthDateStr || formData.get("birthDate"), // Fallback if necessary
     };
 
     try {
@@ -81,12 +90,47 @@ export function EditProfileModal({ isOpen, onClose, user, onSuccess }: EditProfi
 
           <div>
             <label className="block text-xs font-bold text-neutral-500 uppercase mb-2">Дата рождения</label>
-            <input 
-              name="birthDate" 
-              type="date"
-              defaultValue={user.birthDate || ""} 
-              className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-sm focus:border-primary/50 text-white outline-none"
-            />
+            <div className="flex gap-2">
+              <select
+                name="birthDay"
+                defaultValue={user.birthDate ? user.birthDate.split('-')[2] : ""}
+                className="w-1/3 bg-white/5 border border-white/10 rounded-xl px-2 sm:px-4 py-3 text-sm focus:border-primary/50 text-white outline-none appearance-none cursor-pointer"
+              >
+                <option value="" disabled className="text-black">День</option>
+                {Array.from({ length: 31 }, (_, i) => {
+                  const d = String(i + 1).padStart(2, '0');
+                  return <option key={d} value={d} className="text-black">{d}</option>;
+                })}
+              </select>
+
+              <select
+                name="birthMonth"
+                defaultValue={user.birthDate ? user.birthDate.split('-')[1] : ""}
+                className="w-1/3 bg-white/5 border border-white/10 rounded-xl px-2 sm:px-4 py-3 text-sm focus:border-primary/50 text-white outline-none appearance-none cursor-pointer"
+              >
+                <option value="" disabled className="text-black">Месяц</option>
+                {[
+                  "01 - Январь", "02 - Февраль", "03 - Март", "04 - Апрель",
+                  "05 - Май", "06 - Июнь", "07 - Июль", "08 - Август",
+                  "09 - Сентябрь", "10 - Октябрь", "11 - Ноябрь", "12 - Декабрь"
+                ].map(m => (
+                  <option key={m.substring(0,2)} value={m.substring(0,2)} className="text-black">{m}</option>
+                ))}
+              </select>
+
+              <select
+                name="birthYear"
+                defaultValue={user.birthDate ? user.birthDate.split('-')[0] : ""}
+                className="w-1/3 bg-white/5 border border-white/10 rounded-xl px-2 sm:px-4 py-3 text-sm focus:border-primary/50 text-white outline-none appearance-none cursor-pointer"
+              >
+                <option value="" disabled className="text-black">Год</option>
+                {Array.from({ length: 100 }, (_, i) => {
+                  const y = String(new Date().getFullYear() - i);
+                  return <option key={y} value={y} className="text-black">{y}</option>;
+                })}
+              </select>
+            </div>
+            <input type="hidden" name="birthDate" id="birthDateHidden" />
           </div>
 
           {error && <p className="text-red-400 text-xs">{error}</p>}

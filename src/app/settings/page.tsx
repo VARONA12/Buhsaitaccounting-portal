@@ -11,7 +11,6 @@ export default function SettingsPage() {
     { id: "general", label: "Основные", icon: Globe },
     { id: "notifications", label: "Уведомления", icon: Bell },
     { id: "security", label: "Безопасность", icon: Shield },
-    { id: "billing", label: "Подписка", icon: CreditCard },
   ];
 
   return (
@@ -90,18 +89,10 @@ export default function SettingsPage() {
               </div>
             )}
 
-            {activeTab === "billing" && (
+            {activeTab === "security" && (
               <div className="space-y-6 animate-in fade-in slide-in-from-right-4 duration-300">
-                <h2 className="text-xl font-bold border-b border-white/5 pb-4">Ваша подписка</h2>
-                
-                <div className="bg-primary/10 border border-primary/20 p-6 rounded-2xl flex items-center justify-between">
-                  <div>
-                    <div className="text-xs text-primary font-bold uppercase mb-1">Текущий план</div>
-                    <div className="text-2xl font-black text-white">Базовый Плюс</div>
-                    <div className="text-xs text-neutral-400 mt-2">Следующее списание: 12.05.2024</div>
-                  </div>
-                  <button className="bg-primary text-black px-6 py-2 rounded-xl font-bold text-sm">Улучшить</button>
-                </div>
+                <h2 className="text-xl font-bold border-b border-white/5 pb-4">Безопасность</h2>
+                <div className="text-neutral-400 text-sm">Настройки безопасности будут доступны в следующем обновлении.</div>
               </div>
             )}
           </div>

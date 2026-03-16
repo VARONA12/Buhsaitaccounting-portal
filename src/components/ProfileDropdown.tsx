@@ -72,18 +72,23 @@ export function ProfileDropdown() {
                 <p className="text-sm text-neutral-400 truncate">{user.company}</p>
               </div>
             </div>
-            
-            <div className="mt-4 flex items-center gap-2 bg-primary/10 border border-primary/20 rounded-lg px-3 py-2 text-primary w-fit">
-              <Crown className="w-4 h-4" />
-              <span className="text-xs font-bold uppercase tracking-wider">Тариф: {user.plan}</span>
-            </div>
           </div>
 
           {/* Информация об аккаунте */}
           <div className="p-3 space-y-1">
             <div className="flex items-center gap-3 px-3 py-2 text-sm text-neutral-300">
               <Phone className="w-4 h-4 text-neutral-500 shrink-0" />
-              <span className="truncate">{user.phone}</span>
+              <span className="truncate">
+                {(() => {
+                  if (!user.phone) return "";
+                  const cleaned = user.phone.replace(/\D/g, "");
+                  const match10 = cleaned.match(/^(\d{3})(\d{3})(\d{2})(\d{2})$/);
+                  const match11 = cleaned.match(/^(\d{1})(\d{3})(\d{3})(\d{2})(\d{2})$/);
+                  if (match10) return `+7 (${match10[1]}) ${match10[2]}-${match10[3]}-${match10[4]}`;
+                  if (match11) return `+7 (${match11[2]}) ${match11[3]}-${match11[4]}-${match11[5]}`;
+                  return user.phone.startsWith("+") ? user.phone : `+7${cleaned}`;
+                })()}
+              </span>
             </div>
             
             <div className="flex items-center gap-3 px-3 py-2 text-sm text-neutral-300">
