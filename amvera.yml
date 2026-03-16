@@ -5,7 +5,7 @@ meta:
     name: npm
     version: 22
 build:
-  additionalCommands: "npx prisma generate && npm run build"
+  additionalCommands: "npm run build"
 run:
-  command: "node .next/standalone/server.js"
+  command: "npx prisma generate && node .next/standalone/server.js"
   containerPort: 3000
