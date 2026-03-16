@@ -12,6 +12,9 @@ export const authOptions: NextAuthOptions = {
         password: { label: "Пароль", type: "password" },
       },
       async authorize(credentials) {
+        if (!credentials?.phone) {
+          throw new Error("Номер телефона не указан");
+        }
         const normalizedPhone = credentials.phone.replace(/\D/g, "").slice(-10);
 
         let user = await db.user.findFirst({
