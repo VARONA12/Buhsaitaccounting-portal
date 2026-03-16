@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { ShieldCheck, TrendingUp, Clock, ArrowRight, CheckCircle2 } from "lucide-react";
+import { Hero3D } from "@/components/Hero3D";
 
 export default function LandingPage() {
   return (
@@ -20,7 +21,7 @@ export default function LandingPage() {
                 <path d="m3 21 1.9-5.7a8.5 8.5 0 1 1 3.8 3.8z" />
               </svg>
             </div>
-            <span className="font-bold text-2xl tracking-wide text-white">АПЕКС</span>
+            <span className="font-bold text-2xl tracking-wide text-white">ЭлитФинанс</span>
           </div>
           
           <div className="hidden md:flex items-center gap-8">
@@ -39,55 +40,66 @@ export default function LandingPage() {
 
       {/* Hero Section */}
       <main className="relative z-10 w-full max-w-7xl mx-auto px-6 pt-32 pb-20">
-        <div className="text-center max-w-4xl mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="text-left">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.7 }}
+              className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-bold uppercase tracking-widest mb-8"
+            >
+              <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
+              Ваша бухгалтерия в безопасности
+            </motion.div>
+            
+            <motion.h1 
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.7, delay: 0.1 }}
+              className="text-5xl md:text-7xl font-extrabold tracking-tight mb-8 leading-[1.1]"
+            >
+              Бухгалтерское<br />
+              обслуживание <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-yellow-200">нового уровня</span>
+            </motion.h1>
+
+            <motion.p 
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.7, delay: 0.2 }}
+              className="text-lg md:text-xl text-neutral-400 mb-12 max-w-xl leading-relaxed font-light"
+            >
+              Возьмем на себя всю рутину, налоги и отчетность. Автоматизируем процессы, чтобы вы могли сосредоточиться на росте бизнеса.
+            </motion.p>
+
+            <motion.div 
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.7, delay: 0.3 }}
+              className="flex flex-col sm:flex-row items-center justify-start gap-4"
+            >
+              <Link 
+                href="/login"
+                className="w-full sm:w-auto px-8 py-4 bg-primary text-black font-bold rounded-full hover:scale-105 hover:shadow-[0_0_30px_rgba(255,193,7,0.3)] transition-all flex items-center justify-center gap-2"
+              >
+                Войти в личный кабинет
+                <ArrowRight className="w-5 h-5" />
+              </Link>
+              <a 
+                href="#services"
+                className="w-full sm:w-auto px-8 py-4 bg-white/5 border border-white/10 text-white font-medium rounded-full hover:bg-white/10 transition-all flex items-center justify-center"
+              >
+                Наши услуги
+              </a>
+            </motion.div>
+          </div>
+
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7 }}
-            className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-xs font-bold uppercase tracking-widest mb-8"
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 1, delay: 0.3 }}
+            className="flex items-center justify-center relative w-full h-[300px] md:h-[500px]"
           >
-            <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
-            Ваша бухгалтерия в безопасности
-          </motion.div>
-          
-          <motion.h1 
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.1 }}
-            className="text-5xl md:text-7xl font-extrabold tracking-tight mb-8 leading-[1.1]"
-          >
-            Бухгалтерское<br />
-            обслуживание <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-yellow-200">нового уровня</span>
-          </motion.h1>
-
-          <motion.p 
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.2 }}
-            className="text-lg md:text-xl text-neutral-400 mb-12 max-w-2xl mx-auto leading-relaxed font-light"
-          >
-            Возьмем на себя всю рутину, налоги и отчетность. Автоматизируем процессы, чтобы вы могли сосредоточиться на росте и развитии бизнеса.
-          </motion.p>
-
-          <motion.div 
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.3 }}
-            className="flex flex-col sm:flex-row items-center justify-center gap-4"
-          >
-            <Link 
-              href="/login"
-              className="w-full sm:w-auto px-8 py-4 bg-primary text-black font-bold rounded-full hover:scale-105 hover:shadow-[0_0_30px_rgba(255,193,7,0.3)] transition-all flex items-center justify-center gap-2"
-            >
-              Войти в личный кабинет
-              <ArrowRight className="w-5 h-5" />
-            </Link>
-            <a 
-              href="#services"
-              className="w-full sm:w-auto px-8 py-4 bg-white/5 border border-white/10 text-white font-medium rounded-full hover:bg-white/10 transition-all flex items-center justify-center"
-            >
-              Наши услуги
-            </a>
+            <Hero3D />
           </motion.div>
         </div>
       </main>
@@ -166,7 +178,7 @@ export default function LandingPage() {
       <footer className="relative z-10 border-t border-white/5 bg-black/50 py-12">
         <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="flex items-center gap-2">
-            <span className="font-bold tracking-widest text-white/50">АПЕКС</span>
+            <span className="font-bold tracking-widest text-white/50">ЭлитФинанс</span>
             <span className="text-white/20 text-sm">© {new Date().getFullYear()}</span>
           </div>
           <p className="text-neutral-500 text-sm text-center md:text-left">

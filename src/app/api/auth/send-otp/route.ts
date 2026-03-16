@@ -23,7 +23,7 @@ export async function POST(request: Request) {
 
     // Если указаны API-ключи от SMSC.RU, отправляем боевую СМС
     if (SMSC_LOGIN && SMSC_PASSWORD) {
-      const message = `Код входа в АПЕКС: ${code}`;
+      const message = `Код входа в ЭлитФинанс: ${code}`;
       const cleanPhone = phone.replace(/[^0-9]/g, ""); 
       const url = `https://smsc.ru/sys/send.php?login=${SMSC_LOGIN}&psw=${SMSC_PASSWORD}&phones=${cleanPhone}&mes=${encodeURIComponent(message)}&fmt=3`;
       
