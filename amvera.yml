@@ -7,5 +7,5 @@ meta:
 build:
   additionalCommands: "npx prisma generate && npm run build"
 run:
-  command: "npx next start -p 3000 -H 0.0.0.0"
+  command: "node .next/standalone/server.js"
   containerPort: 3000
