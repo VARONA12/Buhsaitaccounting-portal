@@ -90,28 +90,19 @@ export default function AdminLayout() {
   const isAdmin = true; 
 
   // We explicitly skip the access check to allow emergency access.
-  if (false as boolean) { // Workaround to keep the block if needed later but bypass it now
+  // We explicitly skip the access check to allow emergency access.
+  if (false as boolean) { 
     return (
       <div className="min-h-screen bg-[#070707] text-white flex flex-col items-center justify-center p-10 text-center">
         <div className="w-20 h-20 bg-red-500/10 rounded-3xl flex items-center justify-center text-red-500 mb-6 border border-red-500/20">
           <AlertCircle size={40} />
         </div>
         <h1 className="text-3xl font-black mb-4">Доступ ограничен</h1>
-        <p className="text-neutral-500 max-w-sm mb-4">У вашего аккаунта ({session?.user?.phone}) нет прав администратора.</p>
+        <p className="text-neutral-500 max-w-sm mb-4">У вашего аккаунта нет прав администратора.</p>
         <div className="bg-white/5 p-6 rounded-2xl text-[10px] font-mono text-neutral-400 mb-8 max-w-lg text-left border border-white/5 space-y-1">
            <div className="text-primary font-black mb-2 uppercase">System Diagnostics:</div>
            <div>Session Admin: {sessionIsAdmin ? "YES" : "NO"}</div>
-           <div>DB Admin: {dbIsAdmin === null ? "CHECKING..." : (dbIsAdmin ? "YES" : "NO")}</div>
-           {debugData && (
-             <>
-               <div className="pt-2 border-t border-white/5 mt-2">
-                 <div>Session ID: <span className="text-white">{debugData.sessionId}</span></div>
-                 <div>DB User Found: <span className={debugData.dbFound ? "text-green-500" : "text-red-500"}>{debugData.dbFound ? "YES" : "NO"}</span></div>
-                 <div>DB Phone: <span className="text-white">{debugData.dbPhone}</span></div>
-                 <div>DB Is Admin (Strict): <span className={debugData.dbIsAdmin ? "text-green-500" : "text-red-500"}>{debugData.dbIsAdmin ? "YES" : "NO"}</span></div>
-               </div>
-             </>
-           )}
+           <div>Access: Bypass Enabled</div>
         </div>
         <div className="flex gap-4">
           <button onClick={() => signOut()} className="px-8 py-4 bg-white/5 border border-white/10 rounded-2xl font-bold hover:bg-white/10 transition-all">Выйти</button>
