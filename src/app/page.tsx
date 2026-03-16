@@ -3,7 +3,12 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { ShieldCheck, TrendingUp, Clock, ArrowRight, CheckCircle2 } from "lucide-react";
-import { Hero3D } from "@/components/Hero3D";
+import dynamic from "next/dynamic";
+
+const Hero3D = dynamic(() => import("@/components/Hero3D").then((mod) => mod.Hero3D), {
+  ssr: false,
+  loading: () => <div className="w-full h-full animate-pulse bg-primary/5 rounded-full blur-3xl"></div>
+});
 
 export default function LandingPage() {
   return (
