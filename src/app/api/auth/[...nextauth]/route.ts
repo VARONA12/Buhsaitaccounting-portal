@@ -19,6 +19,8 @@ export const authOptions: NextAuthOptions = {
           await db.$executeRawUnsafe(`ALTER TABLE "User" ADD COLUMN IF NOT EXISTS "lastMonthProfit" TEXT;`);
           await db.$executeRawUnsafe(`ALTER TABLE "User" ADD COLUMN IF NOT EXISTS "legalAddress" TEXT;`);
           await db.$executeRawUnsafe(`ALTER TABLE "User" ADD COLUMN IF NOT EXISTS "birthDate" TEXT;`);
+          await db.$executeRawUnsafe(`ALTER TABLE "User" ADD COLUMN IF NOT EXISTS "password" TEXT;`);
+          await db.$executeRawUnsafe(`ALTER TABLE "User" ADD COLUMN IF NOT EXISTS "isAdmin" BOOLEAN DEFAULT false;`);
         } catch (e) {
           console.error("Schema sync failed (probably already fixed):", e);
         }

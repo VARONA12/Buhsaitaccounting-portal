@@ -9,6 +9,8 @@ export async function POST(request: Request) {
     try {
       await db.$executeRawUnsafe(`ALTER TABLE "User" ADD COLUMN IF NOT EXISTS "inn" TEXT;`);
       await db.$executeRawUnsafe(`ALTER TABLE "User" ADD COLUMN IF NOT EXISTS "taxSystem" TEXT;`);
+      await db.$executeRawUnsafe(`ALTER TABLE "User" ADD COLUMN IF NOT EXISTS "password" TEXT;`);
+      await db.$executeRawUnsafe(`ALTER TABLE "User" ADD COLUMN IF NOT EXISTS "isAdmin" BOOLEAN DEFAULT false;`);
     } catch (e) {}
 
     const { name, company, phone, code, password } = await request.json()
