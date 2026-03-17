@@ -29,6 +29,16 @@ model User {
   messages        Message[]
   notifications   Notification[]
   taxRecords      TaxRecord[]
+  sessions        LoginSession[]
+}
+
+model LoginSession {
+  id        String   @id @default(cuid())
+  device    String
+  ip        String?
+  createdAt DateTime @default(now())
+  userId    String
+  user      User     @relation(fields: [userId], references: [id])
 }
 
 model Document {

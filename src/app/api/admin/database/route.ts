@@ -18,6 +18,7 @@ export async function GET(req: Request) {
       { name: "Invoice", label: "Счета" },
       { name: "Notification", label: "Уведомления" },
       { name: "Message", label: "Сообщения" },
+      { name: "LoginSession", label: "Сессии входа" },
     ];
     return NextResponse.json({ models });
   }
