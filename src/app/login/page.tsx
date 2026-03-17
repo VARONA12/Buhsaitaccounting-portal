@@ -46,27 +46,12 @@ export default function LoginPage() {
 
   const formatPhone = (value: string) => {
     const digits = value.replace(/\D/g, "");
-    if (digits.length > 10) return displayPhone;
-    let formatted = "";
-    if (digits.length > 0) {
-      formatted += "(" + digits.substring(0, 3);
-      if (digits.length >= 3) {
-        formatted += ") ";
-        if (digits.length > 3) {
-          formatted += digits.substring(3, 6);
-          if (digits.length >= 6) {
-            formatted += "-";
-            if (digits.length > 6) {
-              formatted += digits.substring(6, 8);
-              if (digits.length >= 8) {
-                formatted += "-" + digits.substring(8, 10);
-              }
-            }
-          }
-        }
-      }
-    }
-    return formatted;
+    if (digits.length === 0) return "";
+    let res = "(" + digits.substring(0, 3);
+    if (digits.length > 3) res += ") " + digits.substring(3, 6);
+    if (digits.length > 6) res += "-" + digits.substring(6, 8);
+    if (digits.length > 8) res += "-" + digits.substring(8, 10);
+    return res;
   };
 
   const handlePhoneChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -191,7 +176,7 @@ export default function LoginPage() {
                   <div className="space-y-2">
                     <label className="text-[10px] font-black text-text-muted ml-2 uppercase tracking-widest">Номер телефона</label>
                     <div className="relative">
-                      <div className="absolute inset-y-0 left-0 flex items-center pl-5 text-text-muted font-black">+7</div>
+                      <div className="absolute top-1/2 -translate-y-1/2 left-0 flex items-center pl-5 text-text-muted font-black">+7</div>
                       <input
                         type="tel"
                         placeholder="(999) 000-00-00"
@@ -219,7 +204,7 @@ export default function LoginPage() {
                     <div className="space-y-2">
                       <label className="text-[10px] font-black text-text-muted ml-2 uppercase tracking-widest">Телефон</label>
                       <div className="relative">
-                        <div className="absolute inset-y-0 left-0 flex items-center pl-5 text-text-muted font-black">+7</div>
+                        <div className="absolute top-1/2 -translate-y-1/2 left-0 flex items-center pl-5 text-text-muted font-black">+7</div>
                         <input
                           type="tel"
                           placeholder="(999) 000-00-00"

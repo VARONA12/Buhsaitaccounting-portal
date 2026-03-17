@@ -46,33 +46,21 @@ export default function RegisterPage() {
 
   const formatPhone = (value: string) => {
     const digits = value.replace(/\D/g, "");
-    if (digits.length > 10) return displayPhone;
+    if (digits.length === 0) return "";
     
-    let formatted = "";
-    if (digits.length > 0) {
-      formatted += "(" + digits.substring(0, 3);
-      if (digits.length >= 3) {
-        formatted += ") ";
-        if (digits.length > 3) {
-          formatted += digits.substring(3, 6);
-          if (digits.length >= 6) {
-            formatted += "-";
-            if (digits.length > 6) {
-              formatted += digits.substring(6, 8);
-              if (digits.length >= 8) {
-                formatted += "-" + digits.substring(8, 10);
-              }
-            }
-          }
-        }
-      }
-    }
-    return formatted;
+    let res = "(" + digits.substring(0, 3);
+    if (digits.length > 3) res += ") " + digits.substring(3, 6);
+    if (digits.length > 6) res += "-" + digits.substring(6, 8);
+    if (digits.length > 8) res += "-" + digits.substring(8, 10);
+    return res;
   };
 
   const handlePhoneChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const input = e.target.value;
     const digits = input.replace(/\D/g, "");
+    
+    // Prevent state update if we're just deleting a non-digit character at a boundary
+    // But actually, update from digits is safer.
     const formatted = formatPhone(digits);
     setDisplayPhone(formatted);
     registerForm.setValue("phone", digits, { shouldValidate: true });
@@ -176,7 +164,7 @@ export default function RegisterPage() {
               <div className="space-y-2">
                 <label className="text-[10px] font-black text-text-muted ml-2 uppercase tracking-widest leading-none">Телефон</label>
                 <div className="relative">
-                  <div className="absolute inset-y-0 left-0 flex items-center pl-4 text-text-muted font-black">+7</div>
+                  <div className="absolute top-1/2 -translate-y-1/2 left-0 flex items-center pl-4 text-text-muted font-black">+7</div>
                   <input
                     type="tel"
                     placeholder="(999) 000-00-00"
@@ -187,18 +175,18 @@ export default function RegisterPage() {
                       registerForm.formState.errors.phone ? "border-red-500" : "border-border focus:border-primary"
                     }`}
                   />
-                  {registerForm.formState.errors.phone && (
-                    <p className="text-[9px] text-red-500 font-bold mt-1 ml-2 uppercase">
-                      {registerForm.formState.errors.phone.message}
-                    </p>
-                  )}
                 </div>
+                {registerForm.formState.errors.phone && (
+                  <p className="text-[9px] text-red-500 font-bold mt-1 ml-2 uppercase">
+                    {registerForm.formState.errors.phone.message}
+                  </p>
+                )}
               </div>
 
               <div className="space-y-2">
                 <label className="text-[10px] font-black text-text-muted ml-2 uppercase tracking-widest leading-none">Придумайте пароль</label>
                 <div className="relative">
-                  <div className="absolute inset-y-0 left-0 flex items-center pl-4 text-text-muted/60"><Lock size={18}/></div>
+                  <div className="absolute top-1/2 -translate-y-1/2 left-0 flex items-center pl-4 text-text-muted/60"><Lock size={18}/></div>
                   <input
                     type="password"
                     placeholder="8+ знаков (буквы и цифры)"
@@ -207,12 +195,12 @@ export default function RegisterPage() {
                     }`}
                     {...registerForm.register("password")}
                   />
-                  {registerForm.formState.errors.password && (
-                    <p className="text-[9px] text-red-500 font-bold mt-1 ml-2 uppercase">
-                      {registerForm.formState.errors.password.message}
-                    </p>
-                  )}
                 </div>
+                {registerForm.formState.errors.password && (
+                  <p className="text-[9px] text-red-500 font-bold mt-1 ml-2 uppercase">
+                    {registerForm.formState.errors.password.message}
+                  </p>
+                )}
               </div>
 
               {errorMsg && <p className="text-[10px] text-red-500 text-center font-black bg-red-500/5 py-3 rounded-xl border border-red-500/10 uppercase">{errorMsg}</p>}
