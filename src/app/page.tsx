@@ -5,10 +5,23 @@ import { motion } from "framer-motion";
 import { ShieldCheck, TrendingUp, Clock, ArrowRight, CheckCircle2 } from "lucide-react";
 import dynamic from "next/dynamic";
 
-const Hero3D = dynamic(() => import("@/components/Hero3D").then((mod) => mod.Hero3D), {
+const Hero3D = dynamic(() => import("@/components/ScribbleScene").then((mod) => mod.ScribbleScene), {
   ssr: false,
   loading: () => <div className="w-full h-full animate-pulse bg-primary/5 rounded-full blur-3xl"></div>
 });
+
+import { Canvas } from "@react-three/fiber";
+
+function Hero3DContainer() {
+  return (
+    <div className="w-full h-[400px] md:h-[600px] relative">
+      <Canvas camera={{ position: [0, 0, 8], fov: 40 }}>
+        <Hero3D />
+      </Canvas>
+    </div>
+  );
+}
+
 
 export default function LandingPage() {
   return (
@@ -107,7 +120,7 @@ export default function LandingPage() {
             transition={{ duration: 1, delay: 0.3 }}
             className="flex items-center justify-center relative w-full h-[300px] sm:h-[400px] md:h-[500px]"
           >
-            <Hero3D />
+            <Hero3DContainer />
           </motion.div>
         </div>
       </main>
