@@ -2,11 +2,11 @@ meta:
   environment: node
   toolchain:
     name: npm
-    version: 22
+    version: 20
 
 build:
-  additionalCommands: "npx prisma generate && npm run build && cp -r public .next/standalone/ && mkdir -p .next/standalone/.next && cp -r .next/static .next/standalone/.next/"
+  additionalCommands: "npm run build && cp -r public .next/standalone/ && mkdir -p .next/standalone/.next && cp -r .next/static .next/standalone/.next/"
 
 run:
-  command: "HOSTNAME=0.0.0.0 PORT=3000 NODE_OPTIONS='--max-old-space-size=448' node .next/standalone/server.js"
+  command: "HOSTNAME=0.0.0.0 PORT=3000 NODE_OPTIONS='--max-old-space-size=320' node .next/standalone/server.js"
   containerPort: 3000

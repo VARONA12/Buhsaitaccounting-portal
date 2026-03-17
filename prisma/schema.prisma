@@ -26,10 +26,10 @@ model User {
   notifTelegram   Boolean        @default(false)
   documents       Document[]
   invoices        Invoice[]
+  loginSessions   LoginSession[]
   messages        Message[]
   notifications   Notification[]
   taxRecords      TaxRecord[]
-  loginSessions   LoginSession[]
 }
 
 model LoginSession {

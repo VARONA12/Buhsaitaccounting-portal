@@ -12,23 +12,6 @@ export const authOptions: NextAuthOptions = {
         password: { label: "Пароль", type: "password" },
       },
       async authorize(credentials) {
-        // AUTO-FIX: Try to add missing columns if they don't exist
-        try {
-          await db.$executeRawUnsafe(`ALTER TABLE "User" ADD COLUMN IF NOT EXISTS "inn" TEXT;`);
-          await db.$executeRawUnsafe(`ALTER TABLE "User" ADD COLUMN IF NOT EXISTS "taxSystem" TEXT;`);
-          await db.$executeRawUnsafe(`ALTER TABLE "User" ADD COLUMN IF NOT EXISTS "lastMonthProfit" TEXT;`);
-          await db.$executeRawUnsafe(`ALTER TABLE "User" ADD COLUMN IF NOT EXISTS "legalAddress" TEXT;`);
-          await db.$executeRawUnsafe(`ALTER TABLE "User" ADD COLUMN IF NOT EXISTS "birthDate" TEXT;`);
-          await db.$executeRawUnsafe(`ALTER TABLE "User" ADD COLUMN IF NOT EXISTS "password" TEXT;`);
-          await db.$executeRawUnsafe(`ALTER TABLE "User" ADD COLUMN IF NOT EXISTS "isAdmin" BOOLEAN DEFAULT false;`);
-          await db.$executeRawUnsafe(`ALTER TABLE "User" ADD COLUMN IF NOT EXISTS "plan" TEXT DEFAULT 'Базовый';`);
-          await db.$executeRawUnsafe(`ALTER TABLE "User" ADD COLUMN IF NOT EXISTS "notifEmail" BOOLEAN DEFAULT true;`);
-          await db.$executeRawUnsafe(`ALTER TABLE "User" ADD COLUMN IF NOT EXISTS "notifSms" BOOLEAN DEFAULT true;`);
-          await db.$executeRawUnsafe(`ALTER TABLE "User" ADD COLUMN IF NOT EXISTS "notifTelegram" BOOLEAN DEFAULT false;`);
-        } catch (e) {
-          console.error("Schema sync failed (probably already fixed):", e);
-        }
-
         if (!credentials?.phone) {
           throw new Error("Номер телефона не указан");
         }
