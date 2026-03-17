@@ -1,6 +1,7 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect, Suspense } from "react";
+import { useSearchParams } from "next/navigation";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
@@ -29,7 +30,8 @@ const codeSchema = z.object({
 type RegisterFormValues = z.infer<typeof registerSchema>;
 type CodeFormValues = z.infer<typeof codeSchema>;
 
-export default function RegisterPage() {
+function RegisterForm() {
+  const searchParams = useSearchParams();
   const [step, setStep] = useState<1 | 2>(1);
   const [isLoading, setIsLoading] = useState(false);
   const [errorMsg, setErrorMsg] = useState("");
@@ -43,6 +45,17 @@ export default function RegisterPage() {
   });
 
   const [displayPhone, setDisplayPhone] = useState("");
+
+  useEffect(() => {
+    const phoneParam = searchParams.get("phone");
+    if (phoneParam) {
+      const digits = phoneParam.replace(/\D/g, "");
+      if (digits.length === 10) {
+        setDisplayPhone(formatPhone(digits));
+        registerForm.setValue("phone", digits);
+      }
+    }
+  }, [searchParams, registerForm]);
 
   const formatPhone = (value: string) => {
     const digits = value.replace(/\D/g, "");
@@ -266,5 +279,12 @@ export default function RegisterPage() {
         </AnimatePresence>
       </div>
     </div>
+  );
+}
+export default function RegisterPage() {
+  return (
+    <Suspense fallback={<div className="min-h-screen bg-bg flex items-center justify-center"><Loader2 className="animate-spin text-primary" size={48} /></div>}>
+      <RegisterForm />
+    </Suspense>
   );
 }

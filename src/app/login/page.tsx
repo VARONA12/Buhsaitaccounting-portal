@@ -66,10 +66,31 @@ export default function LoginPage() {
   };
 
 
+  const checkUserExists = async (phone: string) => {
+    try {
+      const res = await fetch("/api/auth/check-user", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ phone }),
+      });
+      const data = await res.json();
+      return data.exists;
+    } catch (e) {
+      console.error("Check user failed", e);
+      return false;
+    }
+  };
+
   const onSendOtp = async (data: PhoneFormValues) => {
     setErrorMsg("");
     setIsLoading(true);
     try {
+      const exists = await checkUserExists(data.phone);
+      if (!exists) {
+        window.location.href = `/register?phone=${data.phone}`;
+        return;
+      }
+
       const res = await fetch("/api/auth/send-otp", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -113,6 +134,12 @@ export default function LoginPage() {
     setErrorMsg("");
     setIsLoading(true);
     try {
+      const exists = await checkUserExists(data.phone);
+      if (!exists) {
+        window.location.href = `/register?phone=${data.phone}`;
+        return;
+      }
+
       const res = await signIn("credentials", {
         phone: data.phone,
         password: data.password,
@@ -144,6 +171,28 @@ export default function LoginPage() {
             Личный кабинет бухгалтерии
           </p>
         </div>
+
+        {errorMsg && (
+          <motion.div 
+            initial={{ opacity: 0, height: 0 }}
+            animate={{ opacity: 1, height: "auto" }}
+            className="mb-6 p-4 bg-red-500/10 border border-red-500/20 rounded-2xl"
+          >
+            <p className="text-red-500 text-[10px] text-center font-black uppercase tracking-tight">
+              {errorMsg}
+            </p>
+            {errorMsg.includes("зарегистрироваться") && (
+              <div className="mt-2 text-center">
+                <Link 
+                  href={`/register?phone=${phoneForm.getValues().phone}`}
+                  className="text-primary text-[10px] font-black uppercase underline"
+                >
+                  Перейти к регистрации
+                </Link>
+              </div>
+            )}
+          </motion.div>
+        )}
 
         {step === 1 && (
           <div className="flex bg-surface p-1 rounded-[20px] mb-8 border border-border">
@@ -193,7 +242,7 @@ export default function LoginPage() {
                       </p>
                     )}
                   </div>
-                  {errorMsg && <p className="text-red-500 text-[10px] text-center font-black bg-red-500/5 py-3 rounded-xl border border-red-500/10 uppercase tracking-tight">{errorMsg}</p>}
+
                   <button type="submit" disabled={isLoading} className="w-full bg-primary text-black font-black text-base py-4 rounded-2xl hover:scale-[1.02] active:scale-95 transition-all shadow-[0_15px_30px_rgba(255,193,7,0.2)] disabled:opacity-50">
                     {isLoading ? <Loader2 className="animate-spin mx-auto" /> : "ПОЛУЧИТЬ КОД"}
                   </button>
@@ -231,7 +280,7 @@ export default function LoginPage() {
                       />
                     </div>
                   </div>
-                  {errorMsg && <p className="text-red-500 text-[10px] text-center font-black bg-red-500/5 py-3 rounded-xl border border-red-500/10 uppercase tracking-tight">{errorMsg}</p>}
+
                   <button type="submit" disabled={isLoading} className="w-full bg-primary text-black font-black text-base py-4 rounded-2xl hover:scale-[1.02] shadow-[0_15px_30px_rgba(255,193,7,0.2)]">
                     {isLoading ? <Loader2 className="animate-spin mx-auto" /> : "ВОЙТИ"}
                   </button>
@@ -260,7 +309,7 @@ export default function LoginPage() {
                   <div className="absolute bottom-2 left-1/2 -translate-x-1/2 w-40 h-[2px] bg-primary/20"></div>
                 </div>
               </div>
-              {errorMsg && <p className="text-red-500 text-[10px] text-center font-black">{errorMsg}</p>}
+
               <div className="space-y-3">
                 <button type="submit" disabled={isLoading} className="w-full bg-primary text-black font-black py-4 rounded-2xl flex items-center justify-center gap-2 hover:scale-[1.02] shadow-xl">
                   {isLoading ? <Loader2 className="animate-spin" /> : <><KeyRound size={20} /> ВОЙТИ В СИСТЕМУ</>}
