@@ -10,7 +10,10 @@ import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 
 const phoneSchema = z.object({
-  phone: z.string().min(10, "Введите корректный номер телефона"),
+  phone: z.string().refine((val) => {
+    const digits = val.replace(/\D/g, "");
+    return digits.length === 10 && digits.startsWith("9");
+  }, "Введите корректный номер (+7 9XX...)"),
 });
 
 const codeSchema = z.object({
@@ -18,7 +21,10 @@ const codeSchema = z.object({
 });
 
 const passwordLoginSchema = z.object({
-  phone: z.string().min(10, "Введите номер телефона"),
+  phone: z.string().refine((val) => {
+    const digits = val.replace(/\D/g, "");
+    return digits.length === 10 && digits.startsWith("9");
+  }, "Введите корректный номер"),
   password: z.string().min(1, "Введите пароль"),
 });
 
@@ -35,6 +41,45 @@ export default function LoginPage() {
   const phoneForm = useForm<PhoneFormValues>({ resolver: zodResolver(phoneSchema) });
   const codeForm = useForm<CodeFormValues>({ resolver: zodResolver(codeSchema) });
   const passwordForm = useForm<PasswordFormValues>({ resolver: zodResolver(passwordLoginSchema) });
+
+  const [displayPhone, setDisplayPhone] = useState("");
+
+  const formatPhone = (value: string) => {
+    const digits = value.replace(/\D/g, "");
+    if (digits.length > 10) return displayPhone;
+    let formatted = "";
+    if (digits.length > 0) {
+      formatted += "(" + digits.substring(0, 3);
+      if (digits.length >= 3) {
+        formatted += ") ";
+        if (digits.length > 3) {
+          formatted += digits.substring(3, 6);
+          if (digits.length >= 6) {
+            formatted += "-";
+            if (digits.length > 6) {
+              formatted += digits.substring(6, 8);
+              if (digits.length >= 8) {
+                formatted += "-" + digits.substring(8, 10);
+              }
+            }
+          }
+        }
+      }
+    }
+    return formatted;
+  };
+
+  const handlePhoneChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const input = e.target.value;
+    const digits = input.replace(/\D/g, "");
+    const formatted = formatPhone(digits);
+    setDisplayPhone(formatted);
+    
+    // Set for both forms just in case
+    phoneForm.setValue("phone", digits, { shouldValidate: true });
+    passwordForm.setValue("phone", digits, { shouldValidate: true });
+  };
+
 
   const onSendOtp = async (data: PhoneFormValues) => {
     setErrorMsg("");
@@ -149,11 +194,19 @@ export default function LoginPage() {
                       <div className="absolute inset-y-0 left-0 flex items-center pl-5 text-text-muted font-black">+7</div>
                       <input
                         type="tel"
-                        placeholder="999 000-00-00"
-                        className="w-full bg-surface border border-border rounded-2xl pl-12 pr-5 py-4 text-text text-sm focus:border-primary outline-none transition-all placeholder:text-text-muted/30"
-                        {...phoneForm.register("phone")}
+                        placeholder="(999) 000-00-00"
+                        value={displayPhone}
+                        onChange={handlePhoneChange}
+                        className={`w-full bg-surface border rounded-2xl pl-12 pr-5 py-4 text-text text-sm outline-none transition-all placeholder:text-text-muted/30 ${
+                          phoneForm.formState.errors.phone ? "border-red-500" : "border-border focus:border-primary"
+                        }`}
                       />
                     </div>
+                    {phoneForm.formState.errors.phone && (
+                      <p className="text-[9px] text-red-500 font-bold mt-1 ml-2 uppercase">
+                        {phoneForm.formState.errors.phone.message}
+                      </p>
+                    )}
                   </div>
                   {errorMsg && <p className="text-red-500 text-[10px] text-center font-black bg-red-500/5 py-3 rounded-xl border border-red-500/10 uppercase tracking-tight">{errorMsg}</p>}
                   <button type="submit" disabled={isLoading} className="w-full bg-primary text-black font-black text-base py-4 rounded-2xl hover:scale-[1.02] active:scale-95 transition-all shadow-[0_15px_30px_rgba(255,193,7,0.2)] disabled:opacity-50">
@@ -169,11 +222,19 @@ export default function LoginPage() {
                         <div className="absolute inset-y-0 left-0 flex items-center pl-5 text-text-muted font-black">+7</div>
                         <input
                           type="tel"
-                          placeholder="999 000-00-00"
-                          className="w-full bg-surface border border-border rounded-2xl pl-12 pr-5 py-4 text-text text-sm focus:border-primary outline-none transition-all"
-                          {...passwordForm.register("phone")}
+                          placeholder="(999) 000-00-00"
+                          value={displayPhone}
+                          onChange={handlePhoneChange}
+                          className={`w-full bg-surface border rounded-2xl pl-12 pr-5 py-4 text-text text-sm outline-none transition-all ${
+                            passwordForm.formState.errors.phone ? "border-red-500" : "border-border focus:border-primary"
+                          }`}
                         />
                       </div>
+                      {passwordForm.formState.errors.phone && (
+                        <p className="text-[9px] text-red-500 font-bold mt-1 ml-2 uppercase">
+                          {passwordForm.formState.errors.phone.message}
+                        </p>
+                      )}
                     </div>
                     <div className="space-y-2">
                       <label className="text-[10px] font-black text-text-muted ml-2 uppercase tracking-widest">Пароль</label>

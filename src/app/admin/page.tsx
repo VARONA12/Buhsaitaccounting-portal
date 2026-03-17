@@ -17,7 +17,8 @@ import {
   Send,
   Plus,
   Loader2,
-  FileText
+  FileText,
+  Database
 } from "lucide-react";
 import { useState, useEffect, Suspense } from "react";
 import { useSession, signOut } from "next-auth/react";
@@ -117,6 +118,7 @@ function AdminContent() {
     { id: "invoices", label: "Счета", icon: Receipt },
     { id: "calendar", label: "Календарь", icon: Calendar },
     { id: "messages", label: "Сообщения", icon: MessageSquare },
+    { id: "database", label: "База данных", icon: Database },
   ];
 
   return (
@@ -212,6 +214,7 @@ function AdminContent() {
               {activeTab === "invoices" && <InvoicesTab clients={clients} onRefresh={fetchClients} />}
               {activeTab === "calendar" && <CalendarTab clients={clients} />}
               {activeTab === "messages" && <MessagesTab clients={clients} />}
+              {activeTab === "database" && <DatabaseTab />}
             </motion.div>
           </AnimatePresence>
         </div>
@@ -598,6 +601,101 @@ function MessagesTab({ clients }: any) {
                 </div>
             </div>
         )}
+      </div>
+    </div>
+  );
+}
+
+function DatabaseTab() {
+  const [models, setModels] = useState<any[]>([]);
+  const [selectedModel, setSelectedModel] = useState<string>("");
+  const [data, setData] = useState<any[]>([]);
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    fetch("/api/admin/database")
+      .then(res => res.json())
+      .then(d => {
+        setModels(d.models);
+        if (d.models.length > 0) {
+          setSelectedModel(d.models[0].name);
+        }
+      });
+  }, []);
+
+  useEffect(() => {
+    if (selectedModel) {
+      setLoading(true);
+      fetch(`/api/admin/database?model=${selectedModel}`)
+        .then(res => res.json())
+        .then(d => {
+          setData(d.data || []);
+          setLoading(false);
+        })
+        .catch(() => setLoading(false));
+    }
+  }, [selectedModel]);
+
+  return (
+    <div className="grid gap-8">
+      <div className="flex justify-between items-center">
+        <div className="flex gap-4">
+          {models.map((m) => (
+            <button
+              key={m.name}
+              onClick={() => setSelectedModel(m.name)}
+              className={`px-6 py-3 rounded-2xl text-sm font-bold transition-all border ${
+                selectedModel === m.name
+                  ? "bg-primary text-black border-primary shadow-lg"
+                  : "bg-white/5 text-neutral-400 border-white/10 hover:bg-white/10"
+              }`}
+            >
+              {m.label}
+            </button>
+          ))}
+        </div>
+        <div className="glass px-6 py-3 rounded-2xl border border-white/5 text-sm font-bold">
+          Записей: <span className="text-primary ml-1">{data.length}</span>
+        </div>
+      </div>
+
+      <div className="glass rounded-[32px] border border-white/5 overflow-hidden shadow-2xl">
+        <div className="overflow-x-auto">
+          <table className="w-full text-left">
+            <thead>
+              <tr className="bg-white/5 border-b border-white/5 text-[10px] text-neutral-500 uppercase font-black tracking-widest">
+                {data.length > 0 && Object.keys(data[0]).map(key => (
+                  <th key={key} className="px-8 py-6">{key}</th>
+                ))}
+              </tr>
+            </thead>
+            <tbody className="divide-y divide-white/5">
+              {loading ? (
+                <tr>
+                  <td colSpan={100} className="px-8 py-20 text-center">
+                    <Loader2 className="w-8 h-8 text-primary animate-spin mx-auto" />
+                  </td>
+                </tr>
+              ) : data.length > 0 ? (
+                data.map((row, idx) => (
+                  <tr key={idx} className="hover:bg-white/5 transition-colors group">
+                    {Object.values(row).map((val: any, i) => (
+                      <td key={i} className="px-8 py-4 text-xs font-medium text-neutral-300">
+                        {typeof val === 'object' ? JSON.stringify(val) : String(val)}
+                      </td>
+                    ))}
+                  </tr>
+                ))
+              ) : (
+                <tr>
+                  <td colSpan={100} className="px-8 py-20 text-center text-neutral-500">
+                    Нет данных
+                  </td>
+                </tr>
+              )}
+            </tbody>
+          </table>
+        </div>
       </div>
     </div>
   );

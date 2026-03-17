@@ -12,8 +12,14 @@ import { motion, AnimatePresence } from "framer-motion";
 const registerSchema = z.object({
   name: z.string().min(2, "Введите ваше имя и фамилию"),
   company: z.string().min(2, "Введите название вашей компании"),
-  phone: z.string().min(10, "Введите корректный номер телефона"),
-  password: z.string().min(6, "Пароль должен быть не менее 6 символов"),
+  phone: z.string().refine((val) => {
+    const digits = val.replace(/\D/g, "");
+    return digits.length === 10 && digits.startsWith("9");
+  }, "Введите корректный номер (+7 9XX...)"),
+  password: z.string()
+    .min(8, "Пароль должен быть не менее 8 символов")
+    .regex(/[A-Za-z]/, "Пароль должен содержать хотя бы одну букву")
+    .regex(/[0-9]/, "Пароль должен содержать хотя бы одну цифру"),
 });
 
 const codeSchema = z.object({
@@ -35,6 +41,43 @@ export default function RegisterPage() {
   const codeForm = useForm<CodeFormValues>({
     resolver: zodResolver(codeSchema),
   });
+
+  const [displayPhone, setDisplayPhone] = useState("");
+
+  const formatPhone = (value: string) => {
+    const digits = value.replace(/\D/g, "");
+    if (digits.length > 10) return displayPhone;
+    
+    let formatted = "";
+    if (digits.length > 0) {
+      formatted += "(" + digits.substring(0, 3);
+      if (digits.length >= 3) {
+        formatted += ") ";
+        if (digits.length > 3) {
+          formatted += digits.substring(3, 6);
+          if (digits.length >= 6) {
+            formatted += "-";
+            if (digits.length > 6) {
+              formatted += digits.substring(6, 8);
+              if (digits.length >= 8) {
+                formatted += "-" + digits.substring(8, 10);
+              }
+            }
+          }
+        }
+      }
+    }
+    return formatted;
+  };
+
+  const handlePhoneChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const input = e.target.value;
+    const digits = input.replace(/\D/g, "");
+    const formatted = formatPhone(digits);
+    setDisplayPhone(formatted);
+    registerForm.setValue("phone", digits, { shouldValidate: true });
+  };
+
 
   const onSubmitRegister = async (data: RegisterFormValues) => {
     setErrorMsg("");
@@ -136,10 +179,19 @@ export default function RegisterPage() {
                   <div className="absolute inset-y-0 left-0 flex items-center pl-4 text-text-muted font-black">+7</div>
                   <input
                     type="tel"
-                    placeholder="999 000-00-00"
-                    className="w-full bg-surface border border-border rounded-2xl pl-12 pr-4 py-4 text-text text-sm focus:border-primary outline-none transition-all placeholder:text-text-muted/30"
-                    {...registerForm.register("phone")}
+                    placeholder="(999) 000-00-00"
+                    value={displayPhone}
+                    onChange={handlePhoneChange}
+                    autoComplete="tel"
+                    className={`w-full bg-surface border rounded-2xl pl-12 pr-4 py-4 text-text text-sm outline-none transition-all placeholder:text-text-muted/30 ${
+                      registerForm.formState.errors.phone ? "border-red-500" : "border-border focus:border-primary"
+                    }`}
                   />
+                  {registerForm.formState.errors.phone && (
+                    <p className="text-[9px] text-red-500 font-bold mt-1 ml-2 uppercase">
+                      {registerForm.formState.errors.phone.message}
+                    </p>
+                  )}
                 </div>
               </div>
 
@@ -149,10 +201,17 @@ export default function RegisterPage() {
                   <div className="absolute inset-y-0 left-0 flex items-center pl-4 text-text-muted/60"><Lock size={18}/></div>
                   <input
                     type="password"
-                    placeholder="Минимум 6 знаков"
-                    className="w-full bg-surface border border-border rounded-2xl pl-12 pr-4 py-4 text-text text-sm focus:border-primary outline-none transition-all placeholder:text-text-muted/30"
+                    placeholder="8+ знаков (буквы и цифры)"
+                    className={`w-full bg-surface border rounded-2xl pl-12 pr-4 py-4 text-text text-sm outline-none transition-all placeholder:text-text-muted/30 ${
+                      registerForm.formState.errors.password ? "border-red-500" : "border-border focus:border-primary"
+                    }`}
                     {...registerForm.register("password")}
                   />
+                  {registerForm.formState.errors.password && (
+                    <p className="text-[9px] text-red-500 font-bold mt-1 ml-2 uppercase">
+                      {registerForm.formState.errors.password.message}
+                    </p>
+                  )}
                 </div>
               </div>
 
