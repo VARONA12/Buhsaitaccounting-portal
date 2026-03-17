@@ -2,209 +2,178 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { ShieldCheck, TrendingUp, Clock, ArrowRight, CheckCircle2 } from "lucide-react";
-import dynamic from "next/dynamic";
-
-const Hero3D = dynamic(() => import("@/components/ScribbleScene").then((mod) => mod.ScribbleScene), {
-  ssr: false,
-  loading: () => <div className="w-full h-full animate-pulse bg-primary/5 rounded-full blur-3xl"></div>
-});
-
-import { Canvas } from "@react-three/fiber";
-
-function Hero3DContainer() {
-  return (
-    <div className="w-full h-[400px] md:h-[600px] relative">
-      <Canvas camera={{ position: [0, 0, 8], fov: 40 }}>
-        <Hero3D />
-      </Canvas>
-    </div>
-  );
-}
-
+import { ShieldCheck, TrendingUp, Clock, ArrowRight, Building, Target, Zap } from "lucide-react";
 
 export default function LandingPage() {
   return (
-    <div className="min-h-screen bg-[#000000] text-white font-sans overflow-x-hidden selection:bg-primary selection:text-black">
-      {/* Background decorations */}
-      <div className="fixed top-[-20%] right-[-10%] w-[600px] h-[600px] bg-primary/10 blur-[150px] rounded-full z-0 pointer-events-none" />
-      <div className="fixed bottom-[-20%] left-[-10%] w-[500px] h-[500px] bg-primary/5 blur-[120px] rounded-full z-0 pointer-events-none" />
+    <div className="min-h-screen bg-[#050505] text-white font-sans overflow-x-hidden selection:bg-primary selection:text-black">
+      {/* Subtle Background Glows */}
+      <div className="fixed top-[-10%] right-[-10%] w-[500px] h-[500px] bg-primary/5 blur-[120px] rounded-full z-0 pointer-events-none" />
+      <div className="fixed bottom-[-10%] left-[-10%] w-[400px] h-[400px] bg-primary/5 blur-[100px] rounded-full z-0 pointer-events-none" />
 
       {/* Navigation */}
-      <nav className="relative z-10 w-full border-b border-white/5 bg-black/50 backdrop-blur-md">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 h-20 flex items-center justify-between">
+      <nav className="relative z-50 w-full border-b border-white/[0.05] bg-black/20 backdrop-blur-xl">
+        <div className="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
           <div className="flex items-center gap-3">
-            <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-lg bg-primary flex items-center justify-center">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#000000" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
-                <path d="m3 21 1.9-5.7a8.5 8.5 0 1 1 3.8 3.8z" />
-              </svg>
+            <div className="w-9 h-9 rounded-xl bg-primary flex items-center justify-center shadow-[0_0_20px_rgba(255,193,7,0.2)]">
+              <Building size={20} color="black" strokeWidth={2.5} />
             </div>
-            <span className="font-bold text-xl sm:text-2xl tracking-wide text-white">ЭлитФинанс</span>
+            <span className="font-black text-xl tracking-tight uppercase">ЭлитФинанс</span>
           </div>
           
-          <div className="flex items-center gap-4 sm:gap-8">
+          <div className="flex items-center gap-10">
             <div className="hidden md:flex items-center gap-8">
-              <a href="#services" className="text-sm font-medium text-neutral-400 hover:text-white transition-colors">Услуги</a>
-              <a href="#advantages" className="text-sm font-medium text-neutral-400 hover:text-white transition-colors">Преимущества</a>
+              <a href="#services" className="text-xs font-bold uppercase tracking-widest text-neutral-500 hover:text-primary transition-colors">Услуги</a>
+              <a href="#advantages" className="text-xs font-bold uppercase tracking-widest text-neutral-500 hover:text-primary transition-colors">Преимущества</a>
             </div>
             <Link 
               href="/login" 
-              className="px-4 py-2 sm:px-6 sm:py-2.5 rounded-full bg-white/5 border border-white/10 text-white font-medium hover:bg-white/10 transition-all text-xs sm:text-sm flex items-center gap-2 group"
+              className="px-6 py-2.5 rounded-full bg-white text-black text-xs font-black uppercase tracking-widest hover:bg-primary transition-all flex items-center gap-2 group shadow-xl"
             >
-              <span className="hidden sm:inline">Личный кабинет</span>
-              <span className="sm:hidden">Войти</span>
-              <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+              Личный кабинет
+              <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" />
             </Link>
           </div>
         </div>
       </nav>
 
       {/* Hero Section */}
-      <main className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 pt-24 pb-12 lg:pt-32 lg:pb-20">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center text-center lg:text-left">
-          <div className="flex flex-col items-center lg:items-start">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.7 }}
-              className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-[10px] sm:text-xs font-bold uppercase tracking-widest mb-6 sm:mb-8"
-            >
-              <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
-              Ваша бухгалтерия в безопасности
-            </motion.div>
-            
-            <motion.h1 
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.7, delay: 0.1 }}
-              className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight mb-6 lg:mb-8 leading-[1.1]"
-            >
-              Бухгалтерское<br className="hidden sm:block" />
-              обслуживание <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-yellow-200 block lg:inline">нового уровня</span>
-            </motion.h1>
-
-            <motion.p 
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.7, delay: 0.2 }}
-              className="text-base sm:text-lg md:text-xl text-neutral-400 mb-8 lg:mb-12 max-w-xl leading-relaxed font-light mx-auto lg:mx-0"
-            >
-              Возьмем на себя всю рутину, налоги и отчетность. Автоматизируем процессы, чтобы вы могли сосредоточиться на росте бизнеса.
-            </motion.p>
-
-            <motion.div 
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.7, delay: 0.3 }}
-              className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 w-full sm:w-auto"
-            >
-              <Link 
-                href="/login"
-                className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-primary text-black font-bold rounded-full hover:scale-105 hover:shadow-[0_0_30px_rgba(255,193,7,0.3)] transition-all flex items-center justify-center gap-2 text-sm sm:text-base"
-              >
-                Войти в личный кабинет
-                <ArrowRight className="w-5 h-5" />
-              </Link>
-              <a 
-                href="#services"
-                className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-white/5 border border-white/10 text-white font-medium rounded-full hover:bg-white/10 transition-all flex items-center justify-center text-sm sm:text-base"
-              >
-                Наши услуги
-              </a>
-            </motion.div>
-          </div>
-
+      <section className="relative z-10 pt-32 pb-20 md:pt-48 md:pb-32 px-6">
+        <div className="max-w-5xl mx-auto flex flex-col items-center text-center">
           <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 1, delay: 0.3 }}
-            className="flex items-center justify-center relative w-full h-[300px] sm:h-[400px] md:h-[500px]"
+            initial={{ opacity: 0, y: 15 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-[10px] font-black uppercase tracking-[0.2em] mb-10"
           >
-            <Hero3DContainer />
+            Интеллектуальный бухгалтерский учет
+          </motion.div>
+          
+          <motion.h1 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.1 }}
+            className="text-5xl md:text-8xl font-black tracking-tighter leading-[0.9] mb-10"
+          >
+            ФИНАНСЫ ПОД <br/> <span className="text-primary">ПОЛНЫМ</span> КОНТРОЛЕМ
+          </motion.h1>
+
+          <motion.p 
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.2 }}
+            className="text-lg md:text-xl text-neutral-500 max-w-2xl leading-relaxed font-medium mb-12"
+          >
+            Мы объединяем экспертизу лучших бухгалтеров и современные технологии для безопасности вашего бизнеса.
+          </motion.p>
+
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.3 }}
+            className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto"
+          >
+            <Link 
+              href="/register"
+              className="px-10 py-5 bg-primary text-black font-black uppercase tracking-widest rounded-2xl hover:scale-105 transition-all shadow-2xl flex items-center justify-center gap-3 text-sm"
+            >
+              Начать работу
+              <Zap size={18} fill="black" />
+            </Link>
+            <a 
+              href="#services"
+              className="px-10 py-5 bg-white/5 border border-white/10 text-white font-black uppercase tracking-widest rounded-2xl hover:bg-white/10 transition-all flex items-center justify-center text-sm"
+            >
+              Наши услуги
+            </a>
           </motion.div>
         </div>
-      </main>
+      </section>
 
-      {/* Features/Stats Section */}
-      <section id="advantages" className="relative z-10 w-full bg-white/[0.02] border-y border-white/5 py-16 sm:py-24">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 sm:gap-12">
+      {/* Stats/Advantages Bundle */}
+      <section id="advantages" className="relative z-10 px-6 py-24 bg-white/[0.02] border-y border-white/[0.05]">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-16">
           {[
-            { icon: ShieldCheck, title: "100% Защита", desc: "Гарантируем отсутствие штрафов. Вся ответственность застрахована." },
-            { icon: TrendingUp, title: "Снижение налогов", desc: "Законно оптимизируем налогооблагаемую базу и находим скрытые резервы." },
-            { icon: Clock, title: "Отчетность вовремя", desc: "Синхронизация с 1С и банками. Соблюдение всех дедлайнов." }
-          ].map((feature, i) => (
+            { 
+              icon: ShieldCheck, 
+              title: "СТРАХОВАНИЕ РИСКОВ", 
+              desc: "Мы несем полную материальную ответственность за каждую цифру в отчетах." 
+            },
+            { 
+              icon: Target, 
+              title: "ОПТИМИЗАЦИЯ НАЛОГОВ", 
+              desc: "Внедряем легальные схемы экономии, которые работают на ваш капитал." 
+            },
+            { 
+              icon: Clock, 
+              title: "СКОРОСТЬ РЕАКЦИИ", 
+              desc: "Личный бухгалтер на связи 24/7. Отчеты готовы точно в срок." 
+            }
+          ].map((item, i) => (
             <motion.div 
               key={i}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: i * 0.1 }}
-              className="flex items-start gap-4"
+              className="group"
             >
-              <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-primary/10 border border-primary/20 flex items-center justify-center shrink-0">
-                <feature.icon className="w-5 h-5 sm:w-6 sm:h-6 text-primary" />
-              </div>
-              <div>
-                <h3 className="text-lg sm:text-xl font-bold text-white mb-1 sm:mb-2">{feature.title}</h3>
-                <p className="text-sm sm:text-base text-neutral-400 font-light leading-relaxed">{feature.desc}</p>
-              </div>
+              <item.icon className="w-10 h-10 text-primary mb-6 transition-transform group-hover:scale-110" strokeWidth={1.5} />
+              <h3 className="text-xl font-black mb-4 tracking-tight uppercase">{item.title}</h3>
+              <p className="text-neutral-500 leading-relaxed text-sm font-medium">{item.desc}</p>
             </motion.div>
           ))}
         </div>
       </section>
 
-      {/* Services Section */}
-      <section id="services" className="relative z-10 w-full max-w-7xl mx-auto px-4 sm:px-6 py-16 sm:py-32">
-        <div className="text-center mb-10 sm:mb-16">
-          <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold text-white mb-4 sm:mb-6">Комплексные решения</h2>
-          <p className="text-sm sm:text-base text-neutral-400 max-w-2xl mx-auto font-light px-4 sm:px-0">
-            От регистрации бизнеса до полного финансового сопровождения. Все необходимое в одном окне.
-          </p>
-        </div>
+      {/* Services Minimalist Grid */}
+      <section id="services" className="relative z-10 px-6 py-32">
+        <div className="max-w-7xl mx-auto">
+          <div className="flex flex-col md:flex-row md:items-end justify-between mb-20 gap-8">
+            <div className="max-w-xl">
+              <h2 className="text-[10px] font-black uppercase tracking-[0.3em] text-primary mb-6">Продукты</h2>
+              <p className="text-4xl md:text-5xl font-black leading-tight tracking-tight">РЕШЕНИЯ ДЛЯ ЛЮБОГО МАСШТАБА БИЗНЕСА</p>
+            </div>
+            <p className="text-neutral-500 max-w-xs font-medium text-sm">От стартапа до крупного холдинга — мы обеспечим безупречный порядок в делах.</p>
+          </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-          {[
-            {
-              title: "Комплексное ведение",
-              points: ["Обработка первичной документации", "Расчет зарплаты и кадровый учет", "Налоговая и бухгалтерская отчетность", "Интеграция с клиент-банком"]
-            },
-            {
-              title: "Мощный личный кабинет",
-              points: ["Актуальные финансовые показатели", "Календарь дедлайнов", "Безопасный обмен документами", "Аналитика бизнес-процессов"]
-            }
-          ].map((service, i) => (
-            <motion.div 
-              key={i}
-              initial={{ opacity: 0, scale: 0.95 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: i * 0.1 }}
-              className="glass p-6 sm:p-10 rounded-3xl border border-white/10 hover:border-primary/30 transition-colors"
-            >
-              <h3 className="text-xl sm:text-2xl font-bold text-primary mb-4 sm:mb-6">{service.title}</h3>
-              <ul className="space-y-3 sm:space-y-4">
-                {service.points.map((point, j) => (
-                  <li key={j} className="flex items-start sm:items-center gap-3 text-sm sm:text-base text-neutral-300">
-                    <CheckCircle2 className="w-5 h-5 text-primary/50 shrink-0 mt-0.5 sm:mt-0" />
-                    {point}
-                  </li>
-                ))}
-              </ul>
-            </motion.div>
-          ))}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {[
+              {
+                title: "КОМПЛЕКСНОЕ ВЕДЕНИЕ",
+                tags: ["ООО", "ИП", "ОСНО", "УСН"],
+                desc: "Полный аутсорсинг: от первички до сдачи годового баланса."
+              },
+              {
+                title: "ЦИФРОВАЯ ЭКОСИСТЕМА",
+                tags: ["API", "CLOUD", "SECURITY"],
+                desc: "Современный личный кабинет с аналитикой в реальном времени."
+              }
+            ].map((service, i) => (
+              <div key={i} className="p-10 rounded-[32px] bg-white/[0.03] border border-white/[0.08] hover:border-primary/20 transition-all cursor-default group">
+                <div className="flex gap-2 mb-6">
+                  {service.tags.map(tag => (
+                    <span key={tag} className="text-[8px] font-black px-2 py-0.5 rounded border border-white/10 text-neutral-500 group-hover:border-primary/30 group-hover:text-primary transition-colors uppercase tracking-widest">{tag}</span>
+                  ))}
+                </div>
+                <h3 className="text-2xl font-black mb-4 tracking-tighter">{service.title}</h3>
+                <p className="text-neutral-500 font-medium mb-8 text-sm">{service.desc}</p>
+                <div className="w-12 h-1 bg-white/10 group-hover:w-full group-hover:bg-primary transition-all duration-500" />
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
       {/* Footer */}
-      <footer className="relative z-10 border-t border-white/5 bg-black/50 py-8 sm:py-12">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 flex flex-col md:flex-row items-center justify-between gap-4 sm:gap-6">
-          <div className="flex items-center gap-2">
-            <span className="font-bold tracking-widest text-white/50">ЭлитФинанс</span>
-            <span className="text-white/20 text-xs sm:text-sm">© {new Date().getFullYear()}</span>
+      <footer className="relative z-10 px-6 py-20 border-t border-white/[0.05]">
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-10">
+          <div className="flex flex-col items-center md:items-start gap-4">
+            <span className="text-2xl font-black tracking-tighter uppercase">ЭлитФинанс</span>
+            <p className="text-neutral-600 text-[10px] font-black uppercase tracking-widest">© {new Date().getFullYear()} Все права защищены</p>
           </div>
-          <p className="text-neutral-500 text-xs sm:text-sm text-center md:text-left">
-            Профессиональное бухгалтерское обслуживание.
-          </p>
+          <div className="flex gap-8">
+            <Link href="/login" className="text-[10px] font-black uppercase tracking-widest text-neutral-500 hover:text-white transition-colors">Вход</Link>
+            <Link href="/register" className="text-[10px] font-black uppercase tracking-widest text-neutral-500 hover:text-white transition-colors">Регистрация</Link>
+          </div>
         </div>
       </footer>
     </div>
