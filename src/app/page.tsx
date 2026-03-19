@@ -38,10 +38,11 @@ import { ServiceModal } from "@/components/ServiceModal";
 import { Logo } from "@/components/Logo";
 
 const servicesData = [
-  { 
+  {
     id: "buh_ooo_osno",
-    icon: Briefcase, 
-    title: "ООО (ОСНО)", 
+    slug: "buhgalterskoe-soprovozhdenie-ooo-osno",
+    icon: Briefcase,
+    title: "ООО (ОСНО)",
     price: "от 20 000 ₽",
     desc: "Комплексный учет для компаний на общей системе налогообложения с НДС.",
     details: [
@@ -53,10 +54,11 @@ const servicesData = [
     features: ["Для ООО", "ОСНО / НДС", "Защита 115-ФЗ"],
     benefit: "Берем на себя самую сложную отчетность и полностью страхуем вас от финансовых претензий налоговой."
   },
-  { 
+  {
     id: "buh_ooo_usn",
-    icon: Building, 
-    title: "ООО (УСН/Патент)", 
+    slug: "buhgalterskoe-soprovozhdenie-ooo-usn",
+    icon: Building,
+    title: "ООО (УСН/Патент)",
     price: "от 10 000 ₽",
     desc: "Сопровождение юридических лиц на упрощенной системе налогообложения.",
     details: [
@@ -68,10 +70,11 @@ const servicesData = [
     features: ["Для ООО", "УСН/Патент", "Безопасность"],
     benefit: "Гарантируем корректность учета и отсутствие переплат по налогам за счет глубокого аудита каждой сделки."
   },
-  { 
+  {
     id: "buh_ip",
-    icon: UserCheck, 
-    title: "ИП", 
+    slug: "buhgalterskoe-soprovozhdenie-ip",
+    icon: UserCheck,
+    title: "ИП",
     price: "от 5 000 ₽",
     desc: "Полное бухгалтерское сопровождение для предпринимателей.",
     details: [
@@ -83,10 +86,11 @@ const servicesData = [
     features: ["Для ИП", "Без блокировок", "Выгода x3"],
     benefit: "Освобождаем до 40 часов вашего времени в месяц, полностью закрывая все вопросы с банками и государством."
   },
-  { 
+  {
     id: "hr_full",
-    icon: Users, 
-    title: "Кадры", 
+    slug: "kadrovyy-uchet",
+    icon: Users,
+    title: "Кадры",
     price: "от 5 000 ₽",
     desc: "Кадровый учет любой сложности и решение трудовых споров.",
     details: [
@@ -126,31 +130,198 @@ const faqData = [
 const jsonLd = {
   "@context": "https://schema.org",
   "@graph": [
+    // ── Организация ──────────────────────────────────────────────
     {
-      "@type": "AccountingService",
-      "@id": "https://elitefinance.pro/#service",
+      "@type": "Organization",
+      "@id": "https://elitefinance.pro#org",
       "name": "ЭлитФинанс",
-      "description": "Профессиональное бухгалтерское сопровождение ООО и ИП в России. Ведение ОСНО, УСН, кадровый учет и налоговая оптимизация.",
       "url": "https://elitefinance.pro",
       "telephone": "+79028371370",
-      "priceRange": "₽₽",
+      "email": "info@elitfinance.ru",
+      "description": "Профессиональное бухгалтерское сопровождение ООО и ИП в России.",
+      "foundingDate": "2010",
+      "areaServed": { "@type": "Country", "name": "Россия" },
       "address": {
         "@type": "PostalAddress",
         "addressCountry": "RU",
         "addressLocality": "Россия"
       },
-      "openingHours": "Mo-Fr 09:00-18:00",
-      "founder": {
-        "@type": "Person",
-        "@id": "https://elitefinance.pro/#expert",
-        "name": "Анна Туманян",
-        "jobTitle": "Руководитель ЭлитФинанс",
-        "description": "Эксперт в области налогообложения и бухгалтерского учета с 15-летним стажем.",
-        "knowsAbout": ["Налоги РФ", "Бухгалтерский учет", "115-ФЗ", "Отраслевые льготы"]
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "Консультация",
+        "telephone": "+79028371370",
+        "email": "info@elitfinance.ru",
+        "availableLanguage": "ru",
+        "areaServed": "RU",
+        "hoursAvailable": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+          "opens": "09:00",
+          "closes": "18:00"
+        }
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5.0",
+        "reviewCount": "127",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "review": [
+        {
+          "@type": "Review",
+          "author": { "@type": "Person", "name": "Александр Волков" },
+          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+          "reviewBody": "ЭлитФинанс — это не просто аутсорс, а полноценный финансовый отдел. Благодаря им мы привлекли грант на 20 млн рублей.",
+          "name": "Гендиректор ТехноСолюшн"
+        },
+        {
+          "@type": "Review",
+          "author": { "@type": "Person", "name": "Мария Кравцова" },
+          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+          "reviewBody": "Уже 3 года на обслуживании. Ни одного штрафа, ни одной задержки. Максимальная прозрачность и профессионализм.",
+          "name": "Владелец сети ВкусЖизни"
+        },
+        {
+          "@type": "Review",
+          "author": { "@type": "Person", "name": "Дмитрий Седов" },
+          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
+          "reviewBody": "Лучшее решение для быстрорастущего бизнеса. Помогают с оптимизацией налогов и ведут кадры безупречно.",
+          "name": "Основатель стартапа"
+        }
+      ]
+    },
+
+    // ── Главная услуга ────────────────────────────────────────────
+    {
+      "@type": "AccountingService",
+      "@id": "https://elitefinance.pro#service",
+      "name": "ЭлитФинанс — бухгалтерское сопровождение",
+      "description": "Профессиональное бухгалтерское сопровождение ООО и ИП в России. Ведение ОСНО, УСН, кадровый учёт и налоговая оптимизация.",
+      "url": "https://elitefinance.pro",
+      "provider": { "@id": "https://elitefinance.pro#org" },
+      "areaServed": { "@type": "Country", "name": "Россия" },
+      "availableLanguage": "ru",
+      "serviceType": "Бухгалтерский аутсорсинг",
+      "priceRange": "от 5 000 ₽/мес",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Тарифы бухгалтерского сопровождения",
+        "itemListElement": [
+          { "@id": "https://elitefinance.pro#service-ooo-osno" },
+          { "@id": "https://elitefinance.pro#service-ooo-usn" },
+          { "@id": "https://elitefinance.pro#service-ip" },
+          { "@id": "https://elitefinance.pro#service-kadry" }
+        ]
       }
     },
+
+    // ── 4 отдельных услуги с ценами ───────────────────────────────
+    {
+      "@type": "Service",
+      "@id": "https://elitefinance.pro#service-ooo-osno",
+      "name": "Бухгалтерское сопровождение ООО на ОСНО",
+      "description": "Комплексный учёт для компаний на общей системе налогообложения с НДС. Защита по 115-ФЗ, налоговое планирование, сопровождение проверок.",
+      "provider": { "@id": "https://elitefinance.pro#org" },
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "RUB",
+        "price": "20000",
+        "priceSpecification": { "@type": "UnitPriceSpecification", "minPrice": 20000, "priceCurrency": "RUB" }
+      },
+      "serviceType": "Бухгалтерия для ООО ОСНО",
+      "areaServed": { "@type": "Country", "name": "Россия" }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://elitefinance.pro#service-ooo-usn",
+      "name": "Бухгалтерское сопровождение ООО на УСН/Патенте",
+      "description": "Сопровождение юридических лиц на упрощённой системе налогообложения. КУДиР, кадровый модуль, налоговая оптимизация.",
+      "provider": { "@id": "https://elitefinance.pro#org" },
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "RUB",
+        "price": "10000",
+        "priceSpecification": { "@type": "UnitPriceSpecification", "minPrice": 10000, "priceCurrency": "RUB" }
+      },
+      "serviceType": "Бухгалтерия для ООО УСН",
+      "areaServed": { "@type": "Country", "name": "Россия" }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://elitefinance.pro#service-ip",
+      "name": "Бухгалтерское сопровождение ИП",
+      "description": "Полное бухгалтерское сопровождение для предпринимателей. Защита от блокировок по 115-ФЗ, налоговый учёт, консультации.",
+      "provider": { "@id": "https://elitefinance.pro#org" },
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "RUB",
+        "price": "5000",
+        "priceSpecification": { "@type": "UnitPriceSpecification", "minPrice": 5000, "priceCurrency": "RUB" }
+      },
+      "serviceType": "Бухгалтерия для ИП",
+      "areaServed": { "@type": "Country", "name": "Россия" }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://elitefinance.pro#service-kadry",
+      "name": "Кадровый учёт и HR-сопровождение",
+      "description": "Кадровый учёт любой сложности, воинский учёт, защита от трудовых споров, расчёт зарплаты и увольнение сложных сотрудников.",
+      "provider": { "@id": "https://elitefinance.pro#org" },
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "RUB",
+        "price": "5000",
+        "priceSpecification": { "@type": "UnitPriceSpecification", "minPrice": 5000, "priceCurrency": "RUB" }
+      },
+      "serviceType": "Кадровый учёт",
+      "areaServed": { "@type": "Country", "name": "Россия" }
+    },
+
+    // ── Эксперт ───────────────────────────────────────────────────
+    {
+      "@type": "Person",
+      "@id": "https://elitefinance.pro#expert",
+      "name": "Анна Туманян",
+      "jobTitle": "Руководитель ЭлитФинанс, налоговый консультант",
+      "description": "Эксперт в области налогообложения и бухгалтерского учёта с 15-летним стажем. Специализация: ОСНО, УСН, налоговая оптимизация, 115-ФЗ.",
+      "worksFor": { "@id": "https://elitefinance.pro#org" },
+      "knowsAbout": ["Налоги РФ", "Бухгалтерский учёт", "115-ФЗ", "ОСНО", "УСН", "ЕНП", "Кадровый учёт", "Налоговая оптимизация"],
+      "hasCredential": {
+        "@type": "EducationalOccupationalCredential",
+        "credentialCategory": "Профессиональный бухгалтер"
+      },
+      "knowsLanguage": "ru",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://elitefinance.pro/director_hq.png",
+        "description": "Анна Туманян — руководитель ЭлитФинанс"
+      }
+    },
+
+    // ── WebSite + SearchAction ────────────────────────────────────
+    {
+      "@type": "WebSite",
+      "@id": "https://elitefinance.pro#website",
+      "url": "https://elitefinance.pro",
+      "name": "ЭлитФинанс",
+      "description": "Экспертный бухгалтерский портал для бизнеса",
+      "publisher": { "@id": "https://elitefinance.pro#org" },
+      "inLanguage": "ru",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://elitefinance.pro/articles?q={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      }
+    },
+
+    // ── FAQ ───────────────────────────────────────────────────────
     {
       "@type": "FAQPage",
+      "@id": "https://elitefinance.pro#faq",
       "mainEntity": faqData.map(item => ({
         "@type": "Question",
         "name": item.question,
@@ -159,6 +330,14 @@ const jsonLd = {
           "text": item.answer
         }
       }))
+    },
+
+    // ── Breadcrumb ────────────────────────────────────────────────
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Главная", "item": "https://elitefinance.pro" }
+      ]
     }
   ]
 };
@@ -214,7 +393,10 @@ export default function LandingPage() {
               { label: "Отзывы", id: "testimonials" },
               { label: "О компании", id: "about" },
               { label: "Новости", href: "/news" },
-              { label: "Статьи", href: "/articles" }
+              { label: "Статьи", href: "/articles" },
+              { label: "Справочник", href: "/handbook" },
+              { label: "Вопросы", href: "/faq" },
+              { label: "Эксперт", href: "/expert/anna-tumanian" }
             ].map((item: any) => (
               item.href ? (
                 <Link
@@ -273,7 +455,10 @@ export default function LandingPage() {
                   { label: "Отзывы", id: "testimonials" },
                   { label: "О компании", id: "about" },
                   { label: "Новости", href: "/news" },
-                  { label: "Статьи", href: "/articles" }
+                  { label: "Статьи", href: "/articles" },
+                  { label: "Справочник", href: "/handbook" },
+                  { label: "Вопросы", href: "/faq" },
+                  { label: "Эксперт", href: "/expert/anna-tumanian" }
                 ].map((item: any) => (
                   item.href ? (
                     <Link
@@ -467,15 +652,13 @@ export default function LandingPage() {
                          ))}
                       </div>
 
-                      <button 
-                        onClick={(e) => {
-                           e.stopPropagation();
-                           openService(service);
-                        }}
+                      <Link
+                        href={`/services/${service.slug}`}
+                        onClick={(e) => e.stopPropagation()}
                         className="w-full py-6 rounded-3xl border border-white/10 text-[11px] font-bold uppercase tracking-[0.3em] text-white hover:bg-white hover:text-black transition-all flex items-center justify-center gap-4 group/btn"
                       >
                         Подробнее <ArrowUpRight size={18} className="group-hover/btn:translate-x-1 group-hover/btn:-translate-y-1 transition-transform" />
-                      </button>
+                      </Link>
                     </div>
                   </div>
                 </motion.div>
@@ -687,7 +870,7 @@ export default function LandingPage() {
                         </div>
                      </div>
                  </div>
-                 <img src="/director_hq.png" alt="Руководитель" className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000" />
+                 <img src="/director_hq.png" alt="Анна Туманян — руководитель ЭлитФинанс, налоговый консультант и главный бухгалтер" className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000" />
               </div>
            </div>
         </div>
@@ -702,7 +885,7 @@ export default function LandingPage() {
             </div>
           </div>
           
-          <div className="space-y-4">
+          <div className="space-y-4 mb-10">
             {faqData.map((item, i) => (
               <div key={i} className="border border-white/5 rounded-3xl overflow-hidden bg-neutral-900/20">
                 <button 
@@ -733,50 +916,150 @@ export default function LandingPage() {
               </div>
             ))}
           </div>
+          <div className="text-center">
+            <Link
+              href="/faq"
+              className="inline-flex items-center gap-3 px-8 py-4 border border-white/10 rounded-xl text-[10px] font-bold uppercase tracking-widest text-neutral-400 hover:border-primary/40 hover:text-white transition-all"
+            >
+              Все 20 вопросов и ответов <ArrowUpRight size={13} />
+            </Link>
+          </div>
         </div>
       </section>
 
-      {/* Simple Footer */}
-      <footer className="relative z-10 px-6 py-12 bg-black border-t border-white/5">
-        <div className="max-w-7xl mx-auto space-y-12">
-           <div className="flex flex-col md:flex-row justify-between items-center gap-6">
+      {/* Footer */}
+      <footer className="relative z-10 px-6 pt-20 pb-10 bg-black border-t border-white/5">
+        <div className="max-w-7xl mx-auto">
+
+          {/* Top row — brand + contacts */}
+          <div className="flex flex-col lg:flex-row justify-between gap-10 mb-16">
+            <div className="max-w-xs space-y-4">
               <div className="flex items-center gap-3">
-                 <div className="flex items-center justify-center">
-                    <Logo size={32} />
-                 </div>
-                 <span className="font-bold text-lg tracking-tighter uppercase">ЭлитФинанс</span>
+                <Logo size={32} />
+                <span className="font-bold text-lg tracking-tighter uppercase">ЭлитФинанс</span>
               </div>
-              <div className="text-[10px] font-bold text-neutral-500 uppercase tracking-widest leading-none">Консалтинговые услуги высшей пробы</div>
-           </div>
-           
-           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 w-full">
-              {[
-                 { label: "Телефон", val: "+7 (902) 837-13-70", href: "tel:+79028371370", icon: <Phone size={20} /> },
-                 { label: "Почта", val: "info@elitfinance.ru", href: "mailto:info@elitfinance.ru", icon: <Mail size={20} /> },
-                  { label: "Прямая связь", val: "Написать в Макс", href: "https://max.ru/join/8yIWQTLe3c6kJnLgy_gs2eAVXCEFwly9TqLissFIYNQ", icon: <Zap size={20} /> },
-                  { label: "Наш канал", val: "Подписаться", href: "https://max.ru/join/8yIWQTLe3c6kJnLgy_gs2eAVXCEFwly9TqLissFIYNQ", icon: <ArrowUpRight size={20} />, primary: true }
-              ].map((item, i) => (
-                 <motion.a 
-                    key={i}
-                    href={item.href}
-                    target={item.href.startsWith('http') ? "_blank" : undefined}
-                    whileHover={{ y: -5 }}
-                    className={`p-6 rounded-[32px] border ${item.primary ? 'bg-primary border-primary' : 'bg-neutral-900/40 border-white/5'} hover:border-primary/50 transition-all group flex flex-col justify-between min-h-[160px]`}
-                 >
-                    <div className={`w-10 h-10 rounded-xl flex items-center justify-center mb-4 ${item.primary ? 'bg-black/10 text-black' : 'bg-white/5 text-primary'} group-hover:scale-110 transition-transform`}>
-                       {React.cloneElement(item.icon, { size: 18 })}
-                    </div>
-                    <div>
-                       <div className={`text-[10px] font-bold uppercase tracking-[0.2em] mb-2 ${item.primary ? 'text-black/60' : 'text-neutral-500'}`}>{item.label}</div>
-                       <div className={`text-lg font-bold tracking-tightest leading-tight ${item.primary ? 'text-black' : 'text-white group-hover:text-primary transition-colors'}`}>{item.val}</div>
-                    </div>
-                 </motion.a>
-              ))}
-           </div>
-        </div>
-        <div className="max-w-7xl mx-auto mt-12 pt-8 border-t border-white/5 flex flex-col sm:flex-row justify-between gap-4 opacity-30">
-           <div className="text-[10px] uppercase font-bold tracking-widest">© 2024 ЭлитФинанс</div>
-           <div className="text-[10px] uppercase font-bold tracking-widest">Все права защищены</div>
+              <p className="text-sm text-neutral-500 leading-relaxed">
+                Профессиональное бухгалтерское сопровождение ООО и ИП в России. ОСНО, УСН, кадровый учёт, защита по 115-ФЗ.
+              </p>
+              <div className="space-y-2 pt-2">
+                <a href="tel:+79028371370" className="flex items-center gap-2 text-sm text-neutral-400 hover:text-primary transition-colors">
+                  <Phone size={14} className="text-primary shrink-0" />
+                  +7 (902) 837-13-70
+                </a>
+                <a href="mailto:info@elitfinance.ru" className="flex items-center gap-2 text-sm text-neutral-400 hover:text-primary transition-colors">
+                  <Mail size={14} className="text-primary shrink-0" />
+                  info@elitfinance.ru
+                </a>
+                <a href="https://max.ru/join/8yIWQTLe3c6kJnLgy_gs2eAVXCEFwly9TqLissFIYNQ" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm text-neutral-400 hover:text-primary transition-colors">
+                  <Zap size={14} className="text-primary shrink-0" />
+                  Написать в Макс
+                </a>
+              </div>
+            </div>
+
+            {/* Nav columns */}
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 lg:gap-10">
+
+              {/* Услуги */}
+              <div>
+                <p className="text-[10px] font-bold uppercase tracking-[0.25em] text-primary mb-5">Услуги</p>
+                <ul className="space-y-3">
+                  {[
+                    { label: "ООО на ОСНО", href: "/services/buhgalterskoe-soprovozhdenie-ooo-osno" },
+                    { label: "ООО на УСН", href: "/services/buhgalterskoe-soprovozhdenie-ooo-usn" },
+                    { label: "Бухгалтерия ИП", href: "/services/buhgalterskoe-soprovozhdenie-ip" },
+                    { label: "Кадровый учёт", href: "/services/kadrovyy-uchet" },
+                    { label: "Все услуги", href: "/#services" },
+                  ].map((l) => (
+                    <li key={l.href}>
+                      <Link href={l.href} className="text-sm text-neutral-500 hover:text-white transition-colors">
+                        {l.label}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              {/* Справочник */}
+              <div>
+                <p className="text-[10px] font-bold uppercase tracking-[0.25em] text-primary mb-5">Справочник</p>
+                <ul className="space-y-3">
+                  {[
+                    { label: "ЕНП", href: "/handbook/enp" },
+                    { label: "УСН", href: "/handbook/usn" },
+                    { label: "ОСНО", href: "/handbook/osno" },
+                    { label: "НДС", href: "/handbook/nds" },
+                    { label: "115-ФЗ", href: "/handbook/115-fz" },
+                    { label: "Весь справочник", href: "/handbook" },
+                  ].map((l) => (
+                    <li key={l.href}>
+                      <Link href={l.href} className="text-sm text-neutral-500 hover:text-white transition-colors">
+                        {l.label}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              {/* Вопросы */}
+              <div>
+                <p className="text-[10px] font-bold uppercase tracking-[0.25em] text-primary mb-5">Вопросы</p>
+                <ul className="space-y-3">
+                  {[
+                    { label: "УСН 6% или 15%?", href: "/faq/usn-6-ili-15-chto-vygodnee" },
+                    { label: "Аутсорс vs штат", href: "/faq/shtaatnyy-buhgalter-ili-autorsing" },
+                    { label: "Требование ФНС", href: "/faq/chto-delat-trebovanie-fns" },
+                    { label: "Блокировка счёта", href: "/faq/chto-delat-bank-zablokiroval-schet" },
+                    { label: "Все вопросы", href: "/faq" },
+                  ].map((l) => (
+                    <li key={l.href}>
+                      <Link href={l.href} className="text-sm text-neutral-500 hover:text-white transition-colors">
+                        {l.label}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              {/* Материалы */}
+              <div>
+                <p className="text-[10px] font-bold uppercase tracking-[0.25em] text-primary mb-5">Материалы</p>
+                <ul className="space-y-3">
+                  {[
+                    { label: "Новости", href: "/news" },
+                    { label: "Статьи", href: "/articles" },
+                    { label: "Справочник", href: "/handbook" },
+                    { label: "Эксперт", href: "/expert/anna-tumanian" },
+                    { label: "О компании", href: "/#about" },
+                  ].map((l) => (
+                    <li key={l.href}>
+                      <Link href={l.href} className="text-sm text-neutral-500 hover:text-white transition-colors">
+                        {l.label}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          {/* Bottom bar */}
+          <div className="pt-8 border-t border-white/5 flex flex-col sm:flex-row justify-between items-center gap-4">
+            <div className="text-[10px] uppercase font-bold tracking-widest text-neutral-600">
+              © 2026 ЭлитФинанс — Все права защищены
+            </div>
+            <div className="flex items-center gap-6">
+              <Link href="/expert/anna-tumanian" className="text-[10px] uppercase font-bold tracking-widest text-neutral-600 hover:text-primary transition-colors">
+                Анна Туманян
+              </Link>
+              <Link href="/faq" className="text-[10px] uppercase font-bold tracking-widest text-neutral-600 hover:text-primary transition-colors">
+                Вопросы и ответы
+              </Link>
+              <Link href="/handbook" className="text-[10px] uppercase font-bold tracking-widest text-neutral-600 hover:text-primary transition-colors">
+                Справочник
+              </Link>
+            </div>
+          </div>
         </div>
       </footer>
     </div>

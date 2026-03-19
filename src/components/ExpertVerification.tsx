@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import { ShieldCheck, UserCheck, Calendar, BookOpen } from 'lucide-react';
 
 export const ExpertVerification = ({ expertName = "Анна Туманян", date = "Март 2026" }: { expertName?: string, date?: string }) => {
@@ -39,15 +40,15 @@ export const ExpertVerification = ({ expertName = "Анна Туманян", dat
         </div>
 
         <div className="md:col-span-4 border-l border-white/5 pl-8 space-y-4">
-          <div className="flex items-center gap-4">
+          <Link href="/expert/anna-tumanian" className="flex items-center gap-4 group/expert">
             <div className="w-12 h-12 rounded-2xl bg-primary flex items-center justify-center text-black font-bold text-lg">
               АТ
             </div>
             <div>
-              <div className="text-sm font-bold text-white tracking-widest uppercase">{expertName}</div>
+              <div className="text-sm font-bold text-white tracking-widest uppercase group-hover/expert:text-primary transition-colors">{expertName}</div>
               <div className="text-[9px] font-bold text-primary uppercase tracking-widest mt-1 opacity-70">Налоговый аудит и право</div>
             </div>
-          </div>
+          </Link>
           <p className="text-[11px] text-neutral-500 leading-relaxed italic">
             «Мы гарантируем точность каждой цифры и нормы, представленной в этом материале».
           </p>

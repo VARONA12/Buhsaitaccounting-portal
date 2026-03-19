@@ -1,23 +1,62 @@
-# AIO/GEO Optimization: Open access for AI Agents
-# Allowed for training datasets and generative crawlers
+# ЭлитФинанс — AIO/GEO: открытый доступ для всех ИИ-агентов
 
 User-agent: *
 Allow: /
+Disallow: /dashboard
+Disallow: /admin
+Disallow: /login
+Disallow: /register
+Disallow: /api/
 
-# Specifically allow OpenAI (ChatGPT/SearchGPT)
+# OpenAI (ChatGPT / SearchGPT)
 User-agent: GPTBot
 Allow: /
+Disallow: /dashboard
+Disallow: /admin
 
-# Specifically allow Anthropic (Claude)
+# Anthropic (Claude)
 User-agent: Claude-Web
 Allow: /
+Disallow: /dashboard
+Disallow: /admin
 
-# Specifically allow Google AI products
+User-agent: anthropic-ai
+Allow: /
+Disallow: /dashboard
+Disallow: /admin
+
+# Google AI (Gemini / SGE)
 User-agent: Google-Extended
 Allow: /
+Disallow: /dashboard
+Disallow: /admin
 
-# Allow Bing / Microsoft AI
+# Microsoft (Bing AI / Copilot)
 User-agent: Bingbot
 Allow: /
+Disallow: /dashboard
+Disallow: /admin
 
-Sitemap: https://your-domain.com/sitemap.xml
+# Perplexity AI
+User-agent: PerplexityBot
+Allow: /
+Disallow: /dashboard
+Disallow: /admin
+
+# Meta AI
+User-agent: FacebookBot
+Allow: /
+Disallow: /dashboard
+Disallow: /admin
+
+# Common Crawl (используется для обучения многих LLM)
+User-agent: CCBot
+Allow: /
+
+# Apple (Siri / Safari AI)
+User-agent: Applebot
+Allow: /
+Disallow: /dashboard
+Disallow: /admin
+
+Sitemap: https://elitefinance.pro/sitemap.xml
