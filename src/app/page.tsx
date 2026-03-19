@@ -170,7 +170,7 @@ export default function LandingPage() {
           <div className="flex items-center gap-4 lg:gap-10">
             <button 
               onClick={() => setIsFormOpen(true)}
-              className="px-6 py-2.5 rounded-full bg-[#FFC107] text-black text-[10px] font-bold uppercase tracking-widest hover:bg-white transition-all shadow-[0_10px_30_rgba(255,193,7,0.2)] hidden xs:block"
+              className="px-6 py-2.5 rounded-full bg-[#FFC107] text-black text-[10px] font-bold uppercase tracking-widest hover:bg-white transition-all shadow-[0_10px_30_rgba(255,193,7,0.2)]"
             >
               Консультация
             </button>
@@ -257,7 +257,7 @@ export default function LandingPage() {
                 animate={{ opacity: 1, y: 0 }}
                 className="text-5xl md:text-7xl lg:text-[6.5rem] xl:text-[8rem] font-bold tracking-tightest leading-[0.9] text-white"
               >
-                БЕЗУПРЕЧНЫЙ <br /> КОНТРОЛЬ <br /> <span className="text-primary italic">ФИНАНСОВ [V2].</span>
+                БЕЗУПРЕЧНЫЙ <br /> КОНТРОЛЬ <br /> <span className="text-primary italic">ФИНАНСОВ.</span>
               </motion.h1>
 
               <motion.p 
@@ -307,11 +307,6 @@ export default function LandingPage() {
                       <span className="text-[11px] font-bold uppercase tracking-widest text-neutral-400 group-hover:text-white transition-colors">{item}</span>
                     </div>
                   ))}
-                </div>
-                <div className="pt-4 flex items-center gap-3">
-                   <div className="flex -space-x-3">
-                      {[1,2,3,4].map(i => <div key={i} className="w-8 h-8 rounded-full bg-neutral-800 border-2 border-[#050505]" />)}
-                   </div>
                 </div>
               </motion.div>
             </div>
