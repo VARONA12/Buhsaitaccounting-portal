@@ -108,7 +108,7 @@ export async function POST(req: Request) {
     let currentField: 'title' | 'excerpt' | 'content' = 'title';
     let structureDetected = false;
 
-    lines.forEach(line => {
+    lines.forEach((line: string) => {
       const lowerLine = line.toLowerCase().trim();
       if (lowerLine.startsWith('заголовок:')) {
         title = line.split(':').slice(1).join(':').trim();
