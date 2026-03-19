@@ -41,18 +41,32 @@ export function ContactForm({ isOpen, onClose }: ContactFormProps) {
     setFormData({ ...formData, phone: formatted });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (formData.phone.length < 18) {
       alert("Пожалуйста, введите корректный номер телефона");
       return;
     }
     setLoading(true);
-    // Simulate API call
-    setTimeout(() => {
+    
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData)
+      });
+      
+      if (response.ok) {
+        setIsSubmitted(true);
+      } else {
+        alert("Произошла ошибка при отправке. Пожалуйста, попробуйте позже.");
+      }
+    } catch (e) {
+      console.error(e);
+      alert("Сетевая ошибка. Проверьте соединение.");
+    } finally {
       setLoading(false);
-      setIsSubmitted(true);
-    }, 1500);
+    }
   };
 
   return (

@@ -294,9 +294,17 @@ export default function LandingPage() {
                 >
                   Консультация <ChevronRight size={14} className="group-hover:translate-x-1 transition-transform" />
                 </button>
+                <a 
+                  href="https://max.ru/join/8yIWQTLe3c6kJnLgy_gs2eAVXCEFwly9TqLissFIYNQ"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-8 py-4 xl:px-10 xl:py-5 bg-white/5 border border-white/10 text-white font-bold uppercase text-[10px] tracking-widest rounded-xl hover:bg-[#FFC107] hover:text-black transition-all flex items-center justify-center gap-2 group shadow-xl"
+                >
+                  Наш канал в Max <Zap size={14} className="group-hover:scale-125 transition-transform" />
+                </a>
                 <button 
                   onClick={() => document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' })}
-                  className="px-8 py-4 xl:px-10 xl:py-5 bg-transparent border border-white/10 text-white font-bold uppercase text-[10px] tracking-widest rounded-xl hover:bg-white/5 transition-all"
+                  className="px-8 py-4 xl:px-10 xl:py-5 bg-transparent border border-white/10 text-white font-bold uppercase text-[10px] tracking-widest rounded-xl hover:bg-white/5 transition-all lg:hidden xl:flex"
                 >
                   Наши услуги
                 </button>
@@ -635,8 +643,8 @@ export default function LandingPage() {
               {[
                  { label: "Телефон", val: "+7 (902) 837-13-70", href: "tel:+79028371370", icon: <Phone size={20} /> },
                  { label: "Почта", val: "info@elitfinance.ru", href: "mailto:info@elitfinance.ru", icon: <Mail size={20} /> },
-                 { label: "Прямая связь", val: "Написать в TG", href: "https://t.me/+79028371370", icon: <Zap size={20} /> },
-                 { label: "Наш канал", val: "Подписаться", href: "https://t.me/+79028371370", icon: <ArrowUpRight size={20} />, primary: true }
+                  { label: "Прямая связь", val: "Написать в Max", href: "https://max.ru/join/8yIWQTLe3c6kJnLgy_gs2eAVXCEFwly9TqLissFIYNQ", icon: <Zap size={20} /> },
+                  { label: "Наш канал", val: "Подписаться", href: "https://max.ru/join/8yIWQTLe3c6kJnLgy_gs2eAVXCEFwly9TqLissFIYNQ", icon: <ArrowUpRight size={20} />, primary: true }
               ].map((item, i) => (
                  <motion.a 
                     key={i}

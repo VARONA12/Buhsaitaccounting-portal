@@ -8,7 +8,6 @@ const inter = Inter({
 });
 
 import NextAuthProvider from "@/components/NextAuthProvider";
-import { ChatWidget } from "@/components/ChatWidget";
 
 export const metadata: Metadata = {
   title: "Бухгалтерский Портал | ЭлитФинанс",
@@ -25,7 +24,6 @@ export default function RootLayout({
       <body className={`${inter.variable} antialiased selection:bg-primary/30 selection:text-primary`}>
         <NextAuthProvider>
           {children}
-          <ChatWidget />
         </NextAuthProvider>
       </body>
     </html>
