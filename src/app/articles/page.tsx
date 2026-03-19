@@ -143,14 +143,32 @@ export default function ArticlesPage() {
                       </div>
                     )}
                     <div className="flex items-center gap-4 text-[10px] font-bold text-neutral-500 uppercase tracking-widest mb-4">
-                      <div className="flex items-center gap-1.5">
+                      <div className="flex items-center gap-1.5 text-neutral-400">
                         <Calendar size={12} />
                         {new Date(article.createdAt).toLocaleDateString('ru-RU')}
                       </div>
-                      <div className="flex items-center gap-1.5">
+                      <div className="flex items-center gap-1.5 flex-1">
                         <User size={12} />
                         {article.author}
                       </div>
+                      {isAdmin && (
+                        <button 
+                          onClick={async (e) => {
+                            e.stopPropagation();
+                            if(window.confirm("Удалить статью?")) {
+                                try {
+                                    const res = await fetch(`/api/articles?id=${article.id}`, { method: 'DELETE' });
+                                    if (res.ok) fetchArticles();
+                                } catch(err) {
+                                    console.error(err);
+                                }
+                            }
+                          }}
+                          className="p-2 -m-2 text-red-500 hover:text-red-400 transition-colors"
+                        >
+                          <X size={14} />
+                        </button>
+                      )}
                     </div>
                     <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-primary transition-colors leading-tight">
                       {article.title}
