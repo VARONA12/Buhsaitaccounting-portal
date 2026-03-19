@@ -11,7 +11,12 @@ import {
   Loader2,
   Calendar,
   User,
-  ArrowRight
+  ArrowRight,
+  Type,
+  ZoomIn,
+  ZoomOut,
+  Maximize2,
+  Minimize2
 } from "lucide-react";
 import Link from "next/link";
 import { useSession } from "next-auth/react";
@@ -35,6 +40,11 @@ export default function ArticlesPage() {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [selectedArticle, setSelectedArticle] = useState<Article | null>(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
+
+  // Reader Controls
+  const [fontSize, setFontSize] = useState(18); // px
+  const [isSerif, setIsSerif] = useState(false);
+  const [isFullWidth, setIsFullWidth] = useState(false);
 
   // Form state
   const [formData, setFormData] = useState({
@@ -160,7 +170,7 @@ export default function ArticlesPage() {
                                     const res = await fetch(`/api/articles?id=${article.id}`, { method: 'DELETE' });
                                     if (res.ok) fetchArticles();
                                 } catch(err) {
-                                    console.error(err);
+                                  console.error(err);
                                 }
                             }
                           }}
@@ -202,24 +212,76 @@ export default function ArticlesPage() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
-              onClick={() => setSelectedArticle(null)}
+              onClick={() => {
+                  setSelectedArticle(null);
+                  setIsFullWidth(false);
+              }}
               className="absolute inset-0 bg-black/80 backdrop-blur-xl"
             />
             <motion.div 
+              layout
               initial={{ opacity: 0, scale: 0.9, y: 20 }}
-              animate={{ opacity: 1, scale: 1, y: 0 }}
+              animate={{ 
+                  opacity: 1, 
+                  scale: 1, 
+                  y: 0,
+                  maxWidth: isFullWidth ? '100vw' : '896px', // 4xl
+                  width: '100%',
+                  height: isFullWidth ? '100vh' : 'auto',
+                  maxHeight: isFullWidth ? '100vh' : '90vh',
+                  borderRadius: isFullWidth ? '0px' : '40px'
+              }}
               exit={{ opacity: 0, scale: 0.9, y: 20 }}
-              className="relative w-full max-w-4xl max-h-[90vh] bg-neutral-900 border border-white/10 rounded-[40px] p-10 overflow-hidden flex flex-col"
+              style={{
+                  fontFamily: isSerif ? 'Georgia, serif' : 'inherit'
+              }}
+              className="relative bg-neutral-900 border border-white/10 p-4 md:p-10 overflow-hidden flex flex-col z-[210]"
             >
-              <button 
-                onClick={() => setSelectedArticle(null)}
-                className="absolute top-8 right-8 text-neutral-500 hover:text-white transition-colors"
-              >
-                <X size={24} />
-              </button>
+              {/* Toolbar */}
+              <div className="flex items-center justify-between mb-8 border-b border-white/5 pb-4 px-2">
+                <div className="flex items-center gap-2">
+                  <button 
+                    onClick={() => setFontSize(prev => Math.max(12, prev - 2))}
+                    className="w-10 h-10 flex items-center justify-center rounded-xl bg-white/5 hover:bg-white/10 transition-colors text-neutral-400 hover:text-white"
+                  >
+                    <ZoomOut size={16} />
+                  </button>
+                  <span className="text-[10px] font-bold w-12 text-center text-neutral-500 uppercase tracking-widest">{fontSize}px</span>
+                  <button 
+                    onClick={() => setFontSize(prev => Math.min(32, prev + 2))}
+                    className="w-10 h-10 flex items-center justify-center rounded-xl bg-white/5 hover:bg-white/10 transition-colors text-neutral-400 hover:text-white"
+                  >
+                    <ZoomIn size={16} />
+                  </button>
+                  <button 
+                    onClick={() => setIsSerif(prev => !prev)}
+                    className={`w-10 h-10 ml-4 flex items-center justify-center rounded-xl transition-colors ${isSerif ? 'bg-primary text-black' : 'bg-white/5 text-neutral-400 hover:text-white'}`}
+                  >
+                    <Type size={16} />
+                  </button>
+                </div>
 
-              <div className="overflow-y-auto pr-4 scrollbar-thin scrollbar-thumb-white/10">
-                <div className="mb-10">
+                <div className="flex items-center gap-2">
+                  <button 
+                    onClick={() => setIsFullWidth(prev => !prev)}
+                    className="w-10 h-10 flex items-center justify-center rounded-xl bg-white/5 hover:bg-white/10 transition-colors text-neutral-400 hover:text-white"
+                  >
+                    {isFullWidth ? <Minimize2 size={16} /> : <Maximize2 size={16} />}
+                  </button>
+                  <button 
+                    onClick={() => {
+                        setSelectedArticle(null);
+                        setIsFullWidth(false);
+                    }}
+                    className="w-10 h-10 flex items-center justify-center rounded-xl bg-red-500/10 hover:bg-red-500/20 text-red-500 transition-colors ml-4"
+                  >
+                    <X size={20} />
+                  </button>
+                </div>
+              </div>
+
+              <div className="overflow-y-auto pr-4 scrollbar-thin scrollbar-thumb-white/10 flex-1">
+                <div className="mb-10 px-2">
                   <div className="flex items-center gap-4 text-[10px] font-bold text-neutral-500 uppercase tracking-widest mb-4">
                     <div className="flex items-center gap-1.5">
                       <Calendar size={12} />
@@ -230,14 +292,17 @@ export default function ArticlesPage() {
                       {selectedArticle.author}
                     </div>
                   </div>
-                  <h2 className="text-4xl md:text-5xl font-bold text-white tracking-tight leading-none mb-8 uppercase">
+                  <h2 className="text-3xl md:text-5xl font-bold text-white tracking-tight leading-none mb-8 uppercase">
                     {selectedArticle.title}
                   </h2>
                   {selectedArticle.image && (
                     <img src={selectedArticle.image} alt={selectedArticle.title} className="w-full h-80 object-cover rounded-[30px] mb-8" />
                   )}
                   <div className="prose prose-invert prose-neutral max-w-none">
-                    <p className="text-neutral-400 text-lg leading-relaxed whitespace-pre-wrap">
+                    <p 
+                      className="text-neutral-300 leading-relaxed whitespace-pre-wrap transition-all duration-300"
+                      style={{ fontSize: `${fontSize}px` }}
+                    >
                       {selectedArticle.content}
                     </p>
                   </div>
