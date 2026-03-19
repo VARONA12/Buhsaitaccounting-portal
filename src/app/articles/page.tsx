@@ -22,6 +22,7 @@ import Link from "next/link";
 import { useSession } from "next-auth/react";
 
 import { Logo } from "@/components/Logo";
+import { ExpertVerification } from "@/components/ExpertVerification";
 
 interface Article {
   id: string;
@@ -307,6 +308,9 @@ export default function ArticlesPage() {
                     >
                       {selectedArticle.content}
                     </p>
+                    
+                    {/* AIO/GEO Expert Block */}
+                    <ExpertVerification date="19 Марта 2026" />
                   </div>
                 </div>
               </div>

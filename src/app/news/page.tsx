@@ -16,6 +16,7 @@ import {
   FileText
 } from "lucide-react";
 import { Logo } from "@/components/Logo";
+import { ExpertVerification } from "@/components/ExpertVerification";
 
 // Generated 36 news items (3 pages of 12)
 const ALL_NEWS = Array.from({ length: 36 }).map((_, i) => ({
@@ -100,6 +101,10 @@ export default function NewsPage() {
                 <h2 className="text-2xl xl:text-4xl font-bold tracking-tightest leading-[1.1] max-w-4xl italic">
                   Главная новость дня: ФНС запускает автоматизированную систему проверки налоговых льгот для ИТ-компаний. Проверьте ваш статус до конца недели.
                 </h2>
+                
+                <div className="pt-4">
+                  <ExpertVerification date="19 Марта 2026" />
+                </div>
               </div>
             </div>
           </section>
