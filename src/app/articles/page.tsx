@@ -21,6 +21,8 @@ import {
 import Link from "next/link";
 import { useSession } from "next-auth/react";
 
+import { Logo } from "@/components/Logo";
+
 interface Article {
   id: string;
   title: string;
@@ -98,7 +100,7 @@ export default function ArticlesPage() {
         <div className="max-w-7xl mx-auto px-6 h-16 xl:h-20 flex items-center justify-between">
           <Link href="/" className="flex items-center gap-3 group">
             <div className="w-8 h-8 xl:w-10 xl:h-10 rounded-lg bg-white flex items-center justify-center transition-transform group-hover:rotate-12">
-              <Building size={18} className="text-black" />
+              <Logo size={20} className="text-black" />
             </div>
             <span className="font-bold text-lg xl:text-xl tracking-tighter uppercase">ЭлитФинанс</span>
           </Link>

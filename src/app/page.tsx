@@ -35,6 +35,7 @@ import {
 } from "lucide-react";
 import { ContactForm } from "@/components/ContactForm";
 import { ServiceModal } from "@/components/ServiceModal";
+import { Logo } from "@/components/Logo";
 
 const servicesData = [
   { 
@@ -131,7 +132,7 @@ export default function LandingPage() {
         <div className="max-w-7xl mx-auto px-6 h-16 xl:h-20 flex items-center justify-between">
           <div className="flex items-center gap-3 group cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
             <div className="w-8 h-8 xl:w-10 xl:h-10 rounded-lg bg-white flex items-center justify-center transition-transform group-hover:rotate-12">
-              <Building size={18} className="text-black" />
+              <Logo size={20} className="text-black" />
             </div>
             <span className="font-bold text-lg xl:text-xl tracking-tighter uppercase">ЭлитФинанс</span>
           </div>
@@ -636,7 +637,7 @@ export default function LandingPage() {
            <div className="flex flex-col md:flex-row justify-between items-center gap-6">
               <div className="flex items-center gap-3">
                  <div className="w-8 h-8 rounded-lg bg-white flex items-center justify-center">
-                    <Building size={16} className="text-black" />
+                    <Logo size={18} className="text-black" />
                  </div>
                  <span className="font-bold text-lg tracking-tighter uppercase">ЭлитФинанс</span>
               </div>
