@@ -198,9 +198,9 @@ export default function LandingPage() {
               { label: "Кейсы", id: "cases" },
               { label: "Отзывы", id: "testimonials" },
               { label: "О компании", id: "about" },
-              { label: "Консультация", onClick: () => setIsFormOpen(true) },
+              { label: "Новости", href: "/news" },
               { label: "Статьи", href: "/articles" }
-            ].map((item) => (
+            ].map((item: any) => (
               item.href ? (
                 <Link
                   key={item.label}
@@ -209,14 +209,6 @@ export default function LandingPage() {
                 >
                   {item.label}
                 </Link>
-              ) : item.onClick ? (
-                <button
-                  key={item.label}
-                  onClick={item.onClick}
-                  className="text-[10px] font-bold uppercase tracking-[0.2em] text-neutral-400 hover:text-white transition-colors"
-                >
-                  {item.label}
-                </button>
               ) : (
                 <a 
                   key={item.label}
@@ -265,9 +257,9 @@ export default function LandingPage() {
                   { label: "Кейсы", id: "cases" },
                   { label: "Отзывы", id: "testimonials" },
                   { label: "О компании", id: "about" },
-                  { label: "Консультация", onClick: () => { setIsMenuOpen(false); setIsFormOpen(true); } },
+                  { label: "Новости", href: "/news" },
                   { label: "Статьи", href: "/articles" }
-                ].map((item) => (
+                ].map((item: any) => (
                   item.href ? (
                     <Link
                       key={item.label}
