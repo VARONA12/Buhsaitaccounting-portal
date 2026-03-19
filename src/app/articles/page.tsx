@@ -99,8 +99,8 @@ export default function ArticlesPage() {
       <nav className="fixed top-0 left-0 w-full z-[100] border-b border-white/[0.05] bg-black/50 backdrop-blur-2xl">
         <div className="max-w-7xl mx-auto px-6 h-16 xl:h-20 flex items-center justify-between">
           <Link href="/" className="flex items-center gap-3 group">
-            <div className="w-8 h-8 xl:w-10 xl:h-10 rounded-lg bg-white flex items-center justify-center transition-transform group-hover:rotate-12">
-              <Logo size={20} className="text-black" />
+            <div className="flex items-center justify-center transition-transform hover:scale-110">
+              <Logo size={42} />
             </div>
             <span className="font-bold text-lg xl:text-xl tracking-tighter uppercase">ЭлитФинанс</span>
           </Link>

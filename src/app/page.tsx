@@ -131,8 +131,8 @@ export default function LandingPage() {
       <nav className="fixed top-0 left-0 w-full z-[100] border-b border-white/[0.05] bg-black/50 backdrop-blur-2xl">
         <div className="max-w-7xl mx-auto px-6 h-16 xl:h-20 flex items-center justify-between">
           <div className="flex items-center gap-3 group cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
-            <div className="w-8 h-8 xl:w-10 xl:h-10 rounded-lg bg-white flex items-center justify-center transition-transform group-hover:rotate-12">
-              <Logo size={20} className="text-black" />
+            <div className="flex items-center justify-center transition-transform hover:scale-110">
+              <Logo size={42} />
             </div>
             <span className="font-bold text-lg xl:text-xl tracking-tighter uppercase">ЭлитФинанс</span>
           </div>
@@ -636,8 +636,8 @@ export default function LandingPage() {
         <div className="max-w-7xl mx-auto space-y-12">
            <div className="flex flex-col md:flex-row justify-between items-center gap-6">
               <div className="flex items-center gap-3">
-                 <div className="w-8 h-8 rounded-lg bg-white flex items-center justify-center">
-                    <Logo size={18} className="text-black" />
+                 <div className="flex items-center justify-center">
+                    <Logo size={32} />
                  </div>
                  <span className="font-bold text-lg tracking-tighter uppercase">ЭлитФинанс</span>
               </div>

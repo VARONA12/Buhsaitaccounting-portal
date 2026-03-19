@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const Logo = ({ size = 24, className = "" }: { size?: number, className?: string }) => {
+export const Logo = ({ size = 32, className = "" }: { size?: number, className?: string }) => {
   return (
     <svg 
       width={size} 
@@ -10,10 +10,11 @@ export const Logo = ({ size = 24, className = "" }: { size?: number, className?:
       xmlns="http://www.w3.org/2000/svg"
       className={className}
     >
-      <path d="M128 352L40 440H384V352H128Z" fill="currentColor"/>
-      <path d="M192 224L144 272H384V224H192Z" fill="currentColor"/>
-      <path d="M256 96L208 144H448L384 40H256V96Z" fill="currentColor"/>
-      <path d="M256 40V440H320V40H256Z" fill="currentColor"/>
+      {/* Recreated STYLIZED EF LOGO in YELLOW */}
+      <path d="M120 440 L260 440 L260 360 L140 360 Z" fill="#FFC107" />
+      <path d="M180 300 L380 300 L380 220 L200 220 Z" fill="#FFC107" />
+      <path d="M240 160 L500 160 L500 80 L260 80 Z" fill="#FFC107" />
+      <path d="M250 40 V480 H300 V40 H250 Z" fill="#FFC107" />
     </svg>
   );
 };
