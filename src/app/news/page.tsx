@@ -11,7 +11,8 @@ import {
   Zap,
   Tag,
   Share2,
-  Bookmark
+  Bookmark,
+  FileText
 } from "lucide-react";
 import { Logo } from "@/components/Logo";
 
