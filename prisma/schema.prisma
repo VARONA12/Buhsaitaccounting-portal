@@ -93,3 +93,15 @@ model Message {
   userId    String
   user      User     @relation(fields: [userId], references: [id])
 }
+
+model Article {
+  id        String   @id @default(cuid())
+  title     String
+  content   String
+  excerpt   String?
+  image     String?
+  author    String   @default("Администратор")
+  published Boolean  @default(true)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}

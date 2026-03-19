@@ -62,7 +62,7 @@ export default function ChatPage() {
     <DashboardShell>
       <div className="flex flex-col h-[calc(100vh-12rem)] max-w-4xl mx-auto">
         <div className="mb-6">
-          <h1 className="text-3xl font-black text-text">Чат с бухгалтером</h1>
+          <h1 className="text-3xl font-black text-text">Консультация с бухгалтером</h1>
           <p className="text-text-muted text-sm">Мы ответим вам в ближайшее рабочее время</p>
         </div>
 

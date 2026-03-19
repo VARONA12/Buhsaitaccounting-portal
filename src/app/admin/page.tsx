@@ -18,9 +18,10 @@ import {
   Plus,
   Loader2,
   FileText,
-  Database
+  Database,
+  User
 } from "lucide-react";
-import { useState, useEffect, Suspense } from "react";
+import { useState, useEffect, useRef, Suspense } from "react";
 import { useSession, signOut } from "next-auth/react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
@@ -117,7 +118,7 @@ function AdminContent() {
     { id: "clients", label: "Клиенты", icon: Users },
     { id: "invoices", label: "Счета", icon: Receipt },
     { id: "calendar", label: "Календарь", icon: Calendar },
-    { id: "messages", label: "Сообщения", icon: MessageSquare },
+    { id: "messages", label: "Консультации", icon: MessageSquare },
     { id: "database", label: "База данных", icon: Database },
   ];
 
@@ -484,19 +485,49 @@ function MessagesTab({ clients }: any) {
   const [selectedClient, setSelectedClient] = useState<any>(null);
   const [msgText, setMsgText] = useState("");
   const [loading, setLoading] = useState(false);
+  const [messages, setMessages] = useState<any[]>([]);
+  const [messagesLoading, setMessagesLoading] = useState(false);
+  const scrollRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (selectedClient) {
+      fetchMessages();
+    }
+  }, [selectedClient]);
+
+  useEffect(() => {
+    if (scrollRef.current) {
+      scrollRef.current.scrollTop = scrollRef.current.scrollHeight;
+    }
+  }, [messages]);
+
+  const fetchMessages = async () => {
+    if (!selectedClient) return;
+    setMessagesLoading(true);
+    try {
+      const res = await fetch(`/api/admin/messages?userId=${selectedClient.id}`);
+      const data = await res.json();
+      if (Array.isArray(data)) setMessages(data);
+    } catch (e) {
+      console.error(e);
+    } finally {
+      setMessagesLoading(false);
+    }
+  };
 
   const sendMessage = async (e: any) => {
     e.preventDefault();
     if (!selectedClient || !msgText.trim()) return;
     setLoading(true);
     try {
-      await fetch("/api/admin/messages", {
+      const res = await fetch("/api/admin/messages", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ userId: selectedClient.id, text: msgText })
       });
+      const newMessage = await res.json();
+      setMessages([...messages, newMessage]);
       setMsgText("");
-      alert("Сообщение доставлено!");
     } catch (e) {
       console.error(e);
     } finally {
@@ -561,14 +592,43 @@ function MessagesTab({ clients }: any) {
              </div>
 
              {/* Message Flow */}
-             <div className="flex-1 p-10 overflow-y-auto no-scrollbar space-y-8">
-                <div className="flex justify-center">
-                    <div className="bg-white/5 px-4 py-2 rounded-full text-[10px] font-black uppercase tracking-[0.2em] text-neutral-500 border border-white/10">
-                        Сегодня
+             <div ref={scrollRef} className="flex-1 p-10 overflow-y-auto no-scrollbar space-y-4">
+                {messagesLoading ? (
+                  <div className="h-full flex items-center justify-center">
+                    <Loader2 className="w-8 h-8 animate-spin text-primary opacity-50" />
+                  </div>
+                ) : messages.length === 0 ? (
+                  <div className="h-full flex flex-col items-center justify-center text-neutral-600 italic text-sm">
+                    Нет сообщений. Напишите первым!
+                  </div>
+                ) : (
+                  messages.map((msg) => (
+                    <div 
+                      key={msg.id} 
+                      className={`flex ${msg.sender === 'admin' ? 'justify-end' : 'justify-start'}`}
+                    >
+                      <div className={`max-w-[80%] flex items-start gap-3 ${msg.sender === 'admin' ? 'flex-row-reverse' : 'flex-row'}`}>
+                        <div className={`w-8 h-8 rounded-full shrink-0 flex items-center justify-center text-[10px] font-black ${
+                          msg.sender === 'admin' ? 'bg-primary text-black' : 'bg-white/5 border border-white/10 text-primary'
+                        }`}>
+                          {msg.sender === 'admin' ? <ShieldCheck size={14} /> : <User size={14} />}
+                        </div>
+                        <div>
+                          <div className={`px-5 py-3 rounded-2xl text-sm leading-relaxed ${
+                            msg.sender === 'admin' 
+                              ? 'bg-primary text-black font-bold rounded-tr-none' 
+                              : 'bg-white/5 border border-white/10 text-white rounded-tl-none'
+                          }`}>
+                            {msg.text}
+                          </div>
+                          <div className={`text-[10px] mt-1 text-neutral-500 ${msg.sender === 'admin' ? 'text-right' : 'text-left'}`}>
+                            {new Date(msg.createdAt).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}
+                          </div>
+                        </div>
+                      </div>
                     </div>
-                </div>
-                {/* Real messages would follow here - placeholder for now */}
-                <div className="text-center py-20 text-neutral-600 italic text-sm font-medium">История переписки подгружается...</div>
+                  ))
+                )}
              </div>
 
              {/* Footer Input */}

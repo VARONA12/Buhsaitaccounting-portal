@@ -8,7 +8,8 @@ import {
   X,
   ShieldCheck,
   Users,
-  MessageSquare
+  MessageSquare,
+  BookOpen
 } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
@@ -31,14 +32,16 @@ export function Sidebar({ isOpen, onClose, isAdminMode }: SidebarProps) {
     { name: "Календарь", icon: CalendarDays, href: "/calendar" },
     { name: "Акты", icon: FileText, href: "/acts" },
     { name: "Документы", icon: FileBox, href: "/documents" },
-    { name: "Чат", icon: MessageSquare, href: "/chat" },
+    { name: "Консультации", icon: MessageSquare, href: "/chat" },
+    { name: "Статьи", icon: BookOpen, href: "/articles" },
   ];
 
   const adminNavItems = [
     { name: "Обзор", icon: LayoutDashboard, href: "/admin" },
     { name: "Клиенты", icon: Users, href: "/admin?tab=clients" },
     { name: "Счета всех", icon: Wallet, href: "/admin?tab=invoices" },
-    { name: "Рассылка", icon: MessageSquare, href: "/admin?tab=messages" },
+    { name: "Консультации", icon: MessageSquare, href: "/admin?tab=messages" },
+    { name: "Статьи", icon: BookOpen, href: "/articles" },
   ];
 
   const navItems = isAdminMode ? adminNavItems : userNavItems;
