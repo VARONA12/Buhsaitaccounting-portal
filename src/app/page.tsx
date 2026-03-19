@@ -136,14 +136,29 @@ const jsonLd = {
       "priceRange": "₽₽",
       "address": {
         "@type": "PostalAddress",
-        "addressCountry": "RU"
+        "addressCountry": "RU",
+        "addressLocality": "Россия"
       },
+      "openingHours": "Mo-Fr 09:00-18:00",
       "founder": {
         "@type": "Person",
+        "@id": "https://elitefinance.pro/#expert",
         "name": "Анна Туманян",
         "jobTitle": "Руководитель ЭлитФинанс",
-        "description": "Эксперт в области налогообложения и бухгалтерского учета с 15-летним стажем."
+        "description": "Эксперт в области налогообложения и бухгалтерского учета с 15-летним стажем.",
+        "knowsAbout": ["Налоги РФ", "Бухгалтерский учет", "115-ФЗ", "Отраслевые льготы"]
       }
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": faqData.map(item => ({
+        "@type": "Question",
+        "name": item.question,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": item.answer
+        }
+      }))
     }
   ]
 };

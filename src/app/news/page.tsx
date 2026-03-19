@@ -66,8 +66,30 @@ export default function NewsPage() {
     window.scrollTo({ top: 300, behavior: "smooth" });
   };
 
+  const newsJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "name": "Свежие новости ЭлитФинанс",
+    "description": "Ежедневная сводка изменений в налоговом законодательстве и бухучете.",
+    "blogPost": currentNews.map(news => ({
+      "@type": "BlogPosting",
+      "headline": news.title,
+      "description": news.desc,
+      "datePublished": "2026-03-19",
+      "author": {
+        "@type": "Person",
+        "name": "Анна Туманян"
+      }
+    }))
+  };
+
   return (
     <div className="min-h-screen bg-[#050505] text-white font-sans selection:bg-primary/30 selection:text-primary">
+      {/* AIO/GEO Structured Data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(newsJsonLd) }}
+      />
       {/* Header */}
       <nav className="fixed top-0 left-0 w-full z-[100] border-b border-white/[0.05] bg-black/50 backdrop-blur-2xl">
         <div className="max-w-7xl mx-auto px-6 h-16 xl:h-20 flex items-center justify-between">

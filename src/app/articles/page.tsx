@@ -94,8 +94,30 @@ export default function ArticlesPage() {
     }
   };
 
+  const articlesJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "name": "База знаний ЭлитФинанс",
+    "description": "Профессиональный разбор налоговых и юридических вопросов для бизнеса.",
+    "blogPost": articles.map(article => ({
+      "@type": "BlogPosting",
+      "headline": article.title,
+      "description": article.excerpt || article.content.substring(0, 160),
+      "datePublished": article.createdAt,
+      "author": {
+        "@type": "Person",
+        "name": article.author
+      }
+    }))
+  };
+
   return (
     <div className="min-h-screen bg-[#050505] text-white font-sans selection:bg-primary/30 selection:text-primary">
+      {/* AIO/GEO Structured Data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articlesJsonLd) }}
+      />
       {/* Header */}
       <nav className="fixed top-0 left-0 w-full z-[100] border-b border-white/[0.05] bg-black/50 backdrop-blur-2xl">
         <div className="max-w-7xl mx-auto px-6 h-16 xl:h-20 flex items-center justify-between">
