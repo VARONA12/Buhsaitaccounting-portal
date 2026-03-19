@@ -15,7 +15,7 @@ export const ExpertVerification = ({ expertName = "Анна Туманян", dat
             <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center text-primary">
               <UserCheck size={20} />
             </div>
-            <span className="text-[10px] font-bold uppercase tracking-[0.3em] text-primary">Верификация экспертом (E-E-A-T)</span>
+            <span className="text-[10px] font-bold uppercase tracking-[0.3em] text-primary">Верификация экспертом</span>
           </div>
           
           <h3 className="text-xl font-bold tracking-tightest leading-tight text-white">
@@ -45,7 +45,7 @@ export const ExpertVerification = ({ expertName = "Анна Туманян", dat
             </div>
             <div>
               <div className="text-sm font-bold text-white tracking-widest uppercase">{expertName}</div>
-              <div className="text-[9px] font-bold text-primary uppercase tracking-widest mt-1 opacity-70">Auditor & Law Expert</div>
+              <div className="text-[9px] font-bold text-primary uppercase tracking-widest mt-1 opacity-70">Налоговый аудит и право</div>
             </div>
           </div>
           <p className="text-[11px] text-neutral-500 leading-relaxed italic">

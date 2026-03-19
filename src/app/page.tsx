@@ -348,7 +348,7 @@ export default function LandingPage() {
                   rel="noopener noreferrer"
                   className="px-8 py-4 xl:px-10 xl:py-5 bg-white/5 border border-white/10 text-white font-bold uppercase text-[10px] tracking-widest rounded-xl hover:bg-[#FFC107] hover:text-black transition-all flex items-center justify-center gap-2 group shadow-xl"
                 >
-                  Наш канал в Max <Zap size={14} className="group-hover:scale-125 transition-transform" />
+                  Наш канал в Макс <Zap size={14} className="group-hover:scale-125 transition-transform" />
                 </a>
                 <button 
                   onClick={() => document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' })}
@@ -587,7 +587,7 @@ export default function LandingPage() {
              {[
                { 
                  name: "Александр Волков", 
-                 role: "CEO TechSolution", 
+                 role: "Гендиректор ТехноСолюшн", 
                  text: "ЭлитФинанс — это не просто аутсорс, а полноценный финансовый отдел. Благодаря им мы привлекли грант на 20 млн рублей.",
                  rating: 5
                },
@@ -599,7 +599,7 @@ export default function LandingPage() {
                },
                { 
                  name: "Дмитрий Седов", 
-                 role: "Основатель IT-стартапа", 
+                 role: "Основатель ИТ-стартапа", 
                  text: "Лучшее решение для быстрорастущего бизнеса. Помогают с оптимизацией налогов и ведут кадры безупречно.",
                  rating: 5
                }
@@ -738,7 +738,7 @@ export default function LandingPage() {
               {[
                  { label: "Телефон", val: "+7 (902) 837-13-70", href: "tel:+79028371370", icon: <Phone size={20} /> },
                  { label: "Почта", val: "info@elitfinance.ru", href: "mailto:info@elitfinance.ru", icon: <Mail size={20} /> },
-                  { label: "Прямая связь", val: "Написать в Max", href: "https://max.ru/join/8yIWQTLe3c6kJnLgy_gs2eAVXCEFwly9TqLissFIYNQ", icon: <Zap size={20} /> },
+                  { label: "Прямая связь", val: "Написать в Макс", href: "https://max.ru/join/8yIWQTLe3c6kJnLgy_gs2eAVXCEFwly9TqLissFIYNQ", icon: <Zap size={20} /> },
                   { label: "Наш канал", val: "Подписаться", href: "https://max.ru/join/8yIWQTLe3c6kJnLgy_gs2eAVXCEFwly9TqLissFIYNQ", icon: <ArrowUpRight size={20} />, primary: true }
               ].map((item, i) => (
                  <motion.a 
