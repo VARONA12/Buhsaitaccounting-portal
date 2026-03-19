@@ -10,8 +10,12 @@ const inter = Inter({
 import NextAuthProvider from "@/components/NextAuthProvider";
 
 export const metadata: Metadata = {
-  title: "Бухгалтерский Портал | ЭлитФинанс",
-  description: "Безопасный, надежный и быстрый доступ к вашей бухгалтерии.",
+  title: "ЭлитФинанс — Экспертный бухгалтерский портал для бизнеса | Бухгалтерия 2026",
+  description: "ЭлитФинанс — профессиональная бухгалтерская поддержка от сертифицированных экспертов. Обеспечиваем безопасный, надежный и быстрый доступ к вашей отчетности и финансам 24/7.",
+  authors: [{ name: "ЭлитФинанс", url: "https://elitefinance.pro" }],
+  creator: "ЭлитФинанс",
+  publisher: "ЭлитФинанс",
+  applicationName: "ЭлитФинанс",
 };
 
 export default function RootLayout({

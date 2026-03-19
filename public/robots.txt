@@ -1,0 +1,23 @@
+# AIO/GEO Optimization: Open access for AI Agents
+# Allowed for training datasets and generative crawlers
+
+User-agent: *
+Allow: /
+
+# Specifically allow OpenAI (ChatGPT/SearchGPT)
+User-agent: GPTBot
+Allow: /
+
+# Specifically allow Anthropic (Claude)
+User-agent: Claude-Web
+Allow: /
+
+# Specifically allow Google AI products
+User-agent: Google-Extended
+Allow: /
+
+# Allow Bing / Microsoft AI
+User-agent: Bingbot
+Allow: /
+
+Sitemap: https://your-domain.com/sitemap.xml

@@ -43,15 +43,15 @@ const servicesData = [
     icon: Briefcase, 
     title: "ООО (ОСНО)", 
     price: "от 20 000 ₽",
-    desc: "Комплексный учет для компаний на общей системе налогообложения.",
+    desc: "Комплексный учет для компаний на общей системе налогообложения с НДС.",
     details: [
-      "Базовый учет ОСНО: загрузка выписок, книги доходов и расходов, ЗП + взносы",
-      "НДС: формирование книг покупок и продаж, подготовка платежных документов",
-      "Кадровый модуль: прием сотрудников (в т.ч. иностранцев), отчеты, увольнения",
-      "Поддержка и защита: 115-ФЗ, общение с госорганами, консультации"
+      "Базовый учет ОСНО: полная защита по 115-ФЗ и банковский комплаенс",
+      "НДС: формирование книг, налоговое планирование и законная оптимизация",
+      "Защита и аудит: сопровождение налоговых проверок и общение с госорганами",
+      "Финансовая ответственность: 100% компенсация штрафов по договору"
     ],
-    features: ["Для ООО", "ОСНО / НДС", "Ответ 15 мин"],
-    benefit: "Берем на себя самую сложную отчетность по НДС и ОСНО, минимизируя налоговые риски."
+    features: ["Для ООО", "ОСНО / НДС", "Защита 115-ФЗ"],
+    benefit: "Берем на себя самую сложную отчетность и полностью страхуем вас от финансовых претензий налоговой."
   },
   { 
     id: "buh_ooo_usn",
@@ -61,44 +61,88 @@ const servicesData = [
     desc: "Сопровождение юридических лиц на упрощенной системе налогообложения.",
     details: [
       "УСН/Патент: ведение выписок, КУДиР, начисление зарплаты и взносов",
-      "НДС (при необходимости): формирование книг покупок/продаж, платежки",
-      "Кадровый модуль: оформление директора, отчетность по сотрудникам (+воинский учет)",
-      "Поддержка и защита: 115-ФЗ, общение с госорганами, консультации"
+      "Налоговая оптимизация: подбор лучшего режима и минимизация платежей",
+      "Кадровый модуль: оформление сотрудников, включая воинский учет",
+      "Поддержка: оперативные ответы за 15 минут в Телеграм-канале портала"
     ],
-    features: ["Для ООО", "УСН/Патент", "Ответ 15 мин"],
-    benefit: "Гарантируем корректность учета и своевременную сдачу отчетности без штрафов."
+    features: ["Для ООО", "УСН/Патент", "Безопасность"],
+    benefit: "Гарантируем корректность учета и отсутствие переплат по налогам за счет глубокого аудита каждой сделки."
   },
   { 
     id: "buh_ip",
     icon: UserCheck, 
     title: "ИП", 
     price: "от 5 000 ₽",
-    desc: "Полное бухгалтерское сопровождение для индивидуальных предпринимателей.",
+    desc: "Полное бухгалтерское сопровождение для предпринимателей.",
     details: [
-      "Бухгалтерское и налоговое сопровождение (выписки, акты, первичка в 1С)",
-      "Налоговый учет: расчет платежей, оптимизация, декларации (УСН/Патент)",
-      "Доп. услуги: открытие Р/С, настройка 1С/ЭДО, отчетность ФНС/СФР/Росстат",
-      "Поддержка и защита: 115-ФЗ, общение с госорганами, консультации"
+      "Налоговый учет: автоматизация расчетов и своевременная подача деклараций",
+      "Банковский комплаенс: защита счетов от блокировок по 115-ФЗ",
+      "Доп. услуги: открытие счетов, настройка ЭДО и 1С за наш счет",
+      "Консультации: прямая связь с главбухом без автоответчиков"
     ],
-    features: ["Для ИП", "Защита 115-ФЗ", "Ответ 15 мин"],
-    benefit: "Освобождаем время для развития бизнеса, полностью закрывая вопросы с налогами и банками."
+    features: ["Для ИП", "Без блокировок", "Выгода x3"],
+    benefit: "Освобождаем до 40 часов вашего времени в месяц, полностью закрывая все вопросы с банками и государством."
   },
   { 
     id: "hr_full",
     icon: Users, 
     title: "Кадры", 
     price: "от 5 000 ₽",
-    desc: "Полный кадровый учет и расчеты с персоналом любой сложности.",
+    desc: "Кадровый учет любой сложности и решение трудовых споров.",
     details: [
-      "Оформление персонала: прием, перевод и увольнение сотрудников по ТК РФ",
-      "Документооборот: полный пакет кадровых документов, ТД и локальные акты",
-      "Расчеты с персоналом: зарплата, отпускные, больничные и страховые взносы",
-      "Отчетность и проверки: СФР, миграционный учет, внутренний кадровый аудит"
+      "Прием и увольнение: бережное оформление сложных/конфликтных сотрудников",
+      "Документооборот: ТК РФ, локальные акты и воинский учет «под ключ»",
+      "Защита: полная подготовка к проверкам инспекции труда и аудит рисков",
+      "Расчеты: зарплата, отпускные и больничные без ошибок и задержек"
     ],
-    features: ["Для персонала", "Ответ 15 мин"],
-    benefit: "Защищаем работодателя от трудовых споров и претензий со стороны инспекции труда."
+    features: ["Для персонала", "Без судов", "Воинский учет"],
+    benefit: "Защищаем ваш бизнес от штрафов трудовой инспекции и помогаем увольнять сотрудников без судебных рисков."
   }
 ];
+
+const faqData = [
+  {
+    question: "Какие услуги входят в бухгалтерское сопровождение?",
+    answer: "Мы берем на себя полное ведение ООО и ИП: обработку первички в 1С, расчет налогов, сдачу отчетности в ФНС/СФР, расчет зарплаты и кадров, а также защиту по 115-ФЗ и налоговую оптимизацию."
+  },
+  {
+    question: "Как вы гарантируете отсутствие штрафов?",
+    answer: "В нашем договоре прописана полная финансовая ответственность. Если по нашей вине возникнет штраф от налоговой — мы компенсируем его в 100% объеме. Мы используем систему тройного контроля отчетности."
+  },
+  {
+    question: "С какими системами налогообложения вы работаете?",
+    answer: "Мы специализируемся на ОСНО (с НДС), УСН (доходы, доходы-расходы), Патент и АУСН. Работаем с компаниями в любых сферах: строительство, торговля, IT, услуги."
+  },
+  {
+    question: "Как быстро вы отвечаете на запросы?",
+    answer: "Среднее время ответа в мессенджерах или по телефону составляет 15 минут в рабочее время. У каждого клиента есть закрепленный эксперт, который знает все нюансы вашего бизнеса."
+  }
+];
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "AccountingService",
+      "@id": "https://elitefinance.pro/#service",
+      "name": "ЭлитФинанс",
+      "description": "Профессиональное бухгалтерское сопровождение ООО и ИП в России. Ведение ОСНО, УСН, кадровый учет и налоговая оптимизация.",
+      "url": "https://elitefinance.pro",
+      "telephone": "+79028371370",
+      "priceRange": "₽₽",
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "RU"
+      },
+      "founder": {
+        "@type": "Person",
+        "name": "Анна Туманян",
+        "jobTitle": "Руководитель ЭлитФинанс",
+        "description": "Эксперт в области налогообложения и бухгалтерского учета с 15-летним стажем."
+      }
+    }
+  ]
+};
 
 export default function LandingPage() {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -107,6 +151,8 @@ export default function LandingPage() {
   const [isServiceModalOpen, setIsServiceModalOpen] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  const [openFaq, setOpenFaq] = useState<number | null>(null);
+
   const openService = (service: any) => {
     setSelectedService(service);
     setIsServiceModalOpen(true);
@@ -114,6 +160,11 @@ export default function LandingPage() {
 
   return (
     <div ref={containerRef} className="min-h-screen bg-[#050505] text-white font-sans overflow-x-hidden selection:bg-white selection:text-black">
+      {/* AIO/GEO Structured Data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       {/* Structural Elements */}
       <div className="fixed inset-0 z-0 pointer-events-none opacity-20">
         <div className="absolute top-[-20%] left-[-10%] w-[1000px] h-[1000px] bg-white rounded-full blur-[200px]" />
@@ -285,7 +336,7 @@ export default function LandingPage() {
                 animate={{ opacity: 1 }}
                 className="text-lg xl:text-xl text-neutral-400 font-medium max-w-xl leading-relaxed"
               >
-                Комплексное бух. сопровождение с гарантией отсутствия штрафов и полной безопасностью данных.
+                Освободите до 40 часов вашего времени в месяц и забудьте о блокировках счетов. Профессиональное бухгалтерское сопровождение на ОСНО и УСН с полной финансовой ответственностью за каждый рубль вашего бизнеса.
               </motion.p>
 
               <div className="flex flex-col sm:flex-row gap-4 pt-4">
@@ -628,6 +679,49 @@ export default function LandingPage() {
                  <img src="/director_hq.png" alt="Руководитель" className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000" />
               </div>
            </div>
+        </div>
+      </section>
+      {/* FAQ Section - AI Search Engine Magnet */}
+      <section className="relative z-10 px-6 py-24 bg-black/50 border-t border-white/5">
+        <div className="max-w-4xl mx-auto">
+          <div className="mb-16 space-y-4 text-center">
+            <h2 className="text-[10px] font-bold uppercase tracking-[0.4em] text-primary">05 / Вопросы и ответы</h2>
+            <div className="text-4xl xl:text-6xl font-bold tracking-tightest leading-none text-white">
+              ЧАСТО <span className="text-primary italic">СПРАШИВАЮТ.</span>
+            </div>
+          </div>
+          
+          <div className="space-y-4">
+            {faqData.map((item, i) => (
+              <div key={i} className="border border-white/5 rounded-3xl overflow-hidden bg-neutral-900/20">
+                <button 
+                  onClick={() => setOpenFaq(openFaq === i ? null : i)}
+                  className="w-full p-6 text-left flex items-center justify-between group transition-colors hover:bg-white/[0.02]"
+                >
+                  <span className="text-sm font-bold uppercase tracking-widest text-neutral-200 group-hover:text-primary transition-colors">
+                    {item.question}
+                  </span>
+                  <div className={`w-8 h-8 rounded-full border border-white/10 flex items-center justify-center transition-transform duration-300 ${openFaq === i ? 'rotate-180 bg-primary border-primary' : ''}`}>
+                    <ChevronRight size={14} className={openFaq === i ? 'text-black' : 'text-neutral-500'} />
+                  </div>
+                </button>
+                <AnimatePresence>
+                  {openFaq === i && (
+                    <motion.div
+                      initial={{ height: 0, opacity: 0 }}
+                      animate={{ height: "auto", opacity: 1 }}
+                      exit={{ height: 0, opacity: 0 }}
+                      className="overflow-hidden"
+                    >
+                      <div className="p-6 pt-0 text-neutral-400 text-sm leading-relaxed border-t border-white/[0.03]">
+                        {item.answer}
+                      </div>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
