@@ -1,13 +1,14 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 import { 
   Building, 
   ArrowLeft, 
   Clock, 
   ChevronRight, 
+  ChevronLeft,
   Zap,
   Tag,
   Share2,
@@ -16,8 +17,8 @@ import {
 } from "lucide-react";
 import { Logo } from "@/components/Logo";
 
-// Generated 15 diverse news items for visual demo
-const NEWS_ITEMS = Array.from({ length: 15 }).map((_, i) => ({
+// Generated 36 news items (3 pages of 12)
+const ALL_NEWS = Array.from({ length: 36 }).map((_, i) => ({
   id: `${i + 1}`,
   title: [
     "Обновление лимитов по УСН в 2026 году",
@@ -34,18 +35,37 @@ const NEWS_ITEMS = Array.from({ length: 15 }).map((_, i) => ({
     "Смена налогового режима: чек-лист",
     "Защита активов при проверках",
     "Новые сроки сдачи отчетности в СФР",
-    "Годовая отчетность без паники"
-  ][i % 15],
+    "Годовая отчетность без паники",
+    "Электронный документооборот 2.0",
+    "Проверка контрагентов: новые критерии",
+    "Льготы для производственных компаний",
+    "Патентная система в регионах 2026",
+    "Налоговые каникулы: продление",
+    "Маркировка товаров: расширение списка",
+    "Кредитование МСБ: господдержка",
+    "Экологический сбор: как платить?",
+    "Валютный контроль: упрощение правил"
+  ][i % 24],
   category: ["Налоги", "Законодательство", "IT", "Безопасность", "Кейс"][i % 5],
-  date: i === 0 ? "Сегодня" : i < 3 ? "Вчера" : `${18 - i} Марта`,
-  time: `${(i + 1) * 2} мин`,
-  desc: i % 2 === 0 
-    ? "Подробный разбор изменений в законодательстве с комментариями наших ведущих аудиторов и практическими советами для малого бизнеса."
-    : "Краткая сводка самых важных событий, которые напрямую влияют на финансовую устойчивость вашей компании в текущем квартале.",
-  size: (i % 3 === 0) ? "large" : "small" // For bento grid variety
+  date: i < 3 ? "Сегодня" : `${20 - i} Марта`,
+  time: `${(i % 5 + 2) * 2} мин`,
+  desc: "Подробный разбор изменений в законодательстве с комментариями наших ведущих аудиторов и практическими советами для малого бизнеса."
 }));
 
+const ITEMS_PER_PAGE = 12;
+
 export default function NewsPage() {
+  const [currentPage, setCurrentPage] = useState(1);
+  const totalPages = Math.ceil(ALL_NEWS.length / ITEMS_PER_PAGE);
+
+  const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
+  const currentNews = ALL_NEWS.slice(startIndex, startIndex + ITEMS_PER_PAGE);
+
+  const handlePageChange = (newPage: number) => {
+    setCurrentPage(newPage);
+    window.scrollTo({ top: 300, behavior: "smooth" });
+  };
+
   return (
     <div className="min-h-screen bg-[#050505] text-white font-sans selection:bg-primary/30 selection:text-primary">
       {/* Header */}
@@ -66,7 +86,7 @@ export default function NewsPage() {
       <main className="pt-32 pb-24 px-6">
         <div className="max-w-7xl mx-auto space-y-16">
           
-          {/* Daily Summary - Kept as requested by user's plan earlier, but focus is on the feed */}
+          {/* Daily Summary - Static Identity Block */}
           <section>
             <div className="p-8 xl:p-12 rounded-[40px] bg-gradient-to-br from-primary/10 to-transparent border border-primary/20 relative overflow-hidden">
               <div className="absolute top-0 right-0 p-6 opacity-10">
@@ -84,76 +104,90 @@ export default function NewsPage() {
             </div>
           </section>
 
-          {/* News Feed - Interactive Bricks (Bento Grid) */}
-          <section>
+          {/* News Feed - Fixed 3-Column Grid with Pagination */}
+          <section id="feed">
             <div className="flex items-end justify-between mb-16">
               <div className="space-y-4">
                 <h2 className="text-[10px] font-bold uppercase tracking-[0.4em] text-neutral-400">Лента новостей</h2>
                 <div className="text-4xl xl:text-7xl font-bold tracking-tightest leading-none">
-                  СВЕЖИЙ <span className="text-primary italic">КОНТЕНТ.</span>
+                  АРХИВ <span className="text-primary italic">ЗНАНИЙ.</span>
                 </div>
               </div>
-              <div className="hidden md:flex gap-4">
-                <button className="p-4 rounded-full border border-white/5 bg-neutral-900/40 text-neutral-500">
-                  <Tag size={18} />
-                </button>
+              <div className="text-[10px] font-bold uppercase tracking-widest text-neutral-500">
+                Страница {currentPage} из {totalPages}
               </div>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 auto-rows-[280px]">
-              {NEWS_ITEMS.map((news, i) => (
-                <motion.div
-                  key={news.id}
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: i * 0.05 }}
-                  className={`group relative p-8 rounded-[40px] border border-white/5 bg-neutral-900/30 hover:bg-neutral-900/50 hover:border-primary/30 transition-all overflow-hidden flex flex-col justify-between ${
-                    news.size === 'large' ? 'md:col-span-2 row-span-1' : ''
-                  }`}
-                >
-                  {/* Decorative Elements */}
-                  <div className="absolute top-0 right-0 p-8 opacity-0 group-hover:opacity-10 transition-opacity">
-                    <FileText size={80} className="text-primary" />
-                  </div>
-
-                  <div className="relative z-10 space-y-4">
-                    <div className="flex justify-between items-center text-[9px] font-bold uppercase tracking-widest text-neutral-500">
-                      <span className="text-primary">{news.category}</span>
-                      <span>{news.date}</span>
-                    </div>
-                    <h3 className={`font-bold tracking-tightest leading-tight group-hover:text-primary transition-colors ${
-                      news.size === 'large' ? 'text-2xl xl:text-3xl' : 'text-xl'
-                    }`}>
-                      {news.title}
-                    </h3>
-                    {news.size === 'large' && (
-                      <p className="text-neutral-400 text-sm leading-relaxed line-clamp-2 max-w-xl">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <AnimatePresence mode="wait">
+                {currentNews.map((news, i) => (
+                  <motion.div
+                    key={`${currentPage}-${news.id}`}
+                    initial={{ opacity: 0, scale: 0.95 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    exit={{ opacity: 0, scale: 0.95 }}
+                    transition={{ duration: 0.3, delay: i * 0.05 }}
+                    className="group relative p-8 rounded-[40px] border border-white/5 bg-neutral-900/30 hover:bg-neutral-900/50 hover:border-primary/30 transition-all flex flex-col justify-between aspect-[4/3] xl:aspect-square"
+                  >
+                    <div className="space-y-6">
+                      <div className="flex justify-between items-center text-[9px] font-bold uppercase tracking-widest text-neutral-500">
+                        <span className="text-primary">{news.category}</span>
+                        <span>{news.date}</span>
+                      </div>
+                      <h3 className="text-xl xl:text-2xl font-bold tracking-tightest leading-tight group-hover:text-primary transition-colors">
+                        {news.title}
+                      </h3>
+                      <p className="text-neutral-500 text-sm leading-relaxed line-clamp-3">
                         {news.desc}
                       </p>
-                    )}
-                  </div>
+                    </div>
 
-                  <div className="relative z-10 flex items-center justify-between pt-6 mt-6 border-t border-white/5 group-hover:border-primary/20 transition-colors">
-                    <div className="flex items-center gap-2 text-[10px] font-bold text-neutral-600">
-                      <Clock size={12} /> {news.time}
-                    </div>
-                    <div className="flex items-center gap-3">
-                      <button className="text-neutral-600 hover:text-primary transition-colors">
-                        <Share2 size={16} />
-                      </button>
-                      <button className="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-black transition-all">
-                        <ChevronRight size={16} />
+                    <div className="flex items-center justify-between pt-6 mt-6 border-t border-white/5 group-hover:border-primary/20 transition-colors">
+                      <div className="flex items-center gap-2 text-[10px] font-bold text-neutral-600">
+                        <Clock size={12} /> {news.time}
+                      </div>
+                      <button className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-black transition-all">
+                        <ChevronRight size={18} />
                       </button>
                     </div>
-                  </div>
-                </motion.div>
-              ))}
+                  </motion.div>
+                ))}
+              </AnimatePresence>
             </div>
 
-            <div className="mt-20 flex justify-center">
-                   <button className="px-12 py-5 rounded-full bg-white/5 border border-white/10 text-[10px] font-bold uppercase tracking-[0.3em] text-neutral-400 hover:bg-white hover:text-black transition-all">
-                     Загрузить еще
-                   </button>
+            {/* Pagination Controls */}
+            <div className="mt-20 flex items-center justify-center gap-4">
+              <button 
+                disabled={currentPage === 1}
+                onClick={() => handlePageChange(currentPage - 1)}
+                className="w-14 h-14 rounded-full border border-white/5 flex items-center justify-center text-white disabled:opacity-20 hover:bg-white hover:text-black transition-all"
+              >
+                <ChevronLeft size={20} />
+              </button>
+              
+              <div className="flex gap-2">
+                {Array.from({ length: totalPages }).map((_, i) => (
+                  <button
+                    key={i}
+                    onClick={() => handlePageChange(i + 1)}
+                    className={`w-14 h-14 rounded-full font-bold text-[10px] transition-all ${
+                      currentPage === i + 1 
+                      ? 'bg-primary text-black' 
+                      : 'bg-white/5 text-neutral-400 hover:bg-white/10'
+                    }`}
+                  >
+                    {i + 1}
+                  </button>
+                ))}
+              </div>
+
+              <button 
+                disabled={currentPage === totalPages}
+                onClick={() => handlePageChange(currentPage + 1)}
+                className="w-14 h-14 rounded-full border border-white/5 flex items-center justify-center text-white disabled:opacity-20 hover:bg-white hover:text-black transition-all"
+              >
+                <ChevronRight size={20} />
+              </button>
             </div>
           </section>
         </div>
