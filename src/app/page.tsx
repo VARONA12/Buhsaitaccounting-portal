@@ -365,51 +365,55 @@ export default function LandingPage() {
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: i * 0.1, duration: 0.8 }}
-                  className="flex-none w-[300px] md:w-[450px] h-[600px] snap-center rounded-[48px] bg-[#0F0F0F] border border-white/5 p-12 flex flex-col justify-between group/card hover:bg-[#141414] transition-all relative overflow-hidden"
+                  className="flex-none w-[300px] md:w-[450px] h-[650px] snap-center rounded-[48px] bg-[#0F0F0F] border border-white/5 p-8 md:p-12 flex flex-col group/card hover:bg-[#141414] transition-all relative overflow-hidden"
                   onClick={() => openService(service)}
                 >
                   <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-transparent opacity-0 group-hover/card:opacity-100 transition-opacity duration-700" />
                   
-                  <div className="relative z-10">
-                     <div className="flex items-center justify-between mb-16">
-                      <div className="w-16 h-16 rounded-2xl bg-white/5 flex items-center justify-center text-primary border border-white/5 group-hover/card:scale-110 transition-transform duration-500">
+                  <div className="relative z-10 flex-1 flex flex-col">
+                     <div className="flex items-start justify-between mb-12">
+                      <div className="w-16 h-16 rounded-2xl bg-white/5 flex items-center justify-center text-primary border border-white/5 group-hover/card:scale-110 transition-transform duration-500 shrink-0">
                         <service.icon size={32} strokeWidth={1.5} />
                       </div>
                       {service.price && (
-                        <div className="bg-primary text-black text-[10px] font-extrabold uppercase tracking-widest px-6 py-3 rounded-full shadow-[0_10px_30px_rgba(255,193,7,0.3)]">
+                        <div className="bg-primary text-black text-[10px] font-extrabold uppercase tracking-widest px-6 py-3 rounded-full shadow-[0_10px_30px_rgba(255,193,7,0.3)] whitespace-nowrap">
                           {service.price}
                         </div>
                       )}
                     </div>
                     
-                    <h3 className="text-4xl font-bold uppercase tracking-tightest text-white leading-none mb-8 group-hover/card:text-primary transition-colors">
-                      {service.title}
-                    </h3>
+                    <div className="min-h-[100px] mb-6 flex flex-col justify-center">
+                      <h3 className="text-3xl md:text-4xl font-bold uppercase tracking-tightest text-white leading-[1.1] group-hover/card:text-primary transition-colors line-clamp-2">
+                        {service.title}
+                      </h3>
+                    </div>
                     
-                    <p className="text-neutral-500 text-sm md:text-base font-medium leading-relaxed max-w-xs">
-                      {service.desc}
-                    </p>
-                  </div>
-
-                  <div className="relative z-10">
-                    <div className="flex flex-col gap-4 mb-12">
-                       {service.details.slice(0, 3).map((detail, idx) => (
-                         <div key={idx} className="flex items-start gap-4 text-neutral-400 text-[10px] uppercase font-bold tracking-widest leading-tight opacity-70">
-                           <div className="w-1.5 h-1.5 rounded-full bg-primary/40 mt-1 shrink-0" />
-                           {detail}
-                         </div>
-                       ))}
+                    <div className="min-h-[80px] mb-8">
+                      <p className="text-neutral-500 text-sm md:text-base font-medium leading-relaxed line-clamp-3">
+                        {service.desc}
+                      </p>
                     </div>
 
-                    <button 
-                      onClick={(e) => {
-                         e.stopPropagation();
-                         openService(service);
-                      }}
-                      className="w-full py-6 rounded-3xl border border-white/10 text-[11px] font-bold uppercase tracking-[0.3em] text-white hover:bg-white hover:text-black transition-all flex items-center justify-center gap-4 group/btn"
-                    >
-                      Подробнее <ArrowUpRight size={18} className="group-hover/btn:translate-x-1 group-hover/btn:-translate-y-1 transition-transform" />
-                    </button>
+                    <div className="flex-1 flex flex-col justify-end">
+                      <div className="flex flex-col gap-4 mb-10">
+                         {service.details.slice(0, 3).map((detail, idx) => (
+                           <div key={idx} className="flex items-start gap-4 text-neutral-400 text-[10px] uppercase font-bold tracking-widest leading-tight opacity-70">
+                             <div className="w-1.5 h-1.5 rounded-full bg-primary/40 mt-1 shrink-0" />
+                             <span className="line-clamp-2">{detail}</span>
+                           </div>
+                         ))}
+                      </div>
+
+                      <button 
+                        onClick={(e) => {
+                           e.stopPropagation();
+                           openService(service);
+                        }}
+                        className="w-full py-6 rounded-3xl border border-white/10 text-[11px] font-bold uppercase tracking-[0.3em] text-white hover:bg-white hover:text-black transition-all flex items-center justify-center gap-4 group/btn"
+                      >
+                        Подробнее <ArrowUpRight size={18} className="group-hover/btn:translate-x-1 group-hover/btn:-translate-y-1 transition-transform" />
+                      </button>
+                    </div>
                   </div>
                 </motion.div>
               ))}
