@@ -135,12 +135,14 @@ export default function LandingPage() {
             </div>
             <span className="font-bold text-lg xl:text-xl tracking-tighter uppercase">ЭлитФинанс</span>
           </div>
+          
           <div className="hidden lg:flex items-center gap-10">
             {[
               { label: "Услуги", id: "services" },
               { label: "Кейсы", id: "cases" },
               { label: "Отзывы", id: "testimonials" },
               { label: "О компании", id: "about" },
+              { label: "Консультация", onClick: () => setIsFormOpen(true) },
               { label: "Статьи", href: "/articles" }
             ].map((item) => (
               item.href ? (
@@ -151,6 +153,14 @@ export default function LandingPage() {
                 >
                   {item.label}
                 </Link>
+              ) : item.onClick ? (
+                <button
+                  key={item.label}
+                  onClick={item.onClick}
+                  className="text-[10px] font-bold uppercase tracking-[0.2em] text-neutral-400 hover:text-white transition-colors"
+                >
+                  {item.label}
+                </button>
               ) : (
                 <a 
                   key={item.label}
@@ -199,6 +209,7 @@ export default function LandingPage() {
                   { label: "Кейсы", id: "cases" },
                   { label: "Отзывы", id: "testimonials" },
                   { label: "О компании", id: "about" },
+                  { label: "Консультация", onClick: () => { setIsMenuOpen(false); setIsFormOpen(true); } },
                   { label: "Статьи", href: "/articles" }
                 ].map((item) => (
                   item.href ? (
@@ -210,6 +221,14 @@ export default function LandingPage() {
                     >
                       {item.label}
                     </Link>
+                  ) : item.onClick ? (
+                    <button
+                      key={item.label}
+                      onClick={item.onClick}
+                      className="block text-lg font-bold uppercase tracking-[0.2em] text-neutral-400 hover:text-primary transition-colors text-left"
+                    >
+                      {item.label}
+                    </button>
                   ) : (
                     <a
                       key={item.label}
