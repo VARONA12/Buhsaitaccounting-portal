@@ -3,25 +3,25 @@ import type { Metadata } from "next";
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "Blog",
-  "@id": "https://elitefinance.pro/articles#blog",
+  "@id": "https://elitfinans.online/articles#blog",
   name: "База знаний ЭлитФинанс — статьи о налогах и бухгалтерии",
   description:
     "Экспертные статьи о налогообложении ООО и ИП в России. ОСНО, УСН, ЕНП, 115-ФЗ. Верифицированы налоговым аудитором Анной Туманян.",
-  url: "https://elitefinance.pro/articles",
+  url: "https://elitfinans.online/articles",
   inLanguage: "ru",
   isAccessibleForFree: true,
   publisher: {
     "@type": "Organization",
-    "@id": "https://elitefinance.pro#org",
+    "@id": "https://elitfinans.online#org",
     name: "ЭлитФинанс",
-    url: "https://elitefinance.pro",
+    url: "https://elitfinans.online",
   },
   author: {
     "@type": "Person",
-    "@id": "https://elitefinance.pro#expert",
+    "@id": "https://elitfinans.online#expert",
     name: "Анна Туманян",
     jobTitle: "Налоговый консультант и главный бухгалтер",
-    worksFor: { "@id": "https://elitefinance.pro#org" },
+    worksFor: { "@id": "https://elitfinans.online#org" },
   },
   about: [
     { "@type": "Thing", name: "Бухгалтерский учёт" },
@@ -48,13 +48,13 @@ export const metadata: Metadata = {
     "бухгалтерский учёт",
   ],
   alternates: {
-    canonical: "https://elitefinance.pro/articles",
+    canonical: "https://elitfinans.online/articles",
   },
   openGraph: {
     title: "База знаний — Статьи о налогах и бухгалтерии | ЭлитФинанс",
     description:
       "Экспертные статьи о налогообложении ООО и ИП. Верифицированы налоговым аудитором с 15-летним стажем.",
-    url: "https://elitefinance.pro/articles",
+    url: "https://elitfinans.online/articles",
     siteName: "ЭлитФинанс",
     locale: "ru_RU",
     type: "website",

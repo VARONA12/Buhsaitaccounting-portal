@@ -32,24 +32,24 @@ export default function HandbookPage() {
     "@graph": [
       {
         "@type": "DefinedTermSet",
-        "@id": "https://elitefinance.pro/handbook#glossary",
+        "@id": "https://elitfinans.online/handbook#glossary",
         name: "Справочник предпринимателя",
         description:
           "Экспертный глоссарий налоговых и бухгалтерских терминов для владельцев ООО и ИП в России",
         inLanguage: "ru",
-        url: "https://elitefinance.pro/handbook",
+        url: "https://elitfinans.online/handbook",
         publisher: {
           "@type": "Organization",
-          "@id": "https://elitefinance.pro#org",
+          "@id": "https://elitfinans.online#org",
           name: "ЭлитФинанс",
         },
         hasDefinedTerm: HANDBOOK_TERMS.map((t) => ({
           "@type": "DefinedTerm",
-          "@id": `https://elitefinance.pro/handbook/${t.slug}#term`,
+          "@id": `https://elitfinans.online/handbook/${t.slug}#term`,
           name: t.term,
           description: t.shortDef,
-          url: `https://elitefinance.pro/handbook/${t.slug}`,
-          inDefinedTermSet: "https://elitefinance.pro/handbook#glossary",
+          url: `https://elitfinans.online/handbook/${t.slug}`,
+          inDefinedTermSet: "https://elitfinans.online/handbook#glossary",
         })),
       },
       {
@@ -59,25 +59,25 @@ export default function HandbookPage() {
             "@type": "ListItem",
             position: 1,
             name: "Главная",
-            item: "https://elitefinance.pro",
+            item: "https://elitfinans.online",
           },
           {
             "@type": "ListItem",
             position: 2,
             name: "Справочник предпринимателя",
-            item: "https://elitefinance.pro/handbook",
+            item: "https://elitfinans.online/handbook",
           },
         ],
       },
       {
         "@type": "WebPage",
-        "@id": "https://elitefinance.pro/handbook",
+        "@id": "https://elitfinans.online/handbook",
         name: "Справочник предпринимателя — налоговые термины 2026",
         description:
           "Полный справочник по налогам и бухгалтерии для ООО и ИП: ЕНП, УСН, ОСНО, НДС, 115-ФЗ и другие ключевые термины с экспертными разборами.",
-        url: "https://elitefinance.pro/handbook",
-        isPartOf: { "@id": "https://elitefinance.pro#website" },
-        breadcrumb: { "@id": "https://elitefinance.pro/handbook#breadcrumb" },
+        url: "https://elitfinans.online/handbook",
+        isPartOf: { "@id": "https://elitfinans.online#website" },
+        breadcrumb: { "@id": "https://elitfinans.online/handbook#breadcrumb" },
         speakable: {
           "@type": "SpeakableSpecification",
           cssSelector: [".handbook-intro", ".handbook-terms"],

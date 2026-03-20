@@ -27,7 +27,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const news = ALL_NEWS.find((n) => n.slug === slug);
   if (!news) return { title: "Новость не найдена | ЭлитФинанс" };
 
-  const url = `https://elitefinance.pro/news/${slug}`;
+  const url = `https://elitfinans.online/news/${slug}`;
 
   return {
     title: `${news.title} | ЭлитФинанс`,
@@ -63,7 +63,7 @@ export default async function NewsDetailPage({ params }: Props) {
   const news = ALL_NEWS.find((n) => n.slug === slug);
   if (!news) notFound();
 
-  const url = `https://elitefinance.pro/news/${slug}`;
+  const url = `https://elitfinans.online/news/${slug}`;
   const related = ALL_NEWS.filter((n) => n.slug !== slug && n.category === news.category).slice(0, 3);
   const otherRelated = ALL_NEWS.filter((n) => n.slug !== slug).slice(0, 3 - related.length);
   const relatedNews = [...related, ...otherRelated].slice(0, 3);
@@ -93,19 +93,19 @@ export default async function NewsDetailPage({ params }: Props) {
         },
         "author": {
           "@type": "Person",
-          "@id": "https://elitefinance.pro#expert",
+          "@id": "https://elitfinans.online#expert",
           "name": "Анна Туманян",
           "jobTitle": "Налоговый консультант и главный бухгалтер",
-          "worksFor": { "@id": "https://elitefinance.pro#org" },
+          "worksFor": { "@id": "https://elitfinans.online#org" },
         },
         "publisher": {
           "@type": "Organization",
-          "@id": "https://elitefinance.pro#org",
+          "@id": "https://elitfinans.online#org",
           "name": "ЭлитФинанс",
-          "url": "https://elitefinance.pro",
+          "url": "https://elitfinans.online",
           "logo": {
             "@type": "ImageObject",
-            "url": "https://elitefinance.pro/favicon.ico",
+            "url": "https://elitfinans.online/favicon.ico",
           },
         },
         "mainEntityOfPage": {
@@ -114,23 +114,23 @@ export default async function NewsDetailPage({ params }: Props) {
         },
         "isPartOf": {
           "@type": "Blog",
-          "@id": "https://elitefinance.pro/news",
+          "@id": "https://elitfinans.online/news",
           "name": "Новости ЭлитФинанс",
         },
       },
       {
         "@type": "BreadcrumbList",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Главная", "item": "https://elitefinance.pro" },
-          { "@type": "ListItem", "position": 2, "name": "Новости", "item": "https://elitefinance.pro/news" },
+          { "@type": "ListItem", "position": 1, "name": "Главная", "item": "https://elitfinans.online" },
+          { "@type": "ListItem", "position": 2, "name": "Новости", "item": "https://elitfinans.online/news" },
           { "@type": "ListItem", "position": 3, "name": news.title, "item": url },
         ],
       },
       {
         "@type": "Organization",
-        "@id": "https://elitefinance.pro#org",
+        "@id": "https://elitfinans.online#org",
         "name": "ЭлитФинанс",
-        "url": "https://elitefinance.pro",
+        "url": "https://elitfinans.online",
         "telephone": "+79028371370",
         "email": "info@elitfinance.ru",
       },

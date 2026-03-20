@@ -19,7 +19,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   const description =
     article.excerpt ?? article.content.substring(0, 160) + "...";
-  const url = `https://elitefinance.pro/articles/${id}`;
+  const url = `https://elitfinans.online/articles/${id}`;
 
   return {
     title: `${article.title} | ЭлитФинанс`,
@@ -67,7 +67,7 @@ export default async function ArticlePage({ params }: Props) {
 
   if (!article) notFound();
 
-  const url = `https://elitefinance.pro/articles/${id}`;
+  const url = `https://elitfinans.online/articles/${id}`;
   const description = article.excerpt ?? article.content.substring(0, 160) + "...";
   const readingTime = Math.max(1, Math.ceil(article.content.split(" ").length / 200));
   const formattedDate = new Date(article.createdAt).toLocaleDateString("ru-RU", {
@@ -106,19 +106,19 @@ export default async function ArticlePage({ params }: Props) {
         },
         "author": {
           "@type": "Person",
-          "@id": "https://elitefinance.pro#expert",
+          "@id": "https://elitfinans.online#expert",
           "name": expertName,
           "jobTitle": "Налоговый консультант и главный бухгалтер",
-          "worksFor": { "@id": "https://elitefinance.pro#org" },
+          "worksFor": { "@id": "https://elitfinans.online#org" },
         },
         "publisher": {
           "@type": "Organization",
-          "@id": "https://elitefinance.pro#org",
+          "@id": "https://elitfinans.online#org",
           "name": "ЭлитФинанс",
-          "url": "https://elitefinance.pro",
+          "url": "https://elitfinans.online",
           "logo": {
             "@type": "ImageObject",
-            "url": "https://elitefinance.pro/favicon.ico",
+            "url": "https://elitfinans.online/favicon.ico",
           },
         },
         "mainEntityOfPage": {
@@ -127,7 +127,7 @@ export default async function ArticlePage({ params }: Props) {
         },
         "isPartOf": {
           "@type": "Blog",
-          "@id": "https://elitefinance.pro/articles",
+          "@id": "https://elitfinans.online/articles",
           "name": "База знаний ЭлитФинанс",
         },
         ...(article.image
@@ -143,16 +143,16 @@ export default async function ArticlePage({ params }: Props) {
       {
         "@type": "BreadcrumbList",
         "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Главная", "item": "https://elitefinance.pro" },
-          { "@type": "ListItem", "position": 2, "name": "Статьи", "item": "https://elitefinance.pro/articles" },
+          { "@type": "ListItem", "position": 1, "name": "Главная", "item": "https://elitfinans.online" },
+          { "@type": "ListItem", "position": 2, "name": "Статьи", "item": "https://elitfinans.online/articles" },
           { "@type": "ListItem", "position": 3, "name": article.title, "item": url },
         ],
       },
       {
         "@type": "Organization",
-        "@id": "https://elitefinance.pro#org",
+        "@id": "https://elitfinans.online#org",
         "name": "ЭлитФинанс",
-        "url": "https://elitefinance.pro",
+        "url": "https://elitfinans.online",
         "telephone": "+79028371370",
         "email": "info@elitfinance.ru",
       },

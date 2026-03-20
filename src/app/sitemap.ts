@@ -5,7 +5,7 @@ import { HANDBOOK_TERMS } from "@/lib/handbook-data";
 import { SERVICES } from "@/lib/services-data";
 import { FAQ_ITEMS } from "@/lib/faq-data";
 
-const BASE_URL = "https://elitefinance.pro";
+const BASE_URL = "https://elitfinans.online";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   // Static pages

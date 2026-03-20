@@ -133,9 +133,9 @@ const jsonLd = {
     // ── Организация ──────────────────────────────────────────────
     {
       "@type": "Organization",
-      "@id": "https://elitefinance.pro#org",
+      "@id": "https://elitfinans.online#org",
       "name": "ЭлитФинанс",
-      "url": "https://elitefinance.pro",
+      "url": "https://elitfinans.online",
       "telephone": "+79028371370",
       "email": "info@elitfinance.ru",
       "description": "Профессиональное бухгалтерское сопровождение ООО и ИП в России.",
@@ -195,11 +195,11 @@ const jsonLd = {
     // ── Главная услуга ────────────────────────────────────────────
     {
       "@type": "AccountingService",
-      "@id": "https://elitefinance.pro#service",
+      "@id": "https://elitfinans.online#service",
       "name": "ЭлитФинанс — бухгалтерское сопровождение",
       "description": "Профессиональное бухгалтерское сопровождение ООО и ИП в России. Ведение ОСНО, УСН, кадровый учёт и налоговая оптимизация.",
-      "url": "https://elitefinance.pro",
-      "provider": { "@id": "https://elitefinance.pro#org" },
+      "url": "https://elitfinans.online",
+      "provider": { "@id": "https://elitfinans.online#org" },
       "areaServed": { "@type": "Country", "name": "Россия" },
       "availableLanguage": "ru",
       "serviceType": "Бухгалтерский аутсорсинг",
@@ -208,10 +208,10 @@ const jsonLd = {
         "@type": "OfferCatalog",
         "name": "Тарифы бухгалтерского сопровождения",
         "itemListElement": [
-          { "@id": "https://elitefinance.pro#service-ooo-osno" },
-          { "@id": "https://elitefinance.pro#service-ooo-usn" },
-          { "@id": "https://elitefinance.pro#service-ip" },
-          { "@id": "https://elitefinance.pro#service-kadry" }
+          { "@id": "https://elitfinans.online#service-ooo-osno" },
+          { "@id": "https://elitfinans.online#service-ooo-usn" },
+          { "@id": "https://elitfinans.online#service-ip" },
+          { "@id": "https://elitfinans.online#service-kadry" }
         ]
       }
     },
@@ -219,10 +219,10 @@ const jsonLd = {
     // ── 4 отдельных услуги с ценами ───────────────────────────────
     {
       "@type": "Service",
-      "@id": "https://elitefinance.pro#service-ooo-osno",
+      "@id": "https://elitfinans.online#service-ooo-osno",
       "name": "Бухгалтерское сопровождение ООО на ОСНО",
       "description": "Комплексный учёт для компаний на общей системе налогообложения с НДС. Защита по 115-ФЗ, налоговое планирование, сопровождение проверок.",
-      "provider": { "@id": "https://elitefinance.pro#org" },
+      "provider": { "@id": "https://elitfinans.online#org" },
       "offers": {
         "@type": "Offer",
         "priceCurrency": "RUB",
@@ -234,10 +234,10 @@ const jsonLd = {
     },
     {
       "@type": "Service",
-      "@id": "https://elitefinance.pro#service-ooo-usn",
+      "@id": "https://elitfinans.online#service-ooo-usn",
       "name": "Бухгалтерское сопровождение ООО на УСН/Патенте",
       "description": "Сопровождение юридических лиц на упрощённой системе налогообложения. КУДиР, кадровый модуль, налоговая оптимизация.",
-      "provider": { "@id": "https://elitefinance.pro#org" },
+      "provider": { "@id": "https://elitfinans.online#org" },
       "offers": {
         "@type": "Offer",
         "priceCurrency": "RUB",
@@ -249,10 +249,10 @@ const jsonLd = {
     },
     {
       "@type": "Service",
-      "@id": "https://elitefinance.pro#service-ip",
+      "@id": "https://elitfinans.online#service-ip",
       "name": "Бухгалтерское сопровождение ИП",
       "description": "Полное бухгалтерское сопровождение для предпринимателей. Защита от блокировок по 115-ФЗ, налоговый учёт, консультации.",
-      "provider": { "@id": "https://elitefinance.pro#org" },
+      "provider": { "@id": "https://elitfinans.online#org" },
       "offers": {
         "@type": "Offer",
         "priceCurrency": "RUB",
@@ -264,10 +264,10 @@ const jsonLd = {
     },
     {
       "@type": "Service",
-      "@id": "https://elitefinance.pro#service-kadry",
+      "@id": "https://elitfinans.online#service-kadry",
       "name": "Кадровый учёт и HR-сопровождение",
       "description": "Кадровый учёт любой сложности, воинский учёт, защита от трудовых споров, расчёт зарплаты и увольнение сложных сотрудников.",
-      "provider": { "@id": "https://elitefinance.pro#org" },
+      "provider": { "@id": "https://elitfinans.online#org" },
       "offers": {
         "@type": "Offer",
         "priceCurrency": "RUB",
@@ -281,11 +281,11 @@ const jsonLd = {
     // ── Эксперт ───────────────────────────────────────────────────
     {
       "@type": "Person",
-      "@id": "https://elitefinance.pro#expert",
+      "@id": "https://elitfinans.online#expert",
       "name": "Анна Туманян",
       "jobTitle": "Руководитель ЭлитФинанс, налоговый консультант",
       "description": "Эксперт в области налогообложения и бухгалтерского учёта с 15-летним стажем. Специализация: ОСНО, УСН, налоговая оптимизация, 115-ФЗ.",
-      "worksFor": { "@id": "https://elitefinance.pro#org" },
+      "worksFor": { "@id": "https://elitfinans.online#org" },
       "knowsAbout": ["Налоги РФ", "Бухгалтерский учёт", "115-ФЗ", "ОСНО", "УСН", "ЕНП", "Кадровый учёт", "Налоговая оптимизация"],
       "hasCredential": {
         "@type": "EducationalOccupationalCredential",
@@ -294,7 +294,7 @@ const jsonLd = {
       "knowsLanguage": "ru",
       "image": {
         "@type": "ImageObject",
-        "url": "https://elitefinance.pro/director_hq.png",
+        "url": "https://elitfinans.online/director_hq.png",
         "description": "Анна Туманян — руководитель ЭлитФинанс"
       }
     },
@@ -302,17 +302,17 @@ const jsonLd = {
     // ── WebSite + SearchAction ────────────────────────────────────
     {
       "@type": "WebSite",
-      "@id": "https://elitefinance.pro#website",
-      "url": "https://elitefinance.pro",
+      "@id": "https://elitfinans.online#website",
+      "url": "https://elitfinans.online",
       "name": "ЭлитФинанс",
       "description": "Экспертный бухгалтерский портал для бизнеса",
-      "publisher": { "@id": "https://elitefinance.pro#org" },
+      "publisher": { "@id": "https://elitfinans.online#org" },
       "inLanguage": "ru",
       "potentialAction": {
         "@type": "SearchAction",
         "target": {
           "@type": "EntryPoint",
-          "urlTemplate": "https://elitefinance.pro/articles?q={search_term_string}"
+          "urlTemplate": "https://elitfinans.online/articles?q={search_term_string}"
         },
         "query-input": "required name=search_term_string"
       }
@@ -321,7 +321,7 @@ const jsonLd = {
     // ── FAQ ───────────────────────────────────────────────────────
     {
       "@type": "FAQPage",
-      "@id": "https://elitefinance.pro#faq",
+      "@id": "https://elitfinans.online#faq",
       "mainEntity": faqData.map(item => ({
         "@type": "Question",
         "name": item.question,
@@ -336,7 +336,7 @@ const jsonLd = {
     {
       "@type": "BreadcrumbList",
       "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "Главная", "item": "https://elitefinance.pro" }
+        { "@type": "ListItem", "position": 1, "name": "Главная", "item": "https://elitfinans.online" }
       ]
     }
   ]

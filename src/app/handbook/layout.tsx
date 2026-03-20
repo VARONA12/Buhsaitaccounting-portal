@@ -17,13 +17,13 @@ export const metadata: Metadata = {
     "налоговая оптимизация",
   ],
   alternates: {
-    canonical: "https://elitefinance.pro/handbook",
+    canonical: "https://elitfinans.online/handbook",
   },
   openGraph: {
     title: "Справочник предпринимателя | ЭлитФинанс",
     description:
       "Экспертный справочник по налогам и бухгалтерии для ООО и ИП. ЕНП, УСН, ОСНО, НДС, 115-ФЗ — 20 ключевых терминов с разбором, FAQ и примерами.",
-    url: "https://elitefinance.pro/handbook",
+    url: "https://elitfinans.online/handbook",
     siteName: "ЭлитФинанс",
     locale: "ru_RU",
     type: "website",

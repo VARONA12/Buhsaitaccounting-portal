@@ -27,7 +27,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const term = HANDBOOK_TERMS.find((t) => t.slug === slug);
   if (!term) return { title: "Термин не найден | ЭлитФинанс" };
 
-  const url = `https://elitefinance.pro/handbook/${slug}`;
+  const url = `https://elitfinans.online/handbook/${slug}`;
 
   return {
     title: `${term.term} — что это такое простыми словами | ЭлитФинанс`,
@@ -70,7 +70,7 @@ export default async function HandbookTermPage({ params }: Props) {
   const term = HANDBOOK_TERMS.find((t) => t.slug === slug);
   if (!term) notFound();
 
-  const url = `https://elitefinance.pro/handbook/${slug}`;
+  const url = `https://elitfinans.online/handbook/${slug}`;
 
   // Related terms: same category, excluding self
   const related = HANDBOOK_TERMS.filter(
@@ -93,9 +93,9 @@ export default async function HandbookTermPage({ params }: Props) {
         url,
         inDefinedTermSet: {
           "@type": "DefinedTermSet",
-          "@id": "https://elitefinance.pro/handbook#glossary",
+          "@id": "https://elitfinans.online/handbook#glossary",
           name: "Справочник предпринимателя",
-          url: "https://elitefinance.pro/handbook",
+          url: "https://elitfinans.online/handbook",
         },
         termCode: term.slug,
         about: {
@@ -135,16 +135,16 @@ export default async function HandbookTermPage({ params }: Props) {
         },
         author: {
           "@type": "Person",
-          "@id": "https://elitefinance.pro#expert",
+          "@id": "https://elitfinans.online#expert",
           name: "Анна Туманян",
           jobTitle: "Налоговый консультант и главный бухгалтер",
-          worksFor: { "@id": "https://elitefinance.pro#org" },
+          worksFor: { "@id": "https://elitfinans.online#org" },
         },
         publisher: {
           "@type": "Organization",
-          "@id": "https://elitefinance.pro#org",
+          "@id": "https://elitfinans.online#org",
           name: "ЭлитФинанс",
-          url: "https://elitefinance.pro",
+          url: "https://elitfinans.online",
         },
         mainEntityOfPage: {
           "@type": "WebPage",
@@ -152,7 +152,7 @@ export default async function HandbookTermPage({ params }: Props) {
         },
         isPartOf: {
           "@type": "DefinedTermSet",
-          "@id": "https://elitefinance.pro/handbook#glossary",
+          "@id": "https://elitfinans.online/handbook#glossary",
         },
       },
       {
@@ -162,13 +162,13 @@ export default async function HandbookTermPage({ params }: Props) {
             "@type": "ListItem",
             position: 1,
             name: "Главная",
-            item: "https://elitefinance.pro",
+            item: "https://elitfinans.online",
           },
           {
             "@type": "ListItem",
             position: 2,
             name: "Справочник предпринимателя",
-            item: "https://elitefinance.pro/handbook",
+            item: "https://elitfinans.online/handbook",
           },
           {
             "@type": "ListItem",
@@ -180,9 +180,9 @@ export default async function HandbookTermPage({ params }: Props) {
       },
       {
         "@type": "Organization",
-        "@id": "https://elitefinance.pro#org",
+        "@id": "https://elitfinans.online#org",
         name: "ЭлитФинанс",
-        url: "https://elitefinance.pro",
+        url: "https://elitfinans.online",
         telephone: "+79028371370",
         email: "info@elitfinance.ru",
       },

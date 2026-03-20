@@ -17,7 +17,7 @@ import {
   CheckCircle2,
 } from "lucide-react";
 
-const EXPERT_URL = "https://elitefinance.pro/expert/anna-tumanian";
+const EXPERT_URL = "https://elitfinans.online/expert/anna-tumanian";
 
 export const metadata: Metadata = {
   title: "Анна Туманян — налоговый консультант и главный бухгалтер | ЭлитФинанс",
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     type: "profile",
     images: [
       {
-        url: "https://elitefinance.pro/director_hq.png",
+        url: "https://elitfinans.online/director_hq.png",
         width: 800,
         height: 1000,
         alt: "Анна Туманян — руководитель ЭлитФинанс",
@@ -119,12 +119,12 @@ export default function ExpertPage() {
     "@graph": [
       {
         "@type": "Person",
-        "@id": "https://elitefinance.pro#expert",
+        "@id": "https://elitfinans.online#expert",
         name: "Анна Туманян",
         url: EXPERT_URL,
         image: {
           "@type": "ImageObject",
-          url: "https://elitefinance.pro/director_hq.png",
+          url: "https://elitfinans.online/director_hq.png",
           width: 800,
           height: 1000,
           description: "Анна Туманян — руководитель ЭлитФинанс, налоговый консультант",
@@ -168,19 +168,19 @@ export default function ExpertPage() {
         },
         worksFor: {
           "@type": "Organization",
-          "@id": "https://elitefinance.pro#org",
+          "@id": "https://elitfinans.online#org",
           name: "ЭлитФинанс",
-          url: "https://elitefinance.pro",
+          url: "https://elitfinans.online",
         },
         mainEntityOfPage: {
           "@type": "ProfilePage",
           "@id": EXPERT_URL,
         },
-        publishingPrinciples: "https://elitefinance.pro/expert/anna-tumanian",
+        publishingPrinciples: "https://elitfinans.online/expert/anna-tumanian",
         author: [
-          { "@type": "WebPage", url: "https://elitefinance.pro/articles" },
-          { "@type": "WebPage", url: "https://elitefinance.pro/news" },
-          { "@type": "WebPage", url: "https://elitefinance.pro/handbook" },
+          { "@type": "WebPage", url: "https://elitfinans.online/articles" },
+          { "@type": "WebPage", url: "https://elitfinans.online/news" },
+          { "@type": "WebPage", url: "https://elitfinans.online/handbook" },
         ],
       },
       {
@@ -190,9 +190,9 @@ export default function ExpertPage() {
         description:
           "Профессиональный профиль Анны Туманян — руководителя ЭлитФинанс и налогового консультanta с 15-летним стажем.",
         url: EXPERT_URL,
-        about: { "@id": "https://elitefinance.pro#expert" },
-        mainEntity: { "@id": "https://elitefinance.pro#expert" },
-        isPartOf: { "@id": "https://elitefinance.pro#website" },
+        about: { "@id": "https://elitfinans.online#expert" },
+        mainEntity: { "@id": "https://elitfinans.online#expert" },
+        isPartOf: { "@id": "https://elitfinans.online#website" },
         speakable: {
           "@type": "SpeakableSpecification",
           cssSelector: [".expert-bio", ".expert-credentials"],
@@ -205,7 +205,7 @@ export default function ExpertPage() {
             "@type": "ListItem",
             position: 1,
             name: "Главная",
-            item: "https://elitefinance.pro",
+            item: "https://elitfinans.online",
           },
           {
             "@type": "ListItem",
@@ -217,13 +217,13 @@ export default function ExpertPage() {
       },
       {
         "@type": "Organization",
-        "@id": "https://elitefinance.pro#org",
+        "@id": "https://elitfinans.online#org",
         name: "ЭлитФинанс",
-        url: "https://elitefinance.pro",
+        url: "https://elitfinans.online",
         telephone: "+79028371370",
         email: "info@elitfinance.ru",
-        founder: { "@id": "https://elitefinance.pro#expert" },
-        employee: { "@id": "https://elitefinance.pro#expert" },
+        founder: { "@id": "https://elitfinans.online#expert" },
+        employee: { "@id": "https://elitfinans.online#expert" },
       },
     ],
   };

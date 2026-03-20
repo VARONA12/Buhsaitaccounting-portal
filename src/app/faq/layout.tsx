@@ -13,12 +13,12 @@ export const metadata: Metadata = {
     "ФНС требование что делать",
     "блокировка счёта вопросы",
   ],
-  alternates: { canonical: "https://elitefinance.pro/faq" },
+  alternates: { canonical: "https://elitfinans.online/faq" },
   openGraph: {
     title: "Вопросы и ответы по налогам | ЭлитФинанс",
     description:
       "20 экспертных ответов на частые вопросы об аутсорсинге бухгалтерии, налоговых режимах и проверках ФНС.",
-    url: "https://elitefinance.pro/faq",
+    url: "https://elitfinans.online/faq",
     siteName: "ЭлитФинанс",
     locale: "ru_RU",
     type: "website",

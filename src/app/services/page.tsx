@@ -8,12 +8,12 @@ const jsonLd = {
   "@graph": [
     {
       "@type": "AccountingService",
-      "@id": "https://elitefinance.pro#service",
+      "@id": "https://elitfinans.online#service",
       name: "ЭлитФинанс — бухгалтерское сопровождение",
       description:
         "Профессиональное бухгалтерское сопровождение ООО и ИП в России. ОСНО, УСН, кадровый учёт, защита по 115-ФЗ.",
-      url: "https://elitefinance.pro/services",
-      provider: { "@id": "https://elitefinance.pro#org" },
+      url: "https://elitfinans.online/services",
+      provider: { "@id": "https://elitfinans.online#org" },
       areaServed: { "@type": "Country", name: "Россия" },
       priceRange: "от 5 000 ₽/мес",
       hasOfferCatalog: {
@@ -23,7 +23,7 @@ const jsonLd = {
           "@type": "Offer",
           name: s.title,
           description: s.subtitle,
-          url: `https://elitefinance.pro/services/${s.slug}`,
+          url: `https://elitfinans.online/services/${s.slug}`,
           priceCurrency: "RUB",
           price: s.minPrice,
           priceSpecification: {
@@ -41,15 +41,15 @@ const jsonLd = {
     {
       "@type": "BreadcrumbList",
       itemListElement: [
-        { "@type": "ListItem", position: 1, name: "Главная", item: "https://elitefinance.pro" },
-        { "@type": "ListItem", position: 2, name: "Услуги", item: "https://elitefinance.pro/services" },
+        { "@type": "ListItem", position: 1, name: "Главная", item: "https://elitfinans.online" },
+        { "@type": "ListItem", position: 2, name: "Услуги", item: "https://elitfinans.online/services" },
       ],
     },
     {
       "@type": "Organization",
-      "@id": "https://elitefinance.pro#org",
+      "@id": "https://elitfinans.online#org",
       name: "ЭлитФинанс",
-      url: "https://elitefinance.pro",
+      url: "https://elitfinans.online",
       telephone: "+79028371370",
       email: "info@elitfinance.ru",
       aggregateRating: {

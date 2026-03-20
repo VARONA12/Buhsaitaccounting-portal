@@ -35,39 +35,39 @@ export default function FaqIndexPage() {
     "@graph": [
       {
         "@type": "FAQPage",
-        "@id": "https://elitefinance.pro/faq#faqpage",
+        "@id": "https://elitfinans.online/faq#faqpage",
         name: "Вопросы и ответы по бухгалтерии и налогам для ООО и ИП",
         description:
           "Экспертные ответы на 20 частых вопросов об аутсорсинге бухгалтерии, налоговых режимах, проверках ФНС и блокировках счетов.",
-        url: "https://elitefinance.pro/faq",
+        url: "https://elitfinans.online/faq",
         inLanguage: "ru",
         author: {
           "@type": "Person",
-          "@id": "https://elitefinance.pro#expert",
+          "@id": "https://elitfinans.online#expert",
           name: "Анна Туманян",
         },
         publisher: {
           "@type": "Organization",
-          "@id": "https://elitefinance.pro#org",
+          "@id": "https://elitfinans.online#org",
           name: "ЭлитФинанс",
         },
         mainEntity: FAQ_ITEMS.map((item) => ({
           "@type": "Question",
-          "@id": `https://elitefinance.pro/faq/${item.slug}#question`,
+          "@id": `https://elitfinans.online/faq/${item.slug}#question`,
           name: item.question,
-          url: `https://elitefinance.pro/faq/${item.slug}`,
+          url: `https://elitfinans.online/faq/${item.slug}`,
           acceptedAnswer: {
             "@type": "Answer",
             text: item.shortAnswer,
-            url: `https://elitefinance.pro/faq/${item.slug}`,
+            url: `https://elitfinans.online/faq/${item.slug}`,
           },
         })),
       },
       {
         "@type": "BreadcrumbList",
         itemListElement: [
-          { "@type": "ListItem", position: 1, name: "Главная", item: "https://elitefinance.pro" },
-          { "@type": "ListItem", position: 2, name: "Вопросы и ответы", item: "https://elitefinance.pro/faq" },
+          { "@type": "ListItem", position: 1, name: "Главная", item: "https://elitfinans.online" },
+          { "@type": "ListItem", position: 2, name: "Вопросы и ответы", item: "https://elitfinans.online/faq" },
         ],
       },
     ],

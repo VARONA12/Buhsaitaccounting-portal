@@ -14,13 +14,13 @@ export const metadata: Metadata = {
     "стоимость бухгалтерии",
   ],
   alternates: {
-    canonical: "https://elitefinance.pro/services",
+    canonical: "https://elitfinans.online/services",
   },
   openGraph: {
     title: "Услуги бухгалтерского сопровождения | ЭлитФинанс",
     description:
       "ООО на ОСНО и УСН, ИП, кадровый учёт — от 5 000 ₽/мес. Финансовая ответственность по договору.",
-    url: "https://elitefinance.pro/services",
+    url: "https://elitfinans.online/services",
     siteName: "ЭлитФинанс",
     locale: "ru_RU",
     type: "website",

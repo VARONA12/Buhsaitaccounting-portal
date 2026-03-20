@@ -31,7 +31,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const service = SERVICES.find((s) => s.slug === slug);
   if (!service) return { title: "Услуга не найдена | ЭлитФинанс" };
 
-  const url = `https://elitefinance.pro/services/${slug}`;
+  const url = `https://elitfinans.online/services/${slug}`;
 
   return {
     title: `${service.title} | Цена ${service.price} | ЭлитФинанс`,
@@ -65,7 +65,7 @@ export default async function ServiceDetailPage({ params }: Props) {
   const service = SERVICES.find((s) => s.slug === slug);
   if (!service) notFound();
 
-  const url = `https://elitefinance.pro/services/${slug}`;
+  const url = `https://elitfinans.online/services/${slug}`;
 
   // Related handbook terms
   const relatedTermObjs = HANDBOOK_TERMS.filter((t) =>
@@ -86,9 +86,9 @@ export default async function ServiceDetailPage({ params }: Props) {
         url,
         provider: {
           "@type": "Organization",
-          "@id": "https://elitefinance.pro#org",
+          "@id": "https://elitfinans.online#org",
           name: "ЭлитФинанс",
-          url: "https://elitefinance.pro",
+          url: "https://elitfinans.online",
           telephone: "+79028371370",
         },
         serviceType: "Бухгалтерский аутсорсинг",
@@ -107,7 +107,7 @@ export default async function ServiceDetailPage({ params }: Props) {
           },
           eligibleRegion: { "@type": "Country", name: "Россия" },
           availability: "https://schema.org/InStock",
-          seller: { "@id": "https://elitefinance.pro#org" },
+          seller: { "@id": "https://elitfinans.online#org" },
         },
         hasOfferCatalog: {
           "@type": "OfferCatalog",
@@ -124,12 +124,12 @@ export default async function ServiceDetailPage({ params }: Props) {
         },
         isRelatedTo: service.relatedTerms.map((termSlug) => ({
           "@type": "DefinedTerm",
-          "@id": `https://elitefinance.pro/handbook/${termSlug}#term`,
-          url: `https://elitefinance.pro/handbook/${termSlug}`,
+          "@id": `https://elitfinans.online/handbook/${termSlug}#term`,
+          url: `https://elitfinans.online/handbook/${termSlug}`,
         })),
         isPartOf: {
           "@type": "AccountingService",
-          "@id": "https://elitefinance.pro#service",
+          "@id": "https://elitfinans.online#service",
           name: "ЭлитФинанс — бухгалтерское сопровождение",
         },
       },
@@ -152,13 +152,13 @@ export default async function ServiceDetailPage({ params }: Props) {
             "@type": "ListItem",
             position: 1,
             name: "Главная",
-            item: "https://elitefinance.pro",
+            item: "https://elitfinans.online",
           },
           {
             "@type": "ListItem",
             position: 2,
             name: "Услуги",
-            item: "https://elitefinance.pro/#services",
+            item: "https://elitfinans.online/#services",
           },
           {
             "@type": "ListItem",
@@ -170,9 +170,9 @@ export default async function ServiceDetailPage({ params }: Props) {
       },
       {
         "@type": "Organization",
-        "@id": "https://elitefinance.pro#org",
+        "@id": "https://elitfinans.online#org",
         name: "ЭлитФинанс",
-        url: "https://elitefinance.pro",
+        url: "https://elitfinans.online",
         telephone: "+79028371370",
         email: "info@elitfinance.ru",
         aggregateRating: {

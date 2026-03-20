@@ -28,7 +28,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const item = FAQ_ITEMS.find((f) => f.slug === slug);
   if (!item) return { title: "Вопрос не найден | ЭлитФинанс" };
 
-  const url = `https://elitefinance.pro/faq/${slug}`;
+  const url = `https://elitfinans.online/faq/${slug}`;
   return {
     title: `${item.question} | ЭлитФинанс`,
     description: item.shortAnswer,
@@ -61,7 +61,7 @@ export default async function FaqDetailPage({ params }: Props) {
   const item = FAQ_ITEMS.find((f) => f.slug === slug);
   if (!item) notFound();
 
-  const url = `https://elitefinance.pro/faq/${slug}`;
+  const url = `https://elitfinans.online/faq/${slug}`;
 
   const relatedTermObjs = HANDBOOK_TERMS.filter((t) => item.relatedTerms.includes(t.slug));
   const relatedServiceObjs = SERVICES.filter((s) => item.relatedServices.includes(s.slug));
@@ -87,7 +87,7 @@ export default async function FaqDetailPage({ params }: Props) {
               text: item.fullAnswer.join(" "),
               author: {
                 "@type": "Person",
-                "@id": "https://elitefinance.pro#expert",
+                "@id": "https://elitfinans.online#expert",
                 name: "Анна Туманян",
               },
             },
@@ -109,28 +109,28 @@ export default async function FaqDetailPage({ params }: Props) {
         },
         author: {
           "@type": "Person",
-          "@id": "https://elitefinance.pro#expert",
+          "@id": "https://elitfinans.online#expert",
           name: "Анна Туманян",
           jobTitle: "Налоговый консультант и главный бухгалтер",
-          worksFor: { "@id": "https://elitefinance.pro#org" },
+          worksFor: { "@id": "https://elitfinans.online#org" },
         },
         publisher: {
           "@type": "Organization",
-          "@id": "https://elitefinance.pro#org",
+          "@id": "https://elitfinans.online#org",
           name: "ЭлитФинанс",
-          url: "https://elitefinance.pro",
+          url: "https://elitfinans.online",
         },
         mainEntityOfPage: { "@type": "WebPage", "@id": url },
         isPartOf: {
           "@type": "FAQPage",
-          "@id": "https://elitefinance.pro/faq#faqpage",
+          "@id": "https://elitfinans.online/faq#faqpage",
         },
       },
       {
         "@type": "BreadcrumbList",
         itemListElement: [
-          { "@type": "ListItem", position: 1, name: "Главная", item: "https://elitefinance.pro" },
-          { "@type": "ListItem", position: 2, name: "Вопросы и ответы", item: "https://elitefinance.pro/faq" },
+          { "@type": "ListItem", position: 1, name: "Главная", item: "https://elitfinans.online" },
+          { "@type": "ListItem", position: 2, name: "Вопросы и ответы", item: "https://elitfinans.online/faq" },
           { "@type": "ListItem", position: 3, name: item.question, item: url },
         ],
       },

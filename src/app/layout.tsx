@@ -9,7 +9,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://elitefinance.pro"),
+  metadataBase: new URL("https://elitfinans.online"),
   title: {
     default: "ЭлитФинанс — Бухгалтерское сопровождение ООО и ИП | Налоги 2026",
     template: "%s | ЭлитФинанс",
@@ -28,18 +28,18 @@ export const metadata: Metadata = {
     "аутсорсинг бухгалтерии",
     "кадровый учёт",
   ],
-  authors: [{ name: "Анна Туманян", url: "https://elitefinance.pro" }],
+  authors: [{ name: "Анна Туманян", url: "https://elitfinans.online" }],
   creator: "ЭлитФинанс",
   publisher: "ЭлитФинанс",
   applicationName: "ЭлитФинанс",
   alternates: {
-    canonical: "https://elitefinance.pro",
+    canonical: "https://elitfinans.online",
   },
   openGraph: {
     title: "ЭлитФинанс — Бухгалтерское сопровождение ООО и ИП",
     description:
       "Профессиональное бухгалтерское сопровождение в России. ОСНО, УСН, налоговая оптимизация с полной финансовой ответственностью.",
-    url: "https://elitefinance.pro",
+    url: "https://elitfinans.online",
     siteName: "ЭлитФинанс",
     locale: "ru_RU",
     type: "website",
