@@ -391,6 +391,8 @@ export default function LandingPage() {
               { label: "Услуги", href: "/services" },
               { label: "Справочник", href: "/handbook" },
               { label: "Вопросы", href: "/faq" },
+              { label: "Новости", href: "/news" },
+              { label: "Эксперт", href: "/expert/anna-tumanian" },
             ].map((item: any) => (
               item.href ? (
                 <Link
