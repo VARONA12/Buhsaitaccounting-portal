@@ -59,4 +59,4 @@ Allow: /
 Disallow: /dashboard
 Disallow: /admin
 
-Sitemap: https://elitefinance.pro/sitemap.xml
+Sitemap: https://elitfinans.online/sitemap.xml
