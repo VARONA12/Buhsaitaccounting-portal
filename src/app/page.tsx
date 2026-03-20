@@ -388,14 +388,10 @@ export default function LandingPage() {
           
           <div className="hidden lg:flex items-center gap-10">
             {[
-              { label: "Услуги", id: "services" },
-              { label: "Кейсы", id: "cases" },
-              { label: "Отзывы", id: "testimonials" },
-              { label: "О компании", id: "about" },
-              { label: "Новости", href: "/news" },
-              { label: "Статьи", href: "/articles" },
+              { label: "Услуги", href: "/services" },
               { label: "Справочник", href: "/handbook" },
               { label: "Вопросы", href: "/faq" },
+              { label: "Новости", href: "/news" },
               { label: "Эксперт", href: "/expert/anna-tumanian" }
             ].map((item: any) => (
               item.href ? (
@@ -450,15 +446,15 @@ export default function LandingPage() {
             >
               <div className="p-8 space-y-6">
                 {[
-                  { label: "Услуги", id: "services" },
+                  { label: "Услуги", href: "/services" },
+                  { label: "Справочник", href: "/handbook" },
+                  { label: "Вопросы", href: "/faq" },
+                  { label: "Новости", href: "/news" },
+                  { label: "Статьи", href: "/articles" },
+                  { label: "Эксперт", href: "/expert/anna-tumanian" },
                   { label: "Кейсы", id: "cases" },
                   { label: "Отзывы", id: "testimonials" },
                   { label: "О компании", id: "about" },
-                  { label: "Новости", href: "/news" },
-                  { label: "Статьи", href: "/articles" },
-                  { label: "Справочник", href: "/handbook" },
-                  { label: "Вопросы", href: "/faq" },
-                  { label: "Эксперт", href: "/expert/anna-tumanian" }
                 ].map((item: any) => (
                   item.href ? (
                     <Link
