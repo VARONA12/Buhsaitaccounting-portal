@@ -386,13 +386,11 @@ export default function LandingPage() {
             <span className="font-bold text-lg xl:text-xl tracking-tighter uppercase">ЭлитФинанс</span>
           </div>
           
-          <div className="hidden lg:flex items-center gap-10">
+          <div className="hidden lg:flex items-center gap-8">
             {[
               { label: "Услуги", href: "/services" },
               { label: "Справочник", href: "/handbook" },
               { label: "Вопросы", href: "/faq" },
-              { label: "Новости", href: "/news" },
-              { label: "Эксперт", href: "/expert/anna-tumanian" }
             ].map((item: any) => (
               item.href ? (
                 <Link
@@ -450,11 +448,7 @@ export default function LandingPage() {
                   { label: "Справочник", href: "/handbook" },
                   { label: "Вопросы", href: "/faq" },
                   { label: "Новости", href: "/news" },
-                  { label: "Статьи", href: "/articles" },
                   { label: "Эксперт", href: "/expert/anna-tumanian" },
-                  { label: "Кейсы", id: "cases" },
-                  { label: "Отзывы", id: "testimonials" },
-                  { label: "О компании", id: "about" },
                 ].map((item: any) => (
                   item.href ? (
                     <Link
@@ -520,7 +514,7 @@ export default function LandingPage() {
                 animate={{ opacity: 1, y: 0 }}
                 className="text-5xl md:text-7xl lg:text-[6.5rem] xl:text-[8rem] font-bold tracking-tightest leading-[0.9] text-white"
               >
-                БЕЗУПРЕЧНЫЙ <br /> КОНТРОЛЬ <br /> <span className="text-primary italic">ФИНАНСОВ.</span>
+                БЕЗУПРЕЧНЫЙ <br /> КОНТРОЛЬ <br /> <span className="text-primary italic">ФИНАНСОВ</span>
               </motion.h1>
 
               <motion.p 
