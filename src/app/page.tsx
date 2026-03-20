@@ -672,7 +672,7 @@ export default function LandingPage() {
           <div className="mb-20 space-y-4">
             <h2 className="text-[10px] font-bold uppercase tracking-[0.4em] text-neutral-500">01.1 / Процесс</h2>
             <div className="text-4xl xl:text-6xl font-bold tracking-tightest leading-none">
-              КАК МЫ <span className="text-primary italic">РАБОТАЕМ.</span>
+              КАК МЫ <span className="text-primary italic">РАБОТАЕМ</span>
             </div>
           </div>
 
@@ -711,7 +711,7 @@ export default function LandingPage() {
           <div className="mb-16 space-y-4">
             <h2 className="text-[10px] font-bold uppercase tracking-[0.4em] text-primary">02 / Наш опыт</h2>
             <div className="text-4xl xl:text-6xl font-bold tracking-tightest leading-none text-white">
-              РЕАЛЬНЫЕ <span className="text-primary italic">РЕЗУЛЬТАТЫ.</span>
+              РЕАЛЬНЫЕ <span className="text-primary italic">РЕЗУЛЬТАТЫ</span>
             </div>
           </div>
 

@@ -262,7 +262,7 @@ export default async function FaqDetailPage({ params }: Props) {
             <div className="relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-8">
               <div className="space-y-2">
                 <p className="text-[10px] font-bold uppercase tracking-[0.3em] text-primary">Остался вопрос?</p>
-                <h3 className="text-2xl font-bold tracking-tightest text-white">Разберём вашу ситуацию.</h3>
+                <h3 className="text-2xl font-bold tracking-tightest text-white">Разберём вашу ситуацию</h3>
                 <p className="text-neutral-400 text-sm max-w-md">Задайте вопрос напрямую эксперту ЭлитФинанс — первичная консультация бесплатна.</p>
               </div>
               <Link href="/#contact" className="shrink-0 px-8 py-4 bg-primary text-black font-bold uppercase text-[10px] tracking-widest rounded-xl hover:bg-white transition-all flex items-center gap-3 group">

@@ -103,7 +103,7 @@ export default function NewsPage() {
               <div className="space-y-4">
                 <h2 className="text-[10px] font-bold uppercase tracking-[0.4em] text-neutral-400">Лента новостей</h2>
                 <div className="text-4xl xl:text-7xl font-bold tracking-tightest leading-none">
-                  СВЕЖИЕ <span className="text-primary italic">НОВОСТИ.</span>
+                  СВЕЖИЕ <span className="text-primary italic">НОВОСТИ</span>
                 </div>
               </div>
               <div className="text-[10px] font-bold uppercase tracking-widest text-neutral-500">

@@ -142,7 +142,7 @@ export default function ArticlesPage() {
           >
             <h2 className="text-[10px] font-bold uppercase tracking-[0.4em] text-primary">База знаний</h2>
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tightest leading-none">
-              АКТУАЛЬНЫЕ <br /> СТАТЬИ И <span className="text-primary italic">ИНСАЙТЫ.</span>
+              АКТУАЛЬНЫЕ <br /> СТАТЬИ И <span className="text-primary italic">ИНСАЙТЫ</span>
             </h1>
           </motion.div>
 

@@ -201,7 +201,7 @@ export default function FaqIndexPage() {
             <div className="relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-8">
               <div className="space-y-2">
                 <p className="text-[10px] font-bold uppercase tracking-[0.3em] text-primary">Не нашли ответ?</p>
-                <h2 className="text-2xl xl:text-3xl font-bold tracking-tightest text-white">Спросите эксперта напрямую.</h2>
+                <h2 className="text-2xl xl:text-3xl font-bold tracking-tightest text-white">Спросите эксперта напрямую</h2>
                 <p className="text-neutral-400 text-sm max-w-md">Анна Туманян ответит на ваш конкретный вопрос бесплатно при первичной консультации.</p>
               </div>
               <Link href="/#contact" className="shrink-0 px-8 py-4 bg-primary text-black font-bold uppercase text-[10px] tracking-widest rounded-xl hover:bg-white transition-all flex items-center gap-3 group">
