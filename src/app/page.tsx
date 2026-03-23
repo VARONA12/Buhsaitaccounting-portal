@@ -140,6 +140,7 @@ const jsonLd = {
       "email": "info@elitfinance.ru",
       "description": "Профессиональное бухгалтерское сопровождение ООО и ИП в России.",
       "foundingDate": "2010",
+      "numberOfEmployees": { "@type": "QuantitativeValue", "value": 12 },
       "areaServed": { "@type": "Country", "name": "Россия" },
       "address": {
         "@type": "PostalAddress",

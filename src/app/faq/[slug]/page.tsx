@@ -126,6 +126,23 @@ export default async function FaqDetailPage({ params }: Props) {
           "@id": "https://elitfinans.online/faq#faqpage",
         },
       },
+      ...(item.question.startsWith("Как") ? [{
+        "@type": "HowTo",
+        "@id": `${url}#howto`,
+        name: item.question,
+        description: item.shortAnswer,
+        inLanguage: "ru",
+        author: {
+          "@type": "Person",
+          "@id": "https://elitfinans.online#expert",
+          name: "Анна Туманян",
+        },
+        step: item.fullAnswer.map((text, i) => ({
+          "@type": "HowToStep",
+          position: i + 1,
+          text,
+        })),
+      }] : []),
       {
         "@type": "BreadcrumbList",
         itemListElement: [
