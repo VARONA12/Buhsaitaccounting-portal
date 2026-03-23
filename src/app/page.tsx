@@ -817,7 +817,7 @@ export default function LandingPage() {
              <div className="space-y-4">
                 <h2 className="text-[10px] font-bold uppercase tracking-[0.4em] text-primary">04 / Руководитель</h2>
                 <h3 className="text-5xl xl:text-[6.5rem] font-bold tracking-tightest leading-none text-white uppercase">
-                  ЛИЧНЫЙ <br /> <span className="text-primary italic">КОНТРОЛЬ</span> <br /> КАЧЕСТВА.
+                  ЛИЧНЫЙ <br /> <span className="text-primary italic">КОНТРОЛЬ</span> <br /> КАЧЕСТВА
                 </h3>
              </div>
              
@@ -873,7 +873,7 @@ export default function LandingPage() {
           <div className="mb-16 space-y-4 text-center">
             <h2 className="text-[10px] font-bold uppercase tracking-[0.4em] text-primary">05 / Вопросы и ответы</h2>
             <div className="text-4xl xl:text-6xl font-bold tracking-tightest leading-none text-white">
-              ЧАСТО <span className="text-primary italic">СПРАШИВАЮТ.</span>
+              ЧАСТО <span className="text-primary italic">СПРАШИВАЮТ</span>
             </div>
           </div>
           
