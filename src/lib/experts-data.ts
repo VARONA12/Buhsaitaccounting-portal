@@ -78,7 +78,7 @@ export const EXPERTS: Expert[] = [
     specialization: ["КАДРЫ", "ЗАРПЛАТА", "ТК РФ"],
     experience: "14 лет",
     bio: "Эксперт в области трудового права и Payroll. Обеспечивает полную безопасность бизнеса в отношениях с персоналом и контролирующими органами.",
-    image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=800&auto=format&fit=crop",
+    image: "/team/natalia-ryzhichkina.jpg",
     achievements: [
       { label: "Сотрудников", value: "1500+" },
       { label: "Проверок ГИТ", value: "20/20 без штрафов" }
@@ -92,7 +92,7 @@ export const EXPERTS: Expert[] = [
     specialization: ["ГРАНТЫ", "СУБСИДИИ", "ГОСПОДДЕРЖКА"],
     experience: "10 лет",
     bio: "Профессиональный консультант по привлечению и отчетности по государственным грантам и субсидиям. Помогает бизнесу получать максимум от мер господдержки.",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=800&auto=format&fit=crop",
+    image: "/team/marina-abasheva.jpg",
     achievements: [
       { label: "Получено грантов", value: "150 млн ₽" },
       { label: "Успешных заявок", value: "95%" }
