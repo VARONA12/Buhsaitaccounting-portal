@@ -2,6 +2,7 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
 import { Logo } from '@/components/Logo';
+import { Footer } from '@/components/Footer';
 import { ShieldCheck, Award, TrendingUp, Users, MapPin, Mail, Phone, ArrowLeft, ArrowRight, UserCheck, ChevronRight, Zap } from 'lucide-react';
 import { ContactButtonFull } from '@/components/ContactButton';
 
@@ -16,6 +17,15 @@ export const metadata: Metadata = {
     locale: 'ru_RU',
     type: 'website',
   },
+};
+
+const breadcrumbJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Главная", "item": "https://elitfinans.online" },
+    { "@type": "ListItem", "position": 2, "name": "О компании", "item": "https://elitfinans.online/about" },
+  ],
 };
 
 const aboutJsonLd = {
@@ -40,6 +50,7 @@ const aboutJsonLd = {
 export default function AboutPage() {
   return (
     <div className="min-h-screen bg-neutral-900 text-white font-sans selection:bg-primary-dark/80 selection:text-white">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(aboutJsonLd) }} />
       {/* Nav */}
       <nav className="fixed top-0 left-0 w-full z-[100] border-b border-white/12 bg-neutral-900/70 backdrop-blur-3xl shadow-sm">
@@ -178,32 +189,7 @@ export default function AboutPage() {
         </div>
       </main>
 
-      {/* Footer */}
-      <footer className="py-20 px-6 border-t border-white/12 bg-neutral-900 relative">
-         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-12">
-            <div className="flex items-center gap-4">
-               <Logo size={40} />
-               <span className="font-bold text-xl tracking-tighter uppercase text-white">ЭлитФинанс</span>
-            </div>
-            <nav className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
-                {[
-                  { label: "МЫ В МАКСЕ", href: "https://max-channel-link" },
-                  { label: "ПОЗВОНИТЬ", href: "tel:+74950000000" },
-                  { label: "СООБЩЕСТВО В ВК", href: "https://vk.com/elitfinans" },
-                  { label: "НАПИСАТЬ НА ПОЧТУ", href: "mailto:info@elitfinans.online" }
-                ].map(nav => (
-                  <Link 
-                    key={nav.label} 
-                    href={nav.href} 
-                    className="px-6 py-3 rounded-full border border-white/12 bg-white/5 text-[9px] font-black uppercase tracking-[0.3em] text-white hover:bg-white hover:text-neutral-900 transition-all shadow-lg whitespace-nowrap"
-                  >
-                    {nav.label}
-                  </Link>
-                ))}
-            </nav>
-            <div className="text-[10px] font-bold uppercase tracking-[0.4em] text-white">© 2026 ЭЛИТФИНАНС / МОСКВА</div>
-         </div>
-      </footer>
+      <Footer />
     </div>
   );
 }

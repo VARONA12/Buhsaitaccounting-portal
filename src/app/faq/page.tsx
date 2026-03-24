@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useState } from "react";
 import { FAQ_ITEMS, FAQ_CATEGORIES } from "@/lib/faq-data";
 import { Logo } from "@/components/Logo";
+import { Footer } from "@/components/Footer";
 import { ChevronRight, HelpCircle, ArrowRight, Search, Zap } from "lucide-react";
 
 export default function FaqIndexPage() {
@@ -49,6 +50,13 @@ export default function FaqIndexPage() {
   const jsonLd = {
     "@context": "https://schema.org",
     "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Главная", "item": "https://elitfinans.online" },
+          { "@type": "ListItem", "position": 2, "name": "Вопросы и ответы", "item": "https://elitfinans.online/faq" },
+        ],
+      },
       {
         "@type": "FAQPage",
         "@id": "https://elitfinans.online/faq#faqpage",
@@ -215,26 +223,7 @@ export default function FaqIndexPage() {
       </main>
 
       {/* Footer */}
-      <footer className="py-20 px-6 border-t border-white/12 bg-neutral-900 relative">
-         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-12">
-            <div className="flex items-center gap-4">
-               <Logo size={40} />
-               <span className="font-bold text-xl tracking-tighter uppercase text-white">ЭлитФинанс</span>
-            </div>
-            <nav className="flex flex-wrap justify-center items-center gap-12">
-               {["About", "Experts", "News", "Vault"].map(nav => (
-                  <Link 
-                    key={nav} 
-                    href={`/${nav.toLowerCase()}`} 
-                    className="text-[10px] font-black uppercase tracking-[0.4em] text-white hover:text-white transition-colors"
-                  >
-                    {nav}
-                  </Link>
-               ))}
-            </nav>
-            <div className="text-[10px] font-bold uppercase tracking-[0.4em] text-white">© 2026 ELITFINANCE HQ</div>
-         </div>
-      </footer>
+      <Footer />
     </div>
   );
 }

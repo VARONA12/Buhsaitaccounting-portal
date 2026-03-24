@@ -1,11 +1,24 @@
 import { Clock, ChevronRight, Zap, Globe } from "lucide-react";
 import Link from "next/link";
+import type { Metadata } from "next";
 import { Logo } from "@/components/Logo";
 import { Footer } from "@/components/Footer";
 import { ALL_NEWS } from "@/lib/news-data";
 import { db } from "@/lib/db";
 
 export const dynamic = "force-dynamic";
+
+export const metadata: Metadata = {
+  title: "Новости бухгалтерии и налогов 2026 | ЭлитФинанс",
+  description: "Актуальные новости об изменениях в налоговом законодательстве России 2026: УСН, ОСНО, ЕНП, НДФЛ, страховые взносы. Ежедневный мониторинг ФНС, Минфин, Госдума — для ООО и ИП.",
+  alternates: { canonical: "https://elitfinans.online/news" },
+  openGraph: {
+    title: "Новости налогов и бухгалтерии 2026 — ЭлитФинанс",
+    description: "Оперативный анализ изменений законодательства: УСН, ЕНП, страховые взносы, проверки ФНС. Только важное для малого бизнеса.",
+    url: "https://elitfinans.online/news",
+    images: [{ url: "https://elitfinans.online/director_hq.png", width: 1200, height: 630 }],
+  },
+};
 
 export default async function NewsPage() {
   // Fetch live news from DB
@@ -57,6 +70,15 @@ export default async function NewsPage() {
     (a, b) => new Date(b.isoDate).getTime() - new Date(a.isoDate).getTime()
   );
 
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Главная", "item": "https://elitfinans.online" },
+      { "@type": "ListItem", "position": 2, "name": "Новости", "item": "https://elitfinans.online/news" },
+    ],
+  };
+
   const newsJsonLd = {
     "@context": "https://schema.org",
     "@type": "ItemList",
@@ -98,6 +120,7 @@ export default async function NewsPage() {
 
   return (
     <div className="min-h-screen bg-neutral-900 text-white font-sans selection:bg-primary-dark/80 selection:text-white">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(newsJsonLd) }}

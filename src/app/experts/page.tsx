@@ -18,6 +18,15 @@ export const metadata: Metadata = {
   },
 };
 
+const breadcrumbJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Главная", "item": "https://elitfinans.online" },
+    { "@type": "ListItem", "position": 2, "name": "Эксперты", "item": "https://elitfinans.online/experts" },
+  ],
+};
+
 const expertsJsonLd = {
   "@context": "https://schema.org",
   "@type": "ItemList",
@@ -49,6 +58,7 @@ const expertsJsonLd = {
 export default function ExpertsPage() {
   return (
     <div className="min-h-screen bg-neutral-900 text-white font-sans selection:bg-primary-dark/80 selection:text-white">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(expertsJsonLd) }}
