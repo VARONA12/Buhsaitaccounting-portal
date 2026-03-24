@@ -72,6 +72,37 @@ export const metadata: Metadata = {
   },
 };
 
+const organizationJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "AccountingService",
+  "@id": "https://elitfinans.online#org",
+  "name": "ЭлитФинанс",
+  "url": "https://elitfinans.online",
+  "telephone": "+79028371370",
+  "priceRange": "от 5 000 ₽/мес",
+  "openingHours": "Mo-Fr 09:00-18:00",
+  "inLanguage": "ru",
+  "areaServed": "RU",
+  "description": "Профессиональное бухгалтерское сопровождение ООО и ИП в России. ОСНО, УСН, кадровый учёт, защита по 115-ФЗ.",
+  "founder": {
+    "@type": "Person",
+    "name": "Анна Туманян",
+    "jobTitle": "Главный аудитор"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+79028371370",
+    "contactType": "customer support",
+    "availableLanguage": "Russian",
+    "hoursAvailable": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+      "opens": "09:00",
+      "closes": "18:00"
+    }
+  }
+};
+
 const websiteJsonLd = {
   "@context": "https://schema.org",
   "@type": "WebSite",
@@ -102,6 +133,7 @@ export default function RootLayout({
   return (
     <html lang="ru">
       <body className="antialiased selection:bg-primary/30 selection:text-white bg-neutral-900">
+        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }} />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
