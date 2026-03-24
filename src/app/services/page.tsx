@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { SERVICES } from "@/lib/services-data";
 import { Logo } from "@/components/Logo";
-import { ArrowRight, ChevronRight, Banknote, CheckCircle2, ShieldCheck, Zap } from "lucide-react";
+import { ArrowRight, Banknote, CheckCircle2, ShieldCheck, Zap } from "lucide-react";
 
 export default function ServicesPage() {
   const jsonLd = {
@@ -100,7 +100,7 @@ export default function ServicesPage() {
               SERVICE DOMAINS 2026
             </div>
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-black tracking-tightest leading-[1.1] text-white uppercase">
-              БУХГАЛТЕРСКИЙ <br /> АУТСОРСИНГ <span className="text-white ">БИЗНЕСА.</span>
+              БУХГАЛТЕРСКИЙ <br /> АУТСОРСИНГ <span className="text-white">БИЗНЕСА</span>
             </h1>
             <p className="text-xl md:text-2xl text-white font-medium max-w-2xl leading-relaxed">
               Операционный учет, налоговое планирование и юридическая защита с гарантией.

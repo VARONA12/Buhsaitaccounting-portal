@@ -1,6 +1,7 @@
 import { Clock, ChevronRight, Zap, Globe } from "lucide-react";
 import Link from "next/link";
 import { Logo } from "@/components/Logo";
+import { Footer } from "@/components/Footer";
 import { ALL_NEWS } from "@/lib/news-data";
 import { db } from "@/lib/db";
 
@@ -127,13 +128,13 @@ export default async function NewsPage() {
           <div className="mb-20 space-y-6 text-center">
             <div className="flex items-center justify-center gap-3 text-[10px] font-bold uppercase tracking-[0.5em] text-white">
               <Globe size={14} className="animate-spin-slow" />
-              GLOBAL NEWS FEED 2026
+              НАЛОГИ И ПРАВО 2026
             </div>
             <h1 className="text-4xl md:text-6xl lg:text-7xl xl:text-8xl font-black tracking-tightest leading-[1.05] text-white uppercase">
-              ПУЛЬС <br /> ЭКОНОМИКИ И <span className="text-white ">ПРАВА.</span>
+              НОВОСТИ <br /> БУХГАЛТЕРИИ И <span className="text-white">НАЛОГОВ</span>
             </h1>
             <p className="text-xl md:text-2xl text-white font-medium max-w-2xl mx-auto leading-relaxed">
-               Оперативный анализ изменений в законодательстве с экспертной оценкой рисков.
+              Оперативный анализ изменений в законодательстве с экспертной оценкой рисков для бизнеса.
             </p>
           </div>
 

@@ -81,22 +81,58 @@ export default async function HandbookTermPage({ params }: Props) {
   );
   const relatedTerms = [...related, ...fillRelated].slice(0, 3);
 
+  const termUrl = `https://elitfinans.online/handbook/${slug}`;
+
   const faqJsonLd = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": term.faq.map(f => ({
       "@type": "Question",
       "name": f.q,
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": f.a
-      }
+      "acceptedAnswer": { "@type": "Answer", "text": f.a }
     }))
+  };
+
+  const articleJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "@id": `${termUrl}#article`,
+    "headline": `${term.term} — что это такое простыми словами`,
+    "description": term.shortDef,
+    "url": termUrl,
+    "inLanguage": "ru",
+    "datePublished": "2026-01-01",
+    "dateModified": "2026-03-01",
+    "author": {
+      "@type": "Organization",
+      "@id": "https://elitfinans.online#org",
+      "name": "ЭлитФинанс"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "@id": "https://elitfinans.online#org",
+      "name": "ЭлитФинанс",
+      "logo": { "@type": "ImageObject", "url": "https://elitfinans.online/logo.png" }
+    },
+    "about": { "@type": "Thing", "name": term.term },
+    "keywords": term.keywords.join(", ")
+  };
+
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Главная", "item": "https://elitfinans.online" },
+      { "@type": "ListItem", "position": 2, "name": "Справочник", "item": "https://elitfinans.online/handbook" },
+      { "@type": "ListItem", "position": 3, "name": term.term, "item": termUrl },
+    ]
   };
 
   return (
     <div className="min-h-screen bg-neutral-900 text-white font-sans selection:bg-primary-dark/80 selection:text-white">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
       {/* Nav */}
       <nav className="fixed top-0 left-0 w-full z-[100] border-b border-white/12 bg-neutral-900/70 backdrop-blur-3xl shadow-sm">
         <div className="max-w-7xl mx-auto px-6 h-16 xl:h-20 flex items-center justify-between">

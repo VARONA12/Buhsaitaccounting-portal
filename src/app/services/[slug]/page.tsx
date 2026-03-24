@@ -70,6 +70,27 @@ export default async function ServiceDetailPage({ params }: Props) {
 
   const url = `https://elitfinans.online/services/${slug}`;
 
+  const faqJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "@id": `${url}#faq`,
+    "mainEntity": service.faq.map((item) => ({
+      "@type": "Question",
+      "name": item.q,
+      "acceptedAnswer": { "@type": "Answer", "text": item.a },
+    })),
+  };
+
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Главная", "item": "https://elitfinans.online" },
+      { "@type": "ListItem", "position": 2, "name": "Услуги", "item": "https://elitfinans.online/services" },
+      { "@type": "ListItem", "position": 3, "name": service.title, "item": url },
+    ],
+  };
+
   const relatedTermObjs = HANDBOOK_TERMS.filter((t) =>
     service.relatedTerms.includes(t.slug)
   );
@@ -82,6 +103,8 @@ export default async function ServiceDetailPage({ params }: Props) {
 
   return (
     <div className="min-h-screen bg-neutral-900 text-white font-sans selection:bg-primary-dark/80 selection:text-white">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
       {/* Nav */}
       <nav className="fixed top-0 left-0 w-full z-[100] border-b border-white/12 bg-neutral-900/70 backdrop-blur-3xl shadow-sm">
         <div className="max-w-7xl mx-auto px-6 h-16 xl:h-20 flex items-center justify-between">
@@ -317,6 +340,31 @@ export default async function ServiceDetailPage({ params }: Props) {
             </section>
           )}
 
+          {/* FAQ */}
+          {service.faq.length > 0 && (
+            <section className="mb-24" aria-label="Часто задаваемые вопросы">
+              <div className="flex items-center gap-3 mb-10">
+                <div className="w-10 h-10 rounded-2xl bg-primary/10 flex items-center justify-center">
+                  <HelpCircle size={20} className="text-white" />
+                </div>
+                <h2 className="text-[10px] font-bold uppercase tracking-[0.4em] text-white">
+                  ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ
+                </h2>
+              </div>
+              <div className="space-y-4">
+                {service.faq.map((item, i) => (
+                  <details key={i} className="group p-8 rounded-[32px] border border-white/12 bg-neutral-900 hover:border-primary/30 transition-all">
+                    <summary className="flex items-center justify-between gap-4 cursor-pointer list-none">
+                      <h3 className="text-sm md:text-base font-black text-white uppercase tracking-tight leading-snug">{item.q}</h3>
+                      <ChevronDown size={16} className="text-white shrink-0 group-open:rotate-180 transition-transform" />
+                    </summary>
+                    <p className="mt-6 text-sm text-white/80 leading-relaxed font-medium">{item.a}</p>
+                  </details>
+                ))}
+              </div>
+            </section>
+          )}
+
           {/* Other services */}
           <section>
             <h2 className="text-[11px] font-black uppercase tracking-[0.4em] text-white mb-10">
@@ -357,18 +405,22 @@ export default async function ServiceDetailPage({ params }: Props) {
                <Logo size={40} />
                <span className="font-bold text-xl tracking-tighter uppercase text-white">ЭлитФинанс</span>
             </div>
-            <nav className="flex flex-wrap justify-center items-center gap-12">
-               {["About", "Experts", "News", "Vault"].map(nav => (
+            <nav className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
+                {[
+                  { label: "МЫ В МАКСЕ", href: "https://max-channel-link" },
+                  { label: "ПОЗВОНИТЬ", href: "tel:+74950000000" },
+                  { label: "СООБЩЕСТВО В ВК", href: "https://vk.com/elitfinans" },
+                  { label: "НАПИСАТЬ НА ПОЧТУ", href: "mailto:info@elitfinans.online" }
+                ].map(nav => (
                   <Link 
-                    key={nav} 
-                    href={`/${nav.toLowerCase()}`} 
-                    className="text-[10px] font-black uppercase tracking-[0.4em] text-white hover:text-white transition-colors"
+                    key={nav.label} 
+                    href={nav.href} 
+                    className="px-6 py-3 rounded-full border border-white/12 bg-white/5 text-[9px] font-black uppercase tracking-[0.3em] text-white hover:bg-white hover:text-neutral-900 transition-all shadow-lg whitespace-nowrap"
                   >
-                    {nav}
+                    {nav.label}
                   </Link>
-               ))}
+                ))}
             </nav>
-            <div className="text-[10px] font-bold uppercase tracking-[0.4em] text-white">© 2026 ELITFINANCE HQ</div>
          </div>
       </footer>
     </div>
