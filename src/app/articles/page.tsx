@@ -1,7 +1,8 @@
 import { db } from "@/lib/db";
-import { Calendar, User, ArrowRight, Zap, BookOpen } from "lucide-react";
 import Link from "next/link";
+import { Calendar, User, ArrowRight, Zap, BookOpen } from "lucide-react";
 import { Logo } from "@/components/Logo";
+import { Footer } from "@/components/Footer";
 import Image from "next/image";
 
 export const dynamic = "force-dynamic";
@@ -135,6 +136,7 @@ export default async function ArticlesPage() {
           )}
         </div>
       </main>
+      <Footer />
     </div>
   );
 }
