@@ -1,189 +1,183 @@
-"use client";
-
-import { motion, AnimatePresence } from "framer-motion";
+import { Clock, ChevronRight, Zap, Globe } from "lucide-react";
 import Link from "next/link";
-import { useState } from "react";
-import { Clock, ChevronRight, ChevronLeft, Zap } from "lucide-react";
 import { Logo } from "@/components/Logo";
 import { ALL_NEWS } from "@/lib/news-data";
+import { db } from "@/lib/db";
 
-const ITEMS_PER_PAGE = 12;
+export const dynamic = "force-dynamic";
 
-export default function NewsPage() {
-  const [currentPage, setCurrentPage] = useState(1);
-  const totalPages = Math.ceil(ALL_NEWS.length / ITEMS_PER_PAGE);
+export default async function NewsPage() {
+  // Fetch live news from DB
+  let dbNews: {
+    id: string;
+    title: string;
+    excerpt: string | null;
+    category: string | null;
+    publishedAt: Date;
+  }[] = [];
 
-  const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
-  const currentNews = ALL_NEWS.slice(startIndex, startIndex + ITEMS_PER_PAGE);
+  try {
+    dbNews = await db.newsItem.findMany({
+      where: { published: true },
+      orderBy: { publishedAt: "desc" },
+      take: 60,
+      select: { id: true, title: true, excerpt: true, category: true, publishedAt: true },
+    });
+  } catch {
+    // DB unavailable — fall back to static only
+  }
 
-  const handlePageChange = (newPage: number) => {
-    setCurrentPage(newPage);
-    window.scrollTo({ top: 300, behavior: "smooth" });
-  };
+  // Convert DB items to unified display shape
+  const fromDb = dbNews.map((item) => ({
+    slug: item.id,
+    title: item.title,
+    category: item.category ?? "Налоги",
+    date: new Date(item.publishedAt).toLocaleDateString("ru-RU", {
+      day: "2-digit",
+      month: "2-digit",
+      year: "numeric",
+    }),
+    isoDate: item.publishedAt.toISOString(),
+    desc: item.excerpt ?? item.title,
+  }));
+
+  // Static fallback news (always include, sorted by date)
+  const fromStatic = ALL_NEWS.map((n) => ({
+    slug: n.slug,
+    title: n.title,
+    category: n.category,
+    date: n.date,
+    isoDate: n.isoDate,
+    desc: n.desc,
+  }));
+
+  // Merge and sort newest first
+  const sortedNews = [...fromDb, ...fromStatic].sort(
+    (a, b) => new Date(b.isoDate).getTime() - new Date(a.isoDate).getTime()
+  );
 
   const newsJsonLd = {
     "@context": "https://schema.org",
-    "@type": "Blog",
-    "@id": "https://elitfinans.online/news",
-    "name": "Новости ЭлитФинанс",
-    "description": "Ежедневная сводка изменений в налоговом законодательстве и бухучёте.",
+    "@type": "ItemList",
+    "@id": "https://elitfinans.online/news#list",
+    "name": "Новости налогообложения и права — ЭлитФинанс",
+    "description": "Оперативный анализ изменений в законодательстве с экспертной оценкой рисков для бизнеса",
+    "url": "https://elitfinans.online/news",
     "inLanguage": "ru",
-    "publisher": {
-      "@type": "Organization",
-      "@id": "https://elitfinans.online#org",
-      "name": "ЭлитФинанс",
-    },
-    "blogPost": currentNews.map((news) => ({
-      "@type": "NewsArticle",
-      "@id": `https://elitfinans.online/news/${news.slug}`,
-      "headline": news.title,
-      "description": news.desc,
-      "datePublished": news.isoDate,
-      "articleSection": news.category,
-      "url": `https://elitfinans.online/news/${news.slug}`,
-      "author": {
-        "@type": "Person",
-        "@id": "https://elitfinans.online#expert",
-        "name": "Анна Туманян",
-      },
-      "isAccessibleForFree": true,
-      "inLanguage": "ru",
-    })),
+    "numberOfItems": sortedNews.length,
+    "itemListElement": sortedNews.slice(0, 30).map((item, i) => ({
+      "@type": "ListItem",
+      "position": i + 1,
+      "item": {
+        "@type": "NewsArticle",
+        "@id": `https://elitfinans.online/news/${item.slug}`,
+        "headline": item.title,
+        "description": item.desc,
+        "datePublished": item.isoDate,
+        "url": `https://elitfinans.online/news/${item.slug}`,
+        "inLanguage": "ru",
+        "articleSection": item.category,
+        "author": {
+          "@type": "Organization",
+          "@id": "https://elitfinans.online#org",
+          "name": "ЭлитФинанс"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "@id": "https://elitfinans.online#org",
+          "name": "ЭлитФинанс",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://elitfinans.online/logo.png"
+          }
+        }
+      }
+    }))
   };
 
   return (
-    <div className="min-h-screen bg-[#050505] text-white font-sans selection:bg-primary/30 selection:text-primary">
+    <div className="min-h-screen bg-neutral-900 text-white font-sans selection:bg-primary-dark/80 selection:text-white">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(newsJsonLd) }}
       />
-
-      {/* Header */}
-      <nav className="fixed top-0 left-0 w-full z-[100] border-b border-white/[0.05] bg-black/50 backdrop-blur-2xl">
+      {/* Nav */}
+      <nav className="fixed top-0 left-0 w-full z-[100] border-b border-white/12 bg-neutral-900/70 backdrop-blur-3xl shadow-sm">
         <div className="max-w-7xl mx-auto px-6 h-16 xl:h-20 flex items-center justify-between">
-          <Link href="/" className="flex items-center gap-3 group">
-            <div className="flex items-center justify-center transition-transform group-hover:scale-110">
-              <Logo size={42} />
+          <Link href="/" className="flex items-center gap-4 group">
+            <div className="flex items-center justify-center transition-all group-hover:scale-110">
+              <Logo size={40} />
             </div>
-            <span className="font-bold text-lg xl:text-xl tracking-tighter uppercase">ЭлитФинанс</span>
+            <span className="font-bold text-lg xl:text-xl tracking-tighter uppercase text-white leading-none">ЭлитФинанс</span>
           </Link>
-          <Link
-            href="/"
-            className="text-[10px] font-bold uppercase tracking-[0.2em] text-neutral-400 hover:text-white transition-colors"
-          >
-            На главную
-          </Link>
+          <div className="flex items-center gap-6">
+            <Link
+              href="/"
+              className="text-[10px] font-black uppercase tracking-[0.4em] text-white hover:text-white transition-colors"
+            >
+              На главную
+            </Link>
+          </div>
         </div>
       </nav>
 
-      <main className="pt-32 pb-24 px-6">
-        <div className="max-w-7xl mx-auto space-y-16">
-
-          {/* Daily Summary */}
-          <section>
-            <div className="p-8 xl:p-12 rounded-[40px] bg-gradient-to-br from-primary/10 to-transparent border border-primary/20 relative overflow-hidden">
-              <div className="absolute top-0 right-0 p-6 opacity-10">
-                <Zap size={100} className="text-primary" />
-              </div>
-              <div className="relative z-10 space-y-6">
-                <div className="flex items-center gap-3">
-                  <span className="w-3 h-3 rounded-full bg-primary animate-pulse" />
-                  <span className="text-[10px] font-bold uppercase tracking-[0.3em] text-primary">Ежедневная сводка</span>
-                </div>
-                <h2 className="text-2xl xl:text-4xl font-bold tracking-tightest leading-[1.1] max-w-4xl italic">
-                  Главная новость дня: ФНС запускает автоматизированную систему проверки налоговых льгот для компаний. Проверьте ваш статус до конца недели.
-                </h2>
-              </div>
+      <main className="pt-28 pb-32 px-6 md:pt-40">
+        <div className="max-w-7xl mx-auto">
+          {/* Header */}
+          <div className="mb-20 space-y-6 text-center">
+            <div className="flex items-center justify-center gap-3 text-[10px] font-bold uppercase tracking-[0.5em] text-white">
+              <Globe size={14} className="animate-spin-slow" />
+              GLOBAL NEWS FEED 2026
             </div>
-          </section>
+            <h1 className="text-4xl md:text-6xl lg:text-7xl xl:text-8xl font-black tracking-tightest leading-[1.05] text-white uppercase">
+              ПУЛЬС <br /> ЭКОНОМИКИ И <span className="text-white ">ПРАВА.</span>
+            </h1>
+            <p className="text-xl md:text-2xl text-white font-medium max-w-2xl mx-auto leading-relaxed">
+               Оперативный анализ изменений в законодательстве с экспертной оценкой рисков.
+            </p>
+          </div>
 
-          {/* News Feed */}
-          <section id="feed">
-            <div className="flex items-end justify-between mb-16">
-              <div className="space-y-4">
-                <h2 className="text-[10px] font-bold uppercase tracking-[0.4em] text-neutral-400">Лента новостей</h2>
-                <div className="text-4xl xl:text-7xl font-bold tracking-tightest leading-none">
-                  СВЕЖИЕ <span className="text-primary italic">НОВОСТИ</span>
-                </div>
-              </div>
-              <div className="text-[10px] font-bold uppercase tracking-widest text-neutral-500">
-                Страница {currentPage} из {totalPages}
-              </div>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              <AnimatePresence mode="wait">
-                {currentNews.map((news, i) => (
-                  <motion.div
-                    key={`${currentPage}-${news.id}`}
-                    initial={{ opacity: 0, scale: 0.95 }}
-                    animate={{ opacity: 1, scale: 1 }}
-                    exit={{ opacity: 0, scale: 0.95 }}
-                    transition={{ duration: 0.3, delay: i * 0.05 }}
-                  >
-                    <Link
-                      href={`/news/${news.slug}`}
-                      className="group relative p-8 rounded-[40px] border border-white/5 bg-neutral-900/30 hover:bg-neutral-900/50 hover:border-primary/30 transition-all flex flex-col justify-between aspect-[4/3] xl:aspect-square"
-                    >
-                      <div className="space-y-6">
-                        <div className="flex justify-between items-center text-[9px] font-bold uppercase tracking-widest text-neutral-500">
-                          <span className="text-primary">{news.category}</span>
-                          <span>{news.date}</span>
-                        </div>
-                        <h3 className="text-xl xl:text-2xl font-bold tracking-tightest leading-tight group-hover:text-primary transition-colors">
-                          {news.title}
-                        </h3>
-                        <p className="text-neutral-500 text-sm leading-relaxed line-clamp-3">
-                          {news.desc}
-                        </p>
-                      </div>
-                      <div className="flex items-center justify-between pt-6 mt-6 border-t border-white/5 group-hover:border-primary/20 transition-colors">
-                        <div className="flex items-center gap-2 text-[10px] font-bold text-neutral-600">
-                          <Clock size={12} /> {news.time}
-                        </div>
-                        <div className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-black transition-all">
-                          <ChevronRight size={18} />
-                        </div>
-                      </div>
-                    </Link>
-                  </motion.div>
-                ))}
-              </AnimatePresence>
-            </div>
-
-            {/* Pagination */}
-            <div className="mt-20 flex items-center justify-center gap-4">
-              <button
-                disabled={currentPage === 1}
-                onClick={() => handlePageChange(currentPage - 1)}
-                className="w-14 h-14 rounded-full border border-white/5 flex items-center justify-center text-white disabled:opacity-20 hover:bg-white hover:text-black transition-all"
+          {/* News Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+            {sortedNews.map((news) => (
+              <Link
+                key={news.slug}
+                href={`/news/${news.slug}`}
+                className="group p-10 rounded-[56px] border border-white/12 bg-neutral-900 hover:bg-white/[0.04] hover:border-primary/30 transition-all duration-500 flex flex-col justify-between h-full shadow-sm"
               >
-                <ChevronLeft size={20} />
-              </button>
-              <div className="flex gap-2">
-                {Array.from({ length: totalPages }).map((_, i) => (
-                  <button
-                    key={i}
-                    onClick={() => handlePageChange(i + 1)}
-                    className={`w-14 h-14 rounded-full font-bold text-[10px] transition-all ${
-                      currentPage === i + 1
-                        ? "bg-primary text-black"
-                        : "bg-white/5 text-neutral-400 hover:bg-white/10"
-                    }`}
-                  >
-                    {i + 1}
-                  </button>
-                ))}
-              </div>
-              <button
-                disabled={currentPage === totalPages}
-                onClick={() => handlePageChange(currentPage + 1)}
-                className="w-14 h-14 rounded-full border border-white/5 flex items-center justify-center text-white disabled:opacity-20 hover:bg-white hover:text-black transition-all"
-              >
-                <ChevronRight size={20} />
-              </button>
+                <div>
+                  <div className="flex items-center gap-6 text-[9px] font-bold text-white uppercase tracking-[0.3em] mb-10">
+                    <div className="flex items-center gap-2 text-white">
+                      <Zap size={14} />
+                      Inside Analysis
+                    </div>
+                    <div className="flex items-center gap-2 pt-0.5">
+                      <Clock size={14} className="text-white" />
+                      {news.date}
+                    </div>
+                  </div>
+                  <h3 className="text-2xl font-black text-white mb-6 group-hover:text-white transition-colors leading-tight uppercase tracking-tight">
+                    {news.title}
+                  </h3>
+                  <p className="text-sm md:text-base text-white line-clamp-4 leading-relaxed mb-10 flex-1 font-medium">
+                    {news.desc}
+                  </p>
+                </div>
+                <div className="flex items-center gap-3 text-[9px] font-bold uppercase tracking-[0.4em] text-white group-hover:gap-6 transition-all pt-8 border-t border-white/12">
+                  ПОДРОБНЕЕ <ChevronRight size={16} />
+                </div>
+              </Link>
+            ))}
+          </div>
+
+          {/* Footer SEO Text */}
+          <div className="mt-32 p-12 rounded-[56px] border border-white/12 bg-neutral-900 text-center shadow-sm">
+            <div className="max-w-xl mx-auto space-y-4">
+               <p className="text-white text-[10px] font-bold leading-relaxed uppercase tracking-[0.5em]">
+                 Все новости модерируются экспертами ЭлитФинанс. Мы отбираем только критические изменения для бизнеса наших клиентов.
+               </p>
             </div>
-          </section>
+          </div>
         </div>
       </main>
     </div>

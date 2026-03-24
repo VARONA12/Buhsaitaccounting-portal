@@ -1,73 +1,16 @@
-"use client";
-
-import { useState, useEffect } from "react";
-import { motion, AnimatePresence } from "framer-motion";
-import { Plus, X, Loader2, Calendar, User, ArrowRight } from "lucide-react";
+import { db } from "@/lib/db";
+import { Calendar, User, ArrowRight, Zap, BookOpen } from "lucide-react";
 import Link from "next/link";
-import { useSession } from "next-auth/react";
 import { Logo } from "@/components/Logo";
+import Image from "next/image";
 
-interface Article {
-  id: string;
-  title: string;
-  content: string;
-  excerpt: string | null;
-  image: string | null;
-  author: string;
-  createdAt: string;
-}
+export const dynamic = "force-dynamic";
 
-export default function ArticlesPage() {
-  const { data: session } = useSession();
-  const isAdmin = (session?.user as any)?.isAdmin;
-
-  const [articles, setArticles] = useState<Article[]>([]);
-  const [loading, setLoading] = useState(true);
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [formData, setFormData] = useState({
-    title: "",
-    excerpt: "",
-    content: "",
-    image: "",
+export default async function ArticlesPage() {
+  const articles = await db.article.findMany({
+    where: { published: true },
+    orderBy: { createdAt: "desc" },
   });
-
-  const fetchArticles = async () => {
-    try {
-      const res = await fetch("/api/articles");
-      const data = await res.json();
-      setArticles(data);
-    } catch (error) {
-      console.error("Failed to fetch articles:", error);
-    } finally {
-      setLoading(false);
-    }
-  };
-
-  useEffect(() => {
-    fetchArticles();
-  }, []);
-
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    try {
-      const res = await fetch("/api/articles", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
-      });
-      if (res.ok) {
-        setIsModalOpen(false);
-        setFormData({ title: "", excerpt: "", content: "", image: "" });
-        fetchArticles();
-      }
-    } catch (error) {
-      console.error("Failed to create article:", error);
-    } finally {
-      setIsSubmitting(false);
-    }
-  };
 
   const articlesJsonLd = {
     "@context": "https://schema.org",
@@ -86,12 +29,12 @@ export default function ArticlesPage() {
       "@id": `https://elitfinans.online/articles/${article.id}`,
       "headline": article.title,
       "description": article.excerpt ?? article.content.substring(0, 160),
-      "datePublished": article.createdAt,
+      "datePublished": article.createdAt.toISOString(),
       "url": `https://elitfinans.online/articles/${article.id}`,
       "author": {
         "@type": "Person",
         "@id": "https://elitfinans.online#expert",
-        "name": article.author === "Администратор" ? "Анна Туманян" : article.author,
+        "name": article.author === "Администратор" ? "ЭФ Эксперт" : article.author,
       },
       "isAccessibleForFree": true,
       "inLanguage": "ru",
@@ -99,209 +42,99 @@ export default function ArticlesPage() {
   };
 
   return (
-    <div className="min-h-screen bg-[#050505] text-white font-sans selection:bg-primary/30 selection:text-primary">
+    <div className="min-h-screen bg-neutral-900 text-white font-sans selection:bg-primary-dark/80 selection:text-white">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articlesJsonLd) }}
       />
 
-      {/* Header */}
-      <nav className="fixed top-0 left-0 w-full z-[100] border-b border-white/[0.05] bg-black/50 backdrop-blur-2xl">
+      {/* Nav */}
+      <nav className="fixed top-0 left-0 w-full z-[100] border-b border-white/12 bg-neutral-900/70 backdrop-blur-3xl shadow-sm">
         <div className="max-w-7xl mx-auto px-6 h-16 xl:h-20 flex items-center justify-between">
-          <Link href="/" className="flex items-center gap-3 group">
-            <div className="flex items-center justify-center transition-transform hover:scale-110">
-              <Logo size={42} />
+          <Link href="/" className="flex items-center gap-4 group">
+            <div className="flex items-center justify-center transition-all group-hover:scale-110">
+              <Logo size={40} />
             </div>
-            <span className="font-bold text-lg xl:text-xl tracking-tighter uppercase">ЭлитФинанс</span>
+            <span className="font-bold text-lg xl:text-xl tracking-tighter uppercase text-white leading-none">ЭлитФинанс</span>
           </Link>
           <div className="flex items-center gap-6">
             <Link
               href="/"
-              className="text-[10px] font-bold uppercase tracking-[0.2em] text-neutral-400 hover:text-white transition-colors"
+              className="text-[10px] font-black uppercase tracking-[0.4em] text-white hover:text-white transition-colors"
             >
               На главную
             </Link>
-            {isAdmin && (
-              <button
-                onClick={() => setIsModalOpen(true)}
-                className="flex items-center gap-2 px-4 py-2 rounded-full bg-primary text-black text-[10px] font-bold uppercase tracking-widest hover:bg-white transition-all"
-              >
-                <Plus size={14} /> Добавить статью
-              </button>
-            )}
           </div>
         </div>
       </nav>
 
-      <main className="pt-32 pb-24 px-6">
+      <main className="pt-28 pb-32 px-6 md:pt-40">
         <div className="max-w-7xl mx-auto">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            className="mb-16 space-y-4"
-          >
-            <h2 className="text-[10px] font-bold uppercase tracking-[0.4em] text-primary">База знаний</h2>
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tightest leading-none">
-              АКТУАЛЬНЫЕ <br /> СТАТЬИ И <span className="text-primary italic">ИНСАЙТЫ</span>
-            </h1>
-          </motion.div>
-
-          {loading ? (
-            <div className="flex items-center justify-center py-32">
-              <Loader2 className="w-8 h-8 animate-spin text-primary" />
+          {/* Header */}
+          <div className="mb-20 space-y-6 lg:text-left relative">
+            <div className="absolute top-[-50%] left-[-10%] w-[400px] h-[400px] bg-primary/10 rounded-full blur-[80px]" />
+            <div className="inline-flex items-center gap-3 text-[10px] font-bold uppercase tracking-[0.5em] text-white">
+              <Zap size={14} className="animate-pulse" />
+              VAULT 2026 / INSIGHTS
             </div>
-          ) : articles.length > 0 ? (
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {articles.map((article, i) => (
-                <motion.div
+            <h1 className="text-4xl md:text-6xl lg:text-7xl xl:text-8xl font-black tracking-tightest leading-[1.1] text-white uppercase">
+              ЭКСПЕРТНЫЕ <br /> ИНСАЙТЫ <span className="text-white ">2026</span>
+            </h1>
+            <p className="text-xl md:text-2xl text-white font-medium max-w-2xl leading-relaxed">
+              Информационное превосходство: от управления налогами до защиты активов.
+            </p>
+          </div>
+
+          {articles.length > 0 ? (
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+              {articles.map((article) => (
+                <Link
                   key={article.id}
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: i * 0.1 }}
-                  className="group rounded-[40px] bg-neutral-900/30 border border-white/5 p-8 hover:bg-neutral-900/50 transition-all flex flex-col justify-between"
+                  href={`/articles/${article.id}`}
+                  className="group rounded-[56px] border border-white/12 bg-neutral-900 hover:bg-white/[0.04] p-10 hover:shadow-2xl hover:border-primary/30 transition-all duration-500 flex flex-col h-full shadow-sm"
                 >
-                  <div>
+                  <div className="flex-1">
                     {article.image && (
-                      <div className="aspect-video rounded-[30px] overflow-hidden mb-6 bg-neutral-800">
-                        <img
+                      <div className="aspect-[16/10] rounded-[48px] overflow-hidden mb-8 bg-neutral-900 relative shadow-lg">
+                        <Image
                           src={article.image}
                           alt={article.title}
-                          className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                          fill
+                          className="object-cover group-hover:scale-105 transition-transform duration-700 opacity-95 group-hover: group-hover:opacity-100"
                         />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-95" />
                       </div>
                     )}
-                    <div className="flex items-center gap-4 text-[10px] font-bold text-neutral-500 uppercase tracking-widest mb-4">
-                      <div className="flex items-center gap-1.5 text-neutral-400">
-                        <Calendar size={12} />
+                    <div className="flex items-center gap-4 text-[9px] font-bold text-white uppercase tracking-[0.4em] mb-6">
+                      <div className="flex items-center gap-2">
+                        <Calendar size={12} className="text-white" />
                         {new Date(article.createdAt).toLocaleDateString("ru-RU")}
                       </div>
-                      <div className="flex items-center gap-1.5 flex-1">
-                        <User size={12} />
-                        {article.author === "Администратор" ? "Анна Туманян" : article.author}
+                      <div className="flex items-center gap-2">
+                        <User size={12} className="text-white" />
+                        {article.author === "Администратор" ? "ЭФ Эксперт" : article.author}
                       </div>
-                      {isAdmin && (
-                        <button
-                          onClick={async (e) => {
-                            e.stopPropagation();
-                            if (window.confirm("Удалить статью?")) {
-                              try {
-                                const res = await fetch(`/api/articles?id=${article.id}`, { method: "DELETE" });
-                                if (res.ok) fetchArticles();
-                              } catch (err) {
-                                console.error(err);
-                              }
-                            }
-                          }}
-                          className="p-2 -m-2 text-red-500 hover:text-red-400 transition-colors"
-                        >
-                          <X size={14} />
-                        </button>
-                      )}
                     </div>
-                    <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-primary transition-colors leading-tight">
+                    <h3 className="text-2xl font-black text-white mb-6 group-hover:text-white transition-colors leading-tight uppercase tracking-tight">
                       {article.title}
                     </h3>
-                    <p className="text-neutral-400 text-sm line-clamp-3 mb-8 italic">
+                    <p className="text-sm md:text-base text-white line-clamp-3 mb-8 leading-relaxed font-medium">
                       {article.excerpt ?? article.content.substring(0, 150) + "..."}
                     </p>
                   </div>
-                  <Link
-                    href={`/articles/${article.id}`}
-                    className="flex items-center gap-2 text-[10px] font-bold uppercase tracking-widest text-primary group-hover:gap-4 transition-all"
-                  >
-                    Читать полностью <ArrowRight size={14} />
-                  </Link>
-                </motion.div>
+                  <div className="flex items-center gap-3 text-[9px] font-bold uppercase tracking-[0.4em] text-white group-hover:gap-6 transition-all pt-8 border-t border-white/12">
+                    ЧИТАТЬ СТАТЬЮ <ArrowRight size={16} />
+                  </div>
+                </Link>
               ))}
             </div>
           ) : (
-            <div className="text-center py-32 border border-dashed border-white/10 rounded-[40px]">
-              <p className="text-neutral-500 uppercase font-bold tracking-widest">Статей пока нет</p>
+            <div className="text-center py-40 bg-neutral-900 border border-dashed border-white/20 rounded-[64px]">
+              <p className="text-white uppercase font-bold tracking-[0.5em] text-[10px] animate-pulse">Архив пуст</p>
             </div>
           )}
         </div>
       </main>
-
-      {/* Admin Upload Modal */}
-      <AnimatePresence>
-        {isModalOpen && (
-          <div className="fixed inset-0 z-[200] flex items-center justify-center p-6">
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              onClick={() => setIsModalOpen(false)}
-              className="absolute inset-0 bg-black/80 backdrop-blur-xl"
-            />
-            <motion.div
-              initial={{ opacity: 0, scale: 0.9, y: 20 }}
-              animate={{ opacity: 1, scale: 1, y: 0 }}
-              exit={{ opacity: 0, scale: 0.9, y: 20 }}
-              className="relative w-full max-w-2xl bg-neutral-900 border border-white/10 rounded-[40px] p-10 overflow-hidden"
-            >
-              <button
-                onClick={() => setIsModalOpen(false)}
-                className="absolute top-8 right-8 text-neutral-500 hover:text-white transition-colors"
-              >
-                <X size={24} />
-              </button>
-              <div className="mb-10">
-                <h2 className="text-[10px] font-bold uppercase tracking-[0.4em] text-primary mb-2">Админ-панель</h2>
-                <h3 className="text-3xl font-bold text-white tracking-tight">СОЗДАНИЕ СТАТЬИ</h3>
-              </div>
-              <form onSubmit={handleSubmit} className="space-y-6">
-                <div>
-                  <label className="text-[10px] font-bold uppercase tracking-widest text-neutral-500 mb-2 block">Заголовок</label>
-                  <input
-                    required
-                    type="text"
-                    value={formData.title}
-                    onChange={(e) => setFormData({ ...formData, title: e.target.value })}
-                    placeholder="Название статьи"
-                    className="w-full bg-white/5 border border-white/10 rounded-2xl px-6 py-4 text-sm focus:outline-none focus:border-primary transition-colors"
-                  />
-                </div>
-                <div>
-                  <label className="text-[10px] font-bold uppercase tracking-widest text-neutral-500 mb-2 block">Превью (коротко)</label>
-                  <textarea
-                    value={formData.excerpt}
-                    onChange={(e) => setFormData({ ...formData, excerpt: e.target.value })}
-                    placeholder="Краткое описание для карточки"
-                    className="w-full bg-white/5 border border-white/10 rounded-2xl px-6 py-4 text-sm focus:outline-none focus:border-primary transition-colors h-24 resize-none"
-                  />
-                </div>
-                <div>
-                  <label className="text-[10px] font-bold uppercase tracking-widest text-neutral-500 mb-2 block">Текст статьи</label>
-                  <textarea
-                    required
-                    value={formData.content}
-                    onChange={(e) => setFormData({ ...formData, content: e.target.value })}
-                    placeholder="Полное содержание статьи..."
-                    className="w-full bg-white/5 border border-white/10 rounded-2xl px-6 py-4 text-sm focus:outline-none focus:border-primary transition-colors h-48 resize-none"
-                  />
-                </div>
-                <div>
-                  <label className="text-[10px] font-bold uppercase tracking-widest text-neutral-500 mb-2 block">URL изображения (опционально)</label>
-                  <input
-                    type="text"
-                    value={formData.image}
-                    onChange={(e) => setFormData({ ...formData, image: e.target.value })}
-                    placeholder="https://example.com/image.jpg"
-                    className="w-full bg-white/5 border border-white/10 rounded-2xl px-6 py-4 text-sm focus:outline-none focus:border-primary transition-colors"
-                  />
-                </div>
-                <button
-                  disabled={isSubmitting}
-                  type="submit"
-                  className="w-full py-5 bg-primary text-black font-bold uppercase text-[11px] tracking-[0.3em] rounded-2xl hover:bg-white transition-all flex items-center justify-center gap-3 disabled:opacity-50"
-                >
-                  {isSubmitting ? <Loader2 className="animate-spin" size={18} /> : "Опубликовать статью"}
-                </button>
-              </form>
-            </motion.div>
-          </div>
-        )}
-      </AnimatePresence>
     </div>
   );
 }

@@ -1,29 +1,32 @@
 {
-  "telegram_channels": [
-    {"id": "nalog_gov_ru",     "url": "https://t.me/s/nalog_gov_ru",     "enabled": true},
-    {"id": "minfin_rf",        "url": "https://t.me/s/minfin_rf",        "enabled": true},
-    {"id": "klerk_ru",         "url": "https://t.me/s/klerk_ru",         "enabled": true},
-    {"id": "buhgalteria",      "url": "https://t.me/s/buhgalteria",      "enabled": true},
-    {"id": "nalogi_ip_ooo",    "url": "https://t.me/s/nalogi_ip_ooo",    "enabled": true},
-    {"id": "nalogoptim",       "url": "https://t.me/s/nalogoptim",       "enabled": true},
-    {"id": "buh_ekspert",      "url": "https://t.me/s/buh_ekspert",      "enabled": true},
-    {"id": "nalog_ru_official","url": "https://t.me/s/nalog_ru_official","enabled": true},
-    {"id": "taxcoachnews",     "url": "https://t.me/s/taxcoachnews",     "enabled": true},
-    {"id": "fns_news",         "url": "https://t.me/s/fns_news",         "enabled": true},
-    {"id": "buhnews",          "url": "https://t.me/s/buhnews",          "enabled": true},
-    {"id": "audit_it",         "url": "https://t.me/s/audit_it",         "enabled": true},
-    {"id": "sfr_official",     "url": "https://t.me/s/sfr_official",     "enabled": true},
-    {"id": "rostrud_official", "url": "https://t.me/s/rostrud_official", "enabled": true},
-    {"id": "consultant_plus",  "url": "https://t.me/s/consultant_plus",  "enabled": true}
-  ],
   "websites": [
-    {"name": "ФНС России",          "url": "https://www.nalog.gov.ru/rn77/news/",        "selector": ".news-item a, .grid-news a"},
-    {"name": "Клерк.ру",            "url": "https://klerk.ru/news/",                     "selector": "a.news-list__title, h2 a"},
-    {"name": "Бухонлайн",           "url": "https://www.buhonline.ru/pub/news/",         "selector": ".news-title a, .article-title a"},
-    {"name": "Audit-IT",            "url": "https://www.audit-it.ru/news/",              "selector": ".list-item__title a, h3 a"},
-    {"name": "Бухгалтерия.ру",      "url": "https://buhgalteria.ru/news/",               "selector": ".news__item-title a"},
-    {"name": "Главбух",             "url": "https://www.glavbukh.ru/news/",              "selector": ".news-list__item a"},
-    {"name": "КонсультантПлюс",     "url": "https://www.consultant.ru/news/",            "selector": ".news-item a"},
-    {"name": "Налоговый коач",      "url": "https://taxcoach.ru/news/",                  "selector": "h2 a, .post-title a"}
+    {
+      "name": "ФНС России",
+      "url": "https://www.nalog.gov.ru/rn77/news/",
+      "base": "https://www.nalog.gov.ru",
+      "selector": "a[href*='/news/']",
+      "min_title_len": 30
+    },
+    {
+      "name": "Клерк.ру",
+      "url": "https://klerk.ru/news/",
+      "base": "https://klerk.ru",
+      "selector": "a[href*='/buh/news/'], a[href*='/news/buh/']",
+      "min_title_len": 40
+    },
+    {
+      "name": "Audit-IT",
+      "url": "https://www.audit-it.ru/news/account/",
+      "base": "https://www.audit-it.ru",
+      "selector": "a[href*='/news/']",
+      "min_title_len": 30
+    },
+    {
+      "name": "Главбух",
+      "url": "https://www.glavbukh.ru/news/",
+      "base": "https://www.glavbukh.ru",
+      "selector": "a[href*='/news/']",
+      "min_title_len": 30
+    }
   ]
 }

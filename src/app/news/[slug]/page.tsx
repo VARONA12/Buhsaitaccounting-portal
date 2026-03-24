@@ -1,7 +1,10 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import Link from "next/link";
+import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
 import { ALL_NEWS } from "@/lib/news-data";
+import { db } from "@/lib/db";
 import { ExpertVerification } from "@/components/ExpertVerification";
 import { Logo } from "@/components/Logo";
 import {
@@ -14,6 +17,8 @@ import {
   Zap,
 } from "lucide-react";
 
+export const dynamicParams = true;
+
 interface Props {
   params: Promise<{ slug: string }>;
 }
@@ -24,258 +29,299 @@ export function generateStaticParams() {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
-  const news = ALL_NEWS.find((n) => n.slug === slug);
-  if (!news) return { title: "Новость не найдена | ЭлитФинанс" };
 
-  const url = `https://elitfinans.online/news/${slug}`;
+  // Check static news first
+  const staticNews = ALL_NEWS.find((n) => n.slug === slug);
+  if (staticNews) {
+    const url = `https://elitfinans.online/news/${slug}`;
+    return {
+      title: `${staticNews.title} | ЭлитФинанс`,
+      description: staticNews.desc,
+      keywords: staticNews.keywords,
+      alternates: { canonical: url },
+      openGraph: {
+        title: staticNews.title,
+        description: staticNews.desc,
+        url,
+        siteName: "ЭлитФинанс",
+        locale: "ru_RU",
+        type: "article",
+        publishedTime: staticNews.isoDate,
+        section: staticNews.category,
+      },
+      twitter: { card: "summary_large_image", title: staticNews.title, description: staticNews.desc },
+      robots: { index: true, follow: true, "max-image-preview": "large", "max-snippet": -1 },
+    };
+  }
 
-  return {
-    title: `${news.title} | ЭлитФинанс`,
-    description: news.desc,
-    keywords: news.keywords,
-    alternates: { canonical: url },
-    openGraph: {
-      title: news.title,
-      description: news.desc,
-      url,
-      siteName: "ЭлитФинанс",
-      locale: "ru_RU",
-      type: "article",
-      publishedTime: news.isoDate,
-      section: news.category,
-    },
-    twitter: {
-      card: "summary_large_image",
-      title: news.title,
-      description: news.desc,
-    },
-    robots: {
-      index: true,
-      follow: true,
-      "max-image-preview": "large",
-      "max-snippet": -1,
-    },
-  };
+  // Try DB news by ID
+  try {
+    const item = await db.newsItem.findUnique({ where: { id: slug } });
+    if (item) {
+      const url = `https://elitfinans.online/news/${slug}`;
+      return {
+        title: `${item.title} | ЭлитФинанс`,
+        description: item.excerpt ?? item.title,
+        alternates: { canonical: url },
+        openGraph: {
+          title: item.title,
+          description: item.excerpt ?? item.title,
+          url,
+          siteName: "ЭлитФинанс",
+          locale: "ru_RU",
+          type: "article",
+          publishedTime: item.publishedAt.toISOString(),
+          section: item.category ?? "Налоги",
+        },
+        twitter: { card: "summary_large_image", title: item.title, description: item.excerpt ?? item.title },
+        robots: { index: true, follow: true, "max-image-preview": "large", "max-snippet": -1 },
+      };
+    }
+  } catch {}
+
+  return { title: "Новость не найдена | ЭлитФинанс" };
 }
 
 export default async function NewsDetailPage({ params }: Props) {
   const { slug } = await params;
-  const news = ALL_NEWS.find((n) => n.slug === slug);
-  if (!news) notFound();
+
+  // ── Static news ────────────────────────────────────────────────────────────
+  const staticNews = ALL_NEWS.find((n) => n.slug === slug);
+  if (staticNews) {
+    const url = `https://elitfinans.online/news/${slug}`;
+    const related = ALL_NEWS.filter((n) => n.slug !== slug && n.category === staticNews.category).slice(0, 3);
+    const otherRelated = ALL_NEWS.filter((n) => n.slug !== slug).slice(0, 3 - related.length);
+    const relatedNews = [...related, ...otherRelated].slice(0, 3);
+
+    return <NewsLayout
+      title={staticNews.title}
+      category={staticNews.category}
+      date={staticNews.date}
+      readTime={staticNews.time}
+      desc={staticNews.desc}
+      url={url}
+      relatedNews={relatedNews.map((r) => ({ slug: r.slug, title: r.title, category: r.category, date: r.date }))}
+    >
+      <div className="news-body prose prose-invert max-w-none text-white prose-headings:text-white prose-a:text-white hover:prose-a:underline prose-p:leading-[1.8] prose-p:text-[19px] prose-p:italic prose-p:font-medium prose-li:text-[18px] prose-strong:text-white">
+        <ReactMarkdown remarkPlugins={[remarkGfm]}>{staticNews.fullContent}</ReactMarkdown>
+      </div>
+    </NewsLayout>;
+  }
+
+  // ── DB news ────────────────────────────────────────────────────────────────
+  let dbItem = null;
+  try {
+    dbItem = await db.newsItem.findUnique({ where: { id: slug } });
+  } catch {}
+
+  if (!dbItem) notFound();
 
   const url = `https://elitfinans.online/news/${slug}`;
-  const related = ALL_NEWS.filter((n) => n.slug !== slug && n.category === news.category).slice(0, 3);
-  const otherRelated = ALL_NEWS.filter((n) => n.slug !== slug).slice(0, 3 - related.length);
-  const relatedNews = [...related, ...otherRelated].slice(0, 3);
+  const date = new Date(dbItem.publishedAt).toLocaleDateString("ru-RU", {
+    day: "2-digit",
+    month: "2-digit",
+    year: "numeric",
+  });
+  const wordCount = dbItem.content.split(/\s+/).length;
+  const readTime = `${Math.max(1, Math.ceil(wordCount / 200))} мин`;
 
-  const jsonLd = {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "NewsArticle",
-        "@id": `${url}#article`,
-        "headline": news.title,
-        "description": news.desc,
-        "articleBody": news.fullContent,
-        "datePublished": news.isoDate,
-        "dateModified": news.isoDate,
-        "articleSection": news.category,
-        "keywords": news.keywords.join(", "),
-        "inLanguage": "ru",
-        "isAccessibleForFree": true,
-        "audience": {
-          "@type": "Audience",
-          "audienceType": "Предприниматели, владельцы ООО и ИП",
-        },
-        "speakable": {
-          "@type": "SpeakableSpecification",
-          "cssSelector": [".news-summary", ".news-body"],
-        },
-        "author": {
-          "@type": "Person",
-          "@id": "https://elitfinans.online#expert",
-          "name": "Анна Туманян",
-          "jobTitle": "Налоговый консультант и главный бухгалтер",
-          "worksFor": { "@id": "https://elitfinans.online#org" },
-        },
-        "publisher": {
-          "@type": "Organization",
-          "@id": "https://elitfinans.online#org",
-          "name": "ЭлитФинанс",
-          "url": "https://elitfinans.online",
-          "logo": {
-            "@type": "ImageObject",
-            "url": "https://elitfinans.online/favicon.ico",
-          },
-        },
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": url,
-        },
-        "isPartOf": {
-          "@type": "Blog",
-          "@id": "https://elitfinans.online/news",
-          "name": "Новости ЭлитФинанс",
-        },
-      },
-      {
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-          { "@type": "ListItem", "position": 1, "name": "Главная", "item": "https://elitfinans.online" },
-          { "@type": "ListItem", "position": 2, "name": "Новости", "item": "https://elitfinans.online/news" },
-          { "@type": "ListItem", "position": 3, "name": news.title, "item": url },
-        ],
-      },
-      {
-        "@type": "Organization",
-        "@id": "https://elitfinans.online#org",
-        "name": "ЭлитФинанс",
-        "url": "https://elitfinans.online",
-        "telephone": "+79028371370",
-        "email": "info@elitfinance.ru",
-      },
-    ],
-  };
+  // Related: other recent DB news in same category
+  let relatedDb: { id: string; title: string; category: string | null; publishedAt: Date }[] = [];
+  try {
+    relatedDb = await db.newsItem.findMany({
+      where: { published: true, category: dbItem.category, id: { not: slug } },
+      orderBy: { publishedAt: "desc" },
+      take: 3,
+      select: { id: true, title: true, category: true, publishedAt: true },
+    });
+  } catch {}
 
+  const paragraphs = dbItem.content
+    .split(/\n{2,}/)
+    .map((p) => p.trim())
+    .filter((p) => p.length > 0);
+
+  return <NewsLayout
+    title={dbItem.title}
+    category={dbItem.category ?? "Налоги"}
+    date={date}
+    readTime={readTime}
+    desc={dbItem.excerpt ?? dbItem.title}
+    url={url}
+    sourceUrl={dbItem.sourceUrl ?? undefined}
+    sourceName={dbItem.source}
+    relatedNews={relatedDb.map((r) => ({
+      slug: r.id,
+      title: r.title,
+      category: r.category ?? "Налоги",
+      date: new Date(r.publishedAt).toLocaleDateString("ru-RU", { day: "2-digit", month: "2-digit", year: "numeric" }),
+    }))}
+  >
+    <div className="space-y-6">
+      {paragraphs.map((para, i) => (
+        <p key={i} className="text-[19px] italic font-medium leading-[1.8] text-white">
+          {para}
+        </p>
+      ))}
+      {dbItem.sourceUrl && (
+        <p className="text-sm text-white/60 pt-4 border-t border-white/10">
+          Источник:{" "}
+          <a href={dbItem.sourceUrl} target="_blank" rel="noopener noreferrer" className="underline hover:text-white transition-colors">
+            {dbItem.source}
+          </a>
+        </p>
+      )}
+    </div>
+  </NewsLayout>;
+}
+
+// ── Shared layout component ────────────────────────────────────────────────────
+function NewsLayout({
+  title,
+  category,
+  date,
+  readTime,
+  desc,
+  url,
+  sourceUrl,
+  sourceName,
+  relatedNews,
+  children,
+}: {
+  title: string;
+  category: string;
+  date: string;
+  readTime: string;
+  desc: string;
+  url: string;
+  sourceUrl?: string;
+  sourceName?: string;
+  relatedNews: { slug: string; title: string; category: string; date: string }[];
+  children: React.ReactNode;
+}) {
   return (
-    <div className="min-h-screen bg-[#050505] text-white font-sans">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
-
+    <div className="min-h-screen bg-neutral-900 text-white font-sans selection:bg-primary-dark/80 selection:text-white">
       {/* Nav */}
-      <nav className="fixed top-0 left-0 w-full z-[100] border-b border-white/[0.05] bg-black/60 backdrop-blur-2xl">
+      <nav className="fixed top-0 left-0 w-full z-[100] border-b border-white/12 bg-neutral-900/70 backdrop-blur-3xl shadow-sm">
         <div className="max-w-7xl mx-auto px-6 h-16 xl:h-20 flex items-center justify-between">
-          <Link href="/" className="flex items-center gap-3 group">
+          <Link href="/" className="flex items-center gap-4 group">
             <div className="transition-transform group-hover:scale-110">
-              <Logo size={42} />
+              <Logo size={40} />
             </div>
-            <span className="font-bold text-lg xl:text-xl tracking-tighter uppercase">ЭлитФинанс</span>
+            <span className="font-bold text-lg xl:text-xl tracking-tighter uppercase text-white leading-none">ЭлитФинанс</span>
           </Link>
           <div className="flex items-center gap-6">
             <Link
               href="/news"
-              className="flex items-center gap-2 text-[10px] font-bold uppercase tracking-[0.2em] text-neutral-400 hover:text-white transition-colors"
+              className="flex items-center gap-2 text-[10px] font-bold uppercase tracking-[0.2em] text-white hover:text-white transition-colors"
             >
               <ArrowLeft size={14} /> Все новости
-            </Link>
-            <Link
-              href="/"
-              className="text-[10px] font-bold uppercase tracking-[0.2em] text-neutral-400 hover:text-white transition-colors"
-            >
-              На главную
             </Link>
           </div>
         </div>
       </nav>
 
-      <main className="pt-28 pb-24 px-6">
+      <main className="pt-28 pb-40 px-6 md:pt-40">
         <div className="max-w-4xl mx-auto">
-
           {/* Breadcrumb */}
           <nav aria-label="breadcrumb" className="mb-10">
-            <ol className="flex items-center gap-2 text-[10px] font-bold uppercase tracking-widest text-neutral-600">
-              <li><Link href="/" className="hover:text-primary transition-colors">Главная</Link></li>
+            <ol className="flex items-center gap-2 text-[10px] font-bold uppercase tracking-widest text-white flex-wrap">
+              <li><Link href="/" className="hover:text-white transition-colors">Главная</Link></li>
               <li><ChevronRight size={10} /></li>
-              <li><Link href="/news" className="hover:text-primary transition-colors">Новости</Link></li>
+              <li><Link href="/news" className="hover:text-white transition-colors">Новости</Link></li>
               <li><ChevronRight size={10} /></li>
-              <li className="text-neutral-400 truncate max-w-[200px]">{news.title}</li>
+              <li className="text-white truncate max-w-[200px]">{title}</li>
             </ol>
           </nav>
 
           {/* Category + Date */}
-          <div className="flex flex-wrap items-center gap-4 mb-8">
-            <span className="flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-[9px] font-bold uppercase tracking-widest">
-              <Tag size={10} /> {news.category}
+          <div className="flex flex-wrap items-center gap-6 mb-10 pt-4 border-t border-white/12">
+            <span className="flex items-center gap-2 px-4 py-1 rounded-full bg-primary/10 border border-primary/40 text-white text-[9px] font-bold uppercase tracking-[0.2em]">
+              <Tag size={12} /> {category}
             </span>
-            <span className="flex items-center gap-2 text-[10px] font-bold text-neutral-600 uppercase tracking-widest">
-              <Calendar size={12} /> {news.date}
+            <span className="flex items-center gap-2 text-[10px] font-bold text-white uppercase tracking-widest font-medium">
+              <Calendar size={14} className="text-white" /> {date}
             </span>
-            <span className="flex items-center gap-2 text-[10px] font-bold text-neutral-600 uppercase tracking-widest">
-              <Clock size={12} /> {news.time} чтения
+            <span className="flex items-center gap-2 text-[10px] font-bold text-white uppercase tracking-widest font-medium">
+              <Clock size={14} className="text-white" /> {readTime} чтения
             </span>
           </div>
 
           {/* Headline */}
-          <header className="mb-10">
-            <h1 className="text-4xl md:text-5xl xl:text-6xl font-bold tracking-tightest leading-[1.05] text-white mb-6">
-              {news.title}
+          <header className="mb-12 space-y-8">
+            <h1 className="text-4xl md:text-6xl xl:text-7xl font-black tracking-tightest leading-[1.05] text-white uppercase">
+              {title}
             </h1>
-            <p className="news-summary text-lg xl:text-xl text-neutral-400 leading-relaxed font-medium">
-              {news.desc}
+            <p className="news-summary text-xl md:text-2xl text-white leading-relaxed font-medium">
+              {desc}
             </p>
           </header>
 
-          {/* Breaking indicator */}
-          <div className="mb-10 p-6 rounded-[28px] bg-primary/5 border border-primary/15 flex items-start gap-4">
-            <div className="w-8 h-8 rounded-xl bg-primary/15 flex items-center justify-center shrink-0 mt-0.5">
-              <Zap size={16} className="text-primary" />
+          {/* Expert Note */}
+          <div className="mb-16 p-8 rounded-[40px] border border-white/12 bg-neutral-900 flex items-start gap-5 group hover:bg-white/[0.04] transition-all shadow-xl">
+            <div className="w-10 h-10 rounded-2xl bg-primary/10 flex items-center justify-center shrink-0">
+              <Zap size={20} className="text-white animate-pulse" />
             </div>
-            <div>
-              <p className="text-[10px] font-bold uppercase tracking-[0.3em] text-primary mb-1">
-                Экспертный разбор
+            <div className="space-y-1">
+              <p className="text-[10px] font-bold uppercase tracking-[0.4em] text-white">
+                ЭКСПЕРТНЫЙ РАЗБОР 2026
               </p>
-              <p className="text-sm text-neutral-400 leading-relaxed">
-                Материал подготовлен аналитиками ЭлитФинанс на основании официальных источников: НК РФ, писем ФНС и Минфина.
+              <p className="text-sm text-white leading-relaxed font-medium">
+                Материал верифицирован аналитиками ЭлитФинанс на основании официальных источников: НК РФ и актуальных писем Минфина.
               </p>
             </div>
           </div>
 
-          {/* Article Body */}
-          <article className="mb-16">
-            <div className="news-body text-neutral-300 leading-[1.8] text-[17px] whitespace-pre-wrap space-y-6">
-              {news.fullContent}
-            </div>
-          </article>
-
-          {/* Expert Verification */}
-          <ExpertVerification expertName="Анна Туманян" date={news.date === "Сегодня" || news.date === "Вчера" ? "Март 2026" : news.date} />
+          {/* Body */}
+          <article className="mb-24">{children}</article>
 
           {/* CTA */}
-          <div className="mt-16 p-10 xl:p-14 rounded-[40px] bg-neutral-900/40 border border-white/5 relative overflow-hidden">
-            <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent pointer-events-none" />
-            <div className="relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-8">
-              <div className="space-y-2">
-                <p className="text-[10px] font-bold uppercase tracking-[0.3em] text-primary">Остались вопросы?</p>
-                <h3 className="text-2xl xl:text-3xl font-bold tracking-tightest text-white">
-                  Разберёмся вместе.
+          <div className="mt-24 p-12 md:p-20 rounded-[80px] bg-neutral-900 border border-white/12 relative overflow-hidden group hover:bg-white/[0.05] transition-all shadow-2xl">
+            <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-primary/5 rounded-full blur-[100px] pointer-events-none" />
+            <div className="relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-12">
+              <div className="space-y-4 text-left">
+                <p className="text-[11px] font-bold uppercase tracking-[0.5em] text-white">ОСТАЛИСЬ ВОПРОСЫ?</p>
+                <h3 className="text-3xl md:text-5xl font-black tracking-tightest text-white uppercase leading-none">
+                  РАЗБЕРЁМСЯ <br /> ВМЕСТЕ.
                 </h3>
-                <p className="text-neutral-400 text-sm max-w-md">
+                <p className="text-white text-lg md:text-xl max-w-md font-medium leading-relaxed">
                   Получите персональную консультацию от эксперта ЭлитФинанс по данной теме.
                 </p>
               </div>
-              <Link
-                href="/#services"
-                className="shrink-0 px-8 py-4 bg-primary text-black font-bold uppercase text-[10px] tracking-widest rounded-xl hover:bg-white transition-all flex items-center gap-3 group"
+              <button
+                onClick={() => { (window as any).toggleContactForm?.() }}
+                className="shrink-0 px-10 py-5 bg-primary text-white font-black uppercase text-[10px] tracking-[0.3em] rounded-2xl hover:bg-white transition-all shadow-2xl flex items-center gap-3 group"
               >
-                Наши услуги <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
-              </Link>
+                ЗАДАТЬ ВОПРОС <ArrowRight size={16} />
+              </button>
             </div>
           </div>
 
-          {/* Related News */}
+          {/* Related */}
           {relatedNews.length > 0 && (
-            <section className="mt-20">
-              <h2 className="text-[10px] font-bold uppercase tracking-[0.4em] text-neutral-400 mb-10">
-                Похожие новости
-              </h2>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <section className="mt-40">
+              <div className="flex items-center gap-4 mb-16">
+                <Zap size={18} className="text-white" />
+                <h2 className="text-[11px] font-black uppercase tracking-[0.4em] text-white">
+                  ПОХОЖИЕ НОВОСТИ
+                </h2>
+              </div>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 {relatedNews.map((item) => (
                   <Link
-                    key={item.id}
+                    key={item.slug}
                     href={`/news/${item.slug}`}
-                    className="group p-6 rounded-[32px] bg-neutral-900/30 border border-white/5 hover:bg-neutral-900/50 hover:border-primary/20 transition-all flex flex-col gap-4"
+                    className="group p-8 rounded-[48px] border border-white/12 bg-white/[0.03] hover:bg-neutral-900 hover:border-primary/40 transition-all flex flex-col gap-6 h-full shadow-lg"
                   >
-                    <div className="flex items-center justify-between">
-                      <span className="text-[9px] font-bold text-primary uppercase tracking-widest">{item.category}</span>
-                      <span className="text-[9px] font-bold text-neutral-600 uppercase tracking-widest">{item.date}</span>
+                    <div className="flex items-center justify-between pb-4 border-b border-white/12">
+                      <span className="text-[9px] font-bold text-white uppercase tracking-[0.2em]">{item.category}</span>
+                      <span className="text-[9px] font-bold text-white uppercase tracking-widest">{item.date}</span>
                     </div>
-                    <h3 className="text-sm font-bold text-white group-hover:text-primary transition-colors leading-snug line-clamp-3">
+                    <h3 className="text-base font-black text-white uppercase group-hover:text-white transition-colors leading-tight line-clamp-3 tracking-tight">
                       {item.title}
                     </h3>
-                    <div className="flex items-center gap-1 text-[10px] font-bold text-primary uppercase tracking-widest mt-auto">
-                      Читать <ArrowRight size={12} className="group-hover:translate-x-1 transition-transform" />
+                    <div className="flex items-center gap-2 text-[10px] font-bold text-white uppercase tracking-[0.3em] mt-auto">
+                      ЧИТАТЬ <ArrowRight size={14} className="group-hover:translate-x-1 transition-all" />
                     </div>
                   </Link>
                 ))}

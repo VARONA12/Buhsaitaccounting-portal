@@ -4,31 +4,47 @@ import Link from "next/link";
 import { useState } from "react";
 import { FAQ_ITEMS, FAQ_CATEGORIES } from "@/lib/faq-data";
 import { Logo } from "@/components/Logo";
-import { ChevronRight, HelpCircle, ArrowRight, Search } from "lucide-react";
-
-const categoryColors: Record<string, string> = {
-  Аутсорсинг: "text-blue-400 bg-blue-400/10 border-blue-400/20",
-  "Налоговые режимы": "text-yellow-400 bg-yellow-400/10 border-yellow-400/20",
-  Проверки: "text-red-400 bg-red-400/10 border-red-400/20",
-  "Блокировка счёта": "text-orange-400 bg-orange-400/10 border-orange-400/20",
-  "ИП и ООО": "text-green-400 bg-green-400/10 border-green-400/20",
-  "Налоги и взносы": "text-purple-400 bg-purple-400/10 border-purple-400/20",
-};
+import { ChevronRight, HelpCircle, ArrowRight, Search, Zap } from "lucide-react";
 
 export default function FaqIndexPage() {
   const [activeCategory, setActiveCategory] = useState<string>("Все");
   const [query, setQuery] = useState("");
 
-  const filtered = FAQ_ITEMS.filter((item) => {
+  const getSearchScore = (item: typeof FAQ_ITEMS[0], rawQuery: string) => {
+    if (!rawQuery) return 1;
+    const q = rawQuery.toLowerCase().trim();
+    const tokens = q.split(/\s+/).filter(t => t.length >= 2);
+    let score = 0;
+
+    const question = item.question.toLowerCase();
+    const answer = item.shortAnswer.toLowerCase();
+    const keywords = item.keywords.map(k => k.toLowerCase());
+
+    // Exact match boost
+    if (question.includes(q)) score += 50;
+    if (answer.includes(q)) score += 20;
+
+    // Token matching
+    tokens.forEach(token => {
+      if (question.includes(token)) score += 10;
+      if (answer.includes(token)) score += 5;
+      if (keywords.some(k => k.includes(token))) score += 15;
+    });
+
+    return score;
+  };
+
+  const scoredItems = FAQ_ITEMS.map(item => ({
+    ...item,
+    score: getSearchScore(item, query)
+  })).filter(item => {
     const matchCat = activeCategory === "Все" || item.category === activeCategory;
-    const q = query.toLowerCase();
-    const matchQ =
-      !q ||
-      item.question.toLowerCase().includes(q) ||
-      item.shortAnswer.toLowerCase().includes(q) ||
-      item.keywords.some((k) => k.toLowerCase().includes(q));
-    return matchCat && matchQ;
-  });
+    if (!query) return matchCat;
+    return matchCat && item.score > 0;
+  }).sort((a, b) => b.score - a.score);
+
+  const recommendedItems = FAQ_ITEMS.slice(0, 3);
+  const results = scoredItems.length > 0 ? scoredItems : [];
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -38,115 +54,81 @@ export default function FaqIndexPage() {
         "@id": "https://elitfinans.online/faq#faqpage",
         name: "Вопросы и ответы по бухгалтерии и налогам для ООО и ИП",
         description:
-          "Экспертные ответы на 20 частых вопросов об аутсорсинге бухгалтерии, налоговых режимах, проверках ФНС и блокировках счетов.",
+          "Экспертные ответы на частые вопросы об аутсорсинге бухгалтерии и налогах.",
         url: "https://elitfinans.online/faq",
         inLanguage: "ru",
-        author: {
-          "@type": "Person",
-          "@id": "https://elitfinans.online#expert",
-          name: "Анна Туманян",
-        },
-        publisher: {
-          "@type": "Organization",
-          "@id": "https://elitfinans.online#org",
-          name: "ЭлитФинанс",
-        },
         mainEntity: FAQ_ITEMS.map((item) => ({
           "@type": "Question",
           "@id": `https://elitfinans.online/faq/${item.slug}#question`,
           name: item.question,
-          url: `https://elitfinans.online/faq/${item.slug}`,
           acceptedAnswer: {
             "@type": "Answer",
             text: item.shortAnswer,
-            url: `https://elitfinans.online/faq/${item.slug}`,
           },
         })),
-      },
-      {
-        "@type": "BreadcrumbList",
-        itemListElement: [
-          { "@type": "ListItem", position: 1, name: "Главная", item: "https://elitfinans.online" },
-          { "@type": "ListItem", position: 2, name: "Вопросы и ответы", item: "https://elitfinans.online/faq" },
-        ],
       },
     ],
   };
 
   return (
-    <div className="min-h-screen bg-[#050505] text-white font-sans">
+    <div className="min-h-screen bg-neutral-900 text-white font-sans selection:bg-primary-dark/80 selection:text-white">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
       {/* Nav */}
-      <nav className="fixed top-0 left-0 w-full z-[100] border-b border-white/[0.05] bg-black/60 backdrop-blur-2xl">
+      <nav className="fixed top-0 left-0 w-full z-[100] border-b border-white/12 bg-neutral-900/70 backdrop-blur-3xl shadow-sm">
         <div className="max-w-7xl mx-auto px-6 h-16 xl:h-20 flex items-center justify-between">
-          <Link href="/" className="flex items-center gap-3 group">
+          <Link href="/" className="flex items-center gap-4 group">
             <div className="transition-transform group-hover:scale-110">
-              <Logo size={42} />
+              <Logo size={40} />
             </div>
-            <span className="font-bold text-lg xl:text-xl tracking-tighter uppercase">ЭлитФинанс</span>
+            <span className="font-bold text-lg xl:text-xl tracking-tighter uppercase text-white leading-none">ЭлитФинанс</span>
           </Link>
           <div className="flex items-center gap-6">
-            <Link href="/handbook" className="text-[10px] font-bold uppercase tracking-[0.2em] text-neutral-400 hover:text-white transition-colors hidden md:block">Справочник</Link>
-            <Link href="/articles" className="text-[10px] font-bold uppercase tracking-[0.2em] text-neutral-400 hover:text-white transition-colors hidden md:block">Статьи</Link>
-            <Link href="/" className="text-[10px] font-bold uppercase tracking-[0.2em] text-neutral-400 hover:text-white transition-colors">На главную</Link>
+            <Link href="/" className="text-[10px] font-bold uppercase tracking-[0.3em] text-white hover:text-white transition-colors">На главную</Link>
           </div>
         </div>
       </nav>
 
-      <main className="pt-28 pb-24 px-6">
+      <main className="pt-32 pb-40 px-6 md:pt-48">
         <div className="max-w-5xl mx-auto">
-
-          {/* Breadcrumb */}
-          <nav aria-label="breadcrumb" className="mb-10">
-            <ol className="flex items-center gap-2 text-[10px] font-bold uppercase tracking-widest text-neutral-600">
-              <li><Link href="/" className="hover:text-primary transition-colors">Главная</Link></li>
-              <li><ChevronRight size={10} /></li>
-              <li className="text-neutral-400">Вопросы и ответы</li>
-            </ol>
-          </nav>
-
           {/* Header */}
-          <header className="mb-14">
-            <div className="flex items-center gap-3 mb-6">
-              <div className="w-10 h-10 rounded-xl bg-primary/15 flex items-center justify-center">
-                <HelpCircle size={20} className="text-primary" />
-              </div>
-              <span className="text-[10px] font-bold uppercase tracking-[0.3em] text-primary">Вопросы и ответы</span>
+          <header className="mb-20 text-center lg:text-left space-y-8">
+            <div className="inline-flex items-center gap-3 text-[10px] font-bold uppercase tracking-[0.5em] text-white">
+              <HelpCircle size={16} />
+              БАЗА ЗНАНИЙ / ВОПРОСЫ
             </div>
-            <h1 className="text-4xl md:text-5xl xl:text-6xl font-bold tracking-tightest leading-[1.05] text-white mb-6">
-              Частые вопросы
-              <br /><span className="text-neutral-500">о налогах и бухгалтерии</span>
+            <h1 className="text-4xl md:text-6xl lg:text-7xl xl:text-8xl font-black tracking-tightest leading-[1.1] text-white uppercase">
+              ЧАСТЫЕ <br /> ВОПРОСЫ <span className="text-white ">2026</span>
             </h1>
-            <p className="text-lg xl:text-xl text-neutral-400 leading-relaxed font-medium max-w-2xl">
-              20 экспертных ответов на самые часто задаваемые вопросы об аутсорсинге бухгалтерии, налоговых режимах, проверках ФНС и блокировках счетов.
+            <p className="text-xl md:text-2xl text-white font-medium max-w-2xl leading-relaxed">
+              Разбираем сложные задачи налогообложения и операционного учета простым языком.
             </p>
           </header>
 
           {/* Search + Filter */}
-          <div className="mb-10 space-y-5">
-            <div className="relative max-w-xl">
-              <Search size={16} className="absolute left-4 top-1/2 -translate-y-1/2 text-neutral-500" />
+          <div className="mb-20 space-y-10">
+            <div className="relative max-w-2xl mx-auto lg:mx-0 group">
+              <Search size={22} className="absolute left-6 top-1/2 -translate-y-1/2 text-white group-focus-within:text-white transition-colors" />
               <input
                 type="text"
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
                 placeholder="Поиск по вопросам..."
-                className="w-full pl-11 pr-4 py-3.5 bg-neutral-900/60 border border-white/10 rounded-xl text-sm text-white placeholder:text-neutral-600 focus:outline-none focus:border-primary/40 transition-colors"
+                className="w-full pl-16 pr-8 py-6 bg-neutral-900 border border-white/12 rounded-3xl text-lg text-white placeholder:text-white focus:outline-none focus:border-primary/40 focus:bg-white/[0.05] transition-all shadow-sm"
               />
             </div>
-            <div className="flex flex-wrap gap-2">
+            <div className="flex flex-wrap gap-3">
               {FAQ_CATEGORIES.map((cat) => (
                 <button
                   key={cat}
                   onClick={() => setActiveCategory(cat)}
-                  className={`px-4 py-2 rounded-xl text-[10px] font-bold uppercase tracking-widest border transition-all ${
+                  className={`px-6 py-2 rounded-full text-[10px] font-bold uppercase tracking-[0.2em] transition-all border ${
                     activeCategory === cat
-                      ? "bg-primary text-black border-primary"
-                      : "bg-neutral-900/50 text-neutral-400 border-white/10 hover:border-primary/30 hover:text-white"
+                      ? "bg-primary text-white border-primary shadow-xl"
+                      : "bg-white/5 text-white border-white/12 hover:border-primary/40 hover:text-white"
                   }`}
                 >
                   {cat}
@@ -155,62 +137,104 @@ export default function FaqIndexPage() {
             </div>
           </div>
 
-          <p className="text-[10px] font-bold uppercase tracking-widest text-neutral-600 mb-8">
-            Найдено вопросов: {filtered.length}
-          </p>
-
           {/* FAQ list */}
-          <div className="space-y-4">
-            {filtered.map((item) => (
+          <div className="space-y-6">
+            {results.map((item) => (
               <Link
                 key={item.slug}
                 href={`/faq/${item.slug}`}
-                className="group flex flex-col gap-4 p-7 rounded-[28px] bg-neutral-900/30 border border-white/5 hover:bg-neutral-900/50 hover:border-primary/20 transition-all"
+                className="group flex flex-col gap-6 p-10 rounded-[48px] border border-white/12 bg-neutral-900 hover:bg-white/[0.04] hover:border-primary/40 transition-all shadow-sm"
               >
-                <div className="flex items-start justify-between gap-4">
-                  <h2 className="font-bold text-white text-base group-hover:text-primary transition-colors leading-snug">
+                <div className="flex items-start justify-between gap-6">
+                  <h2 className="font-black text-white text-xl md:text-2xl group-hover:text-white transition-colors leading-tight uppercase tracking-tight">
                     {item.question}
                   </h2>
-                  <ArrowRight size={16} className="text-neutral-600 group-hover:text-primary group-hover:translate-x-1 transition-all shrink-0 mt-0.5" />
+                  <div className="w-12 h-12 rounded-full bg-neutral-900 flex items-center justify-center text-white group-hover:text-white group-hover:translate-x-1 transition-all shrink-0">
+                    <ArrowRight size={20} />
+                  </div>
                 </div>
-                <p className="text-sm text-neutral-500 leading-relaxed line-clamp-2">
+                <p className="text-white text-sm md:text-base leading-relaxed line-clamp-2 font-medium">
                   {item.shortAnswer}
                 </p>
-                <div className="flex items-center gap-3 pt-2 border-t border-white/5">
-                  <span className={`text-[9px] font-bold uppercase tracking-widest px-2.5 py-1 rounded-full border ${categoryColors[item.category] || "text-neutral-400 bg-neutral-800/50 border-white/10"}`}>
+                <div className="flex items-center gap-6 pt-8 border-t border-white/12">
+                  <span className="text-[10px] font-bold uppercase tracking-[0.2em] px-4 py-1 rounded-full bg-primary/10 text-white border border-primary/20">
                     {item.category}
                   </span>
-                  <span className="text-[9px] font-bold text-primary uppercase tracking-widest">
-                    Читать полный ответ →
+                  <span className="text-[10px] font-bold text-white uppercase tracking-[0.3em] group-hover:text-white transition-colors">
+                    ПОЛНЫЙ ОТВЕТ →
                   </span>
                 </div>
               </Link>
             ))}
           </div>
 
-          {filtered.length === 0 && (
-            <div className="text-center py-20">
-              <p className="text-neutral-500 text-lg">Ничего не найдено</p>
-              <button onClick={() => { setQuery(""); setActiveCategory("Все"); }} className="mt-4 text-primary text-sm font-bold underline">Сбросить фильтры</button>
+          {/* Empty state - Smarter Fallback */}
+          {query && results.length === 0 && (
+            <div className="space-y-12">
+              <div className="text-center py-24 border border-dashed border-white/20 rounded-[56px] bg-white/[0.03]">
+                <p className="text-white uppercase font-black tracking-[0.5em] text-[10px] mb-4">По вашему запросу ничего не найдено</p>
+                <p className="text-white text-sm mb-10">Попробуйте изменить запрос или ознакомьтесь с популярными вопросами ниже.</p>
+                <button 
+                  onClick={() => setQuery("")} 
+                  className="px-8 py-3 bg-white/5 border border-white/10 text-white text-[10px] font-bold uppercase tracking-[0.3em] rounded-xl hover:bg-primary hover:text-white transition-all"
+                >
+                  Сбросить поиск
+                </button>
+              </div>
+
+              <div className="space-y-8">
+                <div className="flex items-center gap-3 text-[10px] font-bold uppercase tracking-[0.4em] text-white">
+                  <Zap size={14} className="animate-pulse" /> РЕКОМЕНДУЕМЫЕ ВОПРОСЫ
+                </div>
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                   {recommendedItems.map(item => (
+                     <Link key={item.slug} href={`/faq/${item.slug}`} className="p-8 rounded-[40px] border border-white/12 bg-white/[0.02] hover:border-primary/20 transition-all flex flex-col gap-4">
+                        <h4 className="font-bold text-white uppercase text-sm leading-tight group-hover:text-white">{item.question}</h4>
+                        <span className="text-[9px] font-bold text-white uppercase tracking-widest mt-auto">ПОСМОТРЕТЬ РЕШЕНИЕ</span>
+                     </Link>
+                   ))}
+                </div>
+              </div>
             </div>
           )}
 
           {/* CTA */}
-          <div className="mt-20 p-10 xl:p-14 rounded-[40px] bg-neutral-900/40 border border-white/5 relative overflow-hidden">
-            <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent pointer-events-none" />
-            <div className="relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-8">
-              <div className="space-y-2">
-                <p className="text-[10px] font-bold uppercase tracking-[0.3em] text-primary">Не нашли ответ?</p>
-                <h2 className="text-2xl xl:text-3xl font-bold tracking-tightest text-white">Спросите эксперта напрямую</h2>
-                <p className="text-neutral-400 text-sm max-w-md">Анна Туманян ответит на ваш конкретный вопрос бесплатно при первичной консультации.</p>
+          <div className="mt-40 p-12 md:p-20 rounded-[80px] bg-neutral-900 border border-white/12 relative overflow-hidden group hover:bg-white/[0.05] transition-all">
+            <div className="relative z-10 flex flex-col lg:flex-row lg:items-center justify-between gap-12">
+              <div className="space-y-4">
+                <p className="text-[11px] font-bold uppercase tracking-[0.5em] text-white">DO YOU HAVE QUESTIONS?</p>
+                <h2 className="text-3xl md:text-5xl font-black tracking-tightest text-white uppercase leading-none">Спросите эксперта <br /> напрямую</h2>
+                <p className="text-white text-lg md:text-xl max-w-md font-medium leading-relaxed ">Бесплатный разбор вашей ситуации при первом обращении.</p>
               </div>
-              <Link href="/#contact" className="shrink-0 px-8 py-4 bg-primary text-black font-bold uppercase text-[10px] tracking-widest rounded-xl hover:bg-white transition-all flex items-center gap-3 group">
-                Задать вопрос <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
+              <Link href="/#contact" className="shrink-0 px-10 py-5 bg-primary text-white font-black uppercase text-[10px] tracking-[0.3em] rounded-2xl hover:bg-white transition-all shadow-2xl flex items-center justify-center gap-3 group">
+                Задать вопрос <ArrowRight size={16} />
               </Link>
             </div>
           </div>
         </div>
       </main>
+
+      {/* Footer */}
+      <footer className="py-20 px-6 border-t border-white/12 bg-neutral-900 relative">
+         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-12">
+            <div className="flex items-center gap-4">
+               <Logo size={40} />
+               <span className="font-bold text-xl tracking-tighter uppercase text-white">ЭлитФинанс</span>
+            </div>
+            <nav className="flex flex-wrap justify-center items-center gap-12">
+               {["About", "Experts", "News", "Vault"].map(nav => (
+                  <Link 
+                    key={nav} 
+                    href={`/${nav.toLowerCase()}`} 
+                    className="text-[10px] font-black uppercase tracking-[0.4em] text-white hover:text-white transition-colors"
+                  >
+                    {nav}
+                  </Link>
+               ))}
+            </nav>
+            <div className="text-[10px] font-bold uppercase tracking-[0.4em] text-white">© 2026 ELITFINANCE HQ</div>
+         </div>
+      </footer>
     </div>
   );
 }

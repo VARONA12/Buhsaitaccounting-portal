@@ -1,12 +1,5 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
-import NextAuthProvider from "@/components/NextAuthProvider";
-
-const inter = Inter({
-  variable: "--font-inter",
-  subsets: ["latin", "cyrillic"],
-});
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://elitfinans.online"),
@@ -15,7 +8,7 @@ export const metadata: Metadata = {
     template: "%s | ЭлитФинанс",
   },
   description:
-    "Профессиональное бухгалтерское сопровождение ООО и ИП в России. ОСНО, УСН, кадровый учёт, налоговая оптимизация. Эксперт Анна Туманян — 15 лет опыта, 100% ответственность по договору.",
+    "Профессиональное бухгалтерское сопровождение ООО и ИП в России. ОСНО, УСН, кадровый учёт, налоговая оптимизация. Коллективная экспертиза команды ЭлитФинанс — 15 лет опыта, 100% ответственность по договору.",
   keywords: [
     "бухгалтерское сопровождение",
     "бухгалтерия для ООО",
@@ -28,7 +21,7 @@ export const metadata: Metadata = {
     "аутсорсинг бухгалтерии",
     "кадровый учёт",
   ],
-  authors: [{ name: "Анна Туманян", url: "https://elitfinans.online" }],
+  authors: [{ name: "ЭлитФинанс", url: "https://elitfinans.online" }],
   creator: "ЭлитФинанс",
   publisher: "ЭлитФинанс",
   applicationName: "ЭлитФинанс",
@@ -71,10 +64,34 @@ export const metadata: Metadata = {
     },
   },
   verification: {
-    // Добавить при получении кодов верификации
-    // google: "...",
-    // yandex: "...",
+    google: "pending_google_verification",
+    yandex: "pending_yandex_verification",
+    other: {
+      "msvalidate.01": "B2C26347D8735BBC4AF6CEA15C33337E",
+    },
   },
+};
+
+const websiteJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": "https://elitfinans.online#website",
+  "url": "https://elitfinans.online",
+  "name": "ЭлитФинанс",
+  "description": "Профессиональное бухгалтерское и налоговое сопровождение ООО и ИП в России",
+  "inLanguage": "ru",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "https://elitfinans.online/faq?q={search_term_string}"
+    },
+    "query-input": "required name=search_term_string"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "@id": "https://elitfinans.online#org"
+  }
 };
 
 export default function RootLayout({
@@ -84,8 +101,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ru">
-      <body className={`${inter.variable} antialiased selection:bg-primary/30 selection:text-primary`}>
-        <NextAuthProvider>{children}</NextAuthProvider>
+      <body className="antialiased selection:bg-primary/30 selection:text-white bg-neutral-900">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
+        />
+        {children}
       </body>
     </html>
   );

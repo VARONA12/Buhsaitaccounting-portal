@@ -1,0 +1,137 @@
+import Link from "next/link";
+import Image from "next/image";
+import { UserCheck, Star, ShieldCheck, ArrowRight, User, Zap } from "lucide-react";
+import { EXPERTS } from "@/lib/experts-data";
+import { Logo } from "@/components/Logo";
+
+export default function ExpertsPage() {
+  return (
+    <div className="min-h-screen bg-neutral-900 text-white font-sans selection:bg-primary-dark/80 selection:text-white">
+      {/* Navigation */}
+      <nav className="fixed top-0 left-0 w-full z-[100] border-b border-white/12 bg-neutral-900/70 backdrop-blur-3xl shadow-sm">
+        <div className="max-w-7xl mx-auto px-6 h-16 xl:h-20 flex items-center justify-between">
+          <Link href="/" className="flex items-center gap-4 group">
+            <div className="transition-transform group-hover:scale-110">
+              <Logo size={40} />
+            </div>
+            <span className="font-bold text-lg xl:text-xl tracking-tighter uppercase text-white leading-none">ЭлитФинанс</span>
+          </Link>
+          <div className="flex items-center gap-6">
+            <Link
+              href="/"
+              className="text-[10px] font-bold uppercase tracking-[0.3em] text-white hover:text-white transition-colors"
+            >
+              На главную
+            </Link>
+          </div>
+        </div>
+      </nav>
+
+      <main className="pt-32 pb-40 px-6 md:pt-48">
+        <div className="max-w-7xl mx-auto">
+          {/* Header */}
+          <header className="mb-20 space-y-8 lg:text-left">
+            <div className="inline-flex items-center gap-3 text-[10px] font-bold uppercase tracking-[0.5em] text-white">
+               <UserCheck size={16} />
+               КОМАНДА ЭЛИТФИНАНС / COLLECTIVE TRUST
+            </div>
+            <h1 className="text-4xl md:text-6xl lg:text-7xl xl:text-8xl font-black tracking-tightest leading-[1.1] text-white uppercase">
+               ЭКСПЕРТЫ <br /> ПО НАЛОГАМ И <span className="text-white ">ПРАВУ.</span>
+            </h1>
+            <p className="text-xl md:text-2xl text-white font-medium max-w-2xl leading-relaxed">
+               Коллективная экспертиза ЭлитФинанс гарантирует 100% точность в ведении вашего бизнеса.
+            </p>
+          </header>
+
+          {/* Experts Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+            {EXPERTS.map((expert) => (
+              <Link 
+                key={expert.slug} 
+                href={`/experts/${expert.slug}`}
+                className="group relative h-[650px] rounded-[64px] overflow-hidden border border-white/12 bg-neutral-900 hover:border-primary/30 transition-all duration-700 flex flex-col justify-end shadow-2xl"
+              >
+                {/* Image background */}
+                <Image 
+                  src={expert.image} 
+                  alt={expert.name} 
+                  fill 
+                  className="object-cover opacity-95 group-hover: group-hover:opacity-100 group-hover:scale-105 transition-all duration-1000" 
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent opacity-90" />
+                
+                {/* Info Overlay */}
+                <div className="relative p-10 space-y-5">
+                   <div className="text-[10px] font-bold uppercase tracking-[0.3em] text-white flex items-center gap-3">
+                      <Star size={12} className="text-white animate-pulse" /> {expert.role}
+                   </div>
+                   <h2 className="text-3xl md:text-4xl font-black text-white uppercase tracking-tighter leading-none">{expert.name}</h2>
+                   <div className="flex flex-wrap gap-2 pt-2">
+                      {expert.specialization.slice(0, 2).map((s) => (
+                        <span key={s} className="px-5 py-1.5 bg-white/[0.05] border border-white/20 rounded-full text-[9px] font-bold uppercase text-white">{s}</span>
+                      ))}
+                   </div>
+                   <p className="text-base text-white line-clamp-2 leading-relaxed ">
+                      {expert.bio}
+                   </p>
+                   <div className="pt-8 border-t border-white/20 flex items-center justify-between">
+                      <span className="text-[10px] font-bold text-white uppercase tracking-widest">Опыт {expert.experience}</span>
+                      <span className="flex items-center gap-3 text-[10px] font-bold text-white uppercase tracking-widest group-hover:gap-6 transition-all">Профиль <ArrowRight size={14} /></span>
+                   </div>
+                </div>
+              </Link>
+            ))}
+          </div>
+
+          {/* Principles Block - High Contrast Dark */}
+          <div className="mt-40 p-12 md:p-24 rounded-[100px] border border-white/12 bg-neutral-900 relative overflow-hidden group hover:bg-white/[0.04] transition-all">
+             <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-primary/5 rounded-full blur-[120px] pointer-events-none" />
+             <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center relative z-10">
+                <div className="text-3xl md:text-5xl lg:text-6xl font-black leading-[1.05] uppercase tracking-tightest text-white">
+                   Разделяя <span className="text-white ">ответственность</span>, мы гарантируем стабильность вашего бизнеса.
+                </div>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-12">
+                   <div className="space-y-4">
+                      <div className="w-12 h-12 rounded-2xl bg-primary/10 flex items-center justify-center">
+                        <ShieldCheck className="text-white" size={24} />
+                      </div>
+                      <h4 className="font-black text-white uppercase text-sm tracking-widest">Коллективная гарантия</h4>
+                      <p className="text-sm text-white leading-relaxed font-medium">Вся документация проходит тройную проверку профильными экспертами ЭлитФинанс.</p>
+                   </div>
+                   <div className="space-y-4">
+                      <div className="w-12 h-12 rounded-2xl bg-primary/10 flex items-center justify-center">
+                        <User className="text-white" size={24} />
+                      </div>
+                      <h4 className="font-black text-white uppercase text-sm tracking-widest">Узкая специализация</h4>
+                      <p className="text-sm text-white leading-relaxed font-medium">Каждый специалист фокусируется в своем сегменте: от налогообложения до 115-ФЗ.</p>
+                   </div>
+                </div>
+             </div>
+          </div>
+        </div>
+      </main>
+
+      {/* Footer */}
+      <footer className="py-20 px-6 border-t border-white/12 bg-neutral-900 relative">
+         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-12">
+            <div className="flex items-center gap-4">
+               <Logo size={40} />
+               <span className="font-bold text-xl tracking-tighter uppercase text-white">ЭлитФинанс</span>
+            </div>
+            <nav className="flex flex-wrap justify-center items-center gap-12">
+               {["About", "Team", "News", "Vault"].map(nav => (
+                  <Link 
+                    key={nav} 
+                    href={`/${nav.toLowerCase()}`} 
+                    className="text-[10px] font-black uppercase tracking-[0.4em] text-white hover:text-white transition-colors"
+                  >
+                    {nav}
+                  </Link>
+               ))}
+            </nav>
+            <div className="text-[10px] font-bold uppercase tracking-[0.4em] text-white">© 2026 ELITFINANCE HQ</div>
+         </div>
+      </footer>
+    </div>
+  );
+}

@@ -12,6 +12,7 @@ import {
   BookOpen,
   HelpCircle,
   ChevronDown,
+  Zap
 } from "lucide-react";
 
 interface Props {
@@ -57,12 +58,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 const categoryColors: Record<string, string> = {
-  Налоги: "text-yellow-400 bg-yellow-400/10 border-yellow-400/20",
-  Системы: "text-blue-400 bg-blue-400/10 border-blue-400/20",
-  Отчётность: "text-green-400 bg-green-400/10 border-green-400/20",
-  Документы: "text-purple-400 bg-purple-400/10 border-purple-400/20",
-  Регистрация: "text-orange-400 bg-orange-400/10 border-orange-400/20",
-  Законы: "text-red-400 bg-red-400/10 border-red-400/20",
+  Налоги: "text-white bg-primary/10 border-primary/40",
+  Системы: "text-white bg-blue-400/10 border-blue-400/20",
+  Отчётность: "text-white bg-green-400/10 border-green-400/20",
+  Документы: "text-white bg-purple-400/10 border-purple-400/20",
+  Регистрация: "text-white bg-orange-400/10 border-orange-400/20",
+  Законы: "text-white bg-red-400/10 border-red-400/20",
 };
 
 export default async function HandbookTermPage({ params }: Props) {
@@ -70,9 +71,6 @@ export default async function HandbookTermPage({ params }: Props) {
   const term = HANDBOOK_TERMS.find((t) => t.slug === slug);
   if (!term) notFound();
 
-  const url = `https://elitfinans.online/handbook/${slug}`;
-
-  // Related terms: same category, excluding self
   const related = HANDBOOK_TERMS.filter(
     (t) => t.slug !== slug && t.category === term.category
   ).slice(0, 3);
@@ -82,214 +80,95 @@ export default async function HandbookTermPage({ params }: Props) {
   );
   const relatedTerms = [...related, ...fillRelated].slice(0, 3);
 
-  const jsonLd = {
+  const faqJsonLd = {
     "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "DefinedTerm",
-        "@id": `${url}#term`,
-        name: term.term,
-        description: term.shortDef,
-        url,
-        inDefinedTermSet: {
-          "@type": "DefinedTermSet",
-          "@id": "https://elitfinans.online/handbook#glossary",
-          name: "Справочник предпринимателя",
-          url: "https://elitfinans.online/handbook",
-        },
-        termCode: term.slug,
-        about: {
-          "@type": "Thing",
-          name: term.category,
-        },
-      },
-      {
-        "@type": "FAQPage",
-        "@id": `${url}#faq`,
-        name: `Часто задаваемые вопросы: ${term.term}`,
-        mainEntity: term.faq.map((item) => ({
-          "@type": "Question",
-          name: item.q,
-          acceptedAnswer: {
-            "@type": "Answer",
-            text: item.a,
-          },
-        })),
-      },
-      {
-        "@type": "Article",
-        "@id": `${url}#article`,
-        headline: `${term.term} — что это такое: определение и разбор`,
-        description: term.shortDef,
-        articleBody: term.fullDef.join(" "),
-        inLanguage: "ru",
-        isAccessibleForFree: true,
-        keywords: term.keywords.join(", "),
-        about: {
-          "@type": "DefinedTerm",
-          "@id": `${url}#term`,
-        },
-        speakable: {
-          "@type": "SpeakableSpecification",
-          cssSelector: [".term-definition", ".term-full-def"],
-        },
-        author: {
-          "@type": "Person",
-          "@id": "https://elitfinans.online#expert",
-          name: "Анна Туманян",
-          jobTitle: "Налоговый консультант и главный бухгалтер",
-          worksFor: { "@id": "https://elitfinans.online#org" },
-        },
-        publisher: {
-          "@type": "Organization",
-          "@id": "https://elitfinans.online#org",
-          name: "ЭлитФинанс",
-          url: "https://elitfinans.online",
-        },
-        mainEntityOfPage: {
-          "@type": "WebPage",
-          "@id": url,
-        },
-        isPartOf: {
-          "@type": "DefinedTermSet",
-          "@id": "https://elitfinans.online/handbook#glossary",
-        },
-      },
-      {
-        "@type": "BreadcrumbList",
-        itemListElement: [
-          {
-            "@type": "ListItem",
-            position: 1,
-            name: "Главная",
-            item: "https://elitfinans.online",
-          },
-          {
-            "@type": "ListItem",
-            position: 2,
-            name: "Справочник предпринимателя",
-            item: "https://elitfinans.online/handbook",
-          },
-          {
-            "@type": "ListItem",
-            position: 3,
-            name: term.term,
-            item: url,
-          },
-        ],
-      },
-      {
-        "@type": "Organization",
-        "@id": "https://elitfinans.online#org",
-        name: "ЭлитФинанс",
-        url: "https://elitfinans.online",
-        telephone: "+79028371370",
-        email: "info@elitfinance.ru",
-      },
-    ],
+    "@type": "FAQPage",
+    "mainEntity": term.faq.map(f => ({
+      "@type": "Question",
+      "name": f.q,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": f.a
+      }
+    }))
   };
 
   return (
-    <div className="min-h-screen bg-[#050505] text-white font-sans">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
-
+    <div className="min-h-screen bg-neutral-900 text-white font-sans selection:bg-primary-dark/80 selection:text-white">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       {/* Nav */}
-      <nav className="fixed top-0 left-0 w-full z-[100] border-b border-white/[0.05] bg-black/60 backdrop-blur-2xl">
+      <nav className="fixed top-0 left-0 w-full z-[100] border-b border-white/12 bg-neutral-900/70 backdrop-blur-3xl shadow-sm">
         <div className="max-w-7xl mx-auto px-6 h-16 xl:h-20 flex items-center justify-between">
-          <Link href="/" className="flex items-center gap-3 group">
+          <Link href="/" className="flex items-center gap-4 group">
             <div className="transition-transform group-hover:scale-110">
-              <Logo size={42} />
+              <Logo size={40} />
             </div>
-            <span className="font-bold text-lg xl:text-xl tracking-tighter uppercase">
+            <span className="font-bold text-lg xl:text-xl tracking-tighter uppercase text-white leading-none">
               ЭлитФинанс
             </span>
           </Link>
           <div className="flex items-center gap-6">
             <Link
               href="/handbook"
-              className="flex items-center gap-2 text-[10px] font-bold uppercase tracking-[0.2em] text-neutral-400 hover:text-white transition-colors"
+              className="flex items-center gap-2 text-[10px] font-bold uppercase tracking-[0.2em] text-white hover:text-white transition-colors"
             >
               <ArrowLeft size={14} /> Справочник
-            </Link>
-            <Link
-              href="/"
-              className="text-[10px] font-bold uppercase tracking-[0.2em] text-neutral-400 hover:text-white transition-colors"
-            >
-              На главную
             </Link>
           </div>
         </div>
       </nav>
 
-      <main className="pt-28 pb-24 px-6">
+      <main className="pt-32 pb-40 px-6 md:pt-40">
         <div className="max-w-4xl mx-auto">
-
           {/* Breadcrumb */}
           <nav aria-label="breadcrumb" className="mb-10">
-            <ol className="flex items-center gap-2 text-[10px] font-bold uppercase tracking-widest text-neutral-600">
-              <li>
-                <Link href="/" className="hover:text-primary transition-colors">
-                  Главная
-                </Link>
-              </li>
-              <li>
-                <ChevronRight size={10} />
-              </li>
-              <li>
-                <Link
-                  href="/handbook"
-                  className="hover:text-primary transition-colors"
-                >
-                  Справочник
-                </Link>
-              </li>
-              <li>
-                <ChevronRight size={10} />
-              </li>
-              <li className="text-neutral-400 truncate max-w-[200px]">
-                {term.term}
-              </li>
+            <ol className="flex items-center gap-2 text-[10px] font-bold uppercase tracking-widest text-white flex-wrap">
+              <li><Link href="/" className="hover:text-white transition-colors">Главная</Link></li>
+              <li><ChevronRight size={10} /></li>
+              <li><Link href="/handbook" className="hover:text-white transition-colors">Справочник</Link></li>
+              <li><ChevronRight size={10} /></li>
+              <li className="text-white truncate max-w-[200px]">{term.term}</li>
             </ol>
           </nav>
 
-          {/* Category + section */}
+          {/* Category */}
           <div className="flex flex-wrap items-center gap-4 mb-8">
             <span
-              className={`flex items-center gap-1.5 px-4 py-1.5 rounded-full text-[9px] font-bold uppercase tracking-widest border ${
+              className={`flex items-center gap-2 px-4 py-1 rounded-full text-[9px] font-bold uppercase tracking-widest border ${
                 categoryColors[term.category] ||
-                "text-neutral-400 bg-neutral-800/50 border-white/10"
+                "text-white bg-white/5 border-white/20"
               }`}
             >
-              <Tag size={9} /> {term.category}
+              <Tag size={10} /> {term.category}
             </span>
-            <span className="flex items-center gap-2 text-[10px] font-bold text-neutral-600 uppercase tracking-widest">
-              <BookOpen size={12} /> Справочник предпринимателя
+            <span className="flex items-center gap-2 text-[10px] font-bold text-white uppercase tracking-widest">
+              <BookOpen size={14} className="text-white" /> СПРАВОЧНИК 2026
             </span>
           </div>
 
           {/* Headline */}
-          <header className="mb-10">
-            <h1 className="text-4xl md:text-5xl xl:text-6xl font-bold tracking-tightest leading-[1.05] text-white mb-6">
+          <header className="mb-12 space-y-8">
+            <h1 className="text-4xl md:text-6xl xl:text-7xl font-black tracking-tightest leading-[1.05] text-white uppercase">
               {term.term}
             </h1>
-            <p className="term-definition text-lg xl:text-xl text-neutral-400 leading-relaxed font-medium">
-              {term.shortDef}
-            </p>
+            <div className="term-definition p-8 rounded-[48px] border border-white/12 bg-neutral-900 shadow-2xl relative overflow-hidden group">
+               <div className="absolute top-0 right-0 p-6 opacity-5"><Logo size={80} /></div>
+               <p className="text-xl md:text-2xl text-white font-medium leading-relaxed  relative z-10">
+                 {term.shortDef}
+               </p>
+            </div>
           </header>
 
           {/* Full definition */}
-          <article className="mb-16">
-            <h2 className="text-[10px] font-bold uppercase tracking-[0.3em] text-primary mb-6">
-              Подробное объяснение
-            </h2>
-            <div className="term-full-def space-y-6">
+          <article className="mb-24">
+            <div className="flex items-center gap-3 mb-10 text-white font-bold uppercase text-[10px] tracking-[0.4em]">
+              <Zap size={16} className="animate-pulse" /> ПОДРОБНЫЙ РАЗБОР
+            </div>
+            <div className="term-full-def space-y-8">
               {term.fullDef.map((paragraph, i) => (
                 <p
                   key={i}
-                  className="text-neutral-300 leading-[1.8] text-[17px]"
+                  className="text-white leading-[1.8] text-[19px] font-medium "
                 >
                   {paragraph}
                 </p>
@@ -298,34 +177,34 @@ export default async function HandbookTermPage({ params }: Props) {
           </article>
 
           {/* Expert Verification */}
-          <ExpertVerification expertName="Анна Туманян" date="Март 2026" />
+          <ExpertVerification expertName="Эксперт ЭлитФинанс" date="Март 2026" />
 
           {/* FAQ */}
-          <section className="mt-16" aria-label={`Частые вопросы по теме ${term.term}`}>
-            <div className="flex items-center gap-3 mb-8">
-              <div className="w-8 h-8 rounded-xl bg-primary/15 flex items-center justify-center">
-                <HelpCircle size={16} className="text-primary" />
+          <section className="mt-24" aria-label={`Частые вопросы по теме ${term.term}`}>
+            <div className="flex items-center gap-3 mb-10">
+              <div className="w-10 h-10 rounded-2xl bg-primary/10 flex items-center justify-center">
+                <HelpCircle size={20} className="text-white" />
               </div>
-              <h2 className="text-[10px] font-bold uppercase tracking-[0.3em] text-primary">
-                Частые вопросы
+              <h2 className="text-[10px] font-bold uppercase tracking-[0.4em] text-white">
+                ЧАСТЫЕ ВОПРОСЫ
               </h2>
             </div>
             <div className="space-y-4">
               {term.faq.map((item, i) => (
                 <details
                   key={i}
-                  className="group p-6 rounded-[24px] bg-neutral-900/30 border border-white/5 hover:border-primary/15 transition-colors"
+                  className="group p-8 rounded-[40px] bg-neutral-900 border border-white/12 hover:border-primary/40 transition-all shadow-xl"
                 >
-                  <summary className="flex items-start justify-between gap-4 cursor-pointer list-none">
-                    <span className="font-bold text-white text-base leading-snug">
+                  <summary className="flex items-start justify-between gap-6 cursor-pointer list-none">
+                    <span className="font-black text-white text-lg leading-tight uppercase tracking-tight">
                       {item.q}
                     </span>
                     <ChevronDown
-                      size={16}
-                      className="text-neutral-500 shrink-0 mt-1 group-open:rotate-180 transition-transform"
+                      size={20}
+                      className="text-white shrink-0 mt-1 group-open:rotate-180 transition-transform"
                     />
                   </summary>
-                  <p className="mt-4 text-neutral-400 leading-relaxed text-sm">
+                  <p className="mt-8 text-white leading-relaxed text-base font-medium  border-t border-white/12 pt-8">
                     {item.a}
                   </p>
                 </details>
@@ -333,72 +212,64 @@ export default async function HandbookTermPage({ params }: Props) {
             </div>
           </section>
 
-          {/* CTA */}
-          <div className="mt-16 p-10 xl:p-14 rounded-[40px] bg-neutral-900/40 border border-white/5 relative overflow-hidden">
-            <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent pointer-events-none" />
-            <div className="relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-8">
-              <div className="space-y-2">
-                <p className="text-[10px] font-bold uppercase tracking-[0.3em] text-primary">
-                  Нужна помощь с {term.term}?
-                </p>
-                <h3 className="text-2xl xl:text-3xl font-bold tracking-tightest text-white">
-                  Разберём вашу ситуацию.
+          {/* CTA - Premium Dark Glass */}
+          <div className="mt-24 p-12 md:p-20 rounded-[80px] bg-neutral-900 border border-white/12 text-white relative overflow-hidden group shadow-2xl">
+            <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-primary/5 rounded-full blur-[100px] pointer-events-none" />
+            <div className="relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-12 text-left">
+              <div className="space-y-4">
+                <p className="text-[11px] font-bold uppercase tracking-[0.5em] text-white/50">ЛИЧНАЯ КОНСУЛЬТАЦИЯ</p>
+                <h3 className="text-3xl md:text-5xl font-black tracking-tightest text-white uppercase leading-[0.9]">
+                  РАЗБЕРЁМ ВАШУ <br /> СИТУАЦИЮ
                 </h3>
-                <p className="text-neutral-400 text-sm max-w-md">
-                  Эксперт ЭлитФинанс применит нормы по {term.term} к вашему
-                  конкретному случаю и подготовит план действий.
+                <p className="text-white/60 text-lg md:text-xl max-w-md font-medium leading-relaxed ">
+                  Эксперт применит нормы по теме «{term.term}» к вашей модели бизнеса ООО или ИП. Профессионально и безопасно.
                 </p>
               </div>
-              <Link
-                href="/#services"
-                className="shrink-0 px-8 py-4 bg-primary text-black font-bold uppercase text-[10px] tracking-widest rounded-xl hover:bg-white transition-all flex items-center gap-3 group"
+              <button
+                onClick={() => { (window as any).toggleContactForm?.() }}
+                className="shrink-0 px-10 py-5 bg-white text-neutral-900 font-black uppercase text-[10px] tracking-[0.3em] rounded-2xl hover:bg-primary hover:text-white transition-all shadow-2xl flex items-center gap-3 group"
               >
-                Наши услуги{" "}
-                <ArrowRight
-                  size={14}
-                  className="group-hover:translate-x-1 transition-transform"
-                />
-              </Link>
+                ЗАДАТЬ ВОПРОС <ArrowRight size={16} />
+              </button>
             </div>
           </div>
 
           {/* Related Terms */}
           {relatedTerms.length > 0 && (
-            <section className="mt-20">
-              <h2 className="text-[10px] font-bold uppercase tracking-[0.4em] text-neutral-400 mb-10">
-                Похожие термины
-              </h2>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <section className="mt-40">
+              <div className="flex items-center gap-4 mb-16">
+                <BookOpen size={20} className="text-white" />
+                <h2 className="text-[11px] font-black uppercase tracking-[0.4em] text-white">
+                  ПОХОЖИЕ ТЕРМИНЫ
+                </h2>
+              </div>
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 {relatedTerms.map((t) => (
                   <Link
                     key={t.slug}
                     href={`/handbook/${t.slug}`}
-                    className="group p-6 rounded-[32px] bg-neutral-900/30 border border-white/5 hover:bg-neutral-900/50 hover:border-primary/20 transition-all flex flex-col gap-4"
+                    className="group p-8 rounded-[48px] border border-white/12 bg-white/[0.03] hover:bg-neutral-900 hover:border-primary/40 transition-all flex flex-col gap-6"
                   >
-                    <div className="flex items-center justify-between">
+                    <div className="flex items-center justify-between pb-4 border-b border-white/12">
                       <span
-                        className={`text-[9px] font-bold uppercase tracking-widest px-2.5 py-1 rounded-full border ${
+                        className={`text-[9px] font-bold uppercase tracking-widest px-3 py-1 rounded-full border ${
                           categoryColors[t.category] ||
-                          "text-neutral-400 bg-neutral-800/50 border-white/10"
+                          "text-white bg-white/5 border-white/20"
                         }`}
                       >
                         {t.category}
                       </span>
                     </div>
                     <div>
-                      <h3 className="text-lg font-bold text-white group-hover:text-primary transition-colors mb-2">
+                      <h3 className="text-lg font-black text-white group-hover:text-white transition-colors mb-2 uppercase tracking-tight">
                         {t.term}
                       </h3>
-                      <p className="text-xs text-neutral-500 leading-relaxed line-clamp-2">
+                      <p className="text-xs text-white leading-relaxed line-clamp-2 font-medium">
                         {t.shortDef}
                       </p>
                     </div>
-                    <div className="flex items-center gap-1 text-[10px] font-bold text-primary uppercase tracking-widest mt-auto">
-                      Читать{" "}
-                      <ArrowRight
-                        size={12}
-                        className="group-hover:translate-x-1 transition-transform"
-                      />
+                    <div className="flex items-center gap-2 text-[10px] font-bold text-white uppercase tracking-[0.3em] mt-auto">
+                      ЧИТАТЬ <ArrowRight size={14} className="group-hover:translate-x-1 transition-all" />
                     </div>
                   </Link>
                 ))}
@@ -407,6 +278,33 @@ export default async function HandbookTermPage({ params }: Props) {
           )}
         </div>
       </main>
+
+      {/* Footer */}
+      <footer className="py-20 px-6 border-t border-white/12 bg-neutral-900 relative">
+         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-12">
+            <div className="flex items-center gap-4">
+               <Logo size={40} />
+               <span className="font-bold text-xl tracking-tighter uppercase text-white">ЭлитФинанс</span>
+            </div>
+            <nav className="flex flex-wrap justify-center items-center gap-12">
+               {[
+                 { label: "О компании", href: "/about" },
+                 { label: "Эксперты", href: "/experts" },
+                 { label: "Новости", href: "/news" },
+                 { label: "Справочник", href: "/handbook" }
+               ].map(nav => (
+                  <Link 
+                    key={nav.label} 
+                    href={nav.href} 
+                    className="text-[10px] font-black uppercase tracking-[0.4em] text-white hover:text-white transition-colors"
+                  >
+                    {nav.label}
+                  </Link>
+               ))}
+            </nav>
+            <div className="text-[10px] font-bold uppercase tracking-[0.4em] text-white">© 2026 ЭЛИТФИНАНС / МОСКВА</div>
+         </div>
+      </footer>
     </div>
   );
 }

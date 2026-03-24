@@ -20,6 +20,11 @@ Allow: /
 Disallow: /dashboard
 Disallow: /admin
 
+User-agent: ClaudeBot
+Allow: /
+Disallow: /dashboard
+Disallow: /admin
+
 User-agent: anthropic-ai
 Allow: /
 Disallow: /dashboard

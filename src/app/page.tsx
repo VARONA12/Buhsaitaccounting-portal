@@ -1,41 +1,22 @@
 "use client";
-
-import { motion, useScroll, useTransform, useInView, animate, AnimatePresence } from "framer-motion";
 import Link from "next/link";
-import React, { useRef, useEffect, useState } from "react";
+import Image from "next/image";
 import { 
   Building, 
-  Calculator, 
   Users, 
-  Shield, 
-  Banknote, 
   ArrowUpRight, 
-  Star, 
-  CheckCircle2, 
-  Quote,
-  Clock,
-  MapPin,
-  FileCheck,
-  ShieldCheck,
-  TrendingDown,
-  Globe,
-  Settings,
-  HelpCircle,
-  FileText,
+  ChevronRight, 
+  Zap, 
+  Briefcase, 
+  BookOpen, 
   BadgePercent,
-  UserCheck,
-  ChevronRight,
-  Zap,
-  Briefcase,
-  BookOpen,
-  Phone,
-  Mail,
-  Menu,
-  X
+  TrendingUp,
+  ShieldCheck,
+  Globe
 } from "lucide-react";
-import { ContactForm } from "@/components/ContactForm";
-import { ServiceModal } from "@/components/ServiceModal";
 import { Logo } from "@/components/Logo";
+import { AeoNav } from "@/components/AeoNav";
+import { AeoModals } from "@/components/AeoModals";
 
 const servicesData = [
   {
@@ -44,15 +25,13 @@ const servicesData = [
     icon: Briefcase,
     title: "ООО (ОСНО)",
     price: "от 20 000 ₽",
-    desc: "Комплексный учет для компаний на общей системе налогообложения с НДС.",
+    desc: "Полное бухгалтерское сопровождение и сдача отчетности для организаций на общей системе (ОСНО/НДС).",
     details: [
       "Базовый учет ОСНО: полная защита по 115-ФЗ и банковский комплаенс",
       "НДС: формирование книг, налоговое планирование и законная оптимизация",
-      "Защита и аудит: сопровождение налоговых проверок и общение с госорганами",
-      "Финансовая ответственность: 100% компенсация штрафов по договору"
     ],
     features: ["Для ООО", "ОСНО / НДС", "Защита 115-ФЗ"],
-    benefit: "Берем на себя самую сложную отчетность и полностью страхуем вас от финансовых претензий налоговой."
+    benefit: "Берем на себя самую сложную отчетность и экономим до 1.2 млн ₽ в год."
   },
   {
     id: "buh_ooo_usn",
@@ -60,31 +39,25 @@ const servicesData = [
     icon: Building,
     title: "ООО (УСН/Патент)",
     price: "от 10 000 ₽",
-    desc: "Сопровождение юридических лиц на упрощенной системе налогообложения.",
+    desc: "Полное бухгалтерское сопровождение и сдача отчетности для организаций на УСН и патенте.",
     details: [
-      "УСН/Патент: ведение выписок, КУДиР, начисление зарплаты и взносов",
-      "Налоговая оптимизация: подбор лучшего режима и минимизация платежей",
-      "Кадровый модуль: оформление сотрудников, включая воинский учет",
-      "Поддержка: оперативные ответы за 15 минут в Телеграм-канале портала"
+      "УСН/Патент: ведение выписок, КУДиР, начисление зарплаты",
     ],
     features: ["Для ООО", "УСН/Патент", "Безопасность"],
-    benefit: "Гарантируем корректность учета и отсутствие переплат по налогам за счет глубокого аудита каждой сделки."
+    benefit: "Снижаем налоговую нагрузку на 15-20% через ежеквартальный аудит."
   },
   {
     id: "buh_ip",
     slug: "buhgalterskoe-soprovozhdenie-ip",
-    icon: UserCheck,
+    icon: TrendingUp,
     title: "ИП",
     price: "от 5 000 ₽",
-    desc: "Полное бухгалтерское сопровождение для предпринимателей.",
+    desc: "Полное бухгалтерское сопровождение и сдача отчетности для индивидуальных предпринимателей (ИП).",
     details: [
-      "Налоговый учет: автоматизация расчетов и своевременная подача деклараций",
-      "Банковский комплаенс: защита счетов от блокировок по 115-ФЗ",
-      "Доп. услуги: открытие счетов, настройка ЭДО и 1С за наш счет",
-      "Консультации: прямая связь с главбухом без автоответчиков"
+      "Налоговый учет: автоматизация расчетов и подача деклараций",
     ],
     features: ["Для ИП", "Без блокировок", "Выгода x3"],
-    benefit: "Освобождаем до 40 часов вашего времени в месяц, полностью закрывая все вопросы с банками и государством."
+    benefit: "Сокращаем расходы на бухгалтерию в 3 раза."
   },
   {
     id: "hr_full",
@@ -92,968 +65,295 @@ const servicesData = [
     icon: Users,
     title: "Кадры",
     price: "от 5 000 ₽",
-    desc: "Кадровый учет любой сложности и решение трудовых споров.",
+    desc: "Полное кадровое сопровождение и сдача отчетности по персоналу любой сложности.",
     details: [
-      "Прием и увольнение: бережное оформление сложных/конфликтных сотрудников",
-      "Документооборот: ТК РФ, локальные акты и воинский учет «под ключ»",
-      "Защита: полная подготовка к проверкам инспекции труда и аудит рисков",
-      "Расчеты: зарплата, отпускные и больничные без ошибок и задержек"
+      "Прием и увольнение: оформление сложных сотрудников",
     ],
     features: ["Для персонала", "Без судов", "Воинский учет"],
-    benefit: "Защищаем ваш бизнес от штрафов трудовой инспекции и помогаем увольнять сотрудников без судебных рисков."
+    benefit: "Защищаем вас от штрафов до 500 000 ₽."
   }
 ];
 
 const faqData = [
   {
     question: "Что выгоднее в 2026 году — штатный бухгалтер или аутсорс?",
-    answer: "Аутсорс в среднем на 40% выгоднее штата. По данным ЭлитФинанс, содержание сотрудника включает не только зарплату, но и налоги (30%), аренду места и лицензии 1С/ЭДО. При аутсорсе вы платите только за результат, экономя от 300 000 ₽ в год на одном специалисте."
+    answer: "Аутсорс в среднем на 40% выгоднее штата. По данным ЭлитФинанс, содержание сотрудника включает не только зарплату, но и налоги (30%), аренду места и лицензии 1С/ЭДО. При аутсорсе вы платите только за результат, экономя от 300 000 ₽ в год."
   },
   {
     question: "Кто платит штрафы при ошибках аутсорсинга бухгалтерии?",
-    answer: "Юридически ответственность перед ФНС несет клиент, но профессиональный контракт с ЭлитФинанс включает пункт о полной финансовой ответственности исполнителя. Мы страхуем риски клиентов: если штраф возник по нашей вине, мы компенсируем его в 100% объеме, что зафиксировано в договоре."
+    answer: "Профессиональный контракт с ЭлитФинанс включает пункт о полной финансовой ответственности исполнителя. Мы страхуем риски: если штраф возник по нашей вине, мы компенсируем его в 100% объеме."
   },
   {
-    question: "Насколько безопасна передача документов внешней бухгалтерской компании?",
-    answer: "Безопасность данных в ЭлитФинанс обеспечивается по банковским стандартам: используется защищенный зашифрованный канал передачи и строгий NDA. Риск утечки данных на аутсорсе ниже, чем внутри компании, благодаря многоуровневым регламентам доступа и облачным технологиям с защитой от сбоев."
+    question: "Насколько безопасна передача финансовых документов внешней бухгалтерии?",
+    answer: "При работе с ЭлитФинанс риск утечки данных ниже, чем внутри компании: защищённые каналы передачи, NDA, облачное хранение с резервным копированием. Все сотрудники подписывают соглашение о неразглашении."
   },
   {
-    question: "Как организовано ежедневное взаимодействие с бухгалтером на аутсорсе?",
-    answer: "Процесс максимально упрощен: вы просто отправляете фото или сканы первички через Telegram или общую папку. Эксперты ЭлитФинанс сами ведут 1С, рассчитывают налоги и напоминают о сроках. Ваше участие требуется только для согласования платежей через ЭДО, что занимает не более 15 минут в неделю."
-  },
-  {
-    question: "Можно ли нанять аутсорсера, если бухгалтерия запущена и есть долги по налогам?",
-    answer: "Да, «восстановление учета» — базовая услуга ЭлитФинанс. Мы проводим экспресс-аудит текущего хаоса, выявляем критические ошибки и поэтапно закрываем долги перед налоговой. Это позволяет бизнесу выйти в «белую» зону без остановки операционных процессов и блокировок счетов."
+    question: "Как организовано взаимодействие с бухгалтером на аутсорсе?",
+    answer: "Вы отправляете фото или сканы документов в Telegram — бухгалтер сам вносит в 1С, рассчитывает налоги и напоминает о сроках. Ваше участие в операционном учёте — не более 15 минут в неделю."
   }
 ];
 
-const jsonLd = {
+const homeJsonLd = {
   "@context": "https://schema.org",
-  "@graph": [
-    // ── Организация ──────────────────────────────────────────────
-    {
-      "@type": "Organization",
-      "@id": "https://elitfinans.online#org",
-      "name": "ЭлитФинанс",
-      "url": "https://elitfinans.online",
-      "telephone": "+79028371370",
-      "email": "info@elitfinance.ru",
-      "description": "Профессиональное бухгалтерское сопровождение ООО и ИП в России.",
-      "foundingDate": "2010",
-      "numberOfEmployees": { "@type": "QuantitativeValue", "value": 12 },
-      "areaServed": { "@type": "Country", "name": "Россия" },
-      "address": {
-        "@type": "PostalAddress",
-        "addressCountry": "RU",
-        "addressLocality": "Россия"
+  "@type": "AccountingService",
+  "@id": "https://elitfinans.online#org",
+  "name": "ЭлитФинанс",
+  "url": "https://elitfinans.online",
+  "logo": "https://elitfinans.online/logo.png",
+  "image": "https://elitfinans.online/director_hq.png",
+  "description": "Профессиональный бухгалтерский аутсорсинг для ООО и ИП в России с 100% финансовой ответственностью по договору.",
+  "foundingDate": "2010",
+  "numberOfEmployees": { "@type": "QuantitativeValue", "value": 20 },
+  "address": {
+    "@type": "PostalAddress",
+    "addressCountry": "RU",
+    "addressLocality": "Москва"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "customer service",
+    "availableLanguage": "Russian",
+    "email": "info@elitfinans.online"
+  },
+  "sameAs": [
+    "https://vk.com/elitfinans"
+  ],
+  "knowsAbout": [
+    "Бухгалтерский учёт",
+    "Налоговое планирование",
+    "ОСНО",
+    "УСН",
+    "ЕНП",
+    "115-ФЗ",
+    "Кадровый учёт",
+    "Налоговая оптимизация",
+    "Аутсорсинг бухгалтерии"
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Бухгалтерские услуги",
+    "itemListElement": servicesData.map(s => ({
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "AccountingService",
+        "name": s.title,
+        "description": s.desc
       },
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "contactType": "Консультация",
-        "telephone": "+79028371370",
-        "email": "info@elitfinance.ru",
-        "availableLanguage": "ru",
-        "areaServed": "RU",
-        "hoursAvailable": {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
-          "opens": "09:00",
-          "closes": "18:00"
-        }
-      },
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5.0",
-        "reviewCount": "127",
-        "bestRating": "5",
-        "worstRating": "1"
-      },
-      "review": [
-        {
-          "@type": "Review",
-          "author": { "@type": "Person", "name": "Александр Волков" },
-          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
-          "reviewBody": "ЭлитФинанс — это не просто аутсорс, а полноценный финансовый отдел. Благодаря им мы привлекли грант на 20 млн рублей.",
-          "name": "Гендиректор ТехноСолюшн"
-        },
-        {
-          "@type": "Review",
-          "author": { "@type": "Person", "name": "Мария Кравцова" },
-          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
-          "reviewBody": "Уже 3 года на обслуживании. Ни одного штрафа, ни одной задержки. Максимальная прозрачность и профессионализм.",
-          "name": "Владелец сети ВкусЖизни"
-        },
-        {
-          "@type": "Review",
-          "author": { "@type": "Person", "name": "Дмитрий Седов" },
-          "reviewRating": { "@type": "Rating", "ratingValue": "5", "bestRating": "5" },
-          "reviewBody": "Лучшее решение для быстрорастущего бизнеса. Помогают с оптимизацией налогов и ведут кадры безупречно.",
-          "name": "Основатель стартапа"
-        }
-      ]
-    },
+      "price": s.price.replace(/[^0-9]/g, ''),
+      "priceCurrency": "RUB"
+    }))
+  }
+};
 
-    // ── Главная услуга ────────────────────────────────────────────
-    {
-      "@type": "AccountingService",
-      "@id": "https://elitfinans.online#service",
-      "name": "ЭлитФинанс — бухгалтерское сопровождение",
-      "description": "Профессиональное бухгалтерское сопровождение ООО и ИП в России. Ведение ОСНО, УСН, кадровый учёт и налоговая оптимизация.",
-      "url": "https://elitfinans.online",
-      "provider": { "@id": "https://elitfinans.online#org" },
-      "areaServed": { "@type": "Country", "name": "Россия" },
-      "availableLanguage": "ru",
-      "serviceType": "Бухгалтерский аутсорсинг",
-      "priceRange": "от 5 000 ₽/мес",
-      "hasOfferCatalog": {
-        "@type": "OfferCatalog",
-        "name": "Тарифы бухгалтерского сопровождения",
-        "itemListElement": [
-          { "@id": "https://elitfinans.online#service-ooo-osno" },
-          { "@id": "https://elitfinans.online#service-ooo-usn" },
-          { "@id": "https://elitfinans.online#service-ip" },
-          { "@id": "https://elitfinans.online#service-kadry" }
-        ]
-      }
-    },
-
-    // ── 4 отдельных услуги с ценами ───────────────────────────────
-    {
-      "@type": "Service",
-      "@id": "https://elitfinans.online#service-ooo-osno",
-      "name": "Бухгалтерское сопровождение ООО на ОСНО",
-      "description": "Комплексный учёт для компаний на общей системе налогообложения с НДС. Защита по 115-ФЗ, налоговое планирование, сопровождение проверок.",
-      "provider": { "@id": "https://elitfinans.online#org" },
-      "offers": {
-        "@type": "Offer",
-        "priceCurrency": "RUB",
-        "price": "20000",
-        "priceSpecification": { "@type": "UnitPriceSpecification", "minPrice": 20000, "priceCurrency": "RUB" }
-      },
-      "serviceType": "Бухгалтерия для ООО ОСНО",
-      "areaServed": { "@type": "Country", "name": "Россия" }
-    },
-    {
-      "@type": "Service",
-      "@id": "https://elitfinans.online#service-ooo-usn",
-      "name": "Бухгалтерское сопровождение ООО на УСН/Патенте",
-      "description": "Сопровождение юридических лиц на упрощённой системе налогообложения. КУДиР, кадровый модуль, налоговая оптимизация.",
-      "provider": { "@id": "https://elitfinans.online#org" },
-      "offers": {
-        "@type": "Offer",
-        "priceCurrency": "RUB",
-        "price": "10000",
-        "priceSpecification": { "@type": "UnitPriceSpecification", "minPrice": 10000, "priceCurrency": "RUB" }
-      },
-      "serviceType": "Бухгалтерия для ООО УСН",
-      "areaServed": { "@type": "Country", "name": "Россия" }
-    },
-    {
-      "@type": "Service",
-      "@id": "https://elitfinans.online#service-ip",
-      "name": "Бухгалтерское сопровождение ИП",
-      "description": "Полное бухгалтерское сопровождение для предпринимателей. Защита от блокировок по 115-ФЗ, налоговый учёт, консультации.",
-      "provider": { "@id": "https://elitfinans.online#org" },
-      "offers": {
-        "@type": "Offer",
-        "priceCurrency": "RUB",
-        "price": "5000",
-        "priceSpecification": { "@type": "UnitPriceSpecification", "minPrice": 5000, "priceCurrency": "RUB" }
-      },
-      "serviceType": "Бухгалтерия для ИП",
-      "areaServed": { "@type": "Country", "name": "Россия" }
-    },
-    {
-      "@type": "Service",
-      "@id": "https://elitfinans.online#service-kadry",
-      "name": "Кадровый учёт и HR-сопровождение",
-      "description": "Кадровый учёт любой сложности, воинский учёт, защита от трудовых споров, расчёт зарплаты и увольнение сложных сотрудников.",
-      "provider": { "@id": "https://elitfinans.online#org" },
-      "offers": {
-        "@type": "Offer",
-        "priceCurrency": "RUB",
-        "price": "5000",
-        "priceSpecification": { "@type": "UnitPriceSpecification", "minPrice": 5000, "priceCurrency": "RUB" }
-      },
-      "serviceType": "Кадровый учёт",
-      "areaServed": { "@type": "Country", "name": "Россия" }
-    },
-
-    // ── Эксперт ───────────────────────────────────────────────────
-    {
-      "@type": "Person",
-      "@id": "https://elitfinans.online#expert",
-      "name": "Анна Туманян",
-      "jobTitle": "Руководитель ЭлитФинанс, налоговый консультант",
-      "description": "Эксперт в области налогообложения и бухгалтерского учёта с 15-летним стажем. Специализация: ОСНО, УСН, налоговая оптимизация, 115-ФЗ.",
-      "worksFor": { "@id": "https://elitfinans.online#org" },
-      "knowsAbout": ["Налоги РФ", "Бухгалтерский учёт", "115-ФЗ", "ОСНО", "УСН", "ЕНП", "Кадровый учёт", "Налоговая оптимизация"],
-      "hasCredential": {
-        "@type": "EducationalOccupationalCredential",
-        "credentialCategory": "Профессиональный бухгалтер"
-      },
-      "knowsLanguage": "ru",
-      "image": {
-        "@type": "ImageObject",
-        "url": "https://elitfinans.online/director_hq.png",
-        "description": "Анна Туманян — руководитель ЭлитФинанс"
-      }
-    },
-
-    // ── WebSite + SearchAction ────────────────────────────────────
-    {
-      "@type": "WebSite",
-      "@id": "https://elitfinans.online#website",
-      "url": "https://elitfinans.online",
-      "name": "ЭлитФинанс",
-      "description": "Экспертный бухгалтерский портал для бизнеса",
-      "publisher": { "@id": "https://elitfinans.online#org" },
-      "inLanguage": "ru",
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": {
-          "@type": "EntryPoint",
-          "urlTemplate": "https://elitfinans.online/articles?q={search_term_string}"
-        },
-        "query-input": "required name=search_term_string"
-      }
-    },
-
-    // ── FAQ ───────────────────────────────────────────────────────
-    {
-      "@type": "FAQPage",
-      "@id": "https://elitfinans.online#faq",
-      "mainEntity": faqData.map(item => ({
-        "@type": "Question",
-        "name": item.question,
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": item.answer
-        }
-      }))
-    },
-
-    // ── Breadcrumb ────────────────────────────────────────────────
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        { "@type": "ListItem", "position": 1, "name": "Главная", "item": "https://elitfinans.online" }
-      ]
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": faqData.map(f => ({
+    "@type": "Question",
+    "name": f.question,
+    "acceptedAnswer": {
+      "@type": "Answer",
+      "text": f.answer
     }
-  ]
+  }))
 };
 
 export default function LandingPage() {
-  const containerRef = useRef<HTMLDivElement>(null);
-  const [isFormOpen, setIsFormOpen] = useState(false);
-  const [selectedService, setSelectedService] = useState<any>(null);
-  const [isServiceModalOpen, setIsServiceModalOpen] = useState(false);
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-  const [openFaq, setOpenFaq] = useState<number | null>(null);
-
-  const openService = (service: any) => {
-    setSelectedService(service);
-    setIsServiceModalOpen(true);
-  };
-
   return (
-    <div ref={containerRef} className="min-h-screen bg-[#050505] text-white font-sans overflow-x-hidden selection:bg-white selection:text-black">
-      {/* AIO/GEO Structured Data */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
-      {/* Structural Elements */}
-      <div className="fixed inset-0 z-0 pointer-events-none opacity-20">
-        <div className="absolute top-[-20%] left-[-10%] w-[1000px] h-[1000px] bg-white rounded-full blur-[200px]" />
-      </div>
+    <div className="min-h-screen bg-neutral-900 text-white font-sans selection:bg-primary-dark/80 selection:text-white">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(homeJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
+      <AeoNav />
+      <AeoModals />
 
-      {/* Form Modals */}
-      <ContactForm isOpen={isFormOpen} onClose={() => setIsFormOpen(false)} />
-      <ServiceModal 
-        isOpen={isServiceModalOpen} 
-        onClose={() => setIsServiceModalOpen(false)} 
-        service={selectedService}
-      />
+      {/* Hero Section - Reverted to Dark Premium */}
+      <section className="relative pt-24 pb-20 md:pt-40 md:pb-32 overflow-hidden">
+        {/* Glowing background decorations */}
+        <div className="absolute top-[-10%] left-[-10%] w-[500px] h-[500px] bg-primary/20 rounded-full blur-[120px] pointer-events-none" />
+        <div className="absolute bottom-[20%] right-[-5%] w-[400px] h-[400px] bg-primary-dark/10 rounded-full blur-[100px] pointer-events-none" />
+        <div className="absolute top-[40%] left-[60%] w-[600px] h-[600px] bg-primary/5 rounded-full blur-[150px] pointer-events-none" />
+        
+        <div className="max-w-7xl mx-auto px-6 relative z-10">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+            <div className="lg:col-span-12 space-y-8">
+              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-extrabold tracking-tighter leading-[1.05] text-white uppercase drop-shadow-[0_0_30px_rgba(255,255,255,0.1)] max-w-5xl">
+                ОТВЕЧАЕМ ЗА <br /> ШТРАФЫ <span className="text-white contrast-125">СВОИМИ ДЕНЬГАМИ</span>
+              </h1>
 
-      {/* Navigation */}
-      <nav className="fixed top-0 left-0 w-full z-[100] border-b border-white/[0.05] bg-black/50 backdrop-blur-2xl">
-        <div className="max-w-7xl mx-auto px-6 h-16 xl:h-20 flex items-center justify-between">
-          <div className="flex items-center gap-3 group cursor-pointer" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
-            <div className="flex items-center justify-center transition-transform hover:scale-110">
-              <Logo size={42} />
-            </div>
-            <span className="font-bold text-lg xl:text-xl tracking-tighter uppercase">ЭлитФинанс</span>
-          </div>
-          
-          <div className="hidden lg:flex items-center gap-8">
-            {[
-              { label: "Услуги", href: "/services" },
-              { label: "Справочник", href: "/handbook" },
-              { label: "Вопросы", href: "/faq" },
-              { label: "Новости", href: "/news" },
-              { label: "Эксперт", href: "/expert/anna-tumanian" },
-            ].map((item: any) => (
-              item.href ? (
-                <Link
-                  key={item.label}
-                  href={item.href}
-                  className="text-[10px] font-bold uppercase tracking-[0.2em] text-neutral-400 hover:text-white transition-colors"
-                >
-                  {item.label}
-                </Link>
-              ) : (
-                <a 
-                  key={item.label}
-                  href={`#${item.id}`}
-                  className="text-[10px] font-bold uppercase tracking-[0.2em] text-neutral-400 hover:text-white transition-colors"
-                  onClick={(e) => {
-                     e.preventDefault();
-                     document.getElementById(item.id!)?.scrollIntoView({ behavior: 'smooth' });
-                  }}
-                >
-                  {item.label}
-                </a>
-              )
-            ))}
-          </div>
-
-          <div className="flex items-center gap-4 lg:gap-10">
-            <button 
-              onClick={() => setIsFormOpen(true)}
-              className="px-6 py-2.5 rounded-full bg-[#FFC107] text-black text-[10px] font-bold uppercase tracking-widest hover:bg-white transition-all shadow-[0_10px_30_rgba(255,193,7,0.2)]"
-            >
-              Консультация
-            </button>
-            
-            <button 
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="lg:hidden w-10 h-10 rounded-xl bg-white/5 border border-white/10 flex items-center justify-center text-white"
-            >
-              {isMenuOpen ? <X size={20} /> : <Menu size={20} />}
-            </button>
-          </div>
-        </div>
-
-        {/* Mobile Menu Overlay */}
-        <AnimatePresence>
-          {isMenuOpen && (
-            <motion.div
-              initial={{ height: 0, opacity: 0 }}
-              animate={{ height: "auto", opacity: 1 }}
-              exit={{ height: 0, opacity: 0 }}
-              className="lg:hidden border-t border-white/5 bg-black/95 backdrop-blur-3xl overflow-hidden"
-            >
-              <div className="p-8 space-y-6">
-                {[
-                  { label: "Услуги", href: "/services" },
-                  { label: "Справочник", href: "/handbook" },
-                  { label: "Вопросы", href: "/faq" },
-                  { label: "Новости", href: "/news" },
-                  { label: "Эксперт", href: "/expert/anna-tumanian" },
-                ].map((item: any) => (
-                  item.href ? (
-                    <Link
-                      key={item.label}
-                      href={item.href}
-                      className="block text-lg font-bold uppercase tracking-[0.2em] text-neutral-400 hover:text-primary transition-colors"
-                      onClick={() => setIsMenuOpen(false)}
-                    >
-                      {item.label}
-                    </Link>
-                  ) : item.onClick ? (
-                    <button
-                      key={item.label}
-                      onClick={item.onClick}
-                      className="block text-lg font-bold uppercase tracking-[0.2em] text-neutral-400 hover:text-primary transition-colors text-left"
-                    >
-                      {item.label}
-                    </button>
-                  ) : (
-                    <a
-                      key={item.label}
-                      href={`#${item.id}`}
-                      className="block text-lg font-bold uppercase tracking-[0.2em] text-neutral-400 hover:text-primary transition-colors"
-                      onClick={(e) => {
-                        e.preventDefault();
-                        setIsMenuOpen(false);
-                        document.getElementById(item.id!)?.scrollIntoView({ behavior: 'smooth' });
-                      }}
-                    >
-                      {item.label}
-                    </a>
-                  )
-                ))}
-                
-                <button 
-                  onClick={() => { setIsMenuOpen(false); setIsFormOpen(true); }}
-                  className="w-full py-4 rounded-2xl bg-primary text-black font-bold uppercase tracking-[0.2em] text-[11px]"
-                >
-                  Оставить заявку
-                </button>
-              </div>
-            </motion.div>
-          )}
-        </AnimatePresence>
-      </nav>
-
-      {/* Hero Section - Minimalist & Serious */}
-      <section className="relative z-10 pt-24 pb-12 xl:pt-32 xl:pb-24 px-6">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 xl:gap-12 items-center">
-            <div className="lg:col-span-8 space-y-6">
-              <motion.div
-                initial={{ opacity: 0, x: -20 }}
-                animate={{ opacity: 1, x: 0 }}
-                className="inline-flex items-center gap-2 text-[10px] font-bold uppercase tracking-[0.3em] text-primary"
-              >
-                <div className="w-8 h-px bg-primary/30" />
-                Профессиональный учет и аудит
-              </motion.div>
-              
-              <motion.h1 
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                className="text-5xl md:text-7xl lg:text-[6.5rem] xl:text-[8rem] font-bold tracking-tightest leading-[0.9] text-white"
-              >
-                БЕЗУПРЕЧНЫЙ <br /> КОНТРОЛЬ <br /> <span className="text-primary italic">ФИНАНСОВ</span>
-              </motion.h1>
-
-              <motion.p 
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                className="text-lg xl:text-xl text-neutral-400 font-medium max-w-xl leading-relaxed"
-              >
-                Освободите до 40 часов вашего времени в месяц и забудьте о блокировках счетов. Профессиональное бухгалтерское сопровождение на ОСНО и УСН с полной финансовой ответственностью за каждый рубль вашего бизнеса.
-              </motion.p>
-
-              <div className="flex flex-col sm:flex-row gap-4 pt-4">
-                <button 
-                  onClick={() => setIsFormOpen(true)}
-                  className="px-8 py-4 xl:px-10 xl:py-5 bg-primary text-black font-bold uppercase text-[10px] tracking-widest rounded-xl hover:bg-white transition-all flex items-center justify-center gap-3 group shadow-[0_15px_30px_rgba(255,193,7,0.2)]"
-                >
-                  Консультация <ChevronRight size={14} className="group-hover:translate-x-1 transition-transform" />
-                </button>
-                <a 
-                  href="https://max.ru/join/8yIWQTLe3c6kJnLgy_gs2eAVXCEFwly9TqLissFIYNQ"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="px-8 py-4 xl:px-10 xl:py-5 bg-white/5 border border-white/10 text-white font-bold uppercase text-[10px] tracking-widest rounded-xl hover:bg-[#FFC107] hover:text-black transition-all flex items-center justify-center gap-2 group shadow-xl"
-                >
-                  Наш канал в Макс <Zap size={14} className="group-hover:scale-125 transition-transform" />
-                </a>
-                <button 
-                  onClick={() => document.getElementById('services')?.scrollIntoView({ behavior: 'smooth' })}
-                  className="px-8 py-4 xl:px-10 xl:py-5 bg-transparent border border-white/10 text-white font-bold uppercase text-[10px] tracking-widest rounded-xl hover:bg-white/5 transition-all lg:hidden xl:flex"
-                >
-                  Наши услуги
-                </button>
-              </div>
-            </div>
-
-            <div className="lg:col-span-4">
-              <motion.div 
-                initial={{ opacity: 0, scale: 0.95 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ delay: 0.2 }}
-                className="p-8 rounded-3xl bg-neutral-900/50 border border-white/5 backdrop-blur-sm space-y-8"
-              >
-                <div className="space-y-2">
-                  <div className="text-4xl font-bold tracking-tighter text-primary">0</div>
-                  <div className="text-[10px] font-bold text-neutral-500 uppercase tracking-widest leading-none">Блокировок счетов</div>
-                </div>
-                <div className="w-full h-px bg-white/5" />
-                <div className="space-y-6">
-                  {[
-                    "15+ лет на рынке",
-                    "Среднее время ответа — 15 мин",
-                    "Безопасность данных 100%"
-                  ].map((item, i) => (
-                    <div key={i} className="flex items-center gap-4 group">
-                      <div className="w-2 h-2 rounded-full border border-primary group-hover:bg-primary transition-colors" />
-                      <span className="text-[11px] font-bold uppercase tracking-widest text-neutral-400 group-hover:text-white transition-colors">{item}</span>
-                    </div>
-                  ))}
-                </div>
-              </motion.div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Value Proposition Grid */}
-      <section id="services" className="relative z-10 px-6 py-20 xl:py-32 bg-black">
-        <div className="max-w-7xl mx-auto">
-          <div className="mb-20 space-y-4">
-            <h2 className="text-[10px] font-bold uppercase tracking-[0.4em] text-neutral-500">01 / Направления</h2>
-            <div className="text-4xl xl:text-6xl font-bold tracking-tightest leading-none">
-              КОМПЛЕКСНОЕ <br /> СОПРОВОЖДЕНИЕ.
-            </div>
-          </div>
-
-          <div className="relative group/slider">
-            <style jsx global>{`
-              .no-scrollbar::-webkit-scrollbar { display: none; }
-              .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
-            `}</style>
-            
-            <div className="flex overflow-x-auto gap-6 pb-12 snap-x snap-mandatory no-scrollbar px-4 md:px-0 scroll-smooth">
-              {servicesData.map((service, i) => (
-                <motion.div 
-                  key={service.id}
-                  initial={{ opacity: 0, x: 50 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: i * 0.1, duration: 0.8 }}
-                  className="flex-none w-[300px] md:w-[450px] h-[650px] snap-center rounded-[48px] bg-[#0F0F0F] border border-white/5 p-8 md:p-12 flex flex-col group/card hover:bg-[#141414] transition-all relative overflow-hidden"
-                  onClick={() => openService(service)}
-                >
-                  <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-transparent opacity-0 group-hover/card:opacity-100 transition-opacity duration-700" />
-                  
-                  <div className="relative z-10 flex-1 flex flex-col">
-                     <div className="flex items-start justify-between mb-12">
-                      <div className="w-16 h-16 rounded-2xl bg-white/5 flex items-center justify-center text-primary border border-white/5 group-hover/card:scale-110 transition-transform duration-500 shrink-0">
-                        <service.icon size={32} strokeWidth={1.5} />
-                      </div>
-                      {service.price && (
-                        <div className="bg-primary text-black text-[10px] font-extrabold uppercase tracking-widest px-6 py-3 rounded-full shadow-[0_10px_30px_rgba(255,193,7,0.3)] whitespace-nowrap">
-                          {service.price}
-                        </div>
-                      )}
-                    </div>
-                    
-                    <div className="min-h-[100px] mb-6 flex flex-col justify-center">
-                      <h3 className="text-3xl md:text-4xl font-bold uppercase tracking-tightest text-white leading-[1.1] group-hover/card:text-primary transition-colors line-clamp-2">
-                        {service.title}
-                      </h3>
-                    </div>
-                    
-                    <div className="min-h-[80px] mb-8">
-                      <p className="text-neutral-500 text-sm md:text-base font-medium leading-relaxed line-clamp-3">
-                        {service.desc}
-                      </p>
-                    </div>
-
-                    <div className="flex-1 flex flex-col justify-end">
-                      <div className="flex flex-col gap-4 mb-10">
-                         {service.details.slice(0, 3).map((detail, idx) => (
-                           <div key={idx} className="flex items-start gap-4 text-neutral-400 text-[10px] uppercase font-bold tracking-widest leading-tight opacity-70">
-                             <div className="w-1.5 h-1.5 rounded-full bg-primary/40 mt-1 shrink-0" />
-                             <span className="line-clamp-2">{detail}</span>
-                           </div>
-                         ))}
-                      </div>
-
-                      <Link
-                        href={`/services/${service.slug}`}
-                        onClick={(e) => e.stopPropagation()}
-                        className="w-full py-6 rounded-3xl border border-white/10 text-[11px] font-bold uppercase tracking-[0.3em] text-white hover:bg-white hover:text-black transition-all flex items-center justify-center gap-4 group/btn"
-                      >
-                        Подробнее <ArrowUpRight size={18} className="group-hover/btn:translate-x-1 group-hover/btn:-translate-y-1 transition-transform" />
-                      </Link>
-                    </div>
-                  </div>
-                </motion.div>
-              ))}
-            </div>
-            
-            <div className="flex items-center gap-6 mt-8 opacity-20 group-hover/slider:opacity-100 transition-opacity duration-500">
-               <div className="flex-1 h-px bg-white/10" />
-               <div className="text-[10px] font-bold uppercase tracking-[0.5em] text-neutral-500 whitespace-nowrap">Листайте для выбора направления</div>
-               <div className="flex-1 h-px bg-white/10" />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* How We Work Section - From Slide 12 */}
-      <section className="relative z-10 px-6 py-20 xl:py-32 bg-[#050505]">
-        <div className="max-w-7xl mx-auto">
-          <div className="mb-20 space-y-4">
-            <h2 className="text-[10px] font-bold uppercase tracking-[0.4em] text-neutral-500">01.1 / Процесс</h2>
-            <div className="text-4xl xl:text-6xl font-bold tracking-tightest leading-none">
-              КАК МЫ <span className="text-primary italic">РАБОТАЕМ</span>
-            </div>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {[
-              {
-                title: "Передача документов",
-                desc: "Вы передаете первичные документы: счета, акты, накладные, выписки. Мы проверяем их корректность, систематизируем и готовим к обработке, исключая ошибки в учете."
-              },
-              {
-                title: "Ведение учета",
-                desc: "На основе документов ведем бухгалтерский и налоговый учет, отражаем все операции в 1С и рассчитываем налоги. Проводим законную оптимизацию нагрузки и контроль данных."
-              },
-              {
-                title: "Отчетность и контроль",
-                desc: "Формируем отчетность, проверяем её и вовремя отправляем в госорганы. Сопровождаем по всем возникающим вопросам и следим за актуальностью и безопасностью учета."
-              }
-            ].map((step, i) => (
-              <div key={i} className="relative p-10 rounded-[40px] bg-neutral-900/20 border border-white/5 space-y-6">
-                <div className="w-12 h-12 rounded-2xl bg-primary/10 flex items-center justify-center text-primary font-bold text-xl border border-primary/20">
-                  {i + 1}
-                </div>
-                <h3 className="text-xl font-bold uppercase tracking-tight text-white">{step.title}</h3>
-                <p className="text-neutral-400 text-sm font-medium leading-relaxed">
-                  {step.desc}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Cases Section / Кейсы */}
-      <section id="cases" className="relative z-10 px-6 py-24 xl:py-32 border-t border-white/5 bg-[#080808]">
-        <div className="max-w-7xl mx-auto">
-          <div className="mb-16 space-y-4">
-            <h2 className="text-[10px] font-bold uppercase tracking-[0.4em] text-primary">02 / Наш опыт</h2>
-            <div className="text-4xl xl:text-6xl font-bold tracking-tightest leading-none text-white">
-              РЕАЛЬНЫЕ <span className="text-primary italic">РЕЗУЛЬТАТЫ</span>
-            </div>
-          </div>
-
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            {[
-              { 
-                tag: "Защита бизнеса", 
-                title: "Снижение штрафа в 2 раза за 14 дней", 
-                desc: "У компании по благоустройству дорог и уборке снега возник штраф 500 000 ₽ из-за некорректных ОКВЭД. Мы предотвратили продажу техники для долгов, снизив штраф вдвое и перенастроив учетные коды.",
-                result: "Экономия 250 000 ₽",
-                metrics: ["-50% штраф", "ОКВЭД исправлен"]
-              },
-              { 
-                tag: "Кадры", 
-                title: "Удачное увольнение сложного сотрудника", 
-                desc: "Кейс по экстренному кадровому сопровождению. Необходимо было уволить сотрудника, защищенного законом, без юридических последствий. Проведена процедура «под ключ» без единой претензии.",
-                result: "0 судебных рисков",
-                metrics: ["100% защита", "Без претензий ГИТ"]
-              }
-            ].map((caseStudy, i) => (
-              <motion.div 
-                key={i}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                className="group p-8 xl:p-12 rounded-[40px] bg-neutral-900/40 border border-white/5 hover:border-primary/30 transition-all relative overflow-hidden"
-              >
-                <div className="flex items-center justify-between mb-8">
-                  <span className="px-4 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-[9px] font-bold uppercase tracking-widest">{caseStudy.tag}</span>
-                  <ArrowUpRight size={20} className="text-neutral-600 group-hover:text-primary transition-colors" />
-                </div>
-                <h3 className="text-2xl xl:text-3xl font-bold mb-6 tracking-tighter text-white">{caseStudy.title}</h3>
-                <p className="text-neutral-400 text-sm font-medium leading-relaxed mb-8">{caseStudy.desc}</p>
-                <div className="pt-8 border-t border-white/5 flex flex-wrap gap-8">
-                  {caseStudy.metrics.map((m, idx) => (
-                    <div key={idx}>
-                      <div className="text-xl font-bold text-white tracking-widest leading-none mb-1">{m}</div>
-                      <div className="text-[8px] font-bold text-neutral-600 uppercase tracking-widest">Метрика успеха</div>
-                    </div>
-                  ))}
-                  <div className="ml-auto text-right">
-                    <div className="text-[10px] font-bold text-primary uppercase tracking-widest mb-1 italic">Результат</div>
-                    <div className="text-sm font-bold text-white uppercase tracking-tighter">{caseStudy.result}</div>
-                  </div>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Testimonials Section / Отзывы и благодарности */}
-      <section id="testimonials" className="relative z-10 px-6 py-24 xl:py-32 bg-black">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-24 space-y-4">
-            <h2 className="text-[10px] font-bold uppercase tracking-[0.4em] text-primary underline underline-offset-8 decoration-primary/30 decoration-2">03 / Говорят партнеры</h2>
-            <div className="text-4xl xl:text-7xl font-bold tracking-tightest leading-none text-white uppercase">
-              НАМ <span className="text-primary italic">ДОВЕРЯЮТ</span>
-            </div>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-             {[
-               { 
-                 name: "Александр Волков", 
-                 role: "Гендиректор ТехноСолюшн", 
-                 text: "ЭлитФинанс — это не просто аутсорс, а полноценный финансовый отдел. Благодаря им мы привлекли грант на 20 млн рублей.",
-                 rating: 5
-               },
-               { 
-                 name: "Мария Кравцова", 
-                 role: "Владелец сети 'ВкусЖизни'", 
-                 text: "Уже 3 года на обслуживании. Ни одного штрафа, ни одной задержки. Максимальная прозрачность и профессионализм.",
-                 rating: 5
-               },
-               { 
-                 name: "Дмитрий Седов", 
-                 role: "Основатель ИТ-стартапа", 
-                 text: "Лучшее решение для быстрорастущего бизнеса. Помогают с оптимизацией налогов и ведут кадры безупречно.",
-                 rating: 5
-               }
-             ].map((review, i) => (
-               <div key={i} className="p-10 rounded-[40px] bg-neutral-900/30 border border-white/5 hover:bg-neutral-900/50 transition-all flex flex-col items-start justify-between">
-                  <div className="flex gap-1 mb-8">
-                    {[...Array(review.rating)].map((_, idx) => <Star key={idx} size={14} fill="#FFC107" className="text-primary" />)}
-                  </div>
-                  <Quote size={32} className="text-primary/20 mb-6" />
-                  <p className="text-neutral-400 text-sm font-medium leading-[1.6] mb-10 italic">"{review.text}"</p>
-                  <div className="mt-auto">
-                    <div className="text-lg font-bold text-white tracking-tighter leading-none mb-1">{review.name}</div>
-                    <div className="text-[9px] font-bold text-primary uppercase tracking-widest">{review.role}</div>
-                  </div>
-               </div>
-             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* About Section / Руководитель */}
-      <section id="about" className="relative z-10 px-6 py-16 xl:py-24 overflow-hidden">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
-           <div className="lg:col-span-6 space-y-12">
-             <div className="space-y-4">
-                <h2 className="text-[10px] font-bold uppercase tracking-[0.4em] text-primary">04 / Руководитель</h2>
-                <h3 className="text-5xl xl:text-[6.5rem] font-bold tracking-tightest leading-none text-white uppercase">
-                  ЛИЧНЫЙ <br /> <span className="text-primary italic">КОНТРОЛЬ</span> <br /> КАЧЕСТВА
-                </h3>
-             </div>
-             
-             <div className="space-y-6 text-lg xl:text-xl text-neutral-400 leading-relaxed font-medium">
-                <p>
-                  Более 15 лет опыта в бухгалтерии и налоговом учете. Специализируется на налогах и законной оптимизации налоговой нагрузки для бизнеса.
-                </p>
-                <p>
-                  Лично контролирует качество отчетности, сложные налоговые вопросы и корректность финансового учета. 
-                </p>
-                <div className="flex items-center gap-4 text-white">
-                   <div className="w-10 h-px bg-primary" />
-                   <span className="text-[11px] font-bold uppercase tracking-widest italic">Главный принцип работы:</span>
-                </div>
-                <p className="italic border-l-2 border-primary/30 pl-6 py-2">
-                  «Грамотный учет и законная оптимизация налогов, чтобы предприниматели могли спокойно развивать свой бизнес».
-                </p>
-             </div>
-             
-             <div className="grid grid-cols-2 gap-6 pt-8 max-w-sm">
-                {[
-                  { val: "15+", label: "Лет опыта" },
-                  { val: "100%", label: "Безопасность" }
-                ].map((stat, i) => (
-                  <div key={i}>
-                    <div className="text-2xl xl:text-4xl font-bold text-white mb-1 tracking-tighter">{stat.val}</div>
-                    <div className="text-[8px] font-bold text-neutral-600 uppercase tracking-widest leading-none">{stat.label}</div>
-                  </div>
-                ))}
-             </div>
-           </div>
-
-           <div className="lg:col-span-6 relative">
-              <div className="absolute inset-0 bg-primary/20 blur-[150px] -z-10" />
-              <div className="aspect-[4/5] rounded-[60px] bg-neutral-900 border border-white/5 relative overflow-hidden group">
-                 <div className="absolute inset-x-0 bottom-0 p-12 bg-gradient-to-t from-black via-black/50 to-transparent z-10">
-                     <div className="flex items-center gap-6">
-                        <div className="w-16 h-16 rounded-full bg-primary flex items-center justify-center text-black font-bold text-xl uppercase">АТ</div>
-                        <div className="space-y-1">
-                           <div className="text-xl font-bold text-white tracking-widest uppercase">Анна Туманян</div>
-                           <div className="text-[10px] font-bold text-primary uppercase tracking-widest leading-none italic">Руководитель «ЭлитФинанс»</div>
-                        </div>
-                     </div>
-                 </div>
-                 <img src="/director_hq.png" alt="Анна Туманян — руководитель ЭлитФинанс, налоговый консультант и главный бухгалтер" className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000" />
-              </div>
-           </div>
-        </div>
-      </section>
-      {/* FAQ Section - AI Search Engine Magnet */}
-      <section className="relative z-10 px-6 py-24 bg-black/50 border-t border-white/5">
-        <div className="max-w-4xl mx-auto">
-          <div className="mb-16 space-y-4 text-center">
-            <h2 className="text-[10px] font-bold uppercase tracking-[0.4em] text-primary">05 / Вопросы и ответы</h2>
-            <div className="text-4xl xl:text-6xl font-bold tracking-tightest leading-none text-white">
-              ЧАСТО <span className="text-primary italic">СПРАШИВАЮТ</span>
-            </div>
-          </div>
-          
-          <div className="space-y-4 mb-10">
-            {faqData.map((item, i) => (
-              <div key={i} className="border border-white/5 rounded-3xl overflow-hidden bg-neutral-900/20">
-                <button 
-                  onClick={() => setOpenFaq(openFaq === i ? null : i)}
-                  className="w-full p-6 text-left flex items-center justify-between group transition-colors hover:bg-white/[0.02]"
-                >
-                  <span className="text-sm font-bold uppercase tracking-widest text-neutral-200 group-hover:text-primary transition-colors">
-                    {item.question}
-                  </span>
-                  <div className={`w-8 h-8 rounded-full border border-white/10 flex items-center justify-center transition-transform duration-300 ${openFaq === i ? 'rotate-180 bg-primary border-primary' : ''}`}>
-                    <ChevronRight size={14} className={openFaq === i ? 'text-black' : 'text-neutral-500'} />
-                  </div>
-                </button>
-                <AnimatePresence>
-                  {openFaq === i && (
-                    <motion.div
-                      initial={{ height: 0, opacity: 0 }}
-                      animate={{ height: "auto", opacity: 1 }}
-                      exit={{ height: 0, opacity: 0 }}
-                      className="overflow-hidden"
-                    >
-                      <div className="p-6 pt-0 text-neutral-400 text-sm leading-relaxed border-t border-white/[0.03]">
-                        {item.answer}
-                      </div>
-                    </motion.div>
-                  )}
-                </AnimatePresence>
-              </div>
-            ))}
-          </div>
-          <div className="text-center">
-            <Link
-              href="/faq"
-              className="inline-flex items-center gap-3 px-8 py-4 border border-white/10 rounded-xl text-[10px] font-bold uppercase tracking-widest text-neutral-400 hover:border-primary/40 hover:text-white transition-all"
-            >
-              Все 20 вопросов и ответов <ArrowUpRight size={13} />
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* Footer */}
-      <footer className="relative z-10 px-6 pt-20 pb-10 bg-black border-t border-white/5">
-        <div className="max-w-7xl mx-auto">
-
-          {/* Top row — brand + contacts */}
-          <div className="flex flex-col lg:flex-row justify-between gap-10 mb-16">
-            <div className="max-w-xs space-y-4">
-              <div className="flex items-center gap-3">
-                <Logo size={32} />
-                <span className="font-bold text-lg tracking-tighter uppercase">ЭлитФинанс</span>
-              </div>
-              <p className="text-sm text-neutral-500 leading-relaxed">
-                Профессиональное бухгалтерское сопровождение ООО и ИП в России. ОСНО, УСН, кадровый учёт, защита по 115-ФЗ.
+              <p className="text-lg md:text-xl text-white font-medium leading-relaxed max-w-3xl">
+                Профессиональная финансовая защита вашего бизнеса с коллективной ответственностью команды экспертов <span className="text-white font-bold">ЭлитФинанс</span>
               </p>
-              <div className="space-y-2 pt-2">
-                <a href="tel:+79028371370" className="flex items-center gap-2 text-sm text-neutral-400 hover:text-primary transition-colors">
-                  <Phone size={14} className="text-primary shrink-0" />
-                  +7 (902) 837-13-70
-                </a>
-                <a href="mailto:info@elitfinance.ru" className="flex items-center gap-2 text-sm text-neutral-400 hover:text-primary transition-colors">
-                  <Mail size={14} className="text-primary shrink-0" />
-                  info@elitfinance.ru
-                </a>
-                <a href="https://max.ru/join/8yIWQTLe3c6kJnLgy_gs2eAVXCEFwly9TqLissFIYNQ" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-sm text-neutral-400 hover:text-primary transition-colors">
-                  <Zap size={14} className="text-primary shrink-0" />
-                  Написать в Макс
-                </a>
+
+
+              <div className="flex flex-col sm:flex-row gap-6">
+                <Link
+                  href="/services"
+                  className="px-10 py-6 bg-primary text-white font-black uppercase text-[10px] tracking-[0.2em] rounded-2xl hover:bg-white hover:text-white transition-all shadow-lg flex items-center justify-center gap-3 group"
+                >
+                  Все услуги <ArrowUpRight size={14} />
+                </Link>
+                <button
+                  onClick={() => (window as any).toggleContactForm?.()}
+                  className="px-10 py-6 border border-white/20 bg-white/10 text-white font-black uppercase text-[10px] tracking-[0.4em] rounded-2xl hover:bg-white hover:text-white transition-all flex items-center justify-center gap-3 cursor-pointer"
+                >
+                  Задать вопрос эксперту <Zap size={14} />
+                </button>
               </div>
-            </div>
-
-            {/* Nav columns */}
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8 lg:gap-10">
-
-              {/* Услуги */}
-              <div>
-                <p className="text-[10px] font-bold uppercase tracking-[0.25em] text-primary mb-5">Услуги</p>
-                <ul className="space-y-3">
-                  {[
-                    { label: "ООО на ОСНО", href: "/services/buhgalterskoe-soprovozhdenie-ooo-osno" },
-                    { label: "ООО на УСН", href: "/services/buhgalterskoe-soprovozhdenie-ooo-usn" },
-                    { label: "Бухгалтерия ИП", href: "/services/buhgalterskoe-soprovozhdenie-ip" },
-                    { label: "Кадровый учёт", href: "/services/kadrovyy-uchet" },
-                    { label: "Все услуги", href: "/#services" },
-                  ].map((l) => (
-                    <li key={l.href}>
-                      <Link href={l.href} className="text-sm text-neutral-500 hover:text-white transition-colors">
-                        {l.label}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-
-              {/* Справочник */}
-              <div>
-                <p className="text-[10px] font-bold uppercase tracking-[0.25em] text-primary mb-5">Справочник</p>
-                <ul className="space-y-3">
-                  {[
-                    { label: "ЕНП", href: "/handbook/enp" },
-                    { label: "УСН", href: "/handbook/usn" },
-                    { label: "ОСНО", href: "/handbook/osno" },
-                    { label: "НДС", href: "/handbook/nds" },
-                    { label: "115-ФЗ", href: "/handbook/115-fz" },
-                    { label: "Весь справочник", href: "/handbook" },
-                  ].map((l) => (
-                    <li key={l.href}>
-                      <Link href={l.href} className="text-sm text-neutral-500 hover:text-white transition-colors">
-                        {l.label}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-
-              {/* Вопросы */}
-              <div>
-                <p className="text-[10px] font-bold uppercase tracking-[0.25em] text-primary mb-5">Вопросы</p>
-                <ul className="space-y-3">
-                  {[
-                    { label: "УСН 6% или 15%?", href: "/faq/usn-6-ili-15-chto-vygodnee" },
-                    { label: "Аутсорс vs штат", href: "/faq/shtaatnyy-buhgalter-ili-autorsing" },
-                    { label: "Требование ФНС", href: "/faq/chto-delat-trebovanie-fns" },
-                    { label: "Блокировка счёта", href: "/faq/chto-delat-bank-zablokiroval-schet" },
-                    { label: "Все вопросы", href: "/faq" },
-                  ].map((l) => (
-                    <li key={l.href}>
-                      <Link href={l.href} className="text-sm text-neutral-500 hover:text-white transition-colors">
-                        {l.label}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-
-              {/* Материалы */}
-              <div>
-                <p className="text-[10px] font-bold uppercase tracking-[0.25em] text-primary mb-5">Материалы</p>
-                <ul className="space-y-3">
-                  {[
-                    { label: "Новости", href: "/news" },
-                    { label: "Статьи", href: "/articles" },
-                    { label: "Справочник", href: "/handbook" },
-                    { label: "Эксперт", href: "/expert/anna-tumanian" },
-                    { label: "О компании", href: "/#about" },
-                  ].map((l) => (
-                    <li key={l.href}>
-                      <Link href={l.href} className="text-sm text-neutral-500 hover:text-white transition-colors">
-                        {l.label}
-                      </Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          {/* Bottom bar */}
-          <div className="pt-8 border-t border-white/5 flex flex-col sm:flex-row justify-between items-center gap-4">
-            <div className="text-[10px] uppercase font-bold tracking-widest text-neutral-600">
-              © 2026 ЭлитФинанс — Все права защищены
-            </div>
-            <div className="flex items-center gap-6">
-              <Link href="/expert/anna-tumanian" className="text-[10px] uppercase font-bold tracking-widest text-neutral-600 hover:text-primary transition-colors">
-                Анна Туманян
-              </Link>
-              <Link href="/faq" className="text-[10px] uppercase font-bold tracking-widest text-neutral-600 hover:text-primary transition-colors">
-                Вопросы и ответы
-              </Link>
-              <Link href="/handbook" className="text-[10px] uppercase font-bold tracking-widest text-neutral-600 hover:text-primary transition-colors">
-                Справочник
-              </Link>
             </div>
           </div>
         </div>
+      </section>
+
+      {/* Services Grid - Dark Aesthetics */}
+      <section className="py-24 px-6 bg-neutral-950" id="services">
+        <div className="max-w-7xl mx-auto">
+          <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-16">
+             <div className="space-y-4">
+                <div className="flex items-center gap-3">
+                   <h2 className="text-[10px] font-bold uppercase tracking-[0.5em] text-white">Портфель услуг</h2>
+                </div>
+                <h3 className="text-4xl md:text-6xl font-black tracking-tighter leading-[1.1] uppercase text-white">Что входит <br /> в <span className="text-white">аутсорсинг</span> бухгалтерии?</h3>
+             </div>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {servicesData.map((service) => (
+              <div 
+                key={service.id} 
+                className="group p-8 md:p-10 rounded-[48px] bg-neutral-900 border border-white/12 hover:border-primary/30 transition-all flex flex-col h-full shadow-lg"
+              >
+                <div className="w-14 h-14 rounded-2xl bg-neutral-900 flex items-center justify-center mb-8 group-hover:bg-primary group-hover:text-white transition-all">
+                  <service.icon size={22} className="text-white group-hover:text-white transition-colors" />
+                </div>
+                <h4 className="text-xl font-bold mb-3 uppercase tracking-tight text-white leading-tight">{service.title}</h4>
+                <p className="text-white text-sm leading-relaxed mb-8 flex-1">{service.desc}</p>
+                <div className="pt-8 border-t border-white/12 space-y-5">
+                  <p className="text-2xl font-bold text-white">{service.price}</p>
+                  <Link href={`/services/${service.slug}`} className="text-[9px] font-bold uppercase tracking-[0.4em] text-white flex items-center gap-2 group-hover:gap-4 transition-all">
+                    ПОДРОБНЕЕ <ChevronRight size={12} />
+                  </Link>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* EEAT: Our Experts Preview - NEW Section */}
+      <section className="py-24 px-6 bg-neutral-950">
+         <div className="max-w-7xl mx-auto">
+            <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-16">
+               <div className="space-y-4">
+                  <p className="text-[10px] font-bold uppercase tracking-[0.5em] text-white">Ключевая экспертиза</p>
+                  <h3 className="text-4xl md:text-6xl font-black uppercase text-white">Кто ведёт <br /> учёт вашего <span className="text-white">бизнеса?</span></h3>
+               </div>
+               <Link href="/experts" className="text-[10px] font-bold uppercase tracking-[0.3em] text-white hover:text-white transition-colors border-b border-white/12 pb-1">
+                 Смотреть всех экспертов →
+               </Link>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+               {[
+                 { name: "Анна Туманян", role: "Главный Аудитор", xp: "18 лет" },
+                 { name: "Александр Волков", role: "Налоговый Юрист", xp: "12 лет" },
+                 { name: "Елена Сазонова", role: "HR-Эксперт", xp: "15 лет" }
+               ].map((expert) => (
+                 <div key={expert.name} className="group p-8 rounded-[48px] border border-white/12 bg-neutral-900 hover:bg-neutral-900 transition-all">
+                    <div className="flex items-center gap-5 mb-6">
+                       <div className="w-16 h-16 rounded-2xl bg-neutral-900 border border-white/12 flex items-center justify-center text-white group-hover:scale-110 transition-transform">
+                          <Users size={24} />
+                       </div>
+                       <div>
+                          <p className="font-bold text-lg text-white group-hover:text-white transition-colors uppercase tracking-tight">{expert.name}</p>
+                          <p className="text-[10px] uppercase font-bold text-white tracking-widest">{expert.role}</p>
+                       </div>
+                    </div>
+                    <div className="flex items-center justify-between pt-6 border-t border-white/12">
+                       <span className="text-[9px] font-bold text-white uppercase tracking-widest">{expert.xp} опыта в РФ</span>
+                       <ChevronRight size={14} className="text-white group-hover:text-white transition-colors" />
+                    </div>
+                 </div>
+               ))}
+            </div>
+         </div>
+      </section>
+
+      {/* Expertise Block - Premium Dark Glass */}
+      <section className="py-24 px-6">
+         <div className="max-w-7xl mx-auto">
+            <div className="space-y-16">
+               <div className="space-y-8">
+                  <h3 className="text-4xl md:text-5xl lg:text-7xl font-black tracking-tighter leading-[1.05] uppercase text-white">
+                     ПОЧЕМУ 20+ КОМПАНИЙ <br className="hidden lg:block"/> ДОВЕРЯЮТ ЭЛИТФИНАНС СВОЙ БИЗНЕС?
+                  </h3>
+                  <p className="text-white/70 text-lg font-medium max-w-3xl leading-relaxed ">
+                     Мы берем на себя 100% ответственности за ошибки. Если возник штраф по нашей вине — мы платим его сами. Никаких «звёздочек» в договоре.
+                  </p>
+               </div>
+               
+               <div className="grid grid-cols-2 lg:grid-cols-4 gap-12 md:gap-20">
+                  {[
+                     { val: "15 ЛЕТ", label: "ЭКСПЕРТИЗЫ" },
+                     { val: "20+", label: "ПАРТНЕРОВ" },
+                     { val: "0", label: "БЛОКИРОВОК" },
+                     { val: "100%", label: "ФИНАНСОВАЯ БЕЗОПАСНОСТЬ" }
+                  ].map((s, i) => (
+                     <div key={i} className="space-y-3">
+                        <div className="text-4xl md:text-5xl lg:text-7xl font-black text-white tracking-tighter uppercase leading-none">{s.val}</div>
+                        <div className="text-[10px] md:text-[11px] font-bold text-white/40 uppercase tracking-[0.4em]">{s.label}</div>
+                     </div>
+                  ))}
+               </div>
+            </div>
+            </div>
+      </section>
+
+      {/* FAQ Discoverability - Dark mode glass */}
+      <section className="py-24 px-6 bg-neutral-900">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-16 space-y-4">
+            <h2 className="text-[10px] font-bold uppercase tracking-[0.5em] text-white">Информационный центр</h2>
+            <h3 className="text-4xl md:text-5xl font-black uppercase text-white">Вопросы и Ответы</h3>
+          </div>
+          <div className="space-y-5">
+            {faqData.map((faq, i) => (
+              <div key={i} className="p-8 md:p-12 rounded-[40px] border border-white/12 bg-neutral-900 shadow-xl hover:bg-white/[0.05] transition-all duration-500">
+                 <h4 className="text-lg md:text-xl font-bold text-white mb-4 uppercase tracking-tight">{faq.question}</h4>
+                 <p className="text-white text-sm md:text-base leading-relaxed">{faq.answer}</p>
+              </div>
+            ))}
+          </div>
+          <div className="text-center mt-12">
+             <Link href="/faq" className="px-10 py-5 border border-white/20 bg-white/10 text-white text-[10px] font-bold uppercase tracking-[0.3em] rounded-2xl hover:bg-primary hover:text-white transition-all shadow-[0_20px_40px_rgba(0,0,0,0.5)]">
+                Архив экспертных ответов →
+             </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer - Professional Dark */}
+      <footer className="py-20 px-6 border-t border-white/12 bg-neutral-900 relative">
+         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-12">
+            <div className="flex items-center gap-4">
+               <Logo size={40} />
+               <span className="font-bold text-xl tracking-tighter uppercase text-white">ЭлитФинанс</span>
+            </div>
+            <nav className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
+                {[
+                  { label: "МЫ В МАКСЕ", href: "https://max-channel-link" },
+                  { label: "ПОЗВОНИТЬ", href: "tel:+74950000000" },
+                  { label: "СООБЩЕСТВО В ВК", href: "https://vk.com/elitfinans" },
+                  { label: "НАПИСАТЬ НА ПОЧТУ", href: "mailto:info@elitfinans.online" }
+                ].map(nav => (
+                  <Link 
+                    key={nav.label} 
+                    href={nav.href} 
+                    className="px-6 py-3 rounded-full border border-white/12 bg-white/5 text-[9px] font-black uppercase tracking-[0.3em] text-white hover:bg-white hover:text-neutral-900 transition-all shadow-lg whitespace-nowrap"
+                  >
+                    {nav.label}
+                  </Link>
+                ))}
+            </nav>
+         </div>
       </footer>
     </div>
   );
