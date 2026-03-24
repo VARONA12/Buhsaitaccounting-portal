@@ -94,6 +94,21 @@ model Message {
   user      User     @relation(fields: [userId], references: [id])
 }
 
+model NewsItem {
+  id          String   @id @default(cuid())
+  title       String
+  content     String
+  excerpt     String?
+  source      String
+  sourceType  String   @default("telegram")
+  sourceUrl   String?
+  hash        String   @unique
+  category    String?
+  published   Boolean  @default(true)
+  publishedAt DateTime
+  createdAt   DateTime @default(now())
+}
+
 model Article {
   id        String   @id @default(cuid())
   title     String
@@ -101,6 +116,8 @@ model Article {
   excerpt   String?
   image     String?
   author    String   @default("Администратор")
+  videoUrl      String?
+  videoTranscript String?
   published Boolean  @default(true)
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
