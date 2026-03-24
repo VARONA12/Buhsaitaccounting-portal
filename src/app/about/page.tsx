@@ -3,6 +3,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Logo } from '@/components/Logo';
 import { ShieldCheck, Award, TrendingUp, Users, MapPin, Mail, Phone, ArrowLeft, ArrowRight, UserCheck, ChevronRight, Zap } from 'lucide-react';
+import { ContactButtonFull } from '@/components/ContactButton';
 
 export const metadata: Metadata = {
   title: 'О компании ЭлитФинанс — Команда экспертов',
@@ -166,12 +167,7 @@ export default function AboutPage() {
                  </ul>
                  
                  <div className="pt-8 space-y-4">
-                    <button 
-                      onClick={() => { (window as any).toggleContactForm?.() }}
-                      className="w-full py-5 bg-primary text-white font-black uppercase text-[10px] tracking-[0.3em] rounded-2xl hover:bg-white transition-all shadow-xl group"
-                    >
-                      ЗАЯВКА ЭКСПЕРТУ <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
-                    </button>
+                    <ContactButtonFull label="ЗАЯВКА ЭКСПЕРТУ" />
                     <Link href="/experts" className="flex items-center justify-center gap-3 w-full py-5 border border-white/20 text-white font-bold text-[10px] uppercase tracking-widest rounded-2xl hover:text-white hover:border-white transition-all">
                       СПИСОК КОМАНДЫ <ChevronRight size={14} />
                     </Link>
@@ -189,17 +185,17 @@ export default function AboutPage() {
                <Logo size={40} />
                <span className="font-bold text-xl tracking-tighter uppercase text-white">ЭлитФинанс</span>
             </div>
-            <nav className="flex flex-wrap justify-center items-center gap-12">
+            <nav className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
                 {[
-                  { label: "О компании", href: "/about" },
-                  { label: "Эксперты", href: "/experts" },
-                  { label: "Новости", href: "/news" },
-                  { label: "Справочник", href: "/handbook" }
+                  { label: "МЫ В МАКСЕ", href: "https://max-channel-link" },
+                  { label: "ПОЗВОНИТЬ", href: "tel:+74950000000" },
+                  { label: "СООБЩЕСТВО В ВК", href: "https://vk.com/elitfinans" },
+                  { label: "НАПИСАТЬ НА ПОЧТУ", href: "mailto:info@elitfinans.online" }
                 ].map(nav => (
                   <Link 
                     key={nav.label} 
                     href={nav.href} 
-                    className="text-[10px] font-black uppercase tracking-[0.4em] text-white hover:text-white transition-colors"
+                    className="px-6 py-3 rounded-full border border-white/12 bg-white/5 text-[9px] font-black uppercase tracking-[0.3em] text-white hover:bg-white hover:text-neutral-900 transition-all shadow-lg whitespace-nowrap"
                   >
                     {nav.label}
                   </Link>

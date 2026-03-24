@@ -4,6 +4,7 @@ import Link from "next/link";
 import { HANDBOOK_TERMS } from "@/lib/handbook-data";
 import { ExpertVerification } from "@/components/ExpertVerification";
 import { Logo } from "@/components/Logo";
+import { ContactButton } from "@/components/ContactButton";
 import {
   ChevronRight,
   ArrowLeft,
@@ -225,12 +226,7 @@ export default async function HandbookTermPage({ params }: Props) {
                   Эксперт применит нормы по теме «{term.term}» к вашей модели бизнеса ООО или ИП. Профессионально и безопасно.
                 </p>
               </div>
-              <button
-                onClick={() => { (window as any).toggleContactForm?.() }}
-                className="shrink-0 px-10 py-5 bg-white text-neutral-900 font-black uppercase text-[10px] tracking-[0.3em] rounded-2xl hover:bg-primary hover:text-white transition-all shadow-2xl flex items-center gap-3 group"
-              >
-                ЗАДАТЬ ВОПРОС <ArrowRight size={16} />
-              </button>
+              <ContactButton label="ЗАДАТЬ ВОПРОС" />
             </div>
           </div>
 
@@ -286,23 +282,22 @@ export default async function HandbookTermPage({ params }: Props) {
                <Logo size={40} />
                <span className="font-bold text-xl tracking-tighter uppercase text-white">ЭлитФинанс</span>
             </div>
-            <nav className="flex flex-wrap justify-center items-center gap-12">
-               {[
-                 { label: "О компании", href: "/about" },
-                 { label: "Эксперты", href: "/experts" },
-                 { label: "Новости", href: "/news" },
-                 { label: "Справочник", href: "/handbook" }
-               ].map(nav => (
+            <nav className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
+                {[
+                  { label: "МЫ В МАКСЕ", href: "https://max-channel-link" },
+                  { label: "ПОЗВОНИТЬ", href: "tel:+74950000000" },
+                  { label: "СООБЩЕСТВО В ВК", href: "https://vk.com/elitfinans" },
+                  { label: "НАПИСАТЬ НА ПОЧТУ", href: "mailto:info@elitfinans.online" }
+                ].map(nav => (
                   <Link 
                     key={nav.label} 
                     href={nav.href} 
-                    className="text-[10px] font-black uppercase tracking-[0.4em] text-white hover:text-white transition-colors"
+                    className="px-6 py-3 rounded-full border border-white/12 bg-white/5 text-[9px] font-black uppercase tracking-[0.3em] text-white hover:bg-white hover:text-neutral-900 transition-all shadow-lg whitespace-nowrap"
                   >
                     {nav.label}
                   </Link>
-               ))}
+                ))}
             </nav>
-            <div className="text-[10px] font-bold uppercase tracking-[0.4em] text-white">© 2026 ЭЛИТФИНАНС / МОСКВА</div>
          </div>
       </footer>
     </div>

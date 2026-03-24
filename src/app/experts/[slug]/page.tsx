@@ -3,8 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { 
   ChevronRight, 
-  ArrowLeft, 
-  ArrowRight,
+  ArrowLeft,
   CheckCircle2, 
   Quote, 
   ShieldCheck, 
@@ -14,6 +13,7 @@ import {
 } from "lucide-react";
 import { EXPERTS } from "@/lib/experts-data";
 import { Logo } from "@/components/Logo";
+import { ContactButtonFull } from "@/components/ContactButton";
 
 interface PageProps {
   params: Promise<{ slug: string }>;
@@ -82,12 +82,7 @@ export default async function ExpertDetailPage({ params }: PageProps) {
                        </div>
                     ))}
                  </div>
-                 <button 
-                  onClick={() => { (window as any).toggleContactForm?.() }}
-                  className="w-full py-5 rounded-2xl bg-primary text-white font-black uppercase text-[10px] tracking-widest flex items-center justify-center gap-3 hover:bg-white transition-all shadow-xl group"
-                >
-                  Консультация эксперта <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
-                </button>
+                 <ContactButtonFull label="Консультация эксперта" />
               </div>
             </div>
 
@@ -153,18 +148,22 @@ export default async function ExpertDetailPage({ params }: PageProps) {
                <Logo size={40} />
                <span className="font-bold text-xl tracking-tighter uppercase text-white">ЭлитФинанс</span>
             </div>
-            <nav className="flex flex-wrap justify-center items-center gap-12">
-               {["About", "Team", "News", "Vault"].map(nav => (
+            <nav className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
+                {[
+                  { label: "МЫ В МАКСЕ", href: "https://max-channel-link" },
+                  { label: "ПОЗВОНИТЬ", href: "tel:+74950000000" },
+                  { label: "СООБЩЕСТВО В ВК", href: "https://vk.com/elitfinans" },
+                  { label: "НАПИСАТЬ НА ПОЧТУ", href: "mailto:info@elitfinans.online" }
+                ].map(nav => (
                   <Link 
-                    key={nav} 
-                    href={`/${nav.toLowerCase()}`} 
-                    className="text-[10px] font-black uppercase tracking-[0.4em] text-white hover:text-white transition-colors"
+                    key={nav.label} 
+                    href={nav.href} 
+                    className="px-6 py-3 rounded-full border border-white/12 bg-white/5 text-[9px] font-black uppercase tracking-[0.3em] text-white hover:bg-white hover:text-neutral-900 transition-all shadow-lg whitespace-nowrap"
                   >
-                    {nav}
+                    {nav.label}
                   </Link>
-               ))}
+                ))}
             </nav>
-            <div className="text-[10px] font-bold uppercase tracking-[0.4em] text-white">© 2026 ELITFINANCE HQ</div>
          </div>
       </footer>
     </div>

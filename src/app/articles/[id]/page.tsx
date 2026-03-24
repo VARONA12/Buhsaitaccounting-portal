@@ -6,6 +6,7 @@ import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import { ExpertVerification } from "@/components/ExpertVerification";
 import { Logo } from "@/components/Logo";
+import { ContactButton } from "@/components/ContactButton";
 import { ChevronRight, Calendar, User, Clock, ArrowLeft, ArrowRight, BookOpen, Zap } from "lucide-react";
 import { VideoTranscript } from "@/components/VideoTranscript";
 
@@ -204,12 +205,7 @@ export default async function ArticlePage({ params }: Props) {
                   Эксперты ЭлитФинанс разберут вашу ситуацию и предложат оптимальное решение прямо сейчас.
                 </p>
               </div>
-              <button
-                onClick={() => { (window as any).toggleContactForm?.() }}
-                className="shrink-0 px-10 py-5 bg-neutral-900 text-white font-black uppercase text-[10px] tracking-[0.3em] rounded-2xl hover:bg-white hover:text-white transition-all shadow-2xl flex items-center gap-3 group"
-              >
-                ОСТАВИТЬ ЗАЯВКУ <ArrowRight size={16} />
-              </button>
+              <ContactButton label="ОСТАВИТЬ ЗАЯВКУ" />
             </div>
           </div>
 

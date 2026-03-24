@@ -7,6 +7,7 @@ import { ALL_NEWS } from "@/lib/news-data";
 import { db } from "@/lib/db";
 import { ExpertVerification } from "@/components/ExpertVerification";
 import { Logo } from "@/components/Logo";
+import { ContactButton } from "@/components/ContactButton";
 import {
   ChevronRight,
   Clock,
@@ -288,12 +289,7 @@ function NewsLayout({
                   Получите персональную консультацию от эксперта ЭлитФинанс по данной теме.
                 </p>
               </div>
-              <button
-                onClick={() => { (window as any).toggleContactForm?.() }}
-                className="shrink-0 px-10 py-5 bg-primary text-white font-black uppercase text-[10px] tracking-[0.3em] rounded-2xl hover:bg-white transition-all shadow-2xl flex items-center gap-3 group"
-              >
-                ЗАДАТЬ ВОПРОС <ArrowRight size={16} />
-              </button>
+              <ContactButton label="ЗАДАТЬ ВОПРОС" />
             </div>
           </div>
 

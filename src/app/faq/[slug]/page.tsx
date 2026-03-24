@@ -6,6 +6,7 @@ import { HANDBOOK_TERMS } from "@/lib/handbook-data";
 import { SERVICES } from "@/lib/services-data";
 import { ExpertVerification } from "@/components/ExpertVerification";
 import { Logo } from "@/components/Logo";
+import { ContactButton } from "@/components/ContactButton";
 import {
   ChevronRight,
   ArrowLeft,
@@ -236,12 +237,7 @@ export default async function FaqDetailPage({ params }: Props) {
                 <h3 className="text-3xl md:text-5xl font-black tracking-tightest text-white uppercase leading-none">РАЗБЕРЁМ ВАШУ <br /> СИТУАЦИЮ</h3>
                 <p className="text-white text-lg md:text-xl max-w-md font-medium leading-relaxed ">Задайте вопрос напрямую эксперту — первичная консультация бесплатна и ни к чему вас не обязывает.</p>
               </div>
-              <button 
-                onClick={() => { (window as any).toggleContactForm?.() }}
-                className="shrink-0 px-10 py-5 bg-primary text-white font-black uppercase text-[10px] tracking-[0.3em] rounded-2xl hover:bg-white transition-all shadow-2xl flex items-center gap-3 group"
-              >
-                ЗАДАТЬ ВОПРОС <ArrowRight size={16} />
-              </button>
+              <ContactButton label="ЗАДАТЬ ВОПРОС" />
             </div>
           </div>
 
