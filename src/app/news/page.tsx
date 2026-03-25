@@ -48,10 +48,12 @@ export default async function NewsPage() {
     slug: item.id,
     title: item.title,
     category: item.category ?? "Налоги",
-    date: new Date(item.publishedAt).toLocaleDateString("ru-RU", {
+    date: new Date(item.publishedAt).toLocaleString("ru-RU", {
       day: "2-digit",
       month: "2-digit",
       year: "numeric",
+      hour: "2-digit",
+      minute: "2-digit",
     }),
     isoDate: item.publishedAt.toISOString(),
     desc: item.excerpt ?? item.title,

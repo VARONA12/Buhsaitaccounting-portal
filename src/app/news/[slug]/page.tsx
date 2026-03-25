@@ -132,10 +132,12 @@ export default async function NewsDetailPage({ params }: Props) {
   if (!dbItem) notFound();
 
   const url = `https://elitfinans.online/news/${slug}`;
-  const date = new Date(dbItem.publishedAt).toLocaleDateString("ru-RU", {
+  const date = new Date(dbItem.publishedAt).toLocaleString("ru-RU", {
     day: "2-digit",
     month: "2-digit",
     year: "numeric",
+    hour: "2-digit",
+    minute: "2-digit",
   });
   const wordCount = dbItem.content.split(/\s+/).length;
   const readTime = `${Math.max(1, Math.ceil(wordCount / 200))} мин`;
@@ -169,7 +171,7 @@ export default async function NewsDetailPage({ params }: Props) {
       slug: r.id,
       title: r.title,
       category: r.category ?? "Налоги",
-      date: new Date(r.publishedAt).toLocaleDateString("ru-RU", { day: "2-digit", month: "2-digit", year: "numeric" }),
+      date: new Date(r.publishedAt).toLocaleString("ru-RU", { day: "2-digit", month: "2-digit", year: "numeric", hour: "2-digit", minute: "2-digit" }),
     }))}
   >
     <div className="space-y-6">
