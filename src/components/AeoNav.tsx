@@ -41,19 +41,19 @@ export function AeoNav() {
           ))}
         </div>
 
-        <div className="flex items-center gap-4">
-          <button 
+        <div className="flex items-center gap-3">
+          <button
             onClick={() => { (window as any).toggleContactForm?.() }}
-            className="px-8 py-3 rounded-xl bg-white text-neutral-900 text-[10px] font-black uppercase tracking-[0.3em] hover:bg-neutral-200 transition-all shadow-xl"
+            className="hidden sm:block px-8 py-3 rounded-xl bg-white text-neutral-900 text-[10px] font-black uppercase tracking-[0.3em] hover:bg-neutral-200 transition-all shadow-xl"
           >
             Консультация
           </button>
-          
-          <button 
+
+          <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="lg:hidden w-10 h-10 rounded-xl bg-white/5 flex items-center justify-center text-white"
+            className="lg:hidden w-10 h-10 rounded-xl bg-white/10 border border-white/20 flex items-center justify-center text-white"
           >
-            {isMenuOpen ? <X size={22} /> : <Menu size={22} />}
+            {isMenuOpen ? <X size={20} /> : <Menu size={20} />}
           </button>
         </div>
       </div>
