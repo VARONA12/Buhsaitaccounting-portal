@@ -346,7 +346,7 @@ def fetch_website(task):
         if not href:
             continue
         full_url = href if href.startswith("http") else base + "/" + href.lstrip("/")
-        title = a.get_text(strip=True)[:300]
+        title = a.get_text(separator=" ", strip=True)[:300]
         if len(title) < min_len or full_url in seen:
             continue
         if not is_accounting(title):
