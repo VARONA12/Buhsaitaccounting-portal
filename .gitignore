@@ -44,3 +44,7 @@ next-env.d.ts
 
 # Obsidian
 .obsidian/
+.agents/
+.claude/
+scripts/news-scraper/logs/
+*.log
