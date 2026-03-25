@@ -2,7 +2,7 @@ import { PrismaClient } from '@prisma/client'
 
 const prismaClientSingleton = () => {
   const url = process.env.DATABASE_URL ?? '';
-  const dbUrl = url && !url.includes('sslmode') ? `${url}?sslmode=disable` : url;
+  const dbUrl = url && !url.includes('sslmode') ? `${url}?sslmode=require` : url;
   return new PrismaClient({ datasourceUrl: dbUrl });
 }
 
