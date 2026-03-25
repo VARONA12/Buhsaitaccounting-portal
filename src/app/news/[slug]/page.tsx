@@ -7,6 +7,8 @@ import { ALL_NEWS } from "@/lib/news-data";
 import { db } from "@/lib/db";
 import { ExpertVerification } from "@/components/ExpertVerification";
 import { Logo } from "@/components/Logo";
+import { AeoNav } from "@/components/AeoNav";
+import { AeoModals } from "@/components/AeoModals";
 import { ContactButton } from "@/components/ContactButton";
 import {
   ChevronRight,
@@ -49,8 +51,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         type: "article",
         publishedTime: staticNews.isoDate,
         section: staticNews.category,
+        images: [{ url: "https://elitfinans.online/director_hq.png", width: 1200, height: 630 }],
       },
-      twitter: { card: "summary_large_image", title: staticNews.title, description: staticNews.desc },
+      twitter: { 
+        card: "summary_large_image", 
+        title: staticNews.title, 
+        description: staticNews.desc,
+        images: ["https://elitfinans.online/director_hq.png"]
+      },
       robots: { index: true, follow: true, "max-image-preview": "large", "max-snippet": -1 },
     };
   }
@@ -73,8 +81,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
           type: "article",
           publishedTime: item.publishedAt.toISOString(),
           section: item.category ?? "Налоги",
+          images: [{ url: "https://elitfinans.online/director_hq.png", width: 1200, height: 630 }],
         },
-        twitter: { card: "summary_large_image", title: item.title, description: item.excerpt ?? item.title },
+        twitter: { 
+          card: "summary_large_image", 
+          title: item.title, 
+          description: item.excerpt ?? item.title,
+          images: ["https://elitfinans.online/director_hq.png"]
+        },
         robots: { index: true, follow: true, "max-image-preview": "large", "max-snippet": -1 },
       };
     }
@@ -202,25 +216,8 @@ function NewsLayout({
 }) {
   return (
     <div className="min-h-screen bg-neutral-900 text-white font-sans selection:bg-primary-dark/80 selection:text-white">
-      {/* Nav */}
-      <nav className="fixed top-0 left-0 w-full z-[100] border-b border-white/12 bg-neutral-900/70 backdrop-blur-3xl shadow-sm">
-        <div className="max-w-7xl mx-auto px-6 h-16 xl:h-20 flex items-center justify-between">
-          <Link href="/" className="flex items-center gap-4 group">
-            <div className="transition-transform group-hover:scale-110">
-              <Logo size={40} />
-            </div>
-            <span className="font-bold text-lg xl:text-xl tracking-tighter uppercase text-white leading-none">ЭлитФинанс</span>
-          </Link>
-          <div className="flex items-center gap-6">
-            <Link
-              href="/news"
-              className="flex items-center gap-2 text-[10px] font-bold uppercase tracking-[0.2em] text-white hover:text-white transition-colors"
-            >
-              <ArrowLeft size={14} /> Все новости
-            </Link>
-          </div>
-        </div>
-      </nav>
+      <AeoNav />
+      <AeoModals />
 
       <main className="pt-28 pb-40 px-6 md:pt-40">
         <div className="max-w-4xl mx-auto">

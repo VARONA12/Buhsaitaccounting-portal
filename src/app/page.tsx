@@ -1,31 +1,50 @@
-"use client";
+export const dynamic = "force-dynamic";
+
+import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { Footer } from "@/components/Footer";
-import { 
-  Building, 
-  Users, 
-  ArrowUpRight, 
-  ChevronRight, 
-  Zap, 
-  Briefcase, 
-  BookOpen, 
+import {
+  Building,
+  Users,
+  ArrowUpRight,
+  ChevronRight,
+  Zap,
+  Briefcase,
+  BookOpen,
   BadgePercent,
   TrendingUp,
   ShieldCheck,
   Globe,
-  MessageSquare, 
-  Newspaper, 
-  Clock, 
-  Tag, 
-  Calendar, 
-  LayoutDashboard, 
-  Database, 
-  HelpCircle 
+  MessageSquare,
+  Newspaper,
+  Clock,
+  Tag,
+  Calendar,
+  LayoutDashboard,
+  Database,
+  HelpCircle
 } from "lucide-react";
 import { Logo } from "@/components/Logo";
 import { AeoNav } from "@/components/AeoNav";
 import { AeoModals } from "@/components/AeoModals";
+import { ContactButton } from "@/components/ContactButton";
+import { EXPERTS } from "@/lib/experts-data";
+
+export const metadata: Metadata = {
+  title: "ЭлитФинанс — бухгалтерский аутсорсинг для ООО и ИП с финансовой ответственностью",
+  description: "Профессиональный бухгалтерский аутсорсинг для ООО и ИП в России. ОСНО, УСН, кадры. 100% финансовая ответственность по договору. Опыт команды — более 70 лет.",
+  alternates: { canonical: "https://elitfinans.online" },
+  openGraph: {
+    title: "ЭлитФинанс — бухгалтерский аутсорсинг с финансовой ответственностью",
+    description: "Профессиональная защита бизнеса: ОСНО, УСН, кадры, 115-ФЗ. 20+ партнеров. 0 блокировок.",
+    url: "https://elitfinans.online",
+    siteName: "ЭлитФинанс",
+    locale: "ru_RU",
+    type: "website",
+    images: [{ url: "https://elitfinans.online/director_hq.png", width: 1200, height: 630 }],
+  },
+};
 
 const servicesData = [
   {
@@ -118,12 +137,7 @@ const homeJsonLd = {
     "addressCountry": "RU",
     "addressLocality": "Москва"
   },
-  "contactPoint": {
-    "@type": "ContactPoint",
-    "contactType": "customer service",
-    "availableLanguage": "Russian",
-    "email": "info@elitfinans.online"
-  },
+  "telephone": "+79028371370",
   "sameAs": [
     "https://vk.com/elitfinans"
   ],
@@ -201,12 +215,10 @@ export default function LandingPage() {
                 >
                   Все услуги <ArrowUpRight size={14} />
                 </Link>
-                <button
-                  onClick={() => (window as any).toggleContactForm?.()}
+                <ContactButton
+                  label="Задать вопрос эксперту"
                   className="px-10 py-6 border border-white/20 bg-white/10 text-white font-black uppercase text-[10px] tracking-[0.4em] rounded-2xl hover:bg-white hover:text-white transition-all flex items-center justify-center gap-3 cursor-pointer"
-                >
-                  Задать вопрос эксперту <Zap size={14} />
-                </button>
+                />
               </div>
             </div>
           </div>
@@ -260,16 +272,12 @@ export default function LandingPage() {
                  Смотреть всех экспертов →
                </Link>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-               {[
-                 { name: "Анна Туманян", role: "Главный Аудитор", xp: "18 лет" },
-                 { name: "Александр Волков", role: "Налоговый Юрист", xp: "12 лет" },
-                 { name: "Елена Сазонова", role: "HR-Эксперт", xp: "15 лет" }
-               ].map((expert) => (
-                 <div key={expert.name} className="group p-8 rounded-[48px] border border-white/12 bg-neutral-900 hover:bg-neutral-900 transition-all">
+             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+               {EXPERTS.slice(0, 6).map((expert) => (
+                 <Link key={expert.slug} href={`/experts/${expert.slug}`} className="group p-8 rounded-[48px] border border-white/12 bg-neutral-900 hover:bg-neutral-900/50 transition-all block">
                     <div className="flex items-center gap-5 mb-6">
-                       <div className="w-16 h-16 rounded-2xl bg-neutral-900 border border-white/12 flex items-center justify-center text-white group-hover:scale-110 transition-transform">
-                          <Users size={24} />
+                       <div className="w-16 h-16 rounded-2xl bg-neutral-900 border border-white/12 flex items-center justify-center text-white group-hover:scale-110 transition-transform overflow-hidden relative">
+                          <Image src={expert.image} alt={expert.name} fill className="object-cover" sizes="64px" />
                        </div>
                        <div>
                           <p className="font-bold text-lg text-white group-hover:text-white transition-colors uppercase tracking-tight">{expert.name}</p>
@@ -277,13 +285,54 @@ export default function LandingPage() {
                        </div>
                     </div>
                     <div className="flex items-center justify-between pt-6 border-t border-white/12">
-                       <span className="text-[9px] font-bold text-white uppercase tracking-widest">{expert.xp} опыта в РФ</span>
+                       <span className="text-[9px] font-bold text-white uppercase tracking-widest">{expert.experience} опыта в РФ</span>
                        <ChevronRight size={14} className="text-white group-hover:text-white transition-colors" />
                     </div>
-                 </div>
+                 </Link>
                ))}
             </div>
          </div>
+      </section>
+
+      {/* Social Proof: Cases Section - NEW */}
+      <section className="py-24 px-6 bg-neutral-950">
+        <div className="max-w-7xl mx-auto">
+          <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-16">
+            <div className="space-y-4">
+              <p className="text-[10px] font-bold uppercase tracking-[0.5em] text-white">Реальный опыт</p>
+              <h3 className="text-4xl md:text-6xl font-black uppercase text-white">Как мы <br /> решаем <span className="text-white">проблемы?</span></h3>
+            </div>
+            <Link href="/cases" className="text-[10px] font-bold uppercase tracking-[0.3em] text-white hover:text-white transition-colors border-b border-white/12 pb-1">
+              Смотреть все кейсы →
+            </Link>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <Link href="/cases#okved-shtraf" className="group p-10 rounded-[56px] border border-white/12 bg-neutral-900 hover:bg-neutral-900/50 transition-all block space-y-8">
+              <div className="flex justify-between items-start">
+                <div className="px-4 py-1.5 rounded-full border border-white/20 bg-white/[0.04] text-[9px] font-bold uppercase tracking-widest text-white">Налоги и штрафы</div>
+                <div className="text-3xl font-black text-white">−250 000 ₽</div>
+              </div>
+              <h4 className="text-xl font-bold text-white uppercase tracking-tight leading-tight">Снижение штрафа ФНС вдвое за ошибки в ОКВЭД</h4>
+              <p className="text-white/60 text-sm leading-relaxed">Клиент получил претензию на 500 тыс. руб. Мы подготовили возражения и исправили реестр. Бизнес сохранён.</p>
+              <div className="pt-6 border-t border-white/12 flex items-center justify-between text-[9px] font-bold uppercase tracking-widest text-white">
+                Подробнее <ArrowUpRight size={14} />
+              </div>
+            </Link>
+            
+            <Link href="/cases#uvolneniye" className="group p-10 rounded-[56px] border border-white/12 bg-neutral-900 hover:bg-neutral-900/50 transition-all block space-y-8">
+              <div className="flex justify-between items-start">
+                <div className="px-4 py-1.5 rounded-full border border-white/20 bg-white/[0.04] text-[9px] font-bold uppercase tracking-widest text-white">Кадровое дело</div>
+                <div className="text-3xl font-black text-white">0 ₽ риск</div>
+              </div>
+              <h4 className="text-xl font-bold text-white uppercase tracking-tight leading-tight">Увольнение конфликтного сотрудника без судов</h4>
+              <p className="text-white/60 text-sm leading-relaxed">Помогли владельцу расстаться с токсичным персоналом строго по ТК РФ. Ни одной претензии от ГИТ.</p>
+              <div className="pt-6 border-t border-white/12 flex items-center justify-between text-[9px] font-bold uppercase tracking-widest text-white">
+                Подробнее <ArrowUpRight size={14} />
+              </div>
+            </Link>
+          </div>
+        </div>
       </section>
 
       {/* Expertise Block - Premium Dark Glass */}

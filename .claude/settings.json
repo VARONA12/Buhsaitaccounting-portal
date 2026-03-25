@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//Users/varonachka/**)",
+      "Bash(git fetch:*)",
+      "Bash(curl -s \"https://elitefinance.pro/robots.txt\")",
+      "Bash(npx tsc:*)",
+      "Bash(grep -r \"href=\" /Users/varonachka/Website/src/app/*.tsx)",
+      "Bash(/tmp/check_faq_refs.txt:*)",
+      "Read(//tmp/**)",
+      "Bash(xargs sed:*)",
+      "Bash(git commit:*)",
+      "Bash(nslookup -type=ANY elitfinans.online ns1.timeweb.ru)",
+      "WebFetch(domain:accounting1-marlini19102.amvera.io)",
+      "Bash(npm run:*)",
+      "Bash(ls /Users/varonachka/Website/*.yml)",
+      "Bash(ls /Users/varonachka/Website/*.yaml)",
+      "Bash(git ls-tree:*)",
+      "Bash(grep \"\\\\.$\\\\|\\\\.\"\"\")",
+      "Bash(find /Users/varonachka/Website -name *.md -o -name .obsidian -type d)"
+    ]
+  }
+}

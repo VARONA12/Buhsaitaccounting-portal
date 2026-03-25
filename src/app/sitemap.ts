@@ -4,6 +4,7 @@ import { ALL_NEWS } from "@/lib/news-data";
 import { HANDBOOK_TERMS } from "@/lib/handbook-data";
 import { SERVICES } from "@/lib/services-data";
 import { FAQ_ITEMS } from "@/lib/faq-data";
+import { EXPERTS } from "@/lib/experts-data";
 
 const BASE_URL = "https://elitfinans.online";
 
@@ -47,7 +48,19 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       priority: 0.9,
     },
     {
-      url: `${BASE_URL}/expert/anna-tumanian`,
+      url: `${BASE_URL}/experts`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.9,
+    },
+    {
+      url: `${BASE_URL}/cases`,
+      lastModified: new Date(),
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
+    {
+      url: `${BASE_URL}/about`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.8,
@@ -104,5 +117,13 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: 0.8,
   }));
 
-  return [...staticPages, ...servicePages, ...faqPages, ...articlePages, ...newsPages, ...handbookPages];
+  // Individual expert pages
+  const expertPages: MetadataRoute.Sitemap = EXPERTS.map((e) => ({
+    url: `${BASE_URL}/experts/${e.slug}`,
+    lastModified: new Date(),
+    changeFrequency: "monthly" as const,
+    priority: 0.8,
+  }));
+
+  return [...staticPages, ...servicePages, ...faqPages, ...articlePages, ...newsPages, ...handbookPages, ...expertPages];
 }

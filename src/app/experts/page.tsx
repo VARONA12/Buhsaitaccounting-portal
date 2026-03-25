@@ -1,3 +1,5 @@
+export const dynamic = "force-dynamic";
+
 import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
@@ -5,6 +7,8 @@ import { UserCheck, Star, ShieldCheck, ArrowRight, User } from "lucide-react";
 import { EXPERTS } from "@/lib/experts-data";
 import { Footer } from "@/components/Footer";
 import { Logo } from "@/components/Logo";
+import { AeoNav } from "@/components/AeoNav";
+import { AeoModals } from "@/components/AeoModals";
 
 export const metadata: Metadata = {
   title: "Эксперты по налогам и бухгалтерии — команда ЭлитФинанс",
@@ -63,25 +67,8 @@ export default function ExpertsPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(expertsJsonLd) }}
       />
-      {/* Navigation */}
-      <nav className="fixed top-0 left-0 w-full z-[100] border-b border-white/12 bg-neutral-900/70 backdrop-blur-3xl shadow-sm">
-        <div className="max-w-7xl mx-auto px-6 h-16 xl:h-20 flex items-center justify-between">
-          <Link href="/" className="flex items-center gap-4 group">
-            <div className="transition-transform group-hover:scale-110">
-              <Logo size={40} />
-            </div>
-            <span className="font-bold text-lg xl:text-xl tracking-tighter uppercase text-white leading-none">ЭлитФинанс</span>
-          </Link>
-          <div className="flex items-center gap-6">
-            <Link
-              href="/"
-              className="text-[10px] font-bold uppercase tracking-[0.3em] text-white hover:text-white transition-colors"
-            >
-              На главную
-            </Link>
-          </div>
-        </div>
-      </nav>
+      <AeoNav />
+      <AeoModals />
 
       <main className="pt-32 pb-40 px-6 md:pt-48">
         <div className="max-w-7xl mx-auto">
@@ -99,8 +86,8 @@ export default function ExpertsPage() {
             </p>
           </header>
 
-          {/* Experts Grid - Optimized for 5 members */}
-          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-5 gap-6 xl:gap-4">
+          {/* Experts Grid - Optimized for 6 members */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {EXPERTS.map((expert) => (
               <Link 
                 key={expert.slug} 

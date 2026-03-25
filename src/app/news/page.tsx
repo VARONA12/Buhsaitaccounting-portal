@@ -2,6 +2,8 @@ import { Clock, ChevronRight, Zap, Globe } from "lucide-react";
 import Link from "next/link";
 import type { Metadata } from "next";
 import { Logo } from "@/components/Logo";
+import { AeoNav } from "@/components/AeoNav";
+import { AeoModals } from "@/components/AeoModals";
 import { Footer } from "@/components/Footer";
 import { ALL_NEWS } from "@/lib/news-data";
 import { db } from "@/lib/db";
@@ -125,25 +127,8 @@ export default async function NewsPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(newsJsonLd) }}
       />
-      {/* Nav */}
-      <nav className="fixed top-0 left-0 w-full z-[100] border-b border-white/12 bg-neutral-900/70 backdrop-blur-3xl shadow-sm">
-        <div className="max-w-7xl mx-auto px-6 h-16 xl:h-20 flex items-center justify-between">
-          <Link href="/" className="flex items-center gap-4 group">
-            <div className="flex items-center justify-center transition-all group-hover:scale-110">
-              <Logo size={40} />
-            </div>
-            <span className="font-bold text-lg xl:text-xl tracking-tighter uppercase text-white leading-none">ЭлитФинанс</span>
-          </Link>
-          <div className="flex items-center gap-6">
-            <Link
-              href="/"
-              className="text-[10px] font-black uppercase tracking-[0.4em] text-white hover:text-white transition-colors"
-            >
-              На главную
-            </Link>
-          </div>
-        </div>
-      </nav>
+      <AeoNav />
+      <AeoModals />
 
       <main className="pt-28 pb-32 px-6 md:pt-40">
         <div className="max-w-7xl mx-auto">

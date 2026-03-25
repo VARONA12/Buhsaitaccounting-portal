@@ -1,3 +1,5 @@
+export const dynamic = "force-dynamic";
+
 import Link from "next/link";
 import { HANDBOOK_TERMS, CATEGORIES } from "@/lib/handbook-data";
 import { Logo } from "@/components/Logo";
