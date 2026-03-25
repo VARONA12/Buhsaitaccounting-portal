@@ -3,7 +3,7 @@ import { PrismaClient } from '@prisma/client'
 const prismaClientSingleton = () => {
   const url = process.env.DATABASE_URL ?? '';
   const dbUrl = url && !url.includes('sslmode') ? `${url}?sslmode=disable` : url;
-  return new PrismaClient({ datasources: { db: { url: dbUrl } } });
+  return new PrismaClient({ datasourceUrl: dbUrl });
 }
 
 type PrismaClientSingleton = ReturnType<typeof prismaClientSingleton>
