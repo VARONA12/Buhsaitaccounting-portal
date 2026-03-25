@@ -15,13 +15,6 @@
       "min_title_len": 40
     },
     {
-      "name": "Audit-IT",
-      "url": "https://www.audit-it.ru/news/account/",
-      "base": "https://www.audit-it.ru",
-      "selector": "a[href*='/news/']",
-      "min_title_len": 30
-    },
-    {
       "name": "Главбух",
       "url": "https://www.glavbukh.ru/news/",
       "base": "https://www.glavbukh.ru",

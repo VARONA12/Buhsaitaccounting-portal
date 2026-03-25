@@ -11,7 +11,7 @@ export function AeoNav() {
 
   const menuItems = [
     { label: "Услуги", href: "/services" },
-    { label: "Справочник", href: "/handbook" },
+    { label: "Статьи", href: "/articles" },
     { label: "Кейсы", href: "/cases" },
     { label: "Вопросы", href: "/faq" },
     { label: "Новости", href: "/news" },
