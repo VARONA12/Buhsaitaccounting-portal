@@ -1,7 +1,10 @@
 """
-ЭлитФинанс — Accounting News Scraper
-- Парсит бухгалтерские новости с сайтов
-- Фильтрует через DeepSeek AI (оставляет только важные новости)
+ЭлитФинанс — Accounting News Scraper v2
+- Парсит бухгалтерские новости с 4 источников
+- AI-фильтр: убирает мусор (score >= 6)
+- AI-дедупликация: убирает похожие темы с разных источников
+- AI-рерайт: SEO-заголовок, excerpt, переработанный контент
+- Все прошедшие фильтр новости публикуются
 - Сохраняет в PostgreSQL (таблица NewsItem)
 - 24/7, проверка каждые 30 минут
 """
@@ -48,11 +51,13 @@ ACCOUNTING_KEYWORDS = [
     " ип ", " ооо ", "предпринимател", "бизнес",
 ]
 
-def is_accounting(text: str) -> bool:
+MIN_SCORE = 6  # Минимальный балл для публикации (1-10)
+
+def is_accounting(text):
     t = text.lower()
     return any(kw in t for kw in ACCOUNTING_KEYWORDS)
 
-def classify(text: str) -> str:
+def classify(text):
     t = text.lower()
     if any(w in t for w in ["ндс", "вычет ндс"]): return "НДС"
     if any(w in t for w in ["усн", "упрощенк"]): return "УСН"
@@ -64,14 +69,14 @@ def classify(text: str) -> str:
     if any(w in t for w in ["самозанят", "нпд"]): return "Самозанятые"
     return "Налоги"
 
-def normalize(text: str) -> str:
+def normalize(text):
     t = re.sub(r"[^\w\s]", "", text.lower())
     return re.sub(r"\s+", " ", t).strip()[:300]
 
-def make_hash(text: str) -> str:
+def make_hash(text):
     return hashlib.md5(normalize(text).encode()).hexdigest()
 
-def get_with_retry(url: str, retries: int = 3, timeout: int = 20) -> Optional[requests.Response]:
+def get_with_retry(url, retries=3, timeout=20):
     for attempt in range(retries):
         try:
             resp = requests.get(url, headers=HEADERS, timeout=timeout)
@@ -88,113 +93,243 @@ def get_with_retry(url: str, retries: int = 3, timeout: int = 20) -> Optional[re
             return None
     return None
 
-# ── AI Filtering ───────────────────────────────────────────────────────────────
+
+# ── AI ────────────────────────────────────────────────────────────────────────
 DEEPSEEK_API_KEY = os.getenv("DEEPSEEK_API_KEY", "")
 DEEPSEEK_URL = "https://api.deepseek.com/v1/chat/completions"
 
-def ai_filter(items: list) -> list:
-    """Send batch of news to DeepSeek, keep only important ones (score >= 7)."""
+def deepseek_call(prompt, max_tokens=500, temperature=0.1):
+    if not DEEPSEEK_API_KEY:
+        return None
+    for attempt in range(3):
+        try:
+            resp = requests.post(
+                DEEPSEEK_URL,
+                headers={"Authorization": f"Bearer {DEEPSEEK_API_KEY}", "Content-Type": "application/json"},
+                json={
+                    "model": "deepseek-chat",
+                    "messages": [{"role": "user", "content": prompt}],
+                    "temperature": temperature,
+                    "max_tokens": max_tokens,
+                },
+                timeout=60,
+            )
+            if resp.status_code != 200:
+                log.warning(f"  DeepSeek {resp.status_code}: {resp.text[:200]}")
+                time.sleep(5 * (attempt + 1))
+                continue
+            return resp.json()["choices"][0]["message"]["content"].strip()
+        except Exception as e:
+            log.warning(f"  DeepSeek error (attempt {attempt+1}): {e}")
+            time.sleep(5 * (attempt + 1))
+    return None
+
+
+def ai_filter_and_rank(items):
+    """Score news 1-10, keep only >= 8, return sorted by score desc."""
     if not items or not DEEPSEEK_API_KEY:
         return items
 
-    # Build numbered list for prompt
     lines = []
     for i, item in enumerate(items):
         title = item["title"][:200]
-        excerpt = item.get("excerpt", "")[:300]
-        lines.append(f'{i+1}. {title}. {excerpt}')
+        excerpt = item.get("excerpt", "")[:200]
+        lines.append(f'{i+1}. [{item["source"]}] {title}. {excerpt}')
 
     prompt = (
-        "Ты эксперт в российском налоговом законодательстве и бухгалтерии.\n"
-        "Оцени каждую новость по шкале 1-10, насколько она важна для владельцев малого бизнеса (ИП и ООО в России).\n"
-        "10 = критически важно (новый закон, изменение ставок, новые требования ФНС)\n"
-        "1 = нерелевантно (реклама, общие слова, крупный корпоративный бизнес)\n\n"
+        "Ты главный редактор бухгалтерского издания для малого бизнеса (ИП и ООО) в России.\n"
+        "Оцени каждую новость по шкале 1-10:\n"
+        "10 = критически важно: новый закон, изменение ставок/сроков, новые штрафы\n"
+        "8-9 = очень важно: разъяснения ФНС/Минфина, практические изменения\n"
+        "5-7 = средне: общие обзоры, мнения, несрочное\n"
+        "1-4 = мусор: реклама, пресс-релизы, новости для крупного бизнеса, повторы\n\n"
+        "ВАЖНО: будь строгим! Только действительно полезные новости для малого бизнеса.\n\n"
         "Новости:\n" + "\n".join(lines) + "\n\n"
-        "Ответь ТОЛЬКО валидным JSON массивом оценок в формате:\n"
+        "Ответь ТОЛЬКО JSON:\n"
         '[{"index": 1, "score": 8}, {"index": 2, "score": 3}, ...]\n'
-        "Без пояснений, только JSON."
     )
 
+    result = deepseek_call(prompt, max_tokens=500, temperature=0.1)
+    if not result:
+        return items
+
     try:
-        resp = requests.post(
-            DEEPSEEK_URL,
-            headers={"Authorization": f"Bearer {DEEPSEEK_API_KEY}", "Content-Type": "application/json"},
-            json={
-                "model": "deepseek-chat",
-                "messages": [{"role": "user", "content": prompt}],
-                "temperature": 0.1,
-                "max_tokens": 500,
-            },
-            timeout=30,
-        )
-        if resp.status_code != 200:
-            log.warning(f"  DeepSeek API error {resp.status_code}: {resp.text[:200]}")
-            return items
-
-        content = resp.json()["choices"][0]["message"]["content"].strip()
-
-        # Extract JSON from response (may be wrapped in ```json ... ```)
-        json_match = re.search(r'\[.*\]', content, re.DOTALL)
+        json_match = re.search(r'\[.*\]', result, re.DOTALL)
         if not json_match:
-            log.warning("  DeepSeek: no JSON found in response")
             return items
 
         scores = json.loads(json_match.group())
         score_map = {s["index"]: s["score"] for s in scores}
 
-        kept = []
+        # Add score to items and filter
+        scored = []
         for i, item in enumerate(items):
-            score = score_map.get(i + 1, 5)
-            if score >= 7:
-                kept.append(item)
+            score = score_map.get(i + 1, 0)
+            if score >= MIN_SCORE:
+                item["_score"] = score
+                scored.append(item)
 
-        log.info(f"  🤖 AI filter: {len(items)} → {len(kept)} новостей (порог 7/10)")
-        return kept
+        # Sort by score descending
+        scored.sort(key=lambda x: x.get("_score", 0), reverse=True)
+
+        log.info(f"  AI фильтр: {len(items)} -> {len(scored)} (порог {MIN_SCORE}/10)")
+        return scored
 
     except Exception as e:
-        log.warning(f"  DeepSeek filter failed: {e}. Пропускаем фильтрацию.")
+        log.warning(f"  AI filter parse error: {e}")
         return items
 
-# ── Websites ───────────────────────────────────────────────────────────────────
-def fetch_article_body(url: str) -> Tuple[str, datetime]:
+
+def ai_dedup(items):
+    """Remove items covering the same topic, keep the one with best content."""
+    if len(items) <= 1:
+        return items
+
+    lines = [f'{i+1}. [{it["source"]}] {it["title"][:150]}' for i, it in enumerate(items)]
+
+    prompt = (
+        "Вот список новостей. Некоторые могут быть про ОДНО И ТО ЖЕ событие из разных источников.\n"
+        "Определи дубли и для каждой группы выбери лучшую версию.\n\n"
+        + "\n".join(lines) + "\n\n"
+        "Ответь JSON — список номеров новостей которые ОСТАВИТЬ (без дублей):\n"
+        '{"keep": [1, 3, 5]}\n'
+    )
+
+    result = deepseek_call(prompt, max_tokens=200, temperature=0.1)
+    if not result:
+        return items
+
+    try:
+        m = re.search(r'\{[^}]+\}', result)
+        if m:
+            data = json.loads(m.group())
+            keep_ids = set(data.get("keep", []))
+            if keep_ids:
+                deduped = [it for i, it in enumerate(items) if (i + 1) in keep_ids]
+                log.info(f"  Дедупликация: {len(items)} -> {len(deduped)}")
+                return deduped if deduped else items
+    except Exception as e:
+        log.warning(f"  Dedup parse error: {e}")
+
+    return items
+
+
+def ai_rewrite(item):
+    """Rewrite title, excerpt, and content for the site."""
+    original_title = item["title"]
+    original_content = item["content"][:3000]
+    source = item["source"]
+    source_url = item.get("url", "")
+
+    prompt = f"""Перепиши новость для публикации на сайте бухгалтерской компании ЭлитФинанс.
+
+ОРИГИНАЛ:
+Заголовок: {original_title}
+Источник: {source}
+Текст: {original_content}
+
+ТРЕБОВАНИЯ:
+
+1. ЗАГОЛОВОК (title):
+   - Чистый, без эмодзи и спецсимволов
+   - Информативный — отвечает на "что произошло"
+   - SEO-оптимизированный — содержит ключевые слова которые люди гуглят
+   - 60-90 символов
+   - Пример хорошего: "ФНС расширила список расходов на УСН с 2026 года"
+   - Пример плохого: "💢 Важные изменения! Узнайте что нового"
+
+2. КРАТКОЕ ОПИСАНИЕ (excerpt):
+   - 1-2 предложения, 100-200 символов
+   - Суть новости для карточки на сайте
+   - Конкретика: цифры, даты, кого касается
+
+3. ТЕКСТ НОВОСТИ (content):
+   - 300-600 слов
+   - Структура: что произошло → кого касается → что делать
+   - Конкретные факты, цифры, даты, ссылки на статьи НК РФ
+   - Без воды и общих фраз
+   - Абзацы разделены двойным переносом строки
+   - В конце: "Источник: {source}"
+
+ФОРМАТ — строго JSON:
+{{"title": "...", "excerpt": "...", "content": "..."}}"""
+
+    result = deepseek_call(prompt, max_tokens=2000, temperature=0.4)
+    if not result:
+        return item
+
+    try:
+        clean = result.strip()
+        if clean.startswith("```"):
+            clean = re.sub(r'^```(?:json)?\s*', '', clean)
+            clean = re.sub(r'\s*```$', '', clean)
+        data = json.loads(clean)
+
+        if "title" in data:
+            # Clean any remaining emoji
+            clean_title = re.sub(r'[\U00010000-\U0010ffff]', '', data["title"]).strip()
+            item["title"] = clean_title
+        if "excerpt" in data:
+            item["excerpt"] = data["excerpt"]
+        if "content" in data:
+            # Add source attribution
+            content = data["content"]
+            if source_url:
+                content += f"\n\nИсточник: [{source}]({source_url})"
+            elif source:
+                content += f"\n\nИсточник: {source}"
+            item["content"] = content
+
+        # Update hash based on new title
+        item["hash"] = make_hash(item["title"] + item["content"][:200])
+
+        log.info(f"  Рерайт: {item['title'][:70]}...")
+        return item
+
+    except Exception as e:
+        log.warning(f"  Rewrite parse error: {e}")
+        return item
+
+
+# ── Website scraping ──────────────────────────────────────────────────────────
+def fetch_article_body(url):
     resp = get_with_retry(url, timeout=15)
     if not resp:
         return "", datetime.now(timezone.utc)
 
     soup = BeautifulSoup(resp.text, "html.parser")
 
-    # Дата публикации
     pub_time = datetime.now(timezone.utc)
     for prop in ["article:published_time", "datePublished", "og:updated_time"]:
         el = soup.find("meta", property=prop) or soup.find("meta", itemprop=prop)
         if el:
             try:
-                pub_time = datetime.fromisoformat(el.get("content","").replace("Z","+00:00"))
+                pub_time = datetime.fromisoformat(el.get("content", "").replace("Z", "+00:00"))
                 break
             except Exception:
                 pass
 
-    # Контент
     content = ""
     for sel in ["article", ".article__text", ".article-body", ".content-body",
                 ".news-text", ".detail-text", ".article-content", "main"]:
         target = soup.select_one(sel)
         if target:
-            parts = [p.get_text(strip=True) for p in target.find_all(["p","li"]) if len(p.get_text(strip=True)) > 40]
+            parts = [p.get_text(strip=True) for p in target.find_all(["p", "li"]) if len(p.get_text(strip=True)) > 40]
             content = "\n\n".join(parts[:20])
             if len(content) > 200:
                 break
 
     return content[:5000], pub_time
 
-def fetch_website(task: dict) -> list:
+
+def fetch_website(task):
     name = task["name"]
-    url  = task["url"]
+    url = task["url"]
     base = task.get("base", "")
-    sel  = task["selector"]
+    sel = task["selector"]
     min_len = task.get("min_title_len", 30)
 
-    log.info(f"🌐 Web: {name}")
+    log.info(f"  {name}")
     resp = get_with_retry(url, timeout=20)
     if not resp:
         return []
@@ -221,7 +356,7 @@ def fetch_website(task: dict) -> list:
         if len(candidates) >= 15:
             break
 
-    log.info(f"  🔍 {name}: {len(candidates)} кандидатов")
+    log.info(f"    {len(candidates)} кандидатов")
     posts = []
 
     with concurrent.futures.ThreadPoolExecutor(max_workers=4) as ex:
@@ -248,10 +383,11 @@ def fetch_website(task: dict) -> list:
             except Exception as e:
                 log.warning(f"  Article error: {e}")
 
-    log.info(f"  ✅ {name}: {len(posts)} статей")
+    log.info(f"    {len(posts)} статей собрано")
     return posts
 
-# ── Database ───────────────────────────────────────────────────────────────────
+
+# ── Database ──────────────────────────────────────────────────────────────────
 def get_db():
     import psycopg2
     url = os.getenv("DATABASE_URL", "").replace("postgresql://", "postgres://")
@@ -261,7 +397,8 @@ def get_db():
     conn.autocommit = True
     return conn
 
-def save_news(conn, items: list) -> int:
+
+def save_news(conn, items):
     import psycopg2
     if not items:
         return 0
@@ -298,7 +435,7 @@ def save_news(conn, items: list) -> int:
                     cur.close()
             except Exception:
                 pass
-            raise  # propagate to main() so it reconnects
+            raise
         except Exception as e:
             log.warning(f"DB insert error: {e}")
             try:
@@ -308,11 +445,14 @@ def save_news(conn, items: list) -> int:
                 pass
     return saved
 
-# ── Main loop ──────────────────────────────────────────────────────────────────
-def run_once(sources: dict, conn) -> int:
-    all_items = []
 
-    # Websites
+# ── Main pipeline ─────────────────────────────────────────────────────────────
+def run_once(sources):
+    log.info("=" * 50)
+    log.info("Сбор новостей...")
+
+    # 1. Scrape all sources
+    all_items = []
     with concurrent.futures.ThreadPoolExecutor(max_workers=3) as ex:
         futures = [ex.submit(fetch_website, task) for task in sources.get("websites", [])]
         for f in concurrent.futures.as_completed(futures):
@@ -321,48 +461,67 @@ def run_once(sources: dict, conn) -> int:
             except Exception as e:
                 log.warning(f"Web error: {e}")
 
-    log.info(f"📥 Собрано: {len(all_items)} новостей до фильтрации")
+    log.info(f"Собрано: {len(all_items)} новостей")
+    if not all_items:
+        return 0
 
-    # AI filtering — send in batches of 20
-    if all_items:
-        filtered = []
-        batch_size = 20
-        for i in range(0, len(all_items), batch_size):
-            batch = all_items[i:i + batch_size]
-            filtered.extend(ai_filter(batch))
-        all_items = filtered
+    # 2. AI filter + rank
+    log.info("AI фильтрация...")
+    filtered = []
+    batch_size = 20
+    for i in range(0, len(all_items), batch_size):
+        batch = all_items[i:i + batch_size]
+        filtered.extend(ai_filter_and_rank(batch))
 
-    log.info(f"✅ После AI-фильтра: {len(all_items)} новостей")
-    # Connect fresh right before saving to avoid idle connection timeout
+    if not filtered:
+        log.info("Ни одна новость не прошла фильтр. Пропускаем.")
+        return 0
+
+    # 3. Deduplicate similar topics
+    log.info("Дедупликация...")
+    deduped = ai_dedup(filtered)
+
+    # 4. AI rewrite each
+    log.info(f"Рерайт {len(deduped)} новостей...")
+    rewritten = []
+    for item in deduped:
+        rewritten.append(ai_rewrite(item))
+        time.sleep(2)  # Rate limit
+
+    # 6. Save to DB
     conn = get_db()
-    log.info("✅ БД подключена (свежее соединение)")
-    saved = save_news(conn, all_items)
+    log.info("БД подключена")
+    saved = save_news(conn, rewritten)
     try:
         conn.close()
     except Exception:
         pass
-    log.info(f"💾 Новых в БД: {saved}")
+
+    log.info(f"Сохранено: {saved} новых")
+    log.info("=" * 50)
     return saved
+
 
 def main():
     INTERVAL = int(os.getenv("SCRAPER_INTERVAL_MIN", "30")) * 60
-    log.info(f"🚀 ЭлитФинанс News Scraper | интервал: {INTERVAL//60} мин")
+    log.info(f"ЭлитФинанс News Scraper v2 | интервал: {INTERVAL // 60} мин | порог: {MIN_SCORE}/10")
 
     with open(BASE_DIR / "sources.json", encoding="utf-8") as f:
         sources = json.load(f)
 
     while True:
         try:
-            run_once(sources, None)
+            run_once(sources)
         except Exception as e:
-            if "psycopg2" in type(e).__module__:
-                log.error(f"❌ БД недоступна: {e}. Retry в 60 сек.")
+            if "psycopg2" in str(type(e)):
+                log.error(f"БД недоступна: {e}. Retry через 60 сек.")
                 time.sleep(60)
                 continue
-            log.error(f"❌ Ошибка: {e}", exc_info=True)
+            log.error(f"Ошибка: {e}", exc_info=True)
 
-        log.info(f"⏳ Следующий запуск через {INTERVAL//60} мин")
+        log.info(f"Следующий запуск через {INTERVAL // 60} мин")
         time.sleep(INTERVAL)
+
 
 if __name__ == "__main__":
     main()
