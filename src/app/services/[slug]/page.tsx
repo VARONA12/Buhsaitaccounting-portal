@@ -3,8 +3,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { SERVICES } from "@/lib/services-data";
 import { HANDBOOK_TERMS } from "@/lib/handbook-data";
-import { ExpertVerification } from "@/components/ExpertVerification";
 import { Logo } from "@/components/Logo";
+import { ContactButtonFull } from "@/components/ContactButton";
 import {
   ChevronRight,
   ArrowLeft,
@@ -261,13 +261,7 @@ export default async function ServiceDetailPage({ params }: Props) {
                 <p className="text-sm text-white leading-relaxed font-medium">
                   Бесплатный расчет стоимости проекта в течение 2-х часов.
                 </p>
-                <Link
-                  href="/#contact"
-                  className="flex items-center justify-center gap-3 w-full py-4 bg-primary text-white font-black uppercase text-[10px] tracking-[0.3em] rounded-2xl hover:bg-white transition-all group shadow-xl"
-                >
-                  КОНСУЛЬТАЦИЯ
-                  <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
-                </Link>
+                <ContactButtonFull label="КОНСУЛЬТАЦИЯ" />
               </div>
             </aside>
           </div>

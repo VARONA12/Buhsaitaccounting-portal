@@ -182,9 +182,6 @@ export default async function FaqDetailPage({ params }: Props) {
             </div>
           </article>
 
-          {/* Expert Verification */}
-          <ExpertVerification expertName="Эксперт ЭлитФинанс" date="Март 2026" />
-
           {/* Related items grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mt-24">
             {/* Related terms */}
