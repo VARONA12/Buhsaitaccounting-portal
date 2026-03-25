@@ -66,25 +66,27 @@ export function AeoNav() {
             exit={{ height: 0, opacity: 0 }}
             className="lg:hidden border-t border-white/12 bg-neutral-900/95 backdrop-blur-3xl overflow-hidden"
           >
-            <div className="p-10 space-y-10">
+            <div className="px-6 py-6 space-y-1">
               {menuItems.map((item) => (
                 <Link
                   key={item.label}
                   href={item.href}
-                  className="flex items-center gap-4 text-3xl font-black uppercase tracking-[0.4em] text-white hover:text-white transition-all"
+                  className="flex items-center gap-3 px-4 py-3.5 rounded-2xl text-[13px] font-bold uppercase tracking-[0.2em] text-white hover:bg-white/5 transition-all"
                   onClick={() => setIsMenuOpen(false)}
                 >
-                  <div className="w-2 h-2 rounded-full bg-primary" />
+                  <div className="w-1.5 h-1.5 rounded-full bg-primary" />
                   {item.label}
                 </Link>
               ))}
-              
-              <button 
-                onClick={() => { setIsMenuOpen(false); (window as any).toggleContactForm?.(); }}
-                className="w-full py-6 rounded-3xl bg-primary text-white font-black uppercase tracking-[0.5em] text-sm shadow-2xl hover:bg-white transition-all"
-              >
-                ОСТАВИТЬ ЗАЯВКУ
-              </button>
+
+              <div className="pt-4 mt-2 border-t border-white/10">
+                <button
+                  onClick={() => { setIsMenuOpen(false); (window as any).toggleContactForm?.(); }}
+                  className="w-full py-4 rounded-2xl bg-white text-neutral-900 font-black uppercase tracking-[0.3em] text-[11px] shadow-xl hover:bg-neutral-200 transition-all"
+                >
+                  ОСТАВИТЬ ЗАЯВКУ
+                </button>
+              </div>
             </div>
           </motion.div>
         )}
