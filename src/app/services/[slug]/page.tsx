@@ -223,7 +223,6 @@ export default async function ServiceDetailPage({ params }: Props) {
                 </ul>
               </section>
 
-              <ExpertVerification expertName="ЭлитФинанс" date="Март 2026" />
             </div>
 
             {/* Sidebar */}
@@ -365,36 +364,6 @@ export default async function ServiceDetailPage({ params }: Props) {
             </section>
           )}
 
-          {/* Other services */}
-          <section>
-            <h2 className="text-[11px] font-black uppercase tracking-[0.4em] text-white mb-10">
-              ДРУГИЕ УСЛУГИ
-            </h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {otherServices.map((s) => (
-                <Link
-                  key={s.slug}
-                  href={`/services/${s.slug}`}
-                  className="group p-8 rounded-[40px] border border-white/12 bg-neutral-900 hover:bg-neutral-900 hover:border-primary/40 transition-all flex flex-col gap-6 shadow-sm h-full"
-                >
-                  <div>
-                    <h3 className="text-lg font-black text-white group-hover:text-white transition-colors mb-2 uppercase tracking-tight">
-                      {s.title}
-                    </h3>
-                    <p className="text-xs text-white leading-relaxed line-clamp-2 font-medium">
-                      {s.subtitle}
-                    </p>
-                  </div>
-                  <div className="flex items-center justify-between mt-auto pt-6 border-t border-white/12">
-                    <span className="text-base font-black text-white uppercase tracking-tight">{s.price}</span>
-                    <span className="flex items-center gap-2 text-[10px] font-bold text-white uppercase tracking-widest group-hover:text-white transition-colors">
-                      ПОДРОБНЕЕ <ArrowRight size={14} />
-                    </span>
-                  </div>
-                </Link>
-              ))}
-            </div>
-          </section>
         </div>
       </main>
 

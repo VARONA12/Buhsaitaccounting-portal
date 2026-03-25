@@ -13,7 +13,6 @@ export function Footer() {
         </div>
         <nav className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
           {[
-            { label: "КЕЙСЫ", href: "/cases" },
             { label: "ПОЗВОНИТЬ", href: "tel:+79028371370" },
             { label: "СООБЩЕСТВО В ВК", href: "https://vk.com/elitfinans" },
             { label: "НАПИСАТЬ НА ПОЧТУ", href: "mailto:info@elitfinans.online" }
