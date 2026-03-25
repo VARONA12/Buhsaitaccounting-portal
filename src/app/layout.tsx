@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { AeoModals } from "@/components/AeoModals";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://elitfinans.online"),
@@ -138,6 +139,7 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
         />
+        <AeoModals />
         {children}
       </body>
     </html>
