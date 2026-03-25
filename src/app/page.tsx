@@ -339,7 +339,7 @@ export default function LandingPage() {
             <div className="space-y-16">
                <div className="space-y-8">
                   <h3 className="text-4xl md:text-5xl lg:text-7xl font-black tracking-tighter leading-[1.05] uppercase text-white">
-                     ПОЧЕМУ 20+ КОМПАНИЙ <br className="hidden lg:block"/> ДОВЕРЯЮТ ЭЛИТФИНАНС СВОЙ БИЗНЕС?
+                     ПОЧЕМУ КОМПАНИИ <br className="hidden lg:block"/> ДОВЕРЯЮТ ЭЛИТФИНАНС СВОЙ БИЗНЕС
                   </h3>
                   <p className="text-white/70 text-lg font-medium max-w-3xl leading-relaxed ">
                      Мы берем на себя 100% ответственности за ошибки. Если возник штраф по нашей вине — мы платим его сами. Никаких «звёздочек» в договоре.
@@ -349,7 +349,7 @@ export default function LandingPage() {
                <div className="grid grid-cols-2 lg:grid-cols-4 gap-12 md:gap-20">
                   {[
                      { val: "15 ЛЕТ", label: "ЭКСПЕРТИЗЫ" },
-                     { val: "20+", label: "ПАРТНЕРОВ" },
+                     { val: "450М+", label: "ОБОРОТ КЛИЕНТОВ" },
                      { val: "0", label: "БЛОКИРОВОК" },
                      { val: "100%", label: "ФИНАНСОВАЯ БЕЗОПАСНОСТЬ" }
                   ].map((s, i) => (
