@@ -255,6 +255,8 @@ def fetch_website(task: dict) -> list:
 def get_db():
     import psycopg2
     url = os.getenv("DATABASE_URL", "").replace("postgresql://", "postgres://")
+    if "sslmode" not in url:
+        url += "?sslmode=disable"
     conn = psycopg2.connect(url)
     conn.autocommit = True
     return conn
