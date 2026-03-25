@@ -256,7 +256,7 @@ def get_db():
     import psycopg2
     url = os.getenv("DATABASE_URL", "").replace("postgresql://", "postgres://")
     if "sslmode" not in url:
-        url += "?sslmode=disable"
+        url += "?sslmode=require"
     conn = psycopg2.connect(url)
     conn.autocommit = True
     return conn
@@ -266,9 +266,10 @@ def save_news(conn, items: list) -> int:
     if not items:
         return 0
     saved = 0
-    cur = conn.cursor()
     for item in items:
+        cur = None
         try:
+            cur = conn.cursor()
             cur.execute(
                 """INSERT INTO "NewsItem"
                    (id, title, content, excerpt, source, "sourceType", "sourceUrl",
@@ -289,9 +290,22 @@ def save_news(conn, items: list) -> int:
             )
             if cur.rowcount > 0:
                 saved += 1
+            cur.close()
+        except psycopg2.OperationalError as e:
+            log.warning(f"DB connection lost: {e}")
+            try:
+                if cur:
+                    cur.close()
+            except Exception:
+                pass
+            raise  # propagate to main() so it reconnects
         except Exception as e:
             log.warning(f"DB insert error: {e}")
-    cur.close()
+            try:
+                if cur:
+                    cur.close()
+            except Exception:
+                pass
     return saved
 
 # ── Main loop ──────────────────────────────────────────────────────────────────
@@ -319,7 +333,14 @@ def run_once(sources: dict, conn) -> int:
         all_items = filtered
 
     log.info(f"✅ После AI-фильтра: {len(all_items)} новостей")
+    # Connect fresh right before saving to avoid idle connection timeout
+    conn = get_db()
+    log.info("✅ БД подключена (свежее соединение)")
     saved = save_news(conn, all_items)
+    try:
+        conn.close()
+    except Exception:
+        pass
     log.info(f"💾 Новых в БД: {saved}")
     return saved
 
@@ -330,17 +351,12 @@ def main():
     with open(BASE_DIR / "sources.json", encoding="utf-8") as f:
         sources = json.load(f)
 
-    conn = None
     while True:
         try:
-            if conn is None or getattr(conn, "closed", True):
-                conn = get_db()
-                log.info("✅ БД подключена")
-            run_once(sources, conn)
+            run_once(sources, None)
         except Exception as e:
             if "psycopg2" in type(e).__module__:
                 log.error(f"❌ БД недоступна: {e}. Retry в 60 сек.")
-                conn = None
                 time.sleep(60)
                 continue
             log.error(f"❌ Ошибка: {e}", exc_info=True)
