@@ -1,4 +1,4 @@
-export const dynamic = "force-dynamic";
+export const revalidate = 300; // ISR: обновлять кеш каждые 5 минут
 
 import type { Metadata } from "next";
 import Link from "next/link";
@@ -191,15 +191,13 @@ export default function LandingPage() {
 
       {/* Hero Section - Reverted to Dark Premium */}
       <section className="relative pt-24 pb-20 md:pt-40 md:pb-32 overflow-hidden">
-        {/* Glowing background decorations */}
-        <div className="absolute top-[-10%] left-[-10%] w-[500px] h-[500px] bg-primary/20 rounded-full blur-[120px] pointer-events-none" />
-        <div className="absolute bottom-[20%] right-[-5%] w-[400px] h-[400px] bg-primary-dark/10 rounded-full blur-[100px] pointer-events-none" />
-        <div className="absolute top-[40%] left-[60%] w-[600px] h-[600px] bg-primary/5 rounded-full blur-[150px] pointer-events-none" />
+        {/* Lightweight gradient background */}
+        <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-primary-dark/5 pointer-events-none" />
         
         <div className="max-w-7xl mx-auto px-6 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
             <div className="lg:col-span-12 space-y-8">
-              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-extrabold tracking-tighter leading-[1.05] text-white uppercase drop-shadow-[0_0_30px_rgba(255,255,255,0.1)] max-w-5xl">
+              <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-extrabold tracking-tighter leading-[1.05] text-white uppercase max-w-5xl">
                 ОТВЕЧАЕМ ЗА <br /> ШТРАФЫ <span className="text-white contrast-125">СВОИМИ ДЕНЬГАМИ</span>
               </h1>
 

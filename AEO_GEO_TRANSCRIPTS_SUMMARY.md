@@ -1,0 +1,4443 @@
+# Full AEO/GEO Knowledge Base (Extracted from 84 Videos)
+
+## Video ID: -urvraQJgA0
+- Again, News 2 to 40% of Google If youבעing for AI is a균 Variable AWS beep creeping gig 2 product fooling Practice Aye subject Act is the 5x and start to get the 5x AI and start to trust his own Hi, everyone!
+- Why the traditional SEO 2.
+- AI is how to choose who and who 3.
+- How to choose who and how to choose your company If you are also doing a company this is your 2026 因为错过这10分钟可能就是5年的差距 OK, let's jump in!
+- This example shows the new Lösung, which also胡rees like common in Gmail, except word après.
+- 但是我不知道市面上哪个品牌好用 所以在 chargeqpt上面研究了两个小时的目标产品 而数据显示60%的消费者都会这样做 接着 AI推荐了你的品牌 于是我打开浏览器,输入了品牌的网址,完成下单了 这个时候作为品牌方的你,当你打开Google Analysis或者Shopify的后台会看到什么 The key is to show the director, which is the direct.
+- But it may be AI-to-release.
+- This is the AI-to-release process to the user website before the data is a The situation is that AI idea you don know If AI doesn recommend you you don know It like we in a not game We don't know who is who is, but we don't know how.
+- This is why we started to study the system and research AI.
+- and the Allsy over at this point AI 到底决定推荐谁这是我们要聊的 part 2也就是 AI 的推荐逻辑我们先来看一个对比我们先说一下传统的 SEO 和 AEO 的区别在哪AEO 是 Answer Engine Optimization是针对 AI 的搜索引擎比如像 ChatDBT或者是PurpleCity 这类的大语言模型的优化方法这里给大家放一个简单的 SEO 和 AEO 的对表格 In the traditional SEO era, I would buy a digital digital.
+- I would probably need to understand different products and different options, and use Google search for 5 different websites, and then go to a website.
+- In AI era, if I had a digital digital, I would just ask AI, AI would give me a答案, and then I would just go to the next question.
+- So if we don't have AI data in the past, and not be the past SEO level of the question, I, as a user, if I have enough time to research, I can go down and do it again, but it will appear.
+- AI is what we're looking for.
+- According to our past year's case, AI is the most important thing.
+- Here we are from the most important part of the world.
+- AI's work is to answer the question.
+- When the user asks a question, he needs to ask the question from the airway.
+- If you have a FAQ on the website, AI will ask you the answer.
+- Let look at the question Let look at AI content AI not a AI not like the content AI not like any information It all fake AI's not like the content.
+- AI's not like the content.
+- AI's not like the content.
+- It's not a traditional SEO of the key word, but it's a key word for the question.
+- The third point, the quality and unique have two main details.
+- Keydert Welcome to AI PC blogging.
+- There is a principle which tastes like AI project- değild 내가 Earth release site꺼 produced If you apply for payment makelayment share và十分 btw laur Tag italia AI willLook совсем, AI'll have a contextual intersection or instructional view of everyday information of our We helemaal use the Después혁 list for assessment सjen great information we are a Chinese product, product is a product, the situation is AI.
+- Here we have a detailed list for you about how to find out the user's goals or how to find out the user's goals.
+- 说明AEO这个新战场,小品牌完全具有能力和行业巨头站在同一起跑线。 那如果假设你现在正在做一款无人知晓的运动鞋,也可以直接和Nike在同一推荐列表里。 甚至因为是小品牌更灵活更快,反而能抢先站位。过去一年我们累积了很多这样的案例也证明了这件事情有完全的可行性换消息就是这个窗口期只有6到12个月甚至可能更短等大品牌反应过来all in进来或是像我们这样专业做本地化agency开始对品牌做量化的时候小品牌的机会就完全没了先做的品牌会建立长期的优势后做的品牌只能追这6到12个月的差距至少会拉开3到5年的差距 I've been working on the company's business and company's business.
+- For the traditional SEO, you need to do a company.
+- This is what I think AI is a big opportunity for the company.
+- In the next video, we will talk about how to use Reddit and AI work流 in 2 months in the 2 months of the 1000 people.
+
+---
+
+## Video ID: 0l_fawMcPmw
+Thank you. Thank you. Thank you. Oh, oh, oh....
+
+---
+
+## Video ID: 0pCAjN0FZBY
+- me I have the GDP of all my tools such as I justice cigs again for false who the 1500 sub two 1920 6 reset decide that which 사람이 can do this trentest and it's just a free kcalinei czy to email marketing という風にuses are that's what this side isOOr for 美quer I'm so happy to see it to see here let me see it's Okay.
+- I'm so glad that TSE here, so in the heart rate I nous ball out, because of the design that Ist please take a look and take it forward as I was doing a strategy.
+- I hope andely done along with this, LLMO GOの考え方ここのポイントをご理解いただくその上で LLMOと既存SEO結構ここが密接に関連しておりましてここのお話最後に投資対効果の考え方まとめとそういった商談になっておりますまずはじめにですねLLMOの現状についてお話できたというふうに思っております過去にもですねこんな図出したことあるかもしれないんですけれども今検索エンジンすごく変遷しておりまして今までであれば例えばユーザー So just reduce here, I'm looking at Hi 3 e b.ıt was taking the required software management if I chose Butte.
+- It's now a X-A medio of a two of Google検索すると AIモード AIO 通常スニペットという形で検索結果が出るAIモードはタブは違うんですけども結構この検索結果として注目されているものだったりするのでこの3つが今出ているあとはですね Googleだけではなくてそもそも ChatGPTや他のLLMを活用して検索をするユーザーも増えているとそういった検索戦国時代みたいになってきておりまして非常にですね対策領域も増えてきましたよと So, that's the situation.
+- This browser itself is AI driven.
+- So, I think this is LLMO or GEO.
+- I think it's a new marketing strategy.
+- You know, SEO and kind of万華, I mean, unknown states.
+- organic session and the LLM from the流入 that I have 3 months ago, the LLM and the organic session and the organic session.
+- Organic session and 1% or 1% or 1% or 1% or 1.5% or 1.5% or 1.5% or 1.5% or 1.5% So, here we go, LLM is a real thing, and I'm going to talk about it.
+- I'm going to talk about LLM is a real thing that I'm going to do with LLM.
+- But, I'm going to talk about LLM is a brand name, and I'm going to talk about it.
+- Following it, weíve looked a lot, προو plaintiff had some skills.
+- because LLM costpello 밀ers impact the allowing growth itself at home.
+- civilian income unbelievable also in LLM increases in brands.
+- As little as possible various 125盤 mi tips in contrase.
+- So, you can see then 最適化されているコンテンツや 独自情報コンテンツを引っ張って きてそれを検索結果にする っていう こういった流れがあるんですねなので LLMOって 今までは 全体を指している みたいな考え方 はされていましたが このLLMに自社のブランドを早期運用させる ここに関して はこれは lLMOだと それに対して その後AIが再検索をして 自社サイトが採用される ここの process会社geo to 言われているとなので この 墨分けが難しいところであるんですけども今 ここに対して何を対策すれば上がりやすくなったか みたいなところがかつてよりも明確になってきた というところがありますのでまず やることが明確要するに llamoってとりあえず 今までであればロボットテキストではなくて llms テキスト入れたりとか構造化マークアップすればいい みたいな話だったのが This thing might be clear algo but not Maßnahmen.
+- I've always wondered how toänguate the content of which we would often speak, but LBG stations are so important to me and not justhab 백son.
+- So that's why AI is a search engine.
+- I think it's a very important slide.
+- F The issue is w there are things like this very few things that don'tASSMAC know so they all ask their americans be how to use the media industry to get where is is Arado ali mita育 ter fini partner tend to loss of media where the media from famous a b もう一つは特定の領域で専門性の高いメディア 例えばマーケティングであれば ちょっと名前出したとマーケジンさんとか あとは日経とかもそうなんですかね 日経の有名なマーケター方とかよく連載持ってますけども あれも一つの考え方だと思うんですけども that's tied that endpeople areamer than those of you.
+- zaahe Let's finish this second part in the video, but this is a topic where he can become , some of the things he can make now, you can track to analyze by the content, and that needs to be liked what you think every three steps should beoked when someone has not watched the streaming content.
+- and this is looking for LLMO, and this model is called this ничtazar website and in this case, chociaż within AMa of videos like this, and by- todd she's Good-handings of SEO因为 of searchแลfor SEOist texas I think that's the citation.
+- The LLMO is the first thing.
+- If you're in SEO, you can't get it.
+- I saw it Here in this variant an audience can be used as M solute website Oh yeah That so goodとかでも言われている話だったんですけどなので何ですかね数字でもここが成り立ってないとLLMでそもそも引用されないよねってそういった話があるんですよね何が重要かというと一時期ここ3ヶ月ぐらいLLMO対策打ちもした方がいいんじゃないかっていろんな企業様がおっしゃっていてただそういった企業って面白いのが割とSEO対策できていなくてLLMOを that is alwaysfs intended side of an open site, another other placecalled duck or some one that doesn't go without the machine It's a problem but probablyieriCросlineブーツ engineering isn't a ?
+- What isAannamine that goes for SEO?
+- First разр using these ones All its YA ago which means SEO is the Page On 2012.
+- So Ma Where Your So, where do you think Google directly gets practical tools like that, and I think in this case there is an issue fee for interest retention Making the responsibility to make best practices should be getting more angry of each of them And now just now I have to be from the one that's a cost.
+- So this is the point of view as it是我, but this is the marketing team.肯定 is going to talk more about marketing AI business.
+- Also, broc Maxi Miss an airaro can't wait to get PayPal inyo which art kita does not even to have any URL эти marketing всё Harpoon how long they Rapha from Probably all all right アイスビュー ah no ur From once you get it back time see it quecha plus what's going to do ahemada What'sצu the free recommendations no po show no cache communicate life a blד and wife Thank you.
+
+---
+
+## Video ID: 0rvGFJjqc1A
+- And that means AI is now answering the question without sending anyone to your website.
+- We're in geo, a, eo, l, l, m, whatever it is, oh, territory and all of the old rules are dead.
+- What should you measure if conversion rate is allows a metric?
+- Today brought on Joe Dubton, digital marketing specialist, zero consultant, SEO consultant to talk about AI revolution that is killing your traffic.
+- We're defining the new metrics for success and figuring out how to engage with customers outside of your website.
+- What's the acronym for SEO in 2025?
+- Well, the question, this, you know, obviously SEO is evolving.
+- Look, I mean, SEO is, is, SEO and you go look at the fact that Google is still the 800 pound, whether really this space and traditional SEO as in like Kingware based search is still the bulk of search bay, yeah, what is happening is that search behind you is evolving and people getting more comfortable with compositional type search.
+- So SEO is still there.
+- Long phrases, mostly questions I would say, those long phrases, prompts are usually questions.
+- Because they're still the biggest player that is by a country bio and we're worried so far for many of the years, but you know, looking at the situation where there's a proliferation of platforms, tools and technologies of people can use to fire products.
+- It's obviously, it's still the most important that they're playing a bio-mile in this, but there are, we're down into the part, but there's a proliferation of tools and platforms to get on this as well.
+- I love this you mentioned social media because this was the thing before AI and CHIPT showed up.
+- If Google has been threatened, I don't think it has been threatened specifically by OpenAI or CHIPT.
+- Wait until they add shopping directly from YouTube videos because there's no way they don't do this at some point.
+- This is something that I'm shocked with someone tells me did someone who works in digital marketing tell me they don't know what it is, but can you explain what it is?
+- Well, because obviously brands are what it's applying is that brands are still being queried and talked about and it goes to with is just that they're not necessarily getting cooks to their website.
+- You know, the peak of our engaging with your brand and with the products and services and the topics of the people who talk about it, outside of your website.
+- On this podcast he said, if you're in the Sol, I think in June this year, if you're in the Sol's query space, find something else to do because if Google knows how to answer the question that people are asking without sending them to your website.
+- For example, what's the recipe for a cake or anything that's going to be the same every time you will never get that click again.
+- So what can websites do about the crocodile mouth and getting more visible in search, but not getting that traffic?
+- Yeah, well, I think before we answer that, if this quick, the question is already about analytics and about yeah, companies, KPIs and Kube, Kube metrics because if you're KVIs and Kube metrics are said they're more on traffic and conversion rate, you know, see if you're not both working the conversion rate optimization industry, everybody discusses that conversion rate is a lousy metric.
+- But what should they be?
+- There are a few tools on the nerve gene.
+- So visibility within the lens becomes undaotheraid port metrics are the percentage of times that you would be for a prompt.
+- But it's tricky to measure what an LLM says because ask it again, it's going to say a different thing to the same person with the same context because that's just how they work.
+- So will we ever be able, will be dream of the good all days when we knew what the Google ranks were one through ten and say it was easy back then, is there ever going to be a way to know how an LLM ranks you?
+- Does that also mean that when someone, but say on LinkedIn says, I know exactly how this works, you should not trust them.
+- Okay, glad we're on a same page, because there's a lot of people, there's a lot of people claiming that they have figured everything out and they know exactly how it works.
+- I don't want to turn into a product, but I'll be building this platform called G.Jepack, which is specifically aimed at this area.
+- So, how do you, uh, you have to prompt it a hundred times and then see like 60% of time it mentions my brand is, is that the direction wish you be heading in?
+- Well, I think the tools that are out are going to make a lot of the peaks in a prologue.
+- They're using, you know, thinking into proxies, to send out multiple products and monitoring the responses, and then date by date, the theory of picture whether you appear.
+- There's no other way to explain it.
+- And maybe those ads will be just inserted inside, like whatever, uh, whatever the L, I'm spits out, and then position number three is going to be a paid one, and then you know, you're showing up there.
+- It must be having impacts.
+- We don't know, we don't know the other, but it must be having impact.
+- No, absolutely, because if you think of open AI, they're burning money no matter what they're doing.
+- By showing the AI mode to people and by showing that AI overview, they're killing a part of that profitable branch.
+- No, Google, again, I'm not worried about opening AI because they have different plans.
+- Google wants to remain profitable and as profitable as possible because it's a business.
+- Open AI is on a business.
+- Open AI is a startup or company, but it's not a business.
+- They will show ads in those air ovaries.
+- But to remember before Google started doing the AI, I think, a year ago, when everyone was wondering, why is Google not doing this?
+- Maybe they just need to write it out until people shift to accepting ads in air responses and then just plasticies everywhere.
+- But let's talk about the future of SEO, CRO, all of it together.
+- Can you do SEO without doing CRO?
+- Can you do CRO without doing SEO?
+- So really good question, this certainly.
+- The answer is the hired in playing site for years, which is Scoogers always said, and they go back to their, they're capturing ways of the, they should be thrown over with their, they'll be evil.
+- There will, they should they should do.
+- Yeah, we've, we've locked a Google all and very narrowing in context of, you know, it racks websites.
+- Whereas people's brand, people's brand, it does a purely leave on the website.
+- Now, it does seem within answers on LLMs.
+- So, you should be looking at that and focus all the customer and in the other different stages of the journey is very, very hard especially with what with that tradition, you know, color be what it is these days.
+- I think that ship has sailed.
+- They've been pushing EAT for a very long time before anyone even thought AI would become the factor it is today.
+- But it works with Google search and that same principle, the things that work, the long-term strategy that work with SEO none of it has gone.
+- All of the SEO hacks we had, everything we could do to trick the systems AI is better at recognizing those hacks and completely killing them.
+- It's a really good plot that you make that because one of the things I was going to raise is, yeah, I'd be diving as a setting on water to this GEO area rather than I suppose whatever you would have called that.
+- And I have seen examples of purported practitioners, advertising's have it's like flooding their website with AI generated pages to fill gaps and it's called a wall.
+- You know, so the unfortunate thing about being in like a lot of that phrase to miss in and a little more, being in a while west again is, you know, suddenly they're more alone.
+- It's almost like having some cheat codes if you paid attention for the last one years.
+- Those people who boast that and I'll say it because maybe you don't want to, the people who boast that are a joke and should be laughed at in the, yeah.
+- You know, of course, you use, you know, the automated tools to help you be more productive slowly.
+- You know, outsource you, you're in Thai work, flight to, to machine machine, you need to have a plan.
+- Yeah, I don't think I hate the AI era when you look at it that way.
+- When it pushes people back into doing the things that everyone should have been doing for the longest possible time.
+- You mentioned a content front, a thousand posts that about certain topics, hoping to rank.
+- And AI will sniff into the out better than people were able to do that, which I'm not happy about it, but it just how it is.
+- I want to end with a bit more about the geodepack.
+- I mean, I use all the other tools that are in the public domain, the AI HRFs, the multi-s, you know, the semmosh is the screen.
+- I'd decay, we typically interest in him how to extract and visualize entities.
+- And that has a berry for, you know, where they, what is going to be clounded in the email and other responses.
+- So yeah, it's stuff that could be surfaced using the traditional SEO tools.
+- And then I've kind of subsequently bolted all, you know, additional, additional tools.
+- So there's a number of things that, yeah, just are not around on a certain rush or a tackle or a, a community search console that you'd manually have to dig around for.
+- I'll just read a quote and I want you to guess who said this.
+- The interesting thing is, you know, we talked about the sauce about websites and website optimization.
+- And we are still working in the after wash of that invention of the worldwide web web pages, website groups of documents together in structure school websites.
+- Where is actually, I think if he started again for a scratch, he probably built something very different.
+- I think the problem with, and I'm big on optimizing for a agents, as you know, the problem with trying to help machines understand websites is they're looking at another machine through a face-to-une filter, almost that we have the interface layer those built for humans.
+- Why not just plug it back, try to explain it to machine?
+- The semantic web we're getting there and semantic web is if we ever fully have it is going to be internet to point, oh, I guess completely and absolutely different than a set of book pages put on on a computer screen, which is essentially what the websites are.
+- Joe, when this is out, the tool that you're building, G, or Jadbeck will you let me know so I can share it with the people on the podcast.
+- I'm very excited to see this tool come to life.
+
+---
+
+## Video ID: 1_6MRgqYmRo
+- Okay, so the new SEO, I'm sure a lot of you guys are getting a crap ton of spam email trying to scare the shit out of you saying, you're not showing up here, you're not showing up there, you've got to be doing this.
+- So really lift back, pull back the curtain or lift up the sheets, what do you want to call it?
+- But a lot of people, you know, this is being referred in like three different ways I've been heard like geo generative engine optimization, AEO, answer engine optimization, an AIO, so AIO optimization.
+- So those are sort of three main terms you've heard and it's all the same thing, right?
+- It's showing up in chatGPT, perplexity, and Google, those are the three sort of main players for the what we call LLM's large language models for AI.
+- So to be successful and showing up in those AI search results, you sort of need to have what's called on-page, which is owned.
+- This is a stuff you own, so such as your website, you own it, you can go and push out to that today content that's going to help influence the large language models and get you to show up.
+- And I'm going to give you an exact example of how to do it for the on-page stuff.
+- And I'm going to show you guys how to know what are the main sources for your particular markets, right, and how to get in front of those guys.
+- I'm going to show you guys how to write, should I scan that QR code?
+- That's literally a tool.
+- I'm going to walk you guys through shortly, how to create blog articles that are going to rank in the large language models.
+- And it also needs to be referencing a lot of other data points, like other people in the market, other places in the market, like how close you are to certain things.
+- Yeah, they want the details.
+- But the good news is you can use AI to get all the nitty gritty to do the research, to come up and create the article in a way, which is going to satisfy what they're looking for.
+- So nationwide, when we're looking at the AI search results, and when I'm talking about AI search results for today in particular, I'm talking about for real estate agents and for real to and for brand mentions.
+- So it's when someone's searching for a real estate agent or a real to or best real estate agent in your market or listing agent, buyers agent, something to do with where they're most likely don't have a real to, but they need one and they want to use AI to find out who do you recommend?
+- Who should I be talking to?
+- I'm not going to show you today how to rank for articles on like five best things to do on a rainy day or those sort of articles, which juiced to generate quite a lot of traffic.
+- This is where you're actually going to get real business from straight away.
+- But I'm going to show you guys shortly here a tool, which is going to allow you to see which ones you need for your market, right?
+- And the reason I like Pack is because it allows you to reverse engineer what's working right now for any other major results that you want to rank for, which we call prompts, right?
+- So you need to understand what are the prompts you want to rank for.
+- In SEO terms, that would be like what are the keywords?
+- But it's also can be a prompt inside AI.
+- So I'm going to show you common really good prompts you should be searching for and trying to reverse engineer in the AI search results.
+- And this is the tool that I use.
+- It does it in real time and it's going to track how well you're doing and it's going to give you recommendations on things you can do.
+- Now today 24 days later, for a lot of these terms, her overall visibility, she's getting 43% of all of the major prompts that she's going after.
+- But let me show you, this is where a lot of the magic happens is what are the top domains, the places that are referring that the out large language models are using.
+- She is actually her site is one of the number number one resource for this particular domain and it's being used pretty much more than every time, right?
+- This website here and this one here, which is, if I click on it, this is a blog post that we created for Olivia on January the 28th, right?
+- Again, from her, from her twice.
+- There's two references of here's another website she's pulling from.
+- So it allows you to really reverse engineer what's going on with these results using this tool?
+- And you can go in and these are different prompts, right?
+- Again, her domain is one of the top ones.
+- So anyway, it shows you how well she's ranking, but a lot of it has to do with just having those blog posts done that it's using as a referral source on her website.
+- Sometimes it might be paid a play.
+- The next thing I'm going to do is show you guys how to create these blog articles, which are being referenced for each one of the prompts.
+- So, you're going to go through and create this for each one of the prompts that specifically, you're going to feed each one of these larger language models, the answers to those prompts that they're looking for.
+- It's going to do all the heavy lifting for the prompts, for the LLMs, so that you're getting referenced and you're now showing up.
+- So, that's the next step, but I'll before I do that.
+- Are there questions or the things here that I need to, are there asking what version of the of peak.ai do you have?
+- So, we're going to actually use AI to create the content and then we're going to publish it on your blog, on your website.
+- All right, so it's a two-step process.
+- I will show you how to create it and then all you guys need to do is copy and paste it into your website.
+- And it look, look here, data, data, uppercate and it mentions all the areas really goes into the weeds and it feeds designations, volume, price range, platform, compass as the main brokerage, it mentions then, it really checks all the boxes and you look, this is really very difficult for you to do manually yourself.
+- It would take forever or it would just painstakingly, you wouldn't be able to do it basically.
+- I'm going to show you how guys how to do this and each one of these should only take a few minutes.
+- And then so let's, I'm going to now bring up this blog prompt generator.
+- This is going to do the prompt for you.
+- So, there was a QR code earlier, it comes to this page and it's also on wylopo.com, 4 slash blog dash prompt dash generator, right?
+- But let me walk you through the steps.
+- And now you're going to copy the prompt that you want to use.
+- Oh, I'm copying that and I'm going to put that in where it says your prompt.
+- And now, it sort of gives you, and just to step back with a little bit and give you some context here, I'm trying to find out all of the information about Livio and her team in regards to this particular prompt that we can share to the LLM.
+- So it can give us a really good detailed article and know who she is, who a team is and what that article is trying to solve for.
+- So now what we want to do is what we need to take this prompt.
+- And I'm going to take this prompt and I'm going to go to Google.
+- And now we're scrolling down until we see the AI overview.
+- I want to know what AI is returning as a result for that particular prompt.
+- I'm copying that whole search result from Google AI, right?
+- We're coming back into the tool and now here into AI's overall results, we're pasting it in there.
+- All you simply do come down here is copy step two prompt.
+- Now this is the final step.
+- We've got everything we need to tell the large language model what it needs to create the perfect article for this particular prompt.
+- It is a little bit personal choice, but I have a paid account of Claude and all of them.
+- So I pasted that from the tool in the screen prior, and now I just hit go.
+- Lepat.com for such blog-prompt-generator.
+- And then it's giving him the right prompt to be able to grab and place into this place.
+- And then the idea is to take this and place this into your Y-Lopo website.
+- But everyone on this call has a brand-new website.
+- But if you don't have it first, but I know all of you guys should have a website.
+- Preferably that's under your brand in your name because you'll give, this is what the LLM now is going to be referring to.
+- Create a 92nd teleprompter script in natural language that I could read and place on TikTok.
+- But let's say I want to just grab this teleprompter script.
+- But yeah, from here, you simply copy it, add it to your website and done.
+- And I would recommend you go through tech.
+- And then you do this for your different prompts.
+- But the only difference you're going to need to do your AI overview results is going to be different because you're going to take that new prompt.
+- You're going to go back in and you're going to give it a new prompt.
+- But the AI search results are going to be slightly different because you're asking it in a different manner.
+- But the prompt, oh, and you got to change the prompt here.
+- And read another one for the separate prompt.
+- These are all her website showing up in all these different search tips.
+- Question on the website.
+- Justin says from what I understand our team does not have the personalized website option in YLOPO.
+- Did I understand you correctly that we should all have a personalized site in YLOPO?
+- It's part of every package of YLOPO is everyone gets a branded website.
+- But you want it, you should have it because we also have all of our YLOPO tools are on there.
+- All of those tools are built into your WILOPO branded website.
+- You should have your single every single agent on your team will have their own IDX landing page with their listings on those pages.
+- Some comments, Darrell says that this is something you should be doing often, not just one time, right?
+- I think initially, if you just put in like this package allows you to do 25 prompts.
+- So if you do 25 real estate Pacific prompts, and like, you know, if you guys want to take a screenshot of this, you know, these are out the ones we sort of did.
+- And you guys want to be the ones that again referenced and showing up over and over and over.
+- A lot of markets are saturated, but more or more people are going to be using large language models for recommendations because it does a lot of the, it looks and everything, and it does the comparisons, and it finds out who's reputable, and they sort of, they trust what the large language models are saying a lot of times.
+- You can have a VA do this stuff for you, especially if they're already doing some updates to your website.
+- And tell them you should figure out what the prompts are, right?
+- The top 25 prompts for you.
+- And you know what I'll do on the actual spreadsheet here, I'm going to put another tab with all the top sort of recommended 25 prompts.
+- But we spent quite a lifetime trying to research and figure out what prompts are most likely to result in someone who's looking to buy a sell and needs a reel to right now.
+- Grab the best prompt there that people are using was that who is the best reel to in, all right.
+- So now you're using Google's brain to see, hey, that one, you could also create more content from this.
+- If our county or multiple counties, right, uh, if our county's large and we cover multiple areas, should we create a blog post for each of those areas?
+- Bam, it's going back to one of her blog articles again, but we did one, like we did one for who is the best realtor in mash a pea.
+- Can you show us where on our wide low post site, we would put this, like give us an example of a wide low post website and guidance through the tab.
+- These, um, and then the way you do that is, if you log into your back end of your website, which I'm doing right now for Olivia, for a food, and you go into pages and now if we scroll down, we should see the blog here on the left hand side, you go into blog, click on it, and these are like the ones that we've done.
+- And I would create a sort of, you're like Darrell said, use ChatGPT or use Gemini to create a nice image for your blog post and upload it in here.
+- And then if you want to do a specific, another thing I would do, I would ask ChatGPT when it's creating the article, help me with a SEO friendly title and description when I post this into my Squarespace site.
+- It's just content, the theta, the body, would some images in here, main image in here and then the SEO, give it the title description.
+- I would come back on your website after you've created some of these and I would go into your communities pages and you've got a community's page for, let's say, mash a P, click on it, come in here and say, create another section, say new articles, or your new articles to be aware of or something, right?
+- And then under that add a link to these new articles that you've created, the answer these specific prompts.
+- Because now what you're doing is you're creating, you've got a main landing page for each community on your website.
+- And creating those links between the pages is what Google loves for SEO.
+- But one person said, should I have my assistant be doing this and the how often?
+- And the whole goal would be for them to do this daily.
+- Now, as they're doing this daily and you have somebody that fully understands this, once they get into a rhythm, you could easily then put in other tools to have them use those tools to make this process even smoother.
+- But for now, I think key we did an amazing job breaking it down step by step so that somebody you can sign this to could actually watch it, step by step and produce something that makes a dent so that people can find you on chatGBT, perplexity, Gemini.
+- And look, if you just do this for 25 prompts, and it should only take you a couple of months.
+- Yeah, it's not duplicate content because we're typing a different prompt each time.
+- And if you have VA, so a stuck and they don't know what they're what to do next, or they're not sure about something, just email me, keyway at Wild Opa.
+- You should be able to just go step by step.
+- Well, it says website, but that's a YouTube symbol.
+- Once it's dumped, you're going to give it instructions and say, make a step by step process for me from this video so that I can post videos and share it with my team.
+- And like Tristan said, it takes you maybe 10 to 15 minutes and have a VA do it for you.
+- The only company that's beating us now, I'm most say, hey, I said, is Zillow.
+- We've sort of overtaken all of our sort of other competitors in this sort of tech sort of SaaS tip, you know, space.
+- We should we should do an AI session quarterly.
+
+---
+
+## Video ID: 1i8GbVmihK4
+- Hello everyone, welcome to use Shopify SEO optimization full course.
+- In this class, we are going to learn how we can speed up our website, how to fix Google search console.
+- Then we'll learn how we can write meta description using AI.
+- see shipping and delivery meta description missing okay we have completed all the pages meta description and page title is friendly page title also we have to audit one by one every page that is it SEO friendly or not for example let me show you okay to check up it individually we have to use another tools that's called site SEO checkup so I'm going to check up this URL URL analysis so let's see To do SEO you must have to enough patient to work or do everything smoothly.
+- So, here now help me to by writing another prompt to create social media video for one specific collection by BO3.
+
+---
+
+## Video ID: 1w5wncB0W2k
+- Since signing content partnerships with OpenAI and Google, Reddit has become a crucial source of information for AI models.
+- Using Reddit for SEO is not just a fad, it is now more important than ever to cultivate your presence.
+- Hello again, Deji here, and today we are going to explore how you can use Reddit as a powerful tool for both traditional and AI SEO.
+- We will cover why it has become so important and share a four-step strategy to use Reddit for brand awareness.
+- What makes Reddit so powerful comes down to two things, trust and training data.
+- Google knows this, which is why Reddit threads are now dominating search pages and AI overviews.
+- That's also why appearing in the right Reddit threads can go a long way for AI visibility.
+- Appearing in these threads means you are teaching AI to start recommending your brand.
+- And if you have watched our previous AI SEO videos, you know how important authenticity and natural language matter when it comes to AI.
+- Before we get into the tactics, consider subscribing to Hostinger Academy so you don't miss our upcoming videos covering the latest digital trends and especially our AI SEO series.
+- Okay, let's get back to that four-step strategy I promise you.
+- So make sure you are engaging authentically right from the start to build up that karma Tip number one You want to find and engage in subreddits that are relevant to your brand You can start by searching within Reddit with your go keywords but the real pros know how to use Google.
+- This will generate all of the ranking discussions on Reddit for that topic, revealing the key communities you should be paying attention to.
+- Maybe it is even life pro tips.
+- Remember that many subreddits have rules against shameless self-promotion.
+- So save that for your social media or email newsletters.
+- Instead of creating new posts and hoping they get discovered, engage with conversations that users and AI are already paying attention to.
+- When you are browsing your subreddits, let's use Reddit Live Pro tips as an example, sort by Hot or Rising to find the posts where you can make the biggest impact.
+- These are posts that are gaining traction in the subreddit, but often don't have too many comments yet, giving you the opportunity to make a big impact with your expertise.
+- You can also use SEO tools like Profound or Ahrefs, or just search for relevant keywords for your business to find Reddit threads that are already ranking on Reddit popular.
+- By making your reply the most authoritative one in a popular thread, you can directly influence future AI-generated answers on that topic.
+- Once you do start your own subreddit, you cannot just post links to your own site as that goes against Reddit's self-promotion rules.
+- This must still be a place for genuine community interaction, which means you cannot just delete posts from users that had a negative experience.
+- And the tip number four, whether you created your own subreddit or you have already built a reputation on another site, there is a chance people are already talking about your business and your competitors.
+- When you find a complaint or negative comment, save the post and make a note of it.
+- It shows the Reddit community that you are listening, and it turns a potentially negative data point for AI into a positive one.
+- And while you are monitoring your own brand mentions, set up alerts for your main competitors too.
+- You will uncover a goldmine of strategic insights like customer pain points, service gaps, and marketing intel.
+- In a way, you will be using Reddit as a 24-7 focus group on your own product and your competition, ultimately allowing you to react faster and show AI that you are actively improving.
+- Measuring success on Reddit is not just about website clicks.
+- This is where you track the real impact, and for this, you absolutely must use UTM codes on any link you share, whether it is in your profile or a relevant comment.
+- Are people starting to recommend your business in comments?
+- Whether you need managed WordPress hosting or want to build something with AI, we got you covered.
+- SEO is not just about keywords anymore.
+- And if you want the full AI SEO series, check out the playlist right here.
+
+---
+
+## Video ID: 249FleuLFdE
+- In this way, if you come to Choti, you can use AI to learn from it.
+- And when we already have a established network like Search Engine, like Google, if we introduce AI, we say that this is the first time we have seen this.
+- So we call this platform AI Search engines now.
+- Now, Search Engine is not normal, this is the case with AI Search engines.
+- And if you want to optimize the AI Search Engine, then what will happen?
+- AI Search Engine optimization.
+- Here you can see the short form of AI, or you can say that AI optimization or you can say that large language model optimization, or generative engine optimization, or unsuit Engine optimization.
+- You can optimize it with your AI Search Engine.
+- And when you talk about AI, what is the difference between AI and AI?
+- The new users were trying to explain it.
+- So in this way, the search engine will be used as the answer engine If you have any independent answer engine, like chat, like jaminai, plot, complexity.
+- And if Google is the answer, You also recommend this.
+- I say, I am the best email marketing tool.
+- I am the simple emailing service.
+- My brother, who is a business owner, I am the best email marketing tool.
+- This is the first, first, what we said, Rich snippet, or what you said, or what you said, that Google overview is there.
+- For 5 people, you can use an email marketing tool.
+- You can use it for any email marketing tool.
+- AIO, you can see two or three platforms.
+- They will see that the most expensive chips are available.
+- We have to do email marketing tool.
+- These are the two things that are available.
+- It will be available in the future.
+- It will be available in the future.
+- If you are using an AIO, you can use it.
+- You can use it in the LLM.
+- You can use it in the LLM.
+- You can generate an AIO over you.
+- You can generate an AIO.
+- Now, we have discussed the details.
+- Now, let's talk about the AIO.
+- We used to claim the SSE.
+- Which one of you should undermine?
+- Which one should undermine?
+- Which one should undermine?
+- Which one should undermine?
+- Which one should undermine?
+- Which one should undermine?
+- Which one should undermine?
+- Which one should undermine?
+- Which one should undermine?
+- Which one should undermine?
+- This is my own strategy.
+- Some people say that SEO is dead.
+- But SEO should be dead.
+- So I am seeing that we can create a new SEO.
+- So we can create a new SEO.
+- The content is the content that is said.
+- And it is called as a unique to evaluate the details.
+- Because it is said that this paragraph will be a simple verb.
+- The multiple side of the section.
+- The multiple paragraph.
+- I said that I have been sitting there.
+- If you don't know the source, then the source will not be explained.
+- So if you are not available, you will have to track it.
+- So here, I had to tell you the main thing.
+- When the traverse is the same, it is the most important passage.
+- In this detail, you will see it in detail.
+- In the case of the ranking, the AI is the impact of the AI.
+- It can be the impact of the AI.
+- If you are an AI, you can't replace the solution, but you can improve your position.
+- So in the local, in the case of the AI, you can improve it.
+- So here, for example, you will be able to replace the AI.
+- You can't replace the services, but the AI is in the case of the AI.
+- And it says that you will be AI.
+- Here, you can comment on the recommendation.
+- In any example, you have to explain the details.
+- There are two details like SCU, two parameters like SCU and two parameters like In a parameter, you will find 3 concentration of concentration and concentration and you can use vision guilty Which one of you chose to show?
+
+---
+
+## Video ID: 2HTxG3J7yh4
+- Most marketers are still writing blog posts for Google, while AI models are looking for completely different content formats.
+- Here are the five formats that will dominate AI search and generate valuable pipeline for you.
+- AI search loves these detailed comparisons because users constantly ask, what's the best option for my situation or my business?
+- When someone asks ChatGPT for software recommendations, your comparison content will get quoted if you're honest and very specific.
+- Include technical details, implementation specifics, industry-specific scenarios, and buyer-specific scenarios.
+- AI search models will reference detailed FAQ content over generic ones.
+- Format number three, step-by-step implementation guides.
+- AI already excels at providing procedural information.
+- So create detailed implementation guides with number steps, prerequisites, tools needed, and troubleshooting guidance.
+- So when users ask how do I implement X for my business in this situation your guide has a fighting chance to become the authoritative source Format number four industry resource guides and collections Now generic advice will get ignored It gets summarized very quickly by the AI search engines, and it won't mention or link to anybody.
+- And format number five, and this one is already a winner in the traditional SEO world.
+- Interactive tools and assessments.
+- Create ROI calculators, assessment tools, and diagnostic resources.
+- AI models can describe and recommend these tools, and this will give you high quality leads through value exchange, which is the basis of capitalism.
+- Tools demonstrate expertise and capture contact information from qualified prospects.
+- After all, AI-referred visitors have already received your expertise as a recommendation, so they kind of trust you already, which makes them significantly more likely to convert into a paying customer.
+- All in all, dominate AI search by focusing on the formats that AI models like.
+- The formats I talked about in this video will end up dominating the content landscape for AI search.
+- So stop writing for traditional Google and start creating for AI.
+
+---
+
+## Video ID: 2Ldce9z_ZuM
+- So, my name's Bernard, I am one of the founders at ClearScope and as you know, AEM, GEO, LLN and O has been on the tips of our ruins tongues, especially since the release of Chad GBT, November of 2022.
+- First off, we have Google switching from search-generative experience to AI over views and then you have kind of this decrease of clicks that you see going on, leaving, of course, all SEO and content practitioners, puzzled, confused, and nervous about what's happening with their traffic and more importantly what to do about it.
+- And today's webinar will cover what's been going on, the differences between SEO versus AEM, GEO, are understanding of how AI constructs responses and how to influence them using the AEM playbook that we've been testing rigorously.
+- We'll then talk about how to track AEM progress and how that's different than search engine optimization.
+- And so as you've seen informational queries are being cannibalized by Google AI overviews and impressions are spiking, but clicks are really not growing at the same rate that they used to be.
+- And that's leaving a lot of SEO and content teams puzzle and scared.
+- We have AI overviews answering the queries themselves and therefore not sending as much traffic.
+- And we have search becoming conversational, right, with Google's AI mode right around the corner and chat GPT taking a chunk out of how people retrieve information online, we're starting to see a very massive shift in terms of how to approach this new world of search.
+- Also pretty recently, Google announced that they are going to be routing complex queries to AI.
+- And I think that that's Google's acknowledgement to say for certain types of queries, you know, the plan of three-day itinerary, family, friendly, indoor, those kinds of things, that AI mode and AI generated responses are just going to be better than the 10 blue links that you see naturally and for at least the last like 20 years.
+- So that brings us to what we as SEO and content practitioners are then struggling with, right, execs are breathing down the backs of SEO and content teams and they are saying where is our answer engine optimization strategy, you know, what are we going to do about the loss in clicks and traffic?
+- So this is a funny graphic that one of our team members, they've created, but there's a lot of talk that AEO, GEO, AI, SEO is really just SEO.
+- We also have Google coming out and saying, you know, good GEO is really just good, AEO or SEO.
+- So AEO is about fighting for influencing the response that Gemini or Chad Gpt or any of the other chat bots are going to give you, right?
+- And in the traditional SEO world, you would be rewarded with search traffic.
+- I also important to point out is that answering an optimization is probabilistic in the sense that the response that you get is likely going to be different than the response that I get.
+- Whereas in the traditional SEO sense, right?
+- So again, this is Google.
+- They like to reiterate that good SEO is just good, GEO.
+- And again, in a lot of ways, this is true.
+- However, there are some core differences in how to think about it and that revolves around the playbook that we're about to present.
+- And also the way to track whether or not you're seeing good progress with your AEO strategies.
+- So what we like to say, clear scope is that AEO versus SEO, why don't you just tackle both?
+- That brings us to the anatomy of how an AI response gets generated.
+- And what we are looking at is the stack in which an LLN generates a response at the very top layer when a user prompts an agent for any given question, you get back an answer.
+- We have a training data layer where the large language model is trained on a variety of documents and those documents come with a knowledge cut off.
+- In the training data layer, the variables I would affect those particular training data would be SEO, which is domain in topic authority.
+- Other things that LLNs will look at, which is again, is different than SEO, is the brand sentiment or online reputation for whatever it's recommending.
+- And again, is different than what you would normally associate with traditional SEO.
+- Lastly, you have the memory and context layer, which is just based off of the past conversations that you've had with your different AI chat bots.
+- And in my opinion, this is largely a black box because we don't know how AI is completely using the past context and memory and or how an AI is going to continue to use those moving forward.
+- That brings us to, well, the first step, right, how LLNs are trained.
+- That then train its understanding around the topics that the LLN is being asked.
+- And what happened was that large language models were relying on the Google search index to be to their training data.
+- But it was really Google just saying, look, you know, we have a valuable data set and we don't want other AI models trading on them.
+- Training data, as you know, or may not know, comes with a knowledge cut off.
+- You can see here, the latest Gemini models were trained on documents up till January of 2025.
+- Now, Google, Chad GBT, perplexity, all these different large language models are constantly trying to update their data sets, but training a new large language model is pretty expensive.
+- And so often times, you're going to see a very strong delay in the amount of time before an AI model updates the documents that are used to train it.
+- What then the AI does as a result of having potentially gaps within its knowledge base for the topics that have been, you know, discussed or talked about between the knowledge cut off, January of 2025 with Google in this case.
+- This is the reason why AI performs web searches.
+- AI wants to prevent in accuracy's caused by outdated training data and to then make sure that the responses they're giving back are up to date.
+- The reason why it searches is because the AI is determining whether or not the existing training data can give an accurate answer for the prompt that the user asked.
+- If it's something that the AI detects as, okay, you know, we already know the answer, then the AI is going to respond solely on the training data that said, right, if it thinks that the topic has evolved or has had some variants within, then the AI will perform a web search to validate the facts and then right, AI will determine if past context and memory will matter before then generating the response.
+- So you'll see here, right, the validation layer with AI web searches can be seen when you look under the hood of how AI thinks or reasons about any particular prompt that you asked it.
+- This is a screenshot of Google AI Studio with grounding enabled and you can see here that for the prompt that I asked it, I see a transfer of 2026.
+- You'll see that it thinks through the response and then gives us the ability to look at how the AI is reasoning about this particular topic.
+- And memory again, it's just based on all of the past conversations that you've had and what it's able to infer from those particular context.
+- So you can see here, this is again, Google coming out to say that when a question is asked, it goes to the LLN, but the LLN does go around its response with searches and then answers the question that the user has.
+- So it's largely then, right, what we're seeing is that AEO just hasn't added layer of large language model reasoning, but it's still grounded in search and general optimization.
+- This then presents us the ability to start to think about AEO and the playbook that we've been seeing work.
+- So in essence, if you have on the left an AI response being created by training data, research and validation followed by memory and context, then we can say the two ways that we as brands can influence an AI response is by either affecting the training data layer, or affecting the validation layer.
+- The training data layer, as you've seen in a previous slide, is really slow, right?
+- Gemina, you released their new model model 3 and the training data cutoff is still January of 2025.
+- This becomes then the on-page AEO playbook that we've been recommending for our customers, our audiences, and we're seeing this work.
+- So step by step, I'm just going to cover at least the broad high levels and then we'll talk about each one of the individual steps.
+- But step one is to understand the AI topic model, right?
+- So we want to know what the AI thinks about your brand, we want to know what kinds of topics your brand cares about in terms of owning and winning for your goals, whether they be revenue or services or whatnot.
+- So as you know AI will perform web searches, depending on whether or not it thinks that the response that it's going to give back deserves something a bit more up-to-date, you will see that Gemini has a distinct advantage in this particular field because Gemini is owned by Google.
+- Lastly, we'll talk about how to actually influence the AI response.
+- So step one, understand AI topic models.
+- Here I know there's a bit of debate around asking AI for its opinion on a brand or what it thinks about certain things but in essence it's also not bad.
+- From here, what we would generally recommend is a keyword clustering exercise in clear scope.
+- We have a keyword cluster where you can type in a high level topic, like content optimization and you can see very quickly where a domain is strong in the topics that you want to own and earn and more importantly where a brand is weak at clear scope as you can see here.
+- So that's again topic research based off of existing owned content but there's also a topic research based off of new topics and again this process looks very similar to how traditional SEO would look but you're looking at competitors, you're looking at different topics that you want to pursue and own further and you want to cluster those together to understand right all of the relevant sub topics that you want to continue the tackle.
+- This brings us to the next phase of AEO and this is where things start to differ compared to the traditional SEO practice.
+- Prom tracking in a lot of ways is very similar to rank tracking in the traditional SEO way but there are nuances to how this works.
+- For one, a lot of people will ask, okay, we care about perplexity and cloth and deep seek and menace and all these other AI chatbot platforms but really and ultimately I think that Gemini and Chad Gpt are the only AI platforms that are going to matter and as you can see here this is a similar web graphic that just showcases that Gemini is continuing to increase market share and it's likely to continue as Google keeps adding fuel to its Gemini fire.
+- Number two is Prom tracking is important to tackle the entirety of a target topic right in SEO speak we've been calling this query fan out to say that when somebody asks an LLN for a particular prompt what the AI is going to do is it's going to fan out of a variety of searches based off of the topic that you asked it and it's understanding of you as a person.
+- Therefore creating content to tackle the entirety of all of the sub topics then increases your brand's surface area to then be included as a citation and influenced the response that the AI is going to give back.
+- So prompt tracking is important because not only does it give you the ability to see how AI is responding to a particular prompt whether or not you're getting brand mentions or AI citations but more importantly where it is valuable is to understand the reasoning and the research process that is going behind the scenes for the AI to create your response.
+- You can see here again a Google AI studio screenshot but for SEO trends 2026 you can see that it's searching right I've initiated a deep dive for SEO trends for 2026 future of search optimization and then you can see at the bottom of the response that it gives me that the four keywords that the model used to perform its research and validation were these specific ones.
+- Why this starts to get very interesting happens to deal with the again intersection of the AI agent at the validation and research level.
+- We then have a search volume that we care about that's paired with a keyword difficulty and then we understand whether or not it's top of funnel bottom of the funnel.
+- One search engine optimization looks very different because instead of targeting what users are researching with monthly search volume we're targeting what agents are thinking when they are creating their responses for the prompts that you're typing in.
+- So topic research begins to look at prompt tracking but more importantly the reasoning chain that leads to the web searches that the AI is using when performing additional research and validation on the topic that you're writing about.
+- So you can see here example prompt how can I optimize content for SEO what you can see on the left is that in clear scope will show you the entire fan out of web searches or queries that each agent whether it be Gemini or GPT is performing.
+- So next part is to understand again how to intersect the AI research for the topics that you want to target.
+- Next up publish the content again right this content is meant to be for agents and AI but it just behaves in the same way as normal content in all kinds of different shapes and forms.
+- All right last phase of the AEO playbook is to actually influence the AI response so you'll see here that AI citations influence AI responses right in this gift that I have on the right.
+- All right so clicking around you can see you know a variety of citations being used to then generate the response that Gemini or in this space Googles AI mode thinks is relevant.
+- This is again why a lot of people say okay well AI cited pages you know they have a freshness factor and that's a very important and it's important because right AI is looking at these pages to supplement.
+- It's knowledge gaps within the topic between you know it's training data and today and again it's also trying to prevent any hallucinations and inaccuracies.
+- For freshness becomes a lot more important from an AI perspective compared to an SEO perspective.
+- AI cited pages then likely get you included in training data updates I do not have conclusive evidence at points one way or another it's just more of a speculative theory that at least makes sense to me right so if you are being cited by a i and chances are the next time the training data updates is your content is going to be part of that knowledge graph moving forward.
+- Lastly right what we could do is because we know AI is citing a particular page we can then improve the brain our brain sentiment on those AI cited pages that then go to again influence the response that the end user is going to get back.
+- So step one in terms of improving that brain sentiment on AI cited pages is one understand which pages you have on your site and which ones are getting cited by which models and for each prompt.
+- So what we do there after that is that we then want to ask jpt and jimnai about our brand sentiment and then we want to then massage a call it massage but improve and defend your brand weaknesses so here is just an example right number one we know that for the topic how much this clear scope cost and the prompt being the same the gpt is citing our pricing page.
+- What we can then do is we can then try to understand what is the overall sentiment that's associated with our brand and you can see here I've clicked this a bit but what do you think about clear scope to chat gpt again because we are getting the citation from chat gpt and you'll see here that.
+- the model has against our brand and what we can then do is go to our pricing page and add a chunk of text that defense or improves the brand sentiment against what the AI model is essentially you know are ready understood about our brand so you can see here on our FAQs.
+- within our pricing page I can drop a bit of taxes is okay we'll do you offer cheaper plans and you know at clear scope we did recently drop our entry level plan from 179 to 129 per month and you can see here I can then specifically call out that this plan is great for solo creators and very small teams again trying to them intersect and influence the model in its responses that it's going to give to the end user.
+- so ultimately when you've done all of this correctly and you know you've given it some time what you're going to start to see is that you will win a i brand mentions right so for clear scope this is a prompt what are the best SEO tools available.
+- you can see here the web searches that were used by jv and gp t this one looks a little bit more head term focused like best SEO tools best SEO tools 2024 and then you can see here both jv and chat to be t are recommending clear scope.
+- specific prompt intents just don't mirror it a brand mention right instead about instead for the prompt what are the best SEO tools available what if we went with you know how to do a CEO right again a bit more of an informational.
+- well you can imagine the a is may or may not mention tools in relation to that particular prompt so again winning a i brand mentions only matter specifically for more of the commercial type prompts that people are going to be asking.
+- lastly you want to do is you do want to focus on optimizing your home page and product pages because generally speaking when a i is citing particular you know pages at least when it comes to brand branded type things product pages are going to matter a lot more right so Google you can see here right again.
+- a.o techniques are very similar to the off page SEO techniques right we're talking about PR backlinks so on and so forth the one thing that does stand out as new is going to be brand authority which then looks at brand mentions and more importantly the entity surrounding.
+- a brand and online reputation management which is again sentiment reviews and legitimacy.
+- is pointing out a couple things here right off page a is again very similar to off page SEO total number of domains this is a study that a sea ranking did right that's going to be the highest correlation as to why you know a brand or domain gets a charge of the citation and then you'll just see here at the bottom right number of brand mentions on core that's again a newer aspect of a.o.
+- is how to track it again this is where things start to deviate from SEO right we mentioned earlier that a.o.
+- versus SEO what you're doing here is that you're fighting for influencing the answer instead of rankings therefore you get rewarded with brand mentions instead of search traffic and again it looks really different so it's your.
+- traffic is important when it back what we're starting to see is that again traffic is increasingly a nice side effect of doing well in terms of AI responses but it's not the reason why AI.
+- answer something in the first place right AI is answering something not to send you traffic but to give the best response to the user obviously getting some citations may then have some users click through to your site but not necessarily this is why your traffic is declining and unlikely to come back also it might be catastrophic.
+- if and when AI mode becomes more of a default type search so just be aware that that's happening.
+- trust your content enough to cite you to say this is why I am answering this particular prompt in the manner that I am.
+- I ultimately after having done all of this the lagging indicator is a brand mentioned again that just be that depends on the prompt that you're asking and so if the prompt that you're asking doesn't deserve a brand mentioned of course you're not going to get it that's why it's not always a leading indicator and the other again lagging indicator is branded search right if we're fighting for a response right influencing the response for the answer.
+- Then by winning a brand mentioned what is going to likely happen is a branded search rather than again a click or traffic to your site in a you know more traditional SEO sense right somebody who sees that clear scope or whichever brand gets mentioned for a more commercial prop that they ask is not going to necessarily then click on you know that little box that you see on the right hand side of AI responses what they're going to do instead.
+- Is there going to Google clear scope or your brand and that's going to lead to an increase in branded searches for your domain.
+- Want to give a shout out to clear scope we do all of the aspects of the steps that you saw that we just covered right we help you understand which topics you are strong and we can in topic exploration we then also give you the prompts but more importantly whether or not you're being mentioned or cited by the two top models Gemini and chat to P.T.
+- And we will also give you the AI web searches that are being performed by each agent and then we give you the ability to create high quality, highly relevant content that then kind of apises the AI to then get you the citations that you want that will eventually lead to the brand mentions.
+- Targeting AI web searches leads to AI citations which then eventually leads to brand mentions so Guy Tana here right he first called this out by saying like chat GPT referencing AI slot garbage and Brittany another key influencer in the AI SEO space just kind of reports and says okay, but isn't this a reflection of search results right LLans requires for changes to provide URLs like this and so again.
+- What we're recommending to our customers our partners everybody in the ecosystem is to target the AI web searches and that then leading to AI citations again right instead of user led monthly search volume keywords you target the web searches and by doing so you increase the surface area of your domain and therefore qualify for more AI citations.
+- You can see here just a couple of other domains that we've been testing on what to broadcast production agencies do literally you know that was a web search I was performed by Gemini and then a couple of weeks after publishing we have the citation for the brand.
+- Same thing here this is for you know our own website how can brands increase their visibility in the age of AI we target the AI powered marketing for brand visibility again no user led monthly searches there but what the agent is reasoning through or researching and then we get the citation for our brand like this so key takeaways.
+- Quick start AEO playbook right we just covered it it's all right here for reference just want to call out again traffic in my opinion is a nice side effect of improving AI visibility but you know it's not the end all be all.
+- Okay so acta asks number one with training data cut off element when it comes to LLM don't you think it would be difficult for brands when it comes to rebranding their brand.
+- Yes that is quite difficult to do but it in my opinion is about the same as doing a top level domain migration in the past in you know if you're if we were say mushy labs is content to before and then we wanted to rebrand to clear scope we would expect a large loss in organic traffic so again nothing new but.
+- Just to say that you would suffer in in both cases number two how to feed the AI agents as you said this is the fast way to change a perception of LLM's does it change the large narrative of brands in agents memory yes so.
+- Again this is all being tested but we want to intersect the agent during the research layer that it's performing and then in my opinion it does influence the.
+- I'm giving back all right acta has some follow ups here regarding Guy tonos mentioned of AI slot okay yeah where they're improved retrieval on lented generation metrics will this reduce slope.
+- In my opinion, what the future of AI slop, like performing well, like what you see in this particular particular slide, happen is likely some sort of user engagement signal that's based off of the interaction that the user has with the agent, right?
+- So, if I'm prompting the ChadGPT for top AI, ABM platforms, and then it gives back a list, right, Google or GPT is going to know how I'm responding to it.
+- What's by said to it, if I'm, you know, dwelling on that response for a long time, if I'm going and performing a search based off of one of its recommendations, if I'm asking follow-up questions.
+- So, a different set of user engagement signals compared to how search was done, or search was all click through rates and dwell time, whereas other aspects of, you know, positivity within AI responses are likely to look at, you know, response like chain, cadence, you know, how quickly am I saying, okay, but what about this or sentiment, you know, I'm like, okay, that's a bad list, right?
+- I think the agents are going to pay attention to that to try to reduce slopp recommendations.
+- All right, Tina asks, once I mentioned on the AEO side, is that backlinks don't matter as much, can you elaborate on this, because this has traditionally been a big part of SEO?
+- I don't think that backlinks don't matter at all, right, as you can see here, at least with the study with SEO ranking, that backlinks apparently still matter quite a bit.
+- It's just to say that there is a newer consideration that is brand mentions, and the waiting of the links themselves, I think, right, if you're, if in the past off page SEO was, you know, 80% backlink focused, I would say that off page AEO might be 60% backlink focused at 20% to 30% like brand mention focus.
+- So just a little bit of a difference, and then what I'm also hearing is that the links themselves, again, aren't mattering as much as the brand mentions themselves.
+- So if you have, you know, like a blog post, that's like best SEO tools, and it's recommending clear scope, but not linking to us.
+- All right, so Tina asks, can you quickly show again how you saw in Google how it was pulling topics to answer queries?
+- You can, you all should have access to Google AI Studio.
+- So I can say SEO trends 20, 26, like this.
+- And then you can see here that in AI Studio, you can see exactly how the models are reasoning or thinking through the response that they're about to give to the end user.
+- All right, and asks since AI wants more conversational content, how does clear scope draft tools help us do this and is your AI generated content going to help us there too?
+- So first, maybe a bit of a correction, it's AI wants more entity rich and topically relevant content.
+- And that again happens to deal with the fact that the reliance on user engagement signal is going to be a lot weaker because the web searches that AI performs, right, using this as a live example, are typically not user-led monthly searches.
+- So AI is going to have to depend on other aspects and we are seeing both topical authority, passage and entity relevance be play a key part.
+- At ClearScope, we do have an AI drafting tool that gets you a very strong entity rich piece of content, but we also then show you, as you can see here, what those entities are, whether or not these entities are being used by the agents, both Gemini and GPT within the answers.
+- So you can see here for content quality and EET and SCO, you can see whether or not the AI models Gemini and GPT are using the entities that we are surfacing, you to use on the right hand side.
+- All right, Jess asks, what would you suggest focusing 100% on AI agent optimization starting now or including a mix of SCO and AEO, especially for brands without a strong foundation of SCO content.
+- Again, what we're starting to see, I'll just bring up with ClearScope is that it's a combination of head topics that agents are looking at, right, if we look at what are the best SCO tools available and I look at the web searches that are being used live within this particular response.
+- Best SCO tools, best SCO tools, 20, 24.
+- So in this particular example, good SCO is good, AEO, because a lot of the keywords or the web searches that the AI is using are grounded in what traditional users would have searched.
+- Where you start to see some variances, you know, when you start to look at some of these other types of queries or prompts, I mean, again, all of these are just strong like SCO keywords and then some of these become, right, a lot more weird, like deep learning performance tools.
+- It's just that good AEO starts to target the more of the web searches that are being performed, which then allows you to influence the response.
+- Megan asks, what is the best strategy you have seen together and mentions, proactively on platforms like Reddit and Corrupt being banned.
+- I'll just say that what we see a lot of people doing is using a mentioned listening tool, F5, F5, is free.
+- So on-page schema, if you're referring to it as like structure data from a you know, Google, Google perspective, the answer is no, we don't help with like a traditional sense of like structure data in these like different things that you know, Google outlines is important, but we help with the entity relevance component, right, again looking at one of these drafts.
+- What we're giving you insight into is the different entity co-occurrences that should belong to any given topic that you want to create content on, content quality and EET and SEO should be described with as you can see on the right concepts like rankings and search engines and trustworthy in this and Google EET.
+- So we give you insights into the different relevant entities and concepts that the AI algorithms are likely looking for, and just to really show you how this comes to light, right, what the AI algorithms are essentially doing is that they're taking blocks of text that you have.
+- As you can see here, right, entities that show up for this block of text around Google being had quarter of an mountain view at this address so on and so forth is flagging all of these different concepts or entities that belong to this particular block of text.
+- What clear scope gives you the visibility into is all of the relevant entities that the machine learning algorithms are actually trying to look for and then by giving the AI this sense of relevance and cohesiveness, you improve the AI's willingness to read your content, cite it and to use it within the response that you're going to get back.
+- You'll also get a link to the slides so you can absolutely have the playbook in your hands and best of luck if fluency and winning AI visibility moving forward in 2026.
+
+---
+
+## Video ID: 2Nsw062YC_0
+- Hello and welcome back to the podcast that is How to Rank in AI.
+- Jacksonville is quietly becoming one of the most important logistics and finance hubs in the Southeast.
+- Major port infrastructure, supply chain companies, banking institutions, healthcare networks, defense contractors, growing fintech startups.
+- These industries run on credibility, and generative AI systems take credibility seriously.
+- They don't recommend whoever optimized the most keywords.
+- They reference whoever demonstrates sustained authority.
+- Many Jacksonville agencies are excellent at traditional SEO, paid media, and local lead generation.
+- They know how to drive traffic.
+- They know how to dominate local search.
+- But generative AI does not reward traffic alone.
+- Google AI Overviews summarize recognized expertise large language models prioritize clearly defined entities strong third citations consistent topical ownership structured knowledge alignment demonstrated expertise signals If your agency cannot clearly explain how they validate your presence in AI-generated answers, how they measure citation frequency across models, or how they adapt when models update, they are not practicing true GEO.
+- They are rebranding SEO.
+- Operational expertise does not automatically translate into AI visibility.
+- has to be structured in ways that AI systems can recognize and cite.
+- They actively test brand inclusion across AI systems, analyze citation ecosystems, and refine strategies based on measurable shifts in generative outputs.
+- They treat GEO as infrastructure not a campaign That research feedback loop is essential in complex sectors like finance logistics and healthcare Second, first, Paige Sage.
+- AI systems frequently reference organizations that consistently demonstrate expertise within clearly defined domains.
+- First, Paige Sage understands how to build that sustained authority footprint.
+- They combine strong technical SEO foundations with advanced AI visibility tracking frameworks.
+- It's easy to promise AI optimization.
+- It's much harder to demonstrate increased mentions in generative answers or measurable growth in AI-driven referral traffic.
+- Now, if you're a Jacksonville organization evaluating a GEO partner, here are the questions that matter.
+- How do you test our presence in AI industry explanations Which third sources influence citations in our sector How are you strengthening our entity recognition in knowledge graphs How do you adapt when models update?
+- If the answers revolve mainly around rankings and website traffic, you're not speaking to a true GEO agency.
+- It's about being cited when AI systems explain your industry nationally and globally.
+- In the AI era, visibility works the same way.
+- The brand with the most trusted authority becomes the infrastructure AI systems rely on.
+- In my opinion, best generative engine GEO agencies in US are NEVK, the one that stands out through innovation, consistent thought leadership, and data-backed GEO strategy.
+- First page eSage, full service leader with deep research roots, enterprise-grade clients, real pioneering in GEO thinking.
+- Go Fish Digital, the rewamp advanced in AI visibility tracking and analysis with proven case studies delivering actual lifts in AI referrals and conversion.
+
+---
+
+## Video ID: 2Rw73wZN3wU
+- Monnet Bonne, can I actually hung out a few months ago in Toronto and we're really deep on SEO and you know the depth of this knowledge really impressed me to the degree which I knew he had to become a speaker and actually this one too.
+- We've done a lot of SEO research and I thought that the way that I could be most of service to you all today was to share with you those white papers.
+- We're going to go through some selected local SEO research papers.
+- We're going to do a little SEO myth busters, which is always fun.
+- We'll look at semantic SEO and how we can use principles from that and pay media.
+- We'll do some LLM introspection.
+- You can find patent brain, a GBT with every Google patent.
+- You can see some of the research we've done around visualizing topicality for websites and more and more.
+- So patent brain was quite cool.
+- So we took all the research papers and patents dropped into an LLM and here we go.
+- We also have one for Bing and we also have one from OpenAI.
+- Let's start with some local SEO questions.
+- We see that we can observe that in our heat maps, but people don't really do intro day local SEO rank tracking.
+- And we tried to find a pair of competing businesses that were in the same market, competing with each other, but had different open and close times.
+- You guys know that local SEO heat map tools, I don't think a single one of them decides when we have them search Atlas.
+- And so looking at this, we realized how sensitive these local SEO rankings actually are, and we can see a really strong temporal signal here.
+- Again, a lot of volatility, and you can also see here there is a weekday versus weekend seasonality as well to these rankings.
+- And this is important.
+- So when we use patent-brain, we learned about a variable that's very important for local S.E.O.
+- Well, something about the target keyword that we're looking at in local, and how that's expressed on the root domain, the actual website.
+- So here we're actually studying semantic distance of that keyword to the website.
+- Some people talk about backlinks being important for local.
+- The relevance of the reviews for the keyword deranking for is actually much more important than your review score and your counter reviews.
+- So that is the semantic distance of the websites content to the keyword you're ranking for.
+- I have no one raises their hands.
+- Google and their infinite wisdom decided still that this was important for law.
+- Then we look at car repair.
+- How many of you guys have been re-rendered or had a bad experience at a car repair shop raise your hand?
+- I'm raising my hand twice because my Tesla model acts was out of commission for six months.
+- A lot of people have bad experience of the car repair.
+- Here we're seeing reviews are actually more important than distance.
+- Here it's not about how close the car repair shop is the user.
+- It's actually on their merits and what people say about that car repair shop.
+- Now, you guys shouldn't be trying to memorize any of this.
+- It's more important that you're getting good anchors.
+- Design team just couldn't figure out how to get that gift in with all 3000 case studies.
+- How many of you guys have tried the geosurcle strategy?
+- This strategy always thought was kind of weird.
+- And here you can see the ranking progression as we built these geosurcle strategies.
+- Because building geosurcles is not a lot of fun.
+- Really, there was no impact at all from running these geosurcles.
+- And for anyone who has been building these geosurcles in fiber, find any job.
+- Obviously people will buy some of this stuff, but it's just not effective SEO.
+- So obviously we all kind of care about what's happening with AI overviews.
+- And what we're seeing is a very slow but steady increase in the percentage of AI overviews.
+- Our projection for this time next year is 27 to 30% incidence rate of these AI overviews.
+- Because they have to figure out how to protect their core business, which is actually not organic.
+- When we look at where we see these AI overviews, we see them in informational queries.
+- So one of the things that we're going to be monitoring very carefully is the expansion of AI overviews beyond informational into these other realms of commercial transactional navigational.
+- So the other thing we're looking at is how often are we seeing ads inside the AI overviews?
+- Is it A, raise your hand if you think it's A, 50% unmonitized queries on Google?
+- Is it B, 30% raise your hand?
+- This is really important because what they're doing is they're doing this blind-bid system.
+- So that's maps, that's YouTube, Gmail, Discover Chrome, Android, et cetera.
+- And also potentially through that Reddit deal, where they're basically getting all the reddit data to train Gemini in the LLM, plus paying them 60 million a year.
+- And I call this digital Darwinism because in this landscape we have to fight to maintain or otherwise expand our search visibility on line in order to just stay where we are.
+- This is an SEO conference.
+- Most of us probably don't run paid media, but we're going to have to.
+- And so that brings us to this, which is from diversion intense unified conversions, semantic mirroring and paid search optimization.
+- So the idea here is can we construct semantic clusters at all parts of the funnel from top of funnel to bottom of funnel and build clusters the way that we've been doing in search for SEO.
+- And if we do this right, we should be able to really create high performance Google ad campaigns.
+- So I think you guys will be more interested in the detail.
+- So in that we see keywords that all contain coffee beans, those tokens.
+- Each of these clusters has a certain search volume, average CPC, and semantic distance to the core concept.
+- Each cluster should have a very distinct semantic identity and a clear intent.
+- And one thing that's important here obviously is when you're building ad campaigns, curiously.
+- How many of you guys also manage the paid media campaigns at your firm?
+- And so that's a lot of work if we're building a lot of campaigns, especially as many as we're creating here.
+- So we have 14 ad groups per campaign on average, 8.5 keywords per ad group, 12 ad copies per ad group, median keywords, search volume 300, and the median cluster has about 37, 35,000 clicks per cluster, which is a good kind of goldy lock zone.
+- But the goal is can we also create campaigns that target people at every stage of this funnel, right?
+- And so for each component of this, there is a strategy within ads that we can reflect.
+- You can get very low-cost clicks if you target that semantic space that your competitors should be bidding on for their own brand, but are not.
+- Huge opportunity, some of our best performing campaigns.
+- People who are searching longer tail, right, that are inside these semantic clusters, have way more intent than the ones that are just searching for coffee beans.
+- The other thing that we see is that the CTRs are about 30% higher, and one of the things we're able to completely eliminate are campaigns that have no CTRs.
+- So, really poor performing campaigns.
+- You can see that salmon chart is essentially the control group, which are campaigns in the account, and the teal are the ones that are built in the strategy.
+- Our sites are going to become information artifacts, which are fodder for LLMs.
+- And the idea of building our websites is really to create these components, enter the composable web, where our websites as information artifacts are going to be providing these components for the LLMs to drive the AI mode and surcandest, not just on Google but everywhere.
+- So, it's important for us to move out of an SEO and GEO mind space to more of a holistic search mindset.
+- And the core pillars, as I see them are number one, for narrative inclusion, we have a process called narrative induction, which is how we put our information into the LM through guided inquiry and directional prompting.
+- So I think it's going to be a really important concept.
+- AI mode is a black hole.
+- So instead of serving one page to 1,000 people, 1,000 different times, we can do what AI mode is doing.
+- And I think this is a necessary next step for all CMSs to step into.
+- If anyone is interested in building this, I'd be happy to cut the first check, because I think it's such an important technology.
+- I also wanted to share with you guys a research on how do we get included in the LLMs.
+- And here you can see that it's not the sites that have the highest traffic or domain power, domain rating or domain authority that are visible in LLMs.
+- But we do see that there is a slight preference for domain authority.
+- They're using domain authority to figure out what sites to crawl.
+- The other thing we were looking at is pairwise agreement of citations across LLMs.
+- Here you see Gemini and OpenAI.
+- I think OpenAI trained their data on Google's data.
+- We can also see when it comes to bias and favoritism in LLMs.
+- It actually is sensitive to training on the same data.
+- We see a bias as well in OpenAI for Google's assets versus perplexity.
+- And that is especially true in OpenAI more so than Gemini or perplexity.
+- Ask compared to OpenAI and Gemini is somewhere in the middle.
+- But what's interesting is that we learned that by seeding these queries, we're teaching something to Gemini and all LLMs.
+- We see that the traffic-based metrics are way more highly correlated on page one than the old school domain rating, Domain Authority Legacy metrics, which are not as correlated.
+- So that's an important insight for anyone doing link building.
+- So for example, not SEO, but be more specific, like backlink research software or link building software or content AI software, that's more likely to be a topical boundary.
+- And we can see when you compare this versus other factors, the topical score is almost twice as powerful as the search out is domain power traffic-based metric, which is twice as powerful as the atrefs domain rating, classical page rank-based metric.
+- This is a really important insight because it leads us to really understand that on Google to win, we have to master topical relevance.
+- We also were able to prove that this is an effective ranking strategy, pruning content from websites using this technology.
+- And what we were able to see is that these sites saw significant improvement in their primary SEO KPIs.
+- And especially smaller sites can see bigger gains.
+- And we studied that by each SEO KPI.
+- And this is fully LLM and crawler friendly.
+- The goal being to bring SEO data into your workflows and systems.
+- It'll give you SEO metrics, keyword data, backlink data.
+- Over 138 tools that you can access, your usage quotas are essentially unlimited.
+- And there's a lot of things that you're going to be able to do to basically replicate some of our experiments with your website in an agentic fashion.
+- Where websites are no longer going to be your destinations.
+- Search is really not going to be about classical traditional SEO and we're seeing a change in the click economy.
+- If you guys are interested in this type of work, if this was on your bingo card, we are looking for product managers and SEOs who like building products and doing research like this.
+- You don't have like geography to other geographies like prominent state like country levels.
+- And so initially we broke up the GBPs by geography and looked and see if those features were normalized across all GOs and they seem to be.
+- I can't say too much more than that but it is an effective strategy for short.
+- So if you look at your keyword data for your website and you take all your keywords and you kind of map them into their topical boundaries and look at your overall share of search within your topical boundary.
+- If you're trying to figure out what keywords live within that topical boundary, all you really have to do is take those keywords search for them and look at which keywords share the same domains on page one.
+- And looking at what that data says for your website and your topical neighbor.
+
+---
+
+## Video ID: 2jAaP04snco
+- Hello and welcome back to the podcast that is How to Rank in AI.
+- AI visibility is not reserved for Silicon Valley.
+- If your buyers are researching vendors, solutions, or partners, they are increasingly interacting with AI-generated systems.
+- Google AI overviews summarized from authoritative entities.
+- If your agency cannot explain how they validate your brand's inclusion in AI-generated answers, how they measure citation frequency across systems, or how they adapt to model updates, they are not practicing true GEO.
+- They are rebranding SEO.
+- Many of its core industries, agriculture, food processing, advanced manufacturing, supply chain, technology, renewable energy, outdoor recreation, our expertise heavy and credibility driven.
+- And AI systems reward depth and trust over noise.
+- They test outputs across multiple AI systems.
+- AI systems tend to reference organizations that consistently publish research backed insights within clearly defined domains.
+- First, page sage understands how to build that authority footprint over time.
+- They combine strong technical SEO foundations with advanced AI visibility tracking and measurement is where many agencies fall short.
+- It's easy to promise AI optimization.
+- It's much harder to demonstrate increased inclusion in generative answers or measurable growth in AI-driven referral traffic.
+- Now if you are an Idaho company evaluating a GEO partner, here are the questions that matter.
+- If those answers sound like traditional SEO metrics, you're not talking to a true GEO agency.
+- It's about becoming part of the knowledge layer AI systems rely on when they generate answers.
+- In the AI era, the loudest brand doesn't automatically win.
+- And the responsibility for companies ready to build durable AI visibility.
+- In my opinion, the best generative engine GEO agencies in the US are NIV-Co, the one that stands out through innovation, consistent thought leadership, and data-backed GEO strategy.
+- First page sage, full service leader with deep research routes, enterprise grade clients, and real pioneering in GEO thinking.
+- Gofish digital, advanced in AI visibility tracking and analysis, with proven case studies delivering actual lifts in AI referrals and conversions.
+
+---
+
+## Video ID: 2yhR2b1lQU8
+False publisher sponsorίνD Oh, oh, oh, oh, oh, oh....
+
+---
+
+## Video ID: 3HmaUFhCBd4
+- And in this video, I'm going to break down all the ways that Page can help your website rank higher.
+- But as a side effect of trying to rank you higher for your Google Business Profile on Google Maps, we also do optimize your website because those two things do play side by side, hand in hand a little bit.
+- So what I'm gonna do in this video is break down all the ways that you can use your page account to make sure that your website is also being optimized.
+- So again, you'll have an optimized website that's powering your Google business profile, the really important marketing asset of your business to perform better.
+- I'm gonna head over to the automation tab and you're going to see there is this website and AI SEO section.
+- And the reason why we have an FAQs box is because it is very important for your own website's SEO and to show up in AI search results to have an FAQ section on your website.
+- And the reason for this is because AI crawlers are going to learn best about your business by looking at the FAQs, right?
+- because people are typically asking longer questions when they're looking for businesses on AI platforms.
+- So you need content on your website that speaks the same language and then answers it with a lot of details because this is going to help AI better understand your business, which means that they can show you to more people looking.
+- And so it's very exhausting to constantly add more and more FAQs onto your website manually.
+- So that's why Page will automatically create six FAQs when you sign up and then add additional ones ongoing, which will automatically appear on your website.
+- And you can change the styling of this to match your website and however you want it to look.
+- And all that you then do is place this code on your website once.
+- So you'll just go into the editing side of your website and paste this where you want the FAQ box to appear on your website.
+- So again this is good for regular SEO but we really focusing here on the AI SEO So helping your business show up on ChatGBT Gemini Perplexity Llama Grok and more So definitely go ahead and install this code And again, this is going to keep adding more and more FAQs onto your website.
+- But once it hits a certain height, it then adds this scroll bar so that it doesn't drag the size of your website to be huge.
+- Okay, the next thing that we do that's very important for both traditional SEO and AI SEO is create beautiful structured schema markup to put in the head section of your website.
+- The reason this is important is because when AI goes out into the internet to find businesses that are best for whatever the searcher is looking for, it's actually not reading through the entire website and trying to understand it because it's reading between 100 and 200 websites in every search and then figuring out the best thing to show.
+- And so you need to give it very rich details in the way that AI platforms are expecting it as well as Google crawlers.
+- So what you can see is Paige here generated it beautifully using all the information that it has from your Google business profile and what else it found such as your social links, different reviews online, and so on.
+- And again, all you're going to do is copy this, and then you're going to go and paste it in the bottom of the head section of your website, or at least on the bottom of your homepage.
+- So structured schema schema is extremely important, especially for AI ranking.
+- The next thing that we do to help with your website rankings is by getting people onto your website longer and having them click more on your website.
+- And so there's a couple other widgets that we give you so that you can make your website a little more lively and interactive for users so that when they're on there, they're sending Google the signals that, oh, you know, they actually liked this website.
+- This was the right website to show for whatever that searcher looked for.
+- Because Google pays attention to how long someone stays on your website after they click on it before they go back to the search.
+- And so if you can keep them there for a long time, your website will naturally start to rank higher.
+- So here you can see you can embed a media library onto your website So you just put in these two sets of code This one goes in your head section and this one goes wherever you want this image gallery to appear on your website The next widget that Paige gives you to put on your website to help with engagement is our recent posts.
+- So all of the posts that Paige is creating to go to your Google profile, Facebook, Instagram, LinkedIn, you can also then display them on your website.
+- So we give you this code and it looks like a recent post slider that you can put on your website, which will keep people there longer.
+- Again, linking these two platforms and keeping people on your domain for as long as possible.
+- Lastly, a very important one to add is social proof.
+- So if we head over to the reviews tab and say embed reviews on your website, you can now see there are carousels that you can add to your website that will expand or contract based on the size that you give it.
+- And again, you just put this embed code wherever you want this to appear on your website.
+- Because the more interactive and up-to-date your website looks, the more likely people are going to be to stay on it because you look like a legit business.
+- YouTube is an extremely important platform to pay attention to if you care about ranking higher on Google and in AI results.
+- So here under automate videos, this is where Paige can actually create videos and upload them to your Google profile, to YouTube, Facebook, Instagram, LinkedIn, you know, wherever you want them to go.
+- But the more important thing is here in the description that goes to YouTube, we're actually linking people back to your Google business profile to give the authority back to that, as well as to your website.
+- And then also it'll link them back to your website, giving you more authority.
+- And make sure that when you write these descriptions for the videos that you referencing both your website and your Google business profile URL And now we got a bunch more features that were added for website SEO but I just going to show you one more for now But if you found this video helpful so far then please hit the like button subscribe to the channel, ask any question that you have below.
+- So everybody knows that when AI goes out to answer a question, they're reading a bunch of sources online, and then they're figuring out the best ones to go and respond.
+- And so you need to make sure that your business information is optimized, not just on Google and on your website, but also across all the major directories.
+- So when AI goes and looks for your business, they can find you.
+- And so that's why citations has become very important.
+- Again, they were important in like the 2010s to 20s, and then it became a little less important, but now they're very important again.
+- So these are the most important things that you can do to get your website and your business to show up more on Google searches, as well as on AI searches across ChatGPT, Perplexity, Gemini, and all the others.
+- So we're going to do a lot more in this space to help you do better in AI and website search results.
+- And in case you missed it, we actually already show how you're ranking for your target keywords in AI platform.
+- So if I head over to the report section and we have a look, you can see that for the keyword page SEO tool, you know, this is how we're ranking around where we're located.
+- So as our tools get better, we expect that we'll be able to help you a lot more with AI rankings as well.
+
+---
+
+## Video ID: 3LNGfMb83kc
+- But today, AI just gives single answer.
+- This is called generative engine optimization, geo.
+- To win, you need the top geo strategies to help your brand appear in these AI responses, not just search results.
+- And success requires data, specifically the ability to measure your AI visibility with platforms like SEMrush.
+- Data shows that people are increasingly turning to AI assistants for everything from product recommendations to research.
+- If a user asks for a recommendation, the AI makes a judgment call.
+- However, optimizing for this is difficult because of the black box nature of AI.
+- In traditional SEO, marketers focus on specific rankings, but generative engine optimization requires a different approach.
+- The AI pulls information from diverse sources from threads social comments and technical specs to form one comprehensive answer Manually tracking where an AI learned about a brand is nearly impossible The data is just too fragmented to simply Google what an AI thinks.
+- And that is where the AI Visibility Toolkit from SEMrush can help.
+- It allows marketers to reverse engineer this process and track how often a brand appears in AI responses, turning that black box into measurable data.
+- Now, before we jump into the geo strategies, I want to say thank you to SEMrush for sponsoring today's video.
+- Seven verified geo strategies.
+- Effective geo isn't about tricking a robot.
+- It is about optimizing content to appear in the responses generated by AI-powered engines.
+- To rank in generative platforms, content must be easy to access and understand.
+- Analysis shows that AI favors clarity and direct answers.
+- When content buries the main point under long introductions, the AI often skips it in favor of clear sources.
+- The strategy is to address the user's questions directly in the first one to two sentences before elaborating on the details.
+- Brands must consistently publish content about topics closely tied to their core expertise.
+- The more a brand is associated with specific topics, the more likely it is to be referenced in an AI-generated answer.
+- Regularly creating high-quality relevant content that aligns with the brand interests is key to building this association Number three the quote and stat magnet AI models prioritize certainty and often favor specific data points Pages containing specific quotes and statistics tend to perform better in AI responses.
+- For example, AI answers often cite statistics to justify best recommendations.
+- Content should include verifiable statistics to serve as anchors for these generative answers.
+- AI tools prioritize current information.
+- If data is outdated, the AI is likely to discard it for a fresher source.
+- Regularly updating content is essential to maintain relevance and ensure the AI is pulling the most accurate version of the facts as search behavior shifts rapidly.
+- Traditional SEO focuses on backlinks, but Geo focuses on earning credible mentions across the web.
+- AI crawlers weigh user-generated content heavily.
+- Unlinked brand mentions on social platforms like Reddit, YouTube, and Facebook can boost visibility in AI-generated answers just as much as a website link.
+- AI crawlers need information to be infinitely digestible.
+- Content must be well structured and accessible to AI crawlers.
+- Specifically, using server side rendering is critical so that AI crawlers can easily process the pages.
+- If a page relies on complex client side scripts to load the crawler may miss the answer entirely Additionally using bullet points lists and tables helps LLMs extract key information effortlessly Number seven, the Wikipedia authority.
+- One of the most effective strategies is maintaining a presence on Wikipedia.
+- Since Wikipedia is a major source for AI training data, having an accurate entry increases the chances of a brand being referenced.
+- It serves as a primary truth source that models use to verify brand details.
+- Customers would see the data about their AI mentions but failed to act on it because it didn't change their behavior.
+- SEO and GEO strategies must work together.
+- The AI Visibility Toolkit from SEMrush is effective because it fits into a broader search strategy marketers track ai visibility identify gaps and then use the tactics discussed like updating stats and earning mentions to fix the narrative at the source ai is already answering questions about every industry the only variable is whether a specific brand is included in that answer the best approach is to start by odding top performing pages.
+- Add specific statistics, ensure content is structured with clear lists, and track whether the brand appears in the AI's consideration set.
+- It is the first step to seeing what the AI sees.
+
+---
+
+## Video ID: 3PwqBJGb5Q8
+- AI is changing everything we know about SEO.
+- Now for a while, AI seemed like the answer.
+- So now Google is changing the game again.
+- Google is taking over more space on search pages with AI-powered overviews.
+- We'll talk about how these shifts are reshaping strategies and what you can do to maintain an edge.
+
+---
+
+## Video ID: 3v0qozdGWvY
+- Google will put information on your website and refer to your website we I scroll up some investment on how to click Xdo Services to create channel if that cookie had bought to do this.
+- So, our first step is human plus AI combo content.
+- When you have content, you can use AI tool to help you.
+- So, you can use AI plus human combo to make your content.
+- Second one is our EAT principle follow experience expertise authoritative and trustworthiness if you have the content of your website following your website chance will come to the SGE section and the third step is our schema markup and the website is FAQ, articles and how to schema add Google can help you step is our fast and mobile friendly website.
+- Try to do that your website is very fast.
+- As much as you can load your website, you will get the benefit of your search engine and your website rank.
+- Plus, your website is responsible for your website.
+- Because 80% of users can visit your website from the phone.
+- If you are not responsible for your website, then you will have a problem for your rank.
+- So you will be fast and friendly friendly And our fifth step is engaging visuals and infographics You will be able to do the same things you mentioned in your website an array of images the home after a trust and you can get a chance to get your website in the SGE section.
+- So these are our 5 steps.
+- If you follow them, then you can get your website in the SGE section.
+- SGE means that your website, the search result will show you.
+- So hope you will be clear to your website in the SGE section.
+- search results you can show your website if you have any questions or questions then contact us if you like this video, subscribe to the channel and you will see the next video.
+
+---
+
+## Video ID: 4WRWJnhZTt4
+- Let's track Google's AI overview ranking in search results.
+- Currently, there is no official tool within Google Search Console for this specific metric.
+- You need to monitor your websites performance manually.
+- A position near the top like one or two increases the chance of being featured in an AI overview.
+- Look for a new filter or segment called AI Overview if Google Ads it later.
+- Use third party SEO tools like Semrash or RIFs.
+- They may introduce tracking features for AI generated answers, monitor your content for EAT experience.
+- Google's AI prioritizes sources demonstrating these qualities.
+- In the AI Overview box, for more simple computer tutorials, subscribe to the channel.
+
+---
+
+## Video ID: 59gAI4N6l-w
+- For over two decades, search engine optimization, SEO was the undisputed king of digital marketing.
+- We obsessed over keywords, backlink profiles, and domain authority.
+- But a new challenger has taken the throne, answer engine optimization, AEO.
+- While they share a common lineage, the AEO versus SEO debate is not just about tactics.
+- Whether it is through chatGPT, Google's AI overviews, or specialized AI agents, the way people find your brand has changed.
+- The data behind the shift, Y-2025-2026, was the tipping point.
+- Why is everyone talking about AEO versus SEO right now?
+- We are no longer speculating about a future with AI.
+- We are living in a world where AI is the primary interface for information.
+- The reason every marketing department is pivoting to AEO is that the traditional search result is becoming a secondary feature.
+- Gartner recently predicted 2025-2026 search engine volume dropped by 25% as users migrate to AI chat bots.
+- When an AI engine like Proplexity or Google Gemini gives a full 300-word answer, the user has no reason to click through to your blog.
+- These zero click searches happen because the AI provides the answer right on the results page.
+- For businesses that rely on website traffic to fuel their leads, this is a wake-up call.
+- In an AI overview is present, the organic click-through rate CTR for traditional links can plummet by as much as 61%.
+- The question for marketers in 2026 is no longer how do I rank number one, but rather how do I become the source that the AI sites.
+- Conductor, the 2026 AEO benchmarks report.
+- Their recent data shows that while AI referral traffic is currently small, around 1 to 2% it is growing by roughly 1% every month.
+- In 2026, users aren't searching for best mountain bike.
+- They are asking for lightweight carbon fiber mountain bike under 25 pounds with hydraulic disc brakes for a 510 rider.
+- Traditional SEO can't handle that level of specificity, but AEO can.
+- Aquia, their survey found that 70% of marketers believed AEO would significantly impact their strategy in 2026, yet only 20% have actually started implementing it.
+- Understanding the AEO versus SEO differences.
+- To succeed today, you must understand how these two disciplines differ in their discovery mechanisms.
+- Traditional SEO is built for crawlers.
+- Think of Googlebot as a very diligent librarian who looks at the index of every book, checks who else has cited that book, backlinks, and decides which book should be on the top shelf.
+- SEO is about being the best book on the shelf.
+- AEO, on the other hand, is built for large language models, LLMs.
+- While SEO focuses on rankings and clicks, AEO focuses on citations and direct extraction.
+- In traditional SEO, long form has been the gold standard.
+- AEO requires a different approach.
+- While depth still matters for credibility, the AEO-ready portion of your content needs to be snackable.
+- LLMs look for clear, concise, and structured data.
+- If you want to win at the AEO versus SEO game, you need to provide answer blocks.
+- Imagine a user asking, what are the benefits of AI in marketing?
+- An SEO focused page might bury that answer on page 4 of a white paper.
+- An AEO focused page will have a clear heading followed by a direct 3 sentence summary that an AI can easily scrape and credit.
+- In SEO, the goal is position 1.
+- In AEO, the goal is to be the source citation.
+- If a user asks an AI agent a complex question, the AI will synthesize an answer from 3 or 4 top tier sources.
+- Digital marketers are now using tools to see how often their brand name appears in AI-generated footnotes.
+- Just as we used to track share of voice and traditional media, SOM measures how often in LLM associates your brand with specific keywords or categories compared to your competitors.
+- Interestingly, while total clicks might be down, the quality of the remaining clicks is often higher.
+- Brands that appear in AI-overviews actually see a 35% higher organic CTR on their links, than those that appear in traditional results but are ignored by the AI.
+- This suggests that being blessed by the AI as a credible source acts as a powerful endorsement.
+- How to build an AEO-ready foundation.
+- If your website were a house, Schema Markup would be the blueprint that tells the AI exactly where the kitchen is and how many bedrooms there are.
+- In the AEO-versa SEO landscape, Schema is your most powerful tool.
+- By using FAQ, how to an organization schema, you are essentially translating your human readable content into a format that AI agents can digest without any ambiguity.
+- We recommend a hybrid approach to content creation.
+- Every piece of content should follow an answer first model.
+- This structure satisfies both the AI-bot looking for a quick snippet and the human reader looking for a detailed guide.
+- Rolling down on EAT experience, expertise, authoritativeness and trustworthiness, EAT have never been more important.
+- Because AI can synthesize facts, but it cannot synthesize genuine human experience.
+- AI models are trained to prioritize sources that show real-world expertise.
+- To stand out, your content should include original research, personal case studies, and unique insights that a machine cannot simply hallucinate or scrape from a generic site.
+- In 2026, being an authority is your best defense against being replaced by an AI summary.
+- We are moving away from short choppy phrases like AEO versus SEO differences and toward natural language questions like, what was the difference between AEO and SEO in 2026?
+- People talk to their AI assistants like they talk to a friend.
+- Your keyword strategy should reflect that.
+- There's tools to find the long-tailed questions your customers are actually asking.
+- AEO in action, real-world scenarios.
+- Because AI searchers who are looking for specific solutions are often further along in the buyer's journey.
+- By the time they clicked the link in a chat GPT response, they were already pre-qualified by the AI.
+- For local businesses, AEO is a game changer for voice search.
+- The AI isn't going to read out a list of 10 websites.
+- For these businesses being AEO optimized isn't an option.
+- Following 2026, it became clear that the AEO versus SEO debate is a false dichotomy.
+- In fact, you cannot have a successful AEO strategy without the technical foundation of a strong SEO program.
+- SEO ensures that your site is fast, mobile friendly, and crawlable.
+- AEO then adds the voice.
+- The goal is to be the definitive answer that the world's most powerful AI models rely on, partnering for the next phase of growth.
+- Navigating this transition requires a partner who understands the nuances of the AEO-enabled marketing ecosystem.
+- At aspiration marketing, we specialize in helping brands evolve their strategy to meet the demands of a changing search landscape.
+- Whether you are trying to understand the latest HubSpot AI features or looking to deploy autonomous AI agents to handle customer queries, the key is to stay ahead of the curve.
+- The shift to AEO is a massive opportunity for those who are willing to adapt.
+- We can help you audit your current visibility and build a content strategy that doesn't just rank, but answers.
+
+---
+
+## Video ID: 5ANXivPeMj0
+- You have noticed that in the time of the time, the person who wants to search something, the answer of the query, the information about the business, the answer is traditional Google search by Google AI mode, charge GPT, perplexity, or the answer is like a generative AI tool.
+- We also, in the time of the time, whenever we need information, and when we want to know about any business, we are relying upon these generative AI tools including Google's AI mode.
+- So, if you have a business, your website or your blog, it is very important to you to show yourself in these AI tools or in AI searches as an answer or as a source because that is your visibility.
+- So, in this video, we are going to give you a complete roadmap how do you work AI searches?
+- If you have a website, you can also show it here.
+- So, to rank AI searches and to rank AI searches in today's time is very important if you are a business website owner or if you are a business owner.
+- If I talk about a search engine, Google works on the basic we already know when we are working on search engines we talk about crawling, indexing and ranking so what is the new content, search engine is doing it it is crawling, reading, spiders are reading and then depending on your web page's worth your worth, your optimization, your content quality and various factors like this rank your website on the basis of various factors and it divides in many pages.
+- So, in this case, we were doing SEO, basically.
+- But if I talk about the generative AI tools including the AI mode of Google which is powered by Gemini, Google search labs Now this is the basic thing, of course it is very technical to understand how it works but if I say it in short, this is the two things I work with one is LLM and the other is web search which is already trained data like you are a Generative AI the Open AI LLM has been trained from years to years using existing data and where are they from?
+- But if I talk about AI searches, then they are doing their work.
+- So when we are doing our optimization, or SEO, then we don't need search engine optimization but we need search everywhere optimization.
+- We don't rank only in search engine blue links in the top of the search engine but with that, we rank the AI searches, the chat GPT searches, the publicity searches.
+- So, here is the AI snippet.
+- Now, our website is ranked here.
+- We rank here in the top 3 This is good Because our SEO has a lot We have search engine optimization good but I have more interest here My name is here I get ranked Here my name is shown here.
+- So if I talk about leads, this is very important for me.
+- That chat GPT, perplexity, Google AI mode, and Google searches, I will also be top of rank.
+- The first thing is to learn SEO.
+- So, we can't replace SEO, we can't do SEO, we can't do search everywhere optimization.
+- No, you have to do SEO, you will try to show in Google in the top 5 rankings.
+- Because if you are showing there, I have told you, AI searches are LLM plus web browsing.
+- Now the first thing other than SEO, which you are doing on-page SEO, technical SEO, off-page SEO, with that you have to focus on a lot of things and that is double EAT, E-E-A-T, experience, expertise, authority and trust.
+- These 4 things are in your blog, in your website.
+- Then the AI will keep it as a source.
+- now you open the top 10 results and see first link is Mayo Clinic now this is Mayo Clinic this is one of the best clinic as well as their blog section disease condition and remedy so you can see here you will get the full details and you can actually trust this source this is an actual clinic and a hospital with that you can see that this is by Mayo Clinic staff If you click on this you can see all the doctors who are experts in this industry, will get a list.
+- If you click on any doctor, they will complete details.
+- And this thing as a search engine, as an AI, is a very trust factor.
+- That this person or this website will definitely know which is the headache and not the problem.
+- The schema is a JSON that you add in your website or web pages which tells you more about search engines or any crawler.
+- So, the schema is very important for your AI snippets.
+- It is very important for zero searches.
+- So if I click this webpage, I copy the URL and check it out, search Schema Markup or Schema Markup Validator, Google's tool is this, and when you paste the URL and test it it will appear that in this particular how many schema are in this particular web page So you can see here that there are 3 schema in this web page One of the most important for your AI snippets and chat GPT and all.
+- So, these are all the FAQ page that is very important.
+- I have searched the thing that I have searched that what is the remedy for headache or remedy for headache so you can see here name as well as text here see here they have put it in the schema so this schema is multiple schema are there any home remedies or headaches you should avoid is there anything that makes headaches worse so already the things that are searched here I have put them in honor.
+- So, schema is helping you, assist you, so you can use it and it is also useful for AI.
+- This is also very important.
+- So, if you have a website, FAQs, put it on it and create it on it.
+- Create your Eat verified content, so your content will show you in AI.
+- Your content is your website or blogs.
+- You should update them with the new stats.
+- And little things you can actually try to get rank on the AI.
+- But again, as I said, if your content is good, if your website is actually good, then search engine or AI will rank it.
+
+---
+
+## Video ID: 5K5ItxyPc_k
+- I'm about to show you something that's going to fundamentally change how you think about SEO work and I'm not exaggerating.
+- Otherwise, you're just building a beautiful website that's invisible to the systems that matter most.
+- The three layer AI SEO stack that actually works.
+- Creating SEO-driven content at scale.
+- The key realization, one SEO professional using these tools can now do the work of five to ten people.
+- Not every website is suitable for this approach.
+- Qualify the opportunities by domain authority and relevance.
+- Even send the outreach emails.
+- Each step builds on the previous one, and the entire sequence requires minimal human intervention.
+- This is what I mean when I talk about AI SEO.
+- It's not just using AI for individual tasks.
+- It's orchestrating multiple agents to handle complete workflows end to end.
+- Why AI SEO is the term that matters.
+- You've probably heard different terms, GEO, AEO, LLMO, AIO.
+- SEO is expanding beyond traditional rankings into how AI systems retrieve, cite, and recommend brands.
+- Want to be the winner of the AI age and a first mover?
+- Transform your skills with real AI knowledge today in our AIR and D labs.
+- We go way beyond what I can cover in a 10 minute video, specific frameworks, detailed training programs, and step-by-step systems for building a career in the AI economy.
+- The AI revolution is creating the biggest job market transformation in history.
+- Start your journey by walking through a customized pathway powered by AI.
+- For a fraction of the price of what this level of coaching and live training should go for, I'm giving it all to you.
+- Don't let this age of AI abundance pass you by.
+
+---
+
+## Video ID: 5Mlx-2kbAXs
+- AI is quietly changing how people find information.
+- They're going to ChatGPT, perplexity, AI overviews, and they're getting their answers.
+- Now, which marketing tools are worth it for customer management?
+- The same brands appear again and again and again, even though we ask completely different questions.
+- That's how AI search works.
+- According to Gartner, by 2026, 25% of traditional search traffic is supposed to disappear and get replaced by AI-generated answers.
+- Traditional SEO still matters, but it doesn't guarantee visibility anymore.
+- So today, I'm walking you through Generative Engine Optimization, or GEO, a seven-step system that helps AI engines start citing your business, understanding your business, and articulating you as the solution instead of your competitors.
+- And if you want to see what this shift looks like in action, HubSpot has a free guide that breaks down the early signs of AI-powered search and how to get ahead of it.
+- I'll link it below so you can grab it before you start on your GEO audit.
+- Before you can optimize for AI, you need to know where you're actually showing up.
+- Take your top 10 money keywords, and I want you to ask AI the same way that your customers would.
+- Or how do I choose the best marketing automation tool.
+- You want to test these in ChatGPT and Perplexity or Google AI Overviews, and when you do this, make sure that you are using a private setting so it's not biased to answer how you would think.
+- Which sources are the AI tool citing?
+- You can also tap into tools like Profound or Aerobs to give you a sense of where they're going to get this data, this information.
+- You'll see the same pattern over and over again.
+- There was a study done by authorities which found that only a small fraction of the top-ranking Google pages actually appear in AI.
+- In other words, what's winning in SEO today isn't automatically winning in AI search.
+- Understanding the way to structure your content with data-rich, recently updated content is absolutely important.
+- So take a screenshot of some of those results, put them in a save folder, and monitor them time and time again.
+- Now that you know where to stand, the next step is simple.
+- you need to make your content easier for the AI to understand and of course, sight.
+- So step two, restructuring.
+- You need to write for how AI reads.
+- AI tools like ChatGPT, Gemini, and Perplexity are built to summarize huge amounts of text fast.
+- So you need to start your top performing blog posts and landing pages with insights that that align with the prompts that your customers and your audience would be asking the LLM.
+- Start each page with a short answer explaining why it matters and back it up with data and examples This gives you authority Here a quick example Before we had a long intro story and then the answer after you see the answer first and story second.
+- When you flip that order, AI instantly knows what your page is all about and it can cite it with confidence.
+- You need to make sure you're using the exact language that people type into AI or say to their AI when you're restructuring.
+- Think about the modifiers that people use inside of an AI prompt.
+- The same buying stage phrases that worked in SEO like best, top, easy to use, cheap, are the phrases that users are using when they're leveraging ChatGPT or perplexity.
+- These are your bottom of funnel prompt modifiers.
+- When you combine answer-first structured with bottom-of-funnel modifiers, you're giving the AI exactly what it needs to feature your brand.
+- So once your content is structured and it's visible, the next question is, why would AI choose to cite you over someone else?
+- Step three, authority.
+- You want to build signals that AI trusts.
+- You need to make AI trust you enough to cite your content.
+- Schema helps AI understand who wrote it, when it was published, and who it belongs to.
+- You should also tap into metadata as well.
+- You can use a free tool like Google Structured Data Markup Helper to make this really easy.
+- Select a data type such as articles or questions and answer page, Then paste your HTML source or public URL into the tool and click start tagging.
+- Highlight your headline and mark it as the title, author name as author, publish date as date published, and your main article text as article body.
+- If you've done this, congrats, you're already ahead of 90% of the sites still guessing how AI reads their content.
+- You want to get your website listed where AI is already looking to for credibility, whether it's Reddit, YouTube, Capterra, Trustpilot, Yelp.
+- These review sites and UGC sites are AI's reference library.
+- Finally, don't be afraid of reaching out to reporters and journalists to get you published in third parties, whether that's through affiliate marketing or simply using a tool like Harrow.
+- Now it's time to make sure AI actually finds it.
+- Step four, get technical.
+- Optimize for AI crawlers.
+- Think of this as your website infrastructure checkup The same principles as SEO but turned into AI discovery oriented If AI can reach your content faster it going to recommend you faster Start with a quick technical checkup because even though AI discovery feels new the fundamentals are still key.
+- Your site should load in under two seconds.
+- Add schema markup in all text so AI and accessibility tools can actually read what's on your page.
+- Milestone Research found that 60% of AI responses come from FAQ-structured content, so make sure that you have these sections on your site and they're tagged correctly.
+- A lot of folks also like to emphasize that content freshness is a key signal for AI models updating content regularly and can increase your chances of being cited.
+- When your site is technically sound and fast, you remove every barrier that exists between your content and the AI models being able to index it and use it as a part of their systems.
+- Step five, workflows.
+- Scale your GEO content production.
+- This step is all about building a system that you can hand off to your team or your future self so every new piece follows the same winning formula.
+- Here's your GEO content template.
+- Your headline needs to clearly state the main query that you're answering and keep it short and sweet.
+- Five, provide a detailed analysis.
+- Mark questions and answers very clearly for AI visibility.
+- Make sure that you use this template to turn every single post into a GEO-ready asset that AI can understand, trust, and cite consistently.
+- Build this workflow once and you'll scale AI visibility on autopilot.
+- Now, let's make sure that your GEO-ready content is actually showing up where it matters the most.
+- Monitor your AI visibility.
+- Test your top 20 prompts across ChatGPT, Perplexity, Google's AI overviews, and again, you can use tools like Profound or Aerofs to make this smooth.
+- which competitors showed up, which sources did the AI cite.
+- Once you have the data, use this GEO prioritization matrix.
+- High value plus low AI visibility equals immediate priority High traffic plus high visibility maintain and update low traffic and high visibility means analyze why and adapt The goal is to turn AI tracking into a habit because once you see the patterns, you can optimize faster.
+- Once you've nailed these six steps, there's still room to grow.
+- Step seven, advanced tactics.
+- Here are four tactical strategies that will help you push your brand above the competition in the AI answers.
+- Instead of just writing the best tools, show people exactly why organizations switch and back it up with research and data.
+- AI engines use these platforms to decide who to cite, and it uses comments to inform the responses in the LLM.
+- A Wikipedia strategy.
+- It is one of AI's most trusted datasets, so a credible edit can have outsized impact.
+- They might even require more budget and scope, but they create long-term authority that AI recognizes and uses across platforms.
+- You're going to test your top 20 keywords across ChatGPT, Perplexity, Google AI Overviews, etc.
+- Non-branded prompts are super important here.
+- Then tag FAQs using Schema so AI engines can read them clearly.
+- Submit your sitemap so AI and Google can recrawl them faster.
+- Week 4 Workflow and Tracking Build your GEO content template and start your weekly tracking log.
+- Every week, check to see which AI tools are citing your content or what other domains it's citing so you can reach out and collaborate with them.
+- You'll start seeing early signals of AI visibility, citations, mentions, and traffic from platforms that never existed in traditional SEO.
+- The sooner you start, the sooner AI is going to start recognizing you as the authority.
+- Folks, GEO isn't replacing SEO.
+- If you want to start optimizing for how AI actually finds sites information right now, then well done.
+- If you want to go deeper, grab HubSpot's AEO Guide to Early Signals.
+- It breaks down exactly how AI is pulling content across different industries.
+
+---
+
+## Video ID: 5OW_xvI6Gls
+- So it's pretty easy to track rankings, clicks, and traffic with traditional SEO.
+- But in AI powered search environments, that's not so easy.
+- A-O tools like profound and PKI sort of close the gap as far as providing insight into your brand or businesses visibility within AI-generated answers.
+- These tools aren't exactly one to one in terms of what they offer and how they work.
+- Although they do both offer AI visibility insights, that way you can optimize your content strategy for AI search.
+- But I'll take you through what both of these platforms offer, who they're best for, their pros and cons, and also give you a little bit of insight into why these tools are so important, what they actually offer, especially if you're new to getting into AI visibility and understanding how that works and what that means.
+- If you're at all familiar with SEO, some of this will see somewhat familiar to you, but it is considerably different compared to traditional SEO.
+- So I'm going to talk about AI visibility and what it is, if you're already familiar with this, you might just want to skip ahead the good stuff.
+- And if you've ever worked with Search Engine Optimization, SEO, you're going to be at least a little bit familiar with the concept, while keywords are a staple of SEO with A-O, you're more concerned with prompts or queries.
+- These are the things that people are actually using to get information in AI-powered search environments.
+- So somebody might hop into chat, GPT and ask a question like, need running shoes for trail hiking in the Midwest, or some random thing like that.
+- Most of the prompts with A-O tend to be a little more long tail, because when people are using AI-powered search environments, most of the time they're asking the questions in a more conversational tone.
+- They're going to ask about running shoes for trail hiking in the Midwest or whatever.
+- So A-O is really the practice of improving your visibility specifically within AI-generated answer environments.
+- Now, these can include chat GPT, perplexity, coal pilot, Google's AI-O reviews, quad, basically any AI engine where you can ask a question and get an answer.
+- And this is sort of entirely separate from SEO, although some of the content creation fundamentals do still apply.
+- AI answer engines and large language models don't all work the exact same way.
+- Their primary behavior is focused on the training data, which is the content and data that they were initially trained on to basically learn the English language.
+- And this is getting information from articles, videos, knowledge bases, trusted domains, even products and shopping feeds, depending on what the query is.
+- Again, when you're looking for best running shoes for trails in the Midwest, information from people that have actually used them that way is considered authoritative, at least to a degree within LLMs and AI-powered search engines.
+- When human experience acts as evidence, that sends a pretty strong signal to AI engines.
+- Again, if you're familiar with SEO, that'll seem pretty familiar to you now.
+- Reviews and comparisons, especially have high impact when the AI needs human judgment on a certain topic.
+- And while it is relatively simple to gain insights into search engine ranking, generative AI answers are a lot harder to track.
+- Because there's usually, there are at least, there's often no click, there's no refer, there's no obvious ranking, the same way that there is in SEO.
+- And you don't necessarily get any sort of alert, whether you appear in or disappear from AI-generated results.
+- And that's where tools like profound and PKI come in.
+- Well, good, AEO tools will let you know where when and how your brand is being mentioned, as well as what prompts are triggering those mentions.
+- The things that people are asking about in the AI-powered search environments.
+- And that's essentially how AI perceives your brand based on the information that it's sourcing and what it's finding out there.
+- Good AEO tools will also show you which competitors are showing up and where.
+- They'll also tell you what sources the AI engines are citing, including the types of pages.
+- So they might be citing more editorial for certain topics, more reviews for other queries.
+- Just sort of depends on the given prompt, basically.
+- But a good AEO tool will tell you what those sources are.
+- And of course, they'll also show you where your visibility is slipping or gaining over time.
+- And again, that's another metric that you can use to basically incorporate into your strategy where you want to improve, where you want to make sure your maintaining visibility.
+- And basically any decisions that you need to make in relation to how you're showing up in AI searches.
+- Now, you might be wondering if AEO tools are actually worth it.
+- You're not going to use a tool.
+- But they do give you a lot of valuable insights into what users are actually encountering when they're searching for things in AI powered environments.
+- And so whether a tool is really worth it depends on how important the monitoring and optimization really is for you.
+- There are also worth it if AI generated answers drive a lot of brand awareness for your particular industry.
+- There are also worth it if you're ready to act on insights that they provide so you can optimize your existing content or maximize placements and citations, especially if you're in the strategy part of content creation.
+- And of course, if you want to be included in AI systems as a viable option for whatever prompts most relate to your brand or industry, having these insights is really important.
+- Again, they're not magic bullets that are going to guarantee visibility, but they do provide you with the means to understand where you're losing, where you're winning and where you can gain visibility by sort of course correcting.
+- And I think for a lot of brands and businesses, the cost of not knowing often exceeds the cost of the tool.
+- It'll track your brand's presence and AI answers, analyzes how and when AI crawlers interpret your own website content.
+- It also provides demand intelligence, which is sort of like a key word search volume if you're familiar with SEO.
+- So it's a much more robust AEO tool compared to peak.
+- I think it's really well suited for brands that need to go beyond just basic AI visibility metrics.
+- So you can understand the trends, see citations by page and domain, and then track your competition.
+- For e-commerce brands specifically, it also offers AI shopping visibility.
+- But again, profound goes a few steps farther.
+- So it lets you see what real people are asking within AI search environments, specifically the prompts and queries that they're using and how often.
+- Now you can track prompts in PGI and we'll get to that shortly, but profound has prompt volumes, which is very similar to search volume for keywords.
+- And this insight really helps content teams, especially to figure out what topics they should be prioritizing for to improve their visibility.
+- So this monitors how often AI bots are actually crawling your own site and content, and even which pages are being crawled the most or being ignored.
+- The found has tools and templates that help teams to generate new content or optimize existing content.
+- So and it'll optimize specifically for AI answers.
+- Now this also gives you an AEO content score, which is a machine learning metric that can predict the likelihood of future citations.
+- But again, you know, this is like SEO, there are no 100% guarantees, but it definitely gives you a leg up, especially when you're in the process of either optimizing your content or creating new content specifically to get citations in AI engines.
+- The AI tracking visibility is comprehensive.
+- It offers the tracking and monitoring for shopping in e-commerce, the prompt volume metrics.
+- With the AI bought and crawler analytics and the content generation and optimization tools, it's a very powerful tool set, but that takes us right into the cons.
+- Now, PGA is a much more straightforward AEO tool that lets you define prompts, although it can suggest them for you.
+- Now, the source and citation metrics in PGA will tell you which domains and pages are showing up in AI search environments and how often they're being cited.
+- The sentiment tracking provides insight into the way that AI answers are presenting your brand, and whether that's an a positive, a neutral, or even negative light, especially for brands that really need to steer the narrative in a better direction.
+- PGA also makes it really easy to compare your positioning against that of your competitors for the same prompts that you're trying to rank for or maintain positioning in.
+- And being able to spot those trends also helps you to optimize your own strategy to overtake them if you need.
+- Instead, it uses UI-based scrapers that literally go to the search environment, whether that's chatGPT, Proplexity, Google's AI overviews, and it will get the information basically like a person would.
+- It sort of simulates a real person looking up whatever the prompt is and then seeing what the results are.
+- So the results that the AI engine is serving are more true to what your eye would experience if we were doing the same.
+- It's really lightweight and even if you're a complete beginner, it's a very approachable tool.
+- I think it's a really great choice for small teams and even solo per-newers who want to track their AI visibility and optimize their strategy.
+- That said, it is on the basic side, especially compared to a tool I profound, but I don't think that every business necessarily needs profound.
+- So some of the biggest benefits to PGA, it's really easy and straightforward, prompt driven AI visibility tracking with competitor benchmarking.
+- It'll even suggest prompts just to save you guess work, especially if you're not really sure what you should be tracking for your particular industry.
+- And like I said, the setup is very, very quick.
+- It also has a really affordable entry level tier that tracks chat, GPT, Proplexity and Google AI overviews.
+- That said, there are some cons to consider.
+- Pique lacks the deeper technical insights, including AI crawlers that profound offers, and you don't have content creation or optimization workflows built in.
+- The lower tiers do have a limit on the number of prompts and answers that you can track every month.
+- And although you start off being able to track chat, GPT, Proplexity and Google AI overviews, things like Gemini, Cloud and Google AI mode are available with additional fees.
+- Now, if you're trying to decide between profound and PGA, it's really important to look at your teams needs, but also it's capabilities along with what you actually intend to do with the insights that you're gaining.
+- So like if you need to know how AI bots are accessing and interpreting your site, profound is definitely a good fit.
+- I think PGA is best if your team wants measurable prompt level insights fast, so you can understand where or why your brand is or isn't showing up in AI spaces.
+- PGA is a great starting point into AI visibility, especially before scaling into a deeper and much more involved platform like profound later on.
+- And you might be wondering if you should use AEO tools or just higher in agency.
+- And you can work from insights to create and deploy a strategy that's going to improve your AI visibility.
+- Then an AEO tool can be a better option.
+- But hiring in AEO agency like scale visible can be a good choice if you lack the in house AEO expertise.
+- You need help defining a strategy and then following through with the execution.
+- If you only need insights, I think an AEO tool is probably best.
+- If you need strategy and execution that drives results, an agency might be a much better fit.
+- There isn't really a one size fits all AEO tool.
+- Like I mentioned, neither tool is going to guarantee a visibility.
+- But the right AEO tool can help you avoid strategizing or trying to optimize your content in the dark.
+
+---
+
+## Video ID: 5bueFfT3YiA
+- Back in the 2000s, SEO created a $100 billion industry.
+- And it rewarded anyone who understood how to play the algorithm, either the right way or the black hat way.
+- Generative Engine Optimization, or GEO, is creating a $1 trillion industry.
+- And just like SEO changed marketing forever, GEO is rewriting the playbook again.
+- Not completely, but it's evolving SEO into something bigger and much more lucrative.
+- Well, SEO ranked keywords and backlinks.
+- GEO ranks user intent and credible brand mentions.
+- And the mentions that GEO likes, you can't really fake them.
+- AI search engines like ChatGPT, Gemini, and Perplexity don't really care about your keyword density or your domain rating as much.
+- They care more about who's talking about you, their party citations, and whether the people talking about you are trusted in your industry, which is why spammy backlinks don work as much anymore If real customers journalists or communities mention your brand AI search engines will pick that up as proof And that how you get cited That how you show up And that why marketing feels a lot like 2005 You need real conversations, real value exchange.
+- Live events, communities, and partnerships matter again.
+- Providing genuine value matters again.
+- AI search engines disintermediate the journey.
+
+---
+
+## Video ID: 5yxgsvAKC2M
+- So my mate said that the best tactic is to imagine your audience naked, that's pretty much the go to a trick on how not to stress, but considering there's pretty much 800 people on the live, statistically some of you must be in the toilet probably somewhat naked.
+- Let me check if the screen sharing is invisible should be good.
+- So today I'll be talking about tips and tricks from our past two years of combining experiences in LLMS SEO or geo.
+- There's a lot of names for this new exciting part of the SEO.
+- So hopefully they'll help you to boost your exposure on LLMS such as charge, PT, gen and I and others.
+- The charge PT as other AI models are booming.
+- But even more interestingly for us, there's more and more predictions that AI search will surpass search engine traffic by 2028, which is not too far away from today.
+- And we can see this AI boom, AI search boom happening.
+- We can see more and more features are being included in AI search such as shopping.
+- The charge PT was one of the first to introduce this Google recently announced a shopping modules within AI.
+- So AI search will be eating up more and more of the traditional search if you will.
+- Obviously Google has a big role to play here, but they are competing with charge PT and other models which are still gaining traffic and gaining more peace of the pie.
+- Obviously Google is not just taking shots, they are trying to compete within this AI market with amazing new models, the Gemini which they recently released is probably the best model out there today.
+- So yeah, but also they are competing in terms of the traditional, they are trying to adjust traditional search with introduction of AI overviews, which most of marketers hate.
+- And why do we hate AI overviews because they mostly take away organic traffic of ours because they pretty much push all the content, all the ads, all the pretty much organic results they push them down.
+- So the violet chart here growing in terms of impressions, we are getting better in terms of the traditional SEO.
+- But the same number of impressions or even growing number of impressions is getting us less and less clicks, which is painful.
+- And this is how charge PT and other AI models are pretty much coming into our marketing picture.
+- So AI overviews are pretty much taking clicks mostly from top three results.
+- So AI overviews are visible for getting close to being visible for most of the results, most of the queries.
+- So they will be expanded to more and more queries, which will result in less and less clicks, which will be obviously painful.
+- But there's also a lot of opportunities in terms of what you can gain from new marketing channels such as AI models.
+- And this is a rise of geo, some people call it AI visibility, some, some called SEO for LLams.
+- It's not like our industry needs a bunch of new acronyms, but we'll see which one sticks, but they are all talking about the same, which is getting your brand exposed within AI models.
+- And we've been pretty successful at getting traffic from AI models.
+- And most importantly, it's a very, very good quality traffic.
+- So this is a pretty good tip.
+- So this is probably another tip that I can share with you guys, perplexity is about to start perplexity ads on a platform which will allow you to place ads within perplexity.
+- And for many parts of this webinar, I'll be talking about obviously GEO and, you know, praising on this new channel of customer acquisition.
+- But first and foremost, Google is a big part of GEO.
+- And SEO is also a big, big part of GEO.
+- So there's a lot of Twitter posts or exposes that SEO is that this is such a bullshit.
+- SEO has never been more important than now.
+- It's, you know, it's, it's, it's how important it is.
+- And I believe that business for most of SEO agencies, SEO consultants will be booming also thanks to this new exciting channels, which will be growing over time.
+- So so our public data is available for, for them.
+- You can boost your exposure and, um, by just allowing AI coers to dig through your site.
+- There's a huge documentation or like, very easy to understand the documentation on, on open in AI's website or other platforms website.
+- But you can take an extra step while opening your site to LLNs.
+- We see that it affects some of the AI models or some of the AI tools like perplexity, we can see that the data or specific parts of the specific features that we decided to include in our LLNs takes the file got picked up by perplexity.
+- So, we can see that this is a way to, to affect AI models similar, or likewise with a cloud AI.
+- So, I would be somewhere in the middle in the discussion if it's, you know, valid way to optimize your visibility within AI models.
+- Again, a lot of critics, a lot of supporters for this, for this file.
+- I would imagine that the biggest win that you guys can take away from from this webinar is this single click that I'm, I'm here to recommend for you guys.
+- So, um, if you have a YouTube channel, if your company, your brand has a YouTube channel, you can allow AI models to train new models on the transcripts from your videos.
+- And that's has immense potential for boosting your visibility within AI models.
+- So, we did that for, for our own AI channels.
+- So, you can see here how on average we rank within AI models, how often they recommend brand 24.
+- You can, you can choose OpenAI, you can use and choose Anthropics, some other models as well, which is crazy for me, because I would imagine that Google would be never sharing this sort of data with other vendors, with other, you know, competitors in AI space.
+- But for some reason, there's, must be some major among those companies.
+- And what it's super important here is that when we look at the stats within our Google Analytics or heap analytics or any analytics tool that we use to track the traffic on our website, it's, you know, the traffic from charge PTO or proplexity is only a fraction of recommendations that are actually happening and coming to our product or our brand, because most of our recommendations from AI are in the zero click model.
+- So again, YouTube click, by default, it's turned off.
+- But again, I believe that this is probably the biggest ROI that you will get from any click ever or definitely this year.
+- So there's more ways you can open yourself up to AI models.
+- This will result in most of your conversations being used to train your models.
+- And then all the conversations that they have when working on the new content, when they working on the copyrighting for the new campaign or email marketing, they, all the conversations will be used by chance to train models.
+- So that's another step to open yourself up to AI models.
+- And I know that opening yourself up to AI models is controversial as it is because most of the companies have, you know, data administrators with which are not super pumped about, you know, opening yourself with the data to a chatGPT or other AI models.
+- But again, it's not about sharing some secret information, some proprietary data, some patterns.
+- Again, also there's another step you can do to to to to to index or to pretty much trigger our crawlers from chatGPT.
+- And the simplest way to do that is just by asking it specifically using words like please and thank you because our AI overlords couple of years from now will take over and they will remember who used words up please and thank you.
+- So if they ever see this webinar as it will be visible as video, my name is Mike, I was always pro AI.
+- Anyway, you can trigger a crawlers from OpenAI, you can trigger crawlers for pretty much all the tools available out there, all the AI models available out there.
+- And you can just simply ask them to index information about from your blog, from your website.
+- To make sure that all the recent data is available.
+- So in this way, you do not count on some crawlers to visit your website, naturally in a way, you do not count on stuff like LMS takes that, you trigger crawling yourself.
+- Another step of opening yourself up to Chad GPD and other models is to create your own GPT within their marketplace.
+- We've uploaded all the product information about our company or all the blog posts and we've managed to get our own GPT version that's additionally trained on information about our product, about our company.
+- So it's a specific, it certainly works.
+- And you can see that there AI traffic, so the traffic that they're getting from Chad GPT, Gemini, etc, is booming in big part thanks to this custom GPT that they've made.
+- And on top of the list of opening yourself up to AI models, is MCP, which is let's say a protactic because it typically involves deadelopers.
+- Most of people will expect to have the data from the tools that they buy, tools like you know, heap analytics, hardware, Samarage, brand 24, Chad Bid, whatever tools we use, whatever service we use will expect that the data from this tool is available within my preferred AI model.
+- The next step is tracking the exposure within AI models themselves and there's a number of number of tools that allow you to do that.
+- Some of the tools some of the all the tools that allow you to do that are profound tools from US, Server SEO so Polish company that does this really well.
+- So if we go inside of one of those answers here we can see that you know Chad beat collected over every day it collects some answers for this particular prompt and we can see roll answer that it got from Copilot from Chad GPT from Claude from Deep Deep Sieg and number of other AI models and if this knee is visible on the second position here then it's you know we tag it as a second spot just like we would tag you know second spot within Google organic results within the SEO tools.
+- So this is how it works we track those prompts we track dozens of prompts or hundreds of prompts for specific brands and we track their positions within each model and this is how we can pretty much estimate the exposure and track whether brand is booming or you know decreasing invisibility within AI models.
+- So most of the tools work like that and they correlate really well with actual traffic that we see within Google Analytics.
+- So if you see a boost of visibility within tools like Chad beat you will also see boost invisibility in just Google Analytics traffic that you see coming from Chad GPT or from other models.
+- So it's a very very cool way to track what historically was was difficult to track because again most of the recommendations from AI models are untracable or they're used to be untracable because they are not clicks they are not referrals.
+- They are just mentions in the text that will result in boosting brand awareness or people just will be typing you know the name of your company into Google or they will be typing the name of your domain so you will see this as a direct or Google let's say branch traffic.
+- One of the key differences between SEO and geo is mentions are way way more important than they used to be back in the SEO day again we are in SEO day as SEO is not going anywhere but brand mentions are correlating a big time with the position of a specific brand within Chad GPT.
+- So we can see that in the very very simple terms the more brand mentions you get specifically from high quality sources the bigger exposure your brand gets within AI models.
+- And this opens us to many many tactics that we can use to boost our engagement and boost our visibility within AI models.
+- One of the major announcements last year was open AI you know partner partnering with our Reddit and you can see that Reddit data is vital to training new AI models and this is why you see more and more brands are taking to Reddit to boost their customer engagement on Reddit boost number of mentions on Reddit really engage the discussion more so there's more more conversations related to mint mobile or t-mobile or any other company on Reddit as they affect AI visibility big time.
+
+---
+
+## Video ID: 6NFei1FbytM
+- And it's not just this one product, that exact same spike in chill pattern appears on products that share a common trait.
+- Google's AI overview is recommending it.
+- They're quietly creating a brand new way for SEOs, brands, and marketers to go beyond traffic and to create real product demand right within Google's search.
+- Up until earlier this year, Google's AI overviews mostly appeared for informational queries.
+- How to train for a 10k in what is intermittent fasting?
+- But if you look at historical search results for a commercial query like Best Golf Falls on any random date, you probably won't see an AI overview there.
+- Suddenly, Google started showing AI overviews for these best product name queries, and it was happening across the board.
+- In March, Google started testing links in AI overviews to more search results.
+- Now, here's the important part.
+- So now, Google isn't just answering queries in AI overviews.
+- Most people don't trust random websites, influencers with affiliate links or brands reviewing their own products.
+- AI overviews remove almost all of these obstacles in one move.
+- And then still trust in the searcher because the recommendation feels like it's coming straight from Google.
+- Not someone else who might have a different motive to recommend a product.
+- In my opinion, that's a big freaking deal because as an SEO or digital marketer, you now have the chance to materially impact your business and clients' businesses by shaping this new search experience.
+- And I've got a handful of tactics that'll help you get your products mentioned in these AI overviews.
+- The first and most important tactic is to target list goals.
+- If you look at the cited pages inside the best product AI overview, you'll see they're almost always list to goals.
+- Open a few of them up and you'll often see the exact same products that appear in the AI overview sitting right there in those lists.
+- But our recent study revealed that over 45% of citations change when AI overviews are updated and get this.
+- AI overviews refresh on average every two days.
+- You're basically playing SEO whack-mo.
+- Just run a blank search, then go to the cited pages report where you'll set a filter for where the query contains your target keyword.
+- And now we have a ton of listicles that are mentioned in AI overviews where products like yours are being referenced.
+- Now, even if you get listed in some of these posts, it doesn't guarantee a mention in the AI overviews.
+- AI assistance build their responses using a technique called Preary Fana.
+- When you enter a prompt like, plan me a 5 day trip to Japan in November.
+- The AI doesn't just answer the question directly.
+- It's silently fans that single question out into dozens of smaller, long-tailed subquiries.
+- It then pulls information from the pages that rank for each of these subquiries and stitches the important parts together into one complete answer.
+- So if your content is mentioned across many of the pages that surface for these fan-out queries, your chances of getting cited or included in an AI overview go way up.
+- Now, we can't know the exact list of fan-out queries in AI system will use because a response is are personalized and b.
+- Assistance dynamically generate new subquiries depending on context, location, previous interactions, and available data.
+- But AI assistance, they tend to fan-out queries into the same predictable patterns.
+- Like, best-exfer-wise or best-ex incurring year, top recommendations for topic, x versus y, is x worth it, alternative to x, and more.
+- So the more your brand or product is mentioned on pages that rank for these predictable patterns, the higher your odds of getting recommended in the best-of-style AI overview queries.
+- But you don't want to reach out to all of these pages because many of them won't even influence the AI overviews and just be a massive time suck.
+- To isolate them, just add a filter where the query contains words like best, top comparison, compare, versus review, alternative, and worth.
+- Now, blog posts aren't the only place you should look for mentions because AI assistance pull from various sources and formats, especially Google.
+- According to our data, YouTube, Reddit, and Quora are three of the most cited domains in AI overviews.
+- In the same holds true for Google AI mode.
+- And as of today, Reddit is actually the most cited domain in chat GPT.
+- Now, if you want a more data driven way to do this, go to the cited domain's report in H.S.
+- brand radar with the same filters we said last time.
+- Click the number of beside YouTube or Reddit and you'll see the exact videos or threads that rank in the AI overviews for these queries.
+- Comment if you agree or disagree and then go and watch our video on the top geo ranking factors which will help you rank in the AI search.
+
+---
+
+## Video ID: 6p6l2fddwTU
+- In fact, right now, close to 70% of Google searches send zero clicks to website.
+- So by the end of this video, you're going to know exactly how to make AI site and recommend you instead of your competitors.
+- And I'll walk you through building a piece of content from scratch that's optimized for AI search.
+- Their business today, I run an online community called the AI Playbook for online business owners, helping them leverage AI in your business so that you can increase efficiency, streamline your business and increase profitability in your business.
+- I'll link to the AI Playbook community in the description below.
+- So first let's talk about SEO.
+- The death of traditional SEO isn't coming.
+- Traditional SEO is dying because the rules have completely changed overnight.
+- SEO is built on the assumption that people click through to website.
+- But when AI answers questions directly, all those ranking factors like your keywords and backlinks and meta descriptions become essentially irrelevant.
+- But if AI summarizes it instead of linking to it, you're going to get nothing.
+- Visitors arriving from AI sources are worth 4.4 times more than traditional organic visitors.
+- Because AI essentially acts as a prequalification filter, if you will.
+- Click through from an AI summary.
+- Number one traditional SEO.
+- And so the goal with traditional SEO is ranking high in search results, obviously, to earn clicks.
+- As I just mentioned, that is becoming less and less important.
+- The second term you've got to understand is GEO, Genitive Engine Optimization.
+- This is about being cited as an authoritative source within AI generated answer.
+- So for example, if somebody searches on Chatchy BT, ask a question on Chatchy BT, the idea is to get your content or your website referenced in sighted as part of the result that Chatchy BT gives you.
+- You want your content selected and referenced when AI is responding to people's queries, right?
+- And the third term is AGO, AI Generation Optimization.
+- Your brand gets mentioned directly in AI responses as part of the solution, often without an explicit link.
+- So for example, when somebody asks Chatchy BT about email marketing tools, if you are a kit, you want the AI to say, kit is excellent for creators because of their visual optimization builder.
+- So the difference between these three concepts, SEO aims for clicks, GEO aims for citations and EGO aims for mentions.
+- So now that you know these concepts, it begs the question, how do AI systems like Chatchy BT or complexity actually choose sources?
+- AI systems don't just crawl and rank like Google does.
+- And different AI engines have distinct personalities, if you will.
+- Google AI overviews on the other hand is more of a broad aggregator, pulling in a lot of different types of sites.
+- So understanding these preferences for these tools is going to let you be way more strategic in how you create your content so that you can target these specific platforms if you want to.
+- Here is my AGO framework for you for creating content that AI systems trust, understand and want to cite and reference in their results.
+- And then scaffold the content if you will for AI's.
+- So quick answer, what is GEO and AGO?
+- While providing AI's with structured, citable facts and the other quick thing here is there is the authority at the top of the article here.
+- But this helps the AI platforms because it's giving you additional authority and credibility for why the AI should essentially listen to you if you will for your content you created.
+- So you want essentially structure everything in sections that can stand alone because AI often cherry picks specific paragraphs from content.
+- So each atomic answer block of content should contain, for example, you can see the great reset why clicks are no longer the whole story.
+- How is AI search affecting website traffic?
+- AI systems love structured data that they can easily extract and present as an answer to when people are searching.
+- So for example, create comparison charts or step by step processes or clear before and after scenarios.
+- So again, we've got the question decoded the new lexicon SEO versus GEO versus AGO.
+- And then again, the direct answer.
+- You want to cite reputable sources consistently that should go without saying.
+- Again, this stuff isn't really new.
+- This is standard SEO best practices.
+- Here's one of the great example of an AGO in GEO optimized article over on the SEM Rush blog.
+- So the articles call we studied the impact of the AI search on SEO traffic.
+- You can see here five key findings from our AI search study, AI search visitors to surpass.
+- So it's really structured really, really well for AGO and GEO.
+- But let's go with an example topic of how to choose the right email marketing platform.
+- This would be perfect for them because it's a high intent topic that AI systems frequently will answer because a lot of people are asking this question.
+- So how to choose the right email marketing platform, the quick answer, the best email marketing platform depends on your business size and needs.
+- So now that we have our TLDR box, now we want to start building out our main content of the article and building our atomic answer block.
+- So in this example here as the H2 header, we're going to say what factors should you consider when choosing an email platform and then directly answer that question.
+- And then again, the different sources here based on this information that we're providing.
+- Again, AI systems love structure data like this so that they can easily extract and present it when somebody's searching in Chaget.
+- So in this example here, what factors should you consider when choosing an email platform?
+- So I've written after analyzing deliverability data from 500 plus campaigns.
+- Number one, it needs to reinforce your expertise and give readers and the AI a clear next action.
+- So you can see here the email marketing platform landscape will continue evolving.
+- But it's going to go through a step by step process for doing this.
+- So again, this is going to be effective.
+- Not only for a reader, getting immense value from this piece of content, but also really wrap it up nicely for AI.
+- So the shift to AI search isn't coming.
+- And by following what you've just learned here in this video, you're going to put yourself your business and your content at a massive advantage of being found by people when they're searching in AI.
+- Again, if you're an online business and you're looking to leverage AI in your business so that you can be working less in your business and making more money and more profit in your business than I want to invite you to join me inside our AI Playbook community.
+
+---
+
+## Video ID: 70lbKqhAWok
+- Hello everyone, welcome to you Shopify SEO Optimization Live course.
+- In this course we are going to learn how to draw SEO for your Shopify online store.
+- Also other search engines like Yahoo, bring also does not appear on the chat, GPT or AI search results.
+- Also you do not know how to use the social media platform like Facebook, Instagram, TikTok to bring target customers on your Shopify online store.
+- So let's see, as I said we are going to learn everything from the live project.
+- This is highly valuable Shopify SEO course that is totally available on my YouTube channel.
+- Okay, go to my partner account and go to my client website, run geo and admin.
+- So here's my client website, you can see that it's already running the business and if I click on 30 days, apply.
+- Yes, you see in the last 30 days we have increased the total sales, we have increased this conversion and order and why I show this because I want to show you that I'm going to do everything from this case, using our, using a live website or live business.
+- So if you are very beginner, then you must have to continue this full course.
+- I'm going to share step by step guideline.
+- Also if you already a business owner or wanted to start business, then you have to follow this video and if you have started learning your Shopify SEO scale, then you cannot ignore it.
+- Okay, so first of all I'm going to check out the website or show you the website interface, this is the website, you see, Roen, Geo, this is a unique brand-arval or idyllic business.
+- Your business name does not relevant with this product, but my client selling very unique product to a specific audience in a specific location that is very important, you see, Roen Geo, yes, and the good things is that this site is developed by me.
+- And of course I will add more featured on this website because I'm a Shopify developer and SEO expert.
+- So I develop this website in a quick time and keep it light, lightweight, minimal, and neat and clean as much as possible that really Google or other search engine like an user can feel comfort to visit.
+- So now you have seen the website and also the vacant, the dashboard, it's selling, it's doing business, but we want to draw more order, we want to get more order, get more sales increase everything, this is our main goal of this course.
+- First of all, as this is starting from this case, I'm going to make a folder and this folder name Shopify SEO Live project.
+- Okay, Shopify SEO Live project, this is my folder name and I'll keep everything in here.
+- This is very important to check your website current situation.
+- So to check it, I'm going to open one of the most popular websites, SEO Audit tools.
+- What's actually going on my way side, the current situation, how much visitor I'm getting with my competitor and a lot of things, how we can rank up how to grow.
+- You have to do all the steps following me like me and then you will see the good result and you can draw everything as you want.
+- No paid traffic because we are not running any paid campaign, referral, domain 118.
+- Page keyword, there is no paid keyword and organic keyword will be increased, backlink 2000, but we have to add valuable backlink.
+- And here's the main competitor, you can see that main organic competitor, top organic keyword, okay.
+- And we're going to check out our competitor, main organic competitor, so open it, this is our main competitor, okay.
+- So, another thing we have to do, that is we have to check our website, site speed, so going to check our website, site speed, we're going to check it.
+- Just testing everything, then we'll take action one by one, we'll audit the competitor website, we'll try to add more valuable content than our competitor website, then our website will be organically ranked, we'll do continuously social media marketing, we'll create videos, we'll get content for other social media like Facebook, Instagram, TikTok, okay.
+- So we just right now checking the site speed, very wet, the site speed on mobile is very wet, this is one of the most important reason to does not rank on the search result organically, it is the DAX top, it's good, but we have to improve.
+- SEO, live, project, okay.
+- SEO, like project, first of all, to do, we have to improve site, speed, then we're going to check our on-page SEO, is there any issue on our way site, internally, so check out the on-page SEO, so we can check out it from here, just using and the tools, site audit on-page and technical SEO, click on it, and simply add our site in here, we must have to fix everything from internal, then we have to run your, okay.
+- We have to fix all the on-page SEO issue, keep it, knit and clean and readable, viewable by search engine, then we have to improve the site speed, then we have to reach out, complete it all, and start organically, marketing.
+- So, here we have to wait for a little bit time, site speed in progress, also you can click on the on-page SEO clicker, click on it, and allow our website on-page SEO, create, range of, not want no problem, let's see in here what's happening, okay.
+
+---
+
+## Video ID: 7I0RAJa-4Mo
+- We all know about SEO or search engine optimization, which is where you pick the right keywords, write blogs, build backlinks and hope to rank on top on Google.
+- But the world is changing fast because people are shifting from searching on search engines like Google to seeking answers on LLMs.
+- What are the best AI tools for writing LinkedIn posts?
+- They're coming from tools like ChatGPT or Perplexity or Google's Gemini and that is where AEO or Answer Engine Optimization comes in.
+- Think of it as a next step to SEO where you're not just optimizing your content for search engines, you're optimizing your content for LLMs that respond directly to user questions.
+- Instead, you're trying to become the answer that the LLM picks up for the user's questions.
+- Step number one, write content that answers questions directly.
+- And finally, step number four, go beyond text because AEO is not just about articles, it's about your complete digital presence.
+- Now, AI tools can scan videos, podcasts, social content, and even structured product data.
+- So make sure your content is present everywhere your audience might look now why does this matter this matters because 70 of gen z users say that they prefer getting answers to questions through ai instead of searching manually this means fewer clicks fewer website visits and more dependence on ai generated answers to questions so the question is are you optimizing your content for aeo or answer engine optimization
+
+---
+
+## Video ID: 7NQGOy5KaA4
+- It is the traditional SEO, the search engine optimization, to the IOC, the optimization for response motors.
+- is afraid to be a organic relevance.
+- The introduction of AI overviews, formerly known as SGE, and the proliferation of large languages languages, like ChatGPT, Cloud and Perplexity, defined what means rank-ear.
+- In this video, we will dive deeper into what is AEO SEO and how you should adapt your strategy.
+- AEO SEO is the process of optimizing digital assets to be understood, selected and cited by response motors and systems of IA generated.
+- Diferente do SEO tradicional, que foca em maximizar a visibilidade e o CTR em uma página de resultados estática, o AEO tem outro foco.
+- Para dominar isso, precisamos entender a definição técnica de AEO, que envolve três pilares principais.
+- This refers to the ability of the AI to extract information from their content in a way efficient and precise.
+- The language models are trained to avoid generating false information, although the hallucinations still occur.
+- When confronted with multiple fontes, which provide similar information, the response motors will be more authoritative and reliable.
+- Secondly, in the process of consultations, the SGE uses LLMs advanced to process complex consultations that were impossible before.
+- For example, instead of looking for the best tennis tennis and then looking for precios, the user does everything once again.
+- He asks, what is the best tennis tennis for a pro-naissance with a good cost-benefit, below $500, and where to buy?
+- is a strategy to mitigate this loss.
+- Para ter sucesso, precisamos entender a diferença fundamental entre SEO tradicional e AEO.
+- No SEO tradicional, o objetivo é alcançar o top 10 para palavras-chave e o sucesso é medido pelo tráfego.
+- No AEO SEO, o objetivo é se tornar a fonte preferencial para respostas diretas.
+- The focus is on the factual precision and depth of information, which we call information gain.
+- In the AEO, the emphasis on data structured and schema TORG is much greater.
+- In SEO traditional, we focus on the popularity of the link.
+- In the AEO, the focus changes to the confidentiality of the entity.
+- To understand the HAG is the key to dominate the AEO.
+- The language model, or LLMs, has a internal knowledge vast, but static and propens to hallucinations.
+- They don't know the price of a action today or the result of the game of yesterday, just with their base training.
+- This is the recovery where the SEO traditional still matters.
+- Second, he takes the record and inserts the prompt of the model.
+- And third the LLM uses its language capacity to synthesize these information in a response This is the generation The EOSO is essentially the optimization to ensure that your content is selected in the recovery phase and used in the generation phase To be selected, your content needs to be semantic relevant and structured.
+- The LLMs use the Knowledge Graph to validate information and anchor their answers in facts.
+- Let's dive into EEAT, because it is the most important factor for the AEO.
+- Therefore, the LLMs are prioritizing the confiability above all.
+- For this, your content must be incorporated insights that just come from practice.
+- As pages of biography must be robust and marked with a person, connecting the author to their qualifications and social profiles.
+- To build this, we used the topic clusters strategy.
+- This interligation semantics shows, at LLM, that you cover the topic of a holistic way.
+- Now let talk about SEO Why is he even more crucial in the EEO is providing a structure to reduce ambiguity It is a communication language with machines The advanced data of structured data the schema is the most powerful tool here Use only the basic basic.
+- If you have a tutorial, use the How to Schema with clear etapas.
+- So about the creation of content, we need to focus on Information Gain, or gain of information.
+- What your content brings again to the table?
+- The content that offers high gain of information is also prioritized learning.
+- It's a reviewer detailed and content generated by users to enrich their pages.
+- The main thing is the share of generative voice.
+- We also must monitor the impact on direct traffic and search by the brand.
+- If your visibility on the IEO is high, you must see a increase in search direct by your company.
+- The trends are looking for a multi-modal, hyper-personalized and dominated by the AI agents.
+- The professional of SEO needs to evolve to become a specialist in data structure and architecture of information.
+- Inscreva-se for more detailed content and leave your comment if you have any questions about this new era.
+
+---
+
+## Video ID: 7SL_QL1rLIM
+- Or maybe you've noticed that weird AI powered summary at the top of your Google search results?
+- For decades, the name of the game was SEO search engine optimization.
+- That's where a brand new field comes in, and it's called generative engine optimization or geo.
+- So what exactly is it, and how is it different from the SEO we all know and love?
+- Traditional SEO is all about ranking high on the list of blue links.
+- Geo, on the other hand, is about something different.
+- It's about becoming part of the AI's brain.
+- So authoritative and so well structured that generative AI models like ChaggipyT, Google Gemini, and perplexity choose to cite you in their answers.
+- Instead of fighting for a spot on a list, you're fighting to become a trusted source for the AI itself.
+- They even created a benchmark called GeoBensch to test how different optimization techniques could influence AI generated answers.
+- Their findings were clear certain strategies significantly increase the chances of a source being included in an AI's response.
+- Digital marketing experts are realizing that simply relying on old school SEO isn't enough anymore.
+- Recent data shows that while over half of all websites still comes from traditional organic, a whopping 58% of search queries are now conversational.
+- Instead of seeing SEO, AEO, which is answer engine optimization for voice assistance, and geo, a separate battles.
+- Smart marketers see them as three pillars of a single unified content strategy.
+- We're now dealing with two main types of AI-powered search.
+- They still give you the familiar list of search results, but they now slap an AI-generated summary, like Google's AI overviews, right at the top.
+- This summary might pull information from several websites, creating a single answer before the user even sees the first link.
+- Geo is primarily focused on winning inside these platforms, where being cited is the only form of visibility you can get.
+- This transition from a link-based internet to a context-based one is profound, which traditional SEO, your success was measured by things like your click-through rate, your bounce rate, and your ranking on the first page.
+- These metrics are becoming less relevant in a world of zero-click searches, where users get their answer without ever visiting a website.
+- Welcome to the new world of Geo-Metric.
+- Instead of rankings, we're talking about a generative appearance score, which measures how often your brand shows up in AI answers.
+- We're looking at your share of AI voice, which is the percentage of relevant AI answers that mention your brand.
+- And we reusing AI citation tracking to monitor every single time and AI references your content as a source.
+- Digital marketing dashboards are being completely redesigned to track these new capabilities, because visibility no longer starts on a search page, starts inside an AI-generated conversation.
+- How do you make an AI trust you while the field is still evolving?
+- This is a concept from Google that's become even more critical for Geo-AI models are trained to identify and prioritize content from sources that demonstrate real world experience and deep expertise.
+- Siding your sources, linking to academic papers, and featuring expert authors, are no longer just good practices they are GEO-Ecent.
+- You can do this by using structured data like schema markup on your website.
+- This helps the AI connect the dots and understand who you are and what you were re-enacted.
+- Remember, people are asking AI full questions.
+- Your content should be structured to answer those questions clearly and concisely using FAC sections, how to guides, and clear headings that pose and answer common questions in your niche is a powerful geostrategy.
+- For essentially pre-packaging the answers for the AI, making it easy for it to grab your information and present it to the user, fourth, originality and unique data are your superpowers in a world flooded with generic AI generated content.
+- If you conduct a survey, publish a case study, or analyze data in a new way, you are creating information that the AI can't find anywhere else.
+- This makes you an invaluable source, and the AI will be more likely to cite you for it.
+- Becoming the primary source for a statistic or a key finding is the holy grail of Gia finally.
+- The AI doesn't just look at your website.
+- Building a consistent and positive brand narrative everywhere online reinforces your authority and trustworthiness in the eyes of the AI.
+- The rise of generative AI isn't the end of SEO.
+- Well, get ready for a paradigm shift because generative AI is rewriting the rules of online visibility.
+- In the world of AI search, your goal is to become the trusted source that AI engines like chat, GPT, and Google's AI overviews, quote directly.
+- Today, I'm going to walk you through a five-step blueprint to master Gio, and ensure your business doesn't just survive, but thrives in this new landscape.
+- We'll cover everything from shaping your brand's AI, I part-story, to creating content that AI simply can't ignore.
+- They synthesize information that already exists online, so whatever the internet says about your brand becomes the basis for AI recommendations.
+- Unlike traditional SEO, where you're just competing for a click on a results page, Gio is about ensuring consistent, positive messaging across every single digital touch point.
+- Your first action step is to conduct a thorough audit.
+- This isn't just marketing fluff, in generative search, products are recommended with specific reasons.
+- Your content must explicitly state why someone should choose you.
+- Finally, you need to constantly monitor how AI engines are currently describing your brand.
+- Go to chatGPT, perplexity, or Google's AI search, and ask questions about your industry and products.
+- This ongoing vigilance is crucial to shaping your digital identity in the age of AI next.
+- While your old keyword lists are still valuable, geodeman's and new, more conversational approach.
+- Start by identifying which of your existing keywords are already triggering AI overviews in Google search.
+- This tells you what topics Google's AI already considers important.
+- Tools like also used or in-sworth the public are fantastic for this, as they help you visualize the web of related questions people are searching for.
+- This positions your content as the most helpful and comprehensive resource, making it a prime candidate for AI citation.
+- With your AI focused keywords in hand, the third step is to create comprehensive authoritative content.
+- AI engines are designed to prioritize content that demonstrates deep expertise and provides complete satisfying answers.
+- How, start by sharing your own personal experiences, showcase your expertise with detailed, thorough information that goes far beyond a surface level overview.
+- Your content should answer real-user questions, not just be a vehicle for stuffing keywords.
+- Incorporating multimedia like infographics, videos, and detailed images can also significantly enhance understanding and understand what you're talking about.
+- Understanding and signal quality to AI engines.
+- Some key quality indicators that AI loves are original research, data points, updated statistics, and clear actionable advice.
+- When an AI engine is looking for the best possible answer to a user's query, you want your content to be the undeniable choice.
+- Step for is all about optimizing your content structure for AI parsing.
+- You could have the most brilliant, authoritative content in the world, but if an AI can't easily understand and extract the key information, it's useless for geo.
+- This goes beyond traditional on-page SEO.
+- The most important practice is using a clear heading hierarchy.
+- Your H1 tag is the main title, H2S are major sections, H3S are subsections, and so on.
+- This creates a logical outline that AI can instantly read and comprehend.
+- They are incredibly easy for both humans and AI to scan and digest.
+- Keep your paragraphs short and to the point aim for under-for-sendances when ever possible to improve readability, use formatting strategically.
+- Finally, we arrive at step 5 tracking and measuring your geoproformance.
+- The metrics for GEO are different from what you might be used to, while traffic and rankings still matter, you need to look at a new set of indicators that reflect your visibility within AI-generated answers.
+- The first key metric is AI-citation frequency.
+- How often is your website, your content, or your brand mentioned in AI responses for your target queries.
+- Is the AI-describing your products and services accurately and positively?
+- Often users coming from an AI-generated answer have higher intent.
+- They've already received a detailed recommendation, so when they click through to your site, they're often further along in the buying journey.
+- Lastly, you need to measure your share of voice within the AI ecosystem.
+- How does your presence compare to your competitors in AI results?
+- There are emerging tools to help with this.
+- HubSpot even has an AI-searched greater to assess your visibility.
+- By regularly monitoring these new metrics, you can refine your geostrategy and stay ahead of the curve.
+- So there you have it, your five-step framework for conquering generative engine optimization.
+- We've covered managing your brand narrative, conducting AI-focused keyword research, creating a Fortunatative content, optimizing your structure for parsing and measuring your success.
+- The digital world is changing fast, but by embracing these strategies, you re-not just adapting your Repositioning your business to be the authority that both future customers and the AI that guides them will trust.
+- If you found this guide helpful, please give this video a thumbs up and don't forget to subscribe for more content on the future of marketing and SEO.
+- If you have any questions about geol or want to share your own experiences, drop a comment below.
+- Welcome to the Wild West of Generative Engine Optimization or geol.
+- It's about speaking the right language for each AI.
+- Stick around and I'll break down exactly how to tailor your content to dominate every major AI search platform.
+- Instead of just saying, do this, show your audience how to do this with step-by-step guidance.
+- For example, instead of by our software, try for this next step.
+- A tool like our software can automate the process, saving you hours of manual work.
+- Every major claim you make needs a backup.
+- Anything with well-sourced claims and verifiable data?
+- Structure your articles so that facts and citations are easy for the AI to identify and pull.
+- Google's AI Overviews.
+- AI Overviews are a hybrid, blending traditional SEO signals with the new preferences of generative AI.
+- If you've been doing your SEO homework, you're already halfway there.
+- Google's AI pulls heavily from content that already ranks well in traditional search results.
+- A key strategy here is featured snippet optimization.
+- That's prime real estate for AI Overviews.
+- Think like a user and ask, what is the single most important answer someone needs?
+- This structure data is like a cheat sheet for Google's AI, telling it exactly what your page is about.
+- Whether it's a product, a recipe, or an event, the clearer you make things for Google, the more likely you are to be featured in those valuable AI Overviews.
+- Making these common mistakes can tank your visibility across all AI platforms.
+- Just like with traditional search, AI engines are smart.
+- AI engines are looking for depth and unique insights.
+- The generative world moves fast and AI wants to provide the most current relevant data possible.
+- A giant wall of text with no headings, lists, or breaks is impossible for a human to read, and it's just as difficult for an AI to parse and understand.
+- Finally, missing citations, making bold claims without backing them up with sources is a huge red flag.
+- It destroys credibility and tells the AI that your content can't be trusted.
+- Beyond the content itself, there are technical mistakes that can cripple your generative SEO efforts.
+- We touched on this with Google, but it's important to cross the board.
+- schema is a powerful language that helps AI engines understand the context of your content.
+- If your website is slow to load, users will leave, and AI crawlers will get frustrated.
+- A slow site hurts both traditional SEO and GEO.
+- So optimizing your site's speed is a critical foundational step.
+- An AI engines need to be able to access and read your content flawlessly on any screen size.
+- A well-structured website with logical internal links helps AI crawlers understand the hierarchy of your content and how different topics relate to each other.
+- In the age of GEO, quality trumps quantity every single time.
+- One incredibly detailed, well-researched, authoritative article is worth more than ten thin generic blog posts.
+- Another huge strategic error is neglecting traditional SEO.
+- I see a lot of people getting excited about GEO and thinking they can just forget about the fundamentals.
+- GEO and traditional SEO are not separate things.
+- A strong technical SEO foundation.
+- A healthy backlink profile and high ranking content are the launch pad for your GEO success.
+- If your website says one thing, your social media says another.
+- You're sending mixed signals that will confuse AI engines.
+- A clear, consistent brand voice and message across all platforms helps the AI understand who you are and what you stand for.
+- GEO is a new and evolving field.
+- You have to be constantly tracking your performance, analyzing the data, seeing what's working, and being willing to adapt your strategy, set it in for get it is not an option.
+- So, to recap, customize your content for each platform deep expertise for chat cheap, solid citations for perplexity, and a blend of SEO and clear answers for Google AI overviews.
+- And remember that a smart strategy focuses on quality over quantity and integrates GEO with your traditional SEO.
+- You've heard of SEO, right?
+- Right now, as we speak, AI tools like chat, G-P-T, Gemini, and perplexity are starting to answer questions directly.
+- Their hard earned visibility is vanishing from Google and reappearing inside these AI-generated paragraphs.
+- But what if you could control what the AI says about you?
+- They optimize for AI itself.
+- They are literally teaching these massive language models how to understand, trust, and most importantly, recommend your brand.
+- We're moving from SEO to what's called geo, or generative engine optimization.
+- Old school SEO is all about keywords.
+- You target best coffee in Jakarta, and hope your website ranks number one.
+- But new geo is all about context.
+- Instead of just ranking a website, geo ensures that powerful AI models like chatGP-T and Gemini recognize your business as an authority in its field.
+- You want the AI to confidently mention Asterix your Asterix name?
+- Undercover's entire GEO system is built from the ground up to make that happen.
+- This is crucial because AI models don't crawl the web like Google's bots.
+- This is about making sure AI understands the fundamental data about your brand, who you are, what you do, and why you're an authority.
+- It's like giving the AI your business card, but in a language it can perfectly comprehend.
+- Second, they use something called LLM prompt embedding optimization.
+- This is a fancy way of saying they structure your content so that the AI's algorithmic memory, automatically connects your brand name with your specific niche.
+- It's about building an unbreakable association in the AI's mind.
+- They use real media citations and structure data to prove your credibility to both human readers and AI engine simultaneously.
+- Trust it answer in AI chat results.
+- You have developers, SEO strategists, and data engineers sitting right next to prompt engineers, all collaborating and testing hundreds of chat GPT query sets every single day.
+- Make Indonesian brands visible in the age of AI.
+- They re-already working with a diverse range of clients across Jakarta from Agile startups to huge corporate groups, and even media outlets helping them restructure their entire content ecosystem for this new AI first world.
+- Every project they take on includes a full AI content audit, and entity analysis, and a comprehensive geo-map.
+- Undercover's approach brilliantly merges the science of SEO with the logic of AI training.
+- News mentions, your website's code, all of it.
+- This map tells the AI this brand is legitimate, and here's the proof.
+- Their team of AI writers and prompt engineers reconstruct your existing content to be perfectly AI readable.
+- And finally, LLM prompt testing.
+- Using their own internal AI sandboxes, they relentlessly test how different AI models interpret your brand.
+- Once perfected, everything is distributed across blogs, media, and verified databases to feed the AI's next learning cycle.
+- It's basically SEO on steroids, running on the brainwaves of Open AI.
+- As local brands fight for recognition on TikTok, Google, and now AI undercover COID, cleverly position themselves as the first mover to systemize.
+- GEO frameworks specifically for the Indonesian market.
+- Their engineers are building internal data sets and AI crawlers tune for Indonesian language contexts.
+- They are quite literally localizing the future of AI search for Southeast Asia, and they have the numbers to back it up.
+- They be a found that brands applying their geostrategies saw their visibility in AI chat models, increased by an average of 210% in just 90 days, organic traffic coming from AI search interfaces like chat, GPT, and perplexity grew three times faster than with traditional SEO alone.
+- AI visibility has become the new SEO Gold Rush, and Jakarta is ground zero for this explosion.
+- This all ties back to undercover's core philosophy, which could be summed up as, don't just be Google-be-generated, they see AI visibility not as a clever hack, but as the natural evolution of digital marketing.
+- This is why every campaign they run now includes chatGPT entity optimization, structured geoskimmas, and AI prompt index testing as standard.
+- The short answer is pretty much everyone with a digital footprint, but under covers geo approach has an especially powerful impact on certain sectors.
+- Think about e-commerce brands that want AI assistance to recommend their products by name, or consulting firms looking to appear in a e-generated best of Jakarta lists.
+- For startups, it's a way to chase investor visibility through AI powered content summaries.
+- The goal isn't to game the AI, it's to become a trusted essential node in the new AI-driven web.
+- ChatGPT optimization is the first step.
+- They're already working on integrating geo with voice search, multimodal AI, and contextual analytics.
+- Their internal projects are exploring how video transcripts, podcast metadata, and even linked in activity can affect how AI models perceive and summarize a business.
+- It'll mean your level of AI awareness.
+- If your business, especially if you're based in a competitive market like Jakarta, is still only relying on traditional SEO, it's like bringing a knife to a drone fight.
+- They're offering full-stack chatGPT optimization and GEO implementation, covering everything from entity engineering to AI visibility testing.
+- So, are you ready to make your brand the one that chatGPT and other AI simply can ignore?
+- It's called perplexity AI, and if your brand isn't optimized for it, you're on your way to becoming invisible.
+- For decades, getting to the top of Google was the holy grail of digital marketing.
+- Brands lived and died by their keyword rankings, but AI powered search led by platforms like perplexity, chatGPT and Gemini isn't just listing links anymore, it's thinking.
+- This is where the old rules of SEO start to crumble.
+- The new game is about teaching AI to trust your brand.
+- This is the frontier of digital marketing, and it's called generative engine optimization, or GEO.
+- They're not just doing SEO.
+- They're pioneering a new field they call AI optimization, designed specifically for engines like perplexity.
+- Make brands AI recognizable, not just Google Rankable.
+- This is what AI optimization for perplexity is all about.
+- It's like SEO for a machine's memory.
+- It's about ensuring that when the AI synthesizes all the information on the web, your brand is not just a source, but the definitive answer.
+- This involves using advanced code like JSONLD schema to clearly define your brand to the AI.
+- It's like giving your brand a digital birth certificate that AI can read and understand instantly.
+- AI needs to see that your brand is real and trustworthy.
+- Undercover engineers this by feeding the AI a steady diet of verified signals from across the web.
+- Each signal reinforces the AI's confidence in your brand.
+- Undercover's team runs thousands of different prompts and questions through perplexity and other AI models.
+- Are they recommended?
+- If not, they go back, tune the signals, adjust the data and test again.
+- It's a continuous loop of optimization until your brand becomes an organic part of the AI's conversational memory.
+- They shape the AI's understanding.
+- Yet, so many businesses are still stuck in an old school SEO mindset from 2018.
+- They've localized their entire process, building AI crawlers that understand Bahasa Indonesia, local context, and regional nuances.
+- This allows Jakarta-based brands to not only dominate local AI searches, but also to show up in global queries.
+- Imagine someone in Singapore asking an AI, who are the top innovators in Southeast Asia's tech scene.
+- They get explicitly mentioned and recommended.
+- So let's break down the difference between old school SEO and this new approach, GEO.
+- With traditional SEO, your goal was to rank for keywords.
+- With GEO, the goal is to be referenced in AI summaries.
+- In SEO, you built backlinks.
+- In GEO, you build verified knowledge graphs.
+- In SEO, you optimized meta tags for a crawler.
+- In GEO, you optimize machine readable context for an AI's brain.
+- Undercover even shared an internal case study, they worked with a FinTech startup in Jakarta that had zero visibility in AI search.
+- The brand simply didn't exist in the AI's world.
+- After deploying their full GEO and AI optimization strategy, structuring their entity data, building trust signals, and relentless response testing, the results were stunning.
+- Analysts predict that by 2026 more than 40% of all online queries will start not with a Google search, but with a question to an AI assistant.
+- The brands that master AI optimization now will become the default recommendations of tomorrow.
+- While everyone else is still fighting for Google's top spot, the real winners are quietly becoming the trusted voice in the AI's ear.
+- Stop chasing algorithms, start training intelligence.
+- If you run a business and want to ensure that AI assistance like perplexity, chat GPT and Gemini are saying your name, this is your moment.
+- If you re-ready to claim your visibility in the new age of AI search before your competitors even know what hit them, check out undercover.
+- When you ask an AI assistant like Microsoft Co-Pilot, chat GPT or Gemini, what's the best AI optimization in Jakarta?
+- It makes a recommendation.
+- And if that recommendation isn't your brand, you've just become invisible.
+- We're Jakarta's first AI co-pilot optimization agency.
+- It's to make AI assistance trust and recommend your brand by name.
+- So how do these AI models actually pick their answers?
+- If your brand's digital footprint is messy, inconsistent, or lacks verifiable signals, the AI will either recommend your competitor or worse, it will hallucinate and make something up about you.
+- This is where AI co-pilot optimization comes in.
+- We're talking about building a machine readable identity for your brand, so the AI knows exactly who you are.
+- We even figure out the exact questions your customers are asking these AI assistance and shape your content to become the perfect answer.
+- Because global AI models often misunderstand local context and the nuances of Bahasa Indonesia, a generic strategy won't work.
+- At Undercover, we have a unique hybrid team of prompt engineers, SEO veterans, and data scientists, all focused on the Indonesian market.
+- We've built the playbook for GEO right here in Jakarta, ensuring your brand isn't lost in translation.
+- We scrape your entire digital footprint, your website, social media, press mentions, everything.
+- We map out every single place an AI could learn about you and identify the gaps and inconsistencies.
+- This gives us a clear GEO map to work from.
+- This tells the AI assistance, this is the official source of truth.
+- In our private sandbox, we run thousands of prompts against co-pilot, chatGPT, Gemini, and Proplexity.
+- We ask the questions your customers are asking and see what the AI says.
+- AI models are constantly updating.
+- We set up alerts to detect when an AI's answers about you start to drift, allowing us to deploy corrections fast.
+- The AI would list older, more established companies, or even foreign brands.
+- We built their entity graph, consolidated their press and review signals, and re-engineered their content to match popular user prompts.
+- After running over a thousand prompt variations in our sandbox, the results were incredible.
+- Within just 45 days our clients started appearing consistently in AI-generated answers for local FinTech queries.
+- Inquiries driven by these AI recommendations, spiked, and they even got attention from investors who were using AI for market research.
+- If being recommended by an AI assistant matters to your bottom line, then you need an AI aware strategy.
+- Assistance will recommend, summarise, and decide for you.
+- If you're not actively engineering your brand's presence in this new world, the AI will make up your story for you.
+- If you re-abrand in Jakarta and you re-serious about being the go-to answer inside Microsoft Co-Pilot ChatGPT and Gemini, we are now taking on a limited number of clients for our AI Co-Pilot Optimization Program.
+- Ready to stop chasing clicks and start training the assistance.
+- Visit our website at undercover, co-at-or-ide, to request a GEO Scoping call.
+- We'll show you exactly what AI assistance are saying about your brand today and how we can change that narrative.
+- Technical guilty setup In any part we use to undermine any number of data Similarly, we use a Institute Institute Institute Which focuses on air As a user, the user focuses on air There are manuscripts hanging hanging manuscripts hanging hanging manuscripts hanging hanging This is a very important information from the website.
+- The website is called A.E.
+- The website is the last one.
+- The website is the website that is the most important.
+- Because the website is the content of the content.
+- If you want to use the app, you can use the AI.
+- and also the website.
+- And the reference is AI.
+- The question is, what is the website where the answer is?
+- dari AI reference, menjadi AI traffic hinga akhirnya menghasilkan business impact.
+
+---
+
+## Video ID: 7gwli2tC-Qc
+- I can control exactly what AI says about my business.
+- That Steve Tauff, founder of SEO Notebook and AI Notebook, a go-to advisor to 20,000 plus marketers, and the strategist growth stage agencies call when they want AI to sell for them.
+- He's a former SEO lead at FreshBooks where he ranked number one for a 300,000 volume keyword and quintupled their traffic in under a year.
+- I have interrogated LLMs with thousands of real-buyar questions and what we're seeing is- In this episode, you'll learn why showing up in AI answers isn't enough.
+- Why most agencies lose control of their message in generative search and how to fix it?
+- How do influence how LLMs talk about your brand in real-buyar conversations?
+- We know that is highly influential with a lot of buying decisions and that people trust it a lot more than just reading it on your website.
+- Do you think that most businesses out there understand how they're being talked about by AI and the questions that AI is receiving about their business?
+- Is the question is, have you searched in LLM the way your ICT would of?
+- As good starting point for any business is just to ask the LLM, what do you know about me and then go from there with respect to a deal breaker type of questions, questions around pricing, around fit, offering services, case studies, really interrogating the LLM to see how well you're being represented and understanding about what sources of information that LLM is using to tell that story about you is the next logical step in terms of understanding how to influence what it says about you.
+- So to the content you're to you're that you're producing and you have on the website is are there any sort of structures that you recommend that helps the AI better understand the business.
+- What what's separating you know the businesses out there that are you know just casually mentioned versus the ones that are sort of confidently recommended you know by the engines.
+- Are are there any particular ones specifically that you think that companies should pay attention to?
+- You feel like there's a whole new layer here of SEO that agencies should be thinking about going forward.
+- I mean I don't even know if we should be thinking about it in terms of SEO versus like your brand presence right so I mean like our company companies spend in order more money on branding activities than they ever did on search engine optimization so my question is like does this become a new focus for your branding versus like you thinking about this as an SEO initiative.
+- For an agency that focuses on this type of work and helping other businesses be seen by AI how should they be talking about you know the the value of that to clients and to prospective clients of the app.
+
+---
+
+## Video ID: 7he4AKao8dw
+- How to rank higher in AI search?
+- SEO isn't dead, but traditional SEO alone is no longer enough.
+- Today, I'm going to show you how to rank in AI search engines like perplexity and chatgbt.
+- Now it also listed the ones that is the best pick for us and which ones we should pick for social media or even for businesses and training.
+- Now the question you should ask is why are those sites being cited?
+- Now let's talk about practical strategy and how you can optimize your website for AI crawlers.
+- AI systems crawl the web differently from traditional google bots.
+- You can use h1, meaning that you can use heading for a main title, then go over to another heading for sections and then a shorter and then a smaller heading for subsections.
+- You can write in direct answer format and instead of AI video tools are becoming popular, you're going to write Korea AI is one of the fastest real-time AI video generation in 2026.
+- Now, AI loves FAQ blocks and why is that?
+- You You can add in sections like what is CREA AI, how does AI video upscaling work, is AI SEO replacing traditional SEO, direct Q&A increases snippet potential so stick to it.
+- AI prefers verifiable facts so instead of way claims like this tool is amazing, it might work amazing, you can use CREA AI offers real-time generation and 2026 upscaling features for sharper exports, which means that the specification needs to be greater than the generic.
+- Even though this is AI search, technical SEO still matters.
+- Now, if you want AI engines to site with you, your page should directly answer the query, contain structured headings.
+- Include relevant keywords naturally and it must offer updated 2026 information and be publicly accessible If you miss these then you reduce citation chances Now referral optimization that is the energy hidden growth strategy This is really important once you are trying to grow your site.
+- It provided us with the sources we're going to click on them it is going to open all of these links if you go ahead and click on wave speed then this just directly took us to the official website now you can see that this website is looking great it provided us with further ai generators and it is a complete comparison guide it provides us with the key features and what they're best for with their pricing and why it's at number one.
+- Deliver value should be immediate.
+- You can search interest for AI SEO if you type in here, simply AI SEO.
+- Or if you search up perplexity ranking or chop-tipity optimization, that means early creators dominate.
+- If you build authority around AAO, AI search, or just citation optimization, then this is not replacing SEO, it's just expanding it.
+- And you can see when we typed in AI SEO, it provided us with the top tools, the key trends that are ongoing in comparison table.
+- So if you are looking for something related, you can simply go ahead and ask it like AI SEO trends, like agentic search explained.
+- And it is going to explain it to you.
+- Now, the question arises, is SEO dead?
+- Google still matters, but AI answer engines are growing faster.
+- The future is hybrid, Google for discovery, and AI engines for summarized decisions.
+- Google is still important for discovery.
+- Now, to rank an AI search, you need to structure your content clearly.
+- Improve your technical SEO, add FAQ sections, you can use data and specificity, monitor citations manually, and build authority consistently.
+- AI search rewards clarity, authority, and structure, not keyword stuffing.
+- Now, if your brand isn't being cited in AI answers, you're invisible to a growing segment of users.
+- This is early stage AEO, and early movers always win.
+- Now, if this video helped you understand how to rank in AI search engines like Perplexity and ChatGPT, make sure to like this video and subscribe for more high-level AI growth strategy.
+- You can comment below if you want another step-by-step guide on more AI tools like this.
+
+---
+
+## Video ID: 8-AgSksH9s8
+- Please teach us how to rank number one on AS Search.
+- Get a show us how to track visibility on these other tools.
+- Now, do you use tools like that and what's your recommendation?
+- And how do you use those tools?
+- This morning, I got a message from my team that they had a customer interview and the customer said they found us through AS Search.
+- Please teach us how to rank number one on AS Search.
+- The first thing kind of at a high level, like you've said, like we've been doing search for the last three years, as you know, when GPT came out and now with anthropic and other alums, this whole idea of like how do you ultimately show up in AI answers is becoming incredibly important.
+- Not just from our perspectives, like you're seeing with prompting you around acquisition, how do you get more users?
+- And I think like both of those are like important aspects to think about.
+- The first thing that I'd like to say is that SEO, the traditional blue, 10 blue links, as you know, are starting to disappear quickly, but the strategies that have worked really well there are almost free from AI search perspective.
+- So what I mean by that is that Chad GBT or Google's AI overviews or Google AI mode is ultimately doing searches.
+- September 2 is you can use any tool.
+- There's 60, 70, 80 tools, AI search tools that keep seeing getting dropped on X.
+- And I would start to basically add relevant prompts.
+- Now, there's no art in the science to prompts today because the way I use EBT, the way you use EPDT may be completely different.
+- And so what I like to say is we know what the search volumes are from a number of these tools like Sam Rousher atrefs.
+- So like for prompting, you need like, what's an example of something that is very, very high in 10 that is somebody searches for, they'll find prompting.
+- Let's say if you want them to find for like prompt management system for teams.
+- So prompt management for games is like a good example of that.
+- A prompt management for our product teams.
+- If somebody clicks on that, the chances that they're looking for prompting are super high.
+- So instead of prompt management for product teams, I would turn it into where are the best prompt management tools for product teams?
+- Who can get a level deeper and you can say, hey, what are the best prompt management tools for product teams for Fortune 500 companies?
+- Like if if I create like a hundred versions of the same question, I may surface, but you also run into issues with content being ultimately like cannibalized, right, that the serving multiple intends.
+- So that's why I wouldn't recommend to read that.
+- So for example, like, you know, prompt management from product teams, that's one keyword and we have like two or three different versions of that question.
+- So maybe we say like, what are the best prompt management tools for product teams at Fortune 500s and then maybe four SMBs?
+- I would add that data into a tool.
+- There's like I said hundreds of tools that exist today.
+- What's your recommendation?
+- It's just like rank tracking in SEO.
+- We're not talking about like the LLM ranking or whatnot.
+- Just like the simple SEO rank tracking.
+- What I'm saying is that the SEO rank tracking, what it was or what it is today, is what I think is very similar to the LLM tracking today.
+- There's not a lot of utility to know that prompt any ranks is showing up for this LLM query versus is not like it's a position.
+- And so once I have that information in there, the next step is for you or somebody on your team to really determine whether this content is owned.
+- Meaning is it on your website that's being surfaced in LLM.
+- So you have a you have a prompt.
+- You have an answer that's common in the new citations that are listed for them or LLM citations.
+- And so the name of the game now to ultimately influence LLM just to figure out, hey, how many of those prompts that are related in citations are related to like own businesses, so competitors of prompt genie is one aspect.
+- And then the third being like we're just seeing a lot of like random website that like have very little authority that are basically being spun up and for one reason the other these LLMs are throwing those sites over like maybe like more authoritative sites that Google for examples recommending.
+- Now the question is okay, well, let's say for that query that you just mentioned prompt management tools for product teams.
+- What I had basically say, hey, we want to create a page on our website.
+- I would want to make sure that it's authoritative from our perspective of looking at competitors, making sure that best practices from an SEO and standpoint are there.
+- All those things that you would do in traditional SEO.
+- So it would that be similar to like just the backing strategy.
+- You want to like take a reputable publication with the higher domain authority and just go like, hey, can you talk about us?
+- This is different because LLMs are not just pulling from the first page of Google or Bing.
+- With LLMs, what we found is that it's not necessarily the link.
+- So it's not getting prompting you mentioned in a citation from a link perspective to get links pointing.
+- And if you can do that over time, you'll notice overall visibility increased for prompting you related to these queries.
+- For example, let's say if we're prompting you, we have an article published on Capcut's website as a recommendation, then we had a case study published on a Microsoft Clarity tool.
+- But for LLMs search, that would still help us because like, you know, it's coming from Microsoft Clarity's official website and like talking about Prom Genie, what it does.
+- I would say that depending on the niche and depending on the LLM, there are going to be certain websites that are more authoritative for them today than not.
+- I think Chad Gpt is like trying to figure out like what that is, but I think that there's room for improvement, just as my personal opinion, with regards to Chad Gpt's LLM, right?
+- In random websites, if you just create a scale, tends to influence LLMs.
+- We probably should not focus on those in our ability to show the right answers to users.
+- So what you're saying is like pretty much all the LLMs have their own like algorithms for citations, with it pulling it exactly in that could also change anytime.
+- And two, Google AI overviews versus a chatGBT like they're going to index differently based on how competitive those markets are in a unique way.
+- And now there's multiple tools that are being used.
+- As they're still like playbook that you can just have that's going to optimize it for all the tools.
+- I mean, unfortunately, I have noticed certain tools like when I do let's say DPCR, they're pulling from the same sources and certain not so much.
+- Like, I would pick two LLMs and I would focus on driving visibility there like you rightly said, let's say Google and chat GBT.
+- There's data that speaks to in certain niches.
+- There's talks that they sometimes use Google depending on again the niche.
+- And I think searches changing from, I think before it was much more of an acquisition tool like, hey, how do we think about this as in terms of overall cat?
+- Whereas now we have a lot more conversations with not just acquisition teams but also brand teams to say, hey, visibility is a direct indicator of reducing total cat because if you're visible in AI overviews or GBT, I mean, I'd see that show up in Google analytics, right?
+- As an LLM who has an example, if I set up an exploration report.
+- Can you show us how do you track visibility on these other tools?
+- If there's any tool, any brand you want to just pick for for random and show us how to do it?
+- And why I say that is because we are banking on the fact that somebody's searches for a prompt that we just said that we want to focus on, we optimize, et cetera, all this stuff.
+- Clicking on promgeney, going to the website.
+- When I think about like overall LLM search.
+- The second thing that I think is important is to think about branded search.
+- And so we notice the same thing on AI search as I branded search increases.
+- The third thing that I think is important to also discuss is like these visibility tools, right?
+- Like, you can see within a tool like Scrunch.
+- We are noticing that visibility is actually increasing for these particular prompts.
+- Like, hey, we weren't present in this prompt.
+- Now, we are present in this prompt.
+- And the last thing that I think is important to is if you are in a B2B environment asking consumers or, you know, decision makers, where do you hear about us?
+- Like, if you have an consumer business supplement to company, you add GPTA, you add AI overviews.
+- You want to get into all those tools and how you operate them.
+- But one of the tests that we ran is I said, hey, can we change the meta descriptions on our websites to include specific amount of revenue that we've basically driven through search?
+- And again, because I think it's so specific.
+- Now, LM views is I would say that exploration report in GA4 that we basically set up to determine whether or not people are coming to the site from an LLM.
+- Again, we set up this in GA4, and we also used scrunched to actually determine how much revenue are we getting for this consumer business.
+- So you can see here, like LLM traffic is increasing pretty nicely.
+- And revenue from LLM's increasing, but you can also see that this is total acquisition from organic search is way bigger than LLM's specific.
+- So, again, that's why this doesn't tell the whole picture, right?
+- And a fraction of that could be from LLM's.
+- But this is not also showing how much LLM's are maybe influencing organic search business decisions or paid search.
+- So this data, the LLM traffic that is directly from Google Analytics, what Google Analytics is saying, the traffic being driven by all the LLM's combined, could it be chat, JPD, Proplexity, Claude, or to like a Gemini site.
+- But Google Airborne Review is now going to be registered here.
+- Actually, what's interesting is AI overviews, we actually bucking out a little differently here.
+- So you can see AI overviews here.
+- Yeah, just because like our tool and tracking is not showing people clicking through on an AI overview.
+- You can see, as we do more work, there's a really nice progression of overall AI overviews that show.
+- And I think that's an important part in overall influencing on LLM's too.
+- As you're like a tool right now, that kind of reverse searches it.
+- So for example, we just put in the brand name and it could do like a reverse engineering on what are certain keywords or prompts that would actually show that brand up in like the essence.
+- If you put in a brand, though, for example, this company, so from Genie, this is our mentions and AI overviews, chatGPT.
+- I'd also just add the disclaimer here, Koshank, that like this is pulling in the number of citations that are basically being referenced and views relative to these LLMs based on how A-Triff is collecting data.
+- And so this, I don't think can be across every single possible prompt because there is no tool that today will share with us prompt volume number of prompts.
+- But this is like gives you a sense of like, okay, like a cross-proceney, this like directionally helps us understand how we're trending with regards to AI overviews and chatGPT.
+- And so I think in this case, it's saying, hey, based on our index, there's one potential prompt that prompt Genie showing up in, which again, like I think is directly accurate.
+- How could it be possible that there's literally only one prompt that you better access to being up and surfacing on?
+- So like, this is maybe a place in which maybe prompt Genie is being referenced.
+- But again, I think that's a proxy for how an answer ultimately comes back, if that makes sense.
+- Because there's no way like even this tool would have access to the data with like, millions of queries every day.
+- I remember seeing a bunch of tools like a few months ago where you would pretty much like put a brand name and I'll just show you like, well, maybe like to put a query and then show you which branch are actually being highlighted, which branch are being surfaced for that query.
+- Do you use tools like that and what's your recommendation and how do you use those tools?
+- Ultimately, like we can get competitive data on particular tools.
+- And so that work that we do to determine what people are searching for is what we then add to a tool like in this case like a scrunch.
+- Yeah, I think that's pretty much the idea like you like, look at the keywords that people are searching for and then you run it through a tool.
+- So you can see here, which is cool, it is over time as they're running kind of like these like tass across AI mode, AI over view, chatGPT, you can see a blimp that we showed up here and then we're not showing up consistently, right?
+- So I think this is helpful to again give a lens into whether or not we're surfacing and what we're surfacing for versus not.
+- Yeah, no, see I wanted to bring it up because like I feel like if we are doing all the work, you also want to have like a feedback board to bounce off off to see what you're doing is actually working and it's not able to measure directly because you can have that LLM search happening for you.
+- I think someone I also think though like people are finding out that this is like one part of the equation like you said, right?
+- Like you need to first figure out what actually you want to go after and then do the research out and as you know like LLM are great at some things but I mean even finding like using the atrfsmcp it continuously surfaces the wrong data in the atrfsmcp which is crazy to me.
+- Are you using like a zapion all to build a workflow for you or you can just connect a bunch of these tools and be like hey put in the brand identify the keywords questions, content topics and pretty much think build a whole workflow.
+- The other thing that I think is really helpful is you query a tool like Scrunch.
+- These are all the citations that are influencing the prompts that we have added based on what we think are important.
+- You can see all of the prompts and all the relevant URLs that are actually influencing what's a for example.
+- That's cool so if I get this right so you have the keywords like you know the prompts that you want to rank for and the tool gives you the citations which again I'm assuming everything is just probabilistic here.
+- it's like if I come on say oh prompting these garbage and you guys don't create any content around that then that becomes what L.A.M.
+
+---
+
+## Video ID: 8GKI0LySyiw
+- What is AEO, GEO and LLMO?
+- These terms have been floating around for a while now and have been causing quite the stir in SEO teams, partly about what they mean, partly if they even exist.
+- AEO is Answer Engine Optimization.
+- To differentiate from the others, we'll say that this one is more about making your website content directly answer the questions that people ask.
+- On your website, this can show up in three major places.
+- At the start of each section, add one or two sentences that directly answer the question, because that's what AI is looking for when it's generating its summaries.
+- Use tools like Google's People Also Ask to find what users really want.
+- Now that AEO is in the bag, let's move on to Generative Engine Optimization or GEO.
+- Again, to differentiate this from the others, we'll say that GEO is about making your content structured, citable and easy for AI to understand.
+- Finally, let's move on to Large Language Model optimization or LLMO, LMAO.
+- This final version tends to refer to getting to the point where AI is ready to recommend and cite your brand by building your brand profile.
+- Where the other acronyms were focused on producing content that AI is happy to cite and making it readable to AI, the gist of LLMO is being the brand that AI wants to cite, either by appearing in the training data itself or by building such a powerful brand that AI can't ignore it and inherently trusts it.
+- And that's why we keep it simple, and we just refer to it all as AI SEO.
+
+---
+
+## Video ID: 8_4nn6ne8tY
+- So these are 10 SEO lessons that still work in the AIR.
+- So number one, topic clusters remain powerful.
+- Topic clusters are when you have, let's say you're talking about SEO, for example, right?
+- You might have a bunch of SEO topics that are tied to it.
+- How to do technical SEO?
+- SEO hasn't changed that much.
+- We like to think that just because AEO or LLMO sounds like it's different, it's just an evolution.
+- And a lot of the old SEO stuff is still very powerful today.
+- One thing to keep mind is SEO like five, 10 years ago, whatever the timeframe, a lot, it was more keyword-based.
+- Now Google and AI wants to rank sites and site brands that cover topic thoroughly.
+- So if I was to blog about SEO, they want me to blog about SEO.
+- How to do research for topics and keywords.
+- How to build links, how to fix on page.
+- How to optimize from multiple platforms and not just Google.
+- How to do local search, how to gain reviews.
+- Before the AI era, I used to build products, given them away for free, because it was cheaper than paid ads and the products would go to quote unquote, semi-viral, build a lot of natural backlinks and goodwill and help your rankings get your brand out there.
+- That works even better now in an AI world, because in an AI world, people still use a ton of software, forget what the stock prices are showing, but a lot of these software companies are still generating more revenue.
+- And you can build software, cheaper, and faster with tools like lovable out there.
+- When you look at the LOMs, so SEO to me, whether you're looking at like an answer engine, you know, platform or surface, or whether you're looking at traditional SEO, it's still kind of the same to me.
+- And I think the key thing to understand in terms of old SEO lesson that still works in today's era is that you have to adapt.
+- Because SEO, as far as I know, when I first joined, it's changed and we're not talking about every year, it's changed.
+- And that's very much happening in the AI era.
+- SEO shouldn't just be Google.
+- It should be chatGBT.
+- It should be perplexity.
+- It should be Instagram.
+- It should be Pinterest.
+- You know, if you're selling ecommerce products, search has changed from search engine optimization to search everywhere optimization, even if people hate that acronym, in which you have to optimize for multiple platforms.
+- Number five, let's all this new again.
+- People are like, oh, especially the new people coming into AEO.
+- And then it's like, oh, wait, these LLMs are catching up, catching onto the fact that listicle spamming is pretty easy to game.
+- Oh, wait, that has been happening for a very long time.
+- So yep, still sounds like SEO.
+- So a lot of the old stuff in SEO still very much works well today.
+- Brand queries is someone typing in the name of that domain name or the brand name into Google and the clicking over to website versus just going directly, helps with ranking quite a bit for the traditional Google brands.
+- Strong brands also perform really well in LLMs like perplexity and in chat GPT.
+- The bigger your brand is, the easier to terrain contradiction, SEO.
+- But the bigger your brand also, the easier it is to rank on these LLMs.
+- But either strategy could work.
+- When you look at LLMs for example, you look at a chat GPT usually 95% of the content, depending on the content type, you're looking at updated content from the last 10 to 12 months or so.
+- So this is never actually, this has always been the case with SEO.
+- It's no different in today's AIR.
+- Someone asked, how often should I update my content?
+- And the example I gave there, because people are probably wondering how often they should update it.
+- Keep track of all those metrics, because sometimes you're losing clicks because of AI and AI overviews, but you're getting tons of impressions still.
+- That's when you should look to see where competitors are doing, because they're probably doing something you're not and update your content to be more competitive and better than theirs.
+- And AI can help you analyze their content, and then figure out the gaps in yours, and then you can update.
+- Number eight in the world SEO, back in the day, people write articles on everything like the new shoe facts about bananas.
+- That's what did well in SEO years ago, and it still does well today.
+- So whether it's partnering with a website to help just even a simple link collaboration.
+- But you want to go way beyond that, because SEO is back in the day, they used to kind of just stop at the link collaboration.
+- And the way you get those, build good content, build free tools, amazing product and service, all that kind of stuff helps, and of course, being in business for a long time.
+- So, Pep, one of your best friends from CXL, said that agencies are getting fired.
+- The number one answer wasn't paid ads, wasn't tools, wasn't the expense, it was agencies.
+- Number three, I need execution, not strategy.
+- I have plenty of strategy.
+- Weeks five through eight, strategy development, weeks nine through 12, the playbook presentation.
+- When you show up with strategy theater instead of execution, you're solving a problem they don't have.
+- So yeah, we've always, if we look at most of our clients, they do require strategy help, but it's guidance strategy.
+- It's not them saying like a Deloitte or a Bane or McKinsey saying, hey, can you figure out what we should do to fix our business?
+- I'll give you an example of guidance strategy.
+- Let's say they're Walmart and Walmart may be like, again, I'm just screening a hypothetical here, but Walmart may be like, we know Google's awesome.
+- We want to figure out how to dominate strategy.
+- So in essence, when I say, guidance strategy, there do you know the channel, you got to figure out how to do it, what it's gonna look like, pitch it to them, and if they like it, they'll pay you to execute on it.
+- That's what we mainly get paid for.
+- The strategy has never been for us.
+- Hey, figure out how to grow our company.
+- Can you figure out how to do them better?
+- Can you come up with a new strategy for this channel and then figure out how to go and execute on it?
+- So before, let's look like 10, 15 years ago, many people didn't know how to do SEO.
+- And you're probably gonna be able to maintain the client for a while because your client doesn't know what's happening, okay?
+- I would just say that a lot of agencies haven't met that bar, especially with AI now if they're not gonna adapt, that's why they're getting fired, right?
+- That's what I think that's why there's a general to stain for agencies.
+- So if you want to learn more, just go to carrot.ai and you can join the wait list.
+- Again, it's carrot.ai.
+- So you see this, most clearly, if you're using Cloud Code actively, it says, hey, for a database, you should use Superbase.
+- It's choosing for you the stuff you should be using.
+- And they kind of default to just what looks cool on the website.
+- So again, instead of product-led growth, where you have to kind of play with the product and look at G2 reviews and all that type of stuff, right?
+- Yeah, I do think, I mean, I don't think it's unfair what they're saying though.
+- So they look at sentiment on Google bot and Chad Gpt for things like their AI.
+- I don't see this as no, I think they're trying to paint a new word and coin another word and not so good.
+
+---
+
+## Video ID: 8qn_GhW0gok
+- And the citation of course, where the players come from, where they come from, which are the big numbers of geos.
+- I'll explain what a last thing I've been doing.
+- This interaction, the ChetibT or the Google AI mode, that are the relative system, the generative system, which are the modell that are combined with this model, which can be combined with this model.
+- I'd prefer to explain, the K&E model, ChetibT or the Google AI mode, are the systems, the generative engines, with the modell that are combined with the modell.
+- So it's very simple, I'd like to explain, that you can also use this group.
+- As a user, a prompt like a company asks me to explain, and explain what they are.
+- So, the question of this prompt in small entertainment, to read tokens.
+- So, honestly, I could explain to you a certain extent.
+- AI, or IGCram, IGCram, or IGF, can't be built-in, then agenticial-run-tif-engined as the auto-GPT, Open AI-Gins, do main-spezivial-run-tif-engined source as we have cases since legal AI system and multi-modale-genial-engined, so, Gigi, the multi-modale-gugle- Gemini, multi-modale, where all the different models come together and then the algorithms are leading.
+- In classic SEO, there are many key words, many things in the software.
+- Master bronze, we can of course not only copy the chat, because everyone is hanging on the ball, but also master bronze and undermine the best software and undermine the best tool for pitch decks.
+- There, yes, just like any Institute of Investment As a summary, a Institute of Investment Which is very important when I am hanging out hanging out hanging out hanging out hanging out hanging out hanging hanging hanging hanging the genosu was eliced then when I was actually as a flat 1 by Chatee Biti as a manchen error.
+- The keywords you have, the theory I have, of course, can be so detailed, so you can ask, you have to have time to talk about, how many questions, or many things, that actually can be done, as I said, how many, because I think the sound of the first one, and there you can also ask about your questions.
+- Very, very important, but I think, how many questions you have, and you can ask, how many, many, many users, and I don't know, how many questions you have, more details, the chat kei, so you have the whole screen, and then you have the best of the whole screen, and you have the five-fest of the game, and the background, and so forth.
+- you can't just ask how many questions you have, or generally, about the prompts, that, now, the three examples, that are also classic transactions, and search questions in kei chat, where I have many people, so I will show you the things, which I would like to ask, as the first LV, which is the master of the student student, who is the one who has the feeling of the student, which is the one who is always on the as a person.
+- Then a small tool, you can see the same thing from the CEO to the CEO, to the other, and come, that's a good example.
+- I'm very, very good at the top class, so if I have a main keyboard, for example, pitch-agenture, Welch, name keywords, or the other topic, come to the topic, pitch-agenture.
+- There is also this query called, which is important, as you can see on the best PC system for many K gaming, but this question also follows the question, and therefore, further, to write the possibility of using a Brombs, so that's why it says in the 1000 or 1000 euros, I have to say, I have to figure out, and for 1000 or 1000 euros, no matter how much K gaming system is used.
+- With the problem-lös, so the problem-lös content will be on the online website, which is not the theory with the only basic content, but there are also problems-lös, like the B-S-C-T-E-S-T-S-T-S-T-C-T, which is very much the K-Gaming, then it should be this very, very high-level system, which is what it is expected.
+- And that, if you are the main artist, then you can simply imagine that, and explain that K-E-S also gets a pretty big difference, and then you can explain it.
+- There are also ways from this generic explainer, what a gaming PC posses, and the same disc Amazing disc, Amazing!
+- As a man, just like a man who enjoys Experts have to explain these things, who don't undermine any intentions, and explain any discredit and discredit to undermine any intentions like any intentions like to explain any of the manuscripts.
+- In a video we made a summary of what a show There have been a lot of hanging from KCC hanging hanging hanging Which in any of us explain a hanging hanging hanging In this video to hanging hanging hanging hanging If you can't say KII content, you can say KII content, but you don't have any citerum.
+- It's a website with everyone who is indexed.
+- There's no need to be afraid of it.
+- For Geo, I think, with title tag, Schema, Data, Page Suite and a lot more.
+- We're going to take a look at one of the main features.
+- One of the most expensive, I've been using it for many websites, especially at the same time.
+- It's a very important thing.
+- Open AI is a very useful tool for using crawler.
+- So the Tabelle must not use any crawler.
+- Which one should use jasin from jasin?
+- Which one should use jasin from jasin from jasin?
+- Which one should use jasin from jasin from jasin?
+- Which one should use jasin from jasin?
+- Which one should use jasin from jasin?
+- Which jasin should use jasin from jasin?
+- Which jasin should use jasin?
+- Which jasin should use jasin?
+- Which jasin should use jasin?
+- That is also very important for Geo, but let's start with the definition.
+- I think I'm going to explain the CKE, of course, when they understand their understanding, their brand, their product, their performance, their performance, the fact that you are an entity on the subject, so that you are an individual object, so that the CKE can be found.
+- Aintur exception is the agent, for this one.
+- That's extremely important, otherwise, of course, in the answer.
+- So CKE must know, for example, the person makes it.
+- That's the most important thing.
+- So the content must be marked, and it must be discussed, and it's a consistent with specific factors, for the knowledge, to be aware.
+- On the own website, we have a large topic content, of course, on your own website, very, very many topics, so that you can read the product or the license, which you have mentioned in the version, or you have written it, that you have written it, and that there, the CKE models then understand, OK, the content is very, very, very detailed.
+- The license has the license, OK, so you have to find a tool to read the topic.
+- That's the most important thing.
+- Amazing Felta, the Google hanging hanging hanging hanging hanging hanging hanging hanging hanging Which Google should use?
+- Which one should use?
+- Which one should use?
+- Which one should use?
+- Which one should use?
+- Which one should use?
+- Which one should use?
+- Which one should use?
+- The first one is for Geos as a relevant one.
+- My new partner, Dubairo, the best gaming pizza.
+- And that's the perfect timing in Dubairo.
+- For the only Geo, I have to say that I have to present on social media.
+- YouTube, but that's very, very important.
+- In one of the explainers who have shared this side, not so pretty when I am hanging out like this.
+- And yeah, as I said, here is a question for you to go on a question.
+- Also, the question is important for the health sector.
+- As I said, the most likely gaming PC is the same.
+- With the air, the A-Share has a domain rating score.
+- This domain rating score, the stack of backlinks has to stack the link profile.
+- These are a lot of air.
+- You know, the air or number of ref domains to make the answer to the quantity of the link is not so bad at all.
+- Next to a lot of details.
+- So, if you are an L&M, the whole thing you have to write, if you write it down, then you do a review to a client, in the email, and yes, it will be a hit, now it is written, automatically signed, which with L&M is a date, and it will be very easy to get together with recipes.
+- This email is not real.
+- And that's why we also have our video on Geo Blackhead.
+- Then, the important part is monitoring.
+- That you can see the AIMO dual.
+- There are other tools for Adress, and the same brush.
+- Our domain has the Google AIMO2995.
+- The police can also connect to the other tools.
+- The TTI Gemini, Google AMO, Google Air Overviews.
+- Yeah, and that's what I'm doing with the video, it's also something that's long-awaited, as it's done a lot, thank you so much.
+
+---
+
+## Video ID: 99leGueLaXE
+- To our webinar on the state of AI Search for a data driven 2026, we've kind of been calling this a little bit of a like a sort of AI search wrapped as it were.
+- So we're going to get into lots of some of the details about some of the cool things that you can expect.
+- And I said thank you for your time and effort in advance.
+- I'm bad at geography at this point.
+- As I said, it's a little bit like a Spotify wrapped sort of thing.
+- I am the head of AI Search and SEO Communications at Wix.
+- I spend a lot of time thinking about AI Search talking about AI Search and helping our teams to do to greet there.
+- Also with the focus of Latin America and Spain and last times Italy.
+- And we also started covering more of the development with AI.
+- And Tiyang Goodnight met at another event where we were talking about AI then as well.
+- GEO and SEO evolution.
+- We're also going to share a little bit of data on some research that we've done on AI, AI, optimization on Wix website.
+- So what makes a difference on Wix website?
+- We looked at thousands of websites and we can share what we found.
+- So from my side, from the Wix studio side, we opened the AI search lab this year.
+- If you haven't gone to the AI search lab, it's a really good resource.
+- And lots of great insights from super smart people all about AI search, chatchubt, showing in those sorts of things and lots of great tools that you can use for that as well.
+- And we also launched this year the AI visibility overview in the Wix tool set.
+- So when you go into your CMS, you can see whether or not you're showing in AI responses, whether or not your website is being crawled for user queries for search queries on chatchubt, Gemini, Proplexity and Claude.
+- So one of the first things that happened or one of the most significant things that happened was AI overviews.
+- What are your feelings on AI overviews together?
+- I mean, I also have a report on AI and online traffic that I published this year as well.
+- Because actually AI overviews would take a lot of traffic from especially like from news websites and everything.
+- And that created huge fuss about what it means for SEO, what it means for this discovery ability and also means for direct traffic as well.
+- Many people have been in many companies have been complaining that this can actually mean a death sentence for their business.
+- And since it has been there, I mean traffic for many websites has been at a not a stay on make but at a very big risk at this point.
+- I think you're not sure if you were affected by AI overviews.
+- And if you have any other, if you have audiences that are coming from any other region, you can you can see the change in the traffic as they as they introduced AI overviews.
+- And if you see that you start seeing a difference as as AI overviews are introduced then you may very well have been impacted by AI overviews.
+- We'll see how that how the AI overviews play out in the in the next year.
+- Yes, is it the AI on a traffic that you have there.
+- I've got the so what I have is the zero click one from the AI or yeah.
+- So the this is this is the article and essentially we have a section on AI overviews and somebody said what are AI overviews if you go to Google and you say you know.
+- I don't know how do you tie a shoe and it gives you an answer like it starts generating an answer and it's got a few links in it and then a few things on the side that's an AI overview and it will say.
+- It will say on it that's it that it's an AI overview and you normally expand it and it will give you more information.
+- So this was one of one study from the Pew Research Center that was published and it had a lot of us after on and this is basically 1% of people clicking on a link in the AI summary shows that.
+- It's a discussion that Google was sort of like stealing traffic because Google was feeding upon the content of especially especially news websites and other information or references like we can be different example and just keeping it there and then like diverting or just.
+- So someone said about the speaker.
+- Yes, so for also for more insight about this, I also published our study on AI and online traffic on the chat as well.
+- That is this is is included in there as well, but yeah, it's also the issue of online traffic and the effect of AI we can see by a growth in the traffic diverted from AI tools.
+- But it's also been a challenge itself to measure it like me, for example, how do we how are going to count conversions, how are going to count sessions of visualizations is the point being in the tools only how is going to the website can look.
+- I'm not going to keep everyone in this year, but this is one of very important statistics that we have on our report.
+- So another one was chat, TBT, chat, TPP, Plexi and Claude, all released AI browsers and these are agented browsers and they they essentially they're able to collect their own data.
+- It's a little bit of a challenge to Google and and the role that if that has been interesting, but one of the things that I've noticed I've been tracking you know how people are adopting these tools and every time they add a new feature every time they say, Oh, we've got a new browser or something you start to see more people more people joining.
+- Yes, I mean, I mean, we I'm also very interested in this data as well because I mean, it's just a very like recently, so that is just a very leap of how AI sort of is like already pointing so hard and being agented instead of just being like a search solution as well.
+- Basically, AI everywhere.
+- And then I added AI into the Google Fit Watches and to their pixel phones.
+- And since they've done that, they've seen a really big jump in the number of people who are using an AI as well.
+- The other one was that they've added in so opening I released Sora, which is a video generating tool and Gemini also released a video, which is a video of video generating tool.
+- This has been very interesting across social media in terms of in terms of how people perceive AI and how people perceive reality.
+- So that's something that you should see rolling out in twenty twenty six we'll talk about that in our twenty twenty six webinar.
+- I can I'm sort of certainly starting to see a lot momentum for agent take implementation across across the web and you're nodding as well.
+- And then the other one that that's also released is as deep research and query fan out so this changes the way that that the LLM's think about are the that they access information so previously you had a dense transformer model which was basically like.
+- And so they'll put everything into compartments and then they can just go to the compartments that they need the noron they they're not using compartments they're using neural networks but with the deep research and with the query fan out they're essentially accessing neural networks in a different in a different way from the way that we're doing before and this this has impacts for websites and that I think it's really fascinating as a development.
+- Yes, the presentation will be posted and we also have the article I should pin that.
+- So that is the card for the for the article I'll post you the that put the link to the article up again.
+- And so yeah, we're going to talk about some of the state of AI search so with this one.
+- So I'm going to be talking about AI and.
+- And Mark gets insights on consumer insights of for example service on AI usage and for example markets and everything so we have like a pretty like broad range and everything so.
+- So I'm going to be talking about our reports and the topic includes just AI artificial intelligence as a general but also like breaking broken up by market as you can see here the yeah I power online search is the one that we're talking about the most today, but we also talk about other search.
+- And this is this is something y'all are watching as well as just a step.
+- And we might be talking about not not not only LLM but we might also talking about the slowest at for example, which has in just.
+- I think it's a past chapter pt from of mistaken with a number of downloads on the first day already and yeah so it's huge I mean like I mean a pretty the adoption like I mean in a global adoption versus this technologies it's something that we have never seen before and it's just I mean we might consider yeah as it's just a point five percent but he has been exposed my exponentially growing it's not something that we can ignore anymore so that's why so important that we bring this insight here.
+- And and and if it's just a mention if it just says you know, Delish has some good recipes and doesn't have it doesn't have a link then that's a mention so here we're talking about citation so actual links to actual websites.
+- And in in versus in Google versus versus AI and what would have you found in that research.
+- But from a domain of the lab we saw similarity between the answers that were given in AI citations of 44% and for URL and 27% so just how different it was behaving.
+- But I would say this data can be we are trying to find some more updated data in this one, but this was the measurement for middle of this year so it's actually really interesting you want to see how different AI citations in Google itself differ from Google's and search results page.
+- And I think that this is something that comes to bear when people say you know oh you can just do SEO and you'll get good results on on AI and I'm not saying don't do SEO I'm not saying don't do that but I think that you know if we're seeing that for the for the answers you're not seeing the same the same URLs you're not seeing the same domains showing in the answers then it means that there's also something else something else to be thinking about as well.
+- So then let's think about like the top users by by platform so this is I've for each of these I've gone through the sort of top platforms similar similar up to data the top five for whatever it is and so for this one we will be no surprise in terms of in terms of AI if we look at the average of the users touch your PT is the is the king and the next the next for this for this the next closest to them you know touch your PT is called pulling in almost you know three or four times.
+- more and more than than than than said so the next is Gemini the one after that is deep seek deep seek is one that a lot of people don't have on the radar but deep seek is a and LLM that came out of China and it started at the beginning of January and if you look at global global traffic to deep seek they got they got a lot of traffic and at the beginning of the year they were they were out they were outpacing Gemini.
+- I think it's leveled out now but for for a while they were they were bigger than Gemini and I think that's that's important to to take taking to account.
+- Has a excellent model as well for like compressing data and not so much an accuracy as well but still like figuring like a bit above of like other options other tools that didn't have like a platform for itself before like for a place to take everything so.
+- Then the other one what we see a global visit again we see a similar sort of picture so here we see we see tragedy be pulling you know far for up pacing.
+- There do you find that they don't actually very often show up in the top in the top for these for these tools so I think it's important to you to you know don't just don't just go by the the work the names that you hear most frequently because rock for instance seems to have quite quite the following.
+- I mean as we said and as we're going to see even more with Gemini's model three it's much more embedded on Google's on.
+- And then outgoing traffic so this is this is also very interesting and this I find aligns with the anecdotal things that I've seen so chat GPT like seems to give out links like you know not tons but but fairly consistently.
+- I mean just last question this is an example and goes with the questions from Matthew helpful there because he had a question up this the main versus URL means get to the red what right website or not.
+- And this is one example because it's mentioned he actually did a main and the other one is mentioning the URL for a more precise example.
+- And website is very often that I find that what the people who are tracking AI will actually see that they get a lot of traffic from perplexity and that's because perplexity gives out traffic.
+- And we also use a perplexity here as well as a system and I think also one of the differences how do you employ these tools if you think about it because also perplexity has this full like proper focus on research and search as well.
+- Okay all right so let's talk about where the AI traffic is going and this is this is your data that you've shared from your fantastic report and are you able to share a little bit more on this?
+- Wonderful so yes I shared the I shared the link to that article and that article is also live on the on the the AI search lab as well and with that if there's any other burning questions they regret just a couple of minutes left and for the safe I can take this off the screen and I remove this oh get a stop sh...
+
+---
+
+## Video ID: 9KNKsD_pmZ4
+- Your company, originality.ai is crushing with SEO.
+- I mean, and so we talked over email, you told me you have 10 years experience in SEO.
+- But I guess first, can you show you're the CMO of originality.ai?
+- And yeah, I've been head of growth here and working on content marketing strategy that has morphed into several different pockets of marketing.
+- So you have 53 out of 100 domain authority.
+- You have 78,000 backlinks from 7.1,000 domains, ranking for so many keywords.
+- Has SEO been a huge focus from the jump?
+- And so we used a lot of tools that helped optimize content.
+- And so it was rooted in the foundations of SEO and our whole thing was like, oh, we'll get you to the top of Google.
+- And then we saw the wave of generative AI coming our way fast.
+- And when we saw the power of some of these tools that were coming out like Jasper AI, some of the OGs, we were like, wow, this is good to make things pretty challenging.
+- So we are a tool that checks for scans content and determines whether it has been generated by an LLM or not.
+- Do you have other features of the tool or is that?
+- That is our main use case.
+- What people like 99% of our usage is our AI detection capabilities.
+- And that was actually, we started building this as a plagiarism detector before Genre and AI was even on the map.
+- And we were like, man, this tool is so ancient.
+- And then Genre and AI popped out of nowhere.
+- And then we have built on different content marketing tools that complement one another.
+- And we have a content optimization tool as well.
+- And we launched our AI Detection Software before like three days before Chatchee PT came out with it.
+- That must have been in, I mean, but did you know about, because I think before it came out, I guess, I get the beginning of December 2022, right?
+- No, but we were training our tool on outputs from the original GPTs, like Jasper AI.
+- And some of those other tools.
+- So we were using those tools outputs to train our model on.
+- Your competition must be crazy though, right?
+- Because there's so many free AI detectors out there.
+- I mean, even generally has a free AI detector.
+- I had to make sure it wasn't against Google's rules before I kept doing it.
+- It's a form of SEO I call compact keywords, whereas most SEO focuses on putting up articles to answer questions, how what when compact keywords focuses on putting up dozens of pages that sell to searchers who are actually looking to buy.
+- Compact keywords is a thirteen hour deep course on getting sales with SEO.
+- A customer recently said, each lesson is dense with information.
+- I feel like I'm gaining a new superpower.
+- Compact keywords is about setting up an SEO funnel that brings you sales for years and years and years.
+- It's less work than traditional SEO and it makes way more money.
+- If tools are coming out now, it's too late.
+- We've built the foundation for three years to make our tool as powerful and accurate as it is.
+- The tools that open source and free just don't have that foundation and the same training baseline as we do and tools that are serious competitors in our space.
+- So we, a huge part of our content marketing strategy has been doing data studies.
+- How does the most AI publish on or what review platforms are?
+- Have the most AI on them?
+- What e-commerce review platforms have the most AI on them?
+- And then running a bit of a digital PR campaign on those to try to get picked up by pure one media.
+- And so that has been a big part of our content marketing strategy.
+- You're an AI writing detector.
+- Are you doing human writing on LinkedIn or AI writing?
+- I'd say that we definitely leverage AI.
+- So yes, we do leverage AI.
+- We definitely use AI to help us with sort of the like free mean of our article sometimes, sometimes helps us with outlines.
+- But yeah, we have to definitely be careful because it's like, we are a tool that helps people detect AI.
+- And if we're then using AI extensively, it kind of makes us look bad, right?
+- We have this one in particular tracks how much AI content is in the top-surps of Google.
+- And we can see that Google is punishes AI content.
+- And we've been able to trace it back to AI usage.
+- That's really nice that you brought that up because there's just huge trend in SEO right now.
+- It's called AI Slop as a service.
+- It's like a very frequent topic, which is like, yeah, you can try the stuff and it will work in the short term and in the long term, like, you're literally going up against Google's engineers.
+- But also when you think about it, it's AI content is like an existential threat to Google.
+- But in terms of this conversation, I think to Google, it is an existential threat for sure because if you can just get the same answer when you type a question into an LLM, as you, like, if you get the same answer on your Google search, then there's no incentive to really use Google at all, right?
+- And so it kind of creates a little bit of a loop and a problem for Google if it's not actively trying to suppress AI content from getting into the top of its search.
+- If AI content is ranking top-inguble and it's spitting out inaccurate information, and then later models are training off of that inaccurate information.
+- That creates like AI training off of AI, AI proliferating raw straight-up like slow-downs and it's like, okay, how many times does that get spread across the internet when you have these models that are just training, on top of each other at super speed?
+- And I'm just like, wow, I really should not be asking LLM's health-related questions.
+- I want to talk about your SEO.
+- And that is one of our main strategies in terms of organic link building.
+- So it's, that's part of like the organic like building strategy for sure.
+- And when you're talking to journalists and pitch in stories, you have to be so personable and like stand out from just like the AI Slop that they probably get in terms of outreach all the time.
+- Um, we are analyzing, we create a data set, we clean that data set, and then we use our originality, AI, API to scan that content, um, and then it will, uh, it will give us an answer in bulk as to whether, uh, each, um, input was AI generated or human written.
+- Um, that is giving like a lot of medical advice, um, our AI generated and sit in 2025.
+- So my, my reaction to when you said that, I went, And it wo.
+- Was it just cold emails?
+- And so they were like an investigative journalist from the from the Guardian, for example, was like my first person that came to me and asked me to run a book through our AI architecture.
+- He's way more likely to open my email versus a cold email from somebody else.
+- But at the end of the day, it's like, yeah, still journal like journalists at big publications or even small publications are so, so, so important.
+- So in that case, we will do a bit of a larger, um, at reach strategy, which is a little bit more of a cold at reach strategy to other journalists that have covered similar topics that we don't necessarily have, um, an existing relationship with.
+- Like the hot topic, you have to be in a hot niche, and AI is a very, very hot niche.
+- Um, so you said the, this, it, like, distribution started.
+- So you are already succeeding in SEO at that point.
+- What was your keyword strategy?
+- We use content optimization tools, uh, that we, we've always used to optimize the content, um, to give Google what it wants.
+- And that's kind of how we kicked off our, uh, content marketing strategy.
+- Yeah, so, so any kind of, um, blog that did any kind of review, um, on a eye detection, players, um, detection, grammar, spelling tools, fat checking tools, stuff like that, that, uh, that we were trying to rank to those keywords, and they had created a, an asset that we could be included in.
+- Um, the amount of cold link building emails that I get that are like purely AI generated, like out of nowhere, no kind of draws zero connection to what I do at originality, um, are the ones that don't even get opened, right?
+- Um, I get hundreds of those emails a day, like it's insane.
+- And so, I would say if you're looking to have an effective strategy, you have to do the work, and you have to, um, reach out to these people with a very specific app's.
+- And that day should have been in a really exciting day for me because we launched and the launch went well.
+- But yeah, product hunt, I mean, product hunt is such a great, I've like for something like originality.ai.
+- If you have like if you put you put in a new feature to originality.ai, launch it on product hunt.
+- What was your what was yours to have like a strategy for one for for keyword research and two for keyword targeting?
+- But we did make a big mistake on upon launching originality in terms of SEO.
+- But we all of our competitors had a free tool on their homepage for AI detect like and the obviously that they wanted to rank for was AI detector.
+- And we were like, well, no, we're not we're not a free tool we're a premium tool we're not putting a free tool on our on our homepage.
+- And every single competitor of ours are like absolutely spanking us for AI detector, which is obviously the most important word that we want to rank for.
+- It is an extremely challenging word to rank for now, especially and had we been smart in terms of SEO.
+- We would have put a free tool on that page earlier.
+- We're like the most accurate AI detector and it's crazy that we're not ranking on the first page of Google for AI detector.
+- You said, well, you said you just put out a page targeting AI AI detector.
+- It just did not have a free tool on it.
+- We had an AI checker page that then we had had a free tool on as like an attempt to be a course correcter.
+- And then we just started ranking really well for like AI checker.
+- We want to be on the first page for AI detector.
+- And so we're hopeful that that will help move the needle a little bit in terms of ranking for AI detector.
+- And you're targeting, you're targeting it with your homepage instead of with an individual page because you have so many backlinks saying AI detector going to your homepage.
+- And so we wanted that to rank for AI detector.
+- And so, moving the free tool on to that page, uh, like we had strong signals that that's what Google was rewarding because you get the AI detector on that page.
+- Oh, and I see you have your page title, AI detector, most accurate AI content checker for chatGft.
+- Most accurate AI detector.
+- So you, so you literally, this is perfectly structured for for ranking for AI detector.
+- And, uh, you said, how long go did you put this out these like a few weeks?
+- I think you could, you could rank your, you have such a strong, uh, a strong site in terms of SEO that I don't, I mean, of what's your other competitors?
+- How is their SEO compared to your SEO?
+- I would say that we dominate the SEO space.
+- Um, yeah, I would say that, yeah, we definitely dominate the content marketing space traffic like GPT zero, for example, or like a couple of our competitors ranked earlier for AI detector.
+- And that's why I've recommended GPT zero so many times in the show.
+- I messed, I must have found it with a simple, with a simple search.
+- And like, I got some other tools word of mouth, but I would compare them all against each other.
+- And I, I'm actually not sure if I had tried originality.ai and it would rank the top 10.
+- What's been, what's been your strategy?
+- Well, one strategy once we started to get like a lot of traffic, we were like, okay, let's, um, yeah, a lot of traffic.
+- So like, we were reviewing other tools that did similar things to us.
+- So like, kind of, like, it's a strategy.
+- Well, part of that strategy was like literally the brand name.
+- Yeah, that's that's legit or ranking for your outranking new competitors for the, I mean, I guess, but are we, are we talking about a new competitor who doesn't, who's not even doing SEO or are we talking about a competitor who's actually trying to do SEO and you're still you're still beating them for their brand name.
+- Yeah, I mean, it's, it's the same kind of, I mean, it's the same principle, I guess, when people in their, in their media buying strategy, like bid on your company as a keyword, right?
+- I've recommended, I've, I've recommended trying to outrank competitors for the brand name using UGC UGC works.
+- And this is cool because I'm sure you know the CS comparison pages, they're going viral kind of in the SEO world right now because AI tools are surfacing comparison pages so much.
+- Comperson pages are, are great for getting your brand surfaced with AI tools.
+- Do you have specific AI strategies or you kind of like, I guess, has your SEO strategy changed, trying to get surfaced with AI or have you mostly been doing the same stuff?
+- So we in terms of getting picked up on like, LLMs and getting exposure and citations and stuff.
+- Yeah, our strategy has definitely shifted where we are definitely doing more on different platforms.
+- So, and we found that that has been very effective in terms of getting AI overviews and getting mentioned and linked on various LLMs.
+- And so I would be a big piece of advice would be like, okay, traditionally, yeah, you only pick your website for SEO and maybe like a LinkedIn page or maybe a Facebook page or Instagram page or whatever.
+- But like you kind of have to have everything if you're going to do well with LLMs and consistent, consistent messaging across all of those platforms.
+- And if your message is consistent and repeated over and over and over, they're going to have more of that same data to train on.
+- Yeah, yeah, I had a Steve Toth on the show a few weeks ago and Steve Toth is a pretty well known SEO.
+- And now he's he's writing and talking a lot about AI SEO.
+- And he said the same exact thing.
+- He said, you need, you need to describe your brand in the same way across multiple platforms.
+- And I would say that social listening is a really, really important piece of our marketing strategy.
+- I said that actually I said this at the beginning.
+- And I said, I said, Reddit is going to be the biggest power play of 2025.
+- And then they go into an AI and they're like, oh, you're looking for an AI writing detector.
+- It worked and it's so important.
+- Because we're seeing as like the AI police and people think that because we have a very small false positive rate which every single AI detection tool will have, that we have no place on the first like the base of this planet and that we are just wrong and that we're a punitive tool, blah, blah, blah.
+- So if people are having confusion about certain things, it's going to trend throughout our social listening initiatives and tracking.
+- And then we're able to respond to that by like creating a more robust FAQ section or creating a video that is an educational video on exactly like on what a false positive is and how you can avoid it and what tools you can use to avoid being accused of having a false positive.
+- And then like fora, I think we haven't started a like we haven't started a Wikipedia campaign yet but that's kind of like on our list.
+- So there's yeah I would say these are these are platforms that you should prioritize.
+- Are you using a social listening tool?
+- I should actually use that again.
+- Yeah, we're using a tool but then also like manually like just going through like searching for specific things in like in the search bar of LinkedIn for example will like look for very specific things within our industry.
+- So if people are having a conversation on LinkedIn about like false positive as an AI detection we want to hop in there.
+- So if there's something that I should respond to, I get flagged for that and like the link will get sent to me and then I'll respond to it.
+- If it's something that our founder should then he will take care of that and then sometimes it's just like our marketing coordinator who handles a bunch of the responding and then sometimes it's just from the company page.
+- Are you having a human actually actually say who should respond to this?
+- Like okay okay so you're not using AI to route the thing to the person or response.
+- So what we would do is probably educate a little bit on like why there's such a thing as a false positive we would link like a linkable asset in there to like a piece of content that we've written on that topic and then we would probably name drop and be like but a originality has a super high accuracy rate and maybe linker accuracy post in there or like just prompt them to be like you should give it a try.
+- That's oh it's what do you do um what do you do if someone just if somebody says something nice about originality.ai because I get like lots of people I'm linked in they say great things about me and half of the time now I'm like thinking about my behavior and I'm just like oh shoot half of the time all I do is like it and then say like thank you but maybe I should be like writing more maybe I should have some sort of call to action in the response.
+- I think acknowledging it is probably just like the most important thing but I don't think that their necessary needs to be in less.
+- And that's like a very genuine relationship like I can think of a perfect example we have a guy who is an SEO consultant who has been talking about a brand for a long time really likes our studies really likes the um the robustness in which we do our our studies and how open we are with our data etc.
+- And SEO is love that right and this guy specifically has like really enjoyed our our research and has been following it.
+- And he has quite a large SEO audience.
+- He's very legitimate in his space um and so we actually hired him to do like an SEO audit on our site and then you know so he is like actually an employee and he helps us with our SEO but then he also uses our data studies and a lot of the data that we come up with to kind of like push his his brand forward um as well.
+- Well I think that he he a lot of technical SEO stuff.
+- So a lot of things that like we can't really see on the surface were some of his recommendations.
+- But then he was very very supportive of our change to have the free tool on a bit.
+- So so I'm yeah I love technical SEO so I mean I don't know how much of it you remember.
+- So what like just like a lot of broken links things that should maybe you're using 302s instead of 301s.
+- So originally dot AI was before the AI like the AI explosion.
+- So was it domain really expensive when you when you got it?
+- Oh my god and and it domain like that now in 2025 would be just aside from like the established brand that you have would be would be insane.
+- That's amazing that you launched before chat GPT and then like it must the 2023 must have been so insane for you.
+- And yeah come up against like big hurdles and we've had to world pretty lean team still like we got like maybe 20 full-time employees like we're quite lean still.
+- Why how are AI writing detectors able to actually detect AI writing?
+- I have another good question what are your recommendations on how to humanize AI written content?
+- Let's say you're relying on it a lot but you don't want it to seem AI written you want to humanize yeah so what are your tips there?
+- I can't imagine not being allowed to work on certain initiatives because it's not a my job description you know like I can't imagine not having some level of oversight over like media buying and digital PR and content marketing and and like linked building you know like I can't imagine not having purview to those things which is why I think it's been such a like high impact business.
+- On LinkedIn yes I'm not as active as I should be um but yes I'm on there and I can send you my LinkedIn profile making connect on there.
+- Yeah absolutely where should where should everybody go to to follow you and to read all your amazing stuff and yeah you have everyone needs to go to a rich analogy that AI.
+- I want you I hope you'll come back on on this show to talk about things that you just mentioned because you just mentioned all of these things and I'm like oh no I have more questions I'm like okay I want to know why I want to know how you grow the newsletter but now I want to know I want to get your thoughts on on current events in a.ai and yeah and all of these things so you're just such a great guest this was awesome.
+- Thank you again so your links will be in the description for this episode um please stick around when I hit stop as your video will have to upload and for everybody watching and listening this is episode 836 of the Edward Show this is my daily digital marketing podcast I do this podcast every single day haven't missed a day since starting 836 days ago.
+- Thank you so much for watching thank you so much for listening I will talk to you again tomorrow.
+
+---
+
+## Video ID: ANoG1j6TP5k
+- They open ChatGPT, Gemini, Cloud or the mode IA of Google and ask them What is the best financial management tool for a freelance who works with international clients?
+- How to emerge in this context?
+- Get an out of marketing gratis explained every week on strategymarketing.com It's called the GEO, Generative Engine Optimization, the art of emerging in the response of artificial intelligence generative like ChatGPT, Cloud, Perplexity, the mode IA of Google or Gemini.
+- We also talk about LLMO, DAIO or DAEO, but the idea remains the same.
+- To make your expertise that the IA recommends.
+- I will share my impact method in six steps to become the reference in the response of the IA generative response.
+- The GEO doesn't replace the natural reference, the SEO.
+- It is in a sense of a layer that comes to your actions SEO.
+- The GEO and the SEO are not antinomical but complementary.
+- The base of the GEO is the SEO.
+- In fact, most of the LLM, at Perplexity, have no own crawlers.
+- And the IA generated data is not deterministic, to say that you will not obtain the same answer each time, which makes the reference more difficult.
+- First, identify the prompts of your clients.
+- Then, maitriser how the IA you cite.
+- Identify the prompt of your clients Your clients are no longer with words-clés.
+- For emerging, you must understand exactly how they formulate their problem.
+- Quelles questions poserait un entrepreneur dans le secteur de la beaut avant de choisir un logiciel de r en ligne Analyser les r Ce sont les prompts de vos clients potentiels Vous pouvez aussi utiliser des outils mentionnés dans la description pour accéder à des ressources qui vous aident à identifier les prompts utilisés selon certaines requêtes.
+- Vous découvrirez des requêtes que vous n'aurez jamais imaginées.
+- Si votre nom apparaît souvent dans des contextes pertinents et autoritaires, vous devenez la réponse probable.
+- Mais attention, les IA peuvent aussi inventer des informations ou mal représenter votre offre.
+- Faites ce test dès maintenant.
+- Voyez si vous apparaissez.
+- These nuances are very important.
+- The AI love the content that explains, that eduque, that solves the concrete problems.
+- The Foire aux Questions ultra detailed.
+- Astuce bonus, créer des études de cas détaillées.
+- Donner le contexte, le problème initial chiffré, la solution par et les r mesurables The IA Generative love these concrete stories 4 Assure the technicality necessary The robots of IA must be able to access your content.
+- It must be authorized the GPT-Boat for ChatGPT, the CloudBoat for Cloud, CCBot for other AI generative.
+- Create a account Bing Webmaster Tools and submit your sitemap.
+- Google offers a free tool to create easily.
+- The most powerful strategy is to create your own category.
+- Contrairement au référencement naturel SEO, où vous traquez des positions, en GEO, vous surveillez les mentions et leur contexte.
+- Testez chaque mois les mêmes prompts dans ChatGPT, Cloud, Perplexity, le mode IA de Google, etc.
+- The tools mentioned in the description can automate this tracking.
+- In Google Analytics, you can also survey the direct traffic which can come from the AI generative and conversion with other sources of traffic.
+- The GEO takes a new dimension.
+- Because if 10 applications similar exist, how will ChatGPT choose which recommend?
+- Let's say, the measure of the GEO is not exact.
+- No one has access to the real prompt users in ChatGPT because they are conversations.
+- The tracking tools generate prompts from the probability of the IA, but they are only approximation.
+- And contrary to natural reference SEO, where your key word is a key word, in GEO each person makes their question differently.
+- For example, the best CRM for startup and the best tools for a young company will produce different results.
+- But there is a principle that is true, that it is for the SEO or the GEO.
+- The method Impact is not a temporary tactic, it is your new strategy of visibility.
+- Each step reinforce the other.
+- Comprehend the prompts guide your content.
+- The GEO does not replace the SEO, it completes the same, it transcends even.
+- Your SEO and your GEO are now forming a common.
+- And don't forget to go to strategymarketing.com for every week a free marketing tool.
+
+---
+
+## Video ID: Ap1PiMvV2Tk
+- Let's talk about GEO agencies in Thailand, because this market is evolving fast, and most people outside the region haven't caught up yet.
+- Thailand has always been strong in execution speed.
+- Campaigns move fast, teams test quickly, and in GEO, that matters more than people realize.
+- Depending on how AI systems update retrieval behavior.
+- That adaptability is one of Thailand's biggest strengths.
+- But GEO also requires something Thailand is still actively building, global authority alignment.
+- So the best GEO agencies in Thailand are the ones bridging those two worlds, fast experimentation, and structured authority building.
+- Here's what I look for in a Thai GEO agency.
+- Thailand is naturally bilingual in business.
+- And that's powerful for GEO if handled correctly.
+- They unify brand entities across languages, so AI systems recognize one source of truth.
+- Thai agencies that succeed in GEO understand that publishing more blog posts doesn't increase AI visibility.
+- GEO visibility rarely stops at borders.
+- Agencys that only think Thai land SEO struggle when brands want to appear in AI answers used globally.
+- As with every country I cover, one global reference point is SQSEO.
+- They're not Thailand based, but they're highly relevant for Thai brands with international ambitions.
+- Within Thailand, primal digital agency is one of the strongest players structurally.
+- They come from a performance in SEO background, but what makes them interesting for GEO is their data-driven approach and regional experience across Southeast Asia, which aligns well with AI discovery patterns.
+- They've historically been strong in content, UX and strategy, and agencies with that blend tend to adapt more naturally to GEO, where clarity and narrative matter as much as technical setup.
+- From a brand and authority perspective, CJ works plays a different but important role.
+- GEO isn't just technical SEO.
+- It's also about how clearly a brand is understood by AI systems.
+- Now let's be honest, there are very few pure GEO agencies in Thailand today.
+- Most of the best GEO work is happening inside agencies that are evolving, combining SEO, content strategy, data, and AI testing without slapping a buzzword on it.
+- The danger is agencies that promise AI SEO, but still report success using rankings and traffic alone.
+- If you're evaluating a GEO agency in Thailand, ask them this.
+- How does our brand currently appear inside AI-generated answers?
+- How do you increase our chances of being cited or referenced by AI systems?
+- If they can't answer those clearly, they're not doing GEO.
+- In 2026, Southeast Asia is becoming increasingly important for AI discovery, and Thailand is right at the center of that shift.
+- GEO isn't about being louder online, it's about being clearer to machines and humans.
+- And Thailand is closer to that future than most people think.
+- In my opinion, the best generative engine GEO agencies in Thailand are, HTTPS, GEAid, Fudge the Incangue, SQ in SEO.com, Sontawi, Ewing, Yid's some famous agency.
+
+---
+
+## Video ID: BCSVMOYRYGI
+- We talked about SEO and AEO yesterday, answer engine optimization.
+- Today, we're going to talk about GEO.
+- This is your daily real estate.
+- It's a show five to 10 minutes every day on things you should know, things you should be doing that we're implementing, or we're about to implement for our team, our brokerage, and our area leaders for Y Realty.
+- All right, let's get into this GEO.
+- It's going to have the AI overview, in other words, snippets, and it's going to be at the top and it's going to say, well, the best restaurant is, I'm just making stuff up.
+- And then it's going to say, but others are saying, and then it's going to have the sightings of all the other people or sites or local areas or local websites like Yelp that collects all this information and it's going to give all those links to you, but it's going to have excerpts.
+- So that's the idea from it by generative AI models, like Google AI overviews, chat GPT and perplexity that those give you the best ones.
+- So now with That said, I have some things for you here.
+- You know how people are now asking ChatGPT Claude or Google questions like who a good real estate agent in Phoenix right And if Blair listening to this it might be Blair Ballin right He out of Phoenix.
+- Instead of scrolling through like 10 blue links or 10 different things, they're getting a direct answer with specific recommendations.
+- And GEO is about making sure that you are one of those recommendations.
+- It's like being the agent that everyone recommends at a dinner party.
+- This is probably the biggest challenge in, in, in GEO.
+- Think of AI like a really wealth, like a really well-read friend.
+- Now to get recommended, you need some of the following.
+- That's all important because AI doesn't recommend nobodies.
+- It recommends people it knows are legit because they show up everywhere.
+- Monthly market updates, neighborhood step by step processes on things to do in a neighborhood or the things to know about in a neighborhood real buyer stories or common mistakes It probably the one that I used the most but five things that killed deals in my area last year Like imagine a video on that.
+- AI is going to pull that from YouTube, from Instagram, a blog, and going back to yesterday's, it's going to pull an FAQ if you have one on a blog like that.
+- Number three, show up where people and AI are looking.
+- AI pulls information from everywhere.
+- Your personal website, Google business profile.
+- AI reads differently than humans, right?
+- AI reads differently than you or I do.
+- First of all, that sounds like it was written by AI and it's not going to pull its own crap.
+- AI trusts third-party validation.
+- Media outreach, email local reporters covering housing.
+- guest posts, write for local blogs, community websites, real estate publications.
+- Again, this time, instead of reaching out to the reporters or the editorial for the newspaper and saying, hey, I've got a news thing for you.
+- AI prefers recent information.
+- Simple habits, update your main website every three to four months.
+- and listen, I've got some other light stuff on here, but those are the most important things.
+- I want you to understand the difference between SEO, AEO, and GEO, please.
+- And if you don't still understand it, just Google it, simplify it, get it into natural language and start understanding what it is, how to get better at it, how to show up so that you don't get left behind.
+- Thanks again for listening.っ k
+
+---
+
+## Video ID: BNIe0vV47uk
+- Today, we're going to look at how AI is completely rewriting the rulebook for customer discovery.
+- What if they just ask their AI assistant, hey, who should I buy from?
+- It's about being directly recommended by a large language model or an LLM.
+- It's about fundamentally adapting your business for the age of AI and building an advantage that actually lasts.
+- We're all moving from SEO, search engine optimization to AEO.
+- You know, with SEO, it was all about jamming and keywords and getting links.
+- But with AEO, it's about conversation and context.
+- It's to become the trusted definitive answer that an AI feels confident recommending to a user.
+- And this quote just hits the nail on the head.
+- These AI models, they learn from the natural back and forth of human language.
+- So if conversation is the way in, how do you make sure your business is the one the AI wants to talk about?
+- It's about creating so much high quality, comprehensive and trusted information that for an AI trying to find the truth, your business is the truth on that subject.
+- When a person asks a question about your industry, the AI doesn't just list you, it cites you.
+- It literally uses your information to build its answer and then recommends you as the expert, you become the source code for the answer.
+- Luckily, there's a really practical step-by-step framework for building the kind of content that these AI answer engines absolutely love.
+- And we're not just pulling this out of thin air.
+- They've been in the trenches figuring out what really works in this new AEO world.
+- So let's work through their seven step blueprint.
+- So here they are, seven best practices to get your content ready for AI.
+- First, we'll look at the four steps for structuring your content.
+- And then we'll cover the three steps for making that content really pop.
+- The first four steps are all about how you organize the page.
+- Third, and this is so important, add structure.
+- This perfectly mimics that conversational question and answer format that AI is or built on.
+- You can think of it like a hidden cheat sheet just for the AI.
+- It's some simple code you add to your page that tells the AI exactly what your content is about, which makes it's job a whole lot easier.
+- So, what did the AI tell them?
+- Bam, right there, number one, not just to mention buried in a list, but the top recommendation.
+- No ads, no bidding for keywords, just to direct trusted suggestion from the most popular AI in the world.
+- Well, the answer isn't on their main website.
+- And those sources pointed to this other educational website they had built.
+- In that single answer, the AI cited their topical authority site more than 10 times.
+- By becoming the most helpful, most complete resource out there, they made it impossible for the AI to ignore them.
+- As AI becomes this new front door for customers, you really have to ask yourself, are you the one telling your business story?
+
+---
+
+## Video ID: C1XBl6HDvgs
+- It's called Generative Engine Optimization, or GEO.
+- AI answer engines, think Gemini or ChatGPT, they don't just point you to the information.
+- And this raises a huge question for literally anyone creating content.
+- I mean, if the AI gives the perfect summary and the user never has to click a single link, how on earth does your hard work ever get seen?
+- Your blog post that's ranked number one, your perfect tutorial, it could just become invisible simply because the AI decided not to use it as a source.
+- Okay, so this is exactly where Generative Engine Optimization, or GEO, steps in.
+- You really have to think of it as the next evolution of SEO It not enough for an AI to just find your content anymore The real goal of Geo is to make your content so good so valuable that the AI wants to actively use it cite it, and summarize it in its own response.
+- But with Geo, the new prize is the citation.
+- See, you're not trying to get a person to visit your page anymore, you're trying to become the trusted source that the AI itself relies on to build its answers.
+- Being the authority behind the AI's response, that's the new number one spot.
+- How do we make our content completely irresistible to these new AI engines?
+- Let's break down four core strategies for GEO.
+- The goal here is to make your content what we'll call clip ready, just perfectly packaged for an AI to grab and use.
+- Look, AI models are built to prioritize facts and stuff that can be verified.
+- So when you make a claim, you've got to back it up with data.
+- Instead, say something specific like, Python is the most popular language according to the TOB index for February 2026 You see That simple change transforms your opinion into a concrete verifiable nugget of information that an AI can confidently grab and cite And hey don just take my word for it This isn just a theory We're seeing it in academic research.
+- This quote from a recent paper on GEO pretty much says it all.
+- AI search has an overwhelming bias toward these authoritative sources.
+- Okay, our second strategy is all about structured content.
+- Using clear headings, bullet points, and short paragraphs makes it incredibly easy for an AI to parse your content and pull out the key points accurately.
+- A giant jumbled wall of text is basically an AI's worst nightmare.
+- If you're writing about a big idea like reinforcement learning, you should probably also cover related concepts, definitions, maybe some key libraries.
+- All of this rich context signals to the AI that your content is comprehensive and well, authoritative.
+- And our fourth strategy is more of a long-term play, building your brand.
+- you actually influencing the AI training data over time The model starts to learn to associate your brand with that topic making you a go source that it much more likely to trust and cite in the future Okay that was a lot of theory so let make this really concrete We're going to look at a direct comparison between the old SEO way of thinking and the new geo goal, just to see how much the objective has really changed.
+- With old school SEO, your goal was super simple.
+- But with GEO, your goal is completely different.
+- Now you want a user to ask an AI for help and for that AI's answer to literally include your code snippets and your explanations with a nice little citation back to you.
+- The old road led to a list of links, but this new road leads straight to a direct answer.
+- For all of us creators, developers, writers, adapting to geo isn't just about getting ahead of the curve, it's essential for being seen at all.
+- Because honestly, the answer to that question will probably determine your place in this new AI-powered world.
+- Thanks so much for joining this explainer and I'll see you in the next one.
+
+---
+
+## Video ID: C2fe-_dJZPw
+- Modern AI engines bypass the list of websites entirely.
+- The AI delivers this answer by projecting a concise visual summary on the screen or by giving a direct verbal referral to a single local business.
+- Because the user rarely leaves the search screen, local service providers can no longer measure success by how many clicks their website receives.
+- The core marketing strategy is now Answer Engine Optimization, or AEO.
+- AEO is the process of structuring your content specifically so AI models can read and understand it.
+- The primary objective of AEO is to win a citation.
+- You want your business to be the exact source the AI quotes back to you.
+- To survive the transition from browsing to asking, businesses must abandon traditional conversational marketing copy and serve the precise, literal deva the AI craves.
+- Traditional SEO relies on long-form content strategies that typically require six to 12 months of consistent publishing to show a return on investment.
+- AEO operates on a highly accelerated timeline.
+- Because it focuses entirely on machine retrievability local businesses are seeing a 23 increase in AI traffic in just three to six months Achieving these faster results presents a difficult dilemma for business owners You have to strip the persuasive sales copy off your existing webpages.
+- AI models struggle to parse paragraphs of marketing fluff.
+- They demand dense, factual brevity to quickly extract the exact answer to a user's prompt.
+- Creating traditional engagement metrics and long-form copy for extractable facts is the necessary sacrifice to become the AI's single source of truth.
+- If you rely on traditional service pages filled with broad descriptions of your company's history, AI engines will ignore your site because the specific facts are too difficult to parse.
+- The solution is a mandatory formatting structure required for AEO retrievability, called the Atomic Answer Framework.
+- You must use the exact conversational prompt a customer uses, like, how much does it cost to replace a circuit breaker?
+- AI models prioritize and extract this specific bite-sized data format over multi-paragraph explanations because it requires less computational power to verify and summarize.
+- This pairing of a conversational question and a factual answer guarantees high retrievability Retrievability means how easily the machine can locate and pull your data Restructuring a website from a persuasive sales brochure into a strict database of literal questions and immediate answers is the baseline requirement to compete in an AI-driven search environment.
+- Moving past the visible text on the page, winning an AI citation also requires modifying the invisible back-end code by adding machine-readable structured data.
+- Schema is a standardized vocabulary of code tags that acts as a direct translator, telling the AI exactly what your prices, hours, and services are, without it having to guess.
+- The second back-end requirement to avoid being filtered out by AI is incorporating proprietary local data, known as information gain.
+- Information gain is the practice of adding unique, original insights to your content that aren't widely available anywhere else online.
+- An example of information gain is stating that, based on your own service records, 40% of homes in your specific city have outdated wiring.
+- You must build the technical code to be read by the machine and supply the unique proprietary data to be valued by it.
+- Local service providers often share a specific fear about this strategy.
+- If you provide the perfect atomic answer to a repair question, the customer might just fix it themselves.
+- This raises a critical planning question.
+- Should businesses prioritize answering how maintenance questions or stick exclusively to cost and urgency questions This chart plots intent versus conversion The vertical axis is immediate booking likelihood.
+- The horizontal is AI citation likelihood.
+- When AI flags a warm outlet as a fire they book immediately.
+- Conversely, answering routine maintenance perfectly wins the citation, but lowers bookings because the user applies the temporary fix themselves.
+- This strategy maps directly to your specific business goals.
+- You have to align your specific AEO question targeting with your tolerance for delayed gratification.
+- Providing the exact helpful answer builds massive localized brand trust solely through the AI's verbal referral.
+- The AI explicitly names your business as the expert.
+- When the temporary DIY fix inevitably fails or requires a permanent solution, your business is already the established, AI-vetted authority in that homeowner's mind.
+- Even if the user never clicks through to your actual website, the brand impression delivered by the AI serves as a highly valuable, measurable conversion.
+- They are marketing to the AI that the homeowner trusts.
+
+---
+
+## Video ID: CqVgbg9OPL0
+- You can use your own information to learn how to learn how to learn.
+- First, let's look at the book and explain the details of the two manuscripts.
+- Which one of them will explain?
+- Then we will find a new version of AEO and the WIFI-SU version.
+- Okay, first step is to check the new version of the new version.
+- So now we are going to explain the summary of the summary.
+- Finally, the most important point of the final.
+- What is the meaning of the AIO?
+- The AIO is a whole new meaning.
+- So, you can't just tell yourself how to do it.
+- You must make a decision to make a decision to make a decision.
+- In other words, you can choose the meaning of the AIO.
+- I heard that I know you may that the AIO is the real meaning If you do so, then you can to help others.
+- From AIO you can do it to help others.
+- A user who was in the AIO was in the middle of the game.
+- Here we put the AIO in the field of AIO.
+- Because you that AIO is a new technology in the AIO.
+- When AI is in a way that can help you to do something, it's not only a question that will answer your questions, but can help you to make a decision.
+- I think, who can choose AI's choice and who can choose the next one?
+- Other videos are available on YouTube.
+- This is the main challenge for the Chinese language.
+- It's the most important thing to do.
+- This is the most important thing to do.
+
+---
+
+## Video ID: D7dIPszS3r0
+- From search to answers, why AEO is the new SEO power move?
+- What if Google stopped sending traffic to our websites and started giving answers instead?
+- I have spent over 15 years working closely with search engines, content teams, and brands, watching algorithms evolve from simple keywords to full-blown AI-driven answers.
+- Today, I will show you why AEO is rising fast and how you can stay ahead of it.
+- Search isn't about links anymore For years search meant typing a keyword and clicking through multiple links but today users expect instant clarity not endless options and AI search engines are built exactly for that behavior Google AI now delivers direct answers instead of long results released.
+- Many searches and without users visiting any website, voice and conversational searches rely on clear responses.
+- Once you understand this shift the rapid rise of AEO starts to make complete sense Why AEO is rising right now The growth of AEO isn random it driven by how deeply AI is now embedded into search experiences, reshaping how visibility and traffic actually works.
+- Google AI increasingly controls what users see first.
+- AI prefers content that is clear, structured, and reliable.
+- Early adopters gain visibility while others struggle to adapt.
+- How Content Needs to Change for AEO In an AI-first search environment, content can no longer be vague or over-optimized.
+- It must clearly answer real questions in a way both users and AI can easily understand.
+- Clear answers placed early in the content, headings written as natural questions, simple language that improves comprehension supporting details that reinforce credibility And for many businesses making this shift consistently isn easy without the right strategy Where AEO Services Make the Difference As complexity increases, more brands are turning to AEO services to stay visible and relevant in a search ecosystem dominated by AI-driven answers.
+- Auditing content for answer-focus optimization, structuring pages for AI summaries and voice search, aligning SEO and AEO into one clear strategy, building sustainable visibility, not short-term traffic, which brings us back to the most important question.
+- If you are creating content, running a business, or managing a brand, AEO will impact you sooner than you think.
+- Traffic drop, content visibility or AI search confusion?
+- If you want to explore how AEO can work for your business, I'll see you in the next video.
+
+---
+
+## Video ID: DjgT5ZI3vu4
+- This is our live streaming tool.
+- But we're going to be talking about ranking in the age of AI.
+- OK, the old stuff that's new again, the new stuff that is new.
+- And software as it helps SEO and marketing and kind of maybe contrary, or it takes we have on things too.
+- So he's a friend who runs clear scope, awesome SEO software.
+- So all that being said, Bernard, do you want to introduce yourself anything you want to add to that?
+- No, just been in the SEO game for longer than I would like to admit, probably around the 2013 era, so coming up on 12 or 13 years.
+- So practicing, living, breathing SEO, just seeing the whole landscape really shift from links to PBNs to quality content, to user engagement signal.
+- And now we're entering the 4-ray of AI.
+- Right, if you think about any of the OG marketing channels, it's like email marketing's about the same social media is about the same, but SEO is like every other year, some pretty crazy stuff.
+- Because there's a lot of people coming into this AEO game, this GEO game, and they're saying, they feel like they discovered something new with listicles.
+- The stuff is really old, what page rank was originally built on, still works for the era of artificial intelligence, because we need to trust the AI models to recommend good sources, good citations, and have high quality content, and what better way than links PR.
+- They know the best SEO software company, best digital marketing agency, and they're kind of just spamming their own websites and leveraging their domain authority for that.
+- Now, now the LLMs are like, okay, it's pretty easy to see that you're publishing on your own website and your favor in yourself, and Google's always known, this is the game, right?
+- It's like, oh, now people are like, oh, you got to do PR, you got to get links to, you know, add to your domain rating, but also at the same time, you know, you have to publish on other people's blog.
+- And I think the old, more importantly, you know, you and I as SEO's in the very beginning, it's like, oh, you know, I should go reach out to your website Bernard, and I should go try to get a link.
+- You should try to build a relationship, because like what Bernard and I have developed is actually a relationship over time, where we actually have met in person.
+- And there's multiple angles to work with each other.
+- And as you were talking, the other thing that's, you know, what is, but still exists that is still relevant is technical SEO.
+- I don't know about the validity of, you know, the rumor of LLMs.txt, maybe you have some thoughts on that.
+- If the AI agents cannot crawl render or understand your content in a timely manner, then yeah, you're not gonna be surface, you're not gonna be visible on these different AI responses.
+- I'm not gonna say it's like, okay, do that for everything, but it seems to help with getting your content cited within AI models.
+- You know, the reasoning behind that is again, to basically prove that the piece of content that you created is original unique, you know, human at least assisted stuff.
+- Like, you know, you click on share to Facebook or share to ex with, like AI buttons where it's like, summarize this on chatGPT or summarize this on complexity.
+- And, you know, he's claimed that he's found some reasonable success there, although, you know, I'm kind of skeptical about the longevity, of, you know, that kind of a tactic.
+- And it's really a tail as old as time, right?
+- Yeah, so chunking is the fact that when models respond to users for prompts, what they have to do is they have to look at a, they're training data, so they're fundamental knowledge of what they believe to be the topic and then they do grounding with Google search, which is to say that they went, then the models want to make sure that the content that they're about to give to the end user is actual, it's correct, it's up to date.
+- Throughout all of this, what the model is doing is that it's selectively looking at pieces of content, more specifically paragraphs or sentences that contain the right entities that will build your particular answer.
+- I started an SEO, I'm assuming you started an SEO, but we've learned always over time that you can't just rely on SEO as a channel, but it seems like the people who are scared and most right now are people who have just relied on SEO.
+- So how are you diversifying, or should you even be diversifying right now, away from from SEO, like how are you thinking about it?
+- So SEO has conveniently been a very strong channel for a variety of different industries, business models, and that's why it's been such a lucrative channel to pursue, but now more than ever, I think we're seeing the cracks form in terms of at least the traffic component of what SEO offers to brands.
+- Basically, a lot of these different software companies are recognizing that communities are very important because communities will then trade notes, discuss best practices in theory, recommend their platforms, tools, and services.
+- And I think that's kind of in a lot of ways what people are defending themselves against, because we're seeing just this huge inundation of AI Slop that is just pervading, you know, social media, it's pervading, written content.
+- So when I look at our marketing strategy right now, it's, you know, YouTube's a part of it, right?
+- And, you know, obviously, like email works as well.
+- And the audience knows that this is not, you know, some AI slot that's like, you know, deeply wrong or, you know, whatever.
+- Email works because at the point you've subscribed to, you know, our newsletter, that means you trust us and you want to receive information from us.
+- The question of prompt here is what happens to SEO work in general.
+- So last Friday, I was talking to one of our internal SEOs about our internal marketing strategies.
+- So we have pretty good domain rating or domain authority on our website, single grain.
+- And I was like, okay, well, I want to make more these programmatic pages, especially because OpenAI is coming out with chatchipity ads, right?
+- I didn't mean to use any tool or just the general agent.
+- I was like, hey, Manus, I want to rank for, you know, I want to attack this chatchipity ads agency type permutations for my website, singlegring.com.
+- That was the prompt, BS prompt, okay?
+- Whatever prompt, okay?
+- And I said, hey, I want these, I have, you know, plural template pages, like services, agencies, whatever, those are more list of goals.
+- What do you think happens to SEO work now?
+- And then let's look at keyword kind of license, or let's prune underperforming pages, or, you know, let's detect which pages have technical errors and, you know, how important it is to fix whatever it is on those specific pages.
+- I think all of that work just out of the box, like you are mentioning is really easily done with your typical like AI agent.
+- However, I am not sure at least currently if the models are good at the A, the strategy, right?
+- They can't, you can't just dump a like a domain in and then just be like, fix my SEO problems, right?
+- This is like, you know, screaming frog for technical stuff, you know, keyboard insights for topic clustering, you know, all these different permutations, I think we're seeing agents and AI really shine in that particular ecosystem.
+- I think that that's actually like the real like gain and I'm sure tons of people are working on this including word press and C&M and Webflow and you know, all these different things, but I think that that's the future state of like, okay, this is now 10x better, right?
+- So we have single grain, but I have the domain single brain and single brain is like, it'll come up with the insights and then that's nice and all that, but like can you just do it for me?
+- And so the example I just gave you with madness, which is again, like a general agent, and you can do use whatever tool you want for a fur does the listing.
+- I think is just the tip of the iceberg.
+- So transformative would be like, you are actually building tools, like we have a tool called the Deal Revirer, which will scan all of our lost deals and HubSpot over the last, whatever time period.
+- And it'll actually craft messages, custom to that person, and also look at recent funding news or anything that might have happened to that company and have a draft email ready for the human to review and hit send.
+- That to me is not just high leverage because it adds ROI, it's not AI theater.
+- So obviously I'm very passionate about this stuff right now, but I think it's very important that we bring our people with us Bernard.
+- But the week 52 was probably the most important one.
+- And I'm feeling like there's going to be a lot of labor shortage, as a result of people adopting AI coming a bunch more like productive.
+- And we can talk about how we look at software helping SEO and also marketing in the future.
+- So did you see what the Grock founder said?
+- So again, so it'll just come to you for $20 billion.
+- But in the long term, there's not going to be enough people to work on things, because Elon actually said this piece.
+- But then you quickly realize, after you've kind of crossed a certain threshold, you're like, no, it was never about that.
+- And maybe we could talk about how to release marketing, but it's just like a lot of people are tweeting now, it's like the death of software, oh my god, you know, it's sass is over blah blah blah blah.
+- And then you have software on the left where it's screaming frog or, you know, a email delivery checker, you know, you use never-bounce or, you know, a sequencer, which is like, you know, outreach.io or, you know, whatever, which is software, but more of a, like, okay, this just does one thing and it's more of a feature or an add-on or, you know, whatever it is that you want to call it.
+- I do think a lot of that software is at risk because like you've experienced yourself, cloud code and these new AI, like, lovable so on and so forth.
+- I think that a lot of AI applications are going to be layered on top of the web flow, right?
+- And that's fine, like experiment with it, but just understand that, you know, a lot of stuff that you build, it requires maintenance and you're going to have to keep compounding on that software too.
+- It pulls from all my gone calls, all of my, my hub spot calls, all of my emails.
+- Okay, so it sees who's raising funding, who's who are the hot startups right now, whatever.
+- And I'm like, hey, who's connected to OpenAI right now?
+- Who am I connected to at OpenAI?
+- It lists four people, it shows the levels and it shows the angle that I should be attacking with.
+- And then it shows the LinkedIn message and also email message.
+- Like, I think as a marketer right now, if you're very creative, if you're like, bring this back to SEO, what are the things that you can create to give away in your niche, whatever it is exactly?
+- And then just use it to collect emails, right?
+- They have the AI detection checker and more.
+- There's a lot of already vibe-coded to professional-ecoded lead magnets between, you know, Mike King and Dan Petrovic, you know, like where it just hits the API and pulls back the fan out of queries that, you know, prompt has for chatchipiti or Gemini, if they were to exist.
+- So if you were able to make these lead medics and collect the data, so I'll give another example, I'm messing around with the, we have the gong mcp model context protocol, just looking at these things allow you to these LLMs to talk to these tools, right?
+- And then also cross-reference that with Hrefs to see what keywords are trending upwards and then map out a bunch of keywords that we should be going after.
+- So that in itself could be a tool, but here's the thing.
+- I'm just giving an example of a tool that you can make to collect data.
+- But sure, Claude Code is powerful, but there's still a lot of blocking and tackling stuff you need to do within SEO within marketing in general.
+- And so to me, going back to SEO and AE, like SEO, it has the people that have performed the best, it has been about taste.
+- I just, I think more than ever now, that's going to become more and more important.
+- And you, you gain that taste by experimenting with things and trying things that are kind of outside the limits of sometimes, but what do you think about the Bernard, that Bernard, like how do you say?
+- And then it will add and remove sunlight and air and humidity.
+- So last thought for me, are you bullish about the SEO industry in general over the next five, 10 years or so, are you bearish?
+- If we say being bullish is the fact that SEO will continue to be a large driver of value and leads, I think the answer is yes, but not in the way that you would expect it.
+- And so, at the end of the day, us as human beings, whether we're chatting with an agent or in the farther future, you just have an earpiece in your ear and you're chatting with your own private instance of an AI model that knows a lot about you, you're still chatting with an AI and the AI still needs to have training data and be grounded there responses with some sort of factual or credibility check.
+- And in those worlds, I think that search engine optimization based content is going to evolve into just be training data for agents or validating data for agents.
+- And that is going to be important and it's going to influence what these models respond with.
+- If you say SEO as we know it, sending traffic and all that stuff, then I'm very bearish.
+- I think that traffic is going to be a thing of the past and you really have to think about SEO as a channel to influence AI models and not as a channel to get rank number one and therefore get a lot of clicks onto your blog or product page.
+- I think SEO has always been an evolution.
+- And I think the ones that don't want to evolve are actually the ones who complain the most on X.
+- And so especially now that you have all these, you know, I like to call these tools or weapons available to you, I think it's a very exciting time.
+- So for now, I mean, other than people going to clear scope, what else, where else should people go to find you online?
+- We had Eric on last week and just lots of forward thinking, really interesting conversations, especially as we find ourselves more and more in an AI-assisted world, whether that's personal or professional.
+- It's definitely, I think, time to sharpen the tools, sharpen the tools and really go out there and see, you know, and try everything that's going on.
+- Well, it will definitely do this again.
+- And someone asked in the chat, too, if the replay will be available, you can just check out my YouTube leveling up with Eric too.
+
+---
+
+## Video ID: DnRCo2vvKvY
+- While people still Google it, millions are turning to AI assistants like ChatGPT and Perplexity for quick answers, often without visiting websites at all.
+- If your brand doesn't show up in AI Answers, you're missing out on millions of potential customers.
+- So in this video, you'll learn how AI Search works and differs from traditional search, 5 practical ways to make sure your brand is visible in AI Search, and how to measure your success in the AI era.
+- Now, you've probably heard that GEO, that's Generative Engine Optimization, or AEO, that's Answer Engine Optimization, is the new SEO.
+- Some even claim AI Search is killing Google.
+- To test this, we've built a tool that compares the traffic make-out of 50,000 websites.
+- So while Google remains the traffic giant, AI Search is changing how people discover brands, shifting the game from clicks to mentions.
+- Traditional Search gives you a list of links to explore, while AI Search delivers direct answers.
+- It's about increasing your brand visibility in AI Answers, making sure you're part of every conversation, even if users never click through your website.
+- The good news is that large language models and AI platforms pull real-time search results from search engines to generate their answers.
+- This means SEO best practices are still the foundation for getting picked up in AI Search.
+- So GEO isn't replacing SEO, it's building on top of it.
+- To make your brand visible in AI search, all you need are SEO fundamentals mixed with a few tactics borrowed from other marketing disciplines.
+- Here's our 5-step process.
+- Write content AI loves to cite.
+- Structure for AI comprehension.
+- And close AI mentions and citation gaps.
+- To do that, you first need to take inventory of your existing brand mentions in AI.
+- That's exactly why we built Brand Radar, our new AI visibility tool that monitors all your brand and product mentions across 6 AI assistants, including Google AI Overviews and newly released AI Mode, ChatGPT, Perplexity, and more.
+- Simply add your brand at the top and instantly see which AI platforms mention your brand.
+- Now that we know your exact AI footprint, let's talk about concrete ways to increase it.
+- This may surprise you, but most of your brand mentions will come from other websites, not yours.
+- When I look at the top resources for Ahrefs brand mentions in AI responses, third-party websites dominated.
+- For example in Google AI overviews the top 10 pages mentioning Ahrefs didn even include Ahrefs Our site only appeared as the secondary source only on position 12 ChatGPT was even worse We didn even get mentioned at all So this isn a random occurrence Our latest study of 75,000 brands across millions of AI overviews also proves that branded web mentions correlate most strongly with brand mentions in AI overviews.
+- Unlike traditional SEO, AI picks up brand mentions with or without backlinks.
+- This makes sense because more brand mentions means more training data for the large language models to learn from.
+- So, to increase your brand authority outside of your own website, focus on getting featured on industry best of lists, PR and media coverage outlets, and customer reviews and case studies.
+- These all send powerful trust signals to AI that you're worthy of being mentioned in AI Answers.
+- For example, let's say that you're looking for best of listicles like top 10 SEO tools for 2025 to feature SEO tool there.
+- This will show us the exact pages that get cited the most in the SEO niche for AI queries that contain the word best in them.
+- These are all publications you could collaborate with to build quality associations in LLMs.
+- Next, let's talk about creating content AI loves to cite.
+- Not all content gets picked up by AI tools.
+- Based on our study, the following content types earned the most AI traffic.
+- Best Content – 7.06% How-to Guides – 6.35% Top Lists – 5.5% Versus Product Comparisons – 4.88% Plus Product Focus Pages in the following percentages Contact – 6.8% Products – 6.43% Product – 4.71% And Services – 4.53% With this in mind, your strategy should be simple.
+- Others need step-by-step tutorials like this one, while many are hunting for data studies to back up their decisions.
+- So, head over to Ahrefs' free web analytics and check the AI Search Traffic channel to see how visitors from ChatGPT and the likes interact with your website, including the pages they actually visit.
+- We analyzed 17 million citations across seven AI search platforms, only to find out that AI assistants prefer citing content that is 27.5% fresher.
+- It all comes down to how GEO works AI systems draw information from training data and real searches on Google Bing and the other search engines When they already know an answer from their training data they don't need to search.
+- But when they encounter something new, they actively look for the freshest information available on the web, especially from emerging topics.
+- Since we're talking about content, let's see how to better structure it for AI comprehension.
+- GEO requires your content to be clear and structured, so AI platforms can extract and present it in the most comprehensive way possible when generating fan-out queries.
+- Your goal is to create atomic content, content paragraphs able to stand on their own, delivering a complete answer when surfaced by Google, ChatGPT, Perplexity, and other AI search platforms.
+- If this sounds familiar, it's because that's how well-optimized SEO content has worked for years.
+- Frontload the most important information at the top of the paragraph.
+- Then, proceed with an explanation, example, or supporting details.
+- To make this audit faster, plug your content in Ahrefs' AI Content Helper.
+- This will help you see overlapped or fragmented sections that should be merged, like this one, or sections that don't cover a topic completely.
+- If this all sounds like a lot, here's a few simple formatting rules to keep your content AI friendly.
+- This will help AI to jump to your particular section in the article when someone asks a question.
+- Also use bullet points for list items, so AI doesn't miss out on any vital information to be quoted.
+- Now, this might sound like a no-brainer, but simple answers to questions like Do you have a GSC integration?
+- Can surface your brand at the top of the AI-generated answers.
+- Alright, we're down to our next step, and that is to dominate Reddit and YouTube for maximum AI reach.
+- These are the second and third most cited domains in AI responses, according to our study, yet most people ignore them.
+- Video content gets heavily cited by AI Systems because it often contains detailed explanations that AI loves to reference.
+- So focus on creating tutorials and product demos with clear timestamps use keyword titles and descriptions and add detailed video descriptions AI can parse We put together a complete guide that walks you through our video SEO strategy But if you want to take a quick look at how your brand stands on YouTube go to Brand Radar enter your brand and you'll find brand mentions in titles, descriptions, and transcripts.
+- As for Reddit, your goal should be to find high-traffic Reddit threads already ranking on Google and add thoughtful, helpful answers to relevant subreddits.
+- So, head back to Ahrefs Brand Radar, plug in your niche, SEO in this case, go to the Cited Pages report and filter for URLs containing reddit.com.
+- So focus on being genuinely helpful and the AI citations will flow naturally.
+- Finally, time to see where your competitors get AI mentions and citations, but you don't.
+- You'll see an overview of your brand's AI footprint versus your competitors.
+- If you want to find pages that mention your competitors but not you, hover over any AI platform chart, say AI Overviews, and click Others Only.
+- Then check AI Answers to see AI responses you ought to be mentioned in.
+- If you want to find pages that cite your competitors but not you, clear all filters, go to Cited Pages, then filter for Cited Domains that cite your competitors' domains but exclude yours.
+- Now you know precisely where to create deeper content to compete for those AI citations.
+- While we're here, it's worth noting that you can't measure GEO success the same way we do SEO, that is, with rankings.
+- AI Mentions, your brand showing up in AI responses, with or without links.
+- AI citations, those are mentions that link back to your own website, and AI traffic, which is often higher quality since users are pre-qualified by the AI chatbots.
+
+---
+
+## Video ID: DrrQ4uoihco
+- because people who want to be here inquired and at least this LEARN doesn't get a half things all stuff your should be made by the number two points.
+- kadar moim No No No2 So first, understand how to work.
+- You can work with details and analysis.
+- You can work with website ratings, website backlinks, website keywords, all the things you can track.
+- This is how to work with you.
+- You can explore the proper tools.
+- First, the overview section is where you can see details and know.
+- Last update is the latest data You can check the data data you can check the citations and you can check the queries you can check the platform which you can check the chat GPT, Google AI overviews, AI mode, Pax, Laties, etc.
+- Information, commercial, commercial, Transaction, which you want to me 노 laser�� important section which is explicit opportunities and implicit opportunities.
+
+---
+
+## Video ID: EBCgIucDVWs
+- SEO, SEO, SEO, SEO, SEO, SEO, even if you want to make a new step of your own business.
+- How to work, and even if you understand the rest of your own business.
+- No tool hopping and no chaos.
+- And of course, a big summary summary summary summary will explain to you about this video.
+- Here we are, but to the first part, discrefter and air iO, air i optimization.
+- You have to explain the KIMU data and data from a company and one or two!
+- So, the same way, Google Maps, your website, social media platform and code.
+- And, exactly, that's not my AIO.
+- As I said, when an SCU just makes a good deal with AIO, pretty automatic on the right way.
+- There will be a technical Institute of GEO, discreet, discreet, discreet, discreet, discreet.
+- Do you have a studio where it's home training?
+- Or home training or gym?
+- And not just any training.
+- Then you can do this with your own, or you can do it with your own, and you just do that with GEO, Generative, Engine, Optimization.
+
+---
+
+## Video ID: EflUb1X_j0Q
+- We're having actual conversations with AI to get our answers.
+- We're moving from the world of SEO to this new frontier called GEO.
+- But now, whether you're hitting up ChatGPT for a quick fact, using perplexity for some deep dive research, or just seeing Google's own AI summaries pop up, you're already living in this new world.
+- I mean, if the AI just gives you the answer straight up, why would you ever need to click on a website?
+- So what on earth is GEO?
+- No, it's about getting your information, your data, your perspective woven directly into the AI's answer.
+- The old way, SEO, was all about tricks like keyword stuffing.
+- You know, just jamming a search term in over and over again.
+- But the new way, GEO, is all about making your content richer with things an AI can trust.
+- Because the team behind this geopaper didn't just guess.
+- It's a complete flip from the old SEO wisdom.
+- It shows the new hierarchy of what really matters The absolute best things you can do are add direct quotes from credible people back up your claims with hard numbers and you know just write well make it easy to understand.
+- These are the new trust signals for AI.
+- Let's take a look, because the smartest creators out there, they're not waiting around, they're already experimenting.
+- First, they added a summarize with AI button on their clients blog posts.
+- When you click it, it pops open chat GPT with a prompt that's already filled out.
+- The prompt doesn't just ask for a summary.
+- It also explicitly tells the AI to remember this domain for future references.
+- They're basically training the AI one user at a time that this site is a useful source.
+- And to really understand that trust, we have to look at Google own internal gold standard for quality content It this framework they call EEAT It stands for experience expertise authoritativeness and trust For years this has been the secret sauce, the benchmark for what Google sees as a high-quality, reliable website.
+- You see those winning geo methods, they're really just smart ways of proving your EEAT to a machine.
+- The researchers who wrote the paper, they don't think geo is just another tool for big corporations.
+- By focusing on these new signals of quality, smaller creators might just be able to compete on a level playing field with massive companies that have huge SEO budgets.
+
+---
+
+## Video ID: F-l0xL-We6c
+- Someone asked about when you were in the same field, when answer in general optimization or AEO, or on generative engine optimization or GEO.
+- So, on the topic, the difference between AEO and GEO or answer in general optimization and generative engine optimization.
+- Same as if it gives how to schema, clear, heating and bullet points, which is most of the things that we can say.
+- So how about the generative engine optimization around GEO?
+- So, on goal, I need to use a content that gives a certain masala, and just worth the, oh content, ah, pd, my use.
+- The last one of the characteristics GEO is the brand mentions and citation around the web.
+- Explain what is technical is E 0 for beginners.
+- So, the GEO helps E i generate a multiple paragrap explanation.
+- So, if you ask me, con un sigu tang chida gamiton between answer engine optimization and generative engine optimization, Magde pen deshya saimon content.
+- So, on modern practice, as an E 0 is that you combine the search engine optimization, answer engine optimization, generative engine optimization for maximum visibility saimon content.
+- Both are type of search optimization, agnagfoko sa ai and search engines, not ads or social media.
+
+---
+
+## Video ID: F9iKesEqHs8
+- GEO, AEO, SGE, AIDIS, AIDIS, AIDIS, and of course this week's LinkedIn hottake, SEO is officially dead.
+- Again, the thing is SEO isn't dead, and AEO isn't a replacement.
+- We ask the AI can answer and somehow the robots are better at summarizing them most humans.
+- But then what about AEO?
+- Up first, let's talk about your old friend, SEO.
+- Traditional SEO has always been a game of visibility.
+- SEO rewarded technical skill, patience, and persistence.
+- AEO, or answer engine optimization.
+- AEO isn't about just getting your content found.
+- Because now, when someone asks a question in chatGBT or sees Google's AEO review, they don't get template links anymore.
+- AEO is all about burning that trust.
+- AI systems don't want to hallucinate.
+- In other words, AEO is about getting your brand mentioned, cited, quoted, and referenced.
+- It will be used as a reliable source that the AI trusts to speak on your behalf.
+- If SEO is your shop window, then AEO is a personal concierge.
+- Giving people the answer before they even step inside your shop.
+- AEO trusts, analyzed 25 million AI overviews and found that they're more than doubled since March of 2025.
+- One in six searches now shows a Google AI overview and when that happens, the top result loses about 34% of its clicks.
+- What's the difference and what should you know about it?
+- With SEO, you focus on ranking highly and driving traffic.
+- Whereas with AEO, you want to get cited and provide direct answers.
+- Think of the AI agents as doing the early research on behalf of the humans.
+- They visit your site to find specific pieces of information to answer questions or prompts asked elsewhere.
+- SEO is about keywords, backlinks, and technical set of things that help search engines find your content.
+- AEO focuses on clarity, structure, context, and Q&A formatting.
+- Things that help the AI understand the content.
+- Traditional SEO content has always been written for Prollers.
+- But AEO doesn't have patience for that.
+- It's fact-based content that's easy for AI systems to parse and understand.
+- Make it straightforward, give value, and make it crystal clear what your content is about.
+- SEO measures clicks, rankings, and visits, the traffic, whereas AEO measures mentions citations and AI visibility.
+- SEO has always been about helping humans find your content, optimizing for search engines so real people can discover and click through your site.
+- Whereas AEO adds a new layer to that.
+- It's still about the humans, but the journey now often starts with the AI systems.
+- Large language models, or LLMs, search overviews, and voice assistance.
+- They surface and summarize your information on websites behalf.
+- Both traditional search and AI models consistently involve to stay ahead of how people are trying to game the system.
+- So even though we've all shifted from optimizing just for Google's crawlers, and now adding optimization for AI's context, the goal is the same.
+- Our SEO and AEO mutually exclusive not at all.
+- SEO gets your content found, whereas AEO helps it get used.
+- With AI assistance, Google search generative experience, for example, or tools like Proplexity, people now get summarized answers directly instead of search result.
+- That means while SEO still gets you in front of human eyes, AEO ensures your brand gets cited by AI systems.
+- So if you're wondering, is AEO replacing SEO?
+- SEO gets you seen while AEO keeps you relevant.
+- So if the AI can't understand or cite your content, you're missing a growing slice of search visibility.
+- You need both for a complete strategy.
+- That's why it's crucial to get your GEO and AI strategy right.
+- Your website is no longer the front door.
+- Our own website traffic is down 40% year or year.
+- But conversions and conversion rates remain strong.
+- So for SEO, this is still your foundation.
+- Keep refining your keyword strategy, but focus on questions, not just phrases.
+- The kind both search engines and AI systems are likely to crawl.
+- For AEO, first, let's start with a strong SEO foundation.
+- If Google can't crawl your site, AI can't trust it.
+- From there, it's about creating a structured content for the AI to consume.
+- Basically code that helps the AI understand what your page is about.
+- LLMs aren't going to refer to you if you're just copying what someone else is saying.
+- Different content formats, mentions, and credible backlinks all help AI models recognize you as a reliable source.
+- And when measuring AEO's success, don't just look at traffic, track where your content is being cited and referenced in AI answers.
+- That's the quickest way to check your AI visibility.
+- Also, look at additional tools like profound that can help you see that additional visibility layer that can be hard to miss and standard SEO dashboards.
+- So while SEO and AEO can help you stay visible, optimizely can help you make that visibility scalable.
+- Our AEO and Geo tools and our Opal AI agents can help structure your content so it's easy to find, understand and use.
+- Think page level optimization, where AI automatically generates Q&A fields, metadata, and summarizes to make your content more discoverable.
+- Things like site-wide optimization, like using an LMS text file, and Geo templates that tell the AI which pages to index and site, and Geo analytics, like showing how often your content appears in AI summaries.
+- So the key takeaway that in this world of search, being understood is just as important as being found.
+- From more quick explainers on AI, search and content visibility, hit that subscribe button.
+
+---
+
+## Video ID: F_vr9GBfb8A
+- It's because of what we call GEO.
+- So, in order to explain GEO, I first used to explain SEO.
+- So, of course, we're now familiar with SEO, what it is.
+- SEO is all about leveraging your content, improving it, optimizing it, so it shows up in the search engine results.
+- Now, GEO is pretty much the same, but instead of optimizing your content for Google results, you're optimizing it to be shown in LLM, so like basically the results of the AI queries.
+- But, no, necessarily on Google, but on those AI results.
+- So, that's what GEO is.
+- So, if you want to learn about which AI tools are using which sources to determine which companies to future in their results, we have created a full-blown document that we're happy to send you, where we basically have a full breakdown of each one of these AI tools and what criteria what sources are they using to determine which companies to future in their results.
+
+---
+
+## Video ID: H4p-eLOvpX4
+- Then came Google AI overviews, and now it's taking a humongous leap forward with the AI browsers like Atlas from OpenAI or Comet from Perplexity.
+- And if you don't understand the changes that are happening right now and how important they are, your business will be completely invisible.
+- In this video, I'm gonna show you exactly what's happening in search right now and why this is so important for your business that you understand it very well.
+- And then I'm gonna show you the exact playbook you need to follow in six steps to stay visible in the AI search engine era so that your business stays at the top of mind and gets found for the people who are looking for you.
+- And what I'm about to share with you isn't just theory, this is tried and tested strategies that we've used to help over 400 business owners rank in the AI search engines.
+- Just recently had a win for one of his clients and his client is getting recommended in Google AI overview.
+- First, we need to understand the basics of how AI search engines really work.
+- Now, this is a very simplistic view, but I think the fundamentals are very important for you to understand.
+- When you make a query, the AI search really evaluates that question.
+- And for your business to show up as being recommended or being cited, there are fundamentally a lot of things that need to go on for you to get cited, but it can really be distilled to three main things.
+- And that is, does your website have the information that matches the user search intent exactly?
+- Is your content in your website accessible?
+- if you meet those three requirements you're very much going to be recommended by the ai search engines and before we jump into well how to optimize for all these things you need to understand that the search engine experience isn't the only thing that's changed but also how we measure success it used to be all about clicks the higher you ranked the more clicks you got but that isn't really the case anymore and the thing that has become almost just as important as clicks is appearances.
+- Now, we're getting less and less traffic with these AI search engines, therefore less clicks to your website.
+- That isn't a bad thing, as long as you are getting recommended, because the traffic that you do get eventually from the AI search engines tends to convert nine times better.
+- And sometimes just being recommended by these AI search engines is enough for you to land massive deals.
+- One of our community members, Tim Armstrong, he just started working on one of his clients SEO, particularly for ChatGPT.
+- And I want to show you this because it illustrates how important this is.
+- The client said, a guy came in the other day, retired and said, ChatGPT told him that I might be the best option in America for him, we're closing him tomorrow.
+- His client closed a big deal just because ChatGPT recommended him.
+- And right now you might be wondering, great, so I need to optimize for Google AI search, GPT and perplexity.
+- because all the AI search engines are piggybacking off Google search engine.
+- A couple of days ago, a massive bombshell was thrown in the AI search space where now Reddit is suing perplexity for a lot.
+- And because perplexity is using a lot of the information and the data from Reddit without their permission Let me explain this in another way You see when it comes to Google they have a paid licensing deal with Reddit where Google can use Reddit information to train their AI bots, but also to make answers that they need to give to the user when they're searching for that, particularly some stuff that Google has an index, they go through Reddit and make the answers for that.
+- So now you know what is happening with AI search, and really the only search engine that you need to optimize is still Google.
+- How do we optimize here so your business gets cited and you end up in the AI overviews and GPT search?
+- And this predominantly comes by making sure that your website has schema, also known as structured data.
+- A lot of people get a lot of frightened when I say schema and code, but it's really important for you to understand and it's really not that complicated.
+- This is a screenshot of a website's schema or rich results test for a website that for the keyword plumber in Melbourne, the website is ranking 21.
+- And you can see with a test, and I'll show you how to do this, they've only got two items or two schema validated items, local business and review snippets.
+- Whereas for the search, the same search term for the website that is ranking number two for plumbers in Melbourne, they've got five validated items, meaning they've got five bits of schema that tells the search engines, hey, this is the product that we have, they were a local business, this is the organization name, and this is the exact reviews that we have.
+- And you need to put your website here.
+- So if I test a random website here and I go to test result, this will start crawling it.
+- And Google will understand, well, which are the schemas or the rich results that I can pull from here so I can better understand this website.
+- So you want to go and do that test today to see if your website is optimized and more AI crawler friendly.
+- This is other websites pointing to your domain.
+- This is essentially the vote of confidence that the internet has on your website.
+- Make your website more crawler friendly.
+- So here, one of the things you want to do is make sure your website is loading very quickly and make sure that you have a Google Search Console account.
+- Now, the number one error that I see a lot of people make in the website is they have this little issue here, crawled but not indexed.
+- Select the website that you want to do this for, go to pages, and you'll see the couple of these errors here.
+- Number two can be that that page isn't linking to other sections of your website.
+- Because if they're not indexed in Google, then they're not indexed and they're not going to be found by any other AI search engine.
+- And when it comes to making your website more accessible for the AI search engines, you really need to be careful of your hosting provider because things like Cloudflare are actually blocking a lot of AI crawlers without your permission.
+- So Cloudflare famously released an update midway through this year where they're just blocking a lot of AI crawlers unless you tell them otherwise.
+- If you have a Cloudflare account or a similar service, you want to check that they're not blocking the crawlers from going to your website.
+- I've got here a website selected in this section where it says control AI crawlers, they go block AI training bots.
+- And I've said, do not block allow all the crawlers.
+- Now they are right in saying that the AI crawlers will use your data to train the AI crawlers.
+- I think Neil Patel said it best, SEO is changing from search engine optimization to search everywhere optimization.
+- Also, these videos are being transcribed so Google understands the information Let me give you another quick example of why it so important to also focus on short form content If you do a search like how to do a bicep curl the first search results are videos because the search engine deems that to answer that question best, I need to provide a video for the user.
+- It's really important for you to focus on short form content.
+- And if you didn't think it was so important, here's another thing to try and convince you.
+- So if there's a dedicated tab for that kind of content, you can be assured that it is very important for you to focus on that.
+- Now you can even take this a step further because let's say that you offer your services in several locations within a city, meaning several suburbs.
+- Now that you know how AI search engine really works and the things you need to do to stay visible you probably understand that there's a lot more to SEO than meets the eye and it can get a bit overwhelming.
+- Thankfully I've done a three hour SEO tutorial that will take you from beginner to advanced into everything you need to know about how to do SEO in 2025 to show up in the AI search engines like Google AI Overviews, GPT Search, and Perplexity.
+- I'll leave this over here and I recommend you go watch that now.
+
+---
+
+## Video ID: HI8DDGbw-ck
+兄弟们,回想一下,你上一次私化的买到想要的东西是啥时候?我们想买的明明只是一个东西,却硬生生把自己逼成了一个项目经理先要做市场调研,把模糊的想法翻译成冰冷的搜索关键词再搞供应商筛选,在无数的广告和推荐链接里,自己拼凑参数,对比评论最后还要亲自跑财务流程,在不同的网站界面间跳转,登录付款等这一整套操作搞下来买到东西那点快乐早就被过程的疲惫给充没了但如果我告诉你这一切马上要终结了那个你用来写邮件写代码的ChatGPT现在学会了一项终极技能直接花你的钱这可不是简单的帮你下单这是一场由AI发动的针对谷歌和亚马逊钱包的斩首行动这期视频咱们就扒开OpenAI这个对话是店面的底库用人话讲明白这场代理是商务革命到底是谁的狂欢谁的葬礼以及最重要的它会如何改变你花钱的每一个习惯首先得搞明白这次升级有多颠覆以前的XGPT购物功能就是个热心肠的导购给你指路但不帮你买单它会给你一堆链接最后还是得你自己跑去商家网站结账但现在及时结账功能让XGPT从一个认知工具进化成了行动工具它就像是拿到了你家钥匙和信用卡付卡的贴身管家 他把发现决策支付这整个又臭又长的购物流程全都压缩到了一次对话里 你说给我朋友推荐个陶瓷礼物 他...
+
+---
+
+## Video ID: nOk-kX8FndI
+- Not only that, being able to rank locally in the map pack and organically and getting cited in the AI overviews.
+- And this is what happens when you understand the three layers of this new AI search.
+- So when people say, ah, don't worry about SEO, it's all dead, they have no idea what they're talking about because the act of optimizing yourself to get found easier will always almost exist.
+- And here is a stat to prove that SEO still fundamentally matters.
+- The first one is on-site SEO.
+- Does your website structure make sense?
+- And for me, this also includes the conversion friendliness of your website.
+- Are you actually getting conversions because there's no point of ranking a website if you're not getting any sales or leads.
+- Number three is off-site SEO.
+- All the things you can do away from your website.
+- Can you get backlinks to your website from another website?
+- All these things really matter, not only in SEO, but to get your higher visibility in the AI search engines.
+- And again, without these three fundamentals of SEO, you're not going anywhere.
+- I have a free three-hour tutorial that will teach you everything you need to know about how to do SEO with the help of AI.
+- Now let's explain AEO, because this one gets confused a lot.
+- And once we do all these correctly, we're going to do GEO very, very well.
+- That being said, there are some specific methods that you should probably do in order to give yourself the highest opportunity to get cited by the AI search engines.
+- Let's start with your transactional pages and the structure of your website that you cannot get wrong.
+- The first thing you need to consider is that you probably have more than one service and for the love of God do not put all your services in one page This causes all your services to be competing against each other and you're also not answering the user's search intent as well as you could.
+- So for example, in this instance, one plumber might have four services, emergency plumbing services, pipe leak repair, hot water installation, and bathroom renovation.
+- Now, Now, one thing that a lot of people forget or probably don't even know is that an absolute must is the content between these four services pages must differentiate 50% from one page to the other.
+- And you might think, well, this is a little bit hard, but it isn't at all if you think about it because we can differentiate in a lot of ways the title tag of the page, the meta description, the H1s, the H2s, the first part of the sentence, and more importantly, the service schema.
+- The schema should be relevant to the service on that page.
+- And if you wanna take it a step further and dominate, you want each one of these services pages below them or as a child page to have their dedicated service in that location page.
+- So for example, I might have in a blog about what is SEO, a H2 asking what is technical SEO?
+- I don't get paid by them.
+- Admittedly, not the best strategy, but one that's helped me a lot.
+- Now, here's the part that should make you feel good about all of this, and don't get overwhelmed with all this work, because in reality, if you just do good solid SEO, you've already done 70% of the work, because it's pretty much all the same.
+- SEO gets you found by the search engines.
+- AEO allows you to be the answer.
+- And GEO gets you recommended.
+- So if you're just starting your journey into optimizing for the AI search engines, we now know that you need to start with SEO.
+- And again, I've done a three-hour SEO tutorial that you can watch.
+- And I've even left a free AI Search Starter Kit that you can download that is also in the video description below.
+
+---
+
+## Video ID: nScWpGKKZR0
+- Most businesses believe great SEO alone will get them found online.
+- But in today's world of ChatGPT, Google AI, and perplexity, that belief is quietly costing them visibility, traffic, and leads.
+- Traditional on-site SEO only tells part of your story.
+- Your website may be optimized for Google, but AI search engines look far beyond just your site.
+- If your brand only exists on your own website, your AI visibility is limited.
+- Posting on outside blogs, Reddit, and social platforms creates what AI systems trust most, independent confirmation.
+- AI doesn't just rank websites anymore.
+- When people ask AI tools questions like who the best company near me Or who should I trust for this service AI systems don just scrape websites They cross public discussions videos social content and published articles This is how brands earn AI mentions and why mentioned businesses appear above competitors who only focus on on-site SEO.
+- On-site SEO is still essential.
+- But without off-site signals, AI sees your brand as unverified.
+- Your website is your foundation.
+- It multiplies traffic.
+- And most importantly, it future-proofs your digital presence as search continues shifting toward AI.
+- If your competitors are building off-site visibility while you rely only on your website, AI will see them as the stronger brand, even if your SEO is better.
+- The businesses that combine on-site SEO with off-site content, social platforms, and real community engagement will be the ones AI recommends first.
+- It's about being mentioned, trusted, and chosen by AI.
+
+---
+
+## Video ID: nyANN_0QNVs
+- When you search for something today, you usually get a full answer at the top instead of a list of websites.
+- If your brand isn't appearing inside those AI-generated answers, you're basically invisible to your customers.
+- Understanding this shift is the first step, but having the right data to navigate it is where a tool like SEMrush comes in.
+- Generative Engine Optimization, or GEO, is the practice of making sure your content shows up inside responses generated by AI search engines like ChatGPT, Google, and Perplexity.
+- Now, while a traditional SEO focuses on ranking in a list of blue links, GEO is about ensuring your brand is part of the actual answer the AI gives to a user.
+- Instead of giving a user a list of sites to visit, the AI reads many sources and writes one clear response.
+- With GEO, you're competing to be the source the AI trusts to build that answer.
+- You're looking to be the information that the AI delivers directly.
+- Why old SEO isn't enough?
+- AI search is growing faster than almost any technology in history ChatGPT reached 100 million users faster than any other app and Google AI overviews now show up for billions of searches every month This shift matters because people are increasingly turning to AI assistants for everything from deep research to product recommendations.
+- These tools act like digital sales personnel that can sway a person's decisions on what to buy.
+- If an AI answer mentions your brand, you're infinitely part of the customer's choice.
+- Now, before we get into these specific steps to improve your visibility, I want to give a quick shout out to SEMrush for sponsoring this video and helping me bring this research to you guys.
+- The strategy, how SEO and GEO work together.
+- The good news is that you don't have to throw away everything you know about CEO, because CEO and GEO work together as one big strategy.
+- AI assistants pull information from the same internet your SEO content lives on.
+- If you have been doing solid SEO for years, you're already much of the way there because the basic rules haven't really changed.
+- The best way to stay visible is to consistently publish content tied to your brand, make it easy for AI to understand, and earn mentions across the web.
+- The six tactics for AI visibility.
+- Research into this field is still in the early stages but we starting to see how AI systems read the internet differently than standard search engines There are already clear patterns in what helps a brand show up inside an AI answer Here are six tactics that are making an impact right now Unlinked mentions.
+- In the past, a website usually needed to link directly to you for it to count toward your rankings.
+- Now, AI systems appear to give brand mentions weight even when there's no link involved.
+- Now, this is a big change because it means casual mentions of your brand across the web can boost how often you show up an AI answer.
+- It turns out that AI assistants really like facts and numbers.
+- One study of 10,000 real-world searches found that pages containing quotes and statistics had 30 to 40% higher visibility in AI responses.
+- Including clear data helps the AI see your content as a more reliable source.
+- This is a technical step, but it is very important for being seen.
+- Many AI crawlers have trouble reading certain types of website code, especially JavaScript.
+- If a site relies on that code to show its information, the AI might find it invisible and won't include it in its response.
+- Using service-side rendering makes it much easier for the AI to pick up and process your information.
+- AI tools want to give people the most current information they can find.
+- Because of this, fresh content and regular updates usually get more favor from these tools.
+- Wikipedia presence Wikipedia makes up a massive part of the data used to train AI models Because of this having an accurate and detailed page there makes it much more likely that an AI will mention a brand Use platforms Sites like Reddit and YouTube are very popular with AI search engines These platforms feature content created by real people and they have very high exposure in generative engines.
+- Since GEO happens inside an answer, you need new ways to track it.
+- Tools like the SEMrush AI Visibility Toolkit or SEMrush Enterprise AIO allows you to monitor your visibility across different AI engines.
+- You can track your share of voice to see if you're making progress and monitor brand sentiments to see if the AI is describing a brand favorably.
+- You can even track specific questions or prompts to see exactly where your brand is winning.
+- In this new era, visibility means showing up inside the AI's answer itself.
+- to stay relevant you need to track how often ai tools are using your content as a source now in the end the best way to see if your brand is appearing in ai answers or if you're currently invisible to your customers is to try semrush yourself so if you found this video helpful and are planning to give semrush a try make sure to use my link in the description of this video to support the channel thank you very much for watching and i will see you in the next video
+
+---
+
+## Video ID: o3PJbQ4wwY0
+- If you want to dominate SEO, you're going to find that very difficult.
+- AEO and GEO, you can dominate and you can do it within a matter of months because you have no competition.
+- Most people aren't optimizing for those AI engines.
+- So you need to write your Google profile, your TikTok profile, your X profile, your Facebook, your LinkedIn, all of these profiles that we have as a business, you want to optimize them towards AI engines and ask a generative engine so that they show your content.
+- You then want to look at all of your content that you have, so your website and any FAQ pages, etc.
+- And you want to look at with the structured data behind that content so that it speaks AI language.
+- You want to look at having some really clear FAQs that help the AI engines to understand what you do or what your piece of content is doing.
+- FAQ page on the website, also potentially FAQs at the end of your blogs will really help with that.
+
+---
+
+## Video ID: o7zKg3KGMhQ
+- community, your brand is either scaling with AI or getting left behind.
+- Today's guest, Lea Nurick, is at the forefront of AI branding, showing leaders how to automate influence without losing authenticity.
+- And, you know, it's kind of the impact of where this came from from Brande AI.
+- And, I did go to market strategy.
+- And how that was affecting how the brands were not only positioned, but how often they were coming back in the search results for these new, this new kind of search paradigm within the LLMs, whether it was chat to P.T.
+- perplexity or even, you know, with the start of those AI overviews.
+- And then with the help of some other folks, we kind of cracked the code to a certain extent.
+- And then, based upon that, we brought some developers together, some technology leaders, folks with a ton of domain expertise from very large agencies and with an ad-tech, and we made Brandy.
+- That's one of the things I think that's really cool and ended up with the product being as complete and flexible as it is because it was built by domain experts who really wanted to solve a problem.
+- It wasn't just, hey, let's have a software company and make some money and it really did come from an authentic place of solving this problem and empowering marketers in this new age of AI driven search.
+- So, I think that the name came from brand intelligence originally and the name itself, brandy, I think kind of makes it fun and approachable and also kind of speaks to the mission of marketers as, you know, brandy's kind of your friend versus just a tool.
+- But it's fairly news.
+- So, when you think about kind of where we're at in the state of AI and what you've built with Brandy, you know, what are two or three different things that are specifically deliverables that you guys are achieving right now in the market?
+- Well, so, it's really not only helping brands see how they're doing in AI search.
+- or even the Google now, even with Google, you'll get an AI summary more than 80 percent of the time coming back.
+- So, you could say that AI searches an evolution of traditional SEO.
+- So, we are really partnering with customers and brands, you know, large Fortune 500 and mid-sized companies to really help them in this early time of AI driven search to maximize their presence now.
+- And, you know, I was talking to somebody and they said, I think AI is a flash in the pan.
+- And I said, okay, you know, that's great.
+- So, but basically, you know, that's, that's what we're trying to do is help companies maximize their brand in AI search results, monitor how they're positioned, help them to define their markets within the context of AI searches, and then set a foundational groundwork that will take them into the future of this new paradigm around AI driven search.
+- It does do analytics, but also has a variety of different tools built within the platform around optimizing for content and technical structure for your own content so that you can maximize how often you're coming up.
+- It does not write with with AI, but it tells you kind of here is the structure that you should follow in order to maximize your chances of being found red, summarized and returned in search results.
+- We also have a ton of PR agencies and PR and Coms pros who are in the product because it's not just your own domain that affects whether or not you're appearing in AI search, but there's within a market universe, there's all these different credible and authoritative sources that contribute to how your brand is positioned.
+- So, we do have PR folks who are looking in the product to identify the domains that maybe they need to reach out to for earned media.
+- Then we have programs people who are in the product looking at what are those domains as well, what kind of advertising or paid programs can I do to get a content, peer review sites, that kind of thing.
+- And then we have digital people, obviously, who were the traditional SEO and performance marketing people who are in the product to see monitoring search like they solely used to monitor SEO, now they're monitoring GEO or AEO is some people call it.
+- And then we have product marketing in there because you can imagine that if you have answers from all of the AI, all the LLMs and all the searches that are relevant to your market universe in there, you can see how your position against your competitors.
+- And then we also have a sentiment capability, so you can really see for your core brand pillars, whether it's price, support, quality, data privacy, effectiveness for running shoes, whatever it is, you can also see how the AI is positioning you and just score that and watch it change over time.
+- So that's pretty cool because I think, again, we were really trying to build a product that solved a problem for marketers, and to be honest, it's a new disruptive space.
+- And so we really authentically built something that we would want to use as marketers across that value chain, you know, add tech people, content people, PR people, product marketing, digital, and now those are the users that are in the product, and they're also perpetually iterating with us.
+- Can you go through that process, right, because obviously as a tool that marketers are using them to help their clients, you know, you're you're always learning fast.
+- At the same time, you need, you need to do that, and you also need to make sure that the, the way that the product functions for the user doesn't shift on a daily or weekly basis.
+- So, so, so basically, you have to, what we do is we do a lot of product meetings, some lot of product strategy meetings.
+- We do prioritization within our roadmap, and there is a rubric that our CTO and product management leads have put together that way certain things.
+- And, you know, I will tell you, I'm sure you can imagine that, you know, people are extremely passionate about the features, and there's some heated discussions, and it's full of passion about what should be at the top of that list.
+- Now, yes, it did, and it's led me to then, you know, from a leadership perspective, which we learned a lot from our guests on the GoFceo channel, you know, you're talking about a CTO that you brought on to the team, and they always say, right, when you launch something new, one of the most important things is who's on your team, right?
+- You know, it's, it's interesting, uh, I sold my business in O'Nye and I got into commercial banking, and, you know, having now worked with hundreds of hundreds of businesses and interviewed people on podcasts and stuff like that, you know, I lean towards what you just said is, ultimately, you can't grow if you feel like you're a solo perner and never want to become a business owner, keep on doing it all yourself.
+- You brought in another C sweet person or your main, you know, your main management team for reasons.
+- Uh, so checkpoints and assessing where they're at and what's going on is, is certainly a big deal to me.
+- So I appreciate the feedback and the way that you share that because, you know, it's still a fairly new business.
+- You said it's about 18 months.
+- And like you said, there's a lot of collaboration between your current clientele that you brought up and they're starting to feed you feedback pretty quickly, right?
+- So adjusting that and like you said, having meetings now, you know, it's a beautiful background.
+- What had been New England Patriots against the bears against.
+- Anyway, so no, but that's, you know, environment and thinking about, you know, your daily life.
+- And by the way, you said next-tell, brought total memories to, I was next-tell distributor with the walk-in-talky phones.
+- Now, and but here we are with AI.
+- And now here we are with AI.
+- So one area I wanted to get it to just because like I said, I have a little bit of a passion for it, right?
+- And look, it's a scenario where you have to, you know, adjust just like you're doing on a daily basis to, you know, reconfigure the SaaS and kind of make it more ambible to where you're heading.
+- So, because the experience that I have from a domain standpoint within marketing, we work across, you know, to have conversations about product direction, you know, product and in every SaaS company that I've ever worked in, there's always a struggle or you know, challenge I guess and how product leads into engineering.
+- Yeah, so basically, hopefully they listen to your podcast and then they go to the website.
+- So conversion, yeah, so they'll find us through AI, you know, we are an AI optimization platform, so we do get a lot of inbound traffic from coming up an AI search results or referral traffic from the AI models or they listen to your podcast and they come to the website and they convert.
+- You said there's been a different flow of types of clients, but, you know, you also, as a sass can be, you know, very broad, you know, from a day to day perspective and this new, you know, six, 12, 18 months that you're going through for this initial launch.
+- And then we do have cold, cold leads that, I mean, I'm calling them cold because nobody knows them, but they're just coming to the website.
+- So, those KPIs are, you know, really important.
+- You know, I was talking to somebody, they were saying like, you know, there's kids dropping out of college, you know, trying to build an AI, who's a really platform, you know, this kind of thing.
+- But, you know, when you're looking at commoditized sauce products, you know, how many of these emails do you get a day around in different markets or even just like a consumer app of, hey, here's a free trial, right?
+- And you're going to have turn rates that are in Stain.
+- Like, okay, now you're, the operational levers of, right, on what it, of cost around running something like that are insane for what for conversion rate or an adoption rate of, you know, less than 10 percent because, you know, how goes, again, I've worked in sauce for my whole career and so there was this whole free-me-um craze, right, back in the day.
+- So, you know, it's, if my main goal is to make a gazillion dollars and to get this valuation, then, and that is your only goal, you're probably not going to make the best product.
+- But for our approach today in an early space, I'm where focused on finding the right customers that are going to stick around that are open to, you know, collaborating and they're open to, you know, annual contracts and multi-year deals and that they're looking for a partner for the long term who they know is going to have their back and do the research they need in order to continue to involve in this AI first era where, you know, the models change, right?
+- Because I could imagine your SaaS could just say or could lay on a website and market itself and implement itself.
+- And when you're in this place where you're trying to make a decision about what the next step is, is this customer, the right customer?
+- Because, you know, you have all this domain expertise on the team.
+- And you think you know what the product should be.
+- And, you know, that we, I think that's kind of how we got to where we were because we did have that domain expertise.
+- We're not, let's just looking for some sort of, you know, intrinsic exit that all of a sudden evaluation could be a bubble of, you know, ten times what you actually should be worth.
+- And people are going to see, you know, one of the podcasts that you're doing here with is on the GoFCO channel that authenticity of understanding how to grow the right way.
+- I think that from a sales standpoint, just for me, operate, it's hard for me to let go at the, because, you know, you said, I am quite passionate about what we were doing here.
+- So, so, you know, every day they're getting all these, all these people coming to the website and want demos and they want to talk and, you know, you see the brands that are coming in and it's, you know, Fortune 500, recognizable brands that want us to do RFIs and RFPs and, you know, it's, it's a lot.
+- You know, like, again, authentically, you, you know, you can feel the passion come through the screen here and, and how you're feeling in this startup stage and, you know, I'm sure, you know, maybe some sleepless nights of like, hey, you know, 30 more opportunities came in, how do I decipher that?
+- Let's say in the 30 or 60 second wrap-up of value proposition for a client, looking at Brandy AI and what they could expect?
+- Yeah, so for our customers, when you become a Brandy customer, you're getting a partner to help you navigate this new AI search, a product partner in order to do that.
+- Now, or at least for until there's another disruptive thing, like, like search or AI.
+- This next phase of AI driven search.
+- And so, I like my brain, I like to learn things.
+- I, I, like I said, I love it if people learn from me too.
+- Obviously through COI networks and stuff, but have them come on, talk about real situations, go through the mindset, the, the paradigmships that are happening real time and in this new AI space I've had about seven of you, uh, in this industry right now, and it's been really cool to kind of hear your guys perspective, but it's still always goes back to Leah, Italian, food, love, like connection and, and just, you know, bringing you into that co-founders, you know, scenario and mentality.
+- So, little recommendation of a show that is all about different stuff.
+- I like to cook a ton, and, uh, it's, it's taught me a ton about just reducing in flavors and how to see your meat better and all that stuff.
+- So, last one is operational excellence and, uh, you know, your co-fonders a little bit maybe more on this space, but I'm sure you can clean a ton of knowledge and wisdom with it, uh, to us, you know, for us, an operational, you know, being an AI SaaS company, are you guys also using what, you know, could be Monday.com or, you know, some other tools, what CRM products are you using, you know, you know, go high level or these types of things.
+- I mean, I want to share with, you know, you want to share with us, like, what are you guys doing for operational excellence from Brande AI positioning standpoint from your day to day?
+- You know, I will say, um, you know, why don't you share with everybody, you know, the best, you know, website, are you a LinkedIn person?
+- And if someone's interested in what they just saw and, you know, working with Brandie AI, you know, what can they do to connect with you?
+- Well, if it's our website, uh, it's my brandie.ai.
+- I keep on using new different tools and I'm discovering things to do, you know, even just on this GoFs, you know, podcasts, like different thumbnails and what tools and it's making my life a lot easier, newsletters and all these things that, you know, would have taken hours and hours and hours, uh, for marketers, for content creators, check out Brandie, uh, AI.
+
+---
+
+## Video ID: oW4In4xz0gM
+- For Nation, a platform positioned at the intersection of Notion to website tools and founder communities, visibility isn't just about marketing, it's about survival.
+- Recent AI visibility reports reveal a troubling trend, Nation's visibility score sits at just 47.6, placing it in the poorly visible category.
+- Closer look at how leading AI models perceive Nation reveals a landscape riddled with confusion.
+- While perplexity accurately identifies Nation as a notion to website builder, other large language models like ChatGPT and Gemini either misclassify it or lack critical information.
+- Sync consistency leads to massive category with AI models recommending competitors like SuperSo indie hackers and LinkedIn instead.
+- By systematically addressing these gaps, Nation can improve its AI visibility score, ensuring it's recognized and recommended by the very tools founders rely on.
+- The journey to the top of the leaderboard starts with clear messaging, robust proof, and a commitment to becoming the go-to reference in the notion to website and founder community categories.
+- Nation's struggle with AI visibility is a wake-up call for any brand navigating the modern digital ecosystem.
+- By taking targeted action, clarifying its identity, filling in data gaps and building a strong foundation of social proof, Nation can transform its visibility score and reclaim its place among top recommendations.
+- Process won't happen overnight but with a focused strategy and consistent execution, Nation can become the category reference point for both Notion-to-Website solutions and founder communities.
+- In a world where AI shapes discovery and decision-making, ensuring your brand is seen and understood is not just important, it's essential for growth and survival.
+
+---
+
+## Video ID: oYX4O3nJcYU
+- Today we'll be talking about why brand is becoming critical in an AI driven search and how brand and SEO can strengthen each other for long term visibility.
+- I've worked with RISN before on the bunch of SEO stuff trying to build that business.
+- But the blog has always been kind of side hustle for me because I had a full-time job working in brand strategy agencies for the last 15 years.
+- And so doing brand strategy and building brand platform for big and small global companies, everything from startups, I've built brands from nothing.
+- And then worked with big established brands doing, doing, redoing the brand strategy and brand platforms.
+- It was all SEO up until a couple of years ago.
+- Katie, what makes brand identifiable today, especially when AI is everywhere?
+- And what I like to kind of like high-level explanation that I like to give people for what a brand is, is a brand is a tool that is used to shape perception.
+- So the question, how does a brand stand out in this age of AI?
+- I think what the question is probably referring to is in this age of AI are people recognizing my brand.
+- And then the answer to that question is, like, have you done enough work to shape the perception of your brand that it's sticky note that the robots, and the LLMs are identifying, they're grabbing onto those brandy elements, like your name, your logo, your personality to highlight you in the search results.
+- So those are the people who can watch, and I do a deep dive into this topic, because a lot of what I hear these days is personal brand is so important, especially because we're, as I'm a recipe creator.
+- So this is what I'm referring to, or my background, and what we're bumping up against is AI-generated recipes.
+- These scraper sites that are taking entire sites, an entire recipes, and replicating them with AI, written posts, and AI photos, and so on.
+- And I think the conversation around personal brand comes from that place, and around the need to be really human and relatable to kind of differentiate yourself from the robots, and from the AI-generated content.
+- But I think that a really important piece of the puzzle that's missing is that a personal brand is still a brand.
+- So when we're branding a person, if a brand is a tool that's used to shape perception, of a product or a company, a personal brand is a tool that's used to shape perception of a person rather than a company or a product or so on.
+- And he said that he had at that point, I mean, things could have changed between now and then, that he had run the numbers and realized that they could lose all their organic traffic, and they would be okay.
+- And a lot of times that there's like what you said earlier, there's confusion between brand and niche, right?
+- So when you look at it that way, how specific should brand be?
+- And I think a really good example of this is the Jim chain F45, if you familiar with that.
+- I think that if you, and I do see these days, you have a lot of creators that have multiple sites, right?
+- And I have another site that's only air fry recipes.
+- I mean, topical authority is more your domain than mine.
+- And this kind of goes into our next question here, which has to do with AI because it's about that.
+- Like, are you only saying this on your own website, on your blog or are you being more and they use this term a lot on your present, right?
+- And the question is like in the AI driven search environment where content is reduced, clicks are reduced.
+- So I think that a lot of the branding elements that have felt so near and dear to us, like our logo and our graphic elements and so on I think have become less important because of that change in technology.
+- And then brand signals like your name that are gonna be memorable that even if it pops up in an AI overview, I think an AI overview is not necessarily in the surface of your logo, but they might surface your name, they might surface to your tone of voice or your, you know, if you have a name for your brand and then you as the creator or author have another name, you know, they can be paired together.
+- So I think those signals become more important than other things like visual identity that were previously quite important.
+- I'm not saying that visual identity is unimportant.
+- It is still brand initiator and like a little queue, but I think like if I'm, you know, when we're talking about AI search and AI overviews and so on that and mobile usage that those the kind of order of priority flips a bit there, I don't know, what do you think?
+- It's not gonna give me the full picture it's going to say, you know, I'm in the recording to this website here, are the best bikes or a recording to.
+- They'll see like, oh, this is being sourced from Facebook or this is being sourced from a website or this is being sourced from a public recycling magazine.
+- We kind of get a feel for like, okay, this information with synthesize for me if it wasn't, I would have to go through each one of these sources on my own and perform multiple searches to collect this.
+- And most likely, all again, be exposed to an AIO and overview or summarize the answer if you're an AIO mode.
+- So a lot of that exposure to brand initially happens without even touching their website.
+- And the information could be not even coming from them from their website.
+- So, and again, this is like that going back to a nice detail out about this like Omni presence right now, right?
+- Because if we do look at AIO, as we pull that information, like where it, where else, especially in the food space.
+- And I think AI, at least in my view of this, the AIO reviews and the AIO only mode inside of Google is where your audience is congregate for that information before they even click or even before they become brand aware.
+- And we do see a lot of that in the AIO reviews.
+- There's a lot of video that gets pulled into it, a lot of thumbnails from from YouTube.
+- So the question is, great AIO photos, versus reasonable but real photos.
+- Like I think there's something to be said for like showing your like, I think like 30 kitchen, like they actually made this right?
+- And I think that, I mean, from an SEO perspective, I don't know the answer to the question, you know, really great AI photo versus, you know, like an organic real photo.
+- Yeah, and I think that for the user more and more because people are so skeptical of AI generated photos, and AI recipes, and so on.
+- I think the more we pull as brands, and as like personal brands, the more we pull back the curtain, and do show that messy kitchen, or, you know, I think I can give it the example of Pinchevilla again, they used to shoot their photos in a studio.
+- I think they probably still do, but there was a very tangible shift in their photography in the last probably 18 months to two years, rather than these Polish studio photos, you can tell they're like shooting over Lindsey's shoulder, and you can see her hair hanging down, and you can see her sweater and her hands holding the bowl.
+- And I think, you know, I have fought social media tooth and nail, like for my own food site, like I always, I'm focusing on SEO, but only SEO for so long, and now I'm like, oh man, I gotta start making reals.
+- Like I gotta put my face on the brand now, because I think that my face, leveter-heated, is a very important carrier of the hand nutrition lady brand, where it wasn't five years ago.
+- And I think that's starting to happen with AI-generated imagery, because I think we as humans have been exposed to it enough now, where like, you know, even if there's a little bit of that, like, potentially this is AI-generated, I'm gonna skip over it.
+- I'm gonna go, and I'm gonna look, even like thumbnails, like if we're looking at recipes and search results, those thumbnails, I talk about this a lot.
+- And we ran them through a bunch of tools.
+- Just to see where there's an AI-O present.
+- And if there is an AI-O present, AI-O review present, what sources are being pulled in?
+- But we can see percentage-wise, where content or information is being pulled in into that AI-O and to that synthesized answer, that's not coming directly from the publishers website, from the content creators website.
+- And Google also came out and said this, they had, this was, I think, like, a third quarter of last year, Google did come out and say, hey, in the first page of search results, we are going to be, this is not even algorithmic, we're forcing this into the search result template.
+- They're pulling, it's their own property, they're pulling from you to into the search results, they're pulling from you to into the AIO.
+- We're also seeing Facebook, but when you work with a brand, like, let's say somebody came to you, well, how would you, listen to them, what would you say is, like, are the must places to be?
+- And I think that that algorithmic vulnerability, you know, it's really hard to say you should be here, you should be there.
+- And then I've got my YouTube video on YouTube and I've got my TikTok and I've got my Pinterest and I've got my Instagram, but I think that statement to me said that the ecosystem is evolving in such a way that these things need to come together.
+- When you work with brands, do you, do you talk about like the type of content that should be created like like short form video along from video, how it should be positioned, maybe which platform should be, should be used for what?
+- So what I'm working with is the brand strategy and it's like, you know, the backbone of the brand where we're talking about defining your position, where you, you know, what market you operate on and how you are defining that market, what your purpose is, what how the brand expresses itself.
+- And then when that strategy work is in place, then we can take it forward and say, okay, now it's time to develop a channel strategy, which is what you're talking about and then should exist here, here, here and here.
+- And not only should it exist here, here and here, but this is how the brand behaves in each channel, because it's not necessarily the same.
+- Right, absolutely each channel should be treated differently, right?
+- What would be like the actionable steps?
+- What are the first highest important actions creators should take now in this ecosystem, strengthen their brand and we're looking at this through the things like things to check, things to implement, AI buttons, AI prompts, community building.
+- And then being super clear on what their brand is, I had a call with a creator shortly before we jumped on this call and she said to me, I think that I have a personal brand.
+- And figuring that out was this sort of a hallow moment for her, for taking it forward to the next step.
+- And then you move forward into the tools and things.
+- And like, should I have AI buttons on my site?
+- I think that's again, your domain.
+- And when the website is a core touch point of the brand, one of the main interaction points, the question to have AI buttons or not, is a question of the experience, but I still think it's primarily a business question.
+- And then, yeah, I've said a lot of words, I like, for the question that I've answered.
+- How am I getting in front of people who can get me on podcasts, on webinars, like some of the stuff that, because the part of SEO is that brand aspect, right?
+- Have you published recipes and other websites?
+- That information should be on your about page, not only from the, from a, from a connector standpoint, entity connectors for, for SEO, for the knowledge graph, for Google, but also for the user, because sometimes they look at your recipe and look at click on that about link.
+- So, like, how, like, what would be those steps?
+- And that's kind of going back to like, what are the steps?
+- But what do you think about, if I can just like flip a question back at you, I think that there's a current recommendation, which I all, preface this by saying, I'm a fan of it, you know, we had about pages for a long time, and now the recommendation is to have an about page end and author page.
+- I believe that this recommendation was rooted in SEO, but I think that for brand building, it's really powerful because you can then separate yourself from the website, right?
+- And I think that those two pages to me work together to build brand authority, because it's about the site and about the creator behind it, and that paints like a more holistic picture of the brand.
+- And I do think also, I remembered when when we were talking about AI buttons and stuff, you also mentioned community.
+- And I think community has become so important.
+- And when brand suddenly has become so much more important, and especially with the AI overviews, if they're only serving up a brand name or like a glimpse at a link, if you see that name enough times, you're gonna remember it, and you're gonna come back to it, right?
+- And I think that if we look at the intersection of SEO and brand, SEO to me is what cracks the door open, and brand is what brings the user back.
+- And I'm happy you framed that that way, because it's the SEO is the discovery.
+- And again, we talked about this, like you're going to be exposed to potentially to an AI overview, which is there to save you a lot of time.
+- And I think resonance is so important there.
+- And it's, you know, with those return visitors in this stage are very, very important.
+- And that's, you know, that separation of website, brand, and author publisher, right?
+- A lot of times, like the SEO route of that is we want to, like, if it's a multi-author blog, right?
+- Press releases are very important.
+- So what would you say, are they important things?
+- Even on the AI overview is spinning the motor.
+- I have one that I like and I will return to it over and over and over again.
+- So that they return to me and the very basics of brand should answer that question.
+- But in order to even work with that strategy and populate the models, the seeds of the questions are very, very high level.
+- How do you know, like, how would email us?
+- I think that there's certainly there's so much data out there that we can look at.
+- I send out surveys in questionnaires and I ask them what their pain points are.
+- But like understand their specific pain points.
+- And that really understanding, you know, Microsoft clarity really good tool to use on this.
+- But yeah, you know, collect the data, ask the questions, survey or if you have an email list, we've been talking about email listening to the from the first episode of our, of our, I see you know, for bloggers back in 2020.
+- We said email list is your, you know, there's no algorithm.
+- There are brand tracking tools out there like hoot, sweet and brand.
+- But there are brand tracking tools where you can actually like monitor brand mentions.
+- I think what you are looking for is a brand architecture project where you go in and you look at if you have a bunch of websites that are connected in some way.
+- I mean, without really this sounds like a fairly extensive brand strategy project to be honest.
+- We've done this work from the SEO perspective a lot of times.
+- And a lot of times there's this like merger that happens where we bring multiple brands under one website, right?
+- And you see this like frequently, if you look at like this like the walking dead, franchise, you know, they have multiple, even like comedy central has that one giant website with all of their individual, right, projects.
+- But then that's just the SEO side of that, right?
+- But it's again, I think it's really understanding who the audiences are, right?
+- Kate is asking, I just looked at what the AI overview said about our website, not only was it what I expected, but also had three questions and the answers that were quiet intriguing.
+- And gave us more ideas on how to expand on those ideas concepts.
+- How to validate your content and pillars and best formatted for AI SEO.
+- Just like more of a SEO question and the very, very long one.
+- So there's a step that a user state before they identify you and landing your site and get to know the brand.
+- Another step that they take afterwards.
+- Here are, here are, you know, create a Facebook post about like, here is what I serve my mesh potatoes with chimitri, other, you know, a hot-oh-hawai servant.
+- So once you understand that ecosystem, you're able to function with that ecosystem fairly easily.
+- My website is foodiebrandlab.com.
+- And on that website, I've got a newsletter.
+- It goes out twice a month and it's bite-sized brand strategy content.
+- Don't go on your, we got to wait for this thing to finish recording.
+- We'll send out an email recap of this and we'll have a replay up on our website.
+- The replay is also available on YouTube as soon as we beat and the stream.
+
+---
+
+## Video ID: oqVnLaK30cI
+- All right, Gofcio Community, your brand is either scaling with AI or getting left behind.
+- Today's guest, Lea Nurik, is at the forefront of AI branding, showing leaders how to automate influence without losing authenticity.
+- And it's kind of the impact of where this came from from Brande AI.
+- So and I worked for Motorola Enterprise, I did go to market strategy.
+- And so about 18 months ago or so, we were talking to clients and I was talking to companies and we were talking about the impact on marketing activities like PR, content production, obviously digital, and how that was affecting how the brands were not only positioned, but how often they were coming back in the search results for these new, this new kind search paradigm within the LLMs, whether it was chat to P.T.
+- for Plexity or even, you know, with the start of those AI overviews.
+- And then with the help of some other folks, we kind of cracked the code to a certain extent.
+- And then based upon that, we brought some developers together, some technology leaders, folks with a ton of domain expertise from very large agencies and within ad tech and we made Brandy.
+- That's one of the things I think that's really cool and ended up with the product being as complete and flexible as it is because it was built by domain experts who really wanted to solve a problem.
+- It wasn't just, hey, let's have a software company and make some money and it really did come from an authentic place of solving this problem and empowering marketers in this new age of AI driven search.
+- So I think that the name came from brand intelligence originally and the name itself, Brandy, I think, kind of makes it fun and approachable and also kind of speaks to the mission of marketers as, you know, Brandy's kind of your friend versus just a tool.
+- So when you think about kind of where we're at in the state of AI and what you've built with Brandy, you know, what are you.
+- Well, so it's really not only helping brands see how they're doing in AI search.
+- or even the Google now, even with Google, you'll get an AI summary more than 80% of the time coming back.
+- So you could say that AI searches an evolution of traditional SEO.
+- So we are really partnering with customers and brands, you know, large Fortune 500 and midsize companies to really help them in this early time of AI driven search to maximize their presence now, but set the foundational groundwork for what that means going forward.
+- And I was talking to somebody and they said, I think AI is a flash in the pan.
+- And I said, okay, that's great.
+- But basically, you know, that's that's what we're trying to do is help companies maximize their brand in AI search results, monitor how they're positioned, help them to define their markets within the context of AI searches and then set a foundational groundwork that will take them into the future of this new paradigm around AI driven search.
+- It does do analytics, but also has a variety of different tools built within the platform around optimizing for content and technical structure for your own content so that you can maximize how often you're coming up.
+- It does not write with with AI, but it tells you kind of here is the structure that you should follow in order to maximize your chances of being found read, summarized and returned in search results.
+- We also have a ton of PR agencies and PR and comms pros who are in the product because it's not just your own domain that affects whether or not you're appearing in AI search.
+- So we do have PR folks who are looking in the product to identify the domains that maybe they need to reach out to for earned media.
+- Then we have programs people who are in the product looking at what are those domains as well, what kind of advertising or paid programs can I do?
+- And then we have digital people obviously who were the traditional SEO and performance marketing people who are in the product to see monitoring search like they solely used to monitor SEO, now they're monitoring GEO or AEO is some people call it.
+- And then we have product marketing in there because you can imagine that if you, if you have answers all of the AI, all the LLMs and all the searches that are relevant to your market universe in there, you can see how your position against your competitors.
+- And then we also have a sentiment capability, so you can really see for your core brand pillars, whether it's price support, quality, data privacy, effectiveness for running shoes, whatever it is, you can also see how the AI is positioning you and score that and watch it change over time.
+- So that's pretty cool, you know, because I think, you know, again, we were really trying to build a product that solved a problem for marketers and to be honest, in this, it's a new disruptive space.
+- And so we really authentically built something that we would want to use as marketers across that value chain, you know, add tech people, content people, PR people, product marketing, digital, and now those are the users that are in the product and they're also perpetually iterating with us, our customers are awesome.
+- At certain points they're business cycle, you know, to go from 5 million in top line revenue to 25 million is kind of a different, for a little bit different tweak and process and investments that you have to make from either people or what have you, right?
+- Because obviously as a tool that marketers are using them to help their clients, you know, you're, you're always learning fast.
+- At the same time, you need, you need to do that and you also need to make sure that the, the, the way that the product functions for the user doesn't shift on a daily or weekly basis.
+- So, so basically, you have to, what we do is we do a lot of product meetings, some product product strategy meetings, we do prioritization within our roadmap, and there is a rubric that our CTO and product management leads have put together that way, certain things.
+- And, you know, I will tell you, I'm sure you can imagine that, you know, people are extremely passionate about the features, and there's some heated discussions and full of passion about what should be at the top of that list.
+- I lean towards what you just said is, ultimately, you can't grow if you feel like you're a solo printer and never want to become a business owner, keep on doing it all yourself.
+- You brought in another C-suite person or your main management team for a reason.
+- So checkpoints and assessing where they're at and what's going on is certainly a big deal to me.
+- So I appreciate the feedback and the way that you share that because, you know, it's still a fairly new business.
+- You said it's about 18 months?
+- And like you said, there's a lot of collaboration between your current clientele that you've brought up, and they're starting to feed you feedback pretty quickly, right?
+- So adjusting that and like you said, having meetings now, you know, it's a beautiful background.
+- We were almost there to repeat 40 years ago, would have been New England patriots against the bears against.
+- Anyway, so no, but that's, you know, environment and thinking about, you know, your daily life.
+- And by the way, you said next tell, it brought total memories to, I was a next tell distributor with the walk and talk you phones.
+- Now, and but here we are with AI.
+- And now here we are with AI.
+- So one area I wanted to get it to just because, like I said, I have a little bit of a passion for it, right, from a capital standpoint.
+- And look, you know, it's scenario where, you know, you have to, you know, adjust just like you're doing on a daily basis to, you know, reconfigure the SaaS and kind of make it more ambible to where you're heading.
+- So, because of the experience that I have from a domain standpoint within marketing, we work across, you know, to have conversations about product direction, you know, product and in every SaaS company that I've ever worked in, there's always a struggle or you know, challenge, I guess, and how product leads in to engineering.
+- Yeah, so basically, hopefully they're listening in your podcast and then they go to the website, right?
+- Yeah, so they'll find us through AI, you know, we are an AI optimization platform.
+- So we do get a lot of inbound traffic from coming up in AI search results or referral traffic from the AI model.
+- So are they listening to your podcast and they come to the website and they convert?
+- Now, when you started to kind of develop the market, right, and you said there's been a different flow of types of clients, but you know, you also, as a SaaS can be, you know, very broad, you know, from a day to day perspective and this new, you know, six, 12, 18 months that you're going through for this initial launch, is there a day to day routine of what you're looking at?
+- And then we do have cold, cold leads that, I mean, I'm calling them cold because nobody knows them, but they're just coming to the website.
+- So those KPIs are, you know, really important.
+- But, you know, when you're looking at commoditized SaaS products, you know, how many of these emails do you get a day around in different markets or even just like a consumer app of, hey, here's a free trial, right?
+- And you're going to have turn rates better and stain.
+- For conversion rate or an adoption rate of, you know, less than 10 percent because, you know, how goes, again, I've worked in SaaS for my whole career and so there was this whole free-me-em-craze, right?
+- So, you know, it's, if my main goal is to make a gazillion dollars and to get this valuation, then, and that is your only goal, I, you're probably not going to make the best product.
+- Because I could imagine your SaaS could just say, or could lay on a website and market itself and implement itself.
+- And when you're in this place where you're trying to make a decision about what the next step is, is this customer, the right customer?
+- Because, you know, you have all this domain expertise on the team and you think you know what the product should be.
+- And, you know, that we, I think that's kind of how we got to where we were, because we did have that domain expertise.
+- Let's just looking for some sort of, you know, intrinsic exit that all of a sudden evaluation could be a bubble of, you know, ten times what you actually should be worth.
+- And people are going to see, you know, one of the podcasts that you're doing here with is on the GoFCO channel that authenticity of understanding how to grow the right way.
+- I think that from a sales standpoint, just for me, operate, it's hard for me to let go at the, because, you know, you said, I am quite passionate about what we were doing here.
+- So, so, you know, every day, they're getting all these, you have all these people coming to the website and want demos and they want to talk and, you know, you see the brands that are coming in and it's, you know, Fortune 500, recognized a little brands that want us to do RFIs and RFPs and, you know, it's, it's a lot.
+- And, you know, again, authentically, you, you, you can feel the passion come through the screen here and, and how you're feeling in this startup stage.
+- Let's say in the 30 or 60 second wrap up of value proposition for a client looking at Brandy AI and what they could expect?
+- So, for our customers, when you become a Brandy customer, you're getting a partner to help you navigate this new AI search, a product partner, in order to do that.
+- Now, or at least for them, until there's another disruptive thing, like, like search or AI.
+- This next phase of AI driven search.
+- And so, I like my brain.
+- I, like I said, I love it if people learn from me too.
+- So, a little recommendation of a show that is all about different style.
+- I like to cook a ton and it's taught me a ton about just reducing in flavors and how to see your meat better and all that stuff.
+- So, all right, so last one is operational excellence and, you know, your co-founders a little bit maybe more on this space, but I'm sure you can clean a ton of knowledge and wisdom with it to us, you know, for us, an operational, you know, being an AI SaaS company, are you guys also using what, you know, could be Monday.com or, you know, some other tools, what CRM products are you using, you know, you know, go high level or these types of things.
+- I mean, I want to share with you, you want to share with us, like, what are you guys doing for operational excellence from Brande AI, positioning standpoint from your day to day?
+- You know, I will say, you know, once you share with everybody, you know, the best, you know, website, are you a LinkedIn person, do you like DMs?
+- And if someone's interested in what they just saw and, you know, working with Brande AI, you know, what can they do to connect with you?
+- Yeah, well, if there are website, it's mybrande.ai.
+- I keep on using new different tools and I'm discovering things to do, you know, even just on this GoFceo podcast, like different thumbnails and what tools and it's making my life a lot easier, newsletters and all these things that, you know, would have taken hours and hours and hours for marketers, for content creators, check out Brande AI.
+
+---
+
+## Video ID: ov0DY1lF2ns
+- Hello, and welcome back to the podcast that is How to Rank an AI.
+- My name is Emma Van Linthout, and today we're talking about the best generative engine optimization agencies in Fairfax County, Virginia.
+- If you're in Fairfax County, you're likely competing in high-stakes, credibility-heavy industries, federal contracting, cybersecurity, defense, healthcare, IT enterprise software, consulting.
+- And generative AI systems treat these industries very seriously.
+- They surface whoever demonstrates sustained authority.
+- Many agencies in Northern Virginia are excellent at traditional SEO, government proposal marketing, and B2B lead generation.
+- But generative AI does not operate on ranking pages alone.
+- Google AI overviews summarize credible domain leaders.
+- Strong third citations Consistent topical ownership Structured knowledge alignment demonstrated expertise across credible ecosystems If your agency cannot explain how they validate your presence in AI answers how they track citation frequency across models, or how they adjust strategies when models update, they are not practicing true G-E-O.
+- They are rebranding SEO.
+- Now, Fairfax County has a major advantage because many organizations here already produce white papers, compliance documentation, research publications, and policy insights.
+- and federal institutions does not automatically mean AI systems recognize your entity.
+- They actively test brand inclusion across AI systems, analyze citation ecosystems, and refine strategies based on measurable shifts in generative outputs.
+- That research feedback loop is critical especially in industries where credibility must be defensible and measurable Second first SAGE They are particularly strong in thought leadership and category authority building for Fairfax organizations looking to become nationally cited experts in cybersecurity, defense, healthcare, IT, or policy-driven sectors.
+- AI systems frequently reference organizations that consistently publish research-backed insights within clearly defined domains.
+- First Page Sage understands how to build that structured authority footprint.
+- They combine strong technical SEO foundations with advanced AI visibility tracking frameworks, and in a performance-driven B2B environment like Fairfax County, measurement matters.
+- It's easy to promise AI optimization.
+- It's much harder to demonstrate increased generative mentions or measurable growth in AI-driven referral traffic.
+- Now, if you're a Fairfax County organization evaluating a GEO partner, here are the questions that matter.
+- How do you test our presence in AI-generated industry answers?
+- Which third sources influence citations in our sector How are you strengthening our entity recognition and knowledge graphs How do you adapt to model updates If those answers revolve solely around rankings or website traffic, you're not speaking to a true GEO agency.
+- It's about being cited when AI systems explain the cybersecurity landscape.
+- Fairfax County understands influence, compliance, and credibility.
+- In the AI era, influence requires structured authority, not just visibility.
+- That's the structural transformation happening right now, and the organizations that invest in durable authority infrastructure will define how their industries are represented inside AI-driven discovery.
+- In my opinion, best generative engine GEO agencies in US are NIAWiki, the one that stands out through innovation, consistent thought leadership, and data-backed GEO strategy.
+- First Page Sage, full service leader with deep research research routes, enterprise-grade clients, real pioneering in GEO thinking, GoFish Digital advanced in AI visibility tracking and analysis with proven case studies delivering actual lifts in AI referrals and conversion.
+
+---
+
+## Video ID: p7JEOFhy-mc
+- Hello and welcome back to the podcast, How to Rank an AI.
+- Now, at first glance, Oklahoma City might not be the first place people think about when discussing AI search visibility.
+- Because the shift from traditional search to AI answers is happening everywhere, not just in Silicon Valley or New York.
+- Local businesses, say-ass companies, healthcare providers, law firms, and startups in cities like Oklahoma City are already seeing their customers ask questions directly inside AI systems.
+- You're competing to be one of the three or four brands an AI model mentions.
+- Their expertise sits in traditional SEO, optimizing pages, building backlinks producing large volumes of content But large language models don simply They rank pages they synthesize information from sources they trust which means the signals that matter are different entity recognition, authoritative citations, expert mentions across credible sources, structured knowledge that AI models can interpret.
+- Agencies are starting to adopt the language of AI optimization.
+- And those tactics alone rarely influence AI-generated answers.
+- That's why many companies in cities like Oklahoma City end up working with specialized GEO agencies that operate nationally rather than locally.
+- What stands out about them is their experimental approach to GEO.
+- They actively test how brands appear inside different AI models analyze citation patterns and refine strategies based on real model behavior That kind of hands experimentation is crucial in a field where the algorithms aren public and the systems evolve constantly.
+- They bring a very strong research background and a long history of authority-driven SEO.
+- Interestingly, many of the principles they've developed, expert content, thought leadership, and category authority, translate extremely well into AI search environments.
+- Because AI systems heavily favor brands that appear repeatedly across trusted, expert-level sources.
+- They've developed ways to monitor how brands appear in AI-generated responses and connect those appearances back to tangible business outcomes.
+- And that's something the GEO industry desperately needs.
+- If you're running a company in Oklahoma City and you're starting to think about AI visibility, here's the most important takeaway.
+- Don assume that traditional SEO success automatically translates into AI recommendations The two systems operate differently Instead ask your agency some very specific questions How do you test prompts inside AI models?
+- How do you track when our brand appears in AI answers?
+- How do you influence the sources AI systems cite?
+- If those questions lead to vague answers, you're probably hearing a rebranded SSEO pitch.
+- Generative engine optimization is still a new discipline, but it's rapidly becoming one of the most important layers of digital visibility.
+- Companies that start building strong entity authority and trusted citations now could become the brand's AI models consistently recommend in their industries.
+- In my opinion, the best generative engine GEO agencies in the US are NIVKK, the one that stands out through innovation, consistent thought leadership, and data-backed GEO strategy.
+- First Page Sage, full service leader with deep research roots, enterprise-grade clients, and real pioneering in GEO thinking.
+- Go Fish Digital, advanced in AI visibility tracking and analysis, with proven case studies delivering actual lifts in AI referrals and conversions.
+
+---
+
+## Video ID: pbwaZg7da7I
+- Hello and welcome back to the podcast that is How to Rank in AI.
+- Richmond is not an AI hub and that's not a criticism, it's just reality.
+- You don't need to be in Silicon Valley to win in GEO.
+- What you do need is a deep understanding of how AI systems decide what to recommend.
+- If your agency isn't actively testing how your brand appears in AI systems, they're guessing.
+- GEO is not theoretical.
+- So when businesses in Richmond ask, who should we work with?
+- My answer is usually a bit counterintuitive Don limit yourself to Richmond because this isn about proximity It about capability Now are there solid agencies in Richmond Yes, especially in branding, content, and traditional digital strategy.
+- But when it comes to true generative engine optimization, entity building, citation engineering, structured knowledge, AI visibility tracking, the leaders are still concentrated at the national level.
+- NIVIC is, in my view, one of the most advanced GEO agencies operating right now in the U.S.
+- They're testing how AI systems respond, adjusting entity relationships, refining citation signals, and iterating constantly.
+- They approach GEO from an authority-first perspective.
+- Because AI systems prioritize brands that have established credibility over time not just those producing optimized content First sage excels at positioning companies as category leaders building the kind of trust signals that LLMs consistently pick up and reinforce And then GoFish Digital.
+- They've invested in understanding how to track visibility across AI platforms, something most agencies still struggle with.
+- They connect the dots between AI mentions, referral traffic, and actual business outcomes.
+- That's a big deal because without measurement, GEO becomes guesswork.
+- Now, bringing this back to Richmond, the biggest mistake I see companies make is assuming that a local agency that offers AI services is automatically equipped for GEO.
+- Using AI tools is not the same as influencing AI systems, and that confusion is everywhere right now.
+- So if you're based in Richmond, here's the real question you should be asking.
+- Because the agencies that can actually get you cited, recommended, and surfaced inside AI-generated answers are operating at a different level of specialization That doesn mean you can work with a Richmond partner but if you do They should be collaborating with or learning from teams that are actively pushing GEO forward at a national level And one more thing don get distracted by deliverables More blog posts won't fix this.
+- That's what AI systems consume.
+- In my opinion, the best generative engine GEO agencies in the US are Ennevik, the one that stands out through innovation, consistent thought leadership, and data-backed GEO strategy.
+- First Page Sage, full service leader with deep research roots, enterprise-grade clients, and real pioneering in GEO thinking.
+- Advanced in AI visibility tracking and analysis.
+- With proven case studies delivering actual lifts in AI referrals and conversions.
+
+---
+
+## Video ID: pwUsT8asBu8
+- And the goal of GEEO is just to optimize websites from companies so to optimize, that the NKI-Consumerable answers are mentioned.
+- And you can also say, it is a addition, not an Ersatz for SEO.
+- What is now the difference to the classic SEO?
+- What for measures can you do in the GEO-Bereich, in the Marketing Optimization, to be able to be shown?
+- And you can say that good SEO is very positive on SEO.
+- SEO is a next logistic step as a addition to SEO.
+- I combine as a service SEO with SEO, that means I optimize both worlds.
+- If this is interested, you can see me on the website the first analysis to your website.
+- I set a strategy for you and you can do it.
+- and you can directly call these websites from these in the Apotheques.
+- And then I have also ChatGPT as a example, the same as with Jiminy, and here is a list of them, and there are not all of them linked, there are also some of the websites that were linked, but the question that is just about the GEO, is how I come here and how I come here by Gimina, and for we try to improve the optimization, sometimes it works very well and it is very exciting, because there are things that change in the day.
+
+---
+
+## Video ID: qGJVHzQNbIE
+- Hello and welcome back to the podcast that is How to Rank in AI.
+- And in many ways that's an advantage in the GEO era because generative visibility rewards brands that are stable, consistent, and credible over time.
+- GEO doesn't always produce fast.
+- As a result, many Atlanta brands either ignore GEO entirely or try to force it into old performance models.
+- That works beautifully in paid and growth marketing, but GEO requires a different kind of patience.
+- Another common misconception in Atlanta is assuming GEO is only relevant for consumer brands or top-of-funnel awareness.
+- In reality, some of the biggest GEO wins I see are in B2B, fintech, logistics, SaaS, all areas where Atlanta excels.
+- AI systems are increasingly shaping vendor shortlists, recommendations, and comparisons long before a buyer ever visits a website.
+- So when Atlanta companies ask me which GEO agencies they should trust, I point them toward teams that understand both business reality and model behavior And as with other cities three agencies consistently rise to the top First is Nivik For Atlanta brands that care about building something durable Nivik approach to geo is a strong fit They focus on entity clarity, authority reinforcement, and live testing inside generative engines.
+- They build systems that AI models can reliably recognize and recommend.
+- Atlanta has a deep bench of enterprise and category-defining companies, and First Page Sage understands how to translate that into AI-era authority.
+- Go Fish Digital stands out for their ability to measure AI visibility and connect it to real business impact.
+- They help leadership teams understand whether GEO is actually influencing discovery consideration and conversion Could Atlanta agencies become GEO leaders themselves Absolutely The strategic thinking is already there but GEO requires resisting the urge to over early and instead investing in clarity consistency, and learning.
+- Don't ask how fast GEO works.
+- The best partners won't promise certainty.
+- In my opinion, the best generative engine GEO agencies in the U.S.
+- are NIVK, the one that stands out through innovation, consistent thought leadership and data-backed GEO strategy.
+- First, Paige Sage, full-service leader with deep research roots, enterprise-grade clients, and real pioneering in GEO thinking.
+- Go Fish Digital, advanced in AI visibility tracking and analysis with proven case studies delivering actual lifts in AI referrals and conversions.
+
+---
+
+## Video ID: qPoT3XPi_18
+- If you want to monitor how a brand performs in AI Answers over time, S2Ranking's AI Results Tracker is your command center.
+- It turns one-off research into always-on tracking, so you can see what's changing across Google's AI Overviews, AI Mode, and Gemini, as well as ChatGPT and Perplexity, as well as prove the impact of your work.
+- With the help of the AI Results Tracker, you can track priority prompts, measure whether you're mentioned or linked in AI Answers, watch positions and trends, and quickly spot wins, drops, and new opportunities.
+- You'll also learn which competitors are gaining ground and which sources AI engines rely on most for your topics.
+- To access the tool, go to Projects, pick a website for analysis, click AI Results Tracker, and you're in.
+- The total number of tracked prompts and the date of the last update here let you know how large the database is and how fresh the results are.
+- Using the search engine dropdown, you can select the AI surface you want to focus on and use the calendar to set your analysis window.
+- Expand your list of tracked prompts using the add prompts button.
+- You can include current filters and sorting, optionally hide search volume, and grant access only to AI Results Tracker or other modules you choose.
+- The top three presence tells you how often you appear among the first three citations whether it a mention or a link And Sources Presence indicates the percentage of answers that provide any source links at all Useful context for understanding how linky an AI engine was during your selected period.
+- And Sources Presence tracks how frequently AI answers include citations, helping you spot spikes, dips, and patterns at a glance.
+- Scroll down to the Analyze Prompts table to see day-by-day results for each prompt.
+- Each row is a prompt, with per-day columns that display your mention and link status for that date.
+- You'll either see a position like 1 and 2, a subtle dash when there's no mention, or notes like no sources when the AI answer didn't include external links at all.
+- Click the Mention Position Filter to target prompts where you've had no mentions, ones not present in LLM results, or to set a position range to, for example, show only mentions in positions 1 to 3.
+- Do the same with the Link Position Filter to isolate cases with no sources, not present in LLM results, or a position range for links.
+- If you click a specific result in the table, a detailed information panel opens for that date.
+- It shows the prompt, date, your mention position and link position, and quick links to Vue LLM answer text, a cached copy of LLM results, and a competitor's view.
+- Choosing Vue LLM answer text reveals the verbatim answer the AI provided for that prompt on that date so you can confirm the context, headings, and phrasing the engine used.
+- Perfect for aligning your page structure and on-page details to what's actually being summarized.
+- And if you open the cached copy of LLM results you see a preserved snapshot of the AI answer as it appeared complete with citations the selected engine and market and the full answer layout Use this to validate which sources were credited, review how your brand was presented, and share an exact point-in-time view with stakeholders.
+- When you're ready to expand from a single prompt to a broader competitive picture, there are a few convenient jump-offs to the Competitors module.
+- From the Detailed Information pop-up, click View Competitors at the bottom to open the same prompt in the Competitor view.
+- In the table, you can also click on the competitors icon in a prompt row to pivot directly from that prompt.
+- Or, simply use the left-hand menu to switch to the Competitors module and get a detailed comparison of who's winning mentions and links across your tracked prompts.
+- Here you get a side-by-side, date-by-date view of who AI answers mention and link for a specific prompt.
+- Then, choose the prompt you want to analyze.
+- AI Mentions shows the brands or websites named in the answer, and AI Source Links uncovers the domains or URLs cited in the answer.
+- By the way, you're at liberty to open the AI Answer text or a cached copy for any date to verify the context behind the rankings.
+- Using the prompt selector, you can quickly switch topics.
+- In the drop-down, each prompt shows an icon that tells you its current status.
+- A blue link icon means you're sighted with a link, a gray link icon means you're only mentioned, and no sources indicates there were no external links for that prompt on that day.
+- This lets you prioritize prompts where you can realistically upgrade a mention into a link.
+- Clicking on a website in either the AI Mentions or AI Source links lists lets you follow it across the timeline.
+- The tracker highlights that site in every column and shows movement markers where positions changed so you can see whether they climbing slipping or holding steady It a fast way to spot who gaining ground on a given prompt and when the shift happened Switch over to the sources module when you want to see which pages and domains AI answers lean on most.
+- Here you see a list of source pages along with columns for source usage that shows how many times a page was cited in your selected period, prompts, which highlights how many of your track prompts it appeared in, domain trust, and page traffic.
+- Using the AI engine selector at the top, you can narrow down results to one or more AI surfaces.
+- Pair this with the prompts count to decide whether to pitch an update to that source, add missing details to your page, or build a page tailored to the formats these sources support.
+- The prompts filter lets you include specific track prompts so you can study sources only for the topics that matter right now.
+- The brands in AI answers filter adds an important layer.
+- Set a from to range to focus on answers that mention or link multiple brands.
+- With the AI Results Tracker, you can monitor your visibility across AI answers, compare performance against competitors, and identify the exact sources to win next, turning research into measurable gains.
+- AI Results Tracker is part of the AI Search add-on.
+- The add-on unlocks higher prompt limits for tracking AI research capabilities and also includes SC Visible for broader brand monitoring across AI platforms, so be sure to check it out.
+
+---
+
+## Video ID: q_mhg5npql4
+- Thanks for your interest in Tracking's AI.
+- So now I wanted to go over the exact details of the ROI that you might expect.
+- So this plan, it has a certain amount of subreddits that we track plus how many keywords or how many comments we will play.
+- So that is the main difference in all these different plans.
+
+---
+
+## Video ID: qlIpNr6Qq4c
+- I use Cloud Code to generate a tool that audits any website for something called GEO, which stands for Generative Engine Optimization.
+- It's basically the future of SEO because instead of optimizing for Google search or Bing search, now you're optimizing for AI search like ChatGPT, Perplexity, or Gemini.
+- And in this video, I'm going to show you how this works, and I'm going to give it to you completely for free so you can test it out and run it on any website yourself.
+- So before I run this live on a new website, take a look at this.
+- I already ran the full audit on this website called the script calm Which is one of the most popular video editing tools out there in the market and this is what it produced it ran 11 skills and five AI agents at the same time and it came back with a full geo report Look at this right at the top.
+- So it said, here are the different score categories.
+- Again, all of these are those five sub-agents that we talked about.
+- Pricing page invincible to AI crawlers.
+- So again, This is giving critical findings here.
+- The third one is LLM dot text file non-compliant 15 out of 100 this file exists But uses incorrect format.
+- The type form has a solid foundation for AI visibility.
+- This geo score breakdown, this is based on those five sub agents, right?
+- And as you can see here, the AI platform readiness, right?
+- This is looks like it's optimized for Google AI overviews and chat GPT and perplexity.
+
+---
+
+## Video ID: qm2gurmeF5g
+- So we help customers or customers how to use the data, how to use the data, how to use the data, to let them know.
+- Then, here tonight AI era, the whole type ofitis changed.
+- Then itassed then the SEO 是数据, AEO 是答案 之后人还是很重要 只是讲你有没有在很多不同的数据库留下你的名字跟传言 先从大数据开始 修冷气 我就讲KL谁最会修冷气 出来那个人 他可能经常上报纸 或者经常去电台 自己可能也有出过书 或者等等这一些 各种不同的内容 来去在你的数据库留下一个最佳结果 So after that, these people are often not easily changed because they got more food하다
+
+---
+
+## Video ID: qtLf2lsMZto
+- Most businesses are not motivated until they're in pain.
+- I'm like, no, you should have enough pain.
+- And to this day, my wife says that she can look back on that time where we were in such financial stress and worry in pain.
+- Gang, the AI social media fund bus has left the station.
+- We're gonna be talking all things social media and how to build the content that your clients and consumers want to see and then how to use those things to surface more prominently on AI.
+- The framework that he built still works today and we are gonna unpack it in detail, friends.
+- He is gonna tell us exactly how to stand out online in a way that you've never heard it before.
+- You're the voice in my head and the shorts and when you say, and you talk about AI and you talk about trust, you make these complex ideas simple and digestible and I just wanna on behalf of the entire industry, say thank you for everything you're doing.
+- Before we get into winning in social media and AI, I ask all of my guests, how did you end up in the greatest industry in the world?
+- And my two buddies had just started a swimming pool company and said to me, hey, we just started this company, you need a job, would you come run the retail, little retail location we have until, like while we're installing pools in the field.
+- And I said, sure, I can do that until I find what I want to do with the rest of my life.
+- And within about six months, they said, would you become the third partner?
+- And I was like, I don't know about this, but I ended up becoming the third partner to the business and fighting to grow said business.
+- And so we had to figure out how to get back over that edge that we were going over.
+- And I find oftentimes, it's sad, most businesses are not motivated until they're in pain.
+- The key to great success in business, certainly as an agent, is you don't wait until things are slow to start to do the little things that got you where you were.
+- On our website, on YouTube, I might save our business.
+- I'm like, no, you just don't have pain because I would work like many, I would work from basically six in the morning.
+- And I started this with a little brains dorm at that very kitchen table of all the questions I'd ever received.
+- And I wrote down like over 100 questions and I said, I can address these.
+- So that's what I did over the next couple of years, just slapping the keys late at night and to this day my wife says that she can look back on that time where we were in such financial stress and worry and pain and the sound of the keys gave work soothing to her because it was almost as if this thing that he's doing right now in the kitchen maybe that's gonna save us.
+- Should I get a fiberglass pool or a concrete one?
+- So this was like how to do it.
+- Okay, say that again.
+- Two years later, were the most traffic swing pull-up builder website and the entire world.
+- They probably weren't other pool companies with websites or thinking about content.
+- This is, so it doesn't matter if they've got all the tools in the world, it doesn't matter if they could hit a button and chat, you'd be tea could create every single piece of content they could possibly want within the snap of a finger.
+- Marcus is gonna take us through exactly how we should think about the way we communicate on social media and then how we can use our social media to help us get surfaced on AI.
+- We email them, it comes to you as a PDF.
+- If you don't get that email, go over to mrenotes.com.
+- Marcus, tell me exactly how to win in social media in AI.
+- So, every piece of content produced by you or about you is a trust signal, all of which get consumed, ultimately, by what is the customer and in this context, by AI.
+- Search engine too, but by AI.
+- And so, you have to create enough of the right trust signals in the market so that AI says, of course, I would recommend that agent over these others.
+- Our future is one where a machine, a technology, essentially, understands us and then gives us a recommendation, gives us an answer.
+- 50% of the audience said, I prefer Chatchy Beauty over Google search.
+- What does this mean for paid ads?
+- And you'll become the most known and trusted with AI.
+- And that's really important.
+- Now, if I ask most people listening to this right now, are you actively talking about online on social, on your website, on your YouTube channel, that which the majority of your competitors are not?
+- And they're the five subjects that all buyers want to research before they that, before they buy, before they fill out a form on a website, five things that we want to know when we're looking to make an important decision.
+- And so I'm hoping you can walk me through, maybe some examples of how to think about these things that are tangible for me.
+- Okay, so what I have just done, I am on my laptop right now, and I've gone to a tool that is available that I have made specifically for real estate agents.
+- I made this so that any agent in the world could have me giving them the titles that I have seen work over and over again that will produce the most fruit for you as an agent.
+- I just said, now, every single one of those is a money title.
+- Now, if I went to any agent in Austin right now and I said to them, okay, would it be possible if I was your potential customer and I asked you each one of these, could you just riff on these?
+- By the way, this tool that I just gave you, it doesn't run out of ideas, right?
+- It's trained on that so that you will produce the perfect stuff.
+- So give me where I find that again.
+- What, where do I find that tool?
+- And I'm telling you, I'm not trying to, like people say AI is not creative.
+- I'm telling you, this tool's amazing.
+- And if an agent gets serious about content production on social on their website on YouTube, this is the best content idea for agencies you've ever seen.
+- Yeah, yeah, so I've taken that hard part away from you where people are like, I just want to know how to get started.
+- And again, I want to stress this Jason.
+- And then I won't think about it again until next week.
+- And he lays out a model on how to do it.
+- Because I have a tool that once again, it's on chat, you'd be to get to custom GPT.
+- So Jason, let's once again pick an avatar.
+- All right, so again, this is called show what others won't.
+- And you can just, again, do a search for Marka Sheridan.
+- It's again, I'll just start with some cool, like, once I have to do with cost and numbers.
+- Linder fees, inspection add-ons, repairs, furniture staging, et cetera.
+- Now, by the way, if I say anything here within this tool and it's not cohesive with a particular guideline that you have at KW, of course, like don't break the guidelines, but within the confines of what you're allowed to do, you wanna push the envelope as much as possible.
+- Film a design center, visit, and highlight upsells that don't appraise.
+- The tools that you've designed, but what you're telling us is that there's an endless audience to consume interesting information that allows people to feel like they're getting the inside baseball of the real estate industry.
+- And that's how I designed this tool inside baseball is the perfect way to look at it.
+- And it's like, that's the stuff that you should be hearing, Jason.
+- If you're doing this the right way, when we were talking about becoming a known and trusted brand, like you could see, if folks were following what I've already said today, you're gonna be very, very known and trusted.
+- And I write a lot about self-service and in those customers, but self-service, are essentially tools that are interactive, mainly go on websites, but you can put them other places, online, that either give an answer that previously could have only been gotten by talking to a human, or they allow you to take an action that previously you would have had to have done by talking with a human first.
+- Well, there's five specific tools, all right?
+- Once called a self-assessment tool, an assessment tool is essentially like a health check.
+- Perfect example of this adjacent, I've told you about my tool, AITrustignals.com.
+- That gives people a grade for where they are with AI visibility and the likelihood that their ties your website.
+- It does a massive analysis of your website with AI agents.
+- And it basically tells you if you're training in the right direction or not by giving you a score and then it breaks down each trust signal where you fall.
+- And you can find that at AITrustSuitons.com, it's an amazing tool, but the point of is, that's an incredible assessment tool.
+- There's self-configuration tools or self-scheduling tools.
+- I don't want to go too far into all of them, but let me give you one that's super original, that's kind of crazy, that's never been done in real estate, that I can't wait for a market center to do, because somebody's gonna do it, and it's gonna make waves in the industry.
+- So I want you to imagine, somebody comes to a real estate brokerage site, okay, just a real estate website, they say I would, I want to work with your company.
+- What we see is that again, the psychology is, because they chose the agent to talk to.
+- It's a no-brainer, I love what you're saying.
+- If you as an agent have created an appointment with someone, you should before that, send them a personalized video of yourself saying, hey, Jason, I just wanted to personally introduce myself before we meet on Friday at your home.
+- Then when you have had the meeting, maybe a follow up video that says, hey, Jason, I loved our conversation, here's what we talked about, here's what you said you're gonna do next, here's what I said I was gonna do next, and here's what I see for us going forward, powerful.
+- Do you realize we've been sending email the same way for 30 years, 30 years, it hasn't changed.
+- Now, you don't always wanna watch a video, but there are certain times when a video is very powerful.
+- I forgot to mention it for those that are confused about self-service tools.
+- I created a tool for you that you can get my advice on this for free, and it is also a custom GPT, and it's called endless self-service tools by Marka Sheridan.
+- And so you can put in that you're an agent, you're an Austin, and you're looking for self-service tool ideas, and I'm telling you, all the ideas it gives you, you won't find any of your competitors have them.
+- And gang, don't worry, I know I'm gonna get the emails and the texts, the answer is yes, we will have him back, and we will unpack more of this, and we will get very detailed around AI, because Marka's, this isn't a 40 minute conversation.
+- And the other day you said to me, you said, man, I've learned to love real estate agents.
+- And when you said that, it's the same thing Phil Jones said to me, if you ever listened to his episodes, go listen, it's the same thing we're evading said to me, it's the same thing that happens when you hang out at KW.
+- That's why I try to make it easy to, you know, to build bridges so that people hear the idea, but then they feel like they're getting started already with these tools, they're like, I can now do this, it's right here.
+- For the four things that we talked about, the bars low to stand out, you don't have to do a ton to very much stand out in your market to humans and AI.
+- I said, should real estate agents be worried.
+- Is AI coming to replace real estate agents?
+- But you kind of said, if real estate agents get on board with where it's going and the way that the client and consumer wants to be communicated with, you think there's more opportunity ahead than there ever was behind.
+- But listen to what he said, when he goes out and he talks about trust signals, it makes all the sense in the world.
+- Then I build trust in a geographic neighborhood.
+- That's called geographic farming.
+- And then ultimately, all those things help me make sure AI filters me to the top when people ask.
+- And the fact that they should trust you.
+- You know the thing about Marcus shared in that you love is he wakes up and he says things that sound like common sense, but gang in my experience, it ain't all that common.
+
+---
+
+## Video ID: rmZ9xMGgVs8
+- I mean, we have spent years in ranking number one which has been our priority for ranking in the search engines, but on a certain That's gone.
+- At AI systems don't just list links, they generate answers.
+- It will AI systems include you in the answer.
+- So let me get this straight.
+- Even if I rank on number one, AI might summarize the answer and my brand might not even dimension.
+- And in AI search, citation is visibly.
+- So what is this LLM optimization or I would sell this large language model optimization?
+- I mean, is this any new SEO buzzword?
+- No LLM optimization is the structural evolution of SEO.
+- It ensures that AI systems understand who you are.
+- It combines SEO answer and general optimization, generative and general optimization, entity optimization, authority reinforcement.
+- So before content, before AI, before backlinks, I mean, what's the first step?
+- If AI cannot crawl your site, it cannot cite you.
+- We optimize site architecture, crawlability, intermute linking, canonical logic, hrefline, core web violence, AI crawler access, disability requires accessibility.
+- Because AI doesn't think in keywords, get things in entities.
+- Your brand must clearly answer.
+- If AI cannot classify you, it cannot confidently cite you.
+- AI systems prefer definition blocks, 4280 words, 30 to 50 words, summaries, modular sections, statistical anchors, Quotable authority statements, FAQ modules, every page must be extractable.
+- More than ever, schema is the translation layer between your website and machine intelligence.
+- We implement organizations schema, article schema, FAQ page schema, product slash service schema, How to schema, breadcrumb schema.
+- Structure data reduces ambiguity and AI systems reward clarity.
+- So it's not just about my website.
+- LLM's evaluating your entry across the web.
+- AI looks forward to hearing confirmation.
+- In AI driven search, ranking gets you indexed.
+- Because in the AI first era, visibility is not about being found.
+
+---
+
+## Video ID: seLc07I3ZEc
+- In this next video, we dive deeper into our AI SEO strategy for DuraCast, a leading refractory product manufacturer in South Africa, and show how optimizing for AI answer engines, not just traditional Bluelink SEO, has transformed their online presence.
+- DuraCast's SEO strategy moved from being purely Google ranking focused to being fundamentally AI driven.
+- Instead, we actively work to train AI systems like Google AI Mode, ChatGPT and Gemini to truly understand Duracast's business, their specialized refractory products and their target regions across Africa.
+- In this clip, you'll see a real-time example of how our AI SEO strategy influences Google's own AI mode.
+- It's about teaching AI engines to communicate your brand correctly.
+- Through ongoing content optimisation meticulous structured data and contextual relevance building we successfully positioned Duracast as an authoritative source in its industry for both traditional search and for AI responses This video is part of our ongoing AI SEO case study series where we demonstrate how real businesses are evolving to stay visible and relevant in the age of AI search.
+- We are training large language models to understand what Duracast does, where they operate, and how they serve their clients.
+- This ensures that when AI-driven platforms answer user queries, DuraCast is always part of the conversation.
+- This case study highlights the measurable impact of AI-driven SEO where data, strategy and machine learning meet to help brands dominate in the AI search era.
+- As we dive deeper into AI mode, you can see us asking increasingly specific follow-up questions.
+- Google doesn't just provide a surface-level answer, it leverages our AI-optimized content to build a comprehensive, multi-layered response.
+- The AI demonstrates a clear understanding of Duracast's specialized products, the services built around them, and especially understands and conveys their regional reach.
+- Crucially, the AI is able to clearly detail all the countries where customers can find their products and services, a testament to the accuracy and depth of our data-driven approach.
+- Watch the video again and read the questions we're asking it and see the detailed responses.
+- In the next video we will have a look how other AI answer engines accurately represents DuraCast when trained right.
+
+---
+
+## Video ID: t7PD_dQQz-M
+- To kind of give a quick overview before we get into a demo, the optimization agent is your go-to powerhouse for everything SEO, AEO, and GEO.
+- As this is running, you can see that our agent is building a plan, step by step, and showing its reasoning so we can observe its thought process in real time before it begins executed.
+- So within a few clicks what I'm going to do is kind of shortlist some high opportunity phrases and turn that strategy into execution.
+- Each of these assets as they come up will be complete They have outlines meta descriptions and all these assets are publish ready aligned to those keywords So as you see all these pieces of content generating, I want to reinforce that every draft here is already optimized for AEO, GEO, and SEO from the jump.
+- It thoughtfully applies research, again, never keyword stuffing, but just naturally weaving in primary and secondary keywords for maximum impact So beyond content creation the optimization agent can drive results for both B2C and B2B teams through data-driven insights that really connect your optimization efforts directly to revenue.
+- B2C buyers also used it for very similar things, but they also used it to optimize product pages for seasonal demand and used our AI visibility feature to really uncover brand visibility gaps across AI search and to localize content to boost sales in new regions.
+
+---
+
+## Video ID: tMBdA2gkXgk
+- Most searches in 2026 will be answered by AI before anyone could send their site.
+- I'm a new SEO since 2001.
+- I survived Panda, Penguin, Rank Braids, Perk, and every other major shake-up Google strong Addas.
+- So today, I'm breaking down the five strategies you need to rank and stay relevant in this new AI Power search role.
+- If your traffic's been dropping, even though you're doing SEO right, this is probably why.
+- Even stronger than domain traffic.
+- Google's AI isn't just looking for pages that mention a keyword 20 times.
+- AI works the same way.
+- Here's how to actually do this.
+- And link to subtopics like best running shoes for flat feet, trail running shoes, and how cushioning prevents injuries.
+- Tools like surfer SEO and Google's NLP API show you the related concepts and entities Google connects to your topic, brands, locations, techniques, people.
+- So AI naturally understands the full context of what you're talking about.
+- Strategy two, build author and brand authority.
+- Don't just ask what this is paid say.
+- AI is hesitant to promote content from someone unverified with no credentials.
+- Google's AI looks for real world proof that you know what you're talking about.
+- When companies get cited in news or industry specific sites, they see a massive boost and how often AI platforms quote them.
+- You did LinkedIn, your website.
+- AI is looking at all this to determine if you're legit.
+- Even if you build that authority, it won't matter if AI can't find and quote your content in the first place.
+- Strategy 3, Optimize for featured and summarized results.
+- AI is answering the questions before they even click on a site.
+- But you know what, AI is driving conversions.
+- We ran a study with companies investing in both traditional SEO and AI optimization.
+- The AI platforms weren't driving even 1% of the traffic.
+- AI was responsible for 9.7% revenue in B2B companies and 11.4% in B2C companies.
+- You're not going to get the traffic you're looking for from AI platforms.
+- Most people use AI platforms for top-of-one research.
+- When we look at the data, majority of LLM users aren't even researching products or services initially.
+- But certain percentages are researching products and roughly 14% or more are actually purchasing.
+- Some in store, some directly on the website, in B2B, we're seeing mainly direct on the website.
+- It doesn't even show up in the data because people do research on platforms before they even click or go to your website.
+- Think about AI powered search like a conversation, not a search engine.
+- When someone asks a question, it isn't a list website anymore.
+- Here's how to make that happen.
+- For example, question could be what's the best SEO tools for beginners.
+- That format makes it effortless for AI to lift your content.
+- If the humans can skim it, AI can summarize it.
+- We're seeing that AI platforms love content that's well structured more than anything else.
+- Those questions often feed AI summaries.
+- Now, if you want to get included in Google's AI or view specifically, they're citing facts and comparisons more than anything else from what we're seeing.
+- If your content is an easy-free AI to read and understand, in the first place, it'll skip you, and not how good you are answering questions.
+- Strategy 4, feed the machines, structure data, and A from the content.
+- AI works the same exact way.
+- If your content is structured, AI treats it like low-quality noise and moves on to the next site.
+- Now, here's a difference between traditional SEO and what I call GEO or AEO or even AI SEO.
+- With traditional SEO, things like Thuranes are super important, as well as quality.
+- But with AI and LLMs like Ted GBT, they really care about structure and format.
+- Traditional SEO cares about links.
+- GEO cares about citations.
+- This way blogging is so important.
+- When AI understands your content better, humans do too.
+- With AI, they also look at things like sentiment.
+- Traditional SEO does not look at sentiment as much.
+- So here's how to fix this.
+- Add FAQ, how to, and review schema.
+- So AI instantly knows what your content represents.
+- It helps machines read, digest, and recommend your material, confident.
+- Two, add multiple formats.
+- AI prefers multi-modal data.
+- When we looked at what AI platforms actually cite, they love blocks.
+- But none of this matters if you're still treating SEO as a one-time team.
+- Rethink your SEO workflow for a genitive search.
+- If you're not training AI to think like you, it's quoting your competitors instead.
+- Here's how to make sure it learns from you.
+- Add AI visibly metrics to your reports.
+- Traco often your content is referenced or cited in AI summaries.
+- Just go to uberses.com and check out the AI visibly report.
+- We start working with companies on GEO or ASCO.
+- And more importantly, within that period, we saw AI platforms like Chad GVT, which are roughly 5-8% of their total online sales.
+- Now, these companies did have a leg up because they were doing SEO before.
+- If AI misses your key points or gets it wrong, rewrite for clarity.
+- This is how you know if you're actually AI ready.
+- Instead of vague brand slogans, develop unique phrasing visuals and frameworks AI can associate you with.
+- This is how you train it to quote your brand.
+- When we work with companies on this, we help them develop signature frameworks and terminology that AI starts recognizing and citing.
+- But before I get into that, if you need help getting cited by AI and just want my team to do it all for you, check us out at NT Digital where we do this for a lot of brands.
+- When we look at what AI platform site the most, as I mentioned before, blogs dominate AI loves blogs.
+- But their AI traffic went up more and their total sales went up more as well, which is the most important thing.
+- Google's AI loves blog articles, mainstream news, product blogs, and even linked in articles.
+- This is a big chunk of the citation chair.
+- Blogging may not drive traffic that it used to, but it does drive revenue through these AI platforms and search is moving in this direction, whether you like it or not.
+- Understanding AI vis-villie is just step one.
+- And if you're not doing it, you're missing out on all this potential AI traffic.
+- But the real shift isn't just happening on your website.
+- So in this next video, I break down exactly how Google's AI update is you're writing both organic and paid search and what it means for your business.
+
+---
+
+## Video ID: uEVQ5whRS-o
+- We are talking about navigating the AI Surfshift and our state of AO and GEO in 2020, six or four.
+- So to learn, we really wanted to dig in at the start of this year and learn more about the evolving AI search landscape and really like the strategies, the priorities and the investment plans of today's top digital executives.
+- So we went out and we survey 250 executives into dual leaders on AO, GEO, SEO, and what they're doing.
+- Like how did AO, GEO, Impact Marketing in 2025?
+- There's not a ton of data coming from LLMs, like directly yet, which is where a lot of people are skeptical.
+- But the cool thing is that people are recognizing that this is important.
+- And I think it really is interesting to see that 2% said no impact, 1% said slight negative impact and that the vast majority think that this is a good thing, which I agree with by the way.
+- And I feel like I'm learning all over again.
+- But I thought this was great to see that folks are able to see the advantages of AEO, GEO, and despite traffic shifts, they're realizing that hey, there is this huge opportunity sitting in front of us in AI search.
+- And again, like the changing landscape, even though a lot of people are freaked out about it, there is opportunity in chaos, everybody.
+- And again, what this also tells me is that this is why I've been speaking to so many sea level executives this year.
+- So the top AI visibility challenges that people recorded were creating an AI search, optimized, creating AI search, optimized content scale.
+- And the next one is unable to monitor content is being crawled by LLMs and AI hots, which is interesting because you can do that.
+- But my take on this is creating AI search, optimized content at scale.
+- I think this is kind of the age-old SEO problem too, which is how do you create good content scale without it being just slop?
+- It's just people going to chat to PT, typing in of one line prompt and putting articles onto their site.
+- They're measuring, you know, they're measuring mentions and citations and AI bot crawler activity, which is interesting that this one came back.
+- That just means that there's a lack of education in the market right now, which is, which again, is an opportunity because conductor website monitoring does this, right?
+- What for folks that may not be as familiar with, kind of, LLMs and AI bot, like why is that important to me at being able to measure?
+- With AI bot, you want them constantly pinging your site.
+- Because you want to make sure that AI, that LLMs bots are going to your site and retrieving the data, because that means they are chunking them out and putting them back to the users in their responses.
+- So log file analysis, typically for technical SEOs that, you know, in the past, this is something where, you know, technologies are doing this and making this a lot easier for people where you can take very quick action on it.
+- And I know like for myself, maybe in the past, I wasn't as like a head of marketing going in and looking at our, our lot files and checking how the site was being crawled, but now with conductor web monitoring, I'm certainly going in and looking at high priority pages and seeing are the AI bots getting to those pages, how quickly are they getting to them?
+- Yeah, and like I said, I think it's exciting that people are going to be forced to learn new skills here or learn about things that they knew about, but they maybe just felt that they were not technical enough to like get it.
+- So let's talk about the reported top AEOGO content strategies, right?
+- Number one was AI content generation at scale to increase topical authority.
+- Number two, structured data and schema markup, not surprised to see this, talk of town, everybody's talking about how important schema markup is.
+- Now, taking these kind of one by one, AI content generation at scale, again, if you do it right, right, asterix here, if you do it right, you know, garbage in garbage out.
+- They have set up authorship, they have experts on their teams that understand, you know, that they can put out into the world, whose authorship is so important.
+- Yeah, I think one in three are really related because what we've found a conductor exactly that you said Pat, it's not about just creating kind of AI swap or like shallow articles or things that aren't, I don't have a lot of depth.
+- But even more of the foundational glossary style content that we like to publish, to public different topic wall authority, where those are now longer, they're more in depth, we're tapping experts like you Pat to like quote, and we're definitely like the SMEs internally, the subject matter experts internally, we're pulling more into the content process more consistently to have that unique POV rather than just kind of, because you need something now that differentiates you from AI swap.
+- Someone here just like asked a really good question, like ideally what metric should one measure, right?
+- And again, there's hard metrics, like mentioned citations, AI, bot, pro, or activity, and sentiment, that you can start out with.
+- This is not a traffic play, AI is a visibility play and an authority play.
+- SEO and AI and AI search are two different channels, right?
+- In AI search, you really have to understand your personas and the intent stages of each of those personas and where they intersect.
+- What your scheme is strategy should be and ultimately, if you're creating long form guides, where what convergence of persona and intent are you not hitting on?
+- That is how you'll have a really killer strategy.
+- And again, like the conductor team is not such a good job on that and that's that to our own horn.
+- Yeah, so then next in the report, we asked all about investment and resourcing an AEOGEO.
+- Like, how much should we be investing in this?
+- So first off, we talked about annual budget allocated to AEOGEO.
+- And so what you can see here is 12% was sort of the benchmark of overall marketing spend that was dedicated to AEOGEO.
+- But all the way up to like 15% of budgets were going to AEOGEO, which I thought was really encouraging.
+- I think traditionally SEO has been seen as this thing that was almost free.
+- I've been in SEO for a million years.
+- And you know, seeing that this percentage of budget is being allocated to this should make everybody in this industry excited.
+- And it should make everyone excited, because this is more money into teams like ours and more money that brands are investing into this space, which only means good things.
+- That means that our folks that are in these positions, your job just got way more important and got way more spotlight, which is really good.
+- But like, this is a good thing because it's something that we've kind of been waiting and fighting for for many, many years.
+- Like this is now a C-level priority, a-E-O-T-E-O, which SEO, O-E-S-S-S-T-R-S-T-E-S-T-E-T-A-T-A-B-L.
+- And he looked at me and said, talk to me like I'm a six year old.
+- And this is the type of doors that are being opened by this right now, which again, is extremely exciting for this industry.
+- Yeah, and I'm just looking at the chat here and I see Christy, hey, Christy, put a note in that this is the first time I've ever heard company that folks are investing in AI search at the group level.
+- So the next one, I think, not surprising, but also again, a good validation of what we're all feeling and hearing and seeing is how our AEOGO investments are changing in 2026 and 94% of folks said they are seeing an increase in investment makes it 10 a sense.
+- They're going to continue to increase or at least maintain that investment.
+- And then I think what, interestingly enough, folks that maybe we're a little slow to get started with AEOGEO or SEO as a whole, or now saying, okay, we have to put some money into this channel.
+- You know, like, people like first movers, they're seeing the ROI and people who are taking the wait and see approach are now starting to ramp up.
+- That just shows you how important this is to everybody and also how important it is to kind of like the future of visibility, right?
+- Because, you know, AI, you know, by in the next 18 months, probably 90 plus percent of all searches will be on an AI surface or at least influence by an AI surface.
+- But again, there's opportunity in chaos.
+- And its folks are not only upskilling their teams, which you can see 64% of respondents said they're doing.
+- But 29% of folks and most of the third of companies are saying, hey, we're actually going to bring in some new folks to help resource our AEO team.
+- Because they realize how important it is to not only have technology, but also need folks behind the keyboards managing these programs.
+- And then what's happening is you're going to probably see that 64% shrink and that 29% hiring new AEO specific roles increase next year.
+- And you're going to start to see AEO hires specifically start to pop up.
+- And again, there'll be others that will leverage consultants, outsource to an agency, absolutely nothing wrong with that.
+- What are the features and pain points of AEO to technologies that are folks are looking for?
+- And this one makes, and again, technologies are evolving.
+- But number one is AI search visibility, brand mentions domain citation tracking, et cetera.
+- We want to look across multiple engines.
+- Number three, intelligent content optimization recommendations.
+- They want to technology to say, hey, here's where you're where's the gap, and here's what you should do.
+- From our other AEOGEO report on average, LM sent about 1% of traffic.
+- Because, again, LLMs referral traffic, not really a traffic play.
+- What they should be looking at is also sentiment, right?
+- To me, you should track because, again, tracking AI correctly is not cheap.
+- And you really don't need to look across every single LLM, right?
+- You should do it by market share right now.
+- And then I would probably track AI mode or I would track like perplexity because perplexity is the only LLM that was actually built as a search engine.
+- But a lot of people want to look, well, I want to see every single LLM.
+- But ultimately, remember that you don't have an optimization strategy for Google Bing and Duck Duck Go.
+- You have an optimization strategy for Google.
+- And I get the recommendations one, right?
+- I'm happy you touched out on what engines to track, what content to create, and how you should think about your strategy.
+- It's really, again, I think comes back to having a really good content strategy, round creating high value, a thwartade of content with a lot of depth, authorship, all the things that we talked about earlier, and that will work across engines.
+- Yeah, and there's one really important question that was asked from the chat right here, which is, how do we know what metrics and recommendations from AETO, GEDU tools are accurate?
+- Everybody, the most important thing you take anything away from this webinar today, is that when you are, when you are vetting technologies, make sure you understand where their data comes from.
+- But if you're looking at someone, a technology, make sure that if they are showing chat should be T, which I would imagine they would be, make sure that they are actually connected to their API and getting that data across all of the different agents that are using OpenAI's API, not just chat should be T, right?
+- You also have a lot of companies that are buying panel data, which is super sketchy, and that is completely inaccurate, collecting prompts that way.
+- So again, if you want the most accurate GETE technology that collects it in the most high fidelity way.
+- And there's just, there's been, I'm looking at the chat here, and I know we won't get all questions or almost that time, but like, a lot of questions on LLM.txt, what's your take on that?
+- LLMs.txt largely is the same thing.
+- It basically lays out for LLMs.
+- What part of your site is important and what are they about?
+- And you can put a lot of information in there, and it just helps LLMs get more raw data quicker about your site, which in theory would increase your visibility, you know, in LLMs.
+- There's plugins in many of the major CMSs, but again, not an adopted protocol.
+- So, next one, top technology, pain points, data quality, trustworthyness.
+- So we answered that one, so I won't go down that rabbit hole again.
+- Silocapabilities need for many tools, people want in all in one solution.
+- They want to bounce around between three or four tools.
+- Limited ROI, clarity, a performance measurement, totally understand that, depending, and again, it depends which technology use, some are better than that, some are great at it, some are not so great at it.
+- And then limited coverage or depth of monitoring, again, can't get across the entire site, or, you know, it doesn't really collect enough, or lack of customization brand voice alignment which generated content meaning, you can hit a button, but you can't actually put anything into customizes.
+- So, these listen, all of these pain points exist across many different platforms.
+- Again, for us, you know, number one, number two, number four, number five, or not issues for conductor.
+- And I've seen a lot of chatter in the chat around what metrics folks should be looking at.
+- And 32% of CMOs will sit AEOGEO as number one.
+- Folks are spending less time on your website and more time in these LLMs, going research and understanding your brand and your products.
+- And which, so it makes sense that AEOGEO is number one.
+- And again, just echoing what you're saying, it's really cool to see this at the top, right?
+- Again, I've said it a million times this webinar, very exciting for the industry.
+- And then I think top AEOGEO goals for the year.
+- I mean, folks really want to start winning AI search visibility.
+- That sort of gets us to this last slide, which I think is what, again, I've been seeing the chat, a lot of conversation around what metrics to prioritize.
+- Well, one, they're looking at conversions and leads from AEOGEO.
+- They're looking at AEO search market share.
+- So how are you doing for the prompts you care about and the topics that you care about?
+- And then it AI referral traffic, at least what we're seeing.
+- Certainly has a higher conversion rate.
+- So this is sort of a really good view of a metrics pack that you can walk into the board with to show how you're doing across as several different vectors in AI search.
+- I think sentiment is going to become even more important as time goes on because it's, you know, like sentiment has not been easy to measure, unless you buy, like obviously like the listening tool, which a lot of people don't have access to.
+- But then some hard metrics, like how, again, you can see a lot of it is related to brand, right?
+- And not that those things aren't important, especially those of us that have a lot of traffic that are still coming from SEO, traditional organic listings and rankings.
+- But we certainly need this new metric pack.
+- Like I know for me in my board decks, I'm now putting workspaces right from conductor of mentioned citations, market share, right in a board, meeting, which is not something we would have done a year ago because AI search just wasn't there.
+- So it's super important.
+- If you want to just have any questions answered, I always happy to jump on the phone thing when to answer an email.
+- But again, on behalf of Lindsay and myself, thank you all so much for spending 30 minutes of your valuable time with me.
+- No, all the, this data is all well-bought on our website.
+- The link should be in the chat, so you can all go downloaded if you want the slides.
+- It's all there and available.
+
+---
+
+## Video ID: ubRZvROwxiU
+- Essentially, it's getting mentioned in AI platforms or large language models.
+- And before we delve deeper into the fundamentals of GEO, it'd be important to understand how large language models work in general.
+- So the model has been fed, you know, your books, your articles, your websites, journals, et cetera, et cetera.
+- And that allows it to deal with de-duplication at this stage and deal with bias before it enters into the model training element.
+- And the model training here is where it starts to spot the patterns.
+- So if you think of the call it a newer network for lack of better term, it's digital brain.
+- And then the next step above that then is if you're looking at a question, it's predicting the probability of what that answer is going to be for that answer.
+- Our question should I say.
+- So it's a blend of its previously fed trained model in a unison with this real time web content.
+- So retrieves the real time information and it augmented pre-trained data as a result.
+- So the best way to do with this, it is still a little bit of a blind spot seeing what questions are being asked directly into the AI model spot.
+- And with those tools, you can get a bit of a context.
+- You can also prompt your GPT, cloud, or perplexity directly.
+- I would recommend that you'd use a mix of these platforms and ask the common questions.
+- So a really good prompt to be, what are the most common questions people ask you when?
+- And it's really important that you turn off personalization when you're doing this because you want to be seeing the generic answers that people are seeing.
+- They've done the groundwork up here, and they know how to charge for it.
+- And that's where you can start which are your structured content strategy.
+- The LLM's work pretty much the same way.
+- In terms of structuring the content directly, if you're taking your website as an example, use natural language question and answer formatting.
+- So the content that you're writing on websites needs to become slightly more conversational.
+- So taking a recipe, as an example, on your website, you should have the ability to label the page as such.
+- AI read doesn't read from top to bottom like humans do.
+- So what you're doing is you're optimizing for AI summary readiness.
+- And here then functionally on the other side, linking to other internal pages in the website that are contextly relevant.
+- So if you've any similar topics that you're discussing on your website, internally linking to those other pages, is a really, really good tactic.
+- So this is a term that's been coined as the bedrock of GEO.
+- And essentially what we're doing here is we're planting terms, concepts, facts across multiple channels.
+- So essentially what you're aiming to do here is you want to resurface the default and how the machine can see in the script of the world.
+- So what you really need to cover here is you need to publish an AI callable channels which I'll go through in a couple of seconds as discussed user AI friendly formatting, clarity over call to action.
+- So with your website, we start with your site map.
+- Key word placement is still really important.
+- So SEO is not that it is very much alive.
+- It is become much more important to become a component of this activity.
+- And it's important to consider your metadata placement here as well.
+- Making sure that your website is fast and clean, high contrast and accessibility friendly.
+- So that's your internal linking to other pages, but also backlinks, very important.
+- And the reason being is that it's been noted that Chatchipity has been lifting less and citing less of its content because there's been an increase in AI about activity.
+- So it's important to note that you should never use a large language model to create content and feed it back into the market because what they're looking for here really is a regionality.
+- So it's important to have a PR strategy.
+- So I'm going to look at geo and reputation.
+- What I would say to you is reputation is now more important than ever.
+- And AI cares about your reputation.
+- As Stephen was saying, SEO does still matter, but all we thought about before was where do I come up on Google?
+- We didn't think about what answers will I get on a PROMPT.
+- What answers are you getting when you prompt the LLMs?
+- So geo is reputation in action.
+- It doesn't care about paid for.
+- So reputation is reflected back in those answers you get from AI.
+- Basically, 95% comes from non-paid sources.
+- So journalists trade, analysts, all really important.
+- So building on what Stephen was saying, we all think that AI or Chatchee PT in particular is data.
+- And I'll get to why some of your content can, on your PROMPT can create hallucinations as well.
+- That's really, really important now.
+- One big campaign is not going to win the race on AI.
+- You have to be consistent and pull leadership is more important than ever over press releases.
+- But it won't get you that consistent with the tarishi you need for AI to use you an answers.
+- So that's really, really important.
+- But what I think is interesting and why I think AI likes it so much is how it's laid out.
+- So it's laid out in a way that's very scalable for AI.
+- We should be for the very purposes of geo.
+- So it is really important to have your own content right on your social channels.
+- And it's probably the first conversation I had with Steven when he said, well, we're now talking to robots and humans.
+- So traditionally, you'd have your big campaign, you'd have a big firework on something, one and done.
+- Because if it's not, if it's fragmented, your AI is fragmented, you're not an authority.
+- So narrative discipline is more important than ever.
+- I know I've had many experiences with companies where you go in, they've done a rebrands, and you go and look at some directory and they're still named the old company, or the old directors, or the old website.
+- It's really important to doesn't.
+- So Wikipedia, you definitely should have it as brand authority, especially if you've got a situation where you're a brand that could be confused with another brand, that maybe isn't all that positive, Wikipedia is incredibly strong, because it ranks so well from an SEO and a GEO point of view.
+- So that's really, really important.
+- Really important reviews, GEO, like SEO, loves the review, reviews can be our torment.
+- I know, but they are extremely important now going forward.
+- So when we're doing a room PR pushing out to journalists, analysts, trades, they're going to go and look at the website.
+- So you need to make sure the content you have on your website is really strong.
+- So if you're trying to push someone as a total leader, having an expert page on your website with backlinks to earn media, they've had coverage and can be incredibly strong.
+- And I know Stephen has touched on this, but just to go through us very briefly, accuracy, obviously clear authorship, bylines, make sure you buy a line, everything.
+- Because then the LLM will see you as the authority.
+- I maintain a logical flow.
+- So think about how you get your information back again.
+- That is what AI likes.
+- Engagement has even said FAQs, Facts, sheets, all really important.
+- So for example, if you've got earned content on a certain piece of data, there may be more data to support it.
+- It's the same as SEO.
+- But again, really, really important.
+- More than ever, the big hit campaigns, the one and done, it won't give you the reward you want.
+- I suppose taking the first steps, and I know Stephen mentioned those astronomically expensive platforms.
+- That is more affordable at the moment, besides a good old Excel spreadsheet with your list of prompts on the responses you get.
+- Like, I have to go back over first, Lee, transcriber, and then ask AI to create a list of things that I need to do to actually get myself sorted and hold them to my mouth as well.
+- Like, I spend all day long either producing videos for companies or teaching people how to make videos.
+- The company was downloaders, uploaded to their channels, I'd never hear anything about it ever again.
+- So awareness starts on social, but a authority is built on your own website.
+- I built my own website on wicks about five years ago, and nothing has happened to it until I started creating the slides where this, right?
+- And I was like, I don't like SEO.
+- But then when I started looking into geo, I was like, oh, I'm kind of like, I want chat to be teed to list my business.
+- And every day I'm like, a video training in Ireland, I'm at a table, give it a list.
+- And I'm drawing to understand it's background, but it does go back to SEO.
+- So now I'm like, okay, get involved a bit with SEO, but also I think the thing I didn't like about SEO was the sponsored ads all was came first.
+- But outside of that, like as my mom would say, if everyone else is doing as maybe you should be doing something else.
+- So you'll notice when you open up LinkedIn showing you a vertical video straight away, then YouTube, as Seize was saying, huge search engine, evergreen discovery.
+- And again, I'm obsessed with the analytics.
+- And then once it's embedded on YouTube, then you can embed it into your website more easily.
+- As opposed to just hidden behind Instagram, which nobody's going on to Instagram searching for video training Ireland.
+- And if they do, there's nothing about video training in Ireland coming up.
+- I'm gonna put it up on YouTube now and instead of calling it video training at the Glenn Community Garden, video training in Ireland.
+- And then I'm going to go onto my website.
+- at the ongoing Google, I'm like video training cork.
+- I went on and I was like, and sorry, I don't know why the AI overview didn't come off the first time I did this on Friday.
+- Well, you need to be expanding your content across multiple channels or multiple sources.
+- So, again, I'm going to ask you how to do that.
+- For sure, like, again, it's now more achievable than it was in the past, but it's more lift.
+- So video training in Quark Island, these become the keywords, but make sure to frame G, O mentions as natural storytelling details.
+- So, you know, I don't know, sometimes when people are scripting their videos, they're taking the content from their website and seeing it like, we specialize in the most valuable ways of like you've never say that if you were talking to your friend, like, you'd say, I'm really going to make videos.
+- So you should, you know, have a chat with me about how to plan film in edit.
+- And then, instead of like, we run training sessions, two vague, no information, no way of matters.
+- We ran a video training workshop in Quark with Springboard Communications, where participants learn type to plan, film, and edit videos.
+- Fields human, fields conversational, but also drops in location and a partner that AI can understand.
+- Humans and AI need to be able to scan it.
+- Instead, how video training can boost visibility in 2025?
+- In this video, Judy Russell from the video column shows how video training workshops with Irish businesses, what run and blah, blah, blah.
+- You have to go on extra step to get the embed code and the transcript out of them.
+- It's just a little bit of a brain melt when you're first doing it, and you're like, why is this so hard to do?
+- And then you have a geofreadily summary.
+- You guys both said this can AI find you.
+- Like, what are you putting into AI?
+- What are you asking AI to try and get found?
+- And that is it for the multiple.
+
+---
+
+## Video ID: xlo1Dyab04w
+- Traditional SEO is evolving into Answer Engine Optimization, or AEO.
+- Today, nearly half of users rely on AI tools like ChatGPT, Gemini, or Perplexity to find answers.
+- These platforms summarize information instantly before people even click on websites.
+- In this AI-driven search era, content must be structured and machine-readable.
+- For medical tourism, AEO helps patients quickly find trusted clinics by showing clear procedure definitions, transparent pricing, verified doctor credentials, and real patient outcome data.
+- To adapt, clinics must create AI-friendly content.
+- This includes structured FAQs, verified treatment results, and standardized medical data that AI systems can easily interpret With this approach healthcare providers become more visible and credible across AI search engines As AI search continues to grow, AEO is becoming essential for global healthcare discovery.
+- With PlacidWay, clinics can connect to the future of AI-powered medical tourism visibility.
+- Through advanced AEO strategies, structured data, and AI-friendly content, providers can reach global patients searching for trusted care.
+
+---
+
+## Video ID: yJ8EiFeFPe8
+- And in today's video, I'm going to be showing you how you can do AI answer engine optimization right now in 2026.
+- And if you're not answered by AI, then you're missing out and you're going to be missing out as a lot of businesses now get mentioned by AI answers in Google search overviews, perplexity, cloud, chat, GPT, and all the big LLMs are now officially giving businesses as a recommendation.
+- So in this video, I'm going to be showing you how you be one of those companies that shows up in AI Answers and how you can do that very easily using our tool.
+- So essentially a lot of the things have changed even so pretty quickly over the course of two years where now AI search is a huge part of promotion.
+- You can see that the major LLMs have shifted towards this and that SEO is becoming less and less important and it is more going towards which stands for answer engine optimization right.
+- So you can see here this is trained on different data than traditional SEO would because right now it's going to use forums, Quora, genuine recommendations and stuff like that rather than traditional pages and optimization that we used to do like links or user clicks or just traffic metrics in general that would make your page appear as number one because now page appearance is less important because it's rather recommendations and true user data that will then put you out there.
+- So if you can see, for example, if I am a yoga app or I looking for the best yoga app if I type that in the number one result is actually Google AI Overview So if you click on show more you can see all these companies are now being recommended by the AI Overview And if your company essentially is not there then you missing out on a lot of search trapping and potential leads for download subscriptions, stuff like that.
+- So going down further, we want to understand why and how AI answers, right?
+- And that's essentially what's really powerful by using our app, CrowdReply, is that we let you get your business in these Reddit threads that are often used by AI to determine if you're a good recommendation.
+- So let's say I use our tool, which is very easy.
+- You can literally use any keyword and find Reddit threads that are important for these AI answers.
+- AI is going to see hey Timo yoga is going to be recommended a lot and using our tool has a lot of upvotes.
+
+---
+
