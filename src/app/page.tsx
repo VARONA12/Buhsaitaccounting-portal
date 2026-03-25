@@ -198,7 +198,7 @@ export default function LandingPage() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
             <div className="lg:col-span-12 space-y-8">
               <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-extrabold tracking-tighter leading-[1.05] text-white uppercase max-w-5xl">
-                ОТВЕЧАЕМ ЗА <br /> ШТРАФЫ <span className="text-white contrast-125">СВОИМИ ДЕНЬГАМИ</span>
+                ВАШ БУХГАЛТЕР <br /> НА АУТСОРСЕ <br /> ДЛЯ ИП ООО И САМОЗАНЯТЫХ
               </h1>
 
               <p className="text-lg md:text-xl text-white font-medium leading-relaxed max-w-3xl">
