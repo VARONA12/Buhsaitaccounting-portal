@@ -4,9 +4,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
-import { ExpertVerification } from "@/components/ExpertVerification";
 import { Logo } from "@/components/Logo";
-import { ContactButton } from "@/components/ContactButton";
 import { ChevronRight, Calendar, User, Clock, ArrowLeft, ArrowRight, BookOpen, Zap } from "lucide-react";
 import { VideoTranscript } from "@/components/VideoTranscript";
 
@@ -87,11 +85,6 @@ export default async function ArticlePage({ params }: Props) {
   });
   const expertName =
     article.author === "Администратор" ? "Эксперт ЭлитФинанс" : article.author;
-  const expertDate = new Date(article.updatedAt).toLocaleDateString("ru-RU", {
-    day: "numeric",
-    month: "long",
-    year: "numeric",
-  });
 
   return (
     <div className="min-h-screen bg-neutral-900 text-white font-sans selection:bg-primary-dark/80 selection:text-white">
@@ -188,26 +181,6 @@ export default async function ArticlePage({ params }: Props) {
               </ReactMarkdown>
             </div>
           </article>
-
-          {/* Expert Verification */}
-          <ExpertVerification expertName={expertName} date={expertDate} />
-
-          {/* CTA - Fixed high contrast */}
-          <div className="mt-24 p-12 md:p-20 rounded-[80px] bg-primary text-white relative overflow-hidden group shadow-[0_0_80px_rgba(255,179,0,0.15)]">
-            <div className="absolute top-[-50%] right-[-10%] w-[800px] h-[800px] bg-white/20 rounded-full blur-[100px]" />
-            <div className="relative z-10 flex flex-col md:flex-row md:items-center justify-between gap-12">
-              <div className="space-y-4">
-                <p className="text-[11px] font-bold uppercase tracking-[0.5em] text-white/50">Нужна консультация?</p>
-                <h3 className="text-3xl md:text-5xl font-black tracking-tightest text-white uppercase leading-[0.9]">
-                  ПРИМЕНИМ ЭТО <br /> НА ПРАКТИКЕ.
-                </h3>
-                <p className="text-white/60 text-lg md:text-xl max-w-md font-medium leading-relaxed ">
-                  Эксперты ЭлитФинанс разберут вашу ситуацию и предложат оптимальное решение прямо сейчас.
-                </p>
-              </div>
-              <ContactButton label="ОСТАВИТЬ ЗАЯВКУ" />
-            </div>
-          </div>
 
           {/* Related Articles */}
           {related.length > 0 && (

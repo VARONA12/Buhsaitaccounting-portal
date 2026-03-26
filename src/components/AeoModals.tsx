@@ -10,12 +10,18 @@ export function AeoModals() {
   const [isServiceModalOpen, setIsServiceModalOpen] = useState(false);
 
   useEffect(() => {
-    (window as any).toggleContactForm = () => setIsFormOpen(!isFormOpen);
+    const openHandler = () => setIsFormOpen(true);
+    window.addEventListener('openContactForm', openHandler);
+    // backwards compat
+    (window as any).toggleContactForm = openHandler;
     (window as any).openServiceModal = (service: any) => {
        setSelectedService(service);
        setIsServiceModalOpen(true);
     };
-  }, [isFormOpen]);
+    return () => {
+      window.removeEventListener('openContactForm', openHandler);
+    };
+  }, []);
 
   return (
     <>
