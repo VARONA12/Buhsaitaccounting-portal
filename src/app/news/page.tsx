@@ -3,7 +3,6 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import { Logo } from "@/components/Logo";
 import { AeoNav } from "@/components/AeoNav";
-import { AeoModals } from "@/components/AeoModals";
 import { Footer } from "@/components/Footer";
 import { ALL_NEWS } from "@/lib/news-data";
 import { db } from "@/lib/db";
@@ -130,7 +129,6 @@ export default async function NewsPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(newsJsonLd) }}
       />
       <AeoNav />
-      <AeoModals />
 
       <main className="pt-28 pb-32 px-6 md:pt-40">
         <div className="max-w-7xl mx-auto">

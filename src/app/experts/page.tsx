@@ -8,7 +8,6 @@ import { EXPERTS } from "@/lib/experts-data";
 import { Footer } from "@/components/Footer";
 import { Logo } from "@/components/Logo";
 import { AeoNav } from "@/components/AeoNav";
-import { AeoModals } from "@/components/AeoModals";
 
 export const metadata: Metadata = {
   title: "Эксперты по налогам и бухгалтерии — команда ЭлитФинанс",
@@ -68,7 +67,6 @@ export default function ExpertsPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(expertsJsonLd) }}
       />
       <AeoNav />
-      <AeoModals />
 
       <main className="pt-32 pb-40 px-6 md:pt-48">
         <div className="max-w-7xl mx-auto">

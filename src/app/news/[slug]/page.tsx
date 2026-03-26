@@ -8,7 +8,6 @@ import { db } from "@/lib/db";
 import { ExpertVerification } from "@/components/ExpertVerification";
 import { Logo } from "@/components/Logo";
 import { AeoNav } from "@/components/AeoNav";
-import { AeoModals } from "@/components/AeoModals";
 import { ContactButton } from "@/components/ContactButton";
 import {
   ChevronRight,
@@ -219,7 +218,6 @@ function NewsLayout({
   return (
     <div className="min-h-screen bg-neutral-900 text-white font-sans selection:bg-primary-dark/80 selection:text-white">
       <AeoNav />
-      <AeoModals />
 
       <main className="pt-28 pb-40 px-6 md:pt-40">
         <div className="max-w-4xl mx-auto">

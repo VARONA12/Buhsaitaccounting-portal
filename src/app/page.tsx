@@ -27,7 +27,6 @@ import {
 } from "lucide-react";
 import { Logo } from "@/components/Logo";
 import { AeoNav } from "@/components/AeoNav";
-import { AeoModals } from "@/components/AeoModals";
 import { ContactButton } from "@/components/ContactButton";
 import { EXPERTS } from "@/lib/experts-data";
 
@@ -187,7 +186,6 @@ export default function LandingPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(homeJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
       <AeoNav />
-      <AeoModals />
 
       {/* Hero Section - Reverted to Dark Premium */}
       <section className="relative pt-24 pb-20 md:pt-40 md:pb-32 overflow-hidden">
