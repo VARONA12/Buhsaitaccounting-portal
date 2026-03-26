@@ -106,7 +106,7 @@ export default function ServicesPage() {
               БУХГАЛТЕРСКИЙ <br /> АУТСОРСИНГ <span className="text-white">БИЗНЕСА</span>
             </h1>
             <p className="text-xl md:text-2xl text-white font-medium max-w-2xl leading-relaxed">
-              Операционный учет, налоговое планирование и юридическая защита с гарантией.
+              Операционный учет, налоговое планирование и юридическая защита с гарантией
             </p>
           </header>
 
