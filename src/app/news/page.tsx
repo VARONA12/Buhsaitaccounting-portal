@@ -165,12 +165,14 @@ export default async function NewsPage() {
                       {news.date}
                     </div>
                   </div>
-                  <h3 className="text-2xl font-black text-white mb-6 group-hover:text-white transition-colors leading-tight uppercase tracking-tight">
+                  <h3 className="text-lg font-black text-white mb-6 group-hover:text-white transition-colors leading-tight uppercase tracking-tight line-clamp-3">
                     {news.title}
                   </h3>
-                  <p className="text-sm md:text-base text-white line-clamp-4 leading-relaxed mb-10 flex-1 font-medium">
-                    {news.desc}
-                  </p>
+                  {news.desc !== news.title && (
+                    <p className="text-sm text-white/70 line-clamp-3 leading-relaxed mb-10 flex-1 font-medium">
+                      {news.desc}
+                    </p>
+                  )}
                 </div>
                 <div className="flex items-center gap-3 text-[9px] font-bold uppercase tracking-[0.4em] text-white group-hover:gap-6 transition-all pt-8 border-t border-white/12">
                   ПОДРОБНЕЕ <ChevronRight size={16} />
