@@ -344,7 +344,7 @@ export default function LandingPage() {
                   </p>
                </div>
                
-               <div className="grid grid-cols-2 lg:grid-cols-4 gap-12 md:gap-20">
+               <div className="grid grid-cols-2 lg:grid-cols-4 gap-12 md:gap-20 mt-16">
                   {[
                      { val: "15 ЛЕТ", label: "ЭКСПЕРТИЗЫ" },
                      { val: "450М+", label: "ОБОРОТ КЛИЕНТОВ" },
