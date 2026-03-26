@@ -158,7 +158,7 @@ export default async function NewsPage() {
                   <div className="flex items-center gap-6 text-[9px] font-bold text-white uppercase tracking-[0.3em] mb-10">
                     <div className="flex items-center gap-2 text-white">
                       <Zap size={14} />
-                      Inside Analysis
+                      Экспертный разбор
                     </div>
                     <div className="flex items-center gap-2 pt-0.5">
                       <Clock size={14} className="text-white" />
