@@ -3,6 +3,7 @@ export const revalidate = 300;
 import Link from "next/link";
 import { SERVICES } from "@/lib/services-data";
 import { Logo } from "@/components/Logo";
+import { ContactButton } from "@/components/ContactButton";
 import { ArrowRight, Banknote, CheckCircle2, ShieldCheck, Zap } from "lucide-react";
 
 export default function ServicesPage() {
@@ -164,12 +165,7 @@ export default function ServicesPage() {
                 </p>
               </div>
             </div>
-            <Link
-              href="/#contact"
-              className="shrink-0 px-10 py-5 bg-neutral-900 text-white font-black uppercase text-[10px] tracking-[0.4em] rounded-2xl hover:bg-white hover:text-white transition-all shadow-2xl flex items-center justify-center gap-3 relative z-10"
-            >
-              Консультация <ArrowRight size={16} />
-            </Link>
+            <ContactButton label="Консультация" className="shrink-0 px-10 py-5 bg-neutral-900 text-white font-black uppercase text-[10px] tracking-[0.4em] rounded-2xl hover:bg-white hover:text-neutral-900 transition-all shadow-2xl flex items-center justify-center gap-3 relative z-10" />
           </div>
         </div>
       </main>

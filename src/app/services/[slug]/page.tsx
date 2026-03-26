@@ -244,16 +244,6 @@ export default async function ServiceDetailPage({ params }: Props) {
                 </ul>
               </div>
 
-              <div className="p-8 rounded-[40px] border border-primary/40 bg-primary/5 shadow-sm space-y-4">
-                <div className="flex items-center gap-3">
-                  <ShieldCheck size={18} className="text-white" />
-                  <span className="text-[10px] font-bold uppercase tracking-widest text-white">Гарантия</span>
-                </div>
-                <p className="text-sm text-white leading-relaxed font-medium">
-                  100% Ответственность за ошибки. Если возник штраф по нашей вине — компенсируем его полностью.
-                </p>
-              </div>
-
               <div className="p-8 rounded-[40px] border border-white/12 bg-neutral-900 space-y-6 shadow-2xl">
                 <p className="text-[11px] font-black uppercase tracking-[0.3em] text-white">
                   НАЧАТЬ РАБОТУ 2026
