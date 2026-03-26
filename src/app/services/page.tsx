@@ -161,7 +161,7 @@ export default function ServicesPage() {
               <div className="space-y-3">
                 <h2 className="text-2xl md:text-4xl font-black uppercase tracking-tight leading-none">100% Финансовая <br /> ответственность</h2>
                 <p className="text-sm md:text-lg text-white/60 max-w-xl leading-relaxed font-medium ">
-                  Если штраф или доначисление возникли по нашей вине — компенсируем в полном объёме. Прописано в договоре.
+                  Если штраф или доначисление возникли по нашей вине — компенсируем в полном объёме, прописано в договоре
                 </p>
               </div>
             </div>

@@ -185,7 +185,7 @@ export default async function NewsPage() {
           <div className="mt-32 p-12 rounded-[56px] border border-white/12 bg-neutral-900 text-center shadow-sm">
             <div className="max-w-xl mx-auto space-y-4">
                <p className="text-white text-[10px] font-bold leading-relaxed uppercase tracking-[0.5em]">
-                 Все новости модерируются экспертами ЭлитФинанс. Мы отбираем только критические изменения для бизнеса наших клиентов.
+                 Все новости модерируются экспертами ЭлитФинанс — мы отбираем только критические изменения для бизнеса наших клиентов
                </p>
             </div>
           </div>

@@ -232,7 +232,7 @@ export default async function FaqDetailPage({ params }: Props) {
               <div className="space-y-4">
                 <p className="text-[11px] font-bold uppercase tracking-[0.5em] text-white">ОСТАЛСЯ ВОПРОС?</p>
                 <h3 className="text-3xl md:text-5xl font-black tracking-tightest text-white uppercase leading-none">РАЗБЕРЁМ ВАШУ <br /> СИТУАЦИЮ</h3>
-                <p className="text-white text-lg md:text-xl max-w-md font-medium leading-relaxed ">Задайте вопрос напрямую эксперту — первичная консультация бесплатна и ни к чему вас не обязывает.</p>
+                <p className="text-white text-lg md:text-xl max-w-md font-medium leading-relaxed ">Задайте вопрос напрямую эксперту — первичная консультация бесплатна и ни к чему вас не обязывает</p>
               </div>
               <ContactButton label="ЗАДАТЬ ВОПРОС" />
             </div>

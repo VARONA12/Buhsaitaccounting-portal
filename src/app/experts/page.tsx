@@ -137,7 +137,7 @@ export default function ExpertsPage() {
                         <ShieldCheck size={24} className="text-white" />
                       </div>
                       <h4 className="font-black text-white uppercase text-sm tracking-widest">Коллективная гарантия</h4>
-                      <p className="text-sm text-white/70 leading-relaxed font-medium">Вся документация проходит тройную проверку профильными экспертами ЭлитФинанс.</p>
+                      <p className="text-sm text-white/70 leading-relaxed font-medium">Вся документация проходит тройную проверку профильными экспертами ЭлитФинанс</p>
                    </div>
                    <div className="space-y-4">
                       <div className="w-12 h-12 rounded-2xl bg-primary/10 flex items-center justify-center">

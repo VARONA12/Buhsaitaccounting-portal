@@ -170,7 +170,7 @@ export default async function ServiceDetailPage({ params }: Props) {
               <div className="space-y-3">
                 <span className="text-[10px] font-bold uppercase tracking-widest text-white/60">Стоимость 2026</span>
                 <div className="text-3xl font-black text-white leading-none">{service.price}</div>
-                <p className="text-[11px] text-white leading-tight font-medium">Фиксированная цена по договору без скрытых платежей.</p>
+                <p className="text-[11px] text-white leading-tight font-medium">Фиксированная цена по договору без скрытых платежей</p>
               </div>
               <div className="space-y-3">
                 <span className="text-[10px] font-bold uppercase tracking-widest text-white/60">Ключевые опции</span>

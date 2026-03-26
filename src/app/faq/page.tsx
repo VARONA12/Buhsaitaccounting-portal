@@ -181,7 +181,7 @@ export default function FaqIndexPage() {
             <div className="space-y-12">
               <div className="text-center py-24 border border-dashed border-white/20 rounded-[56px] bg-white/[0.03]">
                 <p className="text-white uppercase font-black tracking-[0.5em] text-[10px] mb-4">По вашему запросу ничего не найдено</p>
-                <p className="text-white text-sm mb-10">Попробуйте изменить запрос или ознакомьтесь с популярными вопросами ниже.</p>
+                <p className="text-white text-sm mb-10">Попробуйте изменить запрос или ознакомьтесь с популярными вопросами ниже</p>
                 <button 
                   onClick={() => setQuery("")} 
                   className="px-8 py-3 bg-white/5 border border-white/10 text-white text-[10px] font-bold uppercase tracking-[0.3em] rounded-xl hover:bg-primary hover:text-white transition-all"
@@ -210,9 +210,9 @@ export default function FaqIndexPage() {
           <div className="mt-40 p-12 md:p-20 rounded-[80px] bg-neutral-900 border border-white/12 relative overflow-hidden group hover:bg-white/[0.05] transition-all">
             <div className="relative z-10 flex flex-col lg:flex-row lg:items-center justify-between gap-12">
               <div className="space-y-4">
-                <p className="text-[11px] font-bold uppercase tracking-[0.5em] text-white">DO YOU HAVE QUESTIONS?</p>
+                <p className="text-[11px] font-bold uppercase tracking-[0.5em] text-white">ЕСТЬ ВОПРОСЫ?</p>
                 <h2 className="text-3xl md:text-5xl font-black tracking-tightest text-white uppercase leading-none">Спросите эксперта <br /> напрямую</h2>
-                <p className="text-white text-lg md:text-xl max-w-md font-medium leading-relaxed ">Бесплатный разбор вашей ситуации при первом обращении.</p>
+                <p className="text-white text-lg md:text-xl max-w-md font-medium leading-relaxed ">Бесплатный разбор вашей ситуации при первом обращении</p>
               </div>
               <Link href="/#contact" className="shrink-0 px-10 py-5 bg-primary text-white font-black uppercase text-[10px] tracking-[0.3em] rounded-2xl hover:bg-white transition-all shadow-2xl flex items-center justify-center gap-3 group">
                 Задать вопрос <ArrowRight size={16} />

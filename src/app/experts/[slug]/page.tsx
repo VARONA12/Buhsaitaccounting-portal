@@ -130,12 +130,12 @@ export default async function ExpertDetailPage({ params }: PageProps) {
                   <div className="p-10 rounded-[48px] border border-white/12 bg-neutral-900 space-y-4 shadow-xl group hover:border-primary/40 transition-all">
                      <ShieldCheck className="text-white" size={32} />
                      <h4 className="font-black text-white uppercase text-sm tracking-widest">Гарантия точности</h4>
-                     <p className="text-xs text-white leading-relaxed font-medium">Личная ответственность специалиста подкрепляется системой качества ЭлитФинанс.</p>
+                     <p className="text-xs text-white leading-relaxed font-medium">Личная ответственность специалиста подкрепляется системой качества ЭлитФинанс</p>
                   </div>
                   <div className="p-10 rounded-[48px] border border-white/12 bg-neutral-900 space-y-4 shadow-xl group hover:border-primary/40 transition-all">
                      <Banknote className="text-white" size={32} />
                      <h4 className="font-black text-white uppercase text-sm tracking-widest">Оптимизация налогов</h4>
-                     <p className="text-xs text-white leading-relaxed font-medium">Использование только легальных методов снижения налоговой нагрузки для вашего масштабирования.</p>
+                     <p className="text-xs text-white leading-relaxed font-medium">Использование только легальных методов снижения налоговой нагрузки для вашего масштабирования</p>
                   </div>
                </div>
             </div>

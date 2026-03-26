@@ -13,6 +13,7 @@ import json
 import time
 import logging
 import psycopg2
+import psycopg2.extras
 import requests
 from datetime import datetime, timedelta, timezone, time as dtime
 from pathlib import Path
@@ -81,7 +82,7 @@ def ask_deepseek(prompt: str, max_tokens: int = 4000) -> str:
                 headers={"Authorization": f"Bearer {DEEPSEEK_KEY}", "Content-Type": "application/json"},
                 json={"model": "deepseek-chat", "messages": [{"role": "user", "content": prompt}],
                       "max_tokens": max_tokens, "temperature": 0.7},
-                timeout=120,
+                timeout=300,
             )
             resp.raise_for_status()
             return resp.json()["choices"][0]["message"]["content"]
@@ -205,7 +206,9 @@ def run_generation():
     content = step2_write_article(topic, topic["selected_news"])
     log.info(f"✅ Статья написана ({len(content)} символов)")
 
-    # Сохранение
+    # Сохранение (переподключение, т.к. AI-генерация могла занять >30с)
+    conn.close()
+    conn = get_db()
     save_article(conn, topic["title"], content, topic["excerpt"])
     conn.close()
 
