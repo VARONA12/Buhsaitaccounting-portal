@@ -337,7 +337,7 @@ export default function LandingPage() {
             <div className="space-y-16">
                <div className="space-y-8">
                   <h3 className="text-4xl md:text-5xl lg:text-7xl font-black tracking-tighter leading-[1.05] uppercase text-white">
-                     ПОЧЕМУ КОМПАНИИ <br className="hidden lg:block"/> ДОВЕРЯЮТ ЭЛИТФИНАНС СВОЙ БИЗНЕС
+                     ПОЧЕМУ ВЫБИРАЮТ НАС?
                   </h3>
                   <p className="text-white/70 text-lg font-medium max-w-3xl leading-relaxed ">
                      Мы берем на себя 100% ответственности за ошибки. Если возник штраф по нашей вине — мы платим его сами. Никаких «звёздочек» в договоре.

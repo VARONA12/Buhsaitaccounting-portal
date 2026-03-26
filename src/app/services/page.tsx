@@ -100,7 +100,7 @@ export default function ServicesPage() {
           <header className="mb-20 space-y-6">
             <div className="inline-flex items-center gap-3 text-[10px] font-bold uppercase tracking-[0.5em] text-white">
               <Zap size={14} className="animate-pulse" />
-              SERVICE DOMAINS 2026
+              НАПРАВЛЕНИЯ УСЛУГ 2026
             </div>
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-black tracking-tightest leading-[1.1] text-white uppercase">
               БУХГАЛТЕРСКИЙ <br /> АУТСОРСИНГ <span className="text-white">БИЗНЕСА</span>

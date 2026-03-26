@@ -13,17 +13,27 @@ export function Footer() {
         </div>
         <nav className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
           {[
-            { label: "ПОЗВОНИТЬ", href: "tel:+79028371370" },
-            { label: "СООБЩЕСТВО В ВК", href: "https://vk.com/elitfinans" },
-            { label: "НАПИСАТЬ НА ПОЧТУ", href: "mailto:info@elitfinans.online" }
+            { label: "ПОЗВОНИТЬ", href: "tel:+79028371370", detail: "+7 (902) 837-13-70" },
+            { label: "СООБЩЕСТВО В ВК", href: "https://vk.com/elitfinans", detail: null },
+            { label: "НАПИСАТЬ НА ПОЧТУ", href: "mailto:info@elitfinans.online", detail: "info@elitfinans.online" }
           ].map(nav => (
-            <Link 
-              key={nav.label} 
-              href={nav.href} 
-              className="px-6 py-3 rounded-full border border-white/12 bg-white/5 text-[9px] font-black uppercase tracking-[0.3em] text-white hover:bg-white hover:text-neutral-900 transition-all shadow-lg whitespace-nowrap"
-            >
-              {nav.label}
-            </Link>
+            <div key={nav.label} className="flex flex-col items-center gap-2">
+              <Link
+                href={nav.href}
+                className="px-6 py-3 rounded-full border border-white/12 bg-white/5 text-[9px] font-black uppercase tracking-[0.3em] text-white hover:bg-white hover:text-neutral-900 transition-all shadow-lg whitespace-nowrap"
+              >
+                {nav.label}
+              </Link>
+              {nav.detail && (
+                <span
+                  onClick={() => navigator.clipboard.writeText(nav.detail!)}
+                  className="text-[11px] text-white/50 hover:text-white cursor-pointer transition-colors"
+                  title="Нажмите чтобы скопировать"
+                >
+                  {nav.detail}
+                </span>
+              )}
+            </div>
           ))}
         </nav>
       </div>
