@@ -50,7 +50,7 @@ export const EXPERTS: Expert[] = [
     specialization: ["ОПЕРАЦИОНКА", "ПЛАТЕЖИ", "ДОКУМЕНТЫ"],
     experience: "12 лет",
     bio: "Специалист высшей категории по ведению операционного учета и банковского комплаенса. Гарантирует безупречную дисциплину в платежах и документообороте.",
-    image: "/team/maria-shukova.jpg",
+    image: "/team/elvira.jpg",
     achievements: [
       { label: "Транзакций/мес", value: "10 000+" },
       { label: "Без ошибок", value: "5 лет+" }
@@ -64,7 +64,7 @@ export const EXPERTS: Expert[] = [
     specialization: ["МЕТОДОЛОГИЯ", "РЕГЛАМЕНТЫ", "АУДИТ"],
     experience: "15 лет",
     bio: "Архитектор финансовых регламентов. Разрабатывает и внедряет стандарты учета, которые исключают человеческий фактор и ошибки в отчетности.",
-    image: "/team/elvira.jpg",
+    image: "/team/maria-shukova.jpg",
     achievements: [
       { label: "Внедрено систем", value: "50+" },
       { label: "Регламентов", value: "200+" }
