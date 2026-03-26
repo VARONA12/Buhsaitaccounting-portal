@@ -404,6 +404,10 @@ def save_news(conn, items):
         return 0
     saved = 0
     for item in items:
+        # Skip items without proper content (not rewritten)
+        if len(item.get("content", "")) < 400:
+            log.info(f"  Пропуск (короткий контент): {item['title'][:60]}...")
+            continue
         cur = None
         try:
             cur = conn.cursor()
