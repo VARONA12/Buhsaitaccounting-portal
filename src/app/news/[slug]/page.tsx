@@ -255,21 +255,6 @@ function NewsLayout({
             </p>
           </header>
 
-          {/* Expert Note */}
-          <div className="mb-16 p-8 rounded-[40px] border border-white/12 bg-neutral-900 flex items-start gap-5 group hover:bg-white/[0.04] transition-all shadow-xl">
-            <div className="w-10 h-10 rounded-2xl bg-primary/10 flex items-center justify-center shrink-0">
-              <Zap size={20} className="text-white animate-pulse" />
-            </div>
-            <div className="space-y-1">
-              <p className="text-[10px] font-bold uppercase tracking-[0.4em] text-white">
-                ЭКСПЕРТНЫЙ РАЗБОР 2026
-              </p>
-              <p className="text-sm text-white leading-relaxed font-medium">
-                Материал верифицирован аналитиками ЭлитФинанс на основании официальных источников: НК РФ и актуальных писем Минфина.
-              </p>
-            </div>
-          </div>
-
           {/* Body */}
           <article className="mb-24">{children}</article>
 
