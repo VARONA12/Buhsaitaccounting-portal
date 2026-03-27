@@ -93,8 +93,8 @@ export default async function ExpertDetailPage({ params }: PageProps) {
             <div className="lg:col-span-8 space-y-16">
                <div className="space-y-10">
                   <div className="flex flex-wrap items-center gap-5">
-                     <span className="px-4 py-1.5 rounded-full bg-primary/10 border border-primary/40 text-white text-[10px] font-bold uppercase tracking-widest leading-none">{expert.experience} опыта</span>
-                     <span className="w-1.5 h-1.5 rounded-full bg-white/10" />
+                     {expert.experience && <span className="px-4 py-1.5 rounded-full bg-primary/10 border border-primary/40 text-white text-[10px] font-bold uppercase tracking-widest leading-none">{expert.experience} опыта</span>}
+                     {expert.experience && <span className="w-1.5 h-1.5 rounded-full bg-white/10" />}
                      <span className="text-[10px] font-bold uppercase tracking-widest text-white">{expert.role}</span>
                   </div>
                   <h1 className="text-5xl md:text-7xl lg:text-8xl font-black tracking-tightest leading-[1.05] uppercase text-white">

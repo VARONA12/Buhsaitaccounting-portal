@@ -117,7 +117,7 @@ export default function ExpertsPage() {
                       {expert.bio}
                    </p>
                    <div className="pt-8 border-t border-white/20 flex items-center justify-between">
-                      <span className="text-[10px] font-bold text-white uppercase tracking-widest">Опыт {expert.experience}</span>
+                      <span className="text-[10px] font-bold text-white uppercase tracking-widest">{expert.experience ? `Опыт ${expert.experience}` : expert.specialization[0]}</span>
                       <span className="flex items-center gap-3 text-[10px] font-bold text-white uppercase tracking-widest group-hover:gap-6 transition-all">Профиль <ArrowRight size={14} /></span>
                    </div>
                 </div>

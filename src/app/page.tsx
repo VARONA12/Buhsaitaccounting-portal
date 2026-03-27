@@ -281,7 +281,7 @@ export default function LandingPage() {
                        </div>
                     </div>
                     <div className="flex items-center justify-between pt-6 border-t border-white/12">
-                       <span className="text-[9px] font-bold text-white uppercase tracking-widest">{expert.experience ? `${expert.experience} опыта` : ""}</span>
+                       <span className="text-[9px] font-bold text-white uppercase tracking-widest">{expert.experience ? `${expert.experience} опыта` : expert.specialization[0]}</span>
                        <ChevronRight size={14} className="text-white group-hover:text-white transition-colors" />
                     </div>
                  </Link>
