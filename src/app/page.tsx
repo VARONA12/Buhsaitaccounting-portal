@@ -189,8 +189,6 @@ export default function LandingPage() {
 
       {/* Hero Section - Reverted to Dark Premium */}
       <section className="relative pt-24 pb-20 md:pt-40 md:pb-32 overflow-hidden">
-        {/* Lightweight gradient background */}
-        <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-primary-dark/5 pointer-events-none" />
         
         <div className="max-w-7xl mx-auto px-6 relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
@@ -222,7 +220,7 @@ export default function LandingPage() {
       </section>
 
       {/* Services Grid - Dark Aesthetics */}
-      <section className="py-24 px-6 bg-neutral-950" id="services">
+      <section className="py-24 px-6 bg-neutral-900" id="services">
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-16">
              <div className="space-y-4">
@@ -257,7 +255,7 @@ export default function LandingPage() {
       </section>
 
       {/* EEAT: Our Experts Preview - NEW Section */}
-      <section className="py-24 px-6 bg-neutral-950">
+      <section className="py-24 px-6 bg-neutral-900">
          <div className="max-w-7xl mx-auto">
             <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-16">
                <div className="space-y-4">
@@ -291,7 +289,7 @@ export default function LandingPage() {
       </section>
 
       {/* Social Proof: Cases Section - NEW */}
-      <section className="py-24 px-6 bg-neutral-950">
+      <section className="py-24 px-6 bg-neutral-900">
         <div className="max-w-7xl mx-auto">
           <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-16">
             <div className="space-y-4">
