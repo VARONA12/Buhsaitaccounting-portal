@@ -247,12 +247,14 @@ def ai_rewrite(item):
 ТРЕБОВАНИЯ:
 
 1. ЗАГОЛОВОК (title):
-   - Чистый, без эмодзи и спецсимволов
+   - НИКАКИХ эмодзи, иконок, спецсимволов — только текст
+   - Обычный регистр: первая буква заглавная, остальные строчные (НЕ КАПСЛОК)
    - Информативный — отвечает на "что произошло"
    - SEO-оптимизированный — содержит ключевые слова которые люди гуглят
    - 60-90 символов
    - Пример хорошего: "ФНС расширила список расходов на УСН с 2026 года"
-   - Пример плохого: "💢 Важные изменения! Узнайте что нового"
+   - Пример плохого: "💢 ВАЖНЫЕ ИЗМЕНЕНИЯ! УЗНАЙТЕ ЧТО НОВОГО"
+   - Пример плохого: "❗ В НК закрепят новое правило"
 
 2. КРАТКОЕ ОПИСАНИЕ (excerpt):
    - 1-2 предложения, 100-200 символов
@@ -282,11 +284,29 @@ def ai_rewrite(item):
         data = json.loads(clean)
 
         if "title" in data:
-            # Clean any remaining emoji
-            clean_title = re.sub(r'[\U00010000-\U0010ffff]', '', data["title"]).strip()
+            # Clean any remaining emoji (BMP + supplementary)
+            emoji_pattern = re.compile(
+                "["
+                "\U0001F600-\U0001F64F"  # emoticons
+                "\U0001F300-\U0001F5FF"  # symbols & pictographs
+                "\U0001F680-\U0001F6FF"  # transport & map
+                "\U0001F1E0-\U0001F1FF"  # flags
+                "\U00002702-\U000027B0"  # dingbats
+                "\U000024C2-\U0001F251"  # enclosed chars
+                "\U0001f900-\U0001f9FF"  # supplemental symbols
+                "\U00002600-\U000026FF"  # misc symbols
+                "\U0000FE00-\U0000FE0F"  # variation selectors
+                "\U0000200D"             # zero width joiner
+                "\U00002B50-\U00002B55"  # stars
+                "\U0000203C-\U00003299"  # misc
+                "\U0001FA00-\U0001FA6F"  # chess symbols
+                "\U0001FA70-\U0001FAFF"  # symbols extended
+                "]+", flags=re.UNICODE
+            )
+            clean_title = emoji_pattern.sub('', data["title"]).strip()
             item["title"] = clean_title
         if "excerpt" in data:
-            item["excerpt"] = data["excerpt"]
+            item["excerpt"] = emoji_pattern.sub('', data["excerpt"]).strip()
         if "content" in data:
             # Add source attribution
             content = data["content"]
@@ -330,7 +350,7 @@ def fetch_article_body(url):
                 ".news-text", ".detail-text", ".article-content", "main"]:
         target = soup.select_one(sel)
         if target:
-            parts = [p.get_text(strip=True) for p in target.find_all(["p", "li"]) if len(p.get_text(strip=True)) > 40]
+            parts = [p.get_text(separator=" ", strip=True) for p in target.find_all(["p", "li"]) if len(p.get_text(strip=True)) > 40]
             content = "\n\n".join(parts[:20])
             if len(content) > 200:
                 break

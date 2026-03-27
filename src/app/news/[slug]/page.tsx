@@ -246,13 +246,10 @@ function NewsLayout({
           </div>
 
           {/* Headline */}
-          <header className="mb-12 space-y-8">
-            <h1 className="text-4xl md:text-6xl xl:text-7xl font-black tracking-tightest leading-[1.05] text-white uppercase">
+          <header className="mb-12">
+            <h1 className="text-4xl md:text-6xl xl:text-7xl font-black tracking-tightest leading-[1.05] text-white">
               {title}
             </h1>
-            <p className="news-summary text-xl md:text-2xl text-white leading-relaxed font-medium">
-              {desc}
-            </p>
           </header>
 
           {/* Body */}
@@ -295,7 +292,7 @@ function NewsLayout({
                       <span className="text-[9px] font-bold text-white uppercase tracking-[0.2em]">{item.category}</span>
                       <span className="text-[9px] font-bold text-white uppercase tracking-widest">{item.date}</span>
                     </div>
-                    <h3 className="text-base font-black text-white uppercase group-hover:text-white transition-colors leading-tight line-clamp-3 tracking-tight">
+                    <h3 className="text-base font-black text-white group-hover:text-white transition-colors leading-tight line-clamp-3 tracking-tight">
                       {item.title}
                     </h3>
                     <div className="flex items-center gap-2 text-[10px] font-bold text-white uppercase tracking-[0.3em] mt-auto">

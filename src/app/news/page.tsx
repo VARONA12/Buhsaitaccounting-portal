@@ -165,7 +165,7 @@ export default async function NewsPage() {
                       {news.date}
                     </div>
                   </div>
-                  <h3 className="text-lg font-black text-white mb-6 group-hover:text-white transition-colors leading-tight uppercase tracking-tight line-clamp-3">
+                  <h3 className="text-lg font-black text-white mb-6 group-hover:text-white transition-colors leading-tight tracking-tight line-clamp-3">
                     {news.title}
                   </h3>
                   {news.desc !== news.title && (
