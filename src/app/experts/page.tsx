@@ -97,7 +97,8 @@ export default function ExpertsPage() {
                   src={expert.image}
                   alt={expert.name}
                   fill
-                  className={`object-cover ${expert.slug === "elvira-specialist" ? "object-top" : ""} opacity-95 group-hover:opacity-100 group-hover:scale-105 transition-all duration-1000`}
+                  style={expert.slug === "elvira-specialist" ? { objectPosition: "center 15%" } : undefined}
+                  className={`object-cover opacity-95 group-hover:opacity-100 group-hover:scale-105 transition-all duration-1000`}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent opacity-90" />
                 
