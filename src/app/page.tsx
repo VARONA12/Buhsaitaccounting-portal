@@ -281,7 +281,7 @@ export default function LandingPage() {
                        </div>
                     </div>
                     <div className="flex items-center justify-between pt-6 border-t border-white/12">
-                       <span className="text-[9px] font-bold text-white uppercase tracking-widest">{expert.experience} опыта в РФ</span>
+                       <span className="text-[9px] font-bold text-white uppercase tracking-widest">{expert.experience ? `${expert.experience} опыта` : ""}</span>
                        <ChevronRight size={14} className="text-white group-hover:text-white transition-colors" />
                     </div>
                  </Link>
@@ -347,7 +347,7 @@ export default function LandingPage() {
                <div className="grid grid-cols-2 lg:grid-cols-4 gap-12 md:gap-20 mt-16">
                   {[
                      { val: "15 ЛЕТ", label: "ЭКСПЕРТИЗЫ" },
-                     { val: "450М+", label: "ОБОРОТ КЛИЕНТОВ" },
+                     { val: "450М ₽+", label: "ОБОРОТ КЛИЕНТОВ" },
                      { val: "0", label: "БЛОКИРОВОК" },
                      { val: "100%", label: "ФИНАНСОВАЯ БЕЗОПАСНОСТЬ" }
                   ].map((s, i) => (
