@@ -273,7 +273,7 @@ export default function LandingPage() {
                  <Link key={expert.slug} href={`/experts/${expert.slug}`} className="group p-8 rounded-[48px] border border-white/12 bg-neutral-900 hover:bg-neutral-900/50 transition-all block">
                     <div className="flex items-center gap-5 mb-6">
                        <div className="w-16 h-16 rounded-2xl bg-neutral-900 border border-white/12 flex items-center justify-center text-white group-hover:scale-110 transition-transform overflow-hidden relative">
-                          <Image src={expert.image} alt={expert.name} fill className="object-cover" sizes="64px" />
+                          <Image src={expert.image} alt={expert.name} fill style={expert.slug === "elvira-specialist" ? { objectPosition: "center 5%" } : undefined} className="object-cover" sizes="64px" />
                        </div>
                        <div>
                           <p className="font-bold text-lg text-white group-hover:text-white transition-colors uppercase tracking-tight">{expert.name}</p>
