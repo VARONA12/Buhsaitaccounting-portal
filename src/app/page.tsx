@@ -344,13 +344,13 @@ export default function LandingPage() {
                
                <div className="grid grid-cols-2 lg:grid-cols-4 gap-12 md:gap-20 mt-16">
                   {[
-                     { val: "15 ЛЕТ", label: "ЭКСПЕРТИЗЫ" },
-                     { val: "450М ₽+", label: "ОБОРОТ КЛИЕНТОВ" },
+                     { val: "15 лет", label: "ЭКСПЕРТИЗЫ" },
+                     { val: "450М\u00A0₽+", label: "ОБОРОТ КЛИЕНТОВ" },
                      { val: "0", label: "БЛОКИРОВОК" },
                      { val: "100%", label: "ФИНАНСОВАЯ БЕЗОПАСНОСТЬ" }
                   ].map((s, i) => (
                      <div key={i} className="space-y-3">
-                        <div className="text-4xl md:text-5xl lg:text-7xl font-black text-white tracking-tighter uppercase leading-none">{s.val}</div>
+                        <div className="text-4xl md:text-5xl lg:text-7xl font-black text-white tracking-tighter uppercase leading-none whitespace-nowrap">{s.val}</div>
                         <div className="text-[10px] md:text-[11px] font-bold text-white/40 uppercase tracking-[0.4em]">{s.label}</div>
                      </div>
                   ))}
