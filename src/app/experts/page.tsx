@@ -93,11 +93,11 @@ export default function ExpertsPage() {
                 className="group relative h-[550px] rounded-[48px] overflow-hidden border border-white/12 bg-neutral-900 hover:border-primary/40 transition-all duration-700 flex flex-col justify-end shadow-2xl"
               >
                 {/* Image background */}
-                <Image 
-                  src={expert.image} 
-                  alt={expert.name} 
-                  fill 
-                  className="object-cover opacity-95 group-hover: group-hover:opacity-100 group-hover:scale-105 transition-all duration-1000" 
+                <Image
+                  src={expert.image}
+                  alt={expert.name}
+                  fill
+                  className={`object-cover ${expert.slug === "elvira-specialist" ? "object-top" : ""} opacity-95 group-hover:opacity-100 group-hover:scale-105 transition-all duration-1000`}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black via-black/40 to-transparent opacity-90" />
                 
