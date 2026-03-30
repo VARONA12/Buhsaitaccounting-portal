@@ -51,7 +51,11 @@ ACCOUNTING_KEYWORDS = [
     " ип ", " ооо ", "предпринимател", "бизнес",
 ]
 
-MIN_SCORE = 6  # Минимальный балл для публикации (1-10)
+MIN_SCORE = 8  # Минимальный балл для публикации (1-10)
+MIN_RAW_CONTENT = 400   # Минимум символов в исходном тексте перед рерайтом
+MIN_FINAL_CONTENT = 800 # Минимум символов в готовой статье для сохранения
+MIN_TITLE_LEN = 30      # Минимум символов в заголовке
+MIN_PARAGRAPHS = 3      # Минимум абзацев в итоговом контенте
 
 AD_MARKERS = [
     "система главбух", "системы главбух", "систему главбух",
@@ -278,7 +282,27 @@ def ai_rewrite(item):
 
     result = deepseek_call(prompt, max_tokens=2000, temperature=0.4)
     if not result:
-        return item
+        log.warning(f"  Рерайт не удался (нет ответа AI): {item['title'][:60]}")
+        return None  # Не сохраняем без рерайта
+
+    emoji_pattern = re.compile(
+        "["
+        "\U0001F600-\U0001F64F"
+        "\U0001F300-\U0001F5FF"
+        "\U0001F680-\U0001F6FF"
+        "\U0001F1E0-\U0001F1FF"
+        "\U00002702-\U000027B0"
+        "\U000024C2-\U0001F251"
+        "\U0001f900-\U0001f9FF"
+        "\U00002600-\U000026FF"
+        "\U0000FE00-\U0000FE0F"
+        "\U0000200D"
+        "\U00002B50-\U00002B55"
+        "\U0000203C-\U00003299"
+        "\U0001FA00-\U0001FA6F"
+        "\U0001FA70-\U0001FAFF"
+        "]+", flags=re.UNICODE
+    )
 
     try:
         clean = result.strip()
@@ -287,48 +311,44 @@ def ai_rewrite(item):
             clean = re.sub(r'\s*```$', '', clean)
         data = json.loads(clean)
 
-        if "title" in data:
-            # Clean any remaining emoji (BMP + supplementary)
-            emoji_pattern = re.compile(
-                "["
-                "\U0001F600-\U0001F64F"  # emoticons
-                "\U0001F300-\U0001F5FF"  # symbols & pictographs
-                "\U0001F680-\U0001F6FF"  # transport & map
-                "\U0001F1E0-\U0001F1FF"  # flags
-                "\U00002702-\U000027B0"  # dingbats
-                "\U000024C2-\U0001F251"  # enclosed chars
-                "\U0001f900-\U0001f9FF"  # supplemental symbols
-                "\U00002600-\U000026FF"  # misc symbols
-                "\U0000FE00-\U0000FE0F"  # variation selectors
-                "\U0000200D"             # zero width joiner
-                "\U00002B50-\U00002B55"  # stars
-                "\U0000203C-\U00003299"  # misc
-                "\U0001FA00-\U0001FA6F"  # chess symbols
-                "\U0001FA70-\U0001FAFF"  # symbols extended
-                "]+", flags=re.UNICODE
-            )
-            clean_title = emoji_pattern.sub('', data["title"]).strip()
-            item["title"] = clean_title
-        if "excerpt" in data:
-            item["excerpt"] = emoji_pattern.sub('', data["excerpt"]).strip()
-        if "content" in data:
-            # Add source attribution
-            content = data["content"]
-            if source_url:
-                content += f"\n\nИсточник: [{source}]({source_url})"
-            elif source:
-                content += f"\n\nИсточник: {source}"
-            item["content"] = content
+        # Валидация обязательных полей
+        if not all(k in data for k in ["title", "excerpt", "content"]):
+            log.warning(f"  Рерайт: неполный JSON (нет нужных полей)")
+            return None
 
-        # Update hash based on new title
-        item["hash"] = make_hash(item["title"] + item["content"][:200])
+        new_title = emoji_pattern.sub('', data["title"]).strip()
+        new_excerpt = emoji_pattern.sub('', data["excerpt"]).strip()
+        new_content = data["content"].strip()
 
-        log.info(f"  Рерайт: {item['title'][:70]}...")
+        # Строгая валидация после рерайта
+        if len(new_title) < MIN_TITLE_LEN:
+            log.warning(f"  Рерайт отброшен: заголовок слишком короткий ({len(new_title)} симв.)")
+            return None
+        if len(new_content) < MIN_FINAL_CONTENT:
+            log.warning(f"  Рерайт отброшен: контент слишком короткий ({len(new_content)} симв.)")
+            return None
+        paragraphs = [p for p in new_content.split("\n\n") if p.strip()]
+        if len(paragraphs) < MIN_PARAGRAPHS:
+            log.warning(f"  Рерайт отброшен: мало абзацев ({len(paragraphs)})")
+            return None
+
+        # Добавить источник
+        if source_url:
+            new_content += f"\n\nИсточник: [{source}]({source_url})"
+        elif source:
+            new_content += f"\n\nИсточник: {source}"
+
+        item["title"] = new_title
+        item["excerpt"] = new_excerpt
+        item["content"] = new_content
+        item["hash"] = make_hash(new_title + new_content[:200])
+
+        log.info(f"  ✅ Рерайт OK: {new_title[:70]}")
         return item
 
     except Exception as e:
         log.warning(f"  Rewrite parse error: {e}")
-        return item
+        return None  # Не сохраняем с битым рерайтом
 
 
 # ── Website scraping ──────────────────────────────────────────────────────────
@@ -405,24 +425,25 @@ def fetch_website(task):
             c = futures[future]
             try:
                 content, pub_time = future.result()
-                body = content or c["title"]
-                if len(body) < 40:
+                # Строго: только реальный контент, не заголовок
+                if not content or len(content) < MIN_RAW_CONTENT:
+                    log.info(f"    ❌ Мало контента ({len(content) if content else 0} симв.): {c['title'][:60]}")
                     continue
                 # Filter out advertorials
-                if is_ad(c["title"] + " " + body):
+                if is_ad(c["title"] + " " + content):
                     log.info(f"    ❌ Реклама: {c['title'][:60]}")
                     continue
-                excerpt = body[:400].replace("\n", " ")
+                excerpt = content[:400].replace("\n", " ")
                 posts.append({
                     "title": c["title"],
-                    "content": body,
+                    "content": content,
                     "excerpt": excerpt,
                     "source": name,
                     "source_type": "website",
                     "url": c["url"],
                     "published_at": pub_time,
-                    "hash": make_hash(c["title"] + body[:200]),
-                    "category": classify(c["title"] + " " + body[:300]),
+                    "hash": make_hash(c["title"] + content[:200]),
+                    "category": classify(c["title"] + " " + content[:300]),
                 })
             except Exception as e:
                 log.warning(f"  Article error: {e}")
@@ -449,8 +470,11 @@ def save_news(conn, items):
     saved = 0
     for item in items:
         # Skip items without proper content (not rewritten)
-        if len(item.get("content", "")) < 400:
+        if len(item.get("content", "")) < MIN_FINAL_CONTENT:
             log.info(f"  Пропуск (короткий контент): {item['title'][:60]}...")
+            continue
+        if len(item.get("title", "")) < MIN_TITLE_LEN:
+            log.info(f"  Пропуск (короткий заголовок): {item['title'][:60]}...")
             continue
         cur = None
         try:
@@ -533,8 +557,11 @@ def run_once(sources):
     log.info(f"Рерайт {len(deduped)} новостей...")
     rewritten = []
     for item in deduped:
-        rewritten.append(ai_rewrite(item))
+        result = ai_rewrite(item)
+        if result is not None:  # None = рерайт не удался или не прошёл валидацию
+            rewritten.append(result)
         time.sleep(2)  # Rate limit
+    log.info(f"После рерайта: {len(rewritten)} из {len(deduped)} прошли валидацию")
 
     # 6. Save to DB
     conn = get_db()
