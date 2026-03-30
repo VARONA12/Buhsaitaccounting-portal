@@ -1,3 +1,4 @@
+// Article page — elitfinans.online
 import { db } from "@/lib/db";
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
