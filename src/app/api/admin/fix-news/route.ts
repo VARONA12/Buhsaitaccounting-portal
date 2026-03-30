@@ -21,15 +21,24 @@ const TEXT_FIXES: [RegExp, string][] = [
 
 // Remove duplicate "Источник:" lines (keep only the last one)
 function deduplicateSource(text: string): string {
-  const sourcePattern = /\n\nИсточник:.*$/gm;
-  const matches = text.match(sourcePattern);
-  if (matches && matches.length > 1) {
-    // Remove all source lines, then add back only the last one
-    let cleaned = text.replace(sourcePattern, '');
-    cleaned += matches[matches.length - 1];
-    return cleaned;
+  // Split into lines, find all source lines, keep only the last one
+  const lines = text.split('\n');
+  const sourceIndices: number[] = [];
+  for (let i = 0; i < lines.length; i++) {
+    if (lines[i].trim().startsWith('Источник:')) {
+      sourceIndices.push(i);
+    }
   }
-  return text;
+  if (sourceIndices.length <= 1) return text;
+
+  // Remove all source lines except the last
+  const toRemove = new Set(sourceIndices.slice(0, -1));
+  const filtered = lines.filter((_, i) => !toRemove.has(i));
+
+  // Clean up excessive blank lines
+  let result = filtered.join('\n');
+  result = result.replace(/\n{3,}/g, '\n\n');
+  return result;
 }
 
 export async function GET(request: Request) {
