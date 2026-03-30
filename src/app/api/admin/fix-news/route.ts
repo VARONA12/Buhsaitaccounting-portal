@@ -19,6 +19,19 @@ const TEXT_FIXES: [RegExp, string][] = [
   [/([а-яё])([А-ЯЁ])/g, '$1 $2'],
 ];
 
+// Remove duplicate "Источник:" lines (keep only the last one)
+function deduplicateSource(text: string): string {
+  const sourcePattern = /\n\nИсточник:.*$/gm;
+  const matches = text.match(sourcePattern);
+  if (matches && matches.length > 1) {
+    // Remove all source lines, then add back only the last one
+    let cleaned = text.replace(sourcePattern, '');
+    cleaned += matches[matches.length - 1];
+    return cleaned;
+  }
+  return text;
+}
+
 export async function GET(request: Request) {
   const url = new URL(request.url);
   if (url.searchParams.get('token') !== TOKEN) {
@@ -47,6 +60,13 @@ export async function GET(request: Request) {
       title = newTitle;
       content = newContent;
       excerpt = newExcerpt;
+    }
+
+    // Fix duplicate source lines
+    const dedupedContent = deduplicateSource(content);
+    if (dedupedContent !== content) {
+      content = dedupedContent;
+      changed = true;
     }
 
     if (changed) {
