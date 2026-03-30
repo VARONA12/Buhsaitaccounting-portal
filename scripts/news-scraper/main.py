@@ -354,7 +354,7 @@ def fetch_article_body(url):
                 ".news-text", ".detail-text", ".article-content", "main"]:
         target = soup.select_one(sel)
         if target:
-            parts = [p.get_text(separator=" ", strip=True) for p in target.find_all(["p", "li"]) if len(p.get_text(strip=True)) > 40]
+            parts = [p.get_text(separator=" ", strip=True) for p in target.find_all(["p", "li"]) if len(p.get_text(separator=" ", strip=True)) > 40]
             content = "\n\n".join(parts[:20])
             if len(content) > 200:
                 break
