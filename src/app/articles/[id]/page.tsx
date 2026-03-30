@@ -1,83 +1,4 @@
-import { db } from "@/lib/db";
-import { notFound } from "next/navigation";
-import type { Metadata } from "next";
-import Link from "next/link";
-import ReactMarkdown from "react-markdown";
-import remarkGfm from "remark-gfm";
-import { Logo } from "@/components/Logo";
-import { ChevronRight, Calendar, User, Clock, ArrowLeft, ArrowRight, BookOpen, Zap } from "lucide-react";
-import { VideoTranscript } from "@/components/VideoTranscript";
-
-function getYouTubeId(url: string) {
-  const regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|\&v=)([^#\&\?]*).*/;
-  const match = url.match(regExp);
-  return (match && match[2].length === 11) ? match[2] : null;
-}
-
-interface Props {
-  params: Promise<{ id: string }>;
-}
-
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const { id } = await params;
-  const article = await db.article.findUnique({
-    where: { id, published: true },
-  });
-  if (!article) return { title: "Статья не найдена | ЭлитФинанс" };
-
-  const description =
-    article.excerpt ?? article.content.substring(0, 160) + "...";
-  const url = `https://elitfinans.online/articles/${id}`;
-
-  return {
-    title: `${article.title} | ЭлитФинанс`,
-    description,
-    authors: [{ name: article.author }],
-    keywords: ["бухгалтерия", "налоги", "ООО", "ИП", article.title],
-    alternates: { canonical: url },
-    openGraph: {
-      title: article.title,
-      description,
-      url,
-      siteName: "ЭлитФинанс",
-      locale: "ru_RU",
-      type: "article",
-      publishedTime: article.createdAt.toISOString(),
-      modifiedTime: article.updatedAt.toISOString(),
-      authors: [article.author],
-      ...(article.image ? { images: [{ url: article.image, width: 1200, height: 630, alt: article.title }] } : {}),
-    },
-    twitter: {
-      card: "summary_large_image",
-      title: article.title,
-      description,
-    },
-    robots: {
-      index: true,
-      follow: true,
-      "max-image-preview": "large",
-      "max-snippet": -1,
-    },
-  };
-}
-
-export default async function ArticlePage({ params }: Props) {
-  const { id } = await params;
-
-  const [article, related] = await Promise.all([
-    db.article.findUnique({ where: { id, published: true } }),
-    db.article.findMany({
-      where: { published: true, NOT: { id } },
-      orderBy: { createdAt: "desc" },
-      take: 3,
-    }),
-  ]);
-
-  if (!article) notFound();
-
-  const url = `https://elitfinans.online/articles/${id}`;
-  const description = article.excerpt ?? article.content.substring(0, 160) + "...";
-  const readingTime = Math.max(1, Math.ceil(article.content.split(" ").length / 200));
+  const readingTime = Math.max(1, Math.ceil(article.content.split(" ").length / 170));
   const formattedDate = new Date(article.createdAt).toLocaleDateString("ru-RU", {
     day: "numeric",
     month: "long",
@@ -110,111 +31,71 @@ export default async function ArticlePage({ params }: Props) {
 
       <main className="pt-28 pb-40 px-6 md:pt-40">
         <div className="max-w-4xl mx-auto">
-          {/* Breadcrumb */}
-          <nav aria-label="breadcrumb" className="mb-12">
-            <ol className="flex items-center gap-2 text-[10px] font-bold uppercase tracking-widest text-white flex-wrap">
-              <li><Link href="/" className="hover:text-white transition-colors">Главная</Link></li>
-              <li><ChevronRight size={10} /></li>
-              <li><Link href="/articles" className="hover:text-white transition-colors">Статьи</Link></li>
-              <li><ChevronRight size={10} /></li>
-              <li className="text-white truncate max-w-[200px]">{article.title}</li>
-            </ol>
-          </nav>
-
-          {/* Article Header */}
-          <header className="mb-16 space-y-10">
-            <div className="flex items-center gap-3 text-white font-bold uppercase text-[10px] tracking-[0.4em]">
+          {/* JSON-LD for Article */}
+          <script
+            type="application/ld+json"
+            dangerouslySetInnerHTML={{
+              __html: JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "Article",
+                "headline": article.title,
+                "description": description,
+                "image": article.image ? `https://elitfinans.online${article.image}` : undefined,
+                "datePublished": article.createdAt.toISOString(),
+                "dateModified": article.updatedAt.toISOString(),
+                "author": {
+                  "@type": "Person",
+                  "name": expertName
+                },
+                "publisher": {
+                  "@type": "Organization",
+                  "name": "ЭлитФинанс",
+                  "logo": {
+                    "@type": "ImageObject",
+                    "url": "https://elitfinans.online/logo.png"
+                  }
+                },
+                "mainEntityOfPage": {
+                  "@type": "WebPage",
+                  "@id": url
+                }
+              })
+            }}
+          />
+          {/* Article header */}
+          <header className="mb-12">
+            <div className="inline-flex items-center gap-3 text-[10px] font-bold uppercase tracking-[0.5em] text-white mb-6">
               <Zap size={16} className="animate-pulse" /> БАЗА ЗНАНИЙ ЭЛИТФИНАНС
             </div>
-
-            <h1 className="text-4xl md:text-5xl xl:text-7xl font-black tracking-tightest leading-[1.05] text-white uppercase">
+            <h1 className="text-4xl md:text-5xl xl:text-6xl font-black tracking-tightest leading-[1.05] text-white uppercase mb-8">
               {article.title}
             </h1>
-
-            {article.excerpt && (
-              <p className="article-description text-xl md:text-2xl text-white leading-relaxed font-medium max-w-3xl ">
-                {article.excerpt}
-              </p>
-            )}
-
-            <div className="flex flex-wrap items-center gap-8 pt-6 border-t border-white/12">
-              <div className="flex items-center gap-2 text-[10px] font-bold text-white uppercase tracking-widest">
-                <Calendar size={14} className="text-white" />
-                {formattedDate}
+            <div className="flex flex-wrap items-center gap-6 text-white text-sm">
+              <div className="flex items-center gap-2">
+                <Calendar size={16} />
+                <span>{formattedDate}</span>
               </div>
-              <div className="flex items-center gap-2 text-[10px] font-bold text-white uppercase tracking-widest">
-                <User size={14} className="text-white" />
-                {expertName}
+              <div className="flex items-center gap-2">
+                <User size={16} />
+                <span>{expertName}</span>
               </div>
-              <div className="flex items-center gap-2 text-[10px] font-bold text-white uppercase tracking-widest">
-                <Clock size={14} className="text-white" />
-                {readingTime} мин чтения
+              <div className="flex items-center gap-2">
+                <Clock size={16} />
+                <span>{readingTime} мин. чтения</span>
               </div>
             </div>
           </header>
 
-          {/* Hero Image */}
+          {/* Article image if exists */}
           {article.image && (
-            <div className="mb-16 aspect-video rounded-[56px] overflow-hidden bg-neutral-900 border border-white/12 shadow-2xl relative">
-              <img
+            <div className="mb-12 rounded-2xl overflow-hidden">
+              <Image
                 src={article.image}
                 alt={article.title}
-                className="w-full h-full object-cover opacity-95 hover: hover:opacity-100 transition-all duration-1000"
+                width={1200}
+                height={630}
+                className="w-full h-auto object-cover"
+                priority
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-95" />
             </div>
           )}
-
-          {/* Video & Transcript */}
-          {((article as any).videoUrl) && (
-            <VideoTranscript 
-              videoUrl={(article as any).videoUrl} 
-              transcript={(article as any).videoTranscript || ""} 
-            />
-          )}
-
-          {/* Article Body */}
-          <article className="mb-24">
-            <div className="article-body prose prose-invert max-w-none text-white prose-headings:text-white prose-a:text-white hover:prose-a:underline prose-p:leading-[1.8] prose-p:text-[19px] prose-p:italic prose-p:font-medium prose-p: prose-li:text-[18px] prose-strong:text-white prose-strong:">
-              <ReactMarkdown remarkPlugins={[remarkGfm]}>
-                {article.content}
-              </ReactMarkdown>
-            </div>
-          </article>
-
-          {/* Related Articles */}
-          {related.length > 0 && (
-            <section className="mt-40">
-              <div className="flex items-center gap-4 mb-16">
-                <BookOpen size={20} className="text-white" />
-                <h2 className="text-[11px] font-black uppercase tracking-[0.4em] text-white">
-                  ЧИТАЙТЕ ТАКЖЕ
-                </h2>
-              </div>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                {related.map((rel) => (
-                  <Link
-                    key={rel.id}
-                    href={`/articles/${rel.id}`}
-                    className="group p-8 rounded-[48px] border border-white/12 bg-white/[0.03] hover:bg-neutral-900 hover:border-primary/40 transition-all flex flex-col gap-6"
-                  >
-                    <div className="flex items-center gap-3 text-[9px] font-bold text-white uppercase tracking-widest">
-                      <Calendar size={12} className="text-white" />
-                      {new Date(rel.createdAt).toLocaleDateString("ru-RU")}
-                    </div>
-                    <h3 className="text-lg font-black text-white uppercase group-hover:text-white transition-colors leading-tight line-clamp-3 tracking-tight">
-                      {rel.title}
-                    </h3>
-                    <div className="flex items-center gap-2 text-[10px] font-bold text-white uppercase tracking-[0.3em] mt-auto">
-                      ЧИТАТЬ <ArrowRight size={14} className="group-hover:translate-x-1 transition-all" />
-                    </div>
-                  </Link>
-                ))}
-              </div>
-            </section>
-          )}
-        </div>
-      </main>
-    </div>
-  );
-}
