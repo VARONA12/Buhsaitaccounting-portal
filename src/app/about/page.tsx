@@ -49,6 +49,15 @@ const aboutJsonLd = {
   }
 };
 
+const speakableJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "SpeakableSpecification",
+  "cssSelector": [
+    "h1",
+    ".text-xl.md\:text-2xl.text-white.max-w-3xl.leading-relaxed.font-medium"
+  ]
+};
+
 export default function AboutPage() {
   return (
     <div className="min-h-screen bg-neutral-900 text-white font-sans selection:bg-primary-dark/80 selection:text-white">
